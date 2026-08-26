@@ -12,6 +12,7 @@
   --edit-bg:#1F2A2B;
 }}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Heebo,Arial,sans-serif;font-size:15px;line-height:1.5}
 h1,h2{font-family:"Frank Ruhl Libre",Georgia,serif;font-weight:700;text-wrap:balance;margin:0}
