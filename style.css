@@ -51,7 +51,6 @@ input[type=search],input[type=text],input[type=number]{font:inherit;border:1px s
 .mode-seg{margin-inline:auto;flex:none;border-color:var(--teal);box-shadow:0 1px 3px rgba(15,110,99,.14)}
 .mode-seg button{font-size:15px}
 .mode-seg button[data-mode="clinic"]{font-weight:700}
-.mode-seg button[data-mode="clinic"].on{background:var(--copper);border-color:var(--copper)}
 .mode{background:var(--card);border-color:var(--teal);color:var(--teal);font-weight:700}
 .mode[aria-pressed=true]{background:var(--teal);color:#fff}
 
