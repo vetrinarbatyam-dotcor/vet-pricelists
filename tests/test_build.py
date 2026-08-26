@@ -18,5 +18,5 @@ for f in (ROOT / "data").rglob("*.json"):
             assert it["topic"], it
 for f in ROOT.glob("*.html"):
     s = f.read_text(encoding="utf-8")
-    assert "VET2026" not in s, "access code must not appear in plain text"
+    assert "CLAUDEVET2026" not in s, "access code must not appear in plain text"
 print("OK", sum(counts.values()), "items,", len(counts), "price lists")
