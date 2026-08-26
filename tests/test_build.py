@@ -8,7 +8,10 @@ assert counts["beit-erez"] + counts["beit-erez-shop"] == 415 and counts["aml"] =
 assert {m["type"] for m in idx["pricelists"]} == {"food", "medical", "labs", "shop"}
 assert counts["idexx"] + counts["idexx-ref"] > 400 and counts["miltin-consum"] > 350, "refreshed lists shrank"
 assert counts["karnieli"] > 60, "Karnieli lost its three 2025 price lists"
-assert sum(counts.values()) >= 5800
+assert sum(counts.values()) >= 5700
+vm = __import__("json").load(open(ROOT / "data/medical/vetmarket.json", encoding="utf-8"))["items"]
+assert all(i.get("price_date") for i in vm), "a Vetmarket row without an invoice date = a price from the internal catalog"
+
 FORBID = ("customerPriceWithVat", "weighted", "invoice", "clinic_sale", "purchasePrice", "112026")
 for f in (ROOT / "data").rglob("*.json"):
     s = f.read_text(encoding="utf-8")

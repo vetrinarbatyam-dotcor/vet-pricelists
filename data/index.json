@@ -77,21 +77,19 @@
   },
   {
    "action": "ok",
-   "action_note": "מחיר מחירון רשמי (לפני הנחה) מאישורי ההזמנה + המחירון המלא.",
+   "action_note": "אין מחירון מפורסם לוטמרקט — כל שורה היא מחיר המחירון לפני הנחה מתוך אישור הזמנה, עם התאריך שלה.",
    "slug": "vetmarket",
    "type": "medical",
    "supplier": "וטמרקט",
    "price_list_date": "2026-08",
-   "source_file": "sources/medical/vetmarket-2026-08.xlsx",
-   "source_files": [
-    "sources/medical/vetmarket-2026-08.xlsx"
-   ],
+   "source_file": null,
+   "source_files": [],
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 264,
+   "item_count": 171,
    "status": "current",
    "imported_at": "2026-08-26",
-   "notes": "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"
+   "notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור 123 אישורי הזמנה (09/2023–08/2026) — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
   },
   {
    "action": "ok",
@@ -470,21 +468,19 @@
   },
   {
    "action": "ok",
-   "action_note": "מחיר מחירון רשמי (לפני הנחה) מאישורי ההזמנה + המחירון המלא.",
+   "action_note": "אין מחירון מפורסם לוטמרקט — כל שורה היא מחיר המחירון לפני הנחה מתוך אישור הזמנה, עם התאריך שלה.",
    "slug": "vetmarket-shop",
    "type": "shop",
    "supplier": "וטמרקט",
    "price_list_date": "2026-08",
-   "source_file": "sources/shop/vetmarket-shop-2026-08.xlsx",
-   "source_files": [
-    "sources/shop/vetmarket-shop-2026-08.xlsx"
-   ],
+   "source_file": null,
+   "source_files": [],
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 18,
+   "item_count": 15,
    "status": "current",
    "imported_at": "2026-08-26",
-   "notes": "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"
+   "notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור 123 אישורי הזמנה (09/2023–08/2026) — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
   },
   {
    "action": "ok",
