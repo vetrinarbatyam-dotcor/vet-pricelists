@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=16">
+<link rel="stylesheet" href="style.css?v=17">
 </head>
 <body>
 
@@ -19,6 +19,7 @@
     <img src="claudevet-wordmark.svg" alt="ClaudeVet" class="gate-logo">
     <h1>המחירון הווטרינרי הפתוח</h1>
     <p>מחירוני מזון, תרופות, מעבדות ומוצרי חנות — במקום אחד, לווטרינרים. הזינו את קוד הגישה שקיבלתם.</p>
+    <p class="gate-privacy">🔒 התמחור שתזינו נשמר <b>בדפדפן שלכם בלבד</b> ולא נשלח לשום שרת — גם לא שלנו.</p>
     <form id="gateForm" autocomplete="off">
       <label for="gateCode" class="sr-only">קוד גישה</label>
       <input id="gateCode" type="text" placeholder="קוד גישה" required>
@@ -103,8 +104,16 @@
 <main id="settings" hidden class="page">
   <div class="page-head">
     <h1>⚙️ הגדרות תמחור</h1>
-    <p>כאן קובעים איך נגזר <b>מחירון המרפאה</b> מכל מחירון ספק. הכל נשמר בדפדפן שלכם בלבד ואינו נשלח לשום מקום.</p>
+    <p>כאן קובעים איך נגזר <b>מחירון המרפאה</b> מכל מחירון ספק.</p>
   </div>
+  <section class="privacy">
+    <h2>🔒 התמחור שלכם נשאר אצלכם — ולא מגיע לאף אחד</h2>
+    <ul>
+      <li><b>נשמר בדפדפן שלכם בלבד.</b> ההנחות, המרווחים והמחירים שתזינו נשמרים במחשב שלכם (localStorage) ואינם נשלחים לשום שרת — גם לא שלנו.</li>
+      <li><b>אין לנו איפה לשמור אותם.</b> האתר סטטי לחלוטין: אין בסיס נתונים, אין חשבונות, אין אנליטיקס. אין לנו שום דרך לראות אילו הנחות אתם מקבלים או באיזה מחיר אתם מוכרים — גם אם נרצה.</li>
+      <li><b>מה שכן צריך לדעת:</b> בגלל שהכל מקומי, ניקוי הדפדפן או מעבר למחשב אחר ימחק את ההגדרות. שמרו לעצמכם גיבוי מדי פעם בעזרת <b>⬇ ייצוא הגדרות</b>.</li>
+    </ul>
+  </section>
 
   <section class="box">
     <h2>ברירת מחדל לכל סקציה</h2>
@@ -152,6 +161,14 @@
     <h1>🧮 מחשבון תמחור</h1>
     <p>מחשבון מהיר לצוות המרפאה: מזינים מחיר קנייה, הנחה ומרווח — ומקבלים מחיר ללקוח, רווח ואחוז רווח. אפשר גם ללכת אחורה ממחיר מכירה רצוי.</p>
   </div>
+  <section class="privacy">
+    <h2>🔒 התמחור שלכם נשאר אצלכם — ולא מגיע לאף אחד</h2>
+    <ul>
+      <li><b>נשמר בדפדפן שלכם בלבד.</b> ההנחות, המרווחים והמחירים שתזינו נשמרים במחשב שלכם (localStorage) ואינם נשלחים לשום שרת — גם לא שלנו.</li>
+      <li><b>אין לנו איפה לשמור אותם.</b> האתר סטטי לחלוטין: אין בסיס נתונים, אין חשבונות, אין אנליטיקס. אין לנו שום דרך לראות אילו הנחות אתם מקבלים או באיזה מחיר אתם מוכרים — גם אם נרצה.</li>
+      <li><b>מה שכן צריך לדעת:</b> בגלל שהכל מקומי, ניקוי הדפדפן או מעבר למחשב אחר ימחק את ההגדרות. שמרו לעצמכם גיבוי מדי פעם בעזרת <b>⬇ ייצוא הגדרות</b>.</li>
+    </ul>
+  </section>
   <div class="calc-wrap">
     <section class="box">
       <h2>הנתונים</h2>
@@ -222,6 +239,7 @@
 </main>
 
 <footer>
+  <span class="foot-privacy">🔒 <b>פרטיות:</b> ההנחות והמרווחים שתזינו נשמרים בדפדפן שלכם בלבד. האתר סטטי — אין בסיס נתונים, אין חשבונות, אין אנליטיקס, ושום נתון תמחור אינו נשלח לשום שרת.</span>
   <span>מוגש חינם ע"י <b>ד"ר גיל קרן</b> · <a href="https://claudevet.com" target="_blank" rel="noopener">ClaudeVet</a> — כלים לווטרינרים</span>
   <span>המחירים הם מחירי מחירון רשמיים כפי שפורסמו ע"י הספקים, בתאריך המצוין. אינם מחירי קנייה בפועל.</span>
   <span class="marks">

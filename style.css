@@ -260,3 +260,14 @@ footer .marks .inv{font-style:normal;font-weight:700}
 footer .marks .inv.internal{color:var(--crit)}
 footer .marks .inv.invoices{color:var(--copper)}
 footer .marks b{color:var(--crit)}
+
+/* ---------- privacy statement: shown where a vet is about to type their own numbers ---------- */
+.privacy{border:2px solid var(--teal);border-radius:10px;background:var(--teal-soft);
+  padding:16px 20px;margin:16px 0 6px}
+.privacy h2{font-family:"Frank Ruhl Libre",Georgia,serif;font-size:19px;color:var(--teal);margin:0 0 8px}
+.privacy ul{margin:0;padding-inline-start:20px}
+.privacy li{margin:5px 0;font-size:14.5px}
+.privacy li b{color:var(--teal)}
+.gate-privacy{font-size:13.5px;color:var(--teal);background:var(--teal-soft);
+  border-radius:8px;padding:9px 12px;margin:0 0 16px}
+.foot-privacy{color:var(--teal);font-weight:500}
