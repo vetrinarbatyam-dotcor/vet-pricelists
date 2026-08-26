@@ -1,0 +1,1211 @@
+{
+"meta": {
+"slug": "aml",
+"type": "labs",
+"supplier": "AML",
+"price_list_date": "2026-06",
+"source_file": "sources/labs/aml-2026-06.pdf",
+"vat_basis": "with_vat",
+"vat_rate": 18,
+"item_count": 123,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "בתוקף מ-1.6.2026"
+},
+"items": [
+{
+"name": "פאנל כללי",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 322.03,
+"price_with_vat": 380.0,
+"sku": "1001",
+"notes": "סרום/הפרין+EDTA · CBC, Creatinine, Calcium, Phosphorus, Urea, Glucose, Bilirubin, Protein, Albumin, Globulin, Cholesterol, Alk' phosphatase, SGOT, SGPT, Amylase, Sodium, Potassium, Chloride, Trig.",
+"id": "aml-1"
+},
+{
+"name": "פאנל כללי חוזר",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 288.14,
+"price_with_vat": 340.01,
+"sku": "1001",
+"notes": "בדיקה חוזרת במהלך השבועיים",
+"id": "aml-2"
+},
+{
+"name": "פאנל כימיה בלבד",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "1002",
+"notes": "סרום/הפרין · פאנל כללי ללא ספירה",
+"id": "aml-3"
+},
+{
+"name": "אלקטרוליטים",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 177.97,
+"price_with_vat": 210.0,
+"sku": "1850",
+"notes": "Sodium, Potassium, Chloride",
+"id": "aml-4"
+},
+{
+"name": "ברזל",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 152.54,
+"price_with_vat": 180.0,
+"sku": "233",
+"notes": "סרום/הפרין · Iron",
+"id": "aml-5"
+},
+{
+"name": "כימיה אחת",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 118.64,
+"price_with_vat": 140.0,
+"notes": "סרום/הפרין (גלוקוז במבחנה עם פקק אפור)",
+"id": "aml-6"
+},
+{
+"name": "תוספת כימיה אחת ל-CBC",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 33.9,
+"price_with_vat": 40.0,
+"notes": "סרום/הפרין",
+"id": "aml-7"
+},
+{
+"name": "פאנל סוסים",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 322.03,
+"price_with_vat": 380.0,
+"sku": "1003",
+"notes": "כולל CPK+LDH · CBC, Creatinine, Calcium, Phosphorus, Urea, Glucose, Bilirubin, Protein, Albumin, Globulin, Cholesterol, Alk' phosphatase, SGOT, GGT, CPK, Sodium, Potassium, Chloride, Trig.",
+"id": "aml-8"
+},
+{
+"name": "פאנל מקוצר",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 288.14,
+"price_with_vat": 340.01,
+"sku": "1007",
+"notes": "CBC, Creatinine, Calcium, Phosphorus, Urea, Glucose, Protein, Albumin, Globulin, Alk' phosphatase, SGPT",
+"id": "aml-9"
+},
+{
+"name": "פאנל מורחב",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 406.78,
+"price_with_vat": 480.0,
+"sku": "1112",
+"notes": "פאנל כללי + שתן כללית (UA)",
+"id": "aml-10"
+},
+{
+"name": "מיני פאנל",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"sku": "1070",
+"notes": "CBC, Creatinine, Alk' phosphatase, SGPT",
+"id": "aml-11"
+},
+{
+"name": "כימיה כליות",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 228.81,
+"price_with_vat": 270.0,
+"sku": "1114",
+"notes": "Creatinine, Urea, Protein, Albumin, Sodium, Potassium, Chloride, Phosphorous",
+"id": "aml-12"
+},
+{
+"name": "פאנל כליות",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "1113",
+"notes": "CBC, Creatinine, Urea, Protein, Albumin, Sodium, Potassium, Chloride, Phosphorous",
+"id": "aml-13"
+},
+{
+"name": "כימיה כבד",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 228.81,
+"price_with_vat": 270.0,
+"sku": "1115",
+"notes": "Protein, Albumin, Cholesterol, Alk' phosphatase, SGPT, GGT, Bilirubin",
+"id": "aml-14"
+},
+{
+"name": "פאנל כבד",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "1116",
+"notes": "CBC, Protein, Albumin, Cholesterol, Alk' phosphatase, SGPT, GGT, Bilirubin",
+"id": "aml-15"
+},
+{
+"name": "פאנל חתולים",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 593.22,
+"price_with_vat": 700.0,
+"sku": "1120",
+"notes": "פאנל כללי + FeLV + FIP + FIV",
+"id": "aml-16"
+},
+{
+"name": "פאנל כללי + 2 סרולוגיות",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 559.32,
+"price_with_vat": 660.0,
+"id": "aml-17"
+},
+{
+"name": "פאנל ארליכיה",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 313.56,
+"price_with_vat": 370.0,
+"sku": "1122",
+"notes": "EDTA · CBC, Ehrlichia titer",
+"id": "aml-18"
+},
+{
+"name": "פאנל כללי + ארליכיה",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 440.68,
+"price_with_vat": 520.0,
+"sku": "1085",
+"notes": "סרום/הפרין + EDTA",
+"id": "aml-19"
+},
+{
+"name": "פאנל דימום",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 423.73,
+"price_with_vat": 500.0,
+"sku": "1121",
+"notes": "סרום/הפרין + ציטרט + EDTA · CBC, PT, PTT, Ehrlichia titer",
+"id": "aml-20"
+},
+{
+"name": "פאנל עם הורמון",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 491.53,
+"price_with_vat": 580.01,
+"sku": "1072",
+"notes": "פאנל כללי + הורמון · סרום/הפרין",
+"id": "aml-21"
+},
+{
+"name": "פאנל עם שני הורמונים",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 584.75,
+"price_with_vat": 690.01,
+"sku": "1076",
+"notes": "פאנל כללי + שני הורמונים · סרום/הפרין",
+"id": "aml-22"
+},
+{
+"name": "כימיה + הורמון",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 449.15,
+"price_with_vat": 530.0,
+"notes": "סרום/הפרין",
+"id": "aml-23"
+},
+{
+"name": "כימיה + שני הורמונים",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 542.37,
+"price_with_vat": 640.0,
+"notes": "סרום/הפרין",
+"id": "aml-24"
+},
+{
+"name": "פאנל כללי + B12 + ח. פולית",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 533.9,
+"price_with_vat": 630.0,
+"notes": "סרום/הפרין + EDTA",
+"id": "aml-25"
+},
+{
+"name": "פאנל + CTLI",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 533.9,
+"price_with_vat": 630.0,
+"notes": "סרום/הפרין + EDTA",
+"id": "aml-26"
+},
+{
+"name": "פאנל כללי + B12 + ח.פולית + CTLI",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 677.97,
+"price_with_vat": 800.0,
+"notes": "סרום/הפרין + EDTA",
+"id": "aml-27"
+},
+{
+"name": "ספירת דם ללא מבדלת",
+"category": "ספירת דם",
+"topic": "hematology",
+"price_no_vat": 161.02,
+"price_with_vat": 190.0,
+"sku": "1110",
+"notes": "EDTA · Blood Count",
+"id": "aml-28"
+},
+{
+"name": "CBC ספירת דם ומבדלת + הערכת משטח",
+"category": "ספירת דם",
+"topic": "hematology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "1100",
+"notes": "EDTA · Blood Count + Differential",
+"id": "aml-29"
+},
+{
+"name": "תפקודי קרישה",
+"category": "ספירת דם",
+"topic": "hematology",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"sku": "1030",
+"notes": "ציטרט · PT, PTT",
+"id": "aml-30"
+},
+{
+"name": "תפקודי קרישה בנוסף לפאנל כללי",
+"category": "ספירת דם",
+"topic": "hematology",
+"price_no_vat": 466.1,
+"price_with_vat": 550.0,
+"notes": "סרום/הפרין + ציטרט · CBC, differential, Chemistry, PT, PTT",
+"id": "aml-31"
+},
+{
+"name": "תפקודי קרישה בנוסף ל-CBC והערכת משטח",
+"category": "ספירת דם",
+"topic": "hematology",
+"price_no_vat": 338.98,
+"price_with_vat": 400.0,
+"sku": "1031",
+"notes": "ציטרט + EDTA · Blood Count + Differential + PT, PTT",
+"id": "aml-32"
+},
+{
+"name": "ספירה מבדלת בלבד עם הערכת משטח",
+"category": "ספירת דם",
+"topic": "hematology",
+"price_no_vat": 161.02,
+"price_with_vat": 190.0,
+"sku": "1118",
+"notes": "EDTA · הערכת משטח",
+"id": "aml-33"
+},
+{
+"name": "דיגוקסין",
+"category": "רמת תרופות בדם",
+"topic": "drugs",
+"price_no_vat": 330.51,
+"price_with_vat": 390.0,
+"sku": "601",
+"notes": "סרום/הפרין · Digoxin",
+"id": "aml-34"
+},
+{
+"name": "פנוברביטל",
+"category": "רמת תרופות בדם",
+"topic": "drugs",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "608",
+"notes": "סרום/הפרין · Phenobarbitol",
+"id": "aml-35"
+},
+{
+"name": "אשלגן ברומיד**",
+"category": "רמת תרופות בדם",
+"topic": "drugs",
+"price_no_vat": 542.37,
+"price_with_vat": 640.0,
+"sku": "1069",
+"notes": "סרום/הפרין · KBr · נשלח לחו\"ל",
+"id": "aml-36"
+},
+{
+"name": "אשלגן ברומיד + פנוברביטל**",
+"category": "רמת תרופות בדם",
+"topic": "drugs",
+"price_no_vat": 720.34,
+"price_with_vat": 850.0,
+"notes": "סרום/הפרין · Phenobarbitol + KBr · נשלח לחו\"ל",
+"id": "aml-37"
+},
+{
+"name": "ציקלוספורין",
+"category": "רמת תרופות בדם",
+"topic": "drugs",
+"price_no_vat": 330.51,
+"price_with_vat": 390.0,
+"sku": "650",
+"notes": "EDTA · Cyclosporin",
+"id": "aml-38"
+},
+{
+"name": "קפרה*",
+"category": "רמת תרופות בדם",
+"topic": "drugs",
+"price_no_vat": 449.15,
+"price_with_vat": 530.0,
+"sku": "606",
+"notes": "סרום/הפרין · Keppra · נשלח למעבדה חיצונית בארץ",
+"id": "aml-39"
+},
+{
+"name": "פרוקטוזאמין",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 211.86,
+"price_with_vat": 249.99,
+"sku": "643",
+"notes": "סרום/הפרין · Fructosamine",
+"id": "aml-40"
+},
+{
+"name": "C. TLI",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "1021",
+"notes": "Canine Trypsin Like Immuno-reactivity",
+"id": "aml-41"
+},
+{
+"name": "fTLI + Folic acid & B12**",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 635.59,
+"price_with_vat": 750.0,
+"notes": "Feline Trypsin Like Immuno-reactivity · נשלח לחו\"ל",
+"id": "aml-42"
+},
+{
+"name": "fTLI",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 550.85,
+"price_with_vat": 650.0,
+"sku": "1022",
+"id": "aml-43"
+},
+{
+"name": "Texas 4 - כלב",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 745.76,
+"price_with_vat": 880.0,
+"notes": "TLI + PLI + Folic acid + B12",
+"id": "aml-44"
+},
+{
+"name": "כולינאסטראז*",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 330.51,
+"price_with_vat": 390.0,
+"sku": "619",
+"notes": "סרום/הפרין · Cholinesterase · נשלח למעבדה חיצונית בארץ",
+"id": "aml-45"
+},
+{
+"name": "B12 + Folic acid",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "1066",
+"notes": "סרום/הפרין · VitB12 + Folic Acid",
+"id": "aml-46"
+},
+{
+"name": "PEP*",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 330.51,
+"price_with_vat": 390.0,
+"sku": "1054",
+"notes": "סרום/הפרין · Protein Electrophoresis · נשלח למעבדה חיצונית בארץ",
+"id": "aml-47"
+},
+{
+"name": "ANA**",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 559.32,
+"price_with_vat": 660.0,
+"sku": "1503",
+"notes": "סרום/הפרין · Anti Nuclear Antibodies · נשלח לחו\"ל",
+"id": "aml-48"
+},
+{
+"name": "ProBnp לחתול",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 237.29,
+"price_with_vat": 280.0,
+"sku": "1506",
+"notes": "EDTA/סרום/הפרין · ProBnp",
+"id": "aml-49"
+},
+{
+"name": "MDR-1*",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 449.15,
+"price_with_vat": 530.0,
+"sku": "1171",
+"notes": "EDTA · Multi drug resistance gene · נשלח למעבדה חיצונית בארץ",
+"id": "aml-50"
+},
+{
+"name": "Cpli-DGGR",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1656",
+"notes": "סרום/הפרין · Canine Pancreatic Lipase",
+"id": "aml-51"
+},
+{
+"name": "Fpli-DGGR",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1657",
+"notes": "סרום/הפרין · Feline Pancreatic Lipase",
+"id": "aml-52"
+},
+{
+"name": "Vit.B12 + Folic acid + CTLI",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 491.53,
+"price_with_vat": 580.01,
+"notes": "סרום/הפרין",
+"id": "aml-53"
+},
+{
+"name": "מיאסטניה גרביס**",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 830.51,
+"price_with_vat": 980.0,
+"sku": "597",
+"notes": "סרום/הפרין · Acetylcholine receptor antibody · נשלח לחו\"ל",
+"id": "aml-54"
+},
+{
+"name": "2M antibody - mmm**",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 830.51,
+"price_with_vat": 980.0,
+"sku": "600",
+"notes": "סרום/הפרין · Masticatory Muscle myositis · נשלח לחו\"ל",
+"id": "aml-55"
+},
+{
+"name": "חומצות מרה",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 288.14,
+"price_with_vat": 340.01,
+"sku": "585",
+"notes": "סרום/הפרין · Bile Acid · 340/280 (זוג/בודד)",
+"id": "aml-56"
+},
+{
+"name": "קומבס לכלב",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 288.14,
+"price_with_vat": 340.01,
+"sku": "1501",
+"notes": "EDTA · Canine Coombs",
+"id": "aml-57"
+},
+{
+"name": "SDMA",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 211.86,
+"price_with_vat": 249.99,
+"sku": "301",
+"notes": "סרום/הפרין · SDMA · 190 בתוספת לפאנל",
+"id": "aml-58"
+},
+{
+"name": "CRP כלב",
+"category": "בדיקות מיוחדות",
+"topic": "other",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "4070",
+"notes": "סרום/הפרין · C-Reactive Protein · 250 בתוספת לפאנל",
+"id": "aml-59"
+},
+{
+"name": "תרבית + רגישות",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 288.14,
+"price_with_vat": 340.01,
+"sku": "1040",
+"notes": "סווב · Culture & Sensitivity",
+"id": "aml-60"
+},
+{
+"name": "תרבית לפטריות",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"sku": "1045",
+"notes": "מבחנה ריקה, כוס סטרילית · Fungal Culture",
+"id": "aml-61"
+},
+{
+"name": "בדיקת שתן כללית (סטיק ומיקרוסקופיה)",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "1014",
+"notes": "כוס שתן · Urine Analysis – stick + microscopy",
+"id": "aml-62"
+},
+{
+"name": "בדיקת שתן כללית + תרבית ורגישות",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 305.08,
+"price_with_vat": 359.99,
+"sku": "1011",
+"notes": "כוס שתן סטרילית · UA + Culture & Sensitivity",
+"id": "aml-63"
+},
+{
+"name": "תרבית שתן",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"sku": "1311",
+"notes": "כוס שתן סטרילית · Urine Culture + Sensitivity",
+"id": "aml-64"
+},
+{
+"name": "יחס חלבון/קריאטינין בשתן",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 211.86,
+"price_with_vat": 249.99,
+"sku": "1019",
+"notes": "כוס שתן סטרילית",
+"id": "aml-65"
+},
+{
+"name": "תרבית צואה",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 288.14,
+"price_with_vat": 340.01,
+"notes": "כלי נקי · Stool C & S",
+"id": "aml-66"
+},
+{
+"name": "צואה לפרזיטים בהצפה",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 169.49,
+"price_with_vat": 200.0,
+"sku": "343",
+"notes": "כלי נקי · Stool Parasites",
+"id": "aml-67"
+},
+{
+"name": "בדיקת צואה לפרזיטים + תרבית",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "1341",
+"notes": "כלי נקי · Stool Parasites + C & S",
+"id": "aml-68"
+},
+{
+"name": "תרבית כפולה",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 466.1,
+"price_with_vat": 550.0,
+"notes": "2 סוובים",
+"id": "aml-69"
+},
+{
+"name": "תרבית מ-3 מקומות",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 644.07,
+"price_with_vat": 760.0,
+"id": "aml-70"
+},
+{
+"name": "אבן מדרכי השתן*",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 288.14,
+"price_with_vat": 340.01,
+"sku": "285",
+"notes": "כלי נקי · Urine Stone Analysis · נשלח למעבדה חיצונית בארץ",
+"id": "aml-71"
+},
+{
+"name": "בדיקת צואה לספירוצרקה*",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1600",
+"notes": "כלי נקי · Spirocerca Lupi · נשלח למעבדה חיצונית בארץ",
+"id": "aml-72"
+},
+{
+"name": "בדיקת צואה כללית + ספירוצרקה*",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 423.73,
+"price_with_vat": 500.0,
+"sku": "1630",
+"notes": "כלי נקי · נשלח למעבדה חיצונית בארץ",
+"id": "aml-73"
+},
+{
+"name": "תרבית דם",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 389.83,
+"price_with_vat": 460.0,
+"notes": "יש להצטייד בבקבוקים הייעודיים",
+"id": "aml-74"
+},
+{
+"name": "צואה לבדיקת דיסביוזיס",
+"category": "תרביות",
+"topic": "culture",
+"price_no_vat": 677.97,
+"price_with_vat": 800.0,
+"notes": "נשלח לארה\"ב",
+"id": "aml-75"
+},
+{
+"name": "FeLV",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "1055",
+"notes": "EDTA/סרום/הפרין · Feline Leukemia",
+"id": "aml-76"
+},
+{
+"name": "FIV",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "4442",
+"notes": "EDTA/סרום/הפרין",
+"id": "aml-77"
+},
+{
+"name": "FIP",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "1062",
+"notes": "EDTA/סרום/הפרין",
+"id": "aml-78"
+},
+{
+"name": "FIV+FeLV",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 313.56,
+"price_with_vat": 370.0,
+"sku": "4441",
+"notes": "EDTA/סרום/הפרין",
+"id": "aml-79"
+},
+{
+"name": "FIP+FIV+FeLV",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 432.2,
+"price_with_vat": 510.0,
+"sku": "4443",
+"notes": "EDTA/סרום/הפרין · FIV+FeLV+FIP",
+"id": "aml-80"
+},
+{
+"name": "FIV+FIP",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 313.56,
+"price_with_vat": 370.0,
+"sku": "4445",
+"notes": "EDTA/סרום/הפרין",
+"id": "aml-81"
+},
+{
+"name": "כלבלבת + פרוו",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "1080",
+"notes": "EDTA/סרום/הפרין · Parvo + Distemper",
+"id": "aml-82"
+},
+{
+"name": "ארליכיה",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "1083",
+"notes": "EDTA/סרום/הפרין · Ehrlichia",
+"id": "aml-83"
+},
+{
+"name": "לישמניה",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "584",
+"notes": "EDTA/סרום/הפרין · Canine Leishmania",
+"id": "aml-84"
+},
+{
+"name": "טוקסופלסמה בחתולים",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "1006",
+"notes": "EDTA/סרום/הפרין · Toxoplasma",
+"id": "aml-85"
+},
+{
+"name": "פרוו בצואה",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"sku": "1606",
+"notes": "כלי נקי · Stool Parvo",
+"id": "aml-86"
+},
+{
+"name": "Canine Vaccicheck",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 237.29,
+"price_with_vat": 280.0,
+"sku": "587",
+"notes": "EDTA/סרום/הפרין · פרוו+כלבלבת+הפטיטיס",
+"id": "aml-87"
+},
+{
+"name": "Fungal Profile**",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 703.39,
+"price_with_vat": 830.0,
+"sku": "1180",
+"notes": "סרום/הפרין · Aspergillus, Blastomyces, Coccidioides, Histoplasma · 1050 בתוספת Cryptococcus Ag · נשלח לחו\"ל",
+"id": "aml-88"
+},
+{
+"name": "Cryptococcal antigen**",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 635.59,
+"price_with_vat": 750.0,
+"sku": "1023",
+"notes": "סרום/הפרין · נשלח לחו\"ל",
+"id": "aml-89"
+},
+{
+"name": "Neospora + Toxoplasma*",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 313.56,
+"price_with_vat": 370.0,
+"sku": "2002+1505",
+"notes": "סרום/הפרין · במכון · נשלח למעבדה חיצונית בארץ",
+"id": "aml-90"
+},
+{
+"name": "Toxoplasma or Neospora*",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"notes": "סרום/הפרין · במכון · נשלח למעבדה חיצונית בארץ",
+"id": "aml-91"
+},
+{
+"name": "לפטוספירוזיס",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 237.29,
+"price_with_vat": 280.0,
+"sku": "1966",
+"notes": "סרום/הפרין · Leptospirosis",
+"id": "aml-92"
+},
+{
+"name": "סרולוגיה לברוצלה",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 194.92,
+"price_with_vat": 230.01,
+"notes": "יש למלא הטופס הרלוונטי באתר המכון הווטרינרי ולשלוח יחד עם המבחנה",
+"id": "aml-93"
+},
+{
+"name": "Serum Amyloid A - SAA",
+"category": "סרולוגיה",
+"topic": "serology",
+"price_no_vat": 271.19,
+"price_with_vat": 320.0,
+"notes": "בחתולים וסוסים",
+"id": "aml-94"
+},
+{
+"name": "ארליכיה קאניס",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"notes": "EDTA",
+"id": "aml-95"
+},
+{
+"name": "אנאפלאזמה פלאטיס",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"notes": "EDTA",
+"id": "aml-96"
+},
+{
+"name": "בבזיה spp",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"notes": "EDTA",
+"id": "aml-97"
+},
+{
+"name": "לשמניה",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"notes": "מטוש יבש מהלחמית",
+"id": "aml-98"
+},
+{
+"name": "לישמניה PCR + סרולוגיה",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 372.88,
+"price_with_vat": 440.0,
+"notes": "מטוש יבש מהלחמית + סרום/הפרין",
+"id": "aml-99"
+},
+{
+"name": "מיקופלסמה המופליס",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"notes": "EDTA",
+"id": "aml-100"
+},
+{
+"name": "לפטוספירה",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"notes": "דם במבחנת EDTA + דגימת שתן בכוסית",
+"id": "aml-101"
+},
+{
+"name": "פרוו/פאנלאוקופניה",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 262.71,
+"price_with_vat": 310.0,
+"notes": "EDTA",
+"id": "aml-102"
+},
+{
+"name": "PCR - שני פתוגנים",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 432.2,
+"price_with_vat": 510.0,
+"id": "aml-103"
+},
+{
+"name": "פאנל טפילי דם",
+"category": "PCR",
+"topic": "pcr",
+"price_no_vat": 593.22,
+"price_with_vat": 700.0,
+"notes": "EDTA · בבזיה + ארליכיה קאניס + אנאפלזמה פלאטיס + הפטוזון",
+"id": "aml-104"
+},
+{
+"name": "TT4",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1049",
+"notes": "סרום/הפרין · Total T4",
+"id": "aml-105"
+},
+{
+"name": "TSH",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1150",
+"notes": "סרום/הפרין · cTSH",
+"id": "aml-106"
+},
+{
+"name": "FT4",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1050",
+"notes": "סרום/הפרין · Free T4",
+"id": "aml-107"
+},
+{
+"name": "פאנל תיירואיד",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 406.78,
+"price_with_vat": 480.0,
+"sku": "1078",
+"notes": "סרום/הפרין · T4, TSH, Cholesterol",
+"id": "aml-108"
+},
+{
+"name": "פאנל תיירואיד מורחב**",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 754.24,
+"price_with_vat": 890.0,
+"sku": "10010",
+"notes": "סרום/הפרין · cTSH, T3, T4, fT4, Thyroglobulin AA, fT3, T3 AA, T4 AA · נשלח לחו\"ל",
+"id": "aml-109"
+},
+{
+"name": "קורטיזול",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1053",
+"notes": "סרום/הפרין · Cortisol",
+"id": "aml-110"
+},
+{
+"name": "קורטיזול X2",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 372.88,
+"price_with_vat": 440.0,
+"sku": "1302",
+"notes": "סרום/הפרין · ACTH Stimulation test",
+"id": "aml-111"
+},
+{
+"name": "קורטיזול X2 (מעקב)",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 330.51,
+"price_with_vat": 390.0,
+"notes": "סרום/הפרין · מעקב לאחר טיפול",
+"id": "aml-112"
+},
+{
+"name": "קורטיזול X3",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 466.1,
+"price_with_vat": 550.0,
+"sku": "1303",
+"notes": "סרום/הפרין · Dexamethasone suppression test",
+"id": "aml-113"
+},
+{
+"name": "fT4 + TSH",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 372.88,
+"price_with_vat": 440.0,
+"sku": "1071",
+"notes": "סרום/הפרין · Free T4 + cTSH",
+"id": "aml-114"
+},
+{
+"name": "פרוגסטרון",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1008",
+"notes": "סרום/הפרין · Progesterone",
+"id": "aml-115"
+},
+{
+"name": "טסטוסטרון",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "1057",
+"notes": "סרום/הפרין · Testosterone",
+"id": "aml-116"
+},
+{
+"name": "אסטרוגן",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 279.66,
+"price_with_vat": 330.0,
+"sku": "1061",
+"notes": "סרום/הפרין · Estrogene",
+"id": "aml-117"
+},
+{
+"name": "LH",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 296.61,
+"price_with_vat": 350.0,
+"sku": "582",
+"notes": "סרום בלבד · LH",
+"id": "aml-118"
+},
+{
+"name": "אינסולין**",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 415.25,
+"price_with_vat": 490.0,
+"sku": "580",
+"notes": "סרום/הפרין · Insulin · נשלח לחו\"ל",
+"id": "aml-119"
+},
+{
+"name": "יחס קורטיזול/קראטינין בשתן*",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 237.29,
+"price_with_vat": 280.0,
+"sku": "539+2619",
+"notes": "כוס שתן · Urine Cortisol/Creatinine Ratio · נשלח למעבדה חיצונית בארץ",
+"id": "aml-120"
+},
+{
+"name": "היסטופתולוגיה",
+"category": "פתולוגיה",
+"topic": "pathology",
+"price_no_vat": 381.36,
+"price_with_vat": 450.0,
+"sku": "1502",
+"notes": "עבור סלייד היסטולוגי · +200 עבור כל סלייד נוסף",
+"id": "aml-121"
+},
+{
+"name": "ציטולוגיה",
+"category": "פתולוגיה",
+"topic": "pathology",
+"price_no_vat": 254.24,
+"price_with_vat": 300.0,
+"sku": "1099",
+"notes": "משטח מיובש באוויר · Cytology · עד שני מקומות · +110 לכל מקום נוסף · מומלץ לדגום עד 5 סליידים למקום",
+"id": "aml-122"
+},
+{
+"name": "אנליזת נוזלי גוף",
+"category": "פתולוגיה",
+"topic": "pathology",
+"price_no_vat": 296.61,
+"price_with_vat": 350.0,
+"sku": "1075",
+"notes": "מבחנה עם פקק סגול · Fluid Analysis",
+"id": "aml-123"
+}
+]
+}

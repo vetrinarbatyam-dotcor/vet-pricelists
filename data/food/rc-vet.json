@@ -1,0 +1,1147 @@
+{
+"meta": {
+"slug": "rc-vet",
+"type": "food",
+"supplier": "Royal Canin VET",
+"price_list_date": null,
+"source_file": null,
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 113,
+"status": "missing_source",
+"imported_at": "2026-08-26",
+"notes": "מקור התאריך לא מתועד"
+},
+"items": [
+{
+"name": "ריקברי נוזלי חתול",
+"category": "התאוששות",
+"topic": "nutrition",
+"price_no_vat": 85.0,
+"price_with_vat": 100.3,
+"animal": "חתול",
+"unit": "0.6L",
+"id": "rc-vet-1"
+},
+{
+"name": "גסטרואינטסטינל דל שומן נוזל",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 85.0,
+"price_with_vat": 100.3,
+"animal": "חתול",
+"unit": "0.6L",
+"id": "rc-vet-2"
+},
+{
+"name": "גסטרואינטסטינל היי אנרגי נוזל",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 85.0,
+"price_with_vat": 100.3,
+"animal": "חתול",
+"unit": "0.6L",
+"id": "rc-vet-3"
+},
+{
+"name": "רינאל נוזלי חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 85.0,
+"price_with_vat": 100.3,
+"animal": "חתול",
+"unit": "0.6L",
+"id": "rc-vet-4"
+},
+{
+"name": "תחליף חלב לגורי חתול",
+"category": "תחליף חלב",
+"topic": "nutrition",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "חתול",
+"unit": "0.3 ק\"ג",
+"id": "rc-vet-5"
+},
+{
+"name": "ארלי רינאל חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 165.0,
+"price_with_vat": 194.7,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-6"
+},
+{
+"name": "רינאל חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-7"
+},
+{
+"name": "רינאל חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-vet-8"
+},
+{
+"name": "רינאל ספיישל חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-9"
+},
+{
+"name": "רינאל ספיישל חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-vet-10"
+},
+{
+"name": "רינאל סלקט חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-11"
+},
+{
+"name": "רינאל סלקט חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-vet-12"
+},
+{
+"name": "מוביליטי חתול",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-13"
+},
+{
+"name": "סטיאטי חתול",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 169.0,
+"price_with_vat": 199.42,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-14"
+},
+{
+"name": "סטיאטי חתול",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 279.0,
+"price_with_vat": 329.22,
+"animal": "חתול",
+"unit": "6 ק\"ג",
+"id": "rc-vet-15"
+},
+{
+"name": "דיאבטיק חתול",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 169.0,
+"price_with_vat": 199.42,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-16"
+},
+{
+"name": "ניוטרד סטאיטי באלאנס חתול",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 155.0,
+"price_with_vat": 182.9,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-17"
+},
+{
+"name": "גסטרואינטסטינל קיטן חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-18"
+},
+{
+"name": "גסטרואינטסטינל חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-19"
+},
+{
+"name": "גסטרואינטסטינל חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 209.0,
+"price_with_vat": 246.62,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-vet-20"
+},
+{
+"name": "גסטרואינטסטינל מופחת קלוריות חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-21"
+},
+{
+"name": "גסטרואינטסטינל היירבול חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 215.0,
+"price_with_vat": 253.7,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-vet-22"
+},
+{
+"name": "גסטרואינטסטינל פייבר ריספונס חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-23"
+},
+{
+"name": "סנסטיביטי קונטרול חתול",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 169.0,
+"price_with_vat": 199.42,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-24"
+},
+{
+"name": "אנאלרג'ניק חתול",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 139.0,
+"price_with_vat": 164.02,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-vet-25"
+},
+{
+"name": "היפואלרגני חתול",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "חתול",
+"unit": "2.5 ק\"ג",
+"id": "rc-vet-26"
+},
+{
+"name": "היפואלרגני חתול",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 255.0,
+"price_with_vat": 300.9,
+"animal": "חתול",
+"unit": "4.5 ק\"ג",
+"id": "rc-vet-27"
+},
+{
+"name": "סקין&קואט חתול",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 155.0,
+"price_with_vat": 182.9,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-28"
+},
+{
+"name": "הפטיק חתול",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 209.0,
+"price_with_vat": 246.62,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-vet-29"
+},
+{
+"name": "יורינרי S/O חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 98.0,
+"price_with_vat": 115.64,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "rc-vet-30"
+},
+{
+"name": "יורינרי S/O חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 169.0,
+"price_with_vat": 199.42,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-31"
+},
+{
+"name": "יורינרי S/O חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 285.0,
+"price_with_vat": 336.3,
+"animal": "חתול",
+"unit": "7 ק\"ג",
+"id": "rc-vet-32"
+},
+{
+"name": "יורינרי S/O חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 345.0,
+"price_with_vat": 407.1,
+"animal": "חתול",
+"unit": "9 ק\"ג",
+"id": "rc-vet-33"
+},
+{
+"name": "דנטל חתול",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 149.0,
+"price_with_vat": 175.82,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "rc-vet-34"
+},
+{
+"name": "ריקברי חתול/כלב שימורים",
+"category": "התאוששות",
+"topic": "nutrition",
+"price_no_vat": 174.0,
+"price_with_vat": 205.32,
+"animal": "חתול/כלב",
+"unit": "12x195 גר'",
+"id": "rc-vet-35"
+},
+{
+"name": "גסטרואינטסטינל קיטן מוס",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 132.0,
+"price_with_vat": 155.76,
+"animal": "חתול",
+"unit": "12x195 גר'",
+"id": "rc-vet-36"
+},
+{
+"name": "גסטרואינטסטינל מופחת קלוריות פאוץ'",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-37"
+},
+{
+"name": "גסטרואינטסטינל חתול פאוץ'",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-38"
+},
+{
+"name": "גסטרואינטסטינל פייבר רספונס פאוץ'",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-39"
+},
+{
+"name": "רינאל עוף חתול פאוץ'",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-40"
+},
+{
+"name": "רינאל בקר חתול פאוץ'",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-41"
+},
+{
+"name": "רינאל דגים חתול פאוץ'",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-42"
+},
+{
+"name": "רינאל לואף חתול פאוץ'",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-43"
+},
+{
+"name": "ארלי רינאל חתול פאוץ'",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-44"
+},
+{
+"name": "סטיאטי חתול פאוץ'",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-45"
+},
+{
+"name": "סנסיטיביטי קונטרול חתול פאוץ'",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-46"
+},
+{
+"name": "דיאבטיק חתול פאוץ'",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-47"
+},
+{
+"name": "יורינרי עוף לואף חתול פאוץ'",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-48"
+},
+{
+"name": "סקין&קואט חתול פאוץ'",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-vet-49"
+},
+{
+"name": "תחליף חלב לגורי כלב",
+"category": "תחליף חלב",
+"topic": "nutrition",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "0.4 ק\"ג",
+"id": "rc-vet-50"
+},
+{
+"name": "רינאל כלב גזע קטן",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 165.0,
+"price_with_vat": 194.7,
+"animal": "כלב",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-51"
+},
+{
+"name": "ארלי רינאל כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 259.0,
+"price_with_vat": 305.62,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "rc-vet-52"
+},
+{
+"name": "רינאל כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-53"
+},
+{
+"name": "רינאל כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "rc-vet-54"
+},
+{
+"name": "רינאל כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 489.0,
+"price_with_vat": 577.02,
+"animal": "כלב",
+"unit": "14 ק\"ג",
+"id": "rc-vet-55"
+},
+{
+"name": "רינאל ספיישל כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-56"
+},
+{
+"name": "רינאל סלקט כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-57"
+},
+{
+"name": "רינאל סלקט כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 389.0,
+"price_with_vat": 459.02,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "rc-vet-58"
+},
+{
+"name": "סטיאטי כלב גזע קטן",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 159.0,
+"price_with_vat": 187.62,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-vet-59"
+},
+{
+"name": "סטיאטי כלב גזע קטן",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 349.0,
+"price_with_vat": 411.82,
+"animal": "כלב",
+"unit": "8 ק\"ג",
+"id": "rc-vet-60"
+},
+{
+"name": "סטיאטי כלב",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 279.0,
+"price_with_vat": 329.22,
+"animal": "כלב",
+"unit": "6 ק\"ג",
+"id": "rc-vet-61"
+},
+{
+"name": "סטיאטי כלב",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 499.0,
+"price_with_vat": 588.82,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-vet-62"
+},
+{
+"name": "דיאבטיק כלב",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "rc-vet-63"
+},
+{
+"name": "דיאבטיק כלב",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 499.0,
+"price_with_vat": 588.82,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-vet-64"
+},
+{
+"name": "גסטרואינטסטינל פאפי כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 149.0,
+"price_with_vat": 175.82,
+"animal": "כלב",
+"unit": "2.5 ק\"ג",
+"id": "rc-vet-65"
+},
+{
+"name": "גסטרואינטסטינל פאפי כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 499.0,
+"price_with_vat": 588.82,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "rc-vet-66"
+},
+{
+"name": "גסטרואינטסטינל כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-67"
+},
+{
+"name": "גסטרואינטסטינל כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 299.0,
+"price_with_vat": 352.82,
+"animal": "כלב",
+"unit": "7.5 ק\"ג",
+"id": "rc-vet-68"
+},
+{
+"name": "גסטרואינטסטינל כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 459.0,
+"price_with_vat": 541.62,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-vet-69"
+},
+{
+"name": "גסטרואינטסטינל מופחת קלוריות כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-70"
+},
+{
+"name": "גסטרואינטסטינל דל שומן כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 279.0,
+"price_with_vat": 329.22,
+"animal": "כלב",
+"unit": "6 ק\"ג",
+"id": "rc-vet-71"
+},
+{
+"name": "גסטרואינטסטינל דל שומן כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 499.0,
+"price_with_vat": 588.82,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-vet-72"
+},
+{
+"name": "גסטרואינטסטינל דל שומן כלב גזע קטן",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 165.0,
+"price_with_vat": 194.7,
+"animal": "כלב",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-73"
+},
+{
+"name": "גסטרואינטסטינל היי פייבר כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-74"
+},
+{
+"name": "גסטרואינטסטינל היי פייבר כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "7.5 ק\"ג",
+"id": "rc-vet-75"
+},
+{
+"name": "הפאטיק כלב",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 279.0,
+"price_with_vat": 329.22,
+"animal": "כלב",
+"unit": "6 ק\"ג",
+"id": "rc-vet-76"
+},
+{
+"name": "הפאטיק כלב",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 499.0,
+"price_with_vat": 588.82,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-vet-77"
+},
+{
+"name": "יורינרי U/C כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 299.0,
+"price_with_vat": 352.82,
+"animal": "כלב",
+"unit": "7.5 ק\"ג",
+"id": "rc-vet-78"
+},
+{
+"name": "יורינרי S/O כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-79"
+},
+{
+"name": "יורינרי S/O כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 299.0,
+"price_with_vat": 352.82,
+"animal": "כלב",
+"unit": "7.5 ק\"ג",
+"id": "rc-vet-80"
+},
+{
+"name": "יורינרי S/O כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 459.0,
+"price_with_vat": 541.62,
+"animal": "כלב",
+"unit": "13 ק\"ג",
+"id": "rc-vet-81"
+},
+{
+"name": "יורינרי S/O כלב גזע קטן",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 209.0,
+"price_with_vat": 246.62,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-vet-82"
+},
+{
+"name": "אנאלרג'ניק כלב גזע קטן",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 99.0,
+"price_with_vat": 116.82,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-vet-83"
+},
+{
+"name": "אנאלרג'ניק כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 209.0,
+"price_with_vat": 246.62,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-vet-84"
+},
+{
+"name": "אנאלרג'ניק כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 489.0,
+"price_with_vat": 577.02,
+"animal": "כלב",
+"unit": "8 ק\"ג",
+"id": "rc-vet-85"
+},
+{
+"name": "היפואלרגני כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 121.0,
+"price_with_vat": 142.78,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-86"
+},
+{
+"name": "היפואלרגני כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "rc-vet-87"
+},
+{
+"name": "היפואלרגני כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 529.0,
+"price_with_vat": 624.22,
+"animal": "כלב",
+"unit": "14 ק\"ג",
+"id": "rc-vet-88"
+},
+{
+"name": "היפואלרגני כלב גזע קטן",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 69.0,
+"price_with_vat": 81.42,
+"animal": "כלב",
+"unit": "1 ק\"ג",
+"id": "rc-vet-89"
+},
+{
+"name": "היפואלרגני כלב גזע קטן",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 199.0,
+"price_with_vat": 234.82,
+"animal": "כלב",
+"unit": "3.5 ק\"ג",
+"id": "rc-vet-90"
+},
+{
+"name": "היפואלרגני מופחת קלוריות כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 349.0,
+"price_with_vat": 411.82,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "rc-vet-91"
+},
+{
+"name": "סקין קר כלב גזע קטן פאפי",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-92"
+},
+{
+"name": "סקין קר כלב גזע קטן",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 209.0,
+"price_with_vat": 246.62,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-vet-93"
+},
+{
+"name": "סקין טופיק כלב גזע קטן",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 209.0,
+"price_with_vat": 246.62,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-vet-94"
+},
+{
+"name": "סקין טופיק כלב",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "rc-vet-95"
+},
+{
+"name": "סנסטיביטי קונטרול כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-vet-96"
+},
+{
+"name": "סנסטיביטי קונטרול כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "rc-vet-97"
+},
+{
+"name": "סנסטיביטי קונטרול כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 479.0,
+"price_with_vat": 565.22,
+"animal": "כלב",
+"unit": "14 ק\"ג",
+"id": "rc-vet-98"
+},
+{
+"name": "מוביליטי כלב",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "rc-vet-99"
+},
+{
+"name": "מוביליטי כלב",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 419.0,
+"price_with_vat": 494.42,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-vet-100"
+},
+{
+"name": "קרדיאק כלב",
+"category": "לב",
+"topic": "cardio",
+"price_no_vat": 109.0,
+"price_with_vat": 128.62,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-101"
+},
+{
+"name": "קרדיאק כלב",
+"category": "לב",
+"topic": "cardio",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "7.5 ק\"ג",
+"id": "rc-vet-102"
+},
+{
+"name": "דנטל ספיישל כלב גזע קטן",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 99.0,
+"price_with_vat": 116.82,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-vet-103"
+},
+{
+"name": "גסטרואינטסטינל דל שומן שימורים",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x410 גר'",
+"id": "rc-vet-104"
+},
+{
+"name": "גסטרואינטסטינל כלב שימורים",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x400 גר'",
+"id": "rc-vet-105"
+},
+{
+"name": "גסטרואינטסטינל היי פייבר שימורים",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x410 גר'",
+"id": "rc-vet-106"
+},
+{
+"name": "הפאטיק כלב שימורים",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x420 גר'",
+"id": "rc-vet-107"
+},
+{
+"name": "רינאל לואף כלב שימורים",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x410 גר'",
+"id": "rc-vet-108"
+},
+{
+"name": "סטיאטי כלב שימורים",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x410 גר'",
+"id": "rc-vet-109"
+},
+{
+"name": "דיאבטיק דל פחמימות כלב שימורים",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x410 גר'",
+"id": "rc-vet-110"
+},
+{
+"name": "יורינרי כלב שימורים",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x410 גר'",
+"id": "rc-vet-111"
+},
+{
+"name": "היפואלרגני כלב שימורים",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x400 גר'",
+"id": "rc-vet-112"
+},
+{
+"name": "סנסטיביטי קונטרול ברווז כלב שימורים",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 214.0,
+"price_with_vat": 252.52,
+"animal": "כלב",
+"unit": "12x420 גר'",
+"id": "rc-vet-113"
+}
+]
+}

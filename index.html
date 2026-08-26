@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>VetPrices — המחירון הווטרינרי הפתוח · ClaudeVet</title>
+<link rel="icon" href="claudevet-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== soft gate ===== -->
+<section id="gate" class="gate" hidden>
+  <div class="gate-card">
+    <img src="claudevet-wordmark.svg" alt="ClaudeVet" class="gate-logo">
+    <h1>המחירון הווטרינרי הפתוח</h1>
+    <p>מחירוני מזון, תרופות, מוצרים ומעבדות — במקום אחד, לווטרינרים. הזינו את קוד הגישה שקיבלתם.</p>
+    <form id="gateForm" autocomplete="off">
+      <label for="gateCode" class="sr-only">קוד גישה</label>
+      <input id="gateCode" type="text" inputmode="text" placeholder="קוד גישה" required>
+      <button type="submit">כניסה</button>
+    </form>
+    <p id="gateErr" class="gate-err" hidden>הקוד לא נכון. בדקו את ההודעה שקיבלתם או פנו אלינו.</p>
+    <p class="gate-foot">אין לכם קוד? <a id="gateAsk" href="#">בקשו קוד גישה</a> · מוגש חינם ע"י ד"ר גיל קרן</p>
+  </div>
+</section>
+
+<!-- ===== app ===== -->
+<div id="app" hidden>
+<header class="top">
+  <div class="brand">
+    <img src="claudevet-wordmark.svg" alt="ClaudeVet" height="30">
+    <span class="product">VetPrices</span>
+  </div>
+  <nav class="tabs" id="tabs" aria-label="סוגי מחירונים">
+    <button data-type="medical">💊 מוצרים ותרופות</button>
+    <button data-type="food">🍖 מזון</button>
+    <button data-type="labs">🧪 מעבדות</button>
+  </nav>
+  <div class="top-actions">
+    <button id="statusBtn" class="ghost">📅 מצב המחירונים</button>
+    <button id="modeBtn" class="mode" aria-pressed="false">התמחור שלי</button>
+  </div>
+</header>
+
+<main>
+  <section class="controls">
+    <div class="row">
+      <input id="q" type="search" placeholder="חיפוש חופשי — שם פריט, מק״ט, חומר פעיל…" aria-label="חיפוש">
+      <div class="seg" role="group" aria-label="תצוגת מע״מ">
+        <button data-vat="incl" class="on">כולל מע״מ</button><button data-vat="excl">ללא מע״מ</button>
+      </div>
+      <div class="seg" role="group" aria-label="חיתוך">
+        <button data-view="supplier" class="on">לפי ספק</button><button data-view="topic">לפי נושא</button>
+      </div>
+      <a id="dl" class="ghost dl" href="downloads/medical.xlsx" download>⬇ הורדה לאקסל</a>
+    </div>
+    <div id="chips" class="chips"></div>
+    <div id="subchips" class="chips sub" hidden></div>
+  </section>
+
+  <section id="pricingBar" class="pricing-bar" hidden>
+    <div class="pb-head">
+      <strong>התמחור שלי</strong>
+      <span class="pb-note">הכל נשמר רק בדפדפן שלכם. נוסחה: עלות = מחיר ללא מע״מ × (1 − הנחה) × 1.18 · מחיר ללקוח = עלות × (1 + מרווח %) + מרווח ₪</span>
+      <span class="pb-actions">
+        <button id="exportBtn" class="ghost small">ייצוא הגדרות</button>
+        <button id="importBtn" class="ghost small">ייבוא</button>
+        <input id="importFile" type="file" accept="application/json" hidden>
+        <button id="resetBtn" class="ghost small danger">איפוס</button>
+      </span>
+    </div>
+    <div class="pb-grid">
+      <div class="pb-box">
+        <div class="pb-title">ברירת מחדל לסקציה זו</div>
+        <label>מרווח % <input id="typePct" type="number" step="1" min="-100"></label>
+        <label>מרווח ₪ קבוע <input id="typeFlat" type="number" step="1"></label>
+      </div>
+      <div class="pb-box grow">
+        <div class="pb-title">ההנחה שלי מכל ספק (%) — ומרווח לספק אם שונה מברירת המחדל</div>
+        <div id="supplierPricing" class="sp-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="meta-line"><span id="count"></span><span id="listNote"></span></div>
+
+  <div class="tbl">
+    <table id="table">
+      <thead><tr id="thead"></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <button id="more" class="ghost more" hidden>הצג עוד</button>
+    <p id="empty" class="empty" hidden>לא נמצאו פריטים. נסו חיפוש אחר או ספק אחר.</p>
+  </div>
+</main>
+
+<footer>
+  <span>מוגש חינם ע"י <b>ד"ר גיל קרן</b> · <a href="https://claudevet.com" target="_blank" rel="noopener">ClaudeVet</a> — כלים לווטרינרים</span>
+  <span>המחירים הם מחירי מחירון רשמיים כפי שפורסמו ע"י הספקים, בתאריך המצוין. אינם מחירי קנייה בפועל.</span>
+  <span><a id="reportLink" href="#">דיווח על טעות / בקשת הסרה</a></span>
+</footer>
+</div>
+
+<!-- ===== status modal ===== -->
+<dialog id="statusDlg">
+  <div class="dlg-head"><h2>מצב המחירונים</h2><button class="ghost" data-close>סגור</button></div>
+  <p class="dlg-note">תאריך = חודש המחירון של הספק. "ישן" = מעל 12 חודשים. "אין מקור" = הנתונים במערכת אך קובץ המקור לא בידינו — נשמח לקבל אותו.</p>
+  <div class="tbl"><table id="statusTable"><thead><tr><th>סוג</th><th>ספק</th><th>תאריך</th><th>פריטים</th><th>מצב</th><th>מקור</th></tr></thead><tbody></tbody></table></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+"meta": {
+"slug": "petvet",
+"type": "medical",
+"supplier": "פט-וט ביומד",
+"price_list_date": null,
+"source_file": null,
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 2,
+"status": "missing_source",
+"imported_at": "2026-08-26",
+"notes": null
+},
+"items": [
+{
+"name": "Easy Pill Hairball",
+"category": "תוספי תזונה וטיפוח",
+"topic": "other",
+"price_no_vat": 36.67,
+"price_with_vat": 43.27,
+"sku": "VETIN-EP-HAIRBALL",
+"id": "petvet-1"
+},
+{
+"name": "Easy Pill Cat 30*10g",
+"category": "תוספי תזונה וטיפוח",
+"topic": "other",
+"price_no_vat": 185.0,
+"price_with_vat": 218.3,
+"sku": "VETIN-EP-CAT-30",
+"id": "petvet-2"
+}
+]
+}

@@ -1,0 +1,841 @@
+{
+"meta": {
+"slug": "hamachon",
+"type": "labs",
+"supplier": "המכון (מעבדה חיצונית)",
+"price_list_date": "2026-01",
+"source_file": "sources/labs/hamachon-2026-01.docx",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 90,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": null
+},
+"items": [
+{
+"name": "ספירת דם + פאנל ביוכימי מלא ללקוח פרטי (ללא משטח)",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 320.0,
+"price_with_vat": 377.6,
+"sku": "L188+L195",
+"id": "hamachon-1"
+},
+{
+"name": "ספירת דם + פאנל ביוכימי מלא ללקוח פרטי (כולל משטח)",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 380.0,
+"price_with_vat": 448.4,
+"sku": "L188+L195",
+"id": "hamachon-2"
+},
+{
+"name": "ספירת דם + פאנל ביוכימי מלא לוטרינר (ללא משטח)",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L188+L195",
+"id": "hamachon-3"
+},
+{
+"name": "ספירת דם + פאנל ביוכימי מלא לוטרינר (כולל משטח)",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 300.0,
+"price_with_vat": 354.0,
+"sku": "L188+L195",
+"id": "hamachon-4"
+},
+{
+"name": "ספירת דם ומשטח",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 180.0,
+"price_with_vat": 212.4,
+"sku": "L188",
+"id": "hamachon-5"
+},
+{
+"name": "משטח דם בלבד",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"sku": "L604",
+"id": "hamachon-6"
+},
+{
+"name": "צביעת רטיקולוציטים",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "L611",
+"id": "hamachon-7"
+},
+{
+"name": "התאמת דם",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "L623",
+"id": "hamachon-8"
+},
+{
+"name": "קביעת סוג דם בחתול",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 160.0,
+"price_with_vat": 188.8,
+"sku": "L0200",
+"notes": "בחתול בלבד",
+"id": "hamachon-9"
+},
+{
+"name": "קביעת סוג דם בחתול x2",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 220.0,
+"price_with_vat": 259.6,
+"sku": "L0199",
+"notes": "בחתול בלבד",
+"id": "hamachon-10"
+},
+{
+"name": "מבחן אגלוטינציה",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 110.0,
+"price_with_vat": 129.8,
+"sku": "L202",
+"id": "hamachon-11"
+},
+{
+"name": "שבירות אוסמוטית לאריתרוציטים",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "L629",
+"id": "hamachon-12"
+},
+{
+"name": "מבחן קומבס (כלב)",
+"category": "המטולוגיה",
+"topic": "hematology",
+"price_no_vat": 310.0,
+"price_with_vat": 365.8,
+"sku": "L10251",
+"notes": "בכלב בלבד",
+"id": "hamachon-13"
+},
+{
+"name": "ציטולוגיה",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"sku": "L233",
+"notes": "עד 2 מיקומים אנטומים (עד משטחים למיקום אנטומי)",
+"id": "hamachon-14"
+},
+{
+"name": "ציטולוגיה - משטח נוסף",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 30.0,
+"price_with_vat": 35.4,
+"sku": "L2331",
+"notes": "עלות תוספת משטח לבדיקה L233",
+"id": "hamachon-15"
+},
+{
+"name": "ציטולוגיה – מיקום אנטומי נוסף",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"sku": "L2332",
+"notes": "עלות למיקום אנטומי נוסף",
+"id": "hamachon-16"
+},
+{
+"name": "ציטולוגיה חוזרת",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 150.0,
+"price_with_vat": 177.0,
+"sku": "L2333",
+"notes": "ציטולוגיה חוזרת - תוספת משטחים לציטולוגיה קודמת שלא היו בה משטחים אבחנתיים – עד 5 משטחים",
+"id": "hamachon-17"
+},
+{
+"name": "מגרד עור צבוע",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "L613",
+"id": "hamachon-18"
+},
+{
+"name": "משטח אוזן צבוע",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 150.0,
+"price_with_vat": 177.0,
+"sku": "L616",
+"id": "hamachon-19"
+},
+{
+"name": "ציטולוגיה CSF (ציטוספין)",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 220.0,
+"price_with_vat": 259.6,
+"sku": "L599",
+"id": "hamachon-20"
+},
+{
+"name": "ציטולוגיה בציטוספין",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 240.0,
+"price_with_vat": 283.2,
+"sku": "L0594",
+"id": "hamachon-21"
+},
+{
+"name": "אנליזת נוזל גוף",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 240.0,
+"price_with_vat": 283.2,
+"sku": "L597",
+"notes": "כולל – PCV/TS, משטח ישיר, משטח מסורכז",
+"id": "hamachon-22"
+},
+{
+"name": "ציטולוגיה מח עצם",
+"category": "ציטולוגיה",
+"topic": "pathology",
+"price_no_vat": 410.0,
+"price_with_vat": 483.8,
+"sku": "L600",
+"id": "hamachon-23"
+},
+{
+"name": "FIV/FeLV (סרולוגיה)",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 290.0,
+"price_with_vat": 342.2,
+"sku": "L225",
+"id": "hamachon-24"
+},
+{
+"name": "ארליכיה",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 180.0,
+"price_with_vat": 212.4,
+"sku": "L229",
+"id": "hamachon-25"
+},
+{
+"name": "קורונה",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 170.0,
+"price_with_vat": 200.6,
+"sku": "L226",
+"id": "hamachon-26"
+},
+{
+"name": "פרוו (אנטיגן בצואה)",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 210.0,
+"price_with_vat": 247.8,
+"sku": "L227",
+"id": "hamachon-27"
+},
+{
+"name": "ג'יארדיה (אנטיגן בצואה)",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 230.0,
+"price_with_vat": 271.4,
+"sku": "L0619",
+"id": "hamachon-28"
+},
+{
+"name": "לשמניה",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 420.0,
+"price_with_vat": 495.6,
+"sku": "L593",
+"id": "hamachon-29"
+},
+{
+"name": "טוקסופלסמה (סרולוגיה, מכון)",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L187",
+"id": "hamachon-30"
+},
+{
+"name": "ניאוספורה (סרולוגיה, מכון)",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L186",
+"id": "hamachon-31"
+},
+{
+"name": "טוקסופלסמה + נאוספורה (מכון)",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 340.0,
+"price_with_vat": 401.2,
+"sku": "L605",
+"id": "hamachon-32"
+},
+{
+"name": "לפטוספירה (סרולוגיה, מכון)",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L184",
+"id": "hamachon-33"
+},
+{
+"name": "ברוצלה (סרולוגיה, מכון)",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 150.0,
+"price_with_vat": 177.0,
+"sku": "L0700",
+"id": "hamachon-34"
+},
+{
+"name": "בדיקת PCR - מעבדת פרופ' גד בנעט",
+"category": "סרולוגיה/PCR",
+"topic": "serology",
+"price_no_vat": 590.0,
+"price_with_vat": 696.2,
+"sku": "L20184",
+"id": "hamachon-35"
+},
+{
+"name": "פאנל ביוכימי מלא",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 310.0,
+"price_with_vat": 365.8,
+"sku": "L195",
+"id": "hamachon-36"
+},
+{
+"name": "ביוכימיה 6-8 מדדים",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"sku": "L196",
+"id": "hamachon-37"
+},
+{
+"name": "ביוכימיה 2-5 מדדים",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 170.0,
+"price_with_vat": 200.6,
+"sku": "L197",
+"id": "hamachon-38"
+},
+{
+"name": "ביוכימיה מדד בודד",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"sku": "L0196",
+"id": "hamachon-39"
+},
+{
+"name": "ליפאז (DGGR)",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 150.0,
+"price_with_vat": 177.0,
+"sku": "L621",
+"id": "hamachon-40"
+},
+{
+"name": "SDMA",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 210.0,
+"price_with_vat": 247.8,
+"sku": "L20200",
+"id": "hamachon-41"
+},
+{
+"name": "לקטאט",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"sku": "L0197",
+"id": "hamachon-42"
+},
+{
+"name": "חומצות מרה x1",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 230.0,
+"price_with_vat": 271.4,
+"sku": "L93",
+"id": "hamachon-43"
+},
+{
+"name": "חומצות מרה x2",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 370.0,
+"price_with_vat": 436.6,
+"sku": "L92",
+"id": "hamachon-44"
+},
+{
+"name": "קטונים בדם",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "L634",
+"notes": "קטונים בדם",
+"id": "hamachon-45"
+},
+{
+"name": "פרוקטוזמין",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"sku": "L633",
+"id": "hamachon-46"
+},
+{
+"name": "HbA1c",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"sku": "L1206",
+"id": "hamachon-47"
+},
+{
+"name": "אמוניה",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 150.0,
+"price_with_vat": 177.0,
+"sku": "L643",
+"notes": "בתיאום מראש בלבד",
+"id": "hamachon-48"
+},
+{
+"name": "כולין אסטראז",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "L0198",
+"id": "hamachon-49"
+},
+{
+"name": "חלבון CSF",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 150.0,
+"price_with_vat": 177.0,
+"sku": "L637",
+"id": "hamachon-50"
+},
+{
+"name": "iCa + pH",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 160.0,
+"price_with_vat": 188.8,
+"sku": "L0198",
+"id": "hamachon-51"
+},
+{
+"name": "ברזל + UIBC",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 80.0,
+"price_with_vat": 94.4,
+"sku": "L644",
+"id": "hamachon-52"
+},
+{
+"name": "טרופונין T",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "L98",
+"id": "hamachon-53"
+},
+{
+"name": "CRP",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 220.0,
+"price_with_vat": 259.6,
+"sku": "L19100",
+"id": "hamachon-54"
+},
+{
+"name": "SAA לסוס",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 240.0,
+"price_with_vat": 283.2,
+"sku": "L28233",
+"notes": "לסוס",
+"id": "hamachon-55"
+},
+{
+"name": "SAA לחתול",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 230.0,
+"price_with_vat": 271.4,
+"sku": "L20233",
+"notes": "לחתול",
+"id": "hamachon-56"
+},
+{
+"name": "B12",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 180.0,
+"price_with_vat": 212.4,
+"sku": "L10012",
+"id": "hamachon-57"
+},
+{
+"name": "פולט",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 180.0,
+"price_with_vat": 212.4,
+"sku": "L10013",
+"id": "hamachon-58"
+},
+{
+"name": "B12 + פולט",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 270.0,
+"price_with_vat": 318.6,
+"sku": "L0611",
+"id": "hamachon-59"
+},
+{
+"name": "BNP",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 330.0,
+"price_with_vat": 389.4,
+"sku": "L18892",
+"notes": "לחתול",
+"id": "hamachon-60"
+},
+{
+"name": "אלקטרופורזה",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 460.0,
+"price_with_vat": 542.8,
+"sku": "L10253",
+"id": "hamachon-61"
+},
+{
+"name": "אלקטרופורזה (כלב)",
+"category": "ביוכימיה",
+"topic": "chemistry",
+"price_no_vat": 380.0,
+"price_with_vat": 448.4,
+"sku": "L609",
+"notes": "בכלב בלבד",
+"id": "hamachon-62"
+},
+{
+"name": "קורטיזול",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L218",
+"id": "hamachon-63"
+},
+{
+"name": "קורטיזול x2",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 360.0,
+"price_with_vat": 424.8,
+"sku": "L219",
+"id": "hamachon-64"
+},
+{
+"name": "קורטיזול x3",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 450.0,
+"price_with_vat": 531.0,
+"sku": "L220",
+"id": "hamachon-65"
+},
+{
+"name": "Total T4",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L601",
+"id": "hamachon-66"
+},
+{
+"name": "Free T4",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L646",
+"id": "hamachon-67"
+},
+{
+"name": "cTSH",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L628",
+"id": "hamachon-68"
+},
+{
+"name": "Free T4 + cTSH",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 360.0,
+"price_with_vat": 424.8,
+"sku": "L647",
+"id": "hamachon-69"
+},
+{
+"name": "ACTH",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L457",
+"id": "hamachon-70"
+},
+{
+"name": "IGF-1",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 460.0,
+"price_with_vat": 542.8,
+"sku": "L648",
+"notes": "בחתול בלבד",
+"id": "hamachon-71"
+},
+{
+"name": "LH",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 300.0,
+"price_with_vat": 354.0,
+"sku": "L1191",
+"id": "hamachon-72"
+},
+{
+"name": "פרוגסטרון",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 240.0,
+"price_with_vat": 283.2,
+"sku": "L5941",
+"id": "hamachon-73"
+},
+{
+"name": "PT/PTT",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L0593",
+"notes": "*פאנל קרישה כולל - PT/PTT AT-3 D-dimer Fibrinogen",
+"id": "hamachon-74"
+},
+{
+"name": "PT",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"sku": "L591",
+"notes": "*פאנל קרישה כולל - PT/PTT AT-3 D-dimer Fibrinogen",
+"id": "hamachon-75"
+},
+{
+"name": "PTT",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"sku": "L592",
+"notes": "*פאנל קרישה כולל - PT/PTT AT-3 D-dimer Fibrinogen",
+"id": "hamachon-76"
+},
+{
+"name": "אנטיתרומבין-3",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 220.0,
+"price_with_vat": 259.6,
+"sku": "L221",
+"notes": "*פאנל קרישה כולל - PT/PTT AT-3 D-dimer Fibrinogen",
+"id": "hamachon-77"
+},
+{
+"name": "D-dimer",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 180.0,
+"price_with_vat": 212.4,
+"sku": "L0190",
+"notes": "*פאנל קרישה כולל - PT/PTT AT-3 D-dimer Fibrinogen",
+"id": "hamachon-78"
+},
+{
+"name": "פאנל קרישה",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 420.0,
+"price_with_vat": 495.6,
+"sku": "L123002",
+"notes": "*פאנל קרישה כולל - PT/PTT AT-3 D-dimer Fibrinogen",
+"id": "hamachon-79"
+},
+{
+"name": "פיברינוגן",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"sku": "L123003",
+"notes": "*פאנל קרישה כולל - PT/PTT AT-3 D-dimer Fibrinogen",
+"id": "hamachon-80"
+},
+{
+"name": "TEM (ExTEM + InTEM)",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 440.0,
+"price_with_vat": 519.2,
+"sku": "L0571",
+"id": "hamachon-81"
+},
+{
+"name": "TEM",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 250.0,
+"price_with_vat": 295.0,
+"sku": "L10571",
+"id": "hamachon-82"
+},
+{
+"name": "אנליזת שתן",
+"category": "שתן/צואה/תרביות",
+"topic": "urine",
+"price_no_vat": 170.0,
+"price_with_vat": 200.6,
+"id": "hamachon-83"
+},
+{
+"name": "יחס חלבון / קריאטינין בשתן (UPC)",
+"category": "שתן/צואה/תרביות",
+"topic": "urine",
+"price_no_vat": 260.0,
+"price_with_vat": 306.8,
+"id": "hamachon-84"
+},
+{
+"name": "מיוגלובין בשתן",
+"category": "שתן/צואה/תרביות",
+"topic": "urine",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"id": "hamachon-85"
+},
+{
+"name": "משטח שתן צבוע",
+"category": "שתן/צואה/תרביות",
+"topic": "urine",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"id": "hamachon-86"
+},
+{
+"name": "דם סמוי בצואה",
+"category": "שתן/צואה/תרביות",
+"topic": "urine",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"id": "hamachon-87"
+},
+{
+"name": "פרזיטולוגיה לצואה (מכון)",
+"category": "שתן/צואה/תרביות",
+"topic": "urine",
+"price_no_vat": 290.0,
+"price_with_vat": 342.2,
+"id": "hamachon-88"
+},
+{
+"name": "תרבית ורגישות (מכון)",
+"category": "שתן/צואה/תרביות",
+"topic": "urine",
+"price_no_vat": 310.0,
+"price_with_vat": 365.8,
+"id": "hamachon-89"
+},
+{
+"name": "מיקולוגיה (מכון)",
+"category": "שתן/צואה/תרביות",
+"topic": "urine",
+"price_no_vat": 240.0,
+"price_with_vat": 283.2,
+"id": "hamachon-90"
+}
+]
+}

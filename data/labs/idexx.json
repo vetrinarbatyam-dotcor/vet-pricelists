@@ -1,0 +1,350 @@
+{
+"meta": {
+"slug": "idexx",
+"type": "labs",
+"supplier": "IDEXX",
+"price_list_date": "2025-01",
+"source_file": "sources/labs/idexx-2025-01.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 37,
+"status": "stale",
+"imported_at": "2026-08-26",
+"notes": null
+},
+"items": [
+{
+"name": "Chem 17 CLIP",
+"category": "בדיקות כלליות",
+"topic": "chemistry",
+"price_no_vat": 197.2,
+"price_with_vat": 232.7,
+"sku": "CHEM17",
+"id": "idexx-1"
+},
+{
+"name": "Chem 15 CLIP",
+"category": "בדיקות כלליות",
+"topic": "chemistry",
+"price_no_vat": 191.4,
+"price_with_vat": 225.85,
+"sku": "CHEM15",
+"id": "idexx-2"
+},
+{
+"name": "Chem 10 CLIP",
+"category": "בדיקות כלליות",
+"topic": "chemistry",
+"price_no_vat": 133.4,
+"price_with_vat": 157.41,
+"sku": "CHEM10",
+"id": "idexx-3"
+},
+{
+"name": "IDEXX CBC-Select",
+"category": "בדיקות כלליות",
+"topic": "chemistry",
+"price_no_vat": 223.3,
+"price_with_vat": 263.49,
+"sku": "FBCS",
+"id": "idexx-4"
+},
+{
+"name": "Basic Profile (Interpreted)",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 319.0,
+"price_with_vat": 376.42,
+"sku": "SP1I",
+"id": "idexx-5"
+},
+{
+"name": "Standard Profile (Interpreted)",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 548.1,
+"price_with_vat": 646.76,
+"sku": "SP2I",
+"id": "idexx-6"
+},
+{
+"name": "Extended Profile (Interpreted)",
+"category": "פאנלים",
+"topic": "chemistry",
+"price_no_vat": 713.4,
+"price_with_vat": 841.81,
+"sku": "SP3I",
+"id": "idexx-7"
+},
+{
+"name": "Cardiopet proBNP (Canine)",
+"category": "לב",
+"topic": "chemistry",
+"price_no_vat": 394.4,
+"price_with_vat": 465.39,
+"sku": "CBNP",
+"id": "idexx-8"
+},
+{
+"name": "Cardiopet proBNP (Feline)",
+"category": "לב",
+"topic": "chemistry",
+"price_no_vat": 394.4,
+"price_with_vat": 465.39,
+"sku": "FBNP",
+"id": "idexx-9"
+},
+{
+"name": "Spec cPL (Canine)",
+"category": "לבלב",
+"topic": "chemistry",
+"price_no_vat": 495.9,
+"price_with_vat": 585.16,
+"sku": "CPLI",
+"id": "idexx-10"
+},
+{
+"name": "Spec fPL (Feline)",
+"category": "לבלב",
+"topic": "chemistry",
+"price_no_vat": 495.9,
+"price_with_vat": 585.16,
+"sku": "FPLI",
+"id": "idexx-11"
+},
+{
+"name": "SDMA (Canine Feline)",
+"category": "כליות",
+"topic": "chemistry",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "SDMA",
+"id": "idexx-12"
+},
+{
+"name": "FGF-23",
+"category": "כליות",
+"topic": "chemistry",
+"price_no_vat": 391.5,
+"price_with_vat": 461.97,
+"sku": "FGF23",
+"id": "idexx-13"
+},
+{
+"name": "Kidney Disease Monitoring Profile",
+"category": "כליות",
+"topic": "chemistry",
+"price_no_vat": 234.9,
+"price_with_vat": 277.18,
+"sku": "KPI",
+"id": "idexx-14"
+},
+{
+"name": "Total T4",
+"category": "תיירואיד",
+"topic": "endocrine",
+"price_no_vat": 168.2,
+"price_with_vat": 198.48,
+"sku": "T4M",
+"id": "idexx-15"
+},
+{
+"name": "Free T4 (Equilibrium Dialysis)",
+"category": "תיירואיד",
+"topic": "endocrine",
+"price_no_vat": 426.3,
+"price_with_vat": 503.03,
+"sku": "FT4R",
+"id": "idexx-16"
+},
+{
+"name": "Canine TSH and Total T4",
+"category": "תיירואיד",
+"topic": "endocrine",
+"price_no_vat": 348.0,
+"price_with_vat": 410.64,
+"sku": "CTSH",
+"id": "idexx-17"
+},
+{
+"name": "ACTH Stimulation Test",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 365.4,
+"price_with_vat": 431.17,
+"sku": "ACTH",
+"id": "idexx-18"
+},
+{
+"name": "Cortisol (Basal)",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 240.7,
+"price_with_vat": 284.03,
+"sku": "CORT",
+"id": "idexx-19"
+},
+{
+"name": "Dexamethasone Suppression Test Low Dose",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 556.8,
+"price_with_vat": 657.02,
+"sku": "DEXL",
+"id": "idexx-20"
+},
+{
+"name": "Progesterone",
+"category": "הורמונים",
+"topic": "endocrine",
+"price_no_vat": 292.9,
+"price_with_vat": 345.62,
+"sku": "PGT",
+"id": "idexx-21"
+},
+{
+"name": "Basic Coagulation Profile",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 411.8,
+"price_with_vat": 485.92,
+"sku": "COAG",
+"id": "idexx-22"
+},
+{
+"name": "PT + APTT",
+"category": "קרישה",
+"topic": "coag",
+"price_no_vat": 252.3,
+"price_with_vat": 297.71,
+"sku": "PTC",
+"id": "idexx-23"
+},
+{
+"name": "FeLV Antigen & FIV Antibody",
+"category": "זיהומים",
+"topic": "serology",
+"price_no_vat": 377.0,
+"price_with_vat": 444.86,
+"sku": "FF",
+"id": "idexx-24"
+},
+{
+"name": "Leishmania Serology (Canine)",
+"category": "זיהומים",
+"topic": "serology",
+"price_no_vat": 342.2,
+"price_with_vat": 403.8,
+"sku": "LEI",
+"id": "idexx-25"
+},
+{
+"name": "Parvovirus (CPV) Antigen",
+"category": "זיהומים",
+"topic": "serology",
+"price_no_vat": 261.0,
+"price_with_vat": 307.98,
+"sku": "PARV",
+"id": "idexx-26"
+},
+{
+"name": "Heartworm Antigen (Canine)",
+"category": "זיהומים",
+"topic": "serology",
+"price_no_vat": 229.1,
+"price_with_vat": 270.34,
+"sku": "HW",
+"id": "idexx-27"
+},
+{
+"name": "Urine Culture & Sensitivity",
+"category": "שתן",
+"topic": "urine",
+"price_no_vat": 327.7,
+"price_with_vat": 386.69,
+"sku": "UCUL",
+"id": "idexx-28"
+},
+{
+"name": "Protein: Creatinine Ratio (Urine)",
+"category": "שתן",
+"topic": "urine",
+"price_no_vat": 185.6,
+"price_with_vat": 219.01,
+"sku": "PCRU",
+"id": "idexx-29"
+},
+{
+"name": "Histology - 1 Site",
+"category": "פתולוגיה",
+"topic": "pathology",
+"price_no_vat": 609.0,
+"price_with_vat": 718.62,
+"sku": "HIST1",
+"id": "idexx-30"
+},
+{
+"name": "Cytology - 1 sampled site",
+"category": "פתולוגיה",
+"topic": "pathology",
+"price_no_vat": 510.4,
+"price_with_vat": 602.27,
+"sku": "CYTO1",
+"id": "idexx-31"
+},
+{
+"name": "Phenobarbital",
+"category": "תרופות",
+"topic": "drugs",
+"price_no_vat": 237.8,
+"price_with_vat": 280.6,
+"sku": "PHEN",
+"id": "idexx-32"
+},
+{
+"name": "Potassium Bromide",
+"category": "תרופות",
+"topic": "drugs",
+"price_no_vat": 313.2,
+"price_with_vat": 369.58,
+"sku": "KBR",
+"id": "idexx-33"
+},
+{
+"name": "TLI (Canine)",
+"category": "GI",
+"topic": "chemistry",
+"price_no_vat": 342.2,
+"price_with_vat": 403.8,
+"sku": "TLIC",
+"id": "idexx-34"
+},
+{
+"name": "TLI Folate & Cobalamin (Canine)",
+"category": "GI",
+"topic": "chemistry",
+"price_no_vat": 553.9,
+"price_with_vat": 653.6,
+"sku": "TFCB",
+"id": "idexx-35"
+},
+{
+"name": "C Reactive Protein (Canine)",
+"category": "דלקת",
+"topic": "chemistry",
+"price_no_vat": 118.9,
+"price_with_vat": 140.3,
+"sku": "CRPR",
+"id": "idexx-36"
+},
+{
+"name": "Vaccination Status (Canine)",
+"category": "חיסון",
+"topic": "serology",
+"price_no_vat": 751.1,
+"price_with_vat": 886.3,
+"sku": "DAPS",
+"id": "idexx-37"
+}
+]
+}

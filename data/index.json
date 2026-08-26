@@ -1,0 +1,411 @@
+{
+ "built_at": "2026-08-26",
+ "vat_rate": 18,
+ "pricelists": [
+  {
+   "slug": "beit-erez",
+   "type": "medical",
+   "supplier": "בית ארז (מילטין)",
+   "price_list_date": "2026-07",
+   "source_file": "sources/medical/beit-erez-2026-07.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 415,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחירון חיות קטנות יולי 2026"
+  },
+  {
+   "slug": "vetmarket",
+   "type": "medical",
+   "supplier": "וטמרקט",
+   "price_list_date": "2026-08",
+   "source_file": "sources/medical/vetmarket-2026-08.xlsx",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 282,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"
+  },
+  {
+   "slug": "medi-market",
+   "type": "medical",
+   "supplier": "מדי-מרקט",
+   "price_list_date": "2026-06",
+   "source_file": null,
+   "vat_basis": "with_vat",
+   "vat_rate": 18,
+   "item_count": 2414,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"
+  },
+  {
+   "slug": "petvet",
+   "type": "medical",
+   "supplier": "פט-וט ביומד",
+   "price_list_date": null,
+   "source_file": null,
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 2,
+   "status": "missing_source",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "rc-vet",
+   "type": "food",
+   "supplier": "Royal Canin VET",
+   "price_list_date": null,
+   "source_file": null,
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 113,
+   "status": "missing_source",
+   "imported_at": "2026-08-26",
+   "notes": "מקור התאריך לא מתועד"
+  },
+  {
+   "slug": "rc-retail",
+   "type": "food",
+   "supplier": "Royal Canin חנויות",
+   "price_list_date": null,
+   "source_file": null,
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 158,
+   "status": "missing_source",
+   "imported_at": "2026-08-26",
+   "notes": "מקור התאריך לא מתועד"
+  },
+  {
+   "slug": "hills-pd",
+   "type": "food",
+   "supplier": "Hill's Prescription Diet",
+   "price_list_date": "2026-04",
+   "source_file": "sources/food/hills-pd-2026-04.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 117,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "hills-ve",
+   "type": "food",
+   "supplier": "Hill's Vet Essentials",
+   "price_list_date": "2026-04",
+   "source_file": "sources/food/hills-pd-2026-04.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 42,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "vetlife",
+   "type": "food",
+   "supplier": "VetLife",
+   "price_list_date": "2025-02",
+   "source_file": "sources/food/vetlife-2025-02.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 101,
+   "status": "stale",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "purina-vet",
+   "type": "food",
+   "supplier": "Purina Pro Plan VET",
+   "price_list_date": null,
+   "source_file": null,
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 30,
+   "status": "missing_source",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "purina-retail",
+   "type": "food",
+   "supplier": "Purina Pro Plan חנויות",
+   "price_list_date": null,
+   "source_file": null,
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 31,
+   "status": "missing_source",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "monge-vet",
+   "type": "food",
+   "supplier": "Monge Vet Solution",
+   "price_list_date": "2025-01",
+   "source_file": "sources/food/monge-vet-2025-01.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 25,
+   "status": "stale",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "monge",
+   "type": "food",
+   "supplier": "Monge",
+   "price_list_date": "2025-01",
+   "source_file": "sources/food/monge-2025-01.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 0,
+   "status": "stale",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "foodiez",
+   "type": "food",
+   "supplier": "Foodiez",
+   "price_list_date": null,
+   "source_file": null,
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 0,
+   "status": "missing_source",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "aml",
+   "type": "labs",
+   "supplier": "AML",
+   "price_list_date": "2026-06",
+   "source_file": "sources/labs/aml-2026-06.pdf",
+   "vat_basis": "with_vat",
+   "vat_rate": 18,
+   "item_count": 123,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "בתוקף מ-1.6.2026"
+  },
+  {
+   "slug": "hamachon",
+   "type": "labs",
+   "supplier": "המכון (מעבדה חיצונית)",
+   "price_list_date": "2026-01",
+   "source_file": "sources/labs/hamachon-2026-01.docx",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 90,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "idexx",
+   "type": "labs",
+   "supplier": "IDEXX",
+   "price_list_date": "2025-01",
+   "source_file": "sources/labs/idexx-2025-01.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 37,
+   "status": "stale",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "karnieli",
+   "type": "labs",
+   "supplier": "קרניאלי",
+   "price_list_date": "2025-01",
+   "source_file": "sources/labs/karnieli-2025-01.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 9,
+   "status": "stale",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "slug": "banet",
+   "type": "labs",
+   "supplier": "פרופ' בנעט",
+   "price_list_date": null,
+   "source_file": null,
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 23,
+   "status": "missing_source",
+   "imported_at": "2026-08-26",
+   "notes": null
+  }
+ ],
+ "taxonomy": {
+  "topics": [
+   [
+    "ears",
+    "אוזניים"
+   ],
+   [
+    "eyes",
+    "עיניים"
+   ],
+   [
+    "dental",
+    "שיניים ופה"
+   ],
+   [
+    "skin",
+    "עור ופרווה"
+   ],
+   [
+    "joints",
+    "מפרקים וניידות"
+   ],
+   [
+    "kidney",
+    "כליה ודרכי שתן"
+   ],
+   [
+    "gi",
+    "מערכת עיכול"
+   ],
+   [
+    "cardio",
+    "לב וכלי דם"
+   ],
+   [
+    "endocrine",
+    "הורמונלי / סוכרת"
+   ],
+   [
+    "neuro",
+    "נוירולוגיה / התנהגות"
+   ],
+   [
+    "liver",
+    "כבד"
+   ],
+   [
+    "onco",
+    "אונקולוגיה"
+   ],
+   [
+    "antibiotic",
+    "אנטיביוטיקה"
+   ],
+   [
+    "pain",
+    "כאב ודלקת"
+   ],
+   [
+    "parasites",
+    "הדברה / טפילים"
+   ],
+   [
+    "deworm",
+    "תילוע"
+   ],
+   [
+    "vaccine",
+    "חיסונים"
+   ],
+   [
+    "nutrition",
+    "תזונה ומזון"
+   ],
+   [
+    "respiratory",
+    "נשימה"
+   ],
+   [
+    "anesthesia",
+    "הרדמה והרגעה"
+   ],
+   [
+    "equipment",
+    "ציוד ומתכלים"
+   ],
+   [
+    "other",
+    "כללי / לא מסווג"
+   ]
+  ],
+  "lab_topics": [
+   [
+    "hematology",
+    "המטולוגיה וספירת דם"
+   ],
+   [
+    "chemistry",
+    "ביוכימיה ופאנלים"
+   ],
+   [
+    "endocrine",
+    "הורמונים"
+   ],
+   [
+    "serology",
+    "סרולוגיה וזיהומים"
+   ],
+   [
+    "pcr",
+    "PCR וגנטיקה"
+   ],
+   [
+    "culture",
+    "תרביות"
+   ],
+   [
+    "pathology",
+    "פתולוגיה וציטולוגיה"
+   ],
+   [
+    "urine",
+    "שתן וצואה"
+   ],
+   [
+    "coag",
+    "קרישה"
+   ],
+   [
+    "drugs",
+    "רמות תרופות"
+   ],
+   [
+    "other",
+    "אחר"
+   ]
+  ],
+  "food_indications": [
+   "אלרגיה למזון",
+   "אפילפסיה / מערכת עצבים",
+   "בלוטת התריס",
+   "גורים",
+   "דרכי שתן",
+   "השמנה / ירידה במשקל",
+   "התאוששות",
+   "לב",
+   "מזון רגיל",
+   "מחלות כבד",
+   "מחלות כליה",
+   "מערכת עיכול",
+   "מפרקים / ניידות",
+   "סוכרת",
+   "סרטן",
+   "עור ופרווה",
+   "שיניים",
+   "תחליף חלב"
+  ]
+ }
+}

@@ -1,0 +1,1187 @@
+{
+"meta": {
+"slug": "hills-pd",
+"type": "food",
+"supplier": "Hill's Prescription Diet",
+"price_list_date": "2026-04",
+"source_file": "sources/food/hills-pd-2026-04.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 117,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": null
+},
+"items": [
+{
+"name": "b/d כלב",
+"category": "אפילפסיה / מערכת עצבים",
+"topic": "neuro",
+"price_no_vat": 417.0,
+"price_with_vat": 492.06,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-1"
+},
+{
+"name": "c/d Multicare כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 156.0,
+"price_with_vat": 184.08,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-2"
+},
+{
+"name": "c/d Multicare כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 366.0,
+"price_with_vat": 431.88,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-3"
+},
+{
+"name": "c/d Multicare + Metabolic כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 87.0,
+"price_with_vat": 102.66,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-4"
+},
+{
+"name": "c/d Multicare + Metabolic כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 468.0,
+"price_with_vat": 552.24,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-5"
+},
+{
+"name": "d/d כלב - ברווז ואורז",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-6"
+},
+{
+"name": "d/d כלב - ברווז ואורז",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 407.0,
+"price_with_vat": 480.26,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-7"
+},
+{
+"name": "Derm Complete גור כלב",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 175.0,
+"price_with_vat": 206.5,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-8"
+},
+{
+"name": "Derm Complete כלב",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 195.0,
+"price_with_vat": 230.1,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-9"
+},
+{
+"name": "Derm Complete כלב",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 484.0,
+"price_with_vat": 571.12,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-10"
+},
+{
+"name": "Derm Complete מיני כלב",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 63.0,
+"price_with_vat": 74.34,
+"animal": "כלב",
+"unit": "1 ק\"ג",
+"id": "hills-pd-11"
+},
+{
+"name": "i/d כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-12"
+},
+{
+"name": "i/d כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-13"
+},
+{
+"name": "i/d כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 433.0,
+"price_with_vat": 510.94,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-14"
+},
+{
+"name": "i/d low fat כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 96.0,
+"price_with_vat": 113.28,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-15"
+},
+{
+"name": "i/d low fat כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 177.0,
+"price_with_vat": 208.86,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-16"
+},
+{
+"name": "i/d low fat כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 456.0,
+"price_with_vat": 538.08,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-17"
+},
+{
+"name": "i/d סנסיטיב כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-18"
+},
+{
+"name": "GI Biome כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 92.0,
+"price_with_vat": 108.56,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-19"
+},
+{
+"name": "GI Biome כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 211.0,
+"price_with_vat": 248.98,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-20"
+},
+{
+"name": "GI Biome כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 394.0,
+"price_with_vat": 464.92,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-pd-21"
+},
+{
+"name": "j/d כלב",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-22"
+},
+{
+"name": "j/d כלב",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 430.0,
+"price_with_vat": 507.4,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-23"
+},
+{
+"name": "Metabolic Mobility (j/d) כלב",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 206.0,
+"price_with_vat": 243.08,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-24"
+},
+{
+"name": "Metabolic Mobility (j/d) כלב",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 472.0,
+"price_with_vat": 556.96,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-25"
+},
+{
+"name": "Metabolic Mobility (j/d) כלב מיני",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "hills-pd-26"
+},
+{
+"name": "k/d כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-27"
+},
+{
+"name": "k/d כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 418.0,
+"price_with_vat": 493.24,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-28"
+},
+{
+"name": "k/d Mobility כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 192.0,
+"price_with_vat": 226.56,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-29"
+},
+{
+"name": "k/d Mobility כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 467.0,
+"price_with_vat": 551.06,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-30"
+},
+{
+"name": "L/d כלב",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-31"
+},
+{
+"name": "L/d כלב",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 342.0,
+"price_with_vat": 403.56,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-pd-32"
+},
+{
+"name": "r/d כלב",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-33"
+},
+{
+"name": "r/d כלב",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 328.0,
+"price_with_vat": 387.04,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-pd-34"
+},
+{
+"name": "Metabolic כלב - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 177.0,
+"price_with_vat": 208.86,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-35"
+},
+{
+"name": "Metabolic כלב - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 439.0,
+"price_with_vat": 518.02,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-36"
+},
+{
+"name": "Metabolic כלב - כבש ואורז",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 450.0,
+"price_with_vat": 531.0,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "hills-pd-37"
+},
+{
+"name": "Metabolic כלב מיני",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 264.0,
+"price_with_vat": 311.52,
+"animal": "כלב",
+"unit": "6 ק\"ג",
+"id": "hills-pd-38"
+},
+{
+"name": "t/d כלב",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-39"
+},
+{
+"name": "t/d כלב - מיני",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 152.0,
+"price_with_vat": 179.36,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "hills-pd-40"
+},
+{
+"name": "u/d כלב",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-41"
+},
+{
+"name": "w/d כלב",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 174.0,
+"price_with_vat": 205.32,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-42"
+},
+{
+"name": "w/d כלב",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 342.0,
+"price_with_vat": 403.56,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-pd-43"
+},
+{
+"name": "z/d כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 176.0,
+"price_with_vat": 207.68,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "hills-pd-44"
+},
+{
+"name": "z/d כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 475.0,
+"price_with_vat": 560.5,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-pd-45"
+},
+{
+"name": "z/d מיני כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 66.0,
+"price_with_vat": 77.88,
+"animal": "כלב",
+"unit": "1 ק\"ג",
+"id": "hills-pd-46"
+},
+{
+"name": "z/d מיני כלב",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 305.0,
+"price_with_vat": 359.9,
+"animal": "כלב",
+"unit": "6 ק\"ג",
+"id": "hills-pd-47"
+},
+{
+"name": "On Care כלב",
+"category": "סרטן",
+"topic": "onco",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "hills-pd-48"
+},
+{
+"name": "c/d Multicare חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 143.0,
+"price_with_vat": 168.74,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-49"
+},
+{
+"name": "c/d Multicare חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 321.0,
+"price_with_vat": 378.78,
+"animal": "חתול",
+"unit": "8 ק\"ג",
+"id": "hills-pd-50"
+},
+{
+"name": "c/d Stress חתול - דגי ים",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-51"
+},
+{
+"name": "c/d Stress חתול - דגי ים",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 410.0,
+"price_with_vat": 483.8,
+"animal": "חתול",
+"unit": "8 ק\"ג",
+"id": "hills-pd-52"
+},
+{
+"name": "c/d Urinary Stress + Metabolic חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 176.0,
+"price_with_vat": 207.68,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-53"
+},
+{
+"name": "c/d Urinary Stress + Metabolic חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 372.0,
+"price_with_vat": 438.96,
+"animal": "חתול",
+"unit": "8 ק\"ג",
+"id": "hills-pd-54"
+},
+{
+"name": "i/d חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 39.0,
+"price_with_vat": 46.02,
+"animal": "חתול",
+"unit": "0.4 ק\"ג",
+"id": "hills-pd-55"
+},
+{
+"name": "i/d חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 96.0,
+"price_with_vat": 113.28,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-56"
+},
+{
+"name": "i/d חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 162.0,
+"price_with_vat": 191.16,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-57"
+},
+{
+"name": "i/d חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 397.0,
+"price_with_vat": 468.46,
+"animal": "חתול",
+"unit": "8 ק\"ג",
+"id": "hills-pd-58"
+},
+{
+"name": "GI Biome חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 108.0,
+"price_with_vat": 127.44,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-59"
+},
+{
+"name": "GI Biome חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 180.0,
+"price_with_vat": 212.4,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-60"
+},
+{
+"name": "GI Biome חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 421.0,
+"price_with_vat": 496.78,
+"animal": "חתול",
+"unit": "8 ק\"ג",
+"id": "hills-pd-61"
+},
+{
+"name": "GI Biome STRESS חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-62"
+},
+{
+"name": "j/d חתול",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 162.0,
+"price_with_vat": 191.16,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-63"
+},
+{
+"name": "k/d חתול - עוף",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 96.0,
+"price_with_vat": 113.28,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-64"
+},
+{
+"name": "k/d חתול - עוף",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 155.0,
+"price_with_vat": 182.9,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-65"
+},
+{
+"name": "k/d חתול - עוף",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 397.0,
+"price_with_vat": 468.46,
+"animal": "חתול",
+"unit": "8 ק\"ג",
+"id": "hills-pd-66"
+},
+{
+"name": "k/d חתול - טונה",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 162.0,
+"price_with_vat": 191.16,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-67"
+},
+{
+"name": "k/d Early Stage חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 162.0,
+"price_with_vat": 191.16,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-68"
+},
+{
+"name": "k/d Mobility חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-69"
+},
+{
+"name": "L/d חתול",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 96.0,
+"price_with_vat": 113.28,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-70"
+},
+{
+"name": "m/d חתול",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 155.0,
+"price_with_vat": 182.9,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-71"
+},
+{
+"name": "r/d חתול",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 153.0,
+"price_with_vat": 180.54,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-72"
+},
+{
+"name": "Metabolic חתול",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 162.0,
+"price_with_vat": 191.16,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-73"
+},
+{
+"name": "Metabolic חתול",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 410.0,
+"price_with_vat": 483.8,
+"animal": "חתול",
+"unit": "8 ק\"ג",
+"id": "hills-pd-74"
+},
+{
+"name": "s/d חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 110.0,
+"price_with_vat": 129.8,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-75"
+},
+{
+"name": "t/d חתול",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 96.0,
+"price_with_vat": 113.28,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "hills-pd-76"
+},
+{
+"name": "w/d חתול",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 148.0,
+"price_with_vat": 174.64,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-77"
+},
+{
+"name": "y/d חתול",
+"category": "בלוטת התריס",
+"topic": "endocrine",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-78"
+},
+{
+"name": "z/d חתול",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 170.0,
+"price_with_vat": 200.6,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-pd-79"
+},
+{
+"name": "z/d חתול",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 328.0,
+"price_with_vat": 387.04,
+"animal": "חתול",
+"unit": "6 ק\"ג",
+"id": "hills-pd-80"
+},
+{
+"name": "a/d כלב וחתול",
+"category": "התאוששות",
+"topic": "nutrition",
+"price_no_vat": 14.4,
+"price_with_vat": 16.99,
+"animal": "כלב+חתול",
+"unit": "200g",
+"id": "hills-pd-81"
+},
+{
+"name": "c/d Multicare כלב שימור",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 13.9,
+"price_with_vat": 16.4,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-82"
+},
+{
+"name": "c/d Stew כלב (עוף וירקות)",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 17.2,
+"price_with_vat": 20.3,
+"animal": "כלב",
+"unit": "354g",
+"id": "hills-pd-83"
+},
+{
+"name": "d/d כלב - ברווז שימור",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 14.4,
+"price_with_vat": 16.99,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-84"
+},
+{
+"name": "דרם קומפליט כלב שימור",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 15.4,
+"price_with_vat": 18.17,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-85"
+},
+{
+"name": "i/d כלב שימור",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 13.8,
+"price_with_vat": 16.28,
+"animal": "כלב",
+"unit": "360g",
+"id": "hills-pd-86"
+},
+{
+"name": "i/d Stew כלב (עוף וירקות)",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 17.7,
+"price_with_vat": 20.89,
+"animal": "כלב",
+"unit": "354g",
+"id": "hills-pd-87"
+},
+{
+"name": "i/d low fat כלב שימור",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 14.4,
+"price_with_vat": 16.99,
+"animal": "כלב",
+"unit": "360g",
+"id": "hills-pd-88"
+},
+{
+"name": "GI BIOME כלב שימור",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 15.4,
+"price_with_vat": 18.17,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-89"
+},
+{
+"name": "j/d כלב שימור",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 16.2,
+"price_with_vat": 19.12,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-90"
+},
+{
+"name": "k/d כלב שימור",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 13.2,
+"price_with_vat": 15.58,
+"animal": "כלב",
+"unit": "350g",
+"id": "hills-pd-91"
+},
+{
+"name": "k/d Stew כלב (עוף וירקות)",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 17.2,
+"price_with_vat": 20.3,
+"animal": "כלב",
+"unit": "354g",
+"id": "hills-pd-92"
+},
+{
+"name": "L/d כלב שימור",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 15.4,
+"price_with_vat": 18.17,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-93"
+},
+{
+"name": "r/d כלב שימור",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 13.8,
+"price_with_vat": 16.28,
+"animal": "כלב",
+"unit": "350g",
+"id": "hills-pd-94"
+},
+{
+"name": "Metabolic כלב שימור",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 14.4,
+"price_with_vat": 16.99,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-95"
+},
+{
+"name": "u/d כלב שימור",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 15.4,
+"price_with_vat": 18.17,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-96"
+},
+{
+"name": "w/d כלב שימור",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 13.8,
+"price_with_vat": 16.28,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-97"
+},
+{
+"name": "z/d כלב שימור",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 18.5,
+"price_with_vat": 21.83,
+"animal": "כלב",
+"unit": "370g",
+"id": "hills-pd-98"
+},
+{
+"name": "On Care Stew כלב",
+"category": "סרטן",
+"topic": "onco",
+"price_no_vat": 21.0,
+"price_with_vat": 24.78,
+"animal": "כלב",
+"unit": "354g",
+"id": "hills-pd-99"
+},
+{
+"name": "c/d Multicare חתול שימור",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 9.7,
+"price_with_vat": 11.45,
+"animal": "חתול",
+"unit": "156g",
+"id": "hills-pd-100"
+},
+{
+"name": "c/d Stew חתול (עוף וירקות)",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 6.6,
+"price_with_vat": 7.79,
+"animal": "חתול",
+"unit": "82g",
+"id": "hills-pd-101"
+},
+{
+"name": "i/d חתול שימור",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 9.9,
+"price_with_vat": 11.68,
+"animal": "חתול",
+"unit": "156g",
+"id": "hills-pd-102"
+},
+{
+"name": "i/d Stew חתול (עוף וירקות)",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 6.8,
+"price_with_vat": 8.02,
+"animal": "חתול",
+"unit": "82g",
+"id": "hills-pd-103"
+},
+{
+"name": "GI BIOME חתול פאוץ (12 יח')",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 81.0,
+"price_with_vat": 95.58,
+"animal": "חתול",
+"unit": "12x85g",
+"id": "hills-pd-104"
+},
+{
+"name": "k/d חתול שימור",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 9.7,
+"price_with_vat": 11.45,
+"animal": "חתול",
+"unit": "156g",
+"id": "hills-pd-105"
+},
+{
+"name": "k/d Stew חתול (עוף וירקות)",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 6.6,
+"price_with_vat": 7.79,
+"animal": "חתול",
+"unit": "82g",
+"id": "hills-pd-106"
+},
+{
+"name": "k/d חתול פאוץ עוף (12 יח')",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 71.0,
+"price_with_vat": 83.78,
+"animal": "חתול",
+"unit": "12x85g",
+"id": "hills-pd-107"
+},
+{
+"name": "k/d חתול פאוץ סלמון (12 יח')",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 71.0,
+"price_with_vat": 83.78,
+"animal": "חתול",
+"unit": "12x85g",
+"id": "hills-pd-108"
+},
+{
+"name": "m/d חתול פאוץ (12 יח')",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 71.0,
+"price_with_vat": 83.78,
+"animal": "חתול",
+"unit": "12x85g",
+"id": "hills-pd-109"
+},
+{
+"name": "s/d חתול פאוץ (12 יח')",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 71.0,
+"price_with_vat": 83.78,
+"animal": "חתול",
+"unit": "12x85g",
+"id": "hills-pd-110"
+},
+{
+"name": "Metabolic חתול פאוץ (12 יח')",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 71.0,
+"price_with_vat": 83.78,
+"animal": "חתול",
+"unit": "12x85g",
+"id": "hills-pd-111"
+},
+{
+"name": "y/d חתול שימור",
+"category": "בלוטת התריס",
+"topic": "endocrine",
+"price_no_vat": 9.7,
+"price_with_vat": 11.45,
+"animal": "חתול",
+"unit": "156g",
+"id": "hills-pd-112"
+},
+{
+"name": "w/d חתול פאוץ (12 יח')",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 71.0,
+"price_with_vat": 83.78,
+"animal": "חתול",
+"unit": "12x85g",
+"id": "hills-pd-113"
+},
+{
+"name": "z/d חתול שימור",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 10.3,
+"price_with_vat": 12.15,
+"animal": "חתול",
+"unit": "156g",
+"id": "hills-pd-114"
+},
+{
+"name": "On Care Stew חתול",
+"category": "סרטן",
+"topic": "onco",
+"price_no_vat": 8.1,
+"price_with_vat": 9.56,
+"animal": "חתול",
+"unit": "82g",
+"id": "hills-pd-115"
+},
+{
+"name": "חטיף היפואלרגני",
+"category": "אלרגיה למזון",
+"topic": "skin",
+"price_no_vat": 24.0,
+"price_with_vat": 28.32,
+"animal": "כלב",
+"unit": "200g",
+"id": "hills-pd-116"
+},
+{
+"name": "חטיף שמירה על המשקל",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 21.0,
+"price_with_vat": 24.78,
+"animal": "כלב",
+"unit": "200g",
+"id": "hills-pd-117"
+}
+]
+}

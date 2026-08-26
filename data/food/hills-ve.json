@@ -1,0 +1,437 @@
+{
+"meta": {
+"slug": "hills-ve",
+"type": "food",
+"supplier": "Hill's Vet Essentials",
+"price_list_date": "2026-04",
+"source_file": "sources/food/hills-pd-2026-04.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 42,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": null
+},
+"items": [
+{
+"name": "גור כלב Small & Mini - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 86.0,
+"price_with_vat": 101.48,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-1"
+},
+{
+"name": "גור כלב Small & Mini - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 215.0,
+"price_with_vat": 253.7,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "hills-ve-2"
+},
+{
+"name": "גור כלב גזע בינוני - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 86.0,
+"price_with_vat": 101.48,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-3"
+},
+{
+"name": "גור כלב גזע בינוני - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 230.0,
+"price_with_vat": 271.4,
+"animal": "כלב",
+"unit": "8 ק\"ג",
+"id": "hills-ve-4"
+},
+{
+"name": "גור כלב גזע גדול - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 343.0,
+"price_with_vat": 404.74,
+"animal": "כלב",
+"unit": "14 ק\"ג",
+"id": "hills-ve-5"
+},
+{
+"name": "בוגר כלב גזע מיני לבריאות העיכול - עוף",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 88.0,
+"price_with_vat": 103.84,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-6"
+},
+{
+"name": "בוגר כלב גזע בינוני לבריאות העיכול - עוף",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 292.0,
+"price_with_vat": 344.56,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-ve-7"
+},
+{
+"name": "בוגר ומבוגר כלב Small&Mini Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 88.0,
+"price_with_vat": 103.84,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-8"
+},
+{
+"name": "בוגר ומבוגר כלב Small&Mini Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 225.0,
+"price_with_vat": 265.5,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "hills-ve-9"
+},
+{
+"name": "בוגר ומבוגר כלב גזע בינוני וגדול Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 266.0,
+"price_with_vat": 313.88,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-ve-10"
+},
+{
+"name": "בוגר כלב Small&Mini לבקרת משקל - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-11"
+},
+{
+"name": "בוגר כלב Small&Mini לבקרת משקל - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 220.0,
+"price_with_vat": 259.6,
+"animal": "כלב",
+"unit": "6 ק\"ג",
+"id": "hills-ve-12"
+},
+{
+"name": "בוגר כלב גזע בינוני לבקרת משקל - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 292.0,
+"price_with_vat": 344.56,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-ve-13"
+},
+{
+"name": "בוגר כלב גזע גדול לבקרת משקל - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 374.0,
+"price_with_vat": 441.32,
+"animal": "כלב",
+"unit": "14 ק\"ג",
+"id": "hills-ve-14"
+},
+{
+"name": "סניור כלב מיני עוף לתמיכה בהזדקנות",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 88.0,
+"price_with_vat": 103.84,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-15"
+},
+{
+"name": "גור חתול - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 81.0,
+"price_with_vat": 95.58,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "hills-ve-16"
+},
+{
+"name": "גור חתול - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 142.0,
+"price_with_vat": 167.56,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-ve-17"
+},
+{
+"name": "בוגר ומבוגר חתול Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 148.0,
+"price_with_vat": 174.64,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-ve-18"
+},
+{
+"name": "בוגר ומבוגר חתול Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 261.0,
+"price_with_vat": 307.98,
+"animal": "חתול",
+"unit": "6.5 ק\"ג",
+"id": "hills-ve-19"
+},
+{
+"name": "בוגר חתול לבקרת משקל - טונה",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-ve-20"
+},
+{
+"name": "סניור חתול לתמיכה בהזדקנות - עוף",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 146.0,
+"price_with_vat": 172.28,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-ve-21"
+},
+{
+"name": "גור כלב Small & Mini - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 86.0,
+"price_with_vat": 101.48,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-22"
+},
+{
+"name": "גור כלב Small & Mini - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 215.0,
+"price_with_vat": 253.7,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "hills-ve-23"
+},
+{
+"name": "גור כלב גזע בינוני - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 86.0,
+"price_with_vat": 101.48,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-24"
+},
+{
+"name": "גור כלב גזע בינוני - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 230.0,
+"price_with_vat": 271.4,
+"animal": "כלב",
+"unit": "8 ק\"ג",
+"id": "hills-ve-25"
+},
+{
+"name": "גור כלב גזע גדול - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 343.0,
+"price_with_vat": 404.74,
+"animal": "כלב",
+"unit": "14 ק\"ג",
+"id": "hills-ve-26"
+},
+{
+"name": "בוגר כלב גזע מיני לבריאות העיכול - עוף",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 88.0,
+"price_with_vat": 103.84,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-27"
+},
+{
+"name": "בוגר כלב גזע בינוני לבריאות העיכול - עוף",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 292.0,
+"price_with_vat": 344.56,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-ve-28"
+},
+{
+"name": "בוגר ומבוגר כלב Small&Mini Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 88.0,
+"price_with_vat": 103.84,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-29"
+},
+{
+"name": "בוגר ומבוגר כלב Small&Mini Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 225.0,
+"price_with_vat": 265.5,
+"animal": "כלב",
+"unit": "7 ק\"ג",
+"id": "hills-ve-30"
+},
+{
+"name": "בוגר ומבוגר כלב גזע בינוני וגדול Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 266.0,
+"price_with_vat": 313.88,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-ve-31"
+},
+{
+"name": "בוגר כלב Small&Mini לבקרת משקל - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-32"
+},
+{
+"name": "בוגר כלב Small&Mini לבקרת משקל - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 220.0,
+"price_with_vat": 259.6,
+"animal": "כלב",
+"unit": "6 ק\"ג",
+"id": "hills-ve-33"
+},
+{
+"name": "בוגר כלב גזע בינוני לבקרת משקל - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 292.0,
+"price_with_vat": 344.56,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "hills-ve-34"
+},
+{
+"name": "בוגר כלב גזע גדול לבקרת משקל - עוף",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 374.0,
+"price_with_vat": 441.32,
+"animal": "כלב",
+"unit": "14 ק\"ג",
+"id": "hills-ve-35"
+},
+{
+"name": "סניור כלב מיני עוף לתמיכה בהזדקנות",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 88.0,
+"price_with_vat": 103.84,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "hills-ve-36"
+},
+{
+"name": "גור חתול - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 81.0,
+"price_with_vat": 95.58,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "hills-ve-37"
+},
+{
+"name": "גור חתול - עוף",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 142.0,
+"price_with_vat": 167.56,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-ve-38"
+},
+{
+"name": "בוגר ומבוגר חתול Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 148.0,
+"price_with_vat": 174.64,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-ve-39"
+},
+{
+"name": "בוגר ומבוגר חתול Dental - עוף",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 261.0,
+"price_with_vat": 307.98,
+"animal": "חתול",
+"unit": "6.5 ק\"ג",
+"id": "hills-ve-40"
+},
+{
+"name": "בוגר חתול לבקרת משקל - טונה",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-ve-41"
+},
+{
+"name": "סניור חתול לתמיכה בהזדקנות - עוף",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 146.0,
+"price_with_vat": 172.28,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "hills-ve-42"
+}
+]
+}

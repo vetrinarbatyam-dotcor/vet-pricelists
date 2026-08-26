@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="0 0 220 48" role="img" aria-label="ClaudeVet">
+  <style>text{font-family:'Frank Ruhl Libre',Georgia,serif;font-weight:700;font-size:30px;letter-spacing:-0.5px}</style>
+  <text x="4" y="35" fill="#1E2A2C">Claude<tspan fill="#0F6E63">Vet</tspan></text>
+  <circle cx="121" cy="9" r="3.2" fill="#B0754A"/>
+</svg>

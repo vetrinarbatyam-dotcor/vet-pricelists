@@ -1,0 +1,267 @@
+{
+"meta": {
+"slug": "monge-vet",
+"type": "food",
+"supplier": "Monge Vet Solution",
+"price_list_date": "2025-01",
+"source_file": "sources/food/monge-vet-2025-01.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 25,
+"status": "stale",
+"imported_at": "2026-08-26",
+"notes": null
+},
+"items": [
+{
+"name": "אובסיטי כלב",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 409.0,
+"price_with_vat": 482.62,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "monge-vet-1"
+},
+{
+"name": "אובסיטי כלב",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "monge-vet-2"
+},
+{
+"name": "אינטסטינל כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 409.0,
+"price_with_vat": 482.62,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "monge-vet-3"
+},
+{
+"name": "אינטסטינל כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "monge-vet-4"
+},
+{
+"name": "אינטסטינל פפי כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 103.0,
+"price_with_vat": 121.54,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-5"
+},
+{
+"name": "אינטסטינל פפי כלב",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 210.0,
+"price_with_vat": 247.8,
+"animal": "כלב",
+"unit": "5 ק\"ג",
+"id": "monge-vet-6"
+},
+{
+"name": "דיאבטיק חתול",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 101.0,
+"price_with_vat": 119.18,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-7"
+},
+{
+"name": "דיאבטיק כלב",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 448.0,
+"price_with_vat": 528.64,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "monge-vet-8"
+},
+{
+"name": "דיאבטיק כלב",
+"category": "סוכרת",
+"topic": "endocrine",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "monge-vet-9"
+},
+{
+"name": "דרמטוזיס כלב",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 406.0,
+"price_with_vat": 479.08,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "monge-vet-10"
+},
+{
+"name": "דרמטוזיס כלב",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "monge-vet-11"
+},
+{
+"name": "הפטיק חתול",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 101.0,
+"price_with_vat": 119.18,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-12"
+},
+{
+"name": "הפטיק כלב",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 448.0,
+"price_with_vat": 528.64,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "monge-vet-13"
+},
+{
+"name": "הפטיק כלב",
+"category": "מחלות כבד",
+"topic": "liver",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "monge-vet-14"
+},
+{
+"name": "אובסיטי חתול",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 97.0,
+"price_with_vat": 114.46,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-15"
+},
+{
+"name": "אינטסטינל חתול",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 97.0,
+"price_with_vat": 114.46,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-16"
+},
+{
+"name": "דרמטוזיס חתול",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 97.0,
+"price_with_vat": 114.46,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-17"
+},
+{
+"name": "יורינרי אוקסלייט חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 97.0,
+"price_with_vat": 114.46,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-18"
+},
+{
+"name": "יורינרי סטרווויט חתול",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 97.0,
+"price_with_vat": 114.46,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-19"
+},
+{
+"name": "רנל חתול",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 97.0,
+"price_with_vat": 114.46,
+"animal": "חתול",
+"unit": "1.5 ק\"ג",
+"id": "monge-vet-20"
+},
+{
+"name": "מוביליטי כלב",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 448.0,
+"price_with_vat": 528.64,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "monge-vet-21"
+},
+{
+"name": "קרדיאק כלב",
+"category": "לב",
+"topic": "cardio",
+"price_no_vat": 448.0,
+"price_with_vat": 528.64,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "monge-vet-22"
+},
+{
+"name": "קרדיאק כלב",
+"category": "לב",
+"topic": "cardio",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "monge-vet-23"
+},
+{
+"name": "רנל כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 431.0,
+"price_with_vat": 508.58,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "monge-vet-24"
+},
+{
+"name": "רנל כלב",
+"category": "מחלות כליה",
+"topic": "kidney",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "monge-vet-25"
+}
+]
+}

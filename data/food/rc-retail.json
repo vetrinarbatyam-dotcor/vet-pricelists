@@ -1,0 +1,1597 @@
+{
+"meta": {
+"slug": "rc-retail",
+"type": "food",
+"supplier": "Royal Canin חנויות",
+"price_list_date": null,
+"source_file": null,
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 158,
+"status": "missing_source",
+"imported_at": "2026-08-26",
+"notes": "מקור התאריך לא מתועד"
+},
+"items": [
+{
+"name": "פאפי סמול אקסטרה",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 89.0,
+"price_with_vat": 105.02,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-1"
+},
+{
+"name": "פאפי סמול אקסטרה",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-2"
+},
+{
+"name": "אדולט סמול אקסטרה",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 81.0,
+"price_with_vat": 95.58,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-3"
+},
+{
+"name": "אדולט סמול אקסטרה",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 125.0,
+"price_with_vat": 147.5,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-4"
+},
+{
+"name": "אייג'ינג סמול אקסטרה +12",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 92.0,
+"price_with_vat": 108.56,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-5"
+},
+{
+"name": "סטרטר מיני",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 155.0,
+"price_with_vat": 182.9,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-6"
+},
+{
+"name": "סטרטר מיני",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 325.0,
+"price_with_vat": 383.5,
+"animal": "כלב",
+"unit": "8 ק\"ג",
+"id": "rc-retail-7"
+},
+{
+"name": "פאפי מיני",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 87.0,
+"price_with_vat": 102.66,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-retail-8"
+},
+{
+"name": "פאפי מיני",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-9"
+},
+{
+"name": "פאפי מיני",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 235.0,
+"price_with_vat": 277.3,
+"animal": "כלב",
+"unit": "8 ק\"ג",
+"id": "rc-retail-10"
+},
+{
+"name": "אדולט מיני",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 76.0,
+"price_with_vat": 89.68,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-retail-11"
+},
+{
+"name": "אדולט מיני",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-12"
+},
+{
+"name": "אדולט מיני",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 219.0,
+"price_with_vat": 258.42,
+"animal": "כלב",
+"unit": "8 ק\"ג",
+"id": "rc-retail-13"
+},
+{
+"name": "אדולט מיני +8",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 85.0,
+"price_with_vat": 100.3,
+"animal": "כלב",
+"unit": "2 ק\"ג",
+"id": "rc-retail-14"
+},
+{
+"name": "אדולט מיני +8",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 149.0,
+"price_with_vat": 175.82,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-15"
+},
+{
+"name": "אדולט מיני +8",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 249.0,
+"price_with_vat": 293.82,
+"animal": "כלב",
+"unit": "8 ק\"ג",
+"id": "rc-retail-16"
+},
+{
+"name": "אייג'ינג מיני",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 149.0,
+"price_with_vat": 175.82,
+"animal": "כלב",
+"unit": "3.5 ק\"ג",
+"id": "rc-retail-17"
+},
+{
+"name": "סטרטר מדיום",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-18"
+},
+{
+"name": "סטרטר מדיום",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 359.0,
+"price_with_vat": 423.62,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-19"
+},
+{
+"name": "פאפי מדיום",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-20"
+},
+{
+"name": "פאפי מדיום",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-21"
+},
+{
+"name": "אדולט מדיום",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-22"
+},
+{
+"name": "אדולט מדיום",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-23"
+},
+{
+"name": "אדולט מדיום +7",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 345.0,
+"price_with_vat": 407.1,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-24"
+},
+{
+"name": "סטרטר מקסי",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-25"
+},
+{
+"name": "סטרטר מקסי",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 359.0,
+"price_with_vat": 423.62,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-26"
+},
+{
+"name": "פאפי מקסי",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-27"
+},
+{
+"name": "פאפי מקסי",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-28"
+},
+{
+"name": "אדולט מקסי",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"animal": "כלב",
+"unit": "4 ק\"ג",
+"id": "rc-retail-29"
+},
+{
+"name": "אדולט מקסי",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-30"
+},
+{
+"name": "אדולט מקסי +5",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-31"
+},
+{
+"name": "אייג'ינג מקסי",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 345.0,
+"price_with_vat": 407.1,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-32"
+},
+{
+"name": "סטרטר ג'יאנט",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 385.0,
+"price_with_vat": 454.3,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-33"
+},
+{
+"name": "פאפי ג'יאנט",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 355.0,
+"price_with_vat": 418.9,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-34"
+},
+{
+"name": "ג'וניור ג'יאנט",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 355.0,
+"price_with_vat": 418.9,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-35"
+},
+{
+"name": "אדולט ג'יאנט",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 349.0,
+"price_with_vat": 411.82,
+"animal": "כלב",
+"unit": "15 ק\"ג",
+"id": "rc-retail-36"
+},
+{
+"name": "אקסיג'נט מיני CCN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-37"
+},
+{
+"name": "קייר דייג'סטיב מיני CCN",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-38"
+},
+{
+"name": "קייר דייג'סטיב מדיום CCN",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-retail-39"
+},
+{
+"name": "קייר דנטאל מיני CCN",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-40"
+},
+{
+"name": "קייר דנטאל מדיום CCN",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "rc-retail-41"
+},
+{
+"name": "קייר דנטאל מקסי CCN",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 269.0,
+"price_with_vat": 317.42,
+"animal": "כלב",
+"unit": "9 ק\"ג",
+"id": "rc-retail-42"
+},
+{
+"name": "דרמה מיני CCN",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-43"
+},
+{
+"name": "דרמה מדיום CCN",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-retail-44"
+},
+{
+"name": "דרמה מקסי CCN",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-retail-45"
+},
+{
+"name": "קייר ווייט לייט מיני CCN",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-46"
+},
+{
+"name": "קייר ווייט לייט מדיום CCN",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-retail-47"
+},
+{
+"name": "קייר ווייט לייט מקסי CCN",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-retail-48"
+},
+{
+"name": "קייר ג'וינט מקסי CCN",
+"category": "מפרקים / ניידות",
+"topic": "joints",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "כלב",
+"unit": "10 ק\"ג",
+"id": "rc-retail-49"
+},
+{
+"name": "פאפי שיצו BHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 99.0,
+"price_with_vat": 116.82,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-50"
+},
+{
+"name": "אדולט שיצו BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-51"
+},
+{
+"name": "אדולט שיצו BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 259.0,
+"price_with_vat": 305.62,
+"animal": "כלב",
+"unit": "7.5 ק\"ג",
+"id": "rc-retail-52"
+},
+{
+"name": "אדולט פומרניאן BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-53"
+},
+{
+"name": "אדולט פומרניאן BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-54"
+},
+{
+"name": "פאפי יורקשייר BHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 99.0,
+"price_with_vat": 116.82,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-55"
+},
+{
+"name": "אדולט יורקשייר BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-56"
+},
+{
+"name": "אדולט יורקשייר BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-57"
+},
+{
+"name": "פאפי פודל BHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-58"
+},
+{
+"name": "אדולט פודל BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-59"
+},
+{
+"name": "אדולט פודל BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-60"
+},
+{
+"name": "פאפי צ'יוואווה BHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 99.0,
+"price_with_vat": 116.82,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-61"
+},
+{
+"name": "אדולט צ'יוואווה BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-62"
+},
+{
+"name": "אדולט ג'ק ראסל BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-63"
+},
+{
+"name": "אדולט מלטז BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-64"
+},
+{
+"name": "פאפי קינג צ'ארלס BHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 99.0,
+"price_with_vat": 116.82,
+"animal": "כלב",
+"unit": "1.5 ק\"ג",
+"id": "rc-retail-65"
+},
+{
+"name": "אדולט קינג צ'ארלס BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"animal": "כלב",
+"unit": "3 ק\"ג",
+"id": "rc-retail-66"
+},
+{
+"name": "פאפי לברדור BHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-retail-67"
+},
+{
+"name": "אדולט לברדור BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 329.0,
+"price_with_vat": 388.22,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-retail-68"
+},
+{
+"name": "פאפי רועה גרמני BHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 339.0,
+"price_with_vat": 400.02,
+"animal": "כלב",
+"unit": "12 ק\"ג",
+"id": "rc-retail-69"
+},
+{
+"name": "רועה גרמני BHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 329.0,
+"price_with_vat": 388.22,
+"animal": "כלב",
+"unit": "11 ק\"ג",
+"id": "rc-retail-70"
+},
+{
+"name": "סטרטר מוס כלב שימורים",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "כלב",
+"unit": "12x195 גר'",
+"id": "rc-retail-71"
+},
+{
+"name": "פאפי מיני פאוץ'",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-72"
+},
+{
+"name": "אדולט מיני פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-73"
+},
+{
+"name": "פאפי מדיום פאוץ'",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"animal": "כלב",
+"unit": "10x140 גר'",
+"id": "rc-retail-74"
+},
+{
+"name": "אדולט מדיום פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"animal": "כלב",
+"unit": "10x140 גר'",
+"id": "rc-retail-75"
+},
+{
+"name": "פאפי מקסי פאוץ'",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"animal": "כלב",
+"unit": "10x140 גר'",
+"id": "rc-retail-76"
+},
+{
+"name": "אדולט מקסי פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"animal": "כלב",
+"unit": "10x140 גר'",
+"id": "rc-retail-77"
+},
+{
+"name": "יורקשייר פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-78"
+},
+{
+"name": "פודל פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-79"
+},
+{
+"name": "פומרניאן פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-80"
+},
+{
+"name": "צ'יוואווה פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-81"
+},
+{
+"name": "שיצו פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-82"
+},
+{
+"name": "אקסיג'נט CCN פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 74.0,
+"price_with_vat": 87.32,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-83"
+},
+{
+"name": "קייר דייג'סטיב CCN פאוץ'",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 74.0,
+"price_with_vat": 87.32,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-84"
+},
+{
+"name": "קומפורט דרמה CCN פאוץ'",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 74.0,
+"price_with_vat": 87.32,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-85"
+},
+{
+"name": "יורינרי CCN פאוץ'",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 74.0,
+"price_with_vat": 87.32,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-86"
+},
+{
+"name": "ווייט לייט CCN פאוץ'",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 74.0,
+"price_with_vat": 87.32,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-87"
+},
+{
+"name": "קואט CCN פאוץ'",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 74.0,
+"price_with_vat": 87.32,
+"animal": "כלב",
+"unit": "12x85 גר'",
+"id": "rc-retail-88"
+},
+{
+"name": "בייביקט אם וגורים FHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 105.0,
+"price_with_vat": 123.9,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-89"
+},
+{
+"name": "בייביקט אם וגורים FHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 176.0,
+"price_with_vat": 207.68,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-90"
+},
+{
+"name": "קיטן FHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 105.0,
+"price_with_vat": 123.9,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-91"
+},
+{
+"name": "קיטן FHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 176.0,
+"price_with_vat": 207.68,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-92"
+},
+{
+"name": "קיטן FHN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "חתול",
+"unit": "10 ק\"ג",
+"id": "rc-retail-93"
+},
+{
+"name": "פיט 32 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-94"
+},
+{
+"name": "פיט 32 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-95"
+},
+{
+"name": "פיט 32 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 335.0,
+"price_with_vat": 395.3,
+"animal": "חתול",
+"unit": "15 ק\"ג",
+"id": "rc-retail-96"
+},
+{
+"name": "סנסיבל FHN",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-97"
+},
+{
+"name": "סנסיבל FHN",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-98"
+},
+{
+"name": "סנסיבל FHN",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "חתול",
+"unit": "10 ק\"ג",
+"id": "rc-retail-99"
+},
+{
+"name": "סטרילייז 37 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-100"
+},
+{
+"name": "סטרילייז 37 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-101"
+},
+{
+"name": "סטרילייז 37 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 309.0,
+"price_with_vat": 364.62,
+"animal": "חתול",
+"unit": "10 ק\"ג",
+"id": "rc-retail-102"
+},
+{
+"name": "סטרילייז +7 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 179.0,
+"price_with_vat": 211.22,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-retail-103"
+},
+{
+"name": "סטרילייז +12 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 165.0,
+"price_with_vat": 194.7,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-104"
+},
+{
+"name": "אקסיג'נט סאבור FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 177.0,
+"price_with_vat": 208.86,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-105"
+},
+{
+"name": "אקסיג'נט פרוטאין FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 177.0,
+"price_with_vat": 208.86,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-106"
+},
+{
+"name": "אקסיג'נט ארומה FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 177.0,
+"price_with_vat": 208.86,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-107"
+},
+{
+"name": "אינדור 27 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 172.0,
+"price_with_vat": 202.96,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-108"
+},
+{
+"name": "אינדור 27 +7 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 165.0,
+"price_with_vat": 194.7,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-retail-109"
+},
+{
+"name": "אייג'ינג +12 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 119.0,
+"price_with_vat": 140.42,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-110"
+},
+{
+"name": "אייג'ינג +12 FHN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 179.0,
+"price_with_vat": 211.22,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-111"
+},
+{
+"name": "קייר אוראל FCN",
+"category": "שיניים",
+"topic": "dental",
+"price_no_vat": 182.0,
+"price_with_vat": 214.76,
+"animal": "חתול",
+"unit": "3.5 ק\"ג",
+"id": "rc-retail-112"
+},
+{
+"name": "קייר דייג'סטיב FCN",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 189.0,
+"price_with_vat": 223.02,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-113"
+},
+{
+"name": "קייר סקין אנד הייר FCN",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 189.0,
+"price_with_vat": 223.02,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-114"
+},
+{
+"name": "קייר היירבול FCN",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 189.0,
+"price_with_vat": 223.02,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-115"
+},
+{
+"name": "קייר היירבול FCN",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 329.0,
+"price_with_vat": 388.22,
+"animal": "חתול",
+"unit": "10 ק\"ג",
+"id": "rc-retail-116"
+},
+{
+"name": "קייר יורינרי FCN",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 189.0,
+"price_with_vat": 223.02,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-117"
+},
+{
+"name": "קייר ווייט לייט FCN",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 170.0,
+"price_with_vat": 200.6,
+"animal": "חתול",
+"unit": "3 ק\"ג",
+"id": "rc-retail-118"
+},
+{
+"name": "קייר ווייט לייט FCN",
+"category": "השמנה / ירידה במשקל",
+"topic": "nutrition",
+"price_no_vat": 289.0,
+"price_with_vat": 341.02,
+"animal": "חתול",
+"unit": "8 ק\"ג",
+"id": "rc-retail-119"
+},
+{
+"name": "בריטי קיטן FBN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 105.0,
+"price_with_vat": 123.9,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-120"
+},
+{
+"name": "בריטי FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 102.0,
+"price_with_vat": 120.36,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-121"
+},
+{
+"name": "בריטי FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 178.0,
+"price_with_vat": 210.04,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-122"
+},
+{
+"name": "בריטי FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 325.0,
+"price_with_vat": 383.5,
+"animal": "חתול",
+"unit": "10 ק\"ג",
+"id": "rc-retail-123"
+},
+{
+"name": "סיאמי FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 178.0,
+"price_with_vat": 210.04,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-124"
+},
+{
+"name": "ספינקס FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 102.0,
+"price_with_vat": 120.36,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-125"
+},
+{
+"name": "פרסי קיטן FBN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 105.0,
+"price_with_vat": 123.9,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-126"
+},
+{
+"name": "פרסי קיטן FBN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 178.0,
+"price_with_vat": 210.04,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-127"
+},
+{
+"name": "פרסי FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 102.0,
+"price_with_vat": 120.36,
+"animal": "חתול",
+"unit": "2 ק\"ג",
+"id": "rc-retail-128"
+},
+{
+"name": "פרסי FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 178.0,
+"price_with_vat": 210.04,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-129"
+},
+{
+"name": "פרסי FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 325.0,
+"price_with_vat": 383.5,
+"animal": "חתול",
+"unit": "10 ק\"ג",
+"id": "rc-retail-130"
+},
+{
+"name": "קון מיין קיטן FBN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 178.0,
+"price_with_vat": 210.04,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-131"
+},
+{
+"name": "קון מיין קיטן FBN",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 325.0,
+"price_with_vat": 383.5,
+"animal": "חתול",
+"unit": "10 ק\"ג",
+"id": "rc-retail-132"
+},
+{
+"name": "קון מיין FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 178.0,
+"price_with_vat": 210.04,
+"animal": "חתול",
+"unit": "4 ק\"ג",
+"id": "rc-retail-133"
+},
+{
+"name": "קון מיין FBN",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 325.0,
+"price_with_vat": 383.5,
+"animal": "חתול",
+"unit": "10 ק\"ג",
+"id": "rc-retail-134"
+},
+{
+"name": "בייביקט מוס שימורים",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 129.0,
+"price_with_vat": 152.22,
+"animal": "חתול",
+"unit": "12x195 גר'",
+"id": "rc-retail-135"
+},
+{
+"name": "קיטן ברוטב פאוץ'",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-136"
+},
+{
+"name": "קיטן ג'לי פאוץ'",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-137"
+},
+{
+"name": "קיטן פטה פאוץ'",
+"category": "גורים",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-138"
+},
+{
+"name": "אינסטינקטיב ברוטב פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-139"
+},
+{
+"name": "אינסטינקטיב ג'לי פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-140"
+},
+{
+"name": "אינסטינקטיב פטה פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-141"
+},
+{
+"name": "אינדור ברוטב פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-142"
+},
+{
+"name": "סטרילייז ברוטב פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-143"
+},
+{
+"name": "סטרילייז ג'לי פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-144"
+},
+{
+"name": "סטרילייז פטה פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-145"
+},
+{
+"name": "אייג'ינג +12 ברוטב פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-146"
+},
+{
+"name": "אייג'ינג +12 ג'לי פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-147"
+},
+{
+"name": "קייר אולטרא פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-148"
+},
+{
+"name": "קייר סקין אנד הייר פאוץ'",
+"category": "עור ופרווה",
+"topic": "skin",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-149"
+},
+{
+"name": "קייר סנסיטיב דייג'סטיב פאוץ'",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-150"
+},
+{
+"name": "קייר היירבול פאוץ'",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-151"
+},
+{
+"name": "קייר יורינרי פאוץ'",
+"category": "דרכי שתן",
+"topic": "kidney",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-152"
+},
+{
+"name": "פרסי פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-153"
+},
+{
+"name": "קון מיין פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-154"
+},
+{
+"name": "בריטי פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-155"
+},
+{
+"name": "סנסורי סמל ברוטב פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-156"
+},
+{
+"name": "סנסורי טייסט ברוטב פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-157"
+},
+{
+"name": "סנסורי פיל ברוטב פאוץ'",
+"category": "מזון רגיל",
+"topic": "nutrition",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"animal": "חתול",
+"unit": "12x85 גר'",
+"id": "rc-retail-158"
+}
+]
+}

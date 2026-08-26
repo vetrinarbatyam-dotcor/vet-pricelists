@@ -1,0 +1,98 @@
+{
+"meta": {
+"slug": "karnieli",
+"type": "labs",
+"supplier": "קרניאלי",
+"price_list_date": "2025-01",
+"source_file": "sources/labs/karnieli-2025-01.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 9,
+"status": "stale",
+"imported_at": "2026-08-26",
+"notes": null
+},
+"items": [
+{
+"name": "פאנל מחלות זואונוטיות",
+"category": "פאנלים - עופות",
+"topic": "chemistry",
+"price_no_vat": 160.68,
+"price_with_vat": 189.6,
+"notes": "Salmonella sp, Chlamydophila Pscittaci",
+"id": "karnieli-1"
+},
+{
+"name": "פאנל מערכת נשימה",
+"category": "פאנלים - עופות",
+"topic": "chemistry",
+"price_no_vat": 160.68,
+"price_with_vat": 189.6,
+"notes": "Chlamydophila Pscittaci, Mycoplasma sp.",
+"id": "karnieli-2"
+},
+{
+"name": "פאנל שלשולים",
+"category": "פאנלים - כלבים",
+"topic": "chemistry",
+"price_no_vat": 602.56,
+"price_with_vat": 711.02,
+"notes": "Corona, Salmonella, Parvo, Distemper",
+"id": "karnieli-3"
+},
+{
+"name": "פאנל שלשולים מצומצם",
+"category": "פאנלים - כלבים",
+"topic": "chemistry",
+"price_no_vat": 367.52,
+"price_with_vat": 433.67,
+"notes": "Parvo, Distemper",
+"id": "karnieli-4"
+},
+{
+"name": "פאנל טפילי דם",
+"category": "פאנלים - כלבים",
+"topic": "chemistry",
+"price_no_vat": 405.98,
+"price_with_vat": 479.06,
+"notes": "Ehrlichia, Babesia, Anaplasma, Hepatozoon",
+"id": "karnieli-5"
+},
+{
+"name": "פאנל מחלות זואונוטיות",
+"category": "פאנלים - חתולים",
+"topic": "chemistry",
+"price_no_vat": 376.07,
+"price_with_vat": 443.76,
+"notes": "Toxoplasma, Bartonella, Chlamydophila",
+"id": "karnieli-6"
+},
+{
+"name": "פאנל מערכת נשימה",
+"category": "פאנלים - חתולים",
+"topic": "chemistry",
+"price_no_vat": 564.1,
+"price_with_vat": 665.64,
+"notes": "Chlamydophila, Calici, Herpes, Mycoplasma",
+"id": "karnieli-7"
+},
+{
+"name": "פאנל שלשולים",
+"category": "פאנלים - חתולים",
+"topic": "chemistry",
+"price_no_vat": 367.52,
+"price_with_vat": 433.67,
+"notes": "Panleukopenia, Corona",
+"id": "karnieli-8"
+},
+{
+"name": "פאנל חתולים גזעיים",
+"category": "פאנלים - חתולים",
+"topic": "chemistry",
+"price_no_vat": 658.12,
+"price_with_vat": 776.58,
+"notes": "FIV, FeLV, PKD, Corona, HCM",
+"id": "karnieli-9"
+}
+]
+}
