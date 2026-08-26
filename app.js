@@ -111,13 +111,7 @@ async function render() {
     lists.forEach(l => chips.appendChild(mk(l.meta.supplier, S.supplier === l.meta.slug,
       () => { S.supplier = l.meta.slug; S.category = null; S.shown = PAGE; render(); }, l.items.length, l.meta.status,
       l.meta.source_kind)));
-    Object.entries(MARK).forEach(([kind, m]) => {
-      if (!lists.some(l => l.meta.source_kind === kind)) return;
-      const leg = document.createElement('span');
-      leg.className = 'legend';
-      leg.innerHTML = `<i class="inv ${kind}">${m.sym}</i> ${m.text}`;
-      chips.appendChild(leg);
-    });
+
     const sub = $('#subchips'); sub.innerHTML = ''; sub.hidden = true;
     if (S.supplier) {
       const l = lists.find(x => x.meta.slug === S.supplier), cats = {};
@@ -197,7 +191,7 @@ function renderFacets(lists) {
 // Rows that came that way are marked so nobody reads them as a supplier price list.
 const MARK = {
   invoices: { sym: '✻', text: 'מפורסר מאישורי הזמנה — אין מחירון מפורסם לספק הזה' },
-  internal: { sym: '⚠', text: 'מחירים מקובץ המרפאה — אין מחירון מפורסם לקו הזה, ולא אומתו מול הספק' },
+  internal: { sym: '*', text: 'ללא מקור — מחירים מקובץ המרפאה, אין מחירון מפורסם ולא אומתו מול הספק' },
 };
 const INV = MARK.invoices.sym;
 const INV_TEXT = MARK.invoices.text;

@@ -216,7 +216,6 @@ REG = {
                                                   DLD / "PDF" / "מחירון מחלות גנטיות 2025 (1).pdf",
                                                   DLD / "PDF" / "מחירון וטרינרים פתוגנים כלבים חתולים 2025 (5).pdf"), "no_vat",
                    "פאנלים · מחלות גנטיות · פתוגנים — שלושת מחירוני 2025"),
-    "banet":      ("labs", "פרופ' בנעט", None, None, "no_vat", None),
 }
 FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's PD": "hills-pd", "Hill's VE": "hills-ve",
                      "VetLife": "vetlife", "Purina": "purina-vet", "Purina חנויות": "purina-retail",
@@ -226,7 +225,7 @@ FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's
 FROM_INVOICES = {"vetmarket"}
 # Priced from the clinic's own catalog file with no supplier price list behind them — marked as
 # such on the site so nobody reads the number as a published price.
-FROM_CLINIC_FILE = {"hills-ve", "banet"}
+FROM_CLINIC_FILE = {"hills-ve"}
 FROM_PDF = {"rc-vet", "rc-retail", "purina-vet", "purina-retail", "vetlife", "monge", "monge-vet", "hills-pd"}   # dated PDF replaces the undated TS rows
 LAB_SLUG = {"AML": "aml", "המכון": "hamachon", "IDEXX": "idexx", "קרניאלי": "karnieli", "פרופ בנעט": "banet"}
 
@@ -275,7 +274,6 @@ def _shop_kw(it):
 ACTIONS = {
     "idexx-ref": ("ok", "ארכיון רפרנס, לא פער: המחירון המקוצר 2026 נטען במלואו, וכאן נשארו רק בדיקות שאינן מופיעות בו (חלקן לא זמינות בישראל)."),
     "hills-ve": ("no_source", "היחיד מבין שלושת קווי Hill's בלי מחירון משלו. אינו מופיע במחירון ה-PD, וגדלי האריזה שונים מ-Science Plan — כלומר קו נפרד. 42 השורות מתומחרות מקובץ המרפאה בלבד."),
-    "banet":    ("no_source", "אין קובץ מחירון בידינו — 23 בדיקות מתומחרות מקובץ המרפאה בלבד, לא אומתו מול המעבדה. צריך מחירון מפרופ' בנעט."),
     "karnieli": ("refresh", "שלושת המחירונים הקיימים נטענו במלואם (פאנלים · מחלות גנטיות · פתוגנים) — 66 בדיקות. אלה הפרסומים האחרונים של קרניאלי; כדאי לבקש מחירון 2026."),
     "vetlife":  ("refresh", "המחירון האחרון שבידינו הוא 02/2025 (57 פריטים). כדאי לבקש מהיבואן מחירון 2026."),
     "miltin-consum": ("ok", "מחירון נובמבר 2025 — עדיין בתוקף, אך אם יצא מחירון 2026 כדאי להחליף."),
@@ -426,6 +424,7 @@ def build():
     for it in load("lab_catalog.json"):
         slug = LAB_SLUG[it["lab"]]
         if slug in ("idexx", "karnieli"): continue      # both now come from their own price lists
+        if slug == "banet": continue                   # dropped: no price list behind those 23 rows
         add(lists[slug], item(slug, it["name"], it.get("price_no_vat"), it.get("price_with_vat"), it["category"],
                                 LAB_CAT_TOPIC.get(it["category"], "other"), sku=it.get("code"), notes=it.get("notes")))
 

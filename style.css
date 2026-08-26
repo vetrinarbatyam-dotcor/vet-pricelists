@@ -255,3 +255,8 @@ td.buy{border-inline:2px solid var(--crit);background:rgba(166,52,52,.05);backgr
 tbody tr:last-child td.buy{border-bottom:2px solid var(--crit)}
 #supBody td.buy input{width:110px;font-weight:700;text-align:center;border-color:var(--crit)}
 td.buy .pc{color:var(--crit);font-weight:700}
+footer .marks{display:flex;flex-direction:column;gap:3px}
+footer .marks .inv{font-style:normal;font-weight:700}
+footer .marks .inv.internal{color:var(--crit)}
+footer .marks .inv.invoices{color:var(--copper)}
+footer .marks b{color:var(--crit)}
