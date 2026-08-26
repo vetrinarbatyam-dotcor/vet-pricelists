@@ -1,0 +1,3399 @@
+{
+"meta": {
+"action": "refresh",
+"action_note": "מחירי 2025. כל הבדיקות שחוזרות במחירון המקוצר 2026 הועברו לשם — כאן נשארו רק בדיקות שלא מופיעות בו.",
+"slug": "idexx-ref",
+"type": "labs",
+"supplier": "IDEXX — רפרנס",
+"price_list_date": "2025-01",
+"source_file": "sources/labs/idexx-ref-2025-01.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 373,
+"status": "stale",
+"imported_at": "2026-08-26",
+"notes": "מחירון רפרנס 2025 — בדיקות שאינן במחירון המקוצר 2026; חלקן אינן זמינות בישראל"
+},
+"items": [
+{
+"name": "Angio Detect™ Test (Lungworm) (Canine) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 110.2,
+"price_with_vat": 130.04,
+"sku": "AANGIO",
+"id": "idexx-ref-1"
+},
+{
+"name": "Bile Acid Stimulation Test - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 124.7,
+"price_with_vat": 147.15,
+"sku": "ABAS",
+"id": "idexx-ref-2"
+},
+{
+"name": "Total Bilirubin - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 37.7,
+"price_with_vat": 44.49,
+"sku": "ABILT",
+"id": "idexx-ref-3"
+},
+{
+"name": "Cardiopet® proBNP (Feline) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 237.8,
+"price_with_vat": 280.6,
+"sku": "ABNF",
+"id": "idexx-ref-4"
+},
+{
+"name": "Cardiopet® proBNP (Canine) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 237.8,
+"price_with_vat": 280.6,
+"sku": "ABNP",
+"id": "idexx-ref-5"
+},
+{
+"name": "Avian Bornavirus Cloacal PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "ABVP",
+"id": "idexx-ref-6"
+},
+{
+"name": "Coombs' Test (Canine) - Add-On",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 159.5,
+"price_with_vat": 188.21,
+"sku": "ACC",
+"id": "idexx-ref-7"
+},
+{
+"name": "Basic Coagulation Screen - Add-On",
+"category": null,
+"topic": "coag",
+"price_no_vat": 319.0,
+"price_with_vat": 376.42,
+"sku": "ACOA",
+"id": "idexx-ref-8"
+},
+{
+"name": "Cortisol - Add-On",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"sku": "ACORT",
+"id": "idexx-ref-9"
+},
+{
+"name": "Spec cPL® (Canine) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 298.7,
+"price_with_vat": 352.47,
+"sku": "ACPL",
+"id": "idexx-ref-10"
+},
+{
+"name": "C Reactive Protein (Canine) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 72.5,
+"price_with_vat": 85.55,
+"sku": "ACRP",
+"id": "idexx-ref-11"
+},
+{
+"name": "Spec cPL®, TLI, Folate & Cobalamin (Canine) - Add-O",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 507.5,
+"price_with_vat": 598.85,
+"sku": "nACTF",
+"id": "idexx-ref-12"
+},
+{
+"name": "Cystatin B (Canine/Feline) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 89.9,
+"price_with_vat": 106.08,
+"sku": "ACYSB",
+"id": "idexx-ref-13"
+},
+{
+"name": "Adenovirus DNA PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "ADVP",
+"id": "idexx-ref-14"
+},
+{
+"name": "Comprehensive Haematology - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"sku": "AFBC",
+"id": "idexx-ref-15"
+},
+{
+"name": "Coombs' Test (Feline) - Add-On",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 159.5,
+"price_with_vat": 188.21,
+"sku": "AFC",
+"id": "idexx-ref-16"
+},
+{
+"name": "Spec fPL®, Folate & Cobalamin (Feline) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 417.6,
+"price_with_vat": 492.77,
+"sku": "AFCS",
+"id": "idexx-ref-17"
+},
+{
+"name": "Faecal Dx® Antigen Panel - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 87.0,
+"price_with_vat": 102.66,
+"sku": "AFET",
+"id": "idexx-ref-18"
+},
+{
+"name": "FeLV & FIV - Add-On",
+"category": null,
+"topic": "serology",
+"price_no_vat": 350.9,
+"price_with_vat": 414.06,
+"sku": "AFF",
+"id": "idexx-ref-19"
+},
+{
+"name": "FGF-23 (Feline) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 234.9,
+"price_with_vat": 277.18,
+"sku": "AFGF23",
+"id": "idexx-ref-20"
+},
+{
+"name": "Blood Film Examination - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 98.6,
+"price_with_vat": 116.35,
+"sku": "AFILM",
+"id": "idexx-ref-21"
+},
+{
+"name": "Folate & Cobalamin - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 203.0,
+"price_with_vat": 239.54,
+"sku": "AFOLCB",
+"id": "idexx-ref-22"
+},
+{
+"name": "Spec fPL® (Feline) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 298.7,
+"price_with_vat": 352.47,
+"sku": "AFPL",
+"id": "idexx-ref-23"
+},
+{
+"name": "Fructosamine - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 89.9,
+"price_with_vat": 106.08,
+"sku": "AFRU",
+"id": "idexx-ref-24"
+},
+{
+"name": "Free T4 by Equilibrium Dialysis - Add-On",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 255.2,
+"price_with_vat": 301.14,
+"sku": "AFT4",
+"id": "idexx-ref-25"
+},
+{
+"name": "Spec fPL®, TLI, Folate & Cobalamin (Feline) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 611.9,
+"price_with_vat": 722.04,
+"sku": "AFTC",
+"id": "idexx-ref-26"
+},
+{
+"name": "GGT - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 37.7,
+"price_with_vat": 44.49,
+"sku": "AGGT",
+"id": "idexx-ref-27"
+},
+{
+"name": "Add Histology to a Dermatology Investigative Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 513.3,
+"price_with_vat": 605.69,
+"sku": "AHIS",
+"id": "idexx-ref-28"
+},
+{
+"name": "Glucose and Insulin (Canine)",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "AIGR",
+"id": "idexx-ref-29"
+},
+{
+"name": "Leishmania serology (Canine) - Add-On",
+"category": null,
+"topic": "serology",
+"price_no_vat": 205.9,
+"price_with_vat": 242.96,
+"sku": "ALEI",
+"id": "idexx-ref-30"
+},
+{
+"name": "Aleutian Mink Disease (Parvovirus)",
+"category": null,
+"topic": "serology",
+"price_no_vat": 1058.5,
+"price_with_vat": 1249.03,
+"sku": "AMD",
+"id": "idexx-ref-31"
+},
+{
+"name": "Haemotropic Mycoplasma PCR Panel (Feline) - Add-O",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 582.9,
+"price_with_vat": 687.82,
+"sku": "nAMPC",
+"id": "idexx-ref-32"
+},
+{
+"name": "Angio Detect™ Test (Lungworm) (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 185.6,
+"price_with_vat": 219.01,
+"sku": "ANGIO",
+"id": "idexx-ref-33"
+},
+{
+"name": "Urine Protein:Creatinine Ratio - Add-On",
+"category": null,
+"topic": "urine",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "APCR",
+"id": "idexx-ref-34"
+},
+{
+"name": "Basic Faecal Screen plus Giardia Antigen - Add-On",
+"category": null,
+"topic": "urine",
+"price_no_vat": 278.4,
+"price_with_vat": 328.51,
+"sku": "ASARCG",
+"id": "idexx-ref-35"
+},
+{
+"name": "SDMA - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 89.9,
+"price_with_vat": 106.08,
+"sku": "ASDMA",
+"id": "idexx-ref-36"
+},
+{
+"name": "Serum Protein Electrophoresis - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 127.6,
+"price_with_vat": 150.57,
+"sku": "ASPE",
+"id": "idexx-ref-37"
+},
+{
+"name": "Aspergillus Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 472.7,
+"price_with_vat": 557.79,
+"sku": "ASPS",
+"id": "idexx-ref-38"
+},
+{
+"name": "Total T4 - Add-On",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 58.0,
+"price_with_vat": 68.44,
+"sku": "AT4",
+"id": "idexx-ref-39"
+},
+{
+"name": "TLI, Folate & Cobalamin (Canine) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 333.5,
+"price_with_vat": 393.53,
+"sku": "ATFC",
+"id": "idexx-ref-40"
+},
+{
+"name": "TLI, Folate & Cobalamin (Feline) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 403.1,
+"price_with_vat": 475.66,
+"sku": "ATFF",
+"id": "idexx-ref-41"
+},
+{
+"name": "TLI (Canine) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 205.9,
+"price_with_vat": 242.96,
+"sku": "ATLIC",
+"id": "idexx-ref-42"
+},
+{
+"name": "TLI (Feline) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 269.7,
+"price_with_vat": 318.25,
+"sku": "ATLIF",
+"id": "idexx-ref-43"
+},
+{
+"name": "Atopy Investigative Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1513.8,
+"price_with_vat": 1786.28,
+"sku": "ATOPY",
+"id": "idexx-ref-44"
+},
+{
+"name": "Urine Chemistry, Microscopy & Culture - Add-On",
+"category": null,
+"topic": "culture",
+"price_no_vat": 290.0,
+"price_with_vat": 342.2,
+"sku": "AUCE",
+"id": "idexx-ref-45"
+},
+{
+"name": "Urine Culture - Add-On",
+"category": null,
+"topic": "culture",
+"price_no_vat": 197.2,
+"price_with_vat": 232.7,
+"sku": "AUCUL",
+"id": "idexx-ref-46"
+},
+{
+"name": "Urine Minimum Database - Add-On",
+"category": null,
+"topic": "urine",
+"price_no_vat": 145.0,
+"price_with_vat": 171.1,
+"sku": "AUENC",
+"id": "idexx-ref-47"
+},
+{
+"name": "Basic Avian Faecal Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 313.2,
+"price_with_vat": 369.58,
+"sku": "AV",
+"id": "idexx-ref-48"
+},
+{
+"name": "Avian Basic Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 464.0,
+"price_with_vat": 547.52,
+"sku": "AVB",
+"id": "idexx-ref-49"
+},
+{
+"name": "Comprehensive Avian Faecal Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 640.9,
+"price_with_vat": 756.26,
+"sku": "AVCC",
+"id": "idexx-ref-50"
+},
+{
+"name": "Comprehensive Avian Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 609.0,
+"price_with_vat": 718.62,
+"sku": "AVE",
+"id": "idexx-ref-51"
+},
+{
+"name": "Avian Panel 1",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 487.2,
+"price_with_vat": 574.9,
+"sku": "AVP1",
+"id": "idexx-ref-52"
+},
+{
+"name": "Avian Panel 2",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 582.9,
+"price_with_vat": 687.82,
+"sku": "AVP2",
+"id": "idexx-ref-53"
+},
+{
+"name": "Avian Panel 3",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 582.9,
+"price_with_vat": 687.82,
+"sku": "AVP3",
+"id": "idexx-ref-54"
+},
+{
+"name": "Avian Panel 4",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 667.0,
+"price_with_vat": 787.06,
+"sku": "AVP4",
+"id": "idexx-ref-55"
+},
+{
+"name": "Free T4 by immunoassay - Add-On",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 176.9,
+"price_with_vat": 208.74,
+"sku": "AVT4",
+"id": "idexx-ref-56"
+},
+{
+"name": "Bile Acid (Fasting)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 118.9,
+"price_with_vat": 140.3,
+"sku": "BA",
+"id": "idexx-ref-57"
+},
+{
+"name": "Baermann Test for Lungworm - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "BAEA",
+"id": "idexx-ref-58"
+},
+{
+"name": "Baermann Test for Lungworm",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 249.4,
+"price_with_vat": 294.29,
+"sku": "BAER",
+"id": "idexx-ref-59"
+},
+{
+"name": "Bile Acid (Post Feed) - Add-On",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 72.5,
+"price_with_vat": 85.55,
+"sku": "BAP",
+"id": "idexx-ref-60"
+},
+{
+"name": "Bile Acid (Post Feed)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 118.9,
+"price_with_vat": 140.3,
+"sku": "BAPOST",
+"id": "idexx-ref-61"
+},
+{
+"name": "Bile Acid Stimulation Test",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 205.9,
+"price_with_vat": 242.96,
+"sku": "BAS",
+"id": "idexx-ref-62"
+},
+{
+"name": "Blood Culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 429.2,
+"price_with_vat": 506.46,
+"sku": "BC",
+"id": "idexx-ref-63"
+},
+{
+"name": "Body Cavity Fluid Cytology (Ascitic/Pericardial/Pleura",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 690.2,
+"price_with_vat": 814.44,
+"sku": "lB) C- 1F LFDluid/S",
+"id": "idexx-ref-64"
+},
+{
+"name": "Body Cavity Fluid Cytology (Ascitic/Pericardial/Pleura",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 777.2,
+"price_with_vat": 917.1,
+"sku": "lB) C- 2F LFDlu2ids/",
+"id": "idexx-ref-65"
+},
+{
+"name": "Body Cavity Fluid Cytology (Ascitic/Pericardial/Pleura",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 864.2,
+"price_with_vat": 1019.76,
+"sku": "lB) C- 3F LFDlu3ids/",
+"id": "idexx-ref-66"
+},
+{
+"name": "Body Cavity Fluid Cytology (Ascitic/Pericardial/Pleura",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 951.2,
+"price_with_vat": 1122.42,
+"sku": "lB) C- 4F LFDlu4ids/",
+"id": "idexx-ref-67"
+},
+{
+"name": "Total Bilirubin",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 63.8,
+"price_with_vat": 75.28,
+"sku": "BILT",
+"id": "idexx-ref-68"
+},
+{
+"name": "Bovine Metabolic Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 223.3,
+"price_with_vat": 263.49,
+"sku": "BMET",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-69"
+},
+{
+"name": "Lyme (Borrelia spp.) (DNA) RealPCR™",
+"category": null,
+"topic": "serology",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "BPCR",
+"id": "idexx-ref-70"
+},
+{
+"name": "Borrelia PCR (Equine)",
+"category": null,
+"topic": "serology",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "BPCRE",
+"id": "idexx-ref-71"
+},
+{
+"name": "Bovine Pregnancy Test",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 46.4,
+"price_with_vat": 54.75,
+"sku": "BPRE",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-72"
+},
+{
+"name": "Basic Rabbit Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 379.9,
+"price_with_vat": 448.28,
+"sku": "BRP",
+"id": "idexx-ref-73"
+},
+{
+"name": "Brucella spp. (DNA) PCR",
+"category": null,
+"topic": "serology",
+"price_no_vat": 577.1,
+"price_with_vat": 680.98,
+"sku": "BRUCSP",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-74"
+},
+{
+"name": "Brucella canis Antibody Test",
+"category": null,
+"topic": "serology",
+"price_no_vat": 504.6,
+"price_with_vat": 595.43,
+"sku": "BRULA",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-75"
+},
+{
+"name": "Calicivirus (RNA) RealPCR™",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "CALF",
+"id": "idexx-ref-76"
+},
+{
+"name": "Campylobacter Culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 197.2,
+"price_with_vat": 232.7,
+"sku": "CAMP",
+"id": "idexx-ref-77"
+},
+{
+"name": "Canine Cardiac Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 722.1,
+"price_with_vat": 852.08,
+"sku": "CARDI",
+"id": "idexx-ref-78"
+},
+{
+"name": "Canine Cardiac Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 669.9,
+"price_with_vat": 790.48,
+"sku": "CARDN",
+"id": "idexx-ref-79"
+},
+{
+"name": "Canine Cardiac Plus Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 864.2,
+"price_with_vat": 1019.76,
+"sku": "CARDT",
+"id": "idexx-ref-80"
+},
+{
+"name": "Feline Cardiac Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 722.1,
+"price_with_vat": 852.08,
+"sku": "CARFI",
+"id": "idexx-ref-81"
+},
+{
+"name": "Feline Cardiac Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 669.9,
+"price_with_vat": 790.48,
+"sku": "CARFN",
+"id": "idexx-ref-82"
+},
+{
+"name": "Feline Cardiac Plus Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 864.2,
+"price_with_vat": 1019.76,
+"sku": "CARFT",
+"id": "idexx-ref-83"
+},
+{
+"name": "Canine Anaemia Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 472.7,
+"price_with_vat": 557.79,
+"sku": "CAS",
+"id": "idexx-ref-84"
+},
+{
+"name": "Cardiopet proBNP (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 394.4,
+"price_with_vat": 465.39,
+"sku": "CBNP",
+"id": "idexx-ref-85"
+},
+{
+"name": "Cardiopet® proBNP and Troponin I HS (Canine) - Add-",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "COBnTP",
+"id": "idexx-ref-86"
+},
+{
+"name": "Coombs' (Canine)",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 266.8,
+"price_with_vat": 314.82,
+"sku": "CC",
+"id": "idexx-ref-87"
+},
+{
+"name": "Respiratory Coronavirus CRCoV (RNA) RealPCR™",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 365.4,
+"price_with_vat": 431.17,
+"sku": "CCPV",
+"id": "idexx-ref-88"
+},
+{
+"name": "C. difficile toxin A and B PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 487.2,
+"price_with_vat": 574.9,
+"sku": "CDPCR",
+"id": "idexx-ref-89"
+},
+{
+"name": "CEM Swab",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 165.3,
+"price_with_vat": 195.05,
+"sku": "CEM1",
+"id": "idexx-ref-90"
+},
+{
+"name": "Comprehensive Faecal Screen Includes Giardia Antig",
+"category": null,
+"topic": "urine",
+"price_no_vat": 649.6,
+"price_with_vat": 766.53,
+"sku": "eCnFG",
+"id": "idexx-ref-91"
+},
+{
+"name": "Comprehensive Faecal Screen Plus Faecal Dx® Antig",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 913.5,
+"price_with_vat": 1077.93,
+"sku": "eCnF PGa+nel",
+"id": "idexx-ref-92"
+},
+{
+"name": "Spec cPL, Folate & Cobalamin, TLI (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 846.8,
+"price_with_vat": 999.22,
+"sku": "CFTC",
+"id": "idexx-ref-93"
+},
+{
+"name": "Blood Typing (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 403.1,
+"price_with_vat": 475.66,
+"sku": "CGP",
+"id": "idexx-ref-94"
+},
+{
+"name": "Chem 10 CLIP",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 133.4,
+"price_with_vat": 157.41,
+"sku": "CHEM10",
+"id": "idexx-ref-95"
+},
+{
+"name": "Chem 15 CLIP",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 191.4,
+"price_with_vat": 225.85,
+"sku": "CHEM15",
+"id": "idexx-ref-96"
+},
+{
+"name": "Chem 17 CLIP",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 197.2,
+"price_with_vat": 232.7,
+"sku": "CHEM17",
+"id": "idexx-ref-97"
+},
+{
+"name": "Feline Calici and Herpesvirus RealPCR™ panel",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 487.2,
+"price_with_vat": 574.9,
+"sku": "CHP",
+"id": "idexx-ref-98"
+},
+{
+"name": "Infectious Hepatitis Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 394.4,
+"price_with_vat": 465.39,
+"sku": "CIH",
+"id": "idexx-ref-99"
+},
+{
+"name": "Canine Lower Respiratory Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 809.1,
+"price_with_vat": 954.74,
+"sku": "CLRP",
+"id": "idexx-ref-100"
+},
+{
+"name": "Basic Coagulation Profile",
+"category": null,
+"topic": "coag",
+"price_no_vat": 411.8,
+"price_with_vat": 485.92,
+"sku": "COAG",
+"id": "idexx-ref-101"
+},
+{
+"name": "Chlamydia psittaci (DNA) RealPCR™",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "CPCR",
+"id": "idexx-ref-102"
+},
+{
+"name": "Spec cPL (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 495.9,
+"price_with_vat": 585.16,
+"sku": "CPLI",
+"id": "idexx-ref-103"
+},
+{
+"name": "Parvovirus (DNA) RealPCR™",
+"category": null,
+"topic": "serology",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "CPPC",
+"id": "idexx-ref-104"
+},
+{
+"name": "Clostridium Perfringens Toxin PCR (Quantitative)",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 475.6,
+"price_with_vat": 561.21,
+"sku": "CPTP",
+"id": "idexx-ref-105"
+},
+{
+"name": "Canine Pyrexia of Unknown Origin Profile (Interpreted",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 771.4,
+"price_with_vat": 910.25,
+"sku": "C) PUOI",
+"id": "idexx-ref-106"
+},
+{
+"name": "Comprehensive Rabbit Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 559.7,
+"price_with_vat": 660.45,
+"sku": "CRP",
+"id": "idexx-ref-107"
+},
+{
+"name": "Canine Upper Respiratory Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 872.9,
+"price_with_vat": 1030.02,
+"sku": "CRP1",
+"id": "idexx-ref-108"
+},
+{
+"name": "Canine Upper Respiratory Panel plus bacterial culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 1073.0,
+"price_with_vat": 1266.14,
+"sku": "CRPC",
+"id": "idexx-ref-109"
+},
+{
+"name": "C Reactive Protein (Canine Only)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 118.9,
+"price_with_vat": 140.3,
+"sku": "CRPR",
+"id": "idexx-ref-110"
+},
+{
+"name": "Cryptosporidium PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "CRYDP",
+"id": "idexx-ref-111"
+},
+{
+"name": "Protein Electrophoresis (CSF)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 316.1,
+"price_with_vat": 373.0,
+"sku": "CSPE",
+"id": "idexx-ref-112"
+},
+{
+"name": "Cardiopet proBNP & Troponin I HS (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 600.3,
+"price_with_vat": 708.35,
+"sku": "CTNI",
+"id": "idexx-ref-113"
+},
+{
+"name": "Canine travel disease profile - For chronic disease or",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 965.7,
+"price_with_vat": 1139.53,
+"sku": "fCreTqRuAent tra",
+"id": "idexx-ref-114"
+},
+{
+"name": "Clostridial Toxin Screen (Canine & Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 667.0,
+"price_with_vat": 787.06,
+"sku": "CTS",
+"id": "idexx-ref-115"
+},
+{
+"name": "Cyclosporine A",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 675.7,
+"price_with_vat": 797.33,
+"sku": "CYCR",
+"id": "idexx-ref-116"
+},
+{
+"name": "Cystatin B",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "CYSB",
+"id": "idexx-ref-117"
+},
+{
+"name": "Cytology - 5 sampled sites - up to 4 slides/site",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 800.4,
+"price_with_vat": 944.47,
+"sku": "CYTO5",
+"id": "idexx-ref-118"
+},
+{
+"name": "Cytology - 6 sampled sites - up to 4 slides/site",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 887.4,
+"price_with_vat": 1047.13,
+"sku": "CYTO6",
+"id": "idexx-ref-119"
+},
+{
+"name": "Cytology - 7 sampled sites - up to 4 slides/site",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 974.4,
+"price_with_vat": 1149.79,
+"sku": "CYTO7",
+"id": "idexx-ref-120"
+},
+{
+"name": "Cytology - 8 sampled sites - up to 4 slides/site",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 1061.4,
+"price_with_vat": 1252.45,
+"sku": "CYTO8",
+"id": "idexx-ref-121"
+},
+{
+"name": "Cytology - 9 or more sampled sites - up to 4 slides/sit",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 1148.4,
+"price_with_vat": 1355.11,
+"sku": "eCYTX",
+"id": "idexx-ref-122"
+},
+{
+"name": "Vaccination Status (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 751.1,
+"price_with_vat": 886.3,
+"sku": "DAPS",
+"id": "idexx-ref-123"
+},
+{
+"name": "D Dimer (Canine only)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 617.7,
+"price_with_vat": 728.89,
+"sku": "DDIM",
+"id": "idexx-ref-124"
+},
+{
+"name": "Dermatology Investigative Profile (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 661.2,
+"price_with_vat": 780.22,
+"sku": "DEF2",
+"id": "idexx-ref-125"
+},
+{
+"name": "Dermatology Investigative Profile 1 (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 928.0,
+"price_with_vat": 1095.04,
+"sku": "DER1",
+"id": "idexx-ref-126"
+},
+{
+"name": "Dermatology Investigative Profile 2 (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1044.0,
+"price_with_vat": 1231.92,
+"sku": "DER2",
+"id": "idexx-ref-127"
+},
+{
+"name": "Dermatology Investigative Profile 3 (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1148.4,
+"price_with_vat": 1355.11,
+"sku": "DER3",
+"id": "idexx-ref-128"
+},
+{
+"name": "Dermatology Investigative Profile 4 (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1223.8,
+"price_with_vat": 1444.08,
+"sku": "DER4",
+"id": "idexx-ref-129"
+},
+{
+"name": "Dermatophyte RealPCR™ Panel (Canine & Feline)",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "DERMP",
+"id": "idexx-ref-130"
+},
+{
+"name": "Dexamethasone Suppression Test (Canine) - High Do",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 556.8,
+"price_with_vat": 657.02,
+"sku": "sDeEXH",
+"id": "idexx-ref-131"
+},
+{
+"name": "Dexamethasone Suppression Test (Canine) - Low Dos",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 556.8,
+"price_with_vat": 657.02,
+"sku": "DeEXL",
+"id": "idexx-ref-132"
+},
+{
+"name": "Diabetes Monitoring Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 295.8,
+"price_with_vat": 349.04,
+"sku": "DIABI",
+"id": "idexx-ref-133"
+},
+{
+"name": "Diabetes Monitoring Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 226.2,
+"price_with_vat": 266.92,
+"sku": "DIABN",
+"id": "idexx-ref-134"
+},
+{
+"name": "Canine Diarrhoea Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1360.1,
+"price_with_vat": 1604.92,
+"sku": "DIARCI",
+"id": "idexx-ref-135"
+},
+{
+"name": "Canine Diarrhoea Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1299.2,
+"price_with_vat": 1533.06,
+"sku": "DIARCN",
+"id": "idexx-ref-136"
+},
+{
+"name": "Feline Diarrhoea Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1154.2,
+"price_with_vat": 1361.96,
+"sku": "DIARFI",
+"id": "idexx-ref-137"
+},
+{
+"name": "Feline Diarrhoea Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1093.3,
+"price_with_vat": 1290.09,
+"sku": "DIARFN",
+"id": "idexx-ref-138"
+},
+{
+"name": "Digoxin",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 275.5,
+"price_with_vat": 325.09,
+"sku": "DIG",
+"id": "idexx-ref-139"
+},
+{
+"name": "Canine Digoxin Profile (Interpreted)",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 777.2,
+"price_with_vat": 917.1,
+"sku": "DIGM",
+"id": "idexx-ref-140"
+},
+{
+"name": "Feline Digoxin Profile (Interpreted)",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 777.2,
+"price_with_vat": 917.1,
+"sku": "DIGMF",
+"id": "idexx-ref-141"
+},
+{
+"name": "Dexamethasone Suppression Test (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 556.8,
+"price_with_vat": 657.02,
+"sku": "DSTC",
+"id": "idexx-ref-142"
+},
+{
+"name": "E. coli O157 culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 365.4,
+"price_with_vat": 431.17,
+"sku": "EC157",
+"id": "idexx-ref-143"
+},
+{
+"name": "Clostridial Toxin Screen (Equine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 577.1,
+"price_with_vat": 680.98,
+"sku": "ECTS",
+"id": "idexx-ref-144"
+},
+{
+"name": "Dexamethasone Suppression (Equine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 408.9,
+"price_with_vat": 482.5,
+"sku": "EDEX",
+"id": "idexx-ref-145"
+},
+{
+"name": "Equine Diarrhoea Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1099.1,
+"price_with_vat": 1296.94,
+"sku": "EDPP",
+"id": "idexx-ref-146"
+},
+{
+"name": "Fitness Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 362.5,
+"price_with_vat": 427.75,
+"sku": "EF",
+"id": "idexx-ref-147"
+},
+{
+"name": "Herpes Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 716.3,
+"price_with_vat": 845.23,
+"sku": "EHV",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-148"
+},
+{
+"name": "Equine Lead",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 211.7,
+"price_with_vat": 249.81,
+"sku": "ELEAD",
+"id": "idexx-ref-149"
+},
+{
+"name": "Equine Lyme and Anaplasma Antibody Screen",
+"category": null,
+"topic": "serology",
+"price_no_vat": 490.1,
+"price_with_vat": 578.32,
+"sku": "ELYAN",
+"id": "idexx-ref-150"
+},
+{
+"name": "Encephalitozoon Cuniculi PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "ENCPCR",
+"id": "idexx-ref-151"
+},
+{
+"name": "Encephalitozoon Cuniculi Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 719.2,
+"price_with_vat": 848.66,
+"sku": "ENCR",
+"id": "idexx-ref-152"
+},
+{
+"name": "Energy / Protein Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "ENP",
+"id": "idexx-ref-153"
+},
+{
+"name": "Basic Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 420.5,
+"price_with_vat": 496.19,
+"sku": "EP",
+"id": "idexx-ref-154"
+},
+{
+"name": "Equine Upper Respiratory Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 872.9,
+"price_with_vat": 1030.02,
+"sku": "EUR1",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-155"
+},
+{
+"name": "Comprehensive Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 548.1,
+"price_with_vat": 646.76,
+"sku": "EX",
+"id": "idexx-ref-156"
+},
+{
+"name": "Cobalamin & Folate (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 339.3,
+"price_with_vat": 400.37,
+"sku": "F/CB",
+"id": "idexx-ref-157"
+},
+{
+"name": "Ferret Adrenal Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1612.4,
+"price_with_vat": 1902.63,
+"sku": "FAP2",
+"id": "idexx-ref-158"
+},
+{
+"name": "Feline Anaemia Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1281.8,
+"price_with_vat": 1512.52,
+"sku": "FAS",
+"id": "idexx-ref-159"
+},
+{
+"name": "IDEXX CBC-Select (Avian/Reptile)",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 310.3,
+"price_with_vat": 366.15,
+"sku": "FBCE",
+"id": "idexx-ref-160"
+},
+{
+"name": "IDEXX CBC-Select (Equine)",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 223.3,
+"price_with_vat": 263.49,
+"sku": "FBCL",
+"id": "idexx-ref-161"
+},
+{
+"name": "IDEXX CBC-Select (Livestock)",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 223.3,
+"price_with_vat": 263.49,
+"sku": "FBCLPD",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-162"
+},
+{
+"name": "IDEXX CBC-Select",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 223.3,
+"price_with_vat": 263.49,
+"sku": "FBCS",
+"id": "idexx-ref-163"
+},
+{
+"name": "Cardiopet proBNP (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 394.4,
+"price_with_vat": 465.39,
+"sku": "FBNP",
+"id": "idexx-ref-164"
+},
+{
+"name": "Coombs' (Feline)",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 266.8,
+"price_with_vat": 314.82,
+"sku": "FC",
+"id": "idexx-ref-165"
+},
+{
+"name": "Feline Coronavirus (RNA) RealPCR™",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "FCOP",
+"id": "idexx-ref-166"
+},
+{
+"name": "Dermatophyte Culture & Identification",
+"category": null,
+"topic": "culture",
+"price_no_vat": 208.8,
+"price_with_vat": 246.38,
+"sku": "FCUL",
+"id": "idexx-ref-167"
+},
+{
+"name": "Basic Equine Faecal Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 290.0,
+"price_with_vat": 342.2,
+"sku": "FEA",
+"id": "idexx-ref-168"
+},
+{
+"name": "Comprehensive Equine Faecal Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 414.7,
+"price_with_vat": 489.35,
+"sku": "FEAF",
+"id": "idexx-ref-169"
+},
+{
+"name": "Faecal Dx® Antigen Panel with Giardia",
+"category": null,
+"topic": "urine",
+"price_no_vat": 301.6,
+"price_with_vat": 355.89,
+"sku": "FECGP",
+"id": "idexx-ref-170"
+},
+{
+"name": "Basic Equine Faecal - Foal",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 458.2,
+"price_with_vat": 540.68,
+"sku": "FEF",
+"id": "idexx-ref-171"
+},
+{
+"name": "Feline Eye Panel 1",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 487.2,
+"price_with_vat": 574.9,
+"sku": "FEP1",
+"id": "idexx-ref-172"
+},
+{
+"name": "Feline Eye Panel 1 plus bacterial culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 678.6,
+"price_with_vat": 800.75,
+"sku": "FEPC",
+"id": "idexx-ref-173"
+},
+{
+"name": "Fertility",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 310.3,
+"price_with_vat": 366.15,
+"sku": "FERT",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-174"
+},
+{
+"name": "Faecal Dx® Antigen Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 107.3,
+"price_with_vat": 126.61,
+"sku": "FET",
+"id": "idexx-ref-175"
+},
+{
+"name": "FeLV Antigen & FIV Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 377.0,
+"price_with_vat": 444.86,
+"sku": "FF",
+"id": "idexx-ref-176"
+},
+{
+"name": "Cobalamin & Folate (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 339.3,
+"price_with_vat": 400.37,
+"sku": "FFC",
+"id": "idexx-ref-177"
+},
+{
+"name": "FeLV Antigen, FIV & Coronavirus Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 548.1,
+"price_with_vat": 646.76,
+"sku": "FFF",
+"id": "idexx-ref-178"
+},
+{
+"name": "Spec fPL, Folate & Cobalamin (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 696.0,
+"price_with_vat": 821.28,
+"sku": "FFFC",
+"id": "idexx-ref-179"
+},
+{
+"name": "Feline Faecal Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 771.4,
+"price_with_vat": 910.25,
+"sku": "FFS",
+"id": "idexx-ref-180"
+},
+{
+"name": "Gingivitis Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 698.9,
+"price_with_vat": 824.7,
+"sku": "FFURS",
+"id": "idexx-ref-181"
+},
+{
+"name": "FGF-23",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 391.5,
+"price_with_vat": 461.97,
+"sku": "FGF23",
+"id": "idexx-ref-182"
+},
+{
+"name": "Blood Typing (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 403.1,
+"price_with_vat": 475.66,
+"sku": "FGP",
+"id": "idexx-ref-183"
+},
+{
+"name": "Heartworm Antibody and Antigen Screen (Feline)",
+"category": null,
+"topic": "serology",
+"price_no_vat": 397.3,
+"price_with_vat": 468.81,
+"sku": "FHW",
+"id": "idexx-ref-184"
+},
+{
+"name": "Fibrinogen (Canine & Feline)",
+"category": null,
+"topic": "coag",
+"price_no_vat": 156.6,
+"price_with_vat": 184.79,
+"sku": "FIBC",
+"id": "idexx-ref-185"
+},
+{
+"name": "Blood Film Examination",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 165.3,
+"price_with_vat": 195.05,
+"sku": "FILM",
+"id": "idexx-ref-186"
+},
+{
+"name": "Blood Film Examination (Avian / Reptile)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 165.3,
+"price_with_vat": 195.05,
+"sku": "FILME",
+"id": "idexx-ref-187"
+},
+{
+"name": "Vaccination Status (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1690.7,
+"price_with_vat": 1995.03,
+"sku": "FIMM",
+"id": "idexx-ref-188"
+},
+{
+"name": "Feline Coronavirus Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 252.3,
+"price_with_vat": 297.71,
+"sku": "FIP",
+"id": "idexx-ref-189"
+},
+{
+"name": "Feline Coronavirus and Toxoplasma IgG / IgM",
+"category": null,
+"topic": "serology",
+"price_no_vat": 513.3,
+"price_with_vat": 605.69,
+"sku": "FIPT",
+"id": "idexx-ref-190"
+},
+{
+"name": "Feline Lower Respiratory Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 667.0,
+"price_with_vat": 787.06,
+"sku": "FLRP",
+"id": "idexx-ref-191"
+},
+{
+"name": "Feline Lyme and Anaplasma Antibody Screen",
+"category": null,
+"topic": "serology",
+"price_no_vat": 490.1,
+"price_with_vat": 578.32,
+"sku": "FLYAN",
+"id": "idexx-ref-192"
+},
+{
+"name": "Farm Animal Basic Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 385.7,
+"price_with_vat": 455.13,
+"sku": "FP",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-193"
+},
+{
+"name": "Feline Eye Panel 2",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 667.0,
+"price_with_vat": 787.06,
+"sku": "FP2",
+"id": "idexx-ref-194"
+},
+{
+"name": "Feline Eye Panel 2 plus bacterial culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 881.6,
+"price_with_vat": 1040.29,
+"sku": "FP2C",
+"id": "idexx-ref-195"
+},
+{
+"name": "Avian/Exotic Parasitology",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 171.1,
+"price_with_vat": 201.9,
+"sku": "FPAE",
+"id": "idexx-ref-196"
+},
+{
+"name": "Faecal Parasitology",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 159.5,
+"price_with_vat": 188.21,
+"sku": "FPAR",
+"id": "idexx-ref-197"
+},
+{
+"name": "Farm Animal (Chemistry)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 301.6,
+"price_with_vat": 355.89,
+"sku": "FPC",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-198"
+},
+{
+"name": "Follow Up Blood Film",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 133.4,
+"price_with_vat": 157.41,
+"sku": "FPDX",
+"id": "idexx-ref-199"
+},
+{
+"name": "Spec fPL (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 495.9,
+"price_with_vat": 585.16,
+"sku": "FPLI",
+"id": "idexx-ref-200"
+},
+{
+"name": "Basic Adult Ruminant Faecal Screen (more than 12 m",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 330.6,
+"price_with_vat": 390.11,
+"sku": "oFnRthAs old)",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-201"
+},
+{
+"name": "Ferret Enteric Coronavirus(RNA)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "FRECVP",
+"id": "idexx-ref-202"
+},
+{
+"name": "Neonatal Ruminant Faecal Screen (Birth to 6/8 weeks",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 348.0,
+"price_with_vat": 410.64,
+"sku": "oFlRdN)",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-203"
+},
+{
+"name": "Fructosamine",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "FRU",
+"id": "idexx-ref-204"
+},
+{
+"name": "Young Ruminant Faecal Screen (3 - 12 months old)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 266.8,
+"price_with_vat": 314.82,
+"sku": "FRY",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-205"
+},
+{
+"name": "Fresh Tissue Culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 330.6,
+"price_with_vat": 390.11,
+"sku": "FT",
+"id": "idexx-ref-206"
+},
+{
+"name": "Free T4 (Equilibrium Dialysis)",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 426.3,
+"price_with_vat": 503.03,
+"sku": "FT4R",
+"id": "idexx-ref-207"
+},
+{
+"name": "TLI, Folate & Cobalamin (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 669.9,
+"price_with_vat": 790.48,
+"sku": "FTFC",
+"id": "idexx-ref-208"
+},
+{
+"name": "Feline Thyroid Monitoring Profile (Interpreted)",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 403.1,
+"price_with_vat": 475.66,
+"sku": "FTHYI",
+"id": "idexx-ref-209"
+},
+{
+"name": "Cardiopet proBNP & Troponin I HS (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 600.3,
+"price_with_vat": 708.35,
+"sku": "FTNI",
+"id": "idexx-ref-210"
+},
+{
+"name": "Upper Respiratory Panel 1 plus bacterial culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 797.5,
+"price_with_vat": 941.05,
+"sku": "FU1C",
+"id": "idexx-ref-211"
+},
+{
+"name": "Upper Respiratory Panel 2 plus bacterial culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 957.0,
+"price_with_vat": 1129.26,
+"sku": "FU2C",
+"id": "idexx-ref-212"
+},
+{
+"name": "Upper Respiratory Panel 1",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 582.9,
+"price_with_vat": 687.82,
+"sku": "FUR1",
+"id": "idexx-ref-213"
+},
+{
+"name": "Upper Respiratory Panel 2",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 742.4,
+"price_with_vat": 876.03,
+"sku": "FUR2",
+"id": "idexx-ref-214"
+},
+{
+"name": "Malassezia IgE (Canine / Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 237.8,
+"price_with_vat": 280.6,
+"sku": "G_MAL",
+"id": "idexx-ref-215"
+},
+{
+"name": "Collie Eye Anomaly PCR (Canine)",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 336.4,
+"price_with_vat": 396.95,
+"sku": "GD08",
+"id": "idexx-ref-216"
+},
+{
+"name": "Copper Storage Disease (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 371.2,
+"price_with_vat": 438.02,
+"sku": "GD09",
+"id": "idexx-ref-217"
+},
+{
+"name": "HCM (Mutation A74T) (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1139.7,
+"price_with_vat": 1344.85,
+"sku": "GD16A",
+"id": "idexx-ref-218"
+},
+{
+"name": "prcd-PRA (Atrophy of the retina) PCR (Canine)",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 336.4,
+"price_with_vat": 396.95,
+"sku": "GD27",
+"id": "idexx-ref-219"
+},
+{
+"name": "cord-1PRA PCR (Canine)",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 336.4,
+"price_with_vat": 396.95,
+"sku": "GD28",
+"id": "idexx-ref-220"
+},
+{
+"name": "Exercise Induced Collapse (EIC) (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1223.8,
+"price_with_vat": 1444.08,
+"sku": "GD36",
+"id": "idexx-ref-221"
+},
+{
+"name": "Familial Nephropathy PCR (Canine)",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 382.8,
+"price_with_vat": 451.7,
+"sku": "GD38",
+"id": "idexx-ref-222"
+},
+{
+"name": "Degenerative Myelopathy/Degenerative Radiculomyel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 896.1,
+"price_with_vat": 1057.4,
+"sku": "oGpDat3h9y PCR",
+"id": "idexx-ref-223"
+},
+{
+"name": "Progressive Retinal Atrophy (PRA) (rdAc-PRA) PCR (F",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 336.4,
+"price_with_vat": 396.95,
+"sku": "eGlDin5e8)",
+"id": "idexx-ref-224"
+},
+{
+"name": "Polyuria/Polydipsia Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 606.1,
+"price_with_vat": 715.2,
+"sku": "GER1I",
+"id": "idexx-ref-225"
+},
+{
+"name": "Polyuria/Polydipsia Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 533.6,
+"price_with_vat": 629.65,
+"sku": "GER1N",
+"id": "idexx-ref-226"
+},
+{
+"name": "Geriatric Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 562.6,
+"price_with_vat": 663.87,
+"sku": "GERTI",
+"id": "idexx-ref-227"
+},
+{
+"name": "Geriatric Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 495.9,
+"price_with_vat": 585.16,
+"sku": "GERTN",
+"id": "idexx-ref-228"
+},
+{
+"name": "Giardia Antigen",
+"category": null,
+"topic": "urine",
+"price_no_vat": 162.4,
+"price_with_vat": 191.63,
+"sku": "GIAR",
+"id": "idexx-ref-229"
+},
+{
+"name": "Herpesvirus 1 (EHV-1) (DNA) PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "H1PC",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-230"
+},
+{
+"name": "Histology – Feline Proliferative Gum Lesion Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1009.2,
+"price_with_vat": 1190.86,
+"sku": "HISTFPE",
+"id": "idexx-ref-231"
+},
+{
+"name": "Histology - Post Mortem Case",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1363.0,
+"price_with_vat": 1608.34,
+"sku": "HISTPM2",
+"id": "idexx-ref-232"
+},
+{
+"name": "Haemotropic Mycoplasma (DNA) RealPCR™ (Canine)",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "HMPC",
+"id": "idexx-ref-233"
+},
+{
+"name": "Canine Herpesvirus CHV-1 (DNA) RealPCR™",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "HVPC",
+"id": "idexx-ref-234"
+},
+{
+"name": "Heartworm Antigen (Canine)",
+"category": null,
+"topic": "serology",
+"price_no_vat": 229.1,
+"price_with_vat": 270.34,
+"sku": "HW",
+"id": "idexx-ref-235"
+},
+{
+"name": "Heartworm (Dirofilaria spp) (DNA) RealPCR™",
+"category": null,
+"topic": "serology",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "HWPC",
+"id": "idexx-ref-236"
+},
+{
+"name": "Immunocytochemistry - 2 markers",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 977.3,
+"price_with_vat": 1153.21,
+"sku": "ICC2",
+"id": "idexx-ref-237"
+},
+{
+"name": "Intermediate Screen with Urine",
+"category": null,
+"topic": "urine",
+"price_no_vat": 379.9,
+"price_with_vat": 448.28,
+"sku": "INTUN",
+"id": "idexx-ref-238"
+},
+{
+"name": "Ionised Calcium (Canine only)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 142.1,
+"price_with_vat": 167.68,
+"sku": "IONCA",
+"id": "idexx-ref-239"
+},
+{
+"name": "Potassium Bromide",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 313.2,
+"price_with_vat": 369.58,
+"sku": "KBR",
+"id": "idexx-ref-240"
+},
+{
+"name": "Kidney Disease Monitoring Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 234.9,
+"price_with_vat": 277.18,
+"sku": "KPI",
+"id": "idexx-ref-241"
+},
+{
+"name": "Kidney Disease Monitoring Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 165.3,
+"price_with_vat": 195.05,
+"sku": "KPN",
+"id": "idexx-ref-242"
+},
+{
+"name": "Lawsonia intracellularis RealPCR™",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "LAWIP",
+"id": "idexx-ref-243"
+},
+{
+"name": "Leishmania Serology (Canine)",
+"category": null,
+"topic": "serology",
+"price_no_vat": 342.2,
+"price_with_vat": 403.8,
+"sku": "LEI",
+"id": "idexx-ref-244"
+},
+{
+"name": "Leishmania Monitoring Profile (Interpreted)",
+"category": null,
+"topic": "serology",
+"price_no_vat": 919.3,
+"price_with_vat": 1084.77,
+"sku": "LEIMCI",
+"id": "idexx-ref-245"
+},
+{
+"name": "Leptospira Antibody (Full Screen)",
+"category": null,
+"topic": "serology",
+"price_no_vat": 716.3,
+"price_with_vat": 845.23,
+"sku": "LEPMAR",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-246"
+},
+{
+"name": "Leptospira (DNA) RealPCR™",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "LEPP",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-247"
+},
+{
+"name": "Leptospira (DNA) RealPCR™ (Urine and blood require",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "dL)EPSPEU",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-248"
+},
+{
+"name": "Levetiracetam",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 638.0,
+"price_with_vat": 752.84,
+"sku": "LEV",
+"id": "idexx-ref-249"
+},
+{
+"name": "Large Animal Liver Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 214.6,
+"price_with_vat": 253.23,
+"sku": "LLFT",
+"id": "idexx-ref-250"
+},
+{
+"name": "Bovine Liver Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 174.0,
+"price_with_vat": 205.32,
+"sku": "LLFTB",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-251"
+},
+{
+"name": "Lymph Node Aspirates and Fine Needle Aspirates - 1",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 1168.7,
+"price_with_vat": 1379.07,
+"sku": "sLitNeCY1",
+"id": "idexx-ref-252"
+},
+{
+"name": "Lymph Node Aspirates and Fine Needle Aspirates - 2",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 1255.7,
+"price_with_vat": 1481.73,
+"sku": "sLitNeCsY2",
+"id": "idexx-ref-253"
+},
+{
+"name": "Lymph Node Aspirates and Fine Needle Aspirates - 3",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 1342.7,
+"price_with_vat": 1584.39,
+"sku": "sLitNeCsY3",
+"id": "idexx-ref-254"
+},
+{
+"name": "Leishmania (DNA) RealPCR™",
+"category": null,
+"topic": "serology",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "LPCR",
+"id": "idexx-ref-255"
+},
+{
+"name": "Canine Lungworm Panel",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "LUNGWP",
+"id": "idexx-ref-256"
+},
+{
+"name": "Lyme (Borrelia spp.) Antibody Screen",
+"category": null,
+"topic": "serology",
+"price_no_vat": 258.1,
+"price_with_vat": 304.56,
+"sku": "LYM",
+"id": "idexx-ref-257"
+},
+{
+"name": "Lyte 4 CLIP",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 52.2,
+"price_with_vat": 61.6,
+"sku": "LYTE4",
+"id": "idexx-ref-258"
+},
+{
+"name": "Mycoplasma Agassizii",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 350.9,
+"price_with_vat": 414.06,
+"sku": "MAGP",
+"id": "idexx-ref-259"
+},
+{
+"name": "MDR1 Defect",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 490.1,
+"price_with_vat": 578.32,
+"sku": "MDR1",
+"id": "idexx-ref-260"
+},
+{
+"name": "Skin Parasites / Dermatophyte",
+"category": null,
+"topic": "culture",
+"price_no_vat": 307.4,
+"price_with_vat": 362.73,
+"sku": "MFC",
+"id": "idexx-ref-261"
+},
+{
+"name": "Milk Culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 330.6,
+"price_with_vat": 390.11,
+"sku": "MILK",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-262"
+},
+{
+"name": "Feline Haemotropic Mycoplasma spp.",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 582.9,
+"price_with_vat": 687.82,
+"sku": "MPCR",
+"id": "idexx-ref-263"
+},
+{
+"name": "MRSA Culture (price per swab)",
+"category": null,
+"topic": "culture",
+"price_no_vat": 269.7,
+"price_with_vat": 318.25,
+"sku": "MRS1",
+"id": "idexx-ref-264"
+},
+{
+"name": "Comprehensive Exotic Faecal Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 524.9,
+"price_with_vat": 619.38,
+"sku": "MSHC",
+"id": "idexx-ref-265"
+},
+{
+"name": "Myxomatosis Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 957.0,
+"price_with_vat": 1129.26,
+"sku": "MYX",
+"id": "idexx-ref-266"
+},
+{
+"name": "Basic Nail Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 345.1,
+"price_with_vat": 407.22,
+"sku": "NAIL1",
+"id": "idexx-ref-267"
+},
+{
+"name": "Comprehensive Nail Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 472.7,
+"price_with_vat": 557.79,
+"sku": "NAIL2",
+"id": "idexx-ref-268"
+},
+{
+"name": "Neospora caninum Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 261.0,
+"price_with_vat": 307.98,
+"sku": "NEO",
+"id": "idexx-ref-269"
+},
+{
+"name": "Neospora (DNA) RealPCR™",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "NEOSP",
+"id": "idexx-ref-270"
+},
+{
+"name": "NSAID CLIP",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"sku": "NSAID",
+"id": "idexx-ref-271"
+},
+{
+"name": "Occult Blood",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 165.3,
+"price_with_vat": 195.05,
+"sku": "OB",
+"id": "idexx-ref-272"
+},
+{
+"name": "Canine Vomiting/Pancreatitis Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 669.9,
+"price_with_vat": 790.48,
+"sku": "PANCI",
+"id": "idexx-ref-273"
+},
+{
+"name": "Canine Vomiting/Pancreatitis Screen (Non-Interpreted",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 594.5,
+"price_with_vat": 701.51,
+"sku": ")PANCN",
+"id": "idexx-ref-274"
+},
+{
+"name": "Feline Under The Weather Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 667.0,
+"price_with_vat": 787.06,
+"sku": "PANFI",
+"id": "idexx-ref-275"
+},
+{
+"name": "Feline Under The Weather Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 591.6,
+"price_with_vat": 698.09,
+"sku": "PANFN",
+"id": "idexx-ref-276"
+},
+{
+"name": "Parvovirus (CPV) Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 394.4,
+"price_with_vat": 465.39,
+"sku": "PAR",
+"id": "idexx-ref-277"
+},
+{
+"name": "Paramyxovirus (Ophidian)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "PARAMS",
+"id": "idexx-ref-278"
+},
+{
+"name": "Parentage Test (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1371.7,
+"price_with_vat": 1618.61,
+"sku": "PARC",
+"id": "idexx-ref-279"
+},
+{
+"name": "Faecal Parasitology and Giardia Antigen",
+"category": null,
+"topic": "urine",
+"price_no_vat": 229.1,
+"price_with_vat": 270.34,
+"sku": "PARG",
+"id": "idexx-ref-280"
+},
+{
+"name": "Faecal Parasitology, Giardia Antigen and Tritrichomo",
+"category": null,
+"topic": "urine",
+"price_no_vat": 597.4,
+"price_with_vat": 704.93,
+"sku": "nPaAs RPGCTR",
+"id": "idexx-ref-281"
+},
+{
+"name": "PARR Molecular Clonality Assay for Lymphoma (Fast",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1583.4,
+"price_with_vat": 1868.41,
+"sku": "TPrAaRckR)FX",
+"id": "idexx-ref-282"
+},
+{
+"name": "Parvovirus (CPV) Antigen",
+"category": null,
+"topic": "serology",
+"price_no_vat": 261.0,
+"price_with_vat": 307.98,
+"sku": "PARV",
+"id": "idexx-ref-283"
+},
+{
+"name": "Lead",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 211.7,
+"price_with_vat": 249.81,
+"sku": "PBAA",
+"id": "idexx-ref-284"
+},
+{
+"name": "Psittacine Beak & Feather Disease Virus (PBFD) (DNA",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": ")P PBCFRD",
+"id": "idexx-ref-285"
+},
+{
+"name": "Urine Protein : Creatinine Ratio & Deposit Microscopy",
+"category": null,
+"topic": "urine",
+"price_no_vat": 249.4,
+"price_with_vat": 294.29,
+"sku": "PCRD",
+"id": "idexx-ref-286"
+},
+{
+"name": "Protein: Creatinine Ratio (Urine)",
+"category": null,
+"topic": "urine",
+"price_no_vat": 185.6,
+"price_with_vat": 219.01,
+"sku": "PCRU",
+"id": "idexx-ref-287"
+},
+{
+"name": "Progesterone and Anti-Mullerian Hormone (Canine/Fe",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 814.9,
+"price_with_vat": 961.58,
+"sku": "lPinGeT/E+qAuMinHe)",
+"id": "idexx-ref-288"
+},
+{
+"name": "Phenobarbital",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 237.8,
+"price_with_vat": 280.6,
+"sku": "PHEN",
+"id": "idexx-ref-289"
+},
+{
+"name": "Phenobarbital (Trough and Peak Samples)",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 394.4,
+"price_with_vat": 465.39,
+"sku": "PHEN+",
+"id": "idexx-ref-290"
+},
+{
+"name": "Phenobarbital Profile (Interpreted)",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 414.7,
+"price_with_vat": 489.35,
+"sku": "PLFT",
+"id": "idexx-ref-291"
+},
+{
+"name": "Platelet Count",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 133.4,
+"price_with_vat": 157.41,
+"sku": "PLTS",
+"id": "idexx-ref-292"
+},
+{
+"name": "PMSG",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 652.5,
+"price_with_vat": 769.95,
+"sku": "PMSG",
+"id": "idexx-ref-293"
+},
+{
+"name": "Polyomavirus (DNA) PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "POLY",
+"id": "idexx-ref-294"
+},
+{
+"name": "Phenobarbital & Potassium Bromide Combined",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 519.1,
+"price_with_vat": 612.54,
+"sku": "PPBR",
+"id": "idexx-ref-295"
+},
+{
+"name": "Phenobarbital & Potassium Bromide Profile (Interpret",
+"category": null,
+"topic": "drugs",
+"price_no_vat": 687.3,
+"price_with_vat": 811.01,
+"sku": "ePdP)LFT",
+"id": "idexx-ref-296"
+},
+{
+"name": "Clinical Pathologist review of blood film and CBC",
+"category": null,
+"topic": "hematology",
+"price_no_vat": 365.4,
+"price_with_vat": 431.17,
+"sku": "PRTP",
+"id": "idexx-ref-297"
+},
+{
+"name": "Psittacid Herpes Virus PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "PSHV",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-298"
+},
+{
+"name": "PT (Prothrombin Time)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "PT",
+"id": "idexx-ref-299"
+},
+{
+"name": "PT + APTT",
+"category": null,
+"topic": "coag",
+"price_no_vat": 252.3,
+"price_with_vat": 297.71,
+"sku": "PTC",
+"id": "idexx-ref-300"
+},
+{
+"name": "APTT (Activated Partial Thromboplastin Time)",
+"category": null,
+"topic": "coag",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "PTT",
+"id": "idexx-ref-301"
+},
+{
+"name": "Immunotherapy - 1-8 Allergens (1 vial)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1612.4,
+"price_with_vat": 1902.63,
+"sku": "RAS1",
+"id": "idexx-ref-302"
+},
+{
+"name": "Immunotherapy - More than 8 Allergens (>1 vial)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 3224.8,
+"price_with_vat": 3805.26,
+"sku": "RAS2",
+"id": "idexx-ref-303"
+},
+{
+"name": "Basic Reptile Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 458.2,
+"price_with_vat": 540.68,
+"sku": "REB",
+"id": "idexx-ref-304"
+},
+{
+"name": "Comprehensive Reptile Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 603.2,
+"price_with_vat": 711.78,
+"sku": "REE",
+"id": "idexx-ref-305"
+},
+{
+"name": "Rabbit Haemorrhagic Disease PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 472.7,
+"price_with_vat": 557.79,
+"sku": "RHDP",
+"id": "idexx-ref-306"
+},
+{
+"name": "Rickettsia Conorii PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "RICKCP",
+"id": "idexx-ref-307"
+},
+{
+"name": "Rabbit Infectious Disease Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1566.0,
+"price_with_vat": 1847.88,
+"sku": "RIFD",
+"id": "idexx-ref-308"
+},
+{
+"name": "Serum Amyloid A",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 263.9,
+"price_with_vat": 311.4,
+"sku": "SAA",
+"id": "idexx-ref-309"
+},
+{
+"name": "Basic Faecal Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 377.0,
+"price_with_vat": 444.86,
+"sku": "SARC",
+"id": "idexx-ref-310"
+},
+{
+"name": "Basic Faecal Screen plus Giardia Antigen",
+"category": null,
+"topic": "urine",
+"price_no_vat": 464.0,
+"price_with_vat": 547.52,
+"sku": "SARCG",
+"id": "idexx-ref-311"
+},
+{
+"name": "Synovial Culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 429.2,
+"price_with_vat": 506.46,
+"sku": "SC",
+"id": "idexx-ref-312"
+},
+{
+"name": "Sarcoptes IgG Canine only",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 446.6,
+"price_with_vat": 526.99,
+"sku": "SCAB",
+"id": "idexx-ref-313"
+},
+{
+"name": "Basic Skin Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 356.7,
+"price_with_vat": 420.91,
+"sku": "SCE",
+"id": "idexx-ref-314"
+},
+{
+"name": "Extended Basic Skin Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 435.0,
+"price_with_vat": 513.3,
+"sku": "SCEF",
+"id": "idexx-ref-315"
+},
+{
+"name": "Equine Comprehensive Skin Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 519.1,
+"price_with_vat": 612.54,
+"sku": "SCEFE",
+"id": "idexx-ref-316"
+},
+{
+"name": "SDMA (Canine, Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 150.8,
+"price_with_vat": 177.94,
+"sku": "SDMA",
+"id": "idexx-ref-317"
+},
+{
+"name": "Streptococcus equi Antibody",
+"category": null,
+"topic": "serology",
+"price_no_vat": 493.0,
+"price_with_vat": 581.74,
+"sku": "SESE",
+"id": "idexx-ref-318"
+},
+{
+"name": "Spec fPL, Folate & Cobalamin, TLI (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 1020.8,
+"price_with_vat": 1204.54,
+"sku": "SFTC",
+"id": "idexx-ref-319"
+},
+{
+"name": "Specific Gravity",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"sku": "SG",
+"id": "idexx-ref-320"
+},
+{
+"name": "SHAP (Sex Hormone Alopecia Profile) (Canine)",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 1403.6,
+"price_with_vat": 1656.25,
+"sku": "SHAP",
+"id": "idexx-ref-321"
+},
+{
+"name": "Chelonian Herpesvirus PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 565.5,
+"price_with_vat": 667.29,
+"sku": "SKHVP",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-322"
+},
+{
+"name": "Liver Monitoring Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 261.0,
+"price_with_vat": 307.98,
+"sku": "SLFTI",
+"id": "idexx-ref-323"
+},
+{
+"name": "Liver Monitoring Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 197.2,
+"price_with_vat": 232.7,
+"sku": "SLFTN",
+"id": "idexx-ref-324"
+},
+{
+"name": "Basic Small Mammal Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 379.9,
+"price_with_vat": 448.28,
+"sku": "SMB",
+"id": "idexx-ref-325"
+},
+{
+"name": "Comprehensive Small Mammal Profile",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 559.7,
+"price_with_vat": 660.45,
+"sku": "SME",
+"id": "idexx-ref-326"
+},
+{
+"name": "Basic Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 319.0,
+"price_with_vat": 376.42,
+"sku": "SP1I",
+"id": "idexx-ref-327"
+},
+{
+"name": "Basic Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 266.8,
+"price_with_vat": 314.82,
+"sku": "SP1N",
+"id": "idexx-ref-328"
+},
+{
+"name": "Standard Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 548.1,
+"price_with_vat": 646.76,
+"sku": "SP2I",
+"id": "idexx-ref-329"
+},
+{
+"name": "Standard Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 478.5,
+"price_with_vat": 564.63,
+"sku": "SP2N",
+"id": "idexx-ref-330"
+},
+{
+"name": "Extended Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 713.4,
+"price_with_vat": 841.81,
+"sku": "SP3I",
+"id": "idexx-ref-331"
+},
+{
+"name": "Extended Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 672.8,
+"price_with_vat": 793.9,
+"sku": "SP3N",
+"id": "idexx-ref-332"
+},
+{
+"name": "Fits And Faints Profile (Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 504.6,
+"price_with_vat": 595.43,
+"sku": "SP4I",
+"id": "idexx-ref-333"
+},
+{
+"name": "Fits And Faints Screen (Non-Interpreted)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 437.9,
+"price_with_vat": 516.72,
+"sku": "SP4N",
+"id": "idexx-ref-334"
+},
+{
+"name": "Skin Parasites / Dermatophyte",
+"category": null,
+"topic": "culture",
+"price_no_vat": 179.8,
+"price_with_vat": 212.16,
+"sku": "SPF",
+"id": "idexx-ref-335"
+},
+{
+"name": "Urolith Analysis",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 522.0,
+"price_with_vat": 615.96,
+"sku": "STOX",
+"id": "idexx-ref-336"
+},
+{
+"name": "Urolith Analysis & Urolith Culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 765.6,
+"price_with_vat": 903.41,
+"sku": "STOXC",
+"id": "idexx-ref-337"
+},
+{
+"name": "Urolith Analysis, Urolith Culture & Urine Culture",
+"category": null,
+"topic": "culture",
+"price_no_vat": 1055.6,
+"price_with_vat": 1245.61,
+"sku": "STOXUC",
+"id": "idexx-ref-338"
+},
+{
+"name": "Equine Pre-Breeding Culture 24 Hour",
+"category": null,
+"topic": "culture",
+"price_no_vat": 327.7,
+"price_with_vat": 386.69,
+"sku": "SW24",
+"id": "idexx-ref-339"
+},
+{
+"name": "Faecal Culture - swab",
+"category": null,
+"topic": "culture",
+"price_no_vat": 388.6,
+"price_with_vat": 458.55,
+"sku": "SWAF",
+"id": "idexx-ref-340"
+},
+{
+"name": "Skin cultures – no microscopy",
+"category": null,
+"topic": "culture",
+"price_no_vat": 377.0,
+"price_with_vat": 444.86,
+"sku": "SWFC",
+"id": "idexx-ref-341"
+},
+{
+"name": "Trilostane (Vetoryl) Monitoring Profile - ACTH stimula",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 426.3,
+"price_with_vat": 503.03,
+"sku": "tTio3n6 Ptest",
+"id": "idexx-ref-342"
+},
+{
+"name": "Trilostane (Vetoryl) Monitoring Profile - Prepill Cortiso",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 359.6,
+"price_with_vat": 424.33,
+"sku": "Tl 3(s6iXngle sa",
+"id": "idexx-ref-343"
+},
+{
+"name": "Total T4",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 168.2,
+"price_with_vat": 198.48,
+"sku": "T4M",
+"id": "idexx-ref-344"
+},
+{
+"name": "Taurine",
+"category": null,
+"topic": "urine",
+"price_no_vat": 2102.5,
+"price_with_vat": 2480.95,
+"sku": "TAU",
+"id": "idexx-ref-345"
+},
+{
+"name": "Treponema cuniculi Antibody (Rabbit Syphilis)",
+"category": null,
+"topic": "serology",
+"price_no_vat": 609.0,
+"price_with_vat": 718.62,
+"sku": "TCS",
+"id": "idexx-ref-346"
+},
+{
+"name": "TLI, Folate & Cobalamin (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 553.9,
+"price_with_vat": 653.6,
+"sku": "TFCB",
+"id": "idexx-ref-347"
+},
+{
+"name": "TLI, Folate, Cobalamin, Total Protein, Albumin, Globul",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 649.6,
+"price_with_vat": 766.53,
+"sku": "iTnF, CAG:G Rati",
+"id": "idexx-ref-348"
+},
+{
+"name": "TLI, Folate, Cobalamin, Total Protein, Albumin, Globul",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 841.0,
+"price_with_vat": 992.38,
+"sku": "iTnF, FAG:G Rati",
+"id": "idexx-ref-349"
+},
+{
+"name": "Tick Panel - PCR on Tick",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 667.0,
+"price_with_vat": 787.06,
+"sku": "TIC2",
+"id": "idexx-ref-350"
+},
+{
+"name": "TLI (Canine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 342.2,
+"price_with_vat": 403.8,
+"sku": "TLIC",
+"id": "idexx-ref-351"
+},
+{
+"name": "TLI (Feline)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 449.5,
+"price_with_vat": 530.41,
+"sku": "TLIF",
+"id": "idexx-ref-352"
+},
+{
+"name": "Bovine Trace Mineral Screen",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 171.1,
+"price_with_vat": 201.9,
+"sku": "TMIN",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-353"
+},
+{
+"name": "Troponin I HS",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 310.3,
+"price_with_vat": 366.15,
+"sku": "TNI",
+"id": "idexx-ref-354"
+},
+{
+"name": "Toxoplasma IgG / IgM",
+"category": null,
+"topic": "serology",
+"price_no_vat": 577.1,
+"price_with_vat": 680.98,
+"sku": "TOXC",
+"id": "idexx-ref-355"
+},
+{
+"name": "Total Protein",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 63.8,
+"price_with_vat": 75.28,
+"sku": "TP",
+"id": "idexx-ref-356"
+},
+{
+"name": "Treponema Cuniculi PCR",
+"category": null,
+"topic": "pcr",
+"price_no_vat": 368.3,
+"price_with_vat": 434.59,
+"sku": "TREPP",
+"id": "idexx-ref-357"
+},
+{
+"name": "TSH (Canine) - Add-On",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 130.5,
+"price_with_vat": 153.99,
+"sku": "TSHA",
+"id": "idexx-ref-358"
+},
+{
+"name": "Urine Deposit Microscopy",
+"category": null,
+"topic": "urine",
+"price_no_vat": 179.8,
+"price_with_vat": 212.16,
+"sku": "UCD",
+"id": "idexx-ref-359"
+},
+{
+"name": "Basic Urine Screen",
+"category": null,
+"topic": "urine",
+"price_no_vat": 374.1,
+"price_with_vat": 441.44,
+"sku": "UCE",
+"id": "idexx-ref-360"
+},
+{
+"name": "Comprehensive Urine Screen",
+"category": null,
+"topic": "urine",
+"price_no_vat": 722.1,
+"price_with_vat": 852.08,
+"sku": "UCEC",
+"id": "idexx-ref-361"
+},
+{
+"name": "Premium Urine Screen",
+"category": null,
+"topic": "urine",
+"price_no_vat": 838.1,
+"price_with_vat": 988.96,
+"sku": "UCECP",
+"id": "idexx-ref-362"
+},
+{
+"name": "Extended Basic Urine Screen",
+"category": null,
+"topic": "urine",
+"price_no_vat": 464.0,
+"price_with_vat": 547.52,
+"sku": "UCEP",
+"id": "idexx-ref-363"
+},
+{
+"name": "Urine Chemistry & Deposit Microscopy",
+"category": null,
+"topic": "urine",
+"price_no_vat": 243.6,
+"price_with_vat": 287.45,
+"sku": "UENC",
+"id": "idexx-ref-364"
+},
+{
+"name": "Fast Track Histology For Urgent Cases",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 243.6,
+"price_with_vat": 287.45,
+"sku": "UHIS",
+"id": "idexx-ref-365"
+},
+{
+"name": "Free T4 (Immunoassay)",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 292.9,
+"price_with_vat": 345.62,
+"sku": "VFT4",
+"id": "idexx-ref-366"
+},
+{
+"name": "Flush/Wash/Cystic Fluid Cytology - 3 or more Fluids/S",
+"category": null,
+"topic": "pathology",
+"price_no_vat": 826.5,
+"price_with_vat": 975.27,
+"sku": "WiteAsSH3",
+"id": "idexx-ref-367"
+},
+{
+"name": "Worm Egg Count",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 159.5,
+"price_with_vat": 188.21,
+"sku": "WEC",
+"notes": "אינה זמינה בישראל",
+"id": "idexx-ref-368"
+},
+{
+"name": "Cross Match Single donor",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 510.4,
+"price_with_vat": 602.27,
+"sku": "XM",
+"id": "idexx-ref-369"
+},
+{
+"name": "Cross Match Additional Donor(s)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 403.1,
+"price_with_vat": 475.66,
+"sku": "XMAD",
+"id": "idexx-ref-370"
+},
+{
+"name": "Zinc (Equine)",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 310.3,
+"price_with_vat": 366.15,
+"sku": "ZINCE",
+"id": "idexx-ref-371"
+},
+{
+"name": "Zinc",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 310.3,
+"price_with_vat": 366.15,
+"sku": "ZN",
+"id": "idexx-ref-372"
+},
+{
+"name": "Zoonosis Package 2",
+"category": null,
+"topic": "chemistry",
+"price_no_vat": 719.2,
+"price_with_vat": 848.66,
+"sku": "ZP2",
+"id": "idexx-ref-373"
+}
+]
+}

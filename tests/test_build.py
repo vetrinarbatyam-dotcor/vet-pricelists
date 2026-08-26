@@ -6,8 +6,9 @@ idx = json.load(open(ROOT / "data/index.json", encoding="utf-8"))
 counts = {m["slug"]: m["item_count"] for m in idx["pricelists"]}
 assert counts["beit-erez"] + counts["beit-erez-shop"] == 415 and counts["aml"] == 123 and counts["hamachon"] == 90, counts
 assert {m["type"] for m in idx["pricelists"]} == {"food", "medical", "labs", "shop"}
-assert counts["idexx"] > 400 and counts["miltin-consum"] > 350, "refreshed lists shrank"
-assert sum(counts.values()) >= 5700
+assert counts["idexx"] + counts["idexx-ref"] > 400 and counts["miltin-consum"] > 350, "refreshed lists shrank"
+assert counts["karnieli"] > 60, "Karnieli lost its three 2025 price lists"
+assert sum(counts.values()) >= 5800
 FORBID = ("customerPriceWithVat", "weighted", "invoice", "clinic_sale", "purchasePrice", "112026")
 for f in (ROOT / "data").rglob("*.json"):
     s = f.read_text(encoding="utf-8")

@@ -1,7 +1,7 @@
 {
 "meta": {
-"action": "partial",
-"action_note": "רק 9 בדיקות נטענו. יש 4 מחירוני PDF (פאנלים · גנטיות · פתוגנים · ציפורים) שטרם פורסרו.",
+"action": "refresh",
+"action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
 "slug": "karnieli",
 "type": "labs",
 "supplier": "קרניאלי",
@@ -9,92 +9,605 @@
 "source_file": "sources/labs/karnieli-2025-01.pdf",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 9,
+"item_count": 66,
 "status": "stale",
 "imported_at": "2026-08-26",
-"notes": null
+"notes": "פאנלים · מחלות גנטיות · פתוגנים — שלושת מחירוני 2025"
 },
 "items": [
 {
-"name": "פאנל מחלות זואונוטיות",
-"category": "פאנלים - עופות",
-"topic": "chemistry",
-"price_no_vat": 160.68,
-"price_with_vat": 189.6,
-"notes": "Salmonella sp, Chlamydophila Pscittaci",
+"name": "Multi Drug Resistance* (MDR)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 220.0,
+"price_with_vat": 259.6,
+"notes": "גזעים אופייניים: Australian Shepherd Miniature Australian Shepherds, Collie, Border Collie, German Shepherd English Shepherd, Herding Breed Cross Long-haired Whippet, McNab Sheepdog Old English Sheepdog, Shetland Sheepdog, Silken Windhound",
 "id": "karnieli-1"
 },
 {
-"name": "פאנל מערכת נשימה",
-"category": "פאנלים - עופות",
-"topic": "chemistry",
-"price_no_vat": 160.68,
-"price_with_vat": 189.6,
-"notes": "Chlamydophila Pscittaci, Mycoplasma sp.",
+"name": "Neuronal Ceroid Lipofuscinosis (CL)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Border Collie",
 "id": "karnieli-2"
 },
 {
-"name": "פאנל שלשולים",
-"category": "פאנלים - כלבים",
-"topic": "chemistry",
-"price_no_vat": 602.56,
-"price_with_vat": 711.02,
-"notes": "Corona, Salmonella, Parvo, Distemper",
+"name": "Collie eye abnormality (CE)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Australian Shepherd, Collie Shetland Sheepdog, Border Collie",
 "id": "karnieli-3"
 },
 {
-"name": "פאנל שלשולים מצומצם",
-"category": "פאנלים - כלבים",
-"topic": "chemistry",
-"price_no_vat": 367.52,
-"price_with_vat": 433.67,
-"notes": "Parvo, Distemper",
+"name": "Copper Toxicosis",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Bedlington Terrier",
 "id": "karnieli-4"
 },
 {
-"name": "פאנל טפילי דם",
-"category": "פאנלים - כלבים",
-"topic": "chemistry",
-"price_no_vat": 405.98,
-"price_with_vat": 479.06,
-"notes": "Ehrlichia, Babesia, Anaplasma, Hepatozoon",
+"name": "Progressive rod cone degeneration Progressive Retinal Atrophy )PRA)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Australian Shepherd, Labrador Retriever Golden Retriever, Cocker Spaniels Toy Poodle, Mini Poodle , Whippet",
 "id": "karnieli-5"
 },
 {
-"name": "פאנל מחלות זואונוטיות",
-"category": "פאנלים - חתולים",
-"topic": "chemistry",
-"price_no_vat": 376.07,
-"price_with_vat": 443.76,
-"notes": "Toxoplasma, Bartonella, Chlamydophila",
+"name": "Progressive Retinal Atrophy -CNGB1",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Papillon and Phale`ne",
 "id": "karnieli-6"
 },
 {
-"name": "פאנל מערכת נשימה",
-"category": "פאנלים - חתולים",
-"topic": "chemistry",
-"price_no_vat": 564.1,
-"price_with_vat": 665.64,
-"notes": "Chlamydophila, Calici, Herpes, Mycoplasma",
+"name": "Progressive Retinal Atrophy -RCD3",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Cardigan Welsh Corgi",
 "id": "karnieli-7"
 },
 {
-"name": "פאנל שלשולים",
-"category": "פאנלים - חתולים",
-"topic": "chemistry",
-"price_no_vat": 367.52,
-"price_with_vat": 433.67,
-"notes": "Panleukopenia, Corona",
+"name": "Progressive Retinal Atrophy -CSNB",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Briard & Beagle",
 "id": "karnieli-8"
 },
 {
-"name": "פאנל חתולים גזעיים",
-"category": "פאנלים - חתולים",
-"topic": "chemistry",
-"price_no_vat": 658.12,
-"price_with_vat": 776.58,
-"notes": "FIV, FeLV, PKD, Corona, HCM",
+"name": "Progressive Retinal Atrophy",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Shetland Sheepdog",
 "id": "karnieli-9"
+},
+{
+"name": "Primary Lens Luxation (PLL)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Australian Cattle Dog, Chinese Crested Dog, Miniature Bull Terrier, Jack Russell Terrier, Jagd Terrier, Lancashire Heeler, , Parson Russell Terrier, Patterdale Terrier, Rat Terrier, Sealyham Terrier, Tenterfield Terrier, Tibetan Terrier, Toy Fox Terrier, Volpino Italiano, Welsh Terrier, Whire-haired Fox Terrier, Yorkshire Terrier",
+"id": "karnieli-10"
+},
+{
+"name": "Degenerative myelopathy (DM)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: American Eskimo dog, Bernese Mountain Dog, Borzoi, Boxer, Cardigan Welsh Corgi, Chesapeake Bay Retriever, Colie, Czechlosavakian Wolfdog, Dwarf Poodle, German Shepherd, Golden Retriever, Great Pyrenees, Hovawart, Kerry Blue Terrier, Miniature Poodle, Moyen Poodle, Pembroke Welsh Corgi, Pug, Rhodesian Ridgeback, Saarloos Wolfdog, Shetland Sheepdog, Soft coated Wheaten Terrier, Standart Poodle, Toy Poodle, White Swiss Shepherd, Wire Fox Terrier, Mix breed",
+"id": "karnieli-11"
+},
+{
+"name": "Exercise Induced Collapse (EIC)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: American Cocker Spaniel, Bouvier des Flunders, Boykin Spaniel, Chesapeake Bay Retriever, Curly Retriever, English Cocker Spaniel, German Wirehaired Pointer, Labrador Retriever, Old English Sheepdog, Pembroke Welsh Corgi",
+"id": "karnieli-12"
+},
+{
+"name": "Spinocerebellar Ataxia )SCA(",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Russell Terriers",
+"id": "karnieli-13"
+},
+{
+"name": "Late Onset Ataxia) LOA (",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Russell Terriers",
+"id": "karnieli-14"
+},
+{
+"name": "Von Willibrand type 1",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Doberman Pinscher",
+"id": "karnieli-15"
+},
+{
+"name": "Von Willibrand type 2",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: German shorthaired pointer, German Wirehaired pointer",
+"id": "karnieli-16"
+},
+{
+"name": "Von Willibrand type 3",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Kooiker, Scottish Terrier, Shetland Sheepdog",
+"id": "karnieli-17"
+},
+{
+"name": "Phosphofructokinase deficiency (PFKD)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Cockers",
+"id": "karnieli-18"
+},
+{
+"name": "Trapped neutrophil syndrome (TNS)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Border Collie",
+"id": "karnieli-19"
+},
+{
+"name": "Cystinuria",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Newfoundland, Landseer",
+"id": "karnieli-20"
+},
+{
+"name": "Hereditary cataract (HC)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Boston Terrier, French Bulldogs, Staffordshire Bull Terriers, Australian Shepherd",
+"id": "karnieli-21"
+},
+{
+"name": "Imerslund-Gräsbeck syndrome (IGS)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Border Collie",
+"id": "karnieli-22"
+},
+{
+"name": "Hyperuricosuria (HUU)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Multiple Breeds",
+"id": "karnieli-23"
+},
+{
+"name": "Multifocal Retinopathy ( cmr1)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Multiple Breeds",
+"id": "karnieli-24"
+},
+{
+"name": "Severe combined immunodeficiency disease, X- linked (SCID)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Basset Hound, Cardigan Welsh corgi, Pembroke Welsh Corgi",
+"id": "karnieli-25"
+},
+{
+"name": "Hair length (Fluffy)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Pembroke Welsh corgis",
+"id": "karnieli-26"
+},
+{
+"name": "Hypertrophic cardiomyopathy (HCM)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Ragdolls, Maine coon",
+"id": "karnieli-27"
+},
+{
+"name": "Polycystic Kidney Disease (PKD)",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Persians, Exotics, Himalayans, British Shorthairs, American Shorthairs, Ragdolls",
+"id": "karnieli-28"
+},
+{
+"name": "Spinal Muscular Atrophy",
+"category": "מחלות גנטיות",
+"topic": "pcr",
+"price_no_vat": 280.0,
+"price_with_vat": 330.4,
+"notes": "גזעים אופייניים: Main coon",
+"id": "karnieli-29"
+},
+{
+"name": "Ehrlichia spp. (also Canis)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-30"
+},
+{
+"name": "Babesia spp.(also Canis)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-31"
+},
+{
+"name": "Hepatozoon spp.",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-32"
+},
+{
+"name": "Borrelia spp (Lyme)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-33"
+},
+{
+"name": "Rickettsia spp.",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-34"
+},
+{
+"name": "Bartonella spp. (also Cat Scratch Disease)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-35"
+},
+{
+"name": "(המוברטונלה) Mycoplasma Hemofelis/Hemocanis",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-36"
+},
+{
+"name": "Canine Parvo Virus",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-37"
+},
+{
+"name": "Canine Distemper Virus",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 260.0,
+"price_with_vat": 306.8,
+"notes": "סוג הדגימה: דם מלא במבחנת CSF /EDTA",
+"id": "karnieli-38"
+},
+{
+"name": "Canine Herpes Virus",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: על נייר* הפרשות (מטוש יבש)+דם מלא במבחנת EDTA, דם יבש",
+"id": "karnieli-39"
+},
+{
+"name": "Leishmania",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: על נייר* מטוש יבש/קראסטים +דם מלא במבחנת EDTA, דם יבש",
+"id": "karnieli-40"
+},
+{
+"name": "Corona Virus",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 260.0,
+"price_with_vat": 306.8,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA",
+"id": "karnieli-41"
+},
+{
+"name": "Corona Virus (FIP)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 260.0,
+"price_with_vat": 306.8,
+"notes": "סוג הדגימה: נוזל בית חזה/בטן",
+"id": "karnieli-42"
+},
+{
+"name": "Salmonella sp.",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-43"
+},
+{
+"name": "Dirofilaria Repens / Dirofilaria Immitis",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-44"
+},
+{
+"name": "Bordetella bronchiseptica (Kennel Cough)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: מטוש יבש + דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-45"
+},
+{
+"name": "Neospora Caninum",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*,CSF",
+"id": "karnieli-46"
+},
+{
+"name": "Ureaplasma",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 260.0,
+"price_with_vat": 306.8,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-47"
+},
+{
+"name": "Coxiella Brunetii (Q fever)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-48"
+},
+{
+"name": "Feline Herpes Virus",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: נייר* הפרשות (SWAB)+דם מלא במבחנת EDTA, דם יבש על",
+"id": "karnieli-49"
+},
+{
+"name": "Feline Leukemia Virus (FeLV)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-50"
+},
+{
+"name": "Feline Immunodeficeincy Virus (FIV)",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-51"
+},
+{
+"name": "Dirofilaria Immitis",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-52"
+},
+{
+"name": "Dirofilaria Repens",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: אספירציה ממסות+ דם מלא במבחנת EDTA",
+"id": "karnieli-53"
+},
+{
+"name": "Toxoplasma",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם יבש על נייר*,CSF דם מלא במבחנת EDTA (בנוכחות סימנים קליניים בלבד),",
+"id": "karnieli-54"
+},
+{
+"name": "Panleukopenia Parvo Virus",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: דם מלא במבחנת EDTA, דם יבש על נייר*",
+"id": "karnieli-55"
+},
+{
+"name": "Feline Calici Virus",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 260.0,
+"price_with_vat": 306.8,
+"notes": "סוג הדגימה: מטוש/דם מלא במבחנת EDTA",
+"id": "karnieli-56"
+},
+{
+"name": "Chlamydophila Felis",
+"category": "פתוגנים",
+"topic": "pcr",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"notes": "סוג הדגימה: על נייר* הפרשות (מטוש יבש)+דם מלא במבחנת EDTA, דם יבש",
+"id": "karnieli-57"
+},
+{
+"name": "פאנל מחלות זואונוטיות — עופות",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 188.0,
+"price_with_vat": 221.84,
+"notes": "Salmonella sp · ChlamydophilaPscittaci",
+"id": "karnieli-58"
+},
+{
+"name": "פאנל מערכת נשימה — עופות",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 188.0,
+"price_with_vat": 221.84,
+"notes": "ChlamydophilaPscittaci · Mycoplasma sp.",
+"id": "karnieli-59"
+},
+{
+"name": "פאנל שלשולים — כלבים",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 705.0,
+"price_with_vat": 831.9,
+"notes": "Corona Virus · Salmonella sp. · Canine ParvoVirus · Canine Distemper Virus",
+"id": "karnieli-60"
+},
+{
+"name": "פאנל שלשולים מצומצם — כלבים",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 430.0,
+"price_with_vat": 507.4,
+"notes": "Canine ParvoVirus · Canine Distemper Virus",
+"id": "karnieli-61"
+},
+{
+"name": "פאנל טפילי דם — כלבים",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 475.0,
+"price_with_vat": 560.5,
+"notes": "EhrlichiaCanis · BabesiaCanis · AnaplasmaPlatis · Hepatozoon",
+"id": "karnieli-62"
+},
+{
+"name": "פאנל מחלות זואונוטיות — חתולים",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 440.0,
+"price_with_vat": 519.2,
+"notes": "Toxoplasma · BartonellaHenselae(Cat Scratch · Disease) · ChlamydophilaFelis",
+"id": "karnieli-63"
+},
+{
+"name": "פאנל מערכת נשימה — חתולים",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 660.0,
+"price_with_vat": 778.8,
+"notes": "ChlamydophilaFelis · CaliciVirus · Feline Herpes Virus · Mycoplasma Felis",
+"id": "karnieli-64"
+},
+{
+"name": "פאנל שלשולים — חתולים",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 430.0,
+"price_with_vat": 507.4,
+"notes": "PanleukopeniaParvoVirus · Corona Virus",
+"id": "karnieli-65"
+},
+{
+"name": "פאנל חתולים גזעיים — חתולים",
+"category": "פאנלים",
+"topic": "pcr",
+"price_no_vat": 770.0,
+"price_with_vat": 908.6,
+"notes": "Feline Immunodeficiency Virus · Feline leukemia Virus · Polycystic Kidney Disease · Corona Virus · Hypertrophic Cardiomyopathy",
+"id": "karnieli-66"
 }
 ]
 }

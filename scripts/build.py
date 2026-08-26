@@ -91,6 +91,12 @@ LAB_CAT_TOPIC = {
     "PCR": "pcr", "תרביות": "culture", "פתולוגיה": "pathology", "ציטולוגיה": "pathology",
     "שתן/צואה/תרביות": "urine", "שתן": "urine", "קרישה": "coag",
     "רמת תרופות בדם": "drugs", "תרופות": "drugs", "בדיקות מיוחדות": "other",
+    "מחלות גנטיות": "pcr", "פתוגנים": "pcr", "פאנלים": "pcr",
+    "Cytology": "pathology", "Histology": "pathology", "Immunohistochemistry": "pathology",
+    "Ear Screens": "culture", "Allergy – Screens and Panels": "serology", "General": "chemistry",
+    "Biochemistry": "chemistry", "Adrenal / Pituitary": "endocrine", "Thyroid": "endocrine",
+    "Reproduction": "endocrine", "Other Hormones": "endocrine", "Infectious Disease": "serology",
+    "Genetic Disease PCR": "pcr",
 }
 
 def _hit(kw, name, low):
@@ -166,8 +172,12 @@ REG = {
     "foodiez":    ("food", "Foodiez", None, None, "no_vat", None),
     "aml":        ("labs", "AML", "2026-06", DLD / "מחירון 2026.pdf", "with_vat", "בתוקף מ-1.6.2026"),
     "hamachon":   ("labs", "המכון (מעבדה חיצונית)", "2026-01", DLD / "מחירון מעבדה חיצונית לשנת 2026 (1) (1).docx", "no_vat", None),
-    "idexx":      ("labs", "IDEXX", "2025-01", DLD / "PDF" / "מחירון רפרנס איידקס 2025.pdf", "no_vat", "מחירון רפרנס 2025 — כולל בדיקות שאינן זמינות בישראל (מסומנות)"),
-    "karnieli":   ("labs", "קרניאלי", "2025-01", DLD / "PDF" / "מחירון פאנלים 2025 (2).pdf", "no_vat", None),
+    "idexx":      ("labs", "IDEXX", "2026-01", DLD / "מחירון איידקס מקוצר 2026xlsx.pdf", "no_vat", "מחירון מקוצר 2026 — הבדיקות המוצעות בישראל"),
+    "idexx-ref":  ("labs", "IDEXX — רפרנס", "2025-01", DLD / "PDF" / "מחירון רפרנס איידקס 2025.pdf", "no_vat", "מחירון רפרנס 2025 — בדיקות שאינן במחירון המקוצר 2026; חלקן אינן זמינות בישראל"),
+    "karnieli":   ("labs", "קרניאלי", "2025-01", (DLD / "PDF" / "מחירון פאנלים 2025 (2).pdf",
+                                                  DLD / "PDF" / "מחירון מחלות גנטיות 2025 (1).pdf",
+                                                  DLD / "PDF" / "מחירון וטרינרים פתוגנים כלבים חתולים 2025 (5).pdf"), "no_vat",
+                   "פאנלים · מחלות גנטיות · פתוגנים — שלושת מחירוני 2025"),
     "banet":      ("labs", "פרופ' בנעט", None, None, "no_vat", None),
 }
 FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's PD": "hills-pd", "Hill's VE": "hills-ve",
@@ -219,7 +229,7 @@ def _shop_kw(it):
 
 # What each list still needs — shown on the "מצב המחירונים" page so it is obvious what to chase.
 ACTIONS = {
-    "karnieli": ("partial", "רק 9 בדיקות נטענו. יש 4 מחירוני PDF (פאנלים · גנטיות · פתוגנים · ציפורים) שטרם פורסרו."),
+    "idexx-ref": ("refresh", "מחירי 2025. כל הבדיקות שחוזרות במחירון המקוצר 2026 הועברו לשם — כאן נשארו רק בדיקות שלא מופיעות בו."),
     "hills-ve": ("no_source", "אין מחירון PDF — 42 שורות מקובץ המרפאה. ייתכן שהקו הוחלף ב-Science Plan; כדאי לאמת מול הספק."),
     "banet":    ("no_source", "אין קובץ מחירון בידינו — 23 בדיקות מקובץ המרפאה בלבד."),
     "medi-market": ("ok", "נאסף אוטומטית מאתר medi-market.co.il."),
@@ -345,14 +355,27 @@ def build():
             add(lists[slug], item(slug, name, it["price_no_vat"], None, it.get("category"), food_topic(name),
                                     sku=it.get("sku"), unit=it.get("unit"),
                                     animal=it.get("animal") or ("חתול" if "חתול" in name else ("כלב" if "כלב" in name else None))))
-    # --- IDEXX full reference list (PDF) — replaces the 37 rows that came from the clinic TS file
+    # --- IDEXX: the 2026 short list is the current one; the 2025 reference keeps only the tests
+    #     it does not cover (118 of the 119 shared codes had moved 5-14%, so no 2025 price stands).
+    def lab_topic(cat, name): return LAB_CAT_TOPIC.get((cat or "").replace("\n", " ")) or LAB_NAME_TOPIC(name)
+    idexx_2026 = load("idexx_2026.json")
+    for it in idexx_2026:
+        add(lists["idexx"], item("idexx", it["name"], it["price_no_vat"], None, it.get("category"),
+                                   lab_topic(it.get("category"), it["name"]), sku=it.get("sku"),
+                                   notes=it.get("notes") or it.get("sample")))
+    refreshed = {it["sku"] for it in idexx_2026}
     for it in load("idexx_2025.json"):
-        add(lists["idexx"], item("idexx", it["name"], it["price_no_vat"], None, None,
-                                   LAB_NAME_TOPIC(it["name"]), sku=it.get("sku"), notes=it.get("notes")))
+        if it.get("sku") in refreshed: continue
+        add(lists["idexx-ref"], item("idexx-ref", it["name"], it["price_no_vat"], None, None,
+                                       LAB_NAME_TOPIC(it["name"]), sku=it.get("sku"), notes=it.get("notes")))
+    # --- Karnieli: panels + genetic diseases + pathogens, from the three 2025 PDFs
+    for it in load("karnieli_2025.json"):
+        add(lists["karnieli"], item("karnieli", it["name"], it["price_no_vat"], None, it.get("category"),
+                                      lab_topic(it.get("category"), it["name"]), notes=it.get("notes")))
     # --- Labs
     for it in load("lab_catalog.json"):
         slug = LAB_SLUG[it["lab"]]
-        if slug == "idexx": continue
+        if slug in ("idexx", "karnieli"): continue      # both now come from their own price lists
         add(lists[slug], item(slug, it["name"], it.get("price_no_vat"), it.get("price_with_vat"), it["category"],
                                 LAB_CAT_TOPIC.get(it["category"], "other"), sku=it.get("code"), notes=it.get("notes")))
 

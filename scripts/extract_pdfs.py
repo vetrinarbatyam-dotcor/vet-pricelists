@@ -253,6 +253,66 @@ def hills(pdf_name):
                               "category": None, "unit": unit})
     return items
 
+# ---------------------------------------------------------------- IDEXX short list 2026
+def idexx_short(pdf_name):
+    """cols: [Test Code, name + description, turnaround, sample, price ex-VAT]. A row with a
+    single filled cell is a section header."""
+    items, cat = [], None
+    for r in tables(pdf_name):
+        c = [(x or "").strip() for x in r]
+        filled = [x for x in c if x]
+        if len(filled) == 1:
+            if "מחירון" not in heb(filled[0]): cat = filled[0].replace("\n", " ")
+            continue
+        if len(c) < 5 or c[0] in ("Test Code", ""): continue
+        price = money(c[4].replace(" ", ""))
+        if not price: continue
+        lines = [l.strip() for l in c[1].split("\n") if l.strip()]
+        if not lines: continue
+        items.append({"name": lines[0], "sku": c[0], "price_no_vat": price, "category": cat,
+                      "notes": " ".join(lines[1:]) or None, "sample": c[3].replace("\n", " ") or None})
+    return items
+
+# ---------------------------------------------------------------- Karnieli (3 lists)
+def karnieli(genetic_pdf, pathogen_pdf, panels_pdf):
+    """Genetics and pathogens are plain [price, detail, name] tables. The panels sheet has no
+    grid at all — it is a two-column poster of boxes, each box being a title, its tests, and a
+    price line, so it is walked column by column."""
+    items = []
+    for pdf_name, cat, detail in ((genetic_pdf, "מחלות גנטיות", "גזעים אופייניים"),
+                                  (pathogen_pdf, "פתוגנים", "סוג הדגימה")):
+        for r in tables(pdf_name):
+            c = [(x or "").strip() for x in r]
+            if len(c) < 3: continue
+            price, name = money(c[0]), heb(c[2]).replace("\n", " ")
+            if not price or not name or "מחיר" in heb(c[0]): continue
+            items.append({"name": name, "sku": None, "price_no_vat": price, "category": cat,
+                          "notes": f"{detail}: " + heb(c[1]).replace("\n", " ") if c[1] else None})
+    SPECIES = {"עופות", "חתולים", "כלבים", "ארנבים", "סוסים"}
+    with pdfplumber.open(DL / panels_pdf) as pdf:
+        for pg in pdf.pages:
+            for lo, hi in ((290, 10000), (0, 290)):          # two poster columns, right first
+                rows = {}
+                for w in pg.extract_words():
+                    if lo <= w["x0"] < hi: rows.setdefault(round(w["top"] / 6), []).append(w)
+                animal, cur = None, None
+                for k in sorted(rows):
+                    g = sorted(rows[k], key=lambda w: w["x0"])
+                    txt = heb(" ".join(w["text"] for w in g))
+                    if txt in SPECIES: animal = txt; continue
+                    if "פאנל" in txt: cur = {"title": txt, "tests": [], "animal": animal}; continue
+                    if "₪" in txt:
+                        m = re.search(r"[\d,]+", txt)
+                        if m and cur:
+                            items.append({"name": f'{cur["title"]} — {cur["animal"] or ""}'.strip(" —"),
+                                          "sku": None, "price_no_vat": money(m.group()),
+                                          "category": "פאנלים",
+                                          "notes": " · ".join(cur["tests"]) or None})
+                            cur = None
+                        continue
+                    if cur and txt: cur["tests"].append(txt)
+    return items
+
 def zoetis(meds_pdf, parasite_pdf):
     items, cat = [], None
     for r in tables(meds_pdf):                       # [price, product, (section)]
@@ -285,6 +345,10 @@ JOBS = {
     "hills_pd_2026_04": lambda: hills("PD_priceList_Apr26.PDF"),
     "hills_sp_2026_04": lambda: hills("SP_PriceList_Apr26_2.PDF"),
     "kong_2026_08":     lambda: simple_table("מחירון קונג מלאי - אוגוסט 2026 .pdf", 1, 2, 4, 5),
+    "idexx_2026":       lambda: idexx_short("מחירון איידקס מקוצר 2026xlsx.pdf"),
+    "karnieli_2025":    lambda: karnieli("PDF/מחירון מחלות גנטיות 2025 (1).pdf",
+                                         "PDF/מחירון וטרינרים פתוגנים כלבים חתולים 2025 (5).pdf",
+                                         "PDF/מחירון פאנלים 2025 (2).pdf"),
     "idexx_2025":       lambda: idexx("PDF/מחירון רפרנס איידקס 2025.pdf"),
     "miltin_consum_2025_11": lambda: miltin_consumables("PDF/מחירון חטיבה וטרינרית קבוצת מילטין ציוד מתכלה - נובמבר 2025.pdf"),
     "msd_2026":         lambda: bravecto("../pricecmp/pdf/new_bravecto.pdf"),

@@ -288,23 +288,38 @@
    "notes": null
   },
   {
-   "action": "refresh",
-   "action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "idexx",
    "type": "labs",
    "supplier": "IDEXX",
-   "price_list_date": "2025-01",
-   "source_file": "sources/labs/idexx-2025-01.pdf",
+   "price_list_date": "2026-01",
+   "source_file": "sources/labs/idexx-2026-01.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 492,
-   "status": "stale",
+   "item_count": 137,
+   "status": "current",
    "imported_at": "2026-08-26",
-   "notes": "מחירון רפרנס 2025 — כולל בדיקות שאינן זמינות בישראל (מסומנות)"
+   "notes": "מחירון מקוצר 2026 — הבדיקות המוצעות בישראל"
   },
   {
-   "action": "partial",
-   "action_note": "רק 9 בדיקות נטענו. יש 4 מחירוני PDF (פאנלים · גנטיות · פתוגנים · ציפורים) שטרם פורסרו.",
+   "action": "refresh",
+   "action_note": "מחירי 2025. כל הבדיקות שחוזרות במחירון המקוצר 2026 הועברו לשם — כאן נשארו רק בדיקות שלא מופיעות בו.",
+   "slug": "idexx-ref",
+   "type": "labs",
+   "supplier": "IDEXX — רפרנס",
+   "price_list_date": "2025-01",
+   "source_file": "sources/labs/idexx-ref-2025-01.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 373,
+   "status": "stale",
+   "imported_at": "2026-08-26",
+   "notes": "מחירון רפרנס 2025 — בדיקות שאינן במחירון המקוצר 2026; חלקן אינן זמינות בישראל"
+  },
+  {
+   "action": "refresh",
+   "action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
    "slug": "karnieli",
    "type": "labs",
    "supplier": "קרניאלי",
@@ -312,10 +327,10 @@
    "source_file": "sources/labs/karnieli-2025-01.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 9,
+   "item_count": 66,
    "status": "stale",
    "imported_at": "2026-08-26",
-   "notes": null
+   "notes": "פאנלים · מחלות גנטיות · פתוגנים — שלושת מחירוני 2025"
   },
   {
    "action": "no_source",
