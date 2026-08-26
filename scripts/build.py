@@ -224,6 +224,9 @@ FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's
 # Vetmarket publishes no price list: its rows are parsed out of order confirmations, so the site
 # marks them apart from rows that come from a real supplier price list.
 FROM_INVOICES = {"vetmarket"}
+# Priced from the clinic's own catalog file with no supplier price list behind them — marked as
+# such on the site so nobody reads the number as a published price.
+FROM_CLINIC_FILE = {"hills-ve", "banet"}
 FROM_PDF = {"rc-vet", "rc-retail", "purina-vet", "purina-retail", "vetlife", "monge", "monge-vet", "hills-pd"}   # dated PDF replaces the undated TS rows
 LAB_SLUG = {"AML": "aml", "המכון": "hamachon", "IDEXX": "idexx", "קרניאלי": "karnieli", "פרופ בנעט": "banet"}
 
@@ -271,7 +274,7 @@ def _shop_kw(it):
 # What each list still needs — shown on the "מצב המחירונים" page so it is obvious what to chase.
 ACTIONS = {
     "idexx-ref": ("ok", "ארכיון רפרנס, לא פער: המחירון המקוצר 2026 נטען במלואו, וכאן נשארו רק בדיקות שאינן מופיעות בו (חלקן לא זמינות בישראל)."),
-    "hills-ve": ("no_source", "אין מחירון PDF — 42 שורות מקובץ המרפאה. ייתכן שהקו הוחלף ב-Science Plan; כדאי לאמת מול הספק."),
+    "hills-ve": ("no_source", "היחיד מבין שלושת קווי Hill's בלי מחירון משלו. אינו מופיע במחירון ה-PD, וגדלי האריזה שונים מ-Science Plan — כלומר קו נפרד. 42 השורות מתומחרות מקובץ המרפאה בלבד."),
     "banet":    ("no_source", "אין קובץ מחירון בידינו — 23 בדיקות מקובץ המרפאה בלבד."),
     "medi-market": ("ok", "נאסף אוטומטית מאתר medi-market.co.il."),
     "vetmarket": ("ok", "אין מחירון מפורסם לוטמרקט — כל שורה היא מחיר המחירון לפני הנחה מתוך אישור הזמנה, עם התאריך שלה."),
@@ -477,7 +480,8 @@ def build():
         act, act_note = ACTIONS.get(baseslug(slug), ACTION_DEFAULT[status])
         meta = {"action": act, "action_note": act_note,
                 "slug": slug, "type": typ, "supplier": label, "price_list_date": date, "source_file": src_rel,
-                "source_files": src_all, "source_kind": "invoices" if baseslug(slug) in FROM_INVOICES else "pricelist", "vat_basis": vat_basis, "vat_rate": 18, "item_count": len(items), "status": status,
+                "source_files": src_all, "source_kind": ("invoices" if baseslug(slug) in FROM_INVOICES else
+                                 "internal" if baseslug(slug) in FROM_CLINIC_FILE else "pricelist"), "vat_basis": vat_basis, "vat_rate": 18, "item_count": len(items), "status": status,
                 "imported_at": TODAY, "notes": note}
         json.dump({"meta": meta, "items": items}, open(DATA / typ / f"{slug}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
         index.append(meta)

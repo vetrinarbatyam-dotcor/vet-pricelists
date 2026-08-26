@@ -42,10 +42,15 @@ input[type=search],input[type=text],input[type=number]{font:inherit;border:1px s
 .brand{display:flex;align-items:baseline;gap:10px}
 .brand img{height:30px;display:block}
 .product{font-family:"Frank Ruhl Libre",Georgia,serif;font-weight:500;color:var(--muted);font-size:17px}
-.tabs{display:flex;gap:4px;flex:1}
+.tabs{display:flex;gap:4px}
 .tabs button{border:none;background:transparent;padding:8px 12px;font-weight:500;border-bottom:2px solid transparent;border-radius:0}
 .tabs button.on{border-bottom-color:var(--teal);color:var(--teal);font-weight:700}
 .top-actions{display:flex;gap:8px;align-items:center}
+/* the price-list / clinic switch is the bar's main control, so it sits in the middle */
+.mode-seg{margin-inline:auto;border-color:var(--teal);box-shadow:0 1px 3px rgba(15,110,99,.14)}
+.mode-seg button{font-size:15px}
+.mode-seg button[data-mode="clinic"]{font-weight:700}
+.mode-seg button[data-mode="clinic"].on{background:var(--copper);border-color:var(--copper)}
 .mode{background:var(--card);border-color:var(--teal);color:var(--teal);font-weight:700}
 .mode[aria-pressed=true]{background:var(--teal);color:#fff}
 
@@ -161,6 +166,7 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
 #supBody select{font:inherit;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
 #supBody input{width:86px}
 .top-actions .icon{font-size:17px;padding:5px 10px}
+.top-actions .icon span{font-size:14px;font-weight:500;margin-inline-start:3px}
 .seg.big button{padding:7px 14px;font-weight:500}
 .seg.big button.on{background:var(--teal);color:#fff}
 .clinic-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0 0;padding:10px 14px;
@@ -183,7 +189,8 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
 @media (max-width:800px){.calc-wrap{grid-template-columns:1fr}}
 @media (max-width:860px){.tiles{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:700px){.home{padding:32px 12px}.home h1{font-size:26px}.tile{padding:18px 10px}.tile .ico{font-size:28px}.tile.calc{flex-direction:column}
-  .top-actions{width:100%;justify-content:space-between}.seg.big button{padding:6px 10px;font-size:14px}}
+  .top-actions{justify-content:flex-end}.seg.big button{padding:6px 10px;font-size:14px}
+  .mode-seg{order:2;margin-inline:0}}
 
 .grid-kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:14px 0}
 .grid-kpi .kpi{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
@@ -225,3 +232,7 @@ td .date.parsed{color:var(--copper)}
 .chk{display:flex;align-items:center;gap:7px;font-size:14px}
 .chk input{width:16px;height:16px}
 .ghost.small{padding:2px 9px;font-size:13px}
+.chip .inv.internal,.date .inv.internal,.legend .inv.internal{color:var(--crit)}
+.chip.parsed.internal{border-color:var(--crit)}
+.chip.parsed.internal.on{background:var(--crit);border-color:var(--crit)}
+td .date.parsed.internal{color:var(--crit)}

@@ -79,7 +79,7 @@ async function loadSec(sec) {
   const lists = await Promise.all(metas.map(m => getJSON(`data/${sec}/${m.slug}.json`)));
   lists.forEach(l => l.items.forEach(it => Object.assign(it, {
     slug: l.meta.slug, supplier: l.meta.supplier, sec, date: l.meta.price_list_date,
-    status: l.meta.status, src: it.source || l.meta.source_file, parsed: l.meta.source_kind === 'invoices',
+    status: l.meta.status, src: it.source || l.meta.source_file, kind: MARK[l.meta.source_kind] ? l.meta.source_kind : null,
   })));
   cache[sec] = lists; return lists;
 }
@@ -91,7 +91,7 @@ const statusHeb = s => s === 'current' ? 'עדכני' : s === 'stale' ? 'ישן'
 function show(page) {
   ['home', 'catalog', 'settings', 'calc', 'status'].forEach(p => $('#' + p).hidden = p !== page);
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
-  $('.top-actions .seg').style.visibility = page === 'catalog' ? '' : 'hidden';
+  $('.mode-seg').style.visibility = page === 'catalog' ? '' : 'hidden';
 }
 function goHome() { S.type = null; show('home'); $$('#tabs button').forEach(b => b.classList.remove('on')); }
 
@@ -110,13 +110,14 @@ async function render() {
     chips.appendChild(mk('הכל', !S.supplier, () => { S.supplier = S.category = null; S.shown = PAGE; render(); }));
     lists.forEach(l => chips.appendChild(mk(l.meta.supplier, S.supplier === l.meta.slug,
       () => { S.supplier = l.meta.slug; S.category = null; S.shown = PAGE; render(); }, l.items.length, l.meta.status,
-      l.meta.source_kind === 'invoices')));
-    if (lists.some(l => l.meta.source_kind === 'invoices')) {
+      l.meta.source_kind)));
+    Object.entries(MARK).forEach(([kind, m]) => {
+      if (!lists.some(l => l.meta.source_kind === kind)) return;
       const leg = document.createElement('span');
       leg.className = 'legend';
-      leg.innerHTML = `<i class="inv">${INV}</i> ${INV_TEXT}`;
+      leg.innerHTML = `<i class="inv ${kind}">${m.sym}</i> ${m.text}`;
       chips.appendChild(leg);
-    }
+    });
     const sub = $('#subchips'); sub.innerHTML = ''; sub.hidden = true;
     if (S.supplier) {
       const l = lists.find(x => x.meta.slug === S.supplier), cats = {};
@@ -194,12 +195,17 @@ function renderFacets(lists) {
 }
 // Vetmarket has no published price list — its prices are parsed out of order confirmations.
 // Rows that came that way are marked so nobody reads them as a supplier price list.
-const INV = '✻';
-const INV_TEXT = 'מפורסר מאישורי הזמנה — אין מחירון מפורסם לספק הזה';
-function mk(label, on, fn, n, status, parsed) {
+const MARK = {
+  invoices: { sym: '✻', text: 'מפורסר מאישורי הזמנה — אין מחירון מפורסם לספק הזה' },
+  internal: { sym: '⚠', text: 'מחירים מקובץ המרפאה — אין מחירון מפורסם לקו הזה, ולא אומתו מול הספק' },
+};
+const INV = MARK.invoices.sym;
+const INV_TEXT = MARK.invoices.text;
+function mk(label, on, fn, n, status, kind) {
+  const m = MARK[kind];
   const b = document.createElement('button');
-  b.className = 'chip' + (on ? ' on' : '') + (parsed ? ' parsed' : '');
-  b.innerHTML = esc(label) + (parsed ? `<i class="inv" title="${INV_TEXT}">${INV}</i>` : '') +
+  b.className = 'chip' + (on ? ' on' : '') + (m ? ' parsed ' + kind : '');
+  b.innerHTML = esc(label) + (m ? `<i class="inv ${kind}" title="${m.text}">${m.sym}</i>` : '') +
     (n != null ? `<small>${n}</small>` : '') +
     (status ? `<span class="st ${statusCls(status)}" title="${statusHeb(status)}"></span>` : '');
   b.onclick = fn; return b;
@@ -219,8 +225,8 @@ function renderTable() {
       `<td class="name">${esc(r.name)}${extra.length ? `<small>${extra.map(esc).join(' · ')}</small>` : ''}</td>` +
       `<td>${esc(r.category || '')}</td><td class="num">${esc(r.sku || '')}</td>` +
       `<td class="num price">${fmt(incl ? r.price_with_vat : r.price_no_vat)}</td>` +
-      `<td><span class="date ${statusCls(r.status)}${r.parsed ? ' parsed' : ''}"${r.parsed ? ` title="${INV_TEXT}"` : ''}>` +
-      `${r.parsed ? INV + ' ' : ''}${r.price_date || r.date || 'ללא תאריך'}</span>` +
+      `<td><span class="date ${statusCls(r.status)}${r.kind ? ' parsed ' + r.kind : ''}"${r.kind ? ` title="${MARK[r.kind].text}"` : ''}>` +
+      `${r.kind ? MARK[r.kind].sym + ' ' : ''}${r.price_date || r.date || 'ללא תאריך'}</span>` +
       `${r.src ? ` <a class="src" href="${r.src}" target="_blank" rel="noopener" title="צילום המקור">📄</a>` : ''}</td>`;
     if (pr) {
       const o = P.rows[r.id] || {};
@@ -370,7 +376,8 @@ function advPreview() {
 const ACT_HEB = { ok: 'מעודכן', refresh: 'צריך מחירון חדש', partial: 'חלקי', no_source: 'חסר קובץ מקור', check: 'לאימות' };
 const ACT_CLS = { ok: 'ok', refresh: 'stale', partial: 'stale', no_source: 'missing', check: 'stale' };
 function srcCell(m) {
-  if (m.source_kind === 'invoices') return `<span class="date parsed" title="${INV_TEXT}">${INV} מפורסר מחשבוניות</span>`;
+  if (m.source_kind === 'invoices') return `<span class="date parsed invoices" title="${MARK.invoices.text}">${MARK.invoices.sym} מפורסר מחשבוניות</span>`;
+  if (m.source_kind === 'internal') return `<span class="date parsed internal" title="${MARK.internal.text}">${MARK.internal.sym} מקובץ המרפאה</span>`;
   const files = m.source_files && m.source_files.length ? m.source_files : (m.source_file ? [m.source_file] : []);
   if (!files.length) return '<span class="date missing">אין קובץ</span>';
   return files.map((f, i) => `<a href="${f}" target="_blank" rel="noopener">📄 ${files.length > 1 ? `מקור ${i + 1}` : 'צילום המקור'}</a>`).join(' · ');

@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -41,11 +41,11 @@
     <button data-type="labs">🧪 מעבדות</button>
     <button data-type="shop">🛍️ מוצרי חנויות</button>
   </nav>
+  <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
+    <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
+  </div>
   <div class="top-actions">
-    <div class="seg big" role="group" aria-label="תצוגת מחירים">
-      <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
-    </div>
-    <button id="calcBtn" class="ghost icon" title="מחשבון תמחור">🧮</button>
+    <button id="calcBtn" class="ghost icon" title="מחשבון תמחור">🧮 <span>מחשבון</span></button>
     <button id="setBtn" class="ghost icon" title="הגדרות תמחור">⚙️</button>
   </div>
 </header>
@@ -223,6 +223,6 @@
 
 
 
-<script src="app.js?v=8"></script>
+<script src="app.js?v=9"></script>
 </body>
 </html>
