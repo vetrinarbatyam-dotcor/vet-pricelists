@@ -32,7 +32,30 @@ const bandLabel = (b, i) => {
   return b.to == null ? `מעל ${fmt0(from)} ₪` : `${fmt0(from)} – ${fmt0(b.to)} ₪`;
 };
 const fmt0 = n => (+n || 0).toLocaleString('he-IL', { maximumFractionDigits: 0 });
-function save() { try { localStorage.setItem(PK, JSON.stringify(P)); } catch {} }
+// Where the pricing settings live. The public site keeps them in the browser and nothing ever
+// leaves it. The clinic copy (config.json says mode:"clinic") keeps one file on the server, so
+// every computer in the clinic sees the same discounts and margins.
+const CLINIC_STORE = 'store/clinic-pricing.json';
+let clinicMode = false, putTimer = null;
+function toast(msg, bad) {
+  let t = $('#toast');
+  if (!t) { t = document.createElement('div'); t.id = 'toast'; document.body.appendChild(t); }
+  t.textContent = msg; t.className = 'show' + (bad ? ' bad' : '');
+  clearTimeout(toast.t); toast.t = setTimeout(() => t.className = '', bad ? 6000 : 1800);
+}
+function save() {
+  if (!clinicMode) { try { localStorage.setItem(PK, JSON.stringify(P)); } catch {} return; }
+  // debounced: typing in a margin box fires save() on every keystroke
+  clearTimeout(putTimer);
+  putTimer = setTimeout(async () => {
+    try {
+      const r = await fetch(CLINIC_STORE, { method: 'PUT', headers: { 'Content-Type': 'application/json' },
+                                            body: JSON.stringify(P) });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      toast('נשמר בשרת ✓');
+    } catch (e) { toast('⚠️ השמירה נכשלה (' + e.message + ') — ההגדרות לא נשמרו', true); }
+  }, 600);
+}
 const num = v => (v === '' || v == null || isNaN(+v)) ? null : +v;
 const fmt = n => n == null ? '' : n.toLocaleString('he-IL', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -416,11 +439,38 @@ function renderStatus() {
 // ---------- gate + wiring ----------
 async function sha256(s) { const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join(''); }
 
+// The clinic copy: no access gate (the vhost is password-protected), settings come from the
+// server instead of the browser, and the privacy panels say what is actually true here.
+async function startClinic() {
+  clinicMode = true;
+  document.title = CONFIG.product || 'מחירון המרפאה';
+  const brand = $('.brand .product'); if (brand) brand.textContent = CONFIG.product || 'VetPrices';
+  try {
+    const s = await getJSON(CLINIC_STORE);
+    P = Object.assign({}, EMPTY, s);
+    if (!P.tiers || !Array.isArray(P.tiers.bands) || !P.tiers.bands.length) P.tiers = { on: false, bands: TIERS.map(b => ({ ...b })) };
+  } catch { toast('⚠️ לא הצלחנו לטעון את ההגדרות מהשרת — שינויים עלולים לא להישמר', true); }
+  $$('.privacy').forEach(p => {
+    p.innerHTML = '<h2>🔒 העותק הפנימי של המרפאה</h2><ul>' +
+      '<li><b>ההגדרות נשמרות בשרת המרפאה</b> ומשותפות לכל המחשבים — מה שתשנו כאן יופיע גם בכל עמדה אחרת ובבית.</li>' +
+      '<li><b>הדף מוגן בסיסמה.</b> ההנחות והמרווחים האמיתיים שלכם נמצאים כאן ורק כאן — הם לעולם לא מגיעים לאתר הציבורי.</li>' +
+      '<li><b>המחירונים עצמם זהים לאתר הציבורי</b> ומתעדכנים יחד איתו — אותו מקור נתונים בדיוק.</li></ul>';
+  });
+  (CONFIG.links || []).forEach(l => {
+    const a = document.createElement('a');
+    a.className = 'ghost icon extlink'; a.href = l.url; a.target = '_blank'; a.rel = 'noopener';
+    a.title = l.label; a.innerHTML = `${l.icon} <span>${esc(l.label)}</span>`;
+    $('.top-actions').prepend(a);
+  });
+  start();
+}
+
 async function init() {
   [INDEX, CONFIG] = await Promise.all([getJSON('data/index.json'), getJSON('config.json')]);
   const mail = `mailto:${CONFIG.contact}?subject=`;
   $('#reportLink').href = mail + encodeURIComponent('VetPrices — דיווח על טעות / בקשת הסרה');
   $('#gateAsk').href = mail + encodeURIComponent('VetPrices — בקשת קוד גישה');
+  if (CONFIG.mode === 'clinic') return startClinic();
   let ok = false; try { ok = localStorage.getItem('vp_access') === CONFIG.access_hash; } catch {}
   if (ok) return start();
   $('#gate').hidden = false;

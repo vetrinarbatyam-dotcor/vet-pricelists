@@ -281,3 +281,12 @@ footer .marks b{color:var(--crit)}
 td.buyprice{font-weight:600;color:var(--copper)}
 td.cust-ro{font-weight:700;color:var(--teal);font-size:15px}
 #viewSeg button{padding:7px 14px}
+
+/* ---------- clinic copy: server-side save feedback + external links in the header ---------- */
+#toast{position:fixed;inset-block-end:18px;inset-inline-start:18px;z-index:50;padding:9px 16px;
+  border-radius:8px;background:var(--teal);color:#fff;font-size:14px;font-weight:500;
+  box-shadow:0 6px 20px -8px rgba(0,0,0,.5);opacity:0;transform:translateY(8px);
+  pointer-events:none;transition:opacity .18s,transform .18s}
+#toast.show{opacity:1;transform:none}
+#toast.bad{background:var(--crit)}
+a.extlink{text-decoration:none;display:inline-flex;align-items:center;gap:5px}
