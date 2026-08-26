@@ -16,6 +16,32 @@
    "notes": "מחירון חיות קטנות יולי 2026"
   },
   {
+   "slug": "zoetis",
+   "type": "medical",
+   "supplier": "זואטיס (Zoetis)",
+   "price_list_date": "2026",
+   "source_file": "sources/medical/zoetis-2026.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 39,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"
+  },
+  {
+   "slug": "ferplast",
+   "type": "medical",
+   "supplier": "פרפלסט (Ferplast)",
+   "price_list_date": "2026-02",
+   "source_file": "sources/medical/ferplast-2026-02.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 15,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"
+  },
+  {
    "slug": "vetmarket",
    "type": "medical",
    "supplier": "וטמרקט",
@@ -45,40 +71,40 @@
    "slug": "petvet",
    "type": "medical",
    "supplier": "פט-וט ביומד",
-   "price_list_date": null,
-   "source_file": null,
+   "price_list_date": "2026-05",
+   "source_file": "sources/medical/petvet-2026-05.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 2,
-   "status": "missing_source",
+   "item_count": 181,
+   "status": "current",
    "imported_at": "2026-08-26",
-   "notes": null
+   "notes": "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"
   },
   {
    "slug": "rc-vet",
    "type": "food",
    "supplier": "Royal Canin VET",
-   "price_list_date": null,
-   "source_file": null,
+   "price_list_date": "2026-06",
+   "source_file": "sources/food/rc-vet-2026-06.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 113,
-   "status": "missing_source",
+   "item_count": 108,
+   "status": "current",
    "imported_at": "2026-08-26",
-   "notes": "מקור התאריך לא מתועד"
+   "notes": "מחירון קמעונאי יוני 2026"
   },
   {
    "slug": "rc-retail",
    "type": "food",
    "supplier": "Royal Canin חנויות",
-   "price_list_date": null,
-   "source_file": null,
+   "price_list_date": "2026-01",
+   "source_file": "sources/food/rc-retail-2026-01.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 158,
-   "status": "missing_source",
+   "item_count": 168,
+   "status": "current",
    "imported_at": "2026-08-26",
-   "notes": "מקור התאריך לא מתועד"
+   "notes": "מחירון קמעונאי ינואר 2026"
   },
   {
    "slug": "hills-pd",
@@ -123,14 +149,14 @@
    "slug": "purina-vet",
    "type": "food",
    "supplier": "Purina Pro Plan VET",
-   "price_list_date": null,
-   "source_file": null,
+   "price_list_date": "2026-06",
+   "source_file": "sources/food/purina-vet-2026-06.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 30,
-   "status": "missing_source",
+   "item_count": 37,
+   "status": "current",
    "imported_at": "2026-08-26",
-   "notes": null
+   "notes": "מחיר מחירון ליחידה (ללא הנחות)"
   },
   {
    "slug": "purina-retail",
@@ -155,32 +181,6 @@
    "vat_rate": 18,
    "item_count": 25,
    "status": "stale",
-   "imported_at": "2026-08-26",
-   "notes": null
-  },
-  {
-   "slug": "monge",
-   "type": "food",
-   "supplier": "Monge",
-   "price_list_date": "2025-01",
-   "source_file": "sources/food/monge-2025-01.pdf",
-   "vat_basis": "no_vat",
-   "vat_rate": 18,
-   "item_count": 0,
-   "status": "stale",
-   "imported_at": "2026-08-26",
-   "notes": null
-  },
-  {
-   "slug": "foodiez",
-   "type": "food",
-   "supplier": "Foodiez",
-   "price_list_date": null,
-   "source_file": null,
-   "vat_basis": "no_vat",
-   "vat_rate": 18,
-   "item_count": 0,
-   "status": "missing_source",
    "imported_at": "2026-08-26",
    "notes": null
   },
@@ -388,6 +388,9 @@
    ]
   ],
   "food_indications": [
+   "VETERINARY HEALTH NUTRITION CAT - DRY",
+   "VETERINARY HEALTH NUTRITION CAT - WET",
+   "VETERINARY HEALTH NUTRITION DOG - DRY",
    "אלרגיה למזון",
    "אפילפסיה / מערכת עצבים",
    "בלוטת התריס",
@@ -396,7 +399,10 @@
    "השמנה / ירידה במשקל",
    "התאוששות",
    "לב",
+   "מזון נוזלי, תחליפי חלב לגורים ותוספים",
    "מזון רגיל",
+   "מזון רטוב - כלבים",
+   "מזון רטוב חתולים",
    "מחלות כבד",
    "מחלות כליה",
    "מערכת עיכול",
@@ -405,7 +411,10 @@
    "סרטן",
    "עור ופרווה",
    "שיניים",
-   "תחליף חלב"
+   "תזונה מותאמת לגודל וגיל הכלב Size Health Nutrition",
+   "תזונה מותאמת לצרכיו הייחודיים של הכלב הגזעי Breed Health Nutrition",
+   "תזונה מותאמת לצרכיו המשתנים של החתול Feline Health Nutriotion",
+   "תזונה תומכת ברגישויות לחתול Feline Care Nutriotion"
   ]
  }
 }

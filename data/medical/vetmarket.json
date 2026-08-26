@@ -979,7 +979,7 @@
 {
 "name": "Ofloxacin 50mg/ml 30ml oral suspension",
 "category": "תרופות שונות",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 60.0,
 "price_with_vat": 70.8,
 "sku": "169354",
@@ -1081,7 +1081,7 @@
 {
 "name": "Butorphanol 5mg/ml 30 ml oral suspension",
 "category": "תרופות שונות",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 350.0,
 "price_with_vat": 413.0,
 "sku": "166789",
@@ -2132,7 +2132,7 @@
 {
 "name": "ברבקטו ספוט-און 1400 מ\"ג לכלב 40-56 ק\"ג (1 אמפולה)",
 "category": null,
-"topic": "cardio",
+"topic": "nutrition",
 "price_no_vat": 196.0,
 "price_with_vat": 231.28,
 "sku": "120034",
@@ -2421,7 +2421,7 @@
 {
 "name": "Clopidogrel 10 mg/ml 30 ml oral suspension",
 "category": null,
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 120.0,
 "price_with_vat": 141.6,
 "sku": "163502",
@@ -2443,7 +2443,7 @@
 {
 "name": "Codeine phosphate 5mg/ml 30ml oral suspension",
 "category": null,
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 120.0,
 "price_with_vat": 141.6,
 "sku": "163967",
@@ -2519,7 +2519,7 @@
 {
 "name": "Pyrfen puppy 60 ml oral suspension",
 "category": null,
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 70.0,
 "price_with_vat": 82.6,
 "sku": "169486",
@@ -2573,7 +2573,7 @@
 {
 "name": "קולר סרסטו לכלב גדול מעל 8 ק\"ג, היקף 70 ס\"מ",
 "category": null,
-"topic": "cardio",
+"topic": "nutrition",
 "price_no_vat": 180.0,
 "price_with_vat": 212.4,
 "sku": "216038",
@@ -2593,7 +2593,7 @@
 {
 "name": "תרכיב קואנטום לכלב DA2PPvL (כמות 1 מנה)",
 "category": null,
-"topic": "cardio",
+"topic": "vaccine",
 "price_no_vat": 25.3,
 "price_with_vat": 29.85,
 "sku": "309704",
@@ -2603,7 +2603,7 @@
 {
 "name": "תרכיב נוביווק מתומן כלב DAPPv + L4 (מכיל 1 מנה)",
 "category": null,
-"topic": "cardio",
+"topic": "vaccine",
 "price_no_vat": 25.3,
 "price_with_vat": 29.85,
 "sku": "309733",
@@ -2653,7 +2653,7 @@
 {
 "name": "Hill's Prescription Diet | מטבוליק לכלב מגזע קטן, 6 ק\"ג (עם עוף)",
 "category": null,
-"topic": "cardio",
+"topic": "nutrition",
 "price_no_vat": 269.0,
 "price_with_vat": 317.42,
 "sku": "40605946",
@@ -2703,7 +2703,7 @@
 {
 "name": "ק\"ג 3 מ מטבוליק+מוביליטי כלב מיני",
 "category": null,
-"topic": "cardio",
+"topic": "nutrition",
 "price_no_vat": 198.0,
 "price_with_vat": 233.64,
 "sku": "40606179",
@@ -2723,7 +2723,7 @@
 {
 "name": "שימורי נזיד i/d | Hill's Prescription Diet דייג'סטיב קייר לכלב בוגר, 354 גרם",
 "category": null,
-"topic": "cardio",
+"topic": "nutrition",
 "price_no_vat": 18.3,
 "price_with_vat": 21.59,
 "sku": "40606448",
@@ -2743,7 +2743,7 @@
 {
 "name": "שימורי i/d | Hill's Prescription Diet דייג'סטיב קייר לכלב בוגר, 360 גרם",
 "category": null,
-"topic": "cardio",
+"topic": "nutrition",
 "price_no_vat": 13.8,
 "price_with_vat": 16.28,
 "sku": "40607215",
@@ -2753,7 +2753,7 @@
 {
 "name": "שימורי GI Biome | Hill's Prescription Diet לכלב בוגר, 370 גר'",
 "category": null,
-"topic": "cardio",
+"topic": "nutrition",
 "price_no_vat": 15.4,
 "price_with_vat": 18.17,
 "sku": "40607719",
@@ -2763,7 +2763,7 @@
 {
 "name": "גרם 370 כלב פחית Z/D מ",
 "category": null,
-"topic": "cardio",
+"topic": "nutrition",
 "price_no_vat": 19.2,
 "price_with_vat": 22.66,
 "sku": "40608397",
@@ -2926,7 +2926,7 @@
 {
 "name": "סנאפ פרוו - כלב (5 בדיקות)",
 "category": null,
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 200.0,
 "price_with_vat": 236.0,
 "sku": "5598806",

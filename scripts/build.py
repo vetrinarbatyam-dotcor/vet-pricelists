@@ -61,13 +61,13 @@ VM_TOPIC = {
     "נשימה / שיעול": "respiratory", "הרדמה": "anesthesia", "סטרואידים": "pain",
 }
 KW_TOPIC = [
-    ("ears", ("אוזני", "אוזן", "otic", "אקרי", "אזני")),
-    ("eyes", ("עיני", "עין ", "ophth", "ocular", "דמעות", "eye")),
-    ("dental", ("שיני", "דנטל", "dental", "אבנית", "פה ")),
-    ("joints", ("מפרק", "גלוקוזאמין", "כונדרו", "joint", "ניידות")),
+    ("ears", ("אוזני", "אוזן", "otic", "אקרי", "אזני", "auris", "ear ")),
+    ("eyes", ("עיני", "עין ", "ophth", "ocular", "דמעות", "eye", "lash", "idrop", "tear")),
+    ("dental", ("שיני", "דנטל", "dental", "אבנית", "פה ", "oral", "breath", "teeth", "orocare", "oratene")),
+    ("joints", ("מפרק", "גלוקוזאמין", "כונדרו", "joint", "ניידות", "wejoint", "mobility", "cartil")),
     ("kidney", ("כליה", "כלייתי", "renal", "שתן", "urinary", "flutd")),
-    ("skin", ("עור", "פרוה", "פרווה", "דרמט", "אלרגי", "derma", "skin", "שמפו")),
-    ("cardio", ("לב ", "קרדי", "cardio")),
+    ("skin", ("עור", "פרוה", "פרווה", "דרמט", "אלרגי", "derma", "skin", "שמפו", "shampoo", "topical", "paw", "keto-c", "zoo ")),
+    ("cardio", ("~לב", "קרדי", "cardio", "cardiac")),
     ("endocrine", ("סוכרת", "אינסולין", "תריס", "הורמון", "diabet", "thyro")),
     ("parasites", ("פרעוש", "קרצי", "flea", "tick", "נקסגארד", "ברוולין", "פרונטליין", "סימפריקה", "ברווקטו")),
     ("deworm", ("תולעים", "תילוע", "דרונטל", "worm", "dewor", "מילבמקס")),
@@ -77,7 +77,9 @@ KW_TOPIC = [
     ("pain", ("meloxi", "מלוקסי", "carprof", "רימדיל", "gabapent", "nsaid", "כאב")),
     ("respiratory", ("שיעול", "נשימ", "cough", "bronch")),
     ("nutrition", ("מזון", "food", "פחית", "שק ", 'ק"ג', "ויטמין", "תוסף", "חטיף", "diet")),
-    ("equipment", ("מזרק", "מחט", "כפפ", "חוט", "syring", "needle", "glove", "sutur", "קטטר", "cathet", "תחבוש", "gauze", "גזה", "swab", "bandag")),
+    ("equipment", ("מזרק", "מחט", "כפפ", "חוט", "syring", "needle", "glove", "sutur", "קטטר", "cathet",
+                   "תחבוש", "gauze", "גזה", "swab", "bandag", "catgut", "clinisorb", "clinisolv", "splint",
+                   "microchip", "reader", "test", "pill", "cutanplast", "collar", "מתלה", "display")),
 ]
 LAB_CAT_TOPIC = {
     "ביוכימיה": "chemistry", "פאנלים": "chemistry", "בדיקות כלליות": "chemistry", "פאנלים - חתולים": "chemistry",
@@ -91,27 +93,52 @@ LAB_CAT_TOPIC = {
     "רמת תרופות בדם": "drugs", "תרופות": "drugs", "בדיקות מיוחדות": "other",
 }
 
+def _hit(kw, name, low):
+    if kw.startswith("~"): return re.search(r"(?<![א-ת])" + kw[1:] + r"(?![א-ת])", name) is not None
+    return kw in name or kw in low
+
 def kw_topic(name):
     low = name.lower()
     for t, kws in KW_TOPIC:
-        if any(k in name or k in low for k in kws):
-            return t
+        if any(_hit(k, name, low) for k in kws): return t
     return "other"
+
+# Vet-diet food names carry the indication in the product line name (Renal / רינאל / Gastro …).
+FOOD_KW = [
+    ("kidney", ("רינאל", "renal", "urinary", "אורינרי", "שתן", "כליה", "s/o", "uc ", "ct urin")),
+    ("gi", ("גסטרו", "gastro", "intestinal", "אנטריק", "enteric", "digest", "פיברה", "fibre", "fiber",
+            "ריקברי", "recovery", "קונבלסנס", "convalescence", "דל שומן", "low fat", "en ", "ha ", "hypo")),
+    ("liver", ("הפאטיק", "hepatic", "כבד", "hp ")),
+    ("skin", ("דרמו", "derma", "סקין", "skin", "אלרג", "allerg", "sensitiv", "סנסיטיב", "אטופיק", "atopic", "hf ")),
+    ("joints", ("מוביליטי", "mobility", "מפרק", "joint", "ja ")),
+    ("dental", ("דנטל", "dental", "שיניים", "oral", "ds ")),
+    ("endocrine", ("דיאבטיק", "diabetic", "סוכרת", "glycobalance", "dm ", "היפרתירואיד", "thyro")),
+    ("cardio", ("קרדיאק", "cardiac", "~לב", "ck ")),
+    ("neuro", ("neuro", "אפילפ", "epilep", "calm", "קאלם")),
+    ("onco", ("onco", "סרטן", "tumor")),
+]
+def food_topic(name):
+    low = name.lower()
+    for t, kws in FOOD_KW:
+        if any(_hit(k, name, low) for k in kws): return t
+    return "nutrition"
 
 # ---------------------------------------------------------------- price-list registry (dates + sources = manual truth)
 DLD = HOME / "Downloads"
 REG = {
     # slug: (type, supplier label, price_list_date, source_file_path or None, vat_basis of the raw list, notes)
     "beit-erez":  ("medical", "בית ארז (מילטין)", "2026-07", DLD / "מחירון - חיות קטנות יולי 2026.pdf", "no_vat", "מחירון חיות קטנות יולי 2026"),
+    "zoetis":     ("medical", "זואטיס (Zoetis)", "2026", (DLD / "זואטיס תרופות 2026.PDF", DLD / "זואטיס סימפריקה סטרונגהולד 2026.PDF"), "no_vat", "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"),
+    "ferplast":   ("medical", "פרפלסט (Ferplast)", "2026-02", DLD / "מחירון מוצרי פרפלסט 24.2.26.pdf", "no_vat", "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"),
     "vetmarket":  ("medical", "וטמרקט", "2026-08", DLD / "מחירון וטמרקט מלא.xlsx", "no_vat", "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"),
     "medi-market": ("medical", "מדי-מרקט", "2026-06", None, "with_vat", "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"),
-    "petvet":     ("medical", "פט-וט ביומד", None, None, "no_vat", None),
-    "rc-vet":     ("food", "Royal Canin VET", None, None, "no_vat", "מקור התאריך לא מתועד"),
-    "rc-retail":  ("food", "Royal Canin חנויות", None, None, "no_vat", "מקור התאריך לא מתועד"),
+    "petvet":     ("medical", "פט-וט ביומד", "2026-05", DLD / "PRICE LIST 2026.pdf", "no_vat", "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"),
+    "rc-vet":     ("food", "Royal Canin VET", "2026-06", DLD / "RC VET Price list JUNE.pdf", "no_vat", "מחירון קמעונאי יוני 2026"),
+    "rc-retail":  ("food", "Royal Canin חנויות", "2026-01", DLD / "RC SPT Price list Jan_2026.pdf", "no_vat", "מחירון קמעונאי ינואר 2026"),
     "hills-pd":   ("food", "Hill's Prescription Diet", "2026-04", DLD / "PD_priceList_Apr26.PDF", "no_vat", None),
     "hills-ve":   ("food", "Hill's Vet Essentials", "2026-04", DLD / "PD_priceList_Apr26.PDF", "no_vat", None),
     "vetlife":    ("food", "VetLife", "2025-02", DLD / "PDF" / "מחירון וטלייף 02.25 (1).pdf", "no_vat", None),
-    "purina-vet": ("food", "Purina Pro Plan VET", None, None, "no_vat", None),
+    "purina-vet": ("food", "Purina Pro Plan VET", "2026-06", DLD / "פורינה.pdf", "no_vat", "מחיר מחירון ליחידה (ללא הנחות)"),
     "purina-retail": ("food", "Purina Pro Plan חנויות", None, None, "no_vat", None),
     "monge-vet":  ("food", "Monge Vet Solution", "2025-01", DLD / "PDF" / "מחירון מונג וט סלושיין  - ינואר 2025 (1).pdf", "no_vat", None),
     "monge":      ("food", "Monge", "2025-01", DLD / "PDF" / "מחירון מונג  פיש יבשים - ינואר 2025 (1).pdf", "no_vat", None),
@@ -125,6 +152,7 @@ REG = {
 FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's PD": "hills-pd", "Hill's VE": "hills-ve",
                      "VetLife": "vetlife", "Purina": "purina-vet", "Purina חנויות": "purina-retail",
                      "Monge Vet": "monge-vet", "Monge": "monge", "Foodiez": "foodiez"}
+FROM_PDF = {"rc-vet", "rc-retail", "purina-vet"}   # dated PDF replaces the undated TS rows
 LAB_SLUG = {"AML": "aml", "המכון": "hamachon", "IDEXX": "idexx", "קרניאלי": "karnieli", "פרופ בנעט": "banet"}
 
 def r2(x): return round(float(x) + 1e-9, 2)
@@ -174,19 +202,42 @@ def build():
         if sku in seen: continue
         add(lists["vetmarket"], item("vetmarket", r["name"], r["unit_price"], None, r.get("category"), kw_topic(r["name"]),
                                        sku=sku, pack_qty=pack_qty(r["name"]), price_date=r["date"][:7]))
-    # --- Pet-Vet Biomed (2 items, TS)
-    for it in load("petvet.json"):
-        add(lists["petvet"], item("petvet", it["item_name"], it["price_no_vat"], None, it["category"], kw_topic(it["item_name"]), sku=it.get("code")))
+    # --- Pet-Vet Biomed: full 2026 price list (PDF, all brands). category = brand.
+    for it in load("importer_2026.json"):
+        add(lists["petvet"], item("petvet", it["name"], it["price_no_vat"], None, it.get("category"),
+                                    kw_topic(it["name"]), sku=it.get("sku"), bonus=it.get("bonus"),
+                                    pack_qty=pack_qty(it["name"])))
+    # --- Zoetis 2026 (two sheets: meds + parasiticides)
+    for it in load("zoetis_2026.json"):
+        cat = it.get("category") or ""
+        add(lists["zoetis"], item("zoetis", it["name"], it["price_no_vat"], None, cat,
+                                    kw_topic(cat) if kw_topic(cat) != "other" else kw_topic(it["name"]),
+                                    pack_qty=pack_qty(it["name"])))
+    # --- Ferplast (equipment/accessories); the "25% off" column in the source is dropped on purpose.
+    for it in load("ferplast_2026_02.json"):
+        add(lists["ferplast"], item("ferplast", it["name"], it["price_no_vat"], None, it.get("category"),
+                                      kw_topic(it["name"]) if kw_topic(it["name"]) != "other" else "equipment",
+                                      sku=it.get("sku")))
     # --- Medi-Market: PUBLIC WEBSITE prices (regular_price, incl. VAT). medimarket_ts.json is NOT used (negotiated prices).
     for r in pull["medimarket"]:
         cl = json.loads(r["categories"] or "[]"); name = r["name"].replace("&quot;", '"').replace("&amp;", "&")
         add(lists["medi-market"], item("medi-market", name, None, r["regular_price"], cl[0] if cl else None,
                                          kw_topic(name), sku=r["sku"], pack_qty=pack_qty(name)))
-    # --- Food: purchasePriceNoVat only. customerPriceWithVat (clinic sale price) is deliberately dropped.
+    # --- Food from the clinic TS catalog: purchasePriceNoVat only (customerPriceWithVat = clinic sale
+    #     price, deliberately dropped). Companies that now have a dated PDF are skipped here.
     for it in load("vet_food_catalog.json"):
         slug = FOOD_COMPANY_SLUG[it["company"]]
+        if slug in FROM_PDF: continue
         add(lists[slug], item(slug, it["name"], it["purchasePriceNoVat"], None, it["indication"],
                                 FOOD_IND_TOPIC.get(it["indication"], "nutrition"), animal=it.get("animal"), unit=it.get("weight")))
+    # --- Food from dated supplier PDFs (list price, ex-VAT) — replaces the undated TS rows above.
+    for slug, src in (("rc-vet", "rc_vet_2026_06.json"), ("rc-retail", "rc_spt_2026_01.json"),
+                      ("purina-vet", "purina_2026_06.json")):
+        for it in load(src):
+            name = it["name"]
+            add(lists[slug], item(slug, name, it["price_no_vat"], None, it.get("category"), food_topic(name),
+                                    sku=it.get("sku"), unit=it.get("unit"),
+                                    animal=it.get("animal") or ("חתול" if "חתול" in name else ("כלב" if "כלב" in name else None))))
     # --- Labs
     for it in load("lab_catalog.json"):
         slug = LAB_SLUG[it["lab"]]
@@ -198,14 +249,22 @@ def build():
     index = []
     for slug, (typ, label, date, src, vat_basis, note) in REG.items():
         items = lists[slug]
+        if not items: continue                           # nothing priced -> not a price list
         for i, it in enumerate(items, 1): it["id"] = f"{slug}-{i}"
         src_rel = None
         if slug == "hills-ve": src_rel = "sources/food/hills-pd-2026-04.pdf"  # same PDF as PD — don't duplicate
-        elif src and src.exists():
-            (SRC / typ).mkdir(parents=True, exist_ok=True)
-            dst = SRC / typ / f"{slug}-{date}{src.suffix.lower()}"
-            if not dst.exists(): shutil.copy2(src, dst)
-            src_rel = f"sources/{typ}/{dst.name}"
+        elif src:
+            paths = list(src) if isinstance(src, tuple) else [src]
+            rels = []
+            for i, sp in enumerate(paths):
+                if not sp.exists(): continue
+                (SRC / typ).mkdir(parents=True, exist_ok=True)
+                dst = SRC / typ / f"{slug}-{date}{'' if i == 0 else f'-{i+1}'}{sp.suffix.lower()}"
+                if not dst.exists(): shutil.copy2(sp, dst)
+                rels.append(f"sources/{typ}/{dst.name}")
+            src_rel = rels[0] if rels else None
+            if len(rels) > 1: extra_srcs = rels[1:]
+        extra_srcs = locals().get("extra_srcs") if False else None
         status = "missing_source" if not date else ("stale" if date < stale_cutoff() else "current")
         meta = {"slug": slug, "type": typ, "supplier": label, "price_list_date": date, "source_file": src_rel,
                 "vat_basis": vat_basis, "vat_rate": 18, "item_count": len(items), "status": status,

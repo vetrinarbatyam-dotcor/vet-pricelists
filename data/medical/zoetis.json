@@ -1,0 +1,353 @@
+{
+"meta": {
+"slug": "zoetis",
+"type": "medical",
+"supplier": "זואטיס (Zoetis)",
+"price_list_date": "2026",
+"source_file": "sources/medical/zoetis-2026.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 39,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"
+},
+"items": [
+{
+"name": "סינולקס 50 מ\"ג (100 טבל' )",
+"category": "אנטיביוטיקה",
+"topic": "antibiotic",
+"price_no_vat": 247.0,
+"price_with_vat": 291.46,
+"pack_qty": 100,
+"id": "zoetis-1"
+},
+{
+"name": "סינולקס 250 מ\"ג (100 טבל')",
+"category": "אנטיביוטיקה",
+"topic": "antibiotic",
+"price_no_vat": 367.0,
+"price_with_vat": 433.06,
+"pack_qty": 100,
+"id": "zoetis-2"
+},
+{
+"name": "סינולקס 500 מ\"ג (100 טבל')",
+"category": "אנטיביוטיקה",
+"topic": "antibiotic",
+"price_no_vat": 546.0,
+"price_with_vat": 644.28,
+"pack_qty": 100,
+"id": "zoetis-3"
+},
+{
+"name": "סינולקס להזרקה 40 מ\"ל",
+"category": "אנטיביוטיקה",
+"topic": "antibiotic",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"pack_qty": 40,
+"id": "zoetis-4"
+},
+{
+"name": "קונבניה 10 מ\"ל",
+"category": "אנטיביוטיקה",
+"topic": "antibiotic",
+"price_no_vat": 1230.0,
+"price_with_vat": 1451.4,
+"pack_qty": 10,
+"id": "zoetis-5"
+},
+{
+"name": "דקטומקס 50 מ\" ל",
+"category": "טיפולים מונעים",
+"topic": "other",
+"price_no_vat": 265.0,
+"price_with_vat": 312.7,
+"id": "zoetis-6"
+},
+{
+"name": "קזיטל + ( 104 טבל')",
+"category": "טיפולים מונעים",
+"topic": "other",
+"price_no_vat": 370.0,
+"price_with_vat": 436.6,
+"pack_qty": 104,
+"id": "zoetis-7"
+},
+{
+"name": "דומיטור",
+"category": "טשטוש והרדמה",
+"topic": "anesthesia",
+"price_no_vat": 283.0,
+"price_with_vat": 333.94,
+"id": "zoetis-8"
+},
+{
+"name": "אנטיסדן",
+"category": "טשטוש והרדמה",
+"topic": "anesthesia",
+"price_no_vat": 283.0,
+"price_with_vat": 333.94,
+"id": "zoetis-9"
+},
+{
+"name": "סרניה להזרקה 10 מ\"ג (20 מ\"ל )",
+"category": "נוגדי בחילה והקאה",
+"topic": "other",
+"price_no_vat": 536.0,
+"price_with_vat": 632.48,
+"pack_qty": 20,
+"id": "zoetis-10"
+},
+{
+"name": "סרניה 16 מ\"ג (4 טבל' )",
+"category": "נוגדי בחילה והקאה",
+"topic": "other",
+"price_no_vat": 89.0,
+"price_with_vat": 105.02,
+"pack_qty": 4,
+"id": "zoetis-11"
+},
+{
+"name": "סרניה 24 מ\"ג (4 טבל' )",
+"category": "נוגדי בחילה והקאה",
+"topic": "other",
+"price_no_vat": 96.0,
+"price_with_vat": 113.28,
+"pack_qty": 4,
+"id": "zoetis-12"
+},
+{
+"name": "סרניה 60 מ\"ג (4 טבל' )",
+"category": "נוגדי בחילה והקאה",
+"topic": "other",
+"price_no_vat": 185.0,
+"price_with_vat": 218.3,
+"pack_qty": 4,
+"id": "zoetis-13"
+},
+{
+"name": "אפקוול 3.6 מ\"ג (100 טבל' )",
+"category": "נוגדי גרד ואלרגיות",
+"topic": "skin",
+"price_no_vat": 518.0,
+"price_with_vat": 611.24,
+"pack_qty": 100,
+"id": "zoetis-14"
+},
+{
+"name": "אפקוול 5.4 מ\"ג (100 טבל' )",
+"category": "נוגדי גרד ואלרגיות",
+"topic": "skin",
+"price_no_vat": 518.0,
+"price_with_vat": 611.24,
+"pack_qty": 100,
+"id": "zoetis-15"
+},
+{
+"name": "אפקוול 16 מ\"ג (100 טבל')",
+"category": "נוגדי גרד ואלרגיות",
+"topic": "skin",
+"price_no_vat": 940.0,
+"price_with_vat": 1109.2,
+"pack_qty": 100,
+"id": "zoetis-16"
+},
+{
+"name": "ונקטיל P",
+"category": "נוגדי גרד ואלרגיות",
+"topic": "skin",
+"price_no_vat": 755.0,
+"price_with_vat": 890.9,
+"id": "zoetis-17"
+},
+{
+"name": "ציטופוינט 10 מ\"ג",
+"category": "נוגדי גרד ואלרגיות",
+"topic": "skin",
+"price_no_vat": 425.0,
+"price_with_vat": 501.5,
+"id": "zoetis-18"
+},
+{
+"name": "ציטופוינט 20 מ\"ג",
+"category": "נוגדי גרד ואלרגיות",
+"topic": "skin",
+"price_no_vat": 745.0,
+"price_with_vat": 879.1,
+"id": "zoetis-19"
+},
+{
+"name": "ציטופוינט 40 מ\"ג",
+"category": "נוגדי גרד ואלרגיות",
+"topic": "skin",
+"price_no_vat": 1218.0,
+"price_with_vat": 1437.24,
+"id": "zoetis-20"
+},
+{
+"name": "רימדיל לעיס 50 מ\"ג (100 טבל' )",
+"category": "נוגדי דלקת ושיכוך כאב",
+"topic": "pain",
+"price_no_vat": 360.0,
+"price_with_vat": 424.8,
+"pack_qty": 100,
+"id": "zoetis-21"
+},
+{
+"name": "רימדיל לעיס 100 מ\"ג (100 טבל')",
+"category": "נוגדי דלקת ושיכוך כאב",
+"topic": "pain",
+"price_no_vat": 480.0,
+"price_with_vat": 566.4,
+"pack_qty": 100,
+"id": "zoetis-22"
+},
+{
+"name": "תרכיב מרובעת לחתול 1 מנה",
+"category": "תרכיבים",
+"topic": "vaccine",
+"price_no_vat": 25.3,
+"price_with_vat": 29.85,
+"id": "zoetis-23"
+},
+{
+"name": "תרכיב משושה",
+"category": "תרכיבים",
+"topic": "vaccine",
+"price_no_vat": 25.3,
+"price_with_vat": 29.85,
+"id": "zoetis-24"
+},
+{
+"name": "ליברלה 5 מ\"ג",
+"category": "שיכוך כאב",
+"topic": "pain",
+"price_no_vat": 390.0,
+"price_with_vat": 460.2,
+"id": "zoetis-25"
+},
+{
+"name": "ליברלה 10 מ\"ג",
+"category": "שיכוך כאב",
+"topic": "pain",
+"price_no_vat": 454.0,
+"price_with_vat": 535.72,
+"id": "zoetis-26"
+},
+{
+"name": "ליברלה 15 מ\"ג",
+"category": "שיכוך כאב",
+"topic": "pain",
+"price_no_vat": 520.0,
+"price_with_vat": 613.6,
+"id": "zoetis-27"
+},
+{
+"name": "ליברלה 20 מ\"ג",
+"category": "שיכוך כאב",
+"topic": "pain",
+"price_no_vat": 594.0,
+"price_with_vat": 700.92,
+"id": "zoetis-28"
+},
+{
+"name": "ליברלה 30 מ\"ג",
+"category": "שיכוך כאב",
+"topic": "pain",
+"price_no_vat": 724.0,
+"price_with_vat": 854.32,
+"id": "zoetis-29"
+},
+{
+"name": "סולנסיה 7 מ\"ג",
+"category": "שיכוך כאב",
+"topic": "pain",
+"price_no_vat": 665.0,
+"price_with_vat": 784.7,
+"id": "zoetis-30"
+},
+{
+"name": "סימפריקה 5 מ\"ג לכלבים במשקל 1.3-2.5 ק\"ג (3 טבל')",
+"category": "טיפולים מונעים",
+"topic": "parasites",
+"price_no_vat": 54.0,
+"price_with_vat": 63.72,
+"pack_qty": 3,
+"id": "zoetis-31"
+},
+{
+"name": "סימפריקה 10 מ\"ג לכלבים במשקל 2.5-5 ק\"ג (3 טבל')",
+"category": "טיפולים מונעים",
+"topic": "parasites",
+"price_no_vat": 60.0,
+"price_with_vat": 70.8,
+"pack_qty": 3,
+"id": "zoetis-32"
+},
+{
+"name": "סימפריקה 20 מ\"ג לכלבים במשקל 5-10 ק\"ג (3 טבל')",
+"category": "טיפולים מונעים",
+"topic": "parasites",
+"price_no_vat": 64.0,
+"price_with_vat": 75.52,
+"pack_qty": 3,
+"id": "zoetis-33"
+},
+{
+"name": "סימפריקה 40 מ\"ג לכלבים במשקל 10-20 ק\"ג (3 טבל')",
+"category": "טיפולים מונעים",
+"topic": "parasites",
+"price_no_vat": 70.0,
+"price_with_vat": 82.6,
+"pack_qty": 3,
+"id": "zoetis-34"
+},
+{
+"name": "סימפריקה 80 מ\"ג לכלבים במשקל 20-40 ק\"ג (3 טבל')",
+"category": "טיפולים מונעים",
+"topic": "parasites",
+"price_no_vat": 76.0,
+"price_with_vat": 89.68,
+"pack_qty": 3,
+"id": "zoetis-35"
+},
+{
+"name": "סימפריקה 120 מ\"ג לכלבים במשקל 40-60 ק\"ג (3 טבל')",
+"category": "טיפולים מונעים",
+"topic": "parasites",
+"price_no_vat": 81.0,
+"price_with_vat": 95.58,
+"pack_qty": 3,
+"id": "zoetis-36"
+},
+{
+"name": "סטרונגהולד פלוס 0.25 מ\"ל חתול עד 2.5 ק\"ג (3 שפורפרות)",
+"category": "טיפולים מונעים",
+"topic": "nutrition",
+"price_no_vat": 139.0,
+"price_with_vat": 164.02,
+"pack_qty": 25,
+"id": "zoetis-37"
+},
+{
+"name": "סטרונגהולד פלוס 0.5 מ\"ל חתול 2.5-5 ק\"ג (3 שפורפרות )",
+"category": "טיפולים מונעים",
+"topic": "nutrition",
+"price_no_vat": 147.0,
+"price_with_vat": 173.46,
+"pack_qty": 5,
+"id": "zoetis-38"
+},
+{
+"name": "סטרונגהולד פלוס 1 מ\"ל חתול 5-10 ק\"ג (3 שפורפרות )",
+"category": "טיפולים מונעים",
+"topic": "nutrition",
+"price_no_vat": 179.0,
+"price_with_vat": 211.22,
+"pack_qty": 1,
+"id": "zoetis-39"
+}
+]
+}

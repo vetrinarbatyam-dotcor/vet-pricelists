@@ -1,0 +1,152 @@
+{
+"meta": {
+"slug": "ferplast",
+"type": "medical",
+"supplier": "פרפלסט (Ferplast)",
+"price_list_date": "2026-02",
+"source_file": "sources/medical/ferplast-2026-02.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 15,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"
+},
+"items": [
+{
+"name": "פרפלסט גניקר ונטה מגנטית לשירותי חתול",
+"category": "ציוד ואביזרים",
+"topic": "equipment",
+"price_no_vat": 170.0,
+"price_with_vat": 200.6,
+"sku": "5555870",
+"id": "ferplast-1"
+},
+{
+"name": "פרפלסט פילטרים לונטה מגנטית",
+"category": "ציוד ואביזרים",
+"topic": "equipment",
+"price_no_vat": 17.9,
+"price_with_vat": 21.12,
+"sku": "5555871",
+"id": "ferplast-2"
+},
+{
+"name": "פרפלסט קיט גניקר לחנות - 6+6+דיספלי",
+"category": "ציוד ואביזרים",
+"topic": "equipment",
+"price_no_vat": 912.2,
+"price_with_vat": 1076.4,
+"sku": "5555872",
+"id": "ferplast-3"
+},
+{
+"name": "פרפלסט סהרה שירותים לחתול",
+"category": "ציוד ואביזרים",
+"topic": "equipment",
+"price_no_vat": 221.9,
+"price_with_vat": 261.84,
+"sku": "5555879",
+"id": "ferplast-4"
+},
+{
+"name": "פרפלסט פרימה XXL שירותים לחתול",
+"category": "ציוד ואביזרים",
+"topic": "equipment",
+"price_no_vat": 141.45,
+"price_with_vat": 166.91,
+"sku": "5555880",
+"id": "ferplast-5"
+},
+{
+"name": "פרפלסט מגבונים קמומיל 40",
+"category": "ציוד ואביזרים",
+"topic": "equipment",
+"price_no_vat": 11.3,
+"price_with_vat": 13.33,
+"sku": "5555873",
+"id": "ferplast-6"
+},
+{
+"name": "פרפלסט מגבונים גרין תה 40",
+"category": "ציוד ואביזרים",
+"topic": "equipment",
+"price_no_vat": 11.3,
+"price_with_vat": 13.33,
+"sku": "5555874",
+"id": "ferplast-7"
+},
+{
+"name": "פרפלסט מגבונים טלק 40",
+"category": "ציוד ואביזרים",
+"topic": "equipment",
+"price_no_vat": 11.3,
+"price_with_vat": 13.33,
+"sku": "5555875",
+"id": "ferplast-8"
+},
+{
+"name": "פרפלסט מגבונים לעיניים 120",
+"category": "ציוד ואביזרים",
+"topic": "eyes",
+"price_no_vat": 14.2,
+"price_with_vat": 16.76,
+"sku": "5555876",
+"id": "ferplast-9"
+},
+{
+"name": "פרפלסט מגבונים לאוזניים 50",
+"category": "ציוד ואביזרים",
+"topic": "ears",
+"price_no_vat": 18.45,
+"price_with_vat": 21.77,
+"sku": "5555877",
+"id": "ferplast-10"
+},
+{
+"name": "פרפלסט מגבונים כפפה 8",
+"category": "ציוד ואביזרים",
+"topic": "dental",
+"price_no_vat": 11.3,
+"price_with_vat": 13.33,
+"sku": "5555878",
+"id": "ferplast-11"
+},
+{
+"name": "פרפלסט שמפו לגורים",
+"category": "ציוד ואביזרים",
+"topic": "skin",
+"price_no_vat": 21.3,
+"price_with_vat": 25.13,
+"sku": "5555881",
+"id": "ferplast-12"
+},
+{
+"name": "פרפלסט שמפו חימר",
+"category": "ציוד ואביזרים",
+"topic": "skin",
+"price_no_vat": 21.3,
+"price_with_vat": 25.13,
+"sku": "5555882",
+"id": "ferplast-13"
+},
+{
+"name": "פרפלסט שמפו לשיער ארוך",
+"category": "ציוד ואביזרים",
+"topic": "skin",
+"price_no_vat": 21.3,
+"price_with_vat": 25.13,
+"sku": "5555883",
+"id": "ferplast-14"
+},
+{
+"name": "פרפלסט שמפו לפרווה לבנה",
+"category": "ציוד ואביזרים",
+"topic": "skin",
+"price_no_vat": 21.3,
+"price_with_vat": 25.13,
+"sku": "5555884",
+"id": "ferplast-15"
+}
+]
+}

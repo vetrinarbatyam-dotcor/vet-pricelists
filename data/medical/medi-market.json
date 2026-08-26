@@ -424,7 +424,7 @@
 {
 "name": "ADAPTIL CALM COLLAR Large for dog",
 "category": "מוצרי הדברה והתנהגות CEVA",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 55.93,
 "price_with_vat": 66.0,
 "sku": "C66451C",
@@ -433,7 +433,7 @@
 {
 "name": "ADAPTIL CALM COLLAR Small for dog",
 "category": "מוצרי הדברה והתנהגות CEVA",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 54.52,
 "price_with_vat": 64.33,
 "sku": "C66461C",
@@ -1464,7 +1464,7 @@
 {
 "name": "Benip Ear Drops 15Ml",
 "category": "הכנות טיפות וג'ל לאוזניים",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 3.65,
 "price_with_vat": 4.31,
 "sku": "6666",
@@ -1474,7 +1474,7 @@
 {
 "name": "Benip Forte Ear Drops 15 Ml",
 "category": "הכנות טיפות וג'ל לאוזניים",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 24.58,
 "price_with_vat": 29.0,
 "sku": "66661",
@@ -2384,7 +2384,7 @@
 {
 "name": "Chlorhexidine Oral Rinse 0.5% 1 Liter",
 "category": "הכנות בית מרקחת",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 16.02,
 "price_with_vat": 18.9,
 "sku": "86398",
@@ -2512,7 +2512,7 @@
 {
 "name": "Ciplox Eye&Ear Drops *1X5Ml",
 "category": "תרופות",
-"topic": "eyes",
+"topic": "ears",
 "price_no_vat": 12.71,
 "price_with_vat": 15.0,
 "sku": "6397-1",
@@ -2610,7 +2610,7 @@
 {
 "name": "Clinacin 25Mg/Ml 22Ml Oral Sol' For Cats & Dogs קלינצין",
 "category": "תרופות",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 32.2,
 "price_with_vat": 38.0,
 "sku": "M003751",
@@ -2949,7 +2949,7 @@
 {
 "name": "Daktarin Oral Gel 40Gr",
 "category": "29 יבוא תרופות הומניות חו\"ל",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 38.14,
 "price_with_vat": 45.0,
 "sku": "1344",
@@ -3036,7 +3036,7 @@
 {
 "name": "Depalept Oral Sol.: 50 Ml",
 "category": "תרופות",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 19.09,
 "price_with_vat": 22.53,
 "sku": "937816",
@@ -3419,7 +3419,7 @@
 {
 "name": "Dip Quick - Methanol Clear Color For Coloring 500M",
 "category": "הכנות בית מרקחת",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 16.02,
 "price_with_vat": 18.9,
 "sku": "57812",
@@ -3660,7 +3660,7 @@
 {
 "name": "DOUXO S3 CALM SHAMPOO 200 ML",
 "category": "מוצרים לטיפוח ונשיאת בע\"ח",
-"topic": "other",
+"topic": "skin",
 "price_no_vat": 58.47,
 "price_with_vat": 69.0,
 "sku": "81-104",
@@ -3670,7 +3670,7 @@
 {
 "name": "DOUXO S3 CARE SHAMPOO 200 ML",
 "category": "מוצרים לטיפוח ונשיאת בע\"ח",
-"topic": "other",
+"topic": "skin",
 "price_no_vat": 50.0,
 "price_with_vat": 59.0,
 "sku": "81-106",
@@ -3699,7 +3699,7 @@
 {
 "name": "DOUXO S3 PYO SHAMPOO 200 ML",
 "category": "מוצרים לטיפוח ונשיאת בע\"ח",
-"topic": "other",
+"topic": "skin",
 "price_no_vat": 58.47,
 "price_with_vat": 69.0,
 "sku": "81-100",
@@ -3719,7 +3719,7 @@
 {
 "name": "DOUXO S3 SEB SHAMPOO 200 ML",
 "category": "מוצרים לטיפוח ונשיאת בע\"ח",
-"topic": "other",
+"topic": "skin",
 "price_no_vat": 58.47,
 "price_with_vat": 69.0,
 "sku": "81-102",
@@ -4000,7 +4000,7 @@
 {
 "name": "Enrocare 25Mg/Ml Oral Solution 100Ml",
 "category": "29ג' וטרינרי",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 50.85,
 "price_with_vat": 60.0,
 "sku": "403681",
@@ -4268,7 +4268,7 @@
 {
 "name": "FASTest CHLAM ag 1/10 test cassets קלמידיה",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 271.19,
 "price_with_vat": 320.0,
 "sku": "730010RG1",
@@ -4277,7 +4277,7 @@
 {
 "name": "FASTest DISTEMPER strip 1/10 test strips כלבלבת",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 214.41,
 "price_with_vat": 253.0,
 "sku": "830010RG1",
@@ -4286,7 +4286,7 @@
 {
 "name": "FASTest FeLV-FIV 15 test cassettes",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 550.85,
 "price_with_vat": 650.0,
 "sku": "761015RG1",
@@ -4295,7 +4295,7 @@
 {
 "name": "FASTest FIP 10 test cassettes",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 372.88,
 "price_with_vat": 440.0,
 "sku": "990010RK1",
@@ -4304,7 +4304,7 @@
 {
 "name": "FASTest FIV 10 test cassettes",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 254.24,
 "price_with_vat": 300.0,
 "sku": "960010RK1",
@@ -4568,7 +4568,7 @@
 {
 "name": "g-Pet Plus Blood Glucose Test 1X25 Strips",
 "category": "WOODLEY",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 194.92,
 "price_with_vat": 230.0,
 "sku": "WD0064A",
@@ -4706,7 +4706,7 @@
 {
 "name": "Gan Ear Drops 15Ml",
 "category": "הכנות טיפות וג'ל לאוזניים",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 4.01,
 "price_with_vat": 4.73,
 "sku": "8090",
@@ -5792,7 +5792,7 @@
 {
 "name": "Ivedex I.P.E.D Ear Drops 15Ml",
 "category": "הכנות טיפות וג'ל לאוזניים",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 21.19,
 "price_with_vat": 25.0,
 "sku": "100152",
@@ -5812,7 +5812,7 @@
 {
 "name": "Ivermectin Ear Drops 0.1%  15Ml",
 "category": "הכנות טיפות וג'ל לאוזניים",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 16.95,
 "price_with_vat": 20.0,
 "sku": "8882",
@@ -6484,7 +6484,7 @@
 {
 "name": "Lyclear 30Gr Cream",
 "category": "תרופות",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 44.49,
 "price_with_vat": 52.5,
 "sku": "50312",
@@ -7375,7 +7375,7 @@
 {
 "name": "NovaVet Creatinine Xpress Test Strips (2&#215;25)",
 "category": "WOODLEY",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 940.68,
 "price_with_vat": 1110.0,
 "sku": "WD1612",
@@ -7384,7 +7384,7 @@
 {
 "name": "NovaVet Ketone Xpress Test Strips (1&#215;25)",
 "category": "WOODLEY",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 313.56,
 "price_with_vat": 370.0,
 "sku": "WD1622",
@@ -7393,7 +7393,7 @@
 {
 "name": "NovaVet Lactate Xpress Test Strips (2&#215;25)",
 "category": "WOODLEY",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 502.82,
 "price_with_vat": 593.33,
 "sku": "WD1603",
@@ -8288,7 +8288,7 @@
 {
 "name": "Oxsoralen G.L Pharma 20 Mcg/Ml 5Ml 50 Amp (Il)",
 "category": "תרופות רשומות- מדי מרקט",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 8694.92,
 "price_with_vat": 10260.0,
 "sku": "25987",
@@ -8723,7 +8723,7 @@
 {
 "name": "Pinchers 45chews peanut butter pill hiding treat",
 "category": "Vetri Science",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 22.3,
 "price_with_vat": 26.31,
 "sku": "090062J.045",
@@ -9005,7 +9005,7 @@
 {
 "name": "Pregnancy Test Cassette After 10 X 25 -בדיקת הריון",
 "category": "תרופות",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 33.47,
 "price_with_vat": 39.5,
 "sku": "2020105025",
@@ -9503,7 +9503,7 @@
 {
 "name": "Rheumocam Oral Suspen' 1.5 Mg/Ml 15Ml",
 "category": "תרופות",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 38.14,
 "price_with_vat": 45.0,
 "sku": "M003759",
@@ -9562,7 +9562,7 @@
 {
 "name": "Risperdal Oral Sol 30Ml",
 "category": "תרופות",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 25.88,
 "price_with_vat": 30.54,
 "sku": "21565",
@@ -9662,7 +9662,7 @@
 {
 "name": "Ronip Ear Drops 15Ml",
 "category": "הכנות טיפות וג'ל לאוזניים",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 3.72,
 "price_with_vat": 4.39,
 "sku": "100150",
@@ -9708,7 +9708,7 @@
 {
 "name": "Rotor 10 Pre-operation Test Parameters 10/BOX  SMT-120",
 "category": "ביוכימיה",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 1059.32,
 "price_with_vat": 1250.0,
 "sku": "AW01982",
@@ -10258,7 +10258,7 @@
 {
 "name": "SOPA-K 200ML ORAL SOLUTION( פטסיום גלוקנאט)תמיסה לשתיה",
 "category": "29 יבוא תרופות הומניות חו\"ל",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 18.64,
 "price_with_vat": 22.0,
 "sku": "9623152",
@@ -10580,7 +10580,7 @@
 {
 "name": "SYVAQUINOL 10% ORAL 1 L - Enrofloxacin",
 "category": "תרופות",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 203.39,
 "price_with_vat": 240.0,
 "sku": "1075",
@@ -10716,7 +10716,7 @@
 {
 "name": "TEICOPLANIN SEACROSS 200 MG pwd. for sol.for inj. or oral",
 "category": "29 יבוא תרופות הומניות חו\"ל",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 24.32,
 "price_with_vat": 28.7,
 "sku": "358756",
@@ -10984,7 +10984,7 @@
 {
 "name": "Tramadex Flashtab 50Mg X 30Tab",
 "category": "תרופות",
-"topic": "other",
+"topic": "eyes",
 "price_no_vat": 19.32,
 "price_with_vat": 22.8,
 "sku": "6992",
@@ -11437,7 +11437,7 @@
 {
 "name": "Vectra 3D dog 1.5-4.5 KG 3P וקטרה לכלב קטנטן",
 "category": "מוצרי הדברה והתנהגות CEVA",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 37.24,
 "price_with_vat": 43.94,
 "sku": "C66110C",
@@ -11446,7 +11446,7 @@
 {
 "name": "Vectra 3D dog 10-25 KG 3P וקטרה לכלב בינוני",
 "category": "מוצרי הדברה והתנהגות CEVA",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 49.03,
 "price_with_vat": 57.86,
 "sku": "C66130C",
@@ -11455,7 +11455,7 @@
 {
 "name": "Vectra 3D dog 25-40 KG 3P וקטרה לכלב גדול",
 "category": "מוצרי הדברה והתנהגות CEVA",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 49.59,
 "price_with_vat": 58.52,
 "sku": "C66140C",
@@ -11464,7 +11464,7 @@
 {
 "name": "Vectra 3D dog 4-10 KG 3P וקטרה לכלב קטן",
 "category": "מוצרי הדברה והתנהגות CEVA",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 40.41,
 "price_with_vat": 47.68,
 "sku": "C66120C",
@@ -11473,7 +11473,7 @@
 {
 "name": "Vectra 3D dog 40-60 KG 3P וקטרה לכלב ענק",
 "category": "מוצרי הדברה והתנהגות CEVA",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 47.23,
 "price_with_vat": 55.73,
 "sku": "C66150C",
@@ -12402,7 +12402,7 @@
 {
 "name": "איר קליר Ear Clear  20 מ\"ל טיפות",
 "category": "תרופות",
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 11.02,
 "price_with_vat": 13.0,
 "sku": "2536236",
@@ -12729,7 +12729,7 @@
 {
 "name": "ארליכיה FASTest Ehrlichia canis 10 test cassette",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 338.14,
 "price_with_vat": 399.0,
 "sku": "910010RK1",
@@ -13043,7 +13043,7 @@
 {
 "name": "ג'יארדיה FASTest GIARDIA 10 test strips",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 364.41,
 "price_with_vat": 430.0,
 "sku": "850010RG1",
@@ -13242,7 +13242,7 @@
 {
 "name": "דורהטירס Duratears Oint 3.5 G",
 "category": "תרופות",
-"topic": "other",
+"topic": "eyes",
 "price_no_vat": 21.86,
 "price_with_vat": 25.8,
 "sku": "198696",
@@ -16863,7 +16863,7 @@
 {
 "name": "מכשיר משולב + טרולי מ.ל.ד וטמפ' EDAN-IM3-C EDAN",
 "category": "ציוד ומכשור רפואי",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 4756.24,
 "price_with_vat": 5612.36,
 "sku": "308511",
@@ -16872,7 +16872,7 @@
 {
 "name": "מכשיר משולב +טרוליwelch allyn Connex Spot Monito",
 "category": "ציוד ומכשור רפואי",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 7415.25,
 "price_with_vat": 8750.0,
 "sku": "17071",
@@ -16881,7 +16881,7 @@
 {
 "name": "מכשיר משולב מד לחץ דם משולב דגם V6 כולל SPO2 וטמפ' +עגלה",
 "category": "ציוד ומכשור רפואי",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 4389.83,
 "price_with_vat": 5180.0,
 "sku": "308513",
@@ -16890,7 +16890,7 @@
 {
 "name": "מכשיר משולב עם מד לחץ דם וטמפ'+ טרולי EDAN-M3-C EDAN",
 "category": "ציוד ומכשור רפואי",
-"topic": "cardio",
+"topic": "other",
 "price_no_vat": 4042.37,
 "price_with_vat": 4770.0,
 "sku": "308512",
@@ -17160,7 +17160,7 @@
 {
 "name": "מסיכה להרדמה מס' 4 כולל גומי לכלב קטן 87*95MM",
 "category": "אביזרים להרדמה",
-"topic": "cardio",
+"topic": "anesthesia",
 "price_no_vat": 37.14,
 "price_with_vat": 43.83,
 "sku": "TA-VAMN4",
@@ -17169,7 +17169,7 @@
 {
 "name": "מסיכה להרדמה מס' 5 כולל גומי לכלב בינוני 110*116MM",
 "category": "אביזרים להרדמה",
-"topic": "cardio",
+"topic": "anesthesia",
 "price_no_vat": 37.14,
 "price_with_vat": 43.83,
 "sku": "TA-VAMN5",
@@ -17178,7 +17178,7 @@
 {
 "name": "מסיכה להרדמה מס' 6 כולל גומי לכלב גדול 130*140MM",
 "category": "אביזרים להרדמה",
-"topic": "cardio",
+"topic": "anesthesia",
 "price_no_vat": 37.14,
 "price_with_vat": 43.83,
 "sku": "TA-VAMN6",
@@ -17758,7 +17758,7 @@
 {
 "name": "משקפי חמצן -25 X Luer Adult Oral N O2 Short",
 "category": "ציוד ומכשור רפואי",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 1235.59,
 "price_with_vat": 1458.0,
 "sku": "3060821283",
@@ -17822,7 +17822,7 @@
 {
 "name": "מתלה קיבוע אורטופדי ליד,MX LONDON",
 "category": "תחבושות אורטופדיות",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 27.97,
 "price_with_vat": 33.0,
 "sku": "MX77050",
@@ -20393,7 +20393,7 @@
 {
 "name": "פרוב בדיקה אוראלית NEW SHORT ORAL PROBE",
 "category": "ציוד ומכשור רפואי",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 559.32,
 "price_with_vat": 660.0,
 "sku": "WLA02892-000",
@@ -20438,7 +20438,7 @@
 {
 "name": "פרוו FASTest PARVO 10 test strips",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 190.68,
 "price_with_vat": 225.0,
 "sku": "920010RG1",
@@ -20858,7 +20858,7 @@
 {
 "name": "צנרת הרדמה למטופל 1.6מ ADULT BASIC BREATHING SYS",
 "category": "ציוד מתכלה",
-"topic": "anesthesia",
+"topic": "dental",
 "price_no_vat": 16.83,
 "price_with_vat": 19.86,
 "sku": "200-01",
@@ -21305,7 +21305,7 @@
 {
 "name": "קריפטו ג'יארדיה FASTest CRYPTO-GIARDIA 10 test strip",
 "category": "מוצרים משלימים לווט'",
-"topic": "other",
+"topic": "equipment",
 "price_no_vat": 389.83,
 "price_with_vat": 460.0,
 "sku": "740010RG1",
@@ -22289,7 +22289,7 @@
 {
 "name": "שרימר טסט TEAR FLO בדיקת דמעות 1/100",
 "category": "מוצרים לטיפוח ונשיאת בע\"ח",
-"topic": "eyes",
+"topic": "ears",
 "price_no_vat": 137.29,
 "price_with_vat": 162.0,
 "sku": "3738",
