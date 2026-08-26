@@ -11,9 +11,27 @@ let rows = [];
 
 // ---------- pricing store ----------
 const PK = 'vp_pricing';
-const EMPTY = { sections: {}, suppliers: {}, rows: {}, round: 0 };
+// Tiered pricing: the higher the cost, the smaller the mark-up. A band is defined by its upper
+// bound (the last one has none), and prices as cost × mult + add.
+const TIERS = [{ to: 100, mult: 2, add: 0 }, { to: 200, mult: 1.8, add: 0 }, { to: 300, mult: 1.6, add: 0 },
+               { to: 600, mult: 1.4, add: 0 }, { to: null, mult: 1.3, add: 0 }];
+const EMPTY = { sections: {}, suppliers: {}, rows: {}, round: 0,
+                tiers: { on: false, bands: TIERS.map(b => ({ ...b })) } };
 let P = load();
-function load() { try { return Object.assign({}, EMPTY, JSON.parse(localStorage.getItem(PK) || '{}')); } catch { return { ...EMPTY }; } }
+function load() {
+  let p; try { p = Object.assign({}, EMPTY, JSON.parse(localStorage.getItem(PK) || '{}')); } catch { p = { ...EMPTY }; }
+  if (!p.tiers || !Array.isArray(p.tiers.bands) || !p.tiers.bands.length) p.tiers = { on: false, bands: TIERS.map(b => ({ ...b })) };
+  return p;
+}
+function bandFor(cost) {
+  const bs = P.tiers.bands;
+  return bs.find(b => b.to == null || cost <= +b.to) || bs[bs.length - 1];
+}
+const bandLabel = (b, i) => {
+  const from = i ? +P.tiers.bands[i - 1].to || 0 : 0;
+  return b.to == null ? `מעל ${fmt0(from)} ₪` : `${fmt0(from)} – ${fmt0(b.to)} ₪`;
+};
+const fmt0 = n => (+n || 0).toLocaleString('he-IL', { maximumFractionDigits: 0 });
 function save() { try { localStorage.setItem(PK, JSON.stringify(P)); } catch {} }
 const num = v => (v === '' || v == null || isNaN(+v)) ? null : +v;
 const fmt = n => n == null ? '' : n.toLocaleString('he-IL', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -28,13 +46,20 @@ function params(r) {
     pct: o.pct ?? (mode === 'pct' ? sup.pct : null) ?? sec.pct ?? 0,
     flat: o.flat ?? (mode === 'flat' ? sup.flat : null) ?? sec.flat ?? 0,
     ovr: Object.keys(o).length > 0,
+    // an explicit rule anywhere beats the tiers; the tiers are the fallback default
+    ruled: [o.pct, o.flat, mode === 'pct' ? sup.pct : sup.flat, sec.pct, sec.flat].some(v => v != null),
   };
 }
 function roundTo(v) { const r = +P.round || 0; return r ? Math.ceil(v / r) * r : v; }
 function calc(r) {
   const p = params(r);
   const cost = r.price_no_vat * (1 - p.discount / 100) * VAT;
-  return { ...p, cost, sale: roundTo(cost * (1 + p.pct / 100) + p.flat) };
+  let { pct, flat } = p, tier = null;
+  if (P.tiers.on && !p.ruled) {
+    tier = bandFor(cost);
+    pct = ((+tier.mult || 1) - 1) * 100; flat = +tier.add || 0;
+  }
+  return { ...p, pct, flat, tier, cost, sale: roundTo(cost * (1 + pct / 100) + flat) };
 }
 function setRow(r, field, val) {
   const o = P.rows[r.id] || (P.rows[r.id] = {}), cur = calc(r);
@@ -127,6 +152,9 @@ async function render() {
   $('#listNote').textContent = l1 ? `מחירון ${l1.meta.price_list_date || 'ללא תאריך'}${l1.meta.notes ? ' · ' + l1.meta.notes : ''}` : '';
   $('#dl').href = `downloads/${S.type}.xlsx`;
   $('#clinicBar').hidden = S.mode !== 'clinic';
+  $('.cb-formula').textContent = P.tiers.on
+    ? 'תמחור לפי טווחי מחיר פעיל — מחיר ללקוח = עלות × מכפיל הטווח + תוספת. מרווח שהוגדר לספק/סקציה/שורה גובר.'
+    : 'עלות = מחיר מחירון × (1 − הנחה) × 1.18 · מחיר ללקוח = עלות × (1 + מרווח %) + מרווח ₪';
   renderTable();
 }
 // Food-only facets. A row that has no value for a facet shows under "הכל" and disappears once a
@@ -293,6 +321,51 @@ function calcRun(from) {
   $('#rMargin').textContent = sale ? (100 * profit / sale).toFixed(1) + '%' : '—';
 }
 
+// ---------- advanced calculator: price bands ----------
+const PREVIEW_COSTS = [50, 120, 250, 450, 900, 1800];
+function renderAdv() {
+  const tb = $('#advBody'); tb.innerHTML = '';
+  P.tiers.bands.forEach((b, i) => {
+    const last = i === P.tiers.bands.length - 1;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${esc(bandLabel(b, i))}` +
+      (last ? '' : ` <input type="number" step="10" class="tin" data-i="${i}" data-f="to" value="${b.to}">`) +
+      `</td>` +
+      `<td class="num"><input type="number" step="0.05" class="tin" data-i="${i}" data-f="mult" value="${b.mult}"></td>` +
+      `<td class="num"><input type="number" step="1" class="tin" data-i="${i}" data-f="add" value="${b.add || 0}"></td>` +
+      `<td class="num">${(((+b.mult || 1) - 1) * 100).toFixed(0)}%</td>` +
+      `<td class="num">${P.tiers.bands.length > 1 && !last ? `<button class="ghost small trm" data-i="${i}">הסר</button>` : ''}</td>`;
+    tb.appendChild(tr);
+  });
+  tb.querySelectorAll('.tin').forEach(inp => inp.addEventListener('input', () => {
+    const b = P.tiers.bands[+inp.dataset.i];
+    b[inp.dataset.f] = inp.value === '' ? (inp.dataset.f === 'add' ? 0 : b[inp.dataset.f]) : +inp.value;
+    save(); advPreview(); if (S.mode === 'clinic') renderTable();
+  }));
+  tb.querySelectorAll('.trm').forEach(btn => btn.addEventListener('click', () => {
+    P.tiers.bands.splice(+btn.dataset.i, 1); save(); renderAdv();
+  }));
+  $('#advOn').checked = !!P.tiers.on;
+  $('#advNote').textContent = P.tiers.on
+    ? 'הטווחים פעילים. הם משמשים כברירת מחדל — מרווח שהגדרתם לספק, לסקציה או לשורה בודדת גובר עליהם.'
+    : 'הטווחים כבויים כרגע ומשמשים רק להדגמה כאן.';
+  advPreview();
+}
+function advPreview() {
+  const tb = $('#advPrev'); tb.innerHTML = '';
+  PREVIEW_COSTS.forEach(cost => {
+    const i = P.tiers.bands.findIndex(b => b.to == null || cost <= +b.to);
+    const b = P.tiers.bands[i < 0 ? P.tiers.bands.length - 1 : i];
+    const sale = roundTo(cost * (+b.mult || 1) + (+b.add || 0)), profit = sale - cost;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td class="num">${fmt(cost)} ₪</td><td>${esc(bandLabel(b, i < 0 ? P.tiers.bands.length - 1 : i))}</td>` +
+      `<td class="num price">${fmt(sale)} ₪</td><td class="num">${fmt(profit)} ₪</td>` +
+      `<td class="num">${(100 * profit / cost).toFixed(0)}%</td>` +
+      `<td class="num">${sale ? (100 * profit / sale).toFixed(0) : 0}%</td>`;
+    tb.appendChild(tr);
+  });
+}
+
 // ---------- status page ----------
 const ACT_HEB = { ok: 'מעודכן', refresh: 'צריך מחירון חדש', partial: 'חלקי', no_source: 'חסר קובץ מקור', check: 'לאימות' };
 const ACT_CLS = { ok: 'ok', refresh: 'stale', partial: 'stale', no_source: 'missing', check: 'stale' };
@@ -355,7 +428,7 @@ function start() {
 
   $$('#tiles .tile').forEach(b => b.addEventListener('click', () => {
     const g = b.dataset.go;
-    if (g === 'calc') { show('calc'); calcRun(); } else openSec(g);
+    if (g === 'calc') { show('calc'); calcRun(); renderAdv(); } else openSec(g);
   }));
   $('#homeBtn').addEventListener('click', e => { e.preventDefault(); goHome(); });
   $$('#tabs button').forEach(b => b.addEventListener('click', () => openSec(b.dataset.type)));
@@ -372,7 +445,25 @@ function start() {
   const openSettings = () => { show('settings'); renderSettings(); };
   $('#setBtn').addEventListener('click', openSettings);
   $('#setBtn2').addEventListener('click', openSettings);
-  $('#calcBtn').addEventListener('click', () => { show('calc'); calcRun(); });
+  $('#calcBtn').addEventListener('click', () => { show('calc'); calcRun(); renderAdv(); });
+  $('#advBtn').addEventListener('click', () => {
+    const box = $('#adv'); box.hidden = !box.hidden;
+    $('#advBtn').textContent = box.hidden ? '📐 מחשבון מתקדם — תמחור לפי טווחי מחיר' : '📐 הסתר את המחשבון המתקדם';
+    if (!box.hidden) { renderAdv(); box.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+  $('#advAdd').addEventListener('click', () => {
+    const bs = P.tiers.bands, last = bs[bs.length - 1], prev = bs.length > 1 ? +bs[bs.length - 2].to || 0 : 0;
+    bs.splice(bs.length - 1, 0, { to: prev + 100, mult: +last.mult || 1.3, add: 0 });
+    save(); renderAdv();
+  });
+  $('#advReset').addEventListener('click', () => {
+    P.tiers = { on: P.tiers.on, bands: TIERS.map(b => ({ ...b })) }; save(); renderAdv();
+    if (S.mode === 'clinic') renderTable();
+  });
+  $('#advOn').addEventListener('change', e => {
+    P.tiers.on = e.target.checked; save(); renderAdv();
+    if (S.mode === 'clinic') renderTable();
+  });
   $('#supQ').addEventListener('input', renderSettings);
   $$('#roundSeg button').forEach(b => b.addEventListener('click', () => { P.round = +b.dataset.round; save(); renderSettings(); renderTableIfOpen(); }));
   $('#exportBtn').addEventListener('click', () => {

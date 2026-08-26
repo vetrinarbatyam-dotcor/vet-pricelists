@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 
@@ -169,6 +169,31 @@
       <p class="hint">מע״מ 18%. "מרווח על העלות" הוא מה שמקובל לקרוא לו אחוז רווח; "שיעור רווח מהמכירה" הוא החלק שנשאר לכם מכל שקל שהלקוח משלם.</p>
     </section>
   </div>
+
+  <p class="adv-toggle"><button id="advBtn" class="ghost">📐 מחשבון מתקדם — תמחור לפי טווחי מחיר</button></p>
+
+  <section id="adv" class="box adv" hidden>
+    <h2>תמחור לפי טווחי מחיר</h2>
+    <p class="hint">ככל שהמוצר יקר יותר, אחוז הרווח בדרך כלל יורד. כאן קובעים את הטווחים פעם אחת:
+      לכל טווח מכפיל (למשל ×2) ותוספת קבועה (למשל +100 ₪), והמחיר ללקוח מחושב לפי הטווח שהעלות נופלת בו.
+      <b>מחיר ללקוח = עלות × מכפיל + תוספת</b>. הכל נשמר בדפדפן שלכם בלבד.</p>
+    <div class="tbl"><table><thead><tr>
+      <th>טווח עלות (₪, כולל מע״מ)</th><th class="num">× מכפיל</th><th class="num">+ ₪ קבוע</th>
+      <th class="num">אחוז רווח על העלות</th><th></th></tr></thead>
+      <tbody id="advBody"></tbody></table></div>
+    <div class="row gap">
+      <button id="advAdd" class="ghost">➕ הוסף טווח</button>
+      <button id="advReset" class="ghost">איפוס לברירת מחדל</button>
+      <label class="chk"><input type="checkbox" id="advOn"> החל את הטווחים על <b>מחירון המרפאה</b></label>
+    </div>
+    <p class="hint" id="advNote"></p>
+
+    <h3>איך זה נראה בפועל</h3>
+    <div class="tbl"><table><thead><tr>
+      <th class="num">עלות</th><th>טווח</th><th class="num">מחיר ללקוח</th>
+      <th class="num">רווח ₪</th><th class="num">רווח על העלות</th><th class="num">רווח מהמכירה</th></tr></thead>
+      <tbody id="advPrev"></tbody></table></div>
+  </section>
 </main>
 
 <main id="status" hidden class="page">
@@ -198,6 +223,6 @@
 
 
 
-<script src="app.js?v=7"></script>
+<script src="app.js?v=8"></script>
 </body>
 </html>

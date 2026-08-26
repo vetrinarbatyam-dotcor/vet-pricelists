@@ -215,3 +215,13 @@ td .date.parsed{color:var(--copper)}
 .fld.key input{width:150px;font-weight:700;font-size:16px;border:2px solid var(--teal);
   background:var(--card);padding:6px 9px}
 .fld.key input:focus{outline:2px solid var(--teal);outline-offset:1px}
+
+/* ---------- advanced calculator: price bands ---------- */
+.adv-toggle{text-align:center;margin:20px 0 0}
+.adv-toggle button{font-size:15px;padding:8px 18px}
+.box.adv h3{font-size:16px;margin:20px 0 6px}
+.box.adv .tin{width:82px;text-align:left;direction:ltr;margin-inline-start:8px}
+.box.adv td{vertical-align:middle}
+.chk{display:flex;align-items:center;gap:7px;font-size:14px}
+.chk input{width:16px;height:16px}
+.ghost.small{padding:2px 9px;font-size:13px}
