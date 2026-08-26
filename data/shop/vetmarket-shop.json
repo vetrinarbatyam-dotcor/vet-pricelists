@@ -11,10 +11,10 @@
 "source_kind": "invoices",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 20,
+"item_count": 23,
 "status": "current",
 "imported_at": "2026-08-26",
-"notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משני מאגרים — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
+"notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משלושה מקורות — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
 },
 "items": [
 {
@@ -219,6 +219,36 @@
 "sku": "48000036",
 "price_date": "2026-05",
 "id": "vetmarket-shop-20"
+},
+{
+"name": "חול Kit4Cat",
+"category": "חול ושירותים",
+"topic": "litter",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "460001",
+"price_date": "2026-04",
+"id": "vetmarket-shop-21"
+},
+{
+"name": "חטיף ווג'ידנט 15 Small יחידות, 228 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 19.0,
+"price_with_vat": 22.42,
+"sku": "47307869",
+"price_date": "2026-01",
+"id": "vetmarket-shop-22"
+},
+{
+"name": "חטיף ווג'ידנט 15 Large יחידות, 502 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 30.0,
+"price_with_vat": 35.4,
+"sku": "47307871",
+"price_date": "2026-01",
+"id": "vetmarket-shop-23"
 }
 ]
 }

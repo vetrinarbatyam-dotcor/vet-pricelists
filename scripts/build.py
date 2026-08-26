@@ -194,7 +194,7 @@ REG = {
     "zoetis":     ("medical", "זואטיס (Zoetis)", "2026", (DLD / "זואטיס תרופות 2026.PDF", DLD / "זואטיס סימפריקה סטרונגהולד 2026.PDF"), "no_vat", "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"),
     "kong":       ("medical", "קונג (Kong)", "2026-08", DLD / "מחירון קונג מלאי - אוגוסט 2026 .pdf", "no_vat", "מחירון מלאי אוגוסט 2026 — צעצועים ואביזרים"),
     "ferplast":   ("medical", "פרפלסט (Ferplast)", "2026-02", DLD / "מחירון מוצרי פרפלסט 24.2.26.pdf", "no_vat", "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"),
-    "vetmarket":  ("medical", "וטמרקט", "2026-08", None, "no_vat", "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משני מאגרים — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"),
+    "vetmarket":  ("medical", "וטמרקט", "2026-08", None, "no_vat", "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משלושה מקורות — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"),
     "medi-market": ("medical", "מדי-מרקט", "2026-06", None, "with_vat", "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"),
     "petvet":     ("medical", "פט-וט ביומד", "2026-05", DLD / "PRICE LIST 2026.pdf", "no_vat", "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"),
     "rc-vet":     ("food", "Royal Canin VET", "2026-06", DLD / "RC VET Price list JUNE.pdf", "no_vat", "מחירון קמעונאי יוני 2026"),
@@ -327,17 +327,26 @@ def build():
     #     row keeps the date of the confirmation it came from. The clinic's own vetmarket catalog
     #     (vetmarketCatalog.ts / "מחירון וטמרקט מלא.xlsx") is an internal file of unverifiable
     #     provenance — it is used ONLY to label a category, never for a price.
-    #     Two invoice stores feed it: the vetmarket-cli confirmations (09/2023-08/2026) and the
-    #     Invoices Plus database (05-08/2026, wider). Newest month wins per SKU.
+    #     Three invoice stores feed it: the vetmarket-cli confirmations (09/2023-08/2026), the
+    #     Invoices Plus database (05-08/2026) and four consolidated invoice PDFs (01-05/2026,
+    #     parsed by scripts/parse_vm_invoices.py). Newest month wins per SKU.
+    #     The invoice PDFs themselves are NOT copied to sources/ - they carry the clinic's own
+    #     quantities, discounts and totals. Only name + list price cross over.
     pull = load("server_pull.json")
     vm_cat = {it.get("code"): it for it in load("vetmarket.json")}
     vm = {}
+    def vm_add(sku, name, price, month):
+        prev = vm.get(sku)
+        # newest month sets the price; the name is the longest seen, because the invoice PDFs
+        # truncate the description column to a fixed width.
+        if prev and prev[2] >= month: name = max(prev[0], name, key=len); price, month = prev[1], prev[2]
+        elif prev: name = max(prev[0], name, key=len)
+        vm[sku] = (name, price, month)
     for r in pull["vetmarket_invoice_list"]:
-        vm[r["sku"]] = (r["name"], r["unit_price"], r["date"][:7])
-    for r in load("invoices_plus_vetmarket.json"):
-        prev = vm.get(r["sku"])
-        if prev and prev[2] >= r["month"]: continue
-        vm[r["sku"]] = (r["name"], r["unit_price"], r["month"])
+        vm_add(r["sku"], r["name"], r["unit_price"], r["date"][:7])
+    for f in ("invoices_plus_vetmarket.json", "vetmarket_pdf_invoices.json"):
+        for r in load(f):
+            vm_add(r["sku"], r["name"], r["unit_price"], r["month"])
     for sku, (name, price, month) in vm.items():
         cat = (vm_cat.get(sku) or {}).get("category")
         add(lists["vetmarket"], item("vetmarket", name, price, None, cat,

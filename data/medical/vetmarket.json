@@ -11,10 +11,10 @@
 "source_kind": "invoices",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 232,
+"item_count": 294,
 "status": "current",
 "imported_at": "2026-08-26",
-"notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משני מאגרים — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
+"notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משלושה מקורות — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
 },
 "items": [
 {
@@ -29,14 +29,14 @@
 "id": "vetmarket-1"
 },
 {
-"name": "זטו 250 מ\"ג (6 טבל')",
+"name": "זטו 250 מ\"ג (6 טבל') (אזיטרומיצין 250)",
 "category": "אנטיביוטיקה",
 "topic": "antibiotic",
 "price_no_vat": 30.0,
 "price_with_vat": 35.4,
 "sku": "112009",
 "pack_qty": 6,
-"price_date": "2025-12",
+"price_date": "2026-01",
 "id": "vetmarket-2"
 },
 {
@@ -72,7 +72,7 @@
 "id": "vetmarket-5"
 },
 {
-"name": "קונבניה 10 מ\"ל",
+"name": "קונבניה וטרינרי 10 מ\"ל",
 "category": "אנטיביוטיקה",
 "topic": "antibiotic",
 "price_no_vat": 1150.0,
@@ -110,7 +110,7 @@
 "price_with_vat": 231.28,
 "sku": "120034",
 "pack_qty": 1,
-"price_date": "2025-07",
+"price_date": "2026-04",
 "id": "vetmarket-9"
 },
 {
@@ -131,7 +131,7 @@
 "price_no_vat": 724.0,
 "price_with_vat": 854.32,
 "sku": "121231",
-"price_date": "2025-07",
+"price_date": "2026-04",
 "id": "vetmarket-11"
 },
 {
@@ -146,22 +146,24 @@
 "id": "vetmarket-12"
 },
 {
-"name": "קרדיוסור 5 מ\"ג (פימובנדן) 100 טב'",
+"name": "קרדישור בטעם וטרינרי 5 מ\"ג (100 טבליות)",
 "category": "לב ולחץ דם",
 "topic": "cardio",
 "price_no_vat": 323.0,
 "price_with_vat": 381.14,
 "sku": "122123",
+"pack_qty": 100,
 "price_date": "2026-05",
 "id": "vetmarket-13"
 },
 {
-"name": "קרדיוסור 10 מ\"ג (פימובנדן) 100 טב'",
+"name": "קרדישור בטעם וטרינרי 10 מ\"ג (100 טבליות)",
 "category": null,
 "topic": "cardio",
 "price_no_vat": 370.0,
 "price_with_vat": 436.6,
 "sku": "122130",
+"pack_qty": 100,
 "price_date": "2026-05",
 "id": "vetmarket-14"
 },
@@ -254,22 +256,24 @@
 "id": "vetmarket-22"
 },
 {
-"name": "סימפריקה >2.5-5 ק\"ג(10 מ\"ג)3 טב'",
+"name": "סימפריקה 10 מ\"ג לכלבים במשקל 2.5-5 ק\"ג (3 טבליות)",
 "category": "הדברה",
 "topic": "parasites",
 "price_no_vat": 60.0,
 "price_with_vat": 70.8,
 "sku": "122284",
+"pack_qty": 3,
 "price_date": "2026-06",
 "id": "vetmarket-23"
 },
 {
-"name": "סימפריקה >5-10 ק\"ג(20 מ\"ג)3 טב'",
+"name": "סימפריקה 20 מ\"ג לכלבים במשקל 5-10 ק\"ג (3 טבליות)",
 "category": "הדברה",
 "topic": "parasites",
 "price_no_vat": 64.0,
 "price_with_vat": 75.52,
 "sku": "122285",
+"pack_qty": 3,
 "price_date": "2026-06",
 "id": "vetmarket-24"
 },
@@ -277,11 +281,11 @@
 "name": "צפבקטין 1000 מ\"ג (100 טבליות), צפלקסין",
 "category": "אנטיביוטיקה",
 "topic": "antibiotic",
-"price_no_vat": 395.0,
-"price_with_vat": 466.1,
+"price_no_vat": 310.0,
+"price_with_vat": 365.8,
 "sku": "122292",
 "pack_qty": 100,
-"price_date": "2025-07",
+"price_date": "2026-01",
 "id": "vetmarket-25"
 },
 {
@@ -307,12 +311,13 @@
 "id": "vetmarket-27"
 },
 {
-"name": "ציטופוינט 20 מג/מל 1 מל (2 ויאל)",
+"name": "ציטופוינט 20 מ\"ג/מ\"ל 1 מ\"ל (2 ויאל)",
 "category": "דרמטולוגיה / אלרגיה",
 "topic": "skin",
 "price_no_vat": 745.0,
 "price_with_vat": 879.1,
 "sku": "122644",
+"pack_qty": 1,
 "price_date": "2026-05",
 "id": "vetmarket-28"
 },
@@ -345,7 +350,7 @@
 "price_with_vat": 16.52,
 "sku": "123122",
 "pack_qty": 30,
-"price_date": "2026-03",
+"price_date": "2026-04",
 "id": "vetmarket-31"
 },
 {
@@ -401,7 +406,7 @@
 "id": "vetmarket-36"
 },
 {
-"name": "סרניה להזרקה 10 מ\"ג (20 מ\"ל)",
+"name": "סרניה זריקה וטרינרי 10 מ\"ג (20 מ\"ל)",
 "category": "מערכת עיכול",
 "topic": "gi",
 "price_no_vat": 520.0,
@@ -444,9 +449,9 @@
 "id": "vetmarket-40"
 },
 {
-"name": "סורולן וטרינרי 15 מ\"ל",
+"name": "סורולן טיפות אוזניים 15 מ\"ל",
 "category": null,
-"topic": "other",
+"topic": "ears",
 "price_no_vat": 50.0,
 "price_with_vat": 59.0,
 "sku": "134016",
@@ -466,13 +471,13 @@
 "id": "vetmarket-42"
 },
 {
-"name": "מקסיטרול משחת עיניים",
+"name": "מקסיטרול משחת עיניים 3.5 גר'",
 "category": null,
 "topic": "eyes",
 "price_no_vat": 24.0,
 "price_with_vat": 28.32,
 "sku": "134079",
-"price_date": "2025-12",
+"price_date": "2026-03",
 "id": "vetmarket-43"
 },
 {
@@ -520,7 +525,7 @@
 "id": "vetmarket-47"
 },
 {
-"name": "סטרונגהולד פלוס 1 מ\"ל 5-10 ק\"ג (3 שפופרות) לחתולים",
+"name": "סטרונגהולד פלוס 1 מ\"ל לחתולים (>5-10;ק\"ג) (3 שפורפרות)",
 "category": null,
 "topic": "nutrition",
 "price_no_vat": 179.0,
@@ -531,7 +536,7 @@
 "id": "vetmarket-48"
 },
 {
-"name": "סטרונגהולד פלוס 0.5 מ\"ל 2.5-5 ק\"ג (3 שפופרות) לחתולים",
+"name": "סטרונגהולד פלוס 0.5 מ\"ל לחתולים (>2.5-5;ק\"ג) (3 שפורפרות)",
 "category": "הדברה",
 "topic": "parasites",
 "price_no_vat": 147.0,
@@ -593,11 +598,11 @@
 "price_with_vat": 38.94,
 "sku": "160359",
 "pack_qty": 1,
-"price_date": "2025-07",
+"price_date": "2026-01",
 "id": "vetmarket-54"
 },
 {
-"name": "Dipyrone 140 mg 50 tab",
+"name": "דיפירון 140 מ\"ג (50 טבליות)",
 "category": "שיכוך כאב",
 "topic": "pain",
 "price_no_vat": 100.0,
@@ -629,7 +634,7 @@
 "id": "vetmarket-57"
 },
 {
-"name": "טקרולימוס טיפות עיניים %0.03 10 מ\"ל",
+"name": "Tacrolimus 0.03% ophthalmic solution 10 ml",
 "category": null,
 "topic": "eyes",
 "price_no_vat": 180.0,
@@ -651,7 +656,7 @@
 "id": "vetmarket-59"
 },
 {
-"name": "Trim P 10/4 20kg 100 tab",
+"name": "טרים פי ל-20 ק\"ג, 10/4, 100 טבליות",
 "category": "אנטיביוטיקה",
 "topic": "antibiotic",
 "price_no_vat": 290.0,
@@ -727,9 +732,9 @@
 "id": "vetmarket-66"
 },
 {
-"name": "אטנולול 10 מ\"ג\\מ\"ל 30 מ\"ל תרחיף",
+"name": "Atenolol 10mg/ml 30ml oral suspension",
 "category": null,
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 100.0,
 "price_with_vat": 118.0,
 "sku": "163229",
@@ -745,7 +750,7 @@
 "price_with_vat": 177.0,
 "sku": "163241",
 "pack_qty": 100,
-"price_date": "2025-09",
+"price_date": "2026-01",
 "id": "vetmarket-68"
 },
 {
@@ -789,7 +794,7 @@
 "price_with_vat": 212.4,
 "sku": "163497",
 "pack_qty": 30,
-"price_date": "2025-09",
+"price_date": "2026-03",
 "id": "vetmarket-72"
 },
 {
@@ -804,7 +809,7 @@
 "id": "vetmarket-73"
 },
 {
-"name": "Trim P 15/6 30kg 100 tab",
+"name": "טרים פי 15/6 ל-30 ק\"ג (100 טבליות)",
 "category": "אנטיביוטיקה",
 "topic": "antibiotic",
 "price_no_vat": 380.0,
@@ -848,7 +853,7 @@
 "id": "vetmarket-77"
 },
 {
-"name": "Trilostane 50 mg 100 tab",
+"name": "טרילוסטן 50 מ\"ג (100 טבליות)",
 "category": "אנדוקרינולוגיה",
 "topic": "endocrine",
 "price_no_vat": 750.0,
@@ -859,7 +864,7 @@
 "id": "vetmarket-78"
 },
 {
-"name": "Maropitant 60 mg 10 tab",
+"name": "מרופיטנט 60 מ\"ג 10 טבליות",
 "category": null,
 "topic": "other",
 "price_no_vat": 160.0,
@@ -881,7 +886,7 @@
 "id": "vetmarket-80"
 },
 {
-"name": "פלורי ג'ל לאוזן פעם בשבוע",
+"name": "Flori once a week (QW) otic gel",
 "category": "עיניים ואוזניים",
 "topic": "ears",
 "price_no_vat": 39.0,
@@ -913,7 +918,7 @@
 "id": "vetmarket-83"
 },
 {
-"name": "Enrofloxacin 200 mg 50 tab",
+"name": "אנרופלוקסצין 200 מ\"ג (50 טבליות)",
 "category": null,
 "topic": "other",
 "price_no_vat": 175.0,
@@ -924,9 +929,9 @@
 "id": "vetmarket-84"
 },
 {
-"name": "בוטורפנול 5 מ\"ג\\מ\"ל 30 מ\"ל תרחיף",
+"name": "torphanol 5mg/ml 30 ml oral suspension",
 "category": "תרופות שונות",
-"topic": "other",
+"topic": "dental",
 "price_no_vat": 350.0,
 "price_with_vat": 413.0,
 "sku": "166789",
@@ -946,7 +951,7 @@
 "id": "vetmarket-86"
 },
 {
-"name": "Dipyrone 600 mg 50 tab",
+"name": "דיפירון 600 מ\"ג (50 טבליות)",
 "category": "שיכוך כאב",
 "topic": "pain",
 "price_no_vat": 130.0,
@@ -990,12 +995,13 @@
 "id": "vetmarket-90"
 },
 {
-"name": "פורוסמיד 20 מ\"ג 100 טאב",
+"name": "Furosemide 20 mg 100 tab",
 "category": null,
 "topic": "other",
 "price_no_vat": 150.0,
 "price_with_vat": 177.0,
 "sku": "169330",
+"pack_qty": 100,
 "price_date": "2026-06",
 "id": "vetmarket-91"
 },
@@ -1021,7 +1027,7 @@
 "id": "vetmarket-93"
 },
 {
-"name": "Pred 10 mg + Hydro 20 mg 100 tab",
+"name": "פרדניזולון 10 מ\"ג + הידרו 20 מ\"ג (100 טבליות)",
 "category": "סטרואידים",
 "topic": "pain",
 "price_no_vat": 260.0,
@@ -1105,7 +1111,7 @@
 "id": "vetmarket-101"
 },
 {
-"name": "תרכיב משושה ואנגרד זואטיס (1 מנה)",
+"name": "תרכיב משושה 1 מנה (Vanguard Zoetis)",
 "category": "חיסונים",
 "topic": "vaccine",
 "price_no_vat": 25.3,
@@ -1131,11 +1137,11 @@
 "price_no_vat": 23.0,
 "price_with_vat": 27.14,
 "sku": "309723",
-"price_date": "2025-04",
+"price_date": "2026-04",
 "id": "vetmarket-104"
 },
 {
-"name": "תרכיב נוביווק PLUS DP Puppy עם מדלל",
+"name": "תרכיב נוביווק Puppy DP PLUS עם מדלל, 1 מנה",
 "category": "חיסונים",
 "topic": "vaccine",
 "price_no_vat": 30.8,
@@ -1225,7 +1231,7 @@
 "id": "vetmarket-113"
 },
 {
-"name": "מ D/I מופחת שומן כלב בוגר 4 ק\"ג FAT OW",
+"name": "i/d Low Fat | Hill's Prescription Diet דייג'סטיב קייר לכלב בוגר, 4 ק\"ג",
 "category": "מזון רפואי",
 "topic": "nutrition",
 "price_no_vat": 185.0,
@@ -1245,7 +1251,7 @@
 "id": "vetmarket-115"
 },
 {
-"name": "מזון D/C חתול 3 ק\"ג Multicare",
+"name": "c/d | Hill's Prescription Diet מולטיקייר לחתול, 3 ק\"ג (עם עוף)",
 "category": null,
 "topic": "nutrition",
 "price_no_vat": 149.0,
@@ -1295,7 +1301,7 @@
 "id": "vetmarket-120"
 },
 {
-"name": "מזון D/C סטרס+מטבוליק חתול 3 ק\"ג",
+"name": "c/d | Hill's Prescription Diet יורינרי סטרס + מטבוליק לחתול, 3 ק\"ג (עם עוף)",
 "category": null,
 "topic": "nutrition",
 "price_no_vat": 185.0,
@@ -1311,7 +1317,7 @@
 "price_no_vat": 155.0,
 "price_with_vat": 182.9,
 "sku": "40605986",
-"price_date": "2025-05",
+"price_date": "2026-03",
 "id": "vetmarket-122"
 },
 {
@@ -1388,10 +1394,10 @@
 "name": "שימורי z/d | Hill's Prescription Diet רגישות למזון כלב, 370 גר'",
 "category": null,
 "topic": "nutrition",
-"price_no_vat": 16.4,
-"price_with_vat": 19.35,
+"price_no_vat": 18.5,
+"price_with_vat": 21.83,
 "sku": "40606375",
-"price_date": "2023-09",
+"price_date": "2026-04",
 "id": "vetmarket-130"
 },
 {
@@ -1421,7 +1427,7 @@
 "price_no_vat": 155.0,
 "price_with_vat": 182.9,
 "sku": "40606522",
-"price_date": "2025-12",
+"price_date": "2026-01",
 "id": "vetmarket-133"
 },
 {
@@ -1435,9 +1441,9 @@
 "id": "vetmarket-134"
 },
 {
-"name": "מ D/I כלב בוגר 360 גרם",
+"name": "שימורי i/d | Hill's Prescription Diet דייג'סטיב קייר לכלב בוגר, 360 גרם",
 "category": null,
-"topic": "other",
+"topic": "nutrition",
 "price_no_vat": 14.3,
 "price_with_vat": 16.87,
 "sku": "40607215",
@@ -1445,7 +1451,7 @@
 "id": "vetmarket-135"
 },
 {
-"name": "מ D/I מופחת שומן כלב בוגר 360 גרם FAT",
+"name": "i/d Low Fat | Hill's Prescription Diet דייג'סטיב קייר לכלב בוגר 360 גרם",
 "category": "מזון רפואי",
 "topic": "nutrition",
 "price_no_vat": 14.9,
@@ -1461,7 +1467,7 @@
 "price_no_vat": 15.4,
 "price_with_vat": 18.17,
 "sku": "40607719",
-"price_date": "2025-04",
+"price_date": "2026-03",
 "id": "vetmarket-137"
 },
 {
@@ -1486,7 +1492,7 @@
 "id": "vetmarket-139"
 },
 {
-"name": "טיפות עיניים אוקולניס ביוהנס סנטרקס, 3 מ\"ל",
+"name": "טיפות עיניים אוקולניס sentrx לפציעה בעין 3 מ\"ל",
 "category": "עיניים ואוזניים",
 "topic": "eyes",
 "price_no_vat": 58.0,
@@ -1528,7 +1534,7 @@
 "id": "vetmarket-143"
 },
 {
-"name": "מחט ח.פ 21/1 חב' ירוק Kruuse",
+"name": "מחט חד פעמית \"21Gx1, ירוק KRUUSE",
 "category": "חומרים מתכלים",
 "topic": "equipment",
 "price_no_vat": 8.0,
@@ -1555,7 +1561,7 @@
 "price_no_vat": 6.5,
 "price_with_vat": 7.67,
 "sku": "5518380",
-"price_date": "2026-01",
+"price_date": "2026-03",
 "id": "vetmarket-146"
 },
 {
@@ -1569,7 +1575,7 @@
 "id": "vetmarket-147"
 },
 {
-"name": "קיט צביעה ל-PROCYTEDX",
+"name": "קיט צביעה ל PROCYTE DX",
 "category": "בדיקות מעבדה",
 "topic": "equipment",
 "price_no_vat": 538.0,
@@ -1579,13 +1585,13 @@
 "id": "vetmarket-148"
 },
 {
-"name": "סנאפ פרוו - כלב (5 בדיקות)",
+"name": "סנאפ פרוו - כלב/חתול - 5 בדיקות",
 "category": null,
 "topic": "other",
 "price_no_vat": 200.0,
 "price_with_vat": 236.0,
 "sku": "5598806",
-"price_date": "2025-05",
+"price_date": "2026-04",
 "id": "vetmarket-149"
 },
 {
@@ -1599,7 +1605,7 @@
 "id": "vetmarket-150"
 },
 {
-"name": "מבחנות EDTA וט-קולקט של איידקס",
+"name": "מבחנות EDTA לפרוסייט (50) איידקס",
 "category": "בדיקות מעבדה",
 "topic": "equipment",
 "price_no_vat": 168.0,
@@ -1647,7 +1653,7 @@
 "price_with_vat": 256.06,
 "sku": "5599380",
 "pack_qty": 100,
-"price_date": "2025-07",
+"price_date": "2026-01",
 "id": "vetmarket-155"
 },
 {
@@ -1662,12 +1668,13 @@
 "id": "vetmarket-156"
 },
 {
-"name": "קטליסט סלייד CREA",
+"name": "קטאליסט CREA (1 יח')",
 "category": null,
 "topic": "other",
 "price_no_vat": 23.0,
 "price_with_vat": 27.14,
 "sku": "5599384",
+"pack_qty": 1,
 "price_date": "2026-06",
 "id": "vetmarket-157"
 },
@@ -1690,7 +1697,7 @@
 "price_with_vat": 885.0,
 "sku": "5599390",
 "pack_qty": 12,
-"price_date": "2025-09",
+"price_date": "2026-01",
 "id": "vetmarket-159"
 },
 {
@@ -1745,13 +1752,13 @@
 "id": "vetmarket-164"
 },
 {
-"name": "קטליסט סלייד פרוקטוזאמין",
+"name": "קטאליסט פרוקטוזמין FRU(1 בדיקות)",
 "category": "בדיקות מעבדה",
 "topic": "equipment",
 "price_no_vat": 52.0,
 "price_with_vat": 61.36,
 "sku": "5599438",
-"price_date": "2025-11",
+"price_date": "2026-03",
 "id": "vetmarket-165"
 },
 {
@@ -1765,7 +1772,7 @@
 "id": "vetmarket-166"
 },
 {
-"name": "קטליסט סלייד TT4",
+"name": "קטאליסט 4T (1 בדיקה)",
 "category": null,
 "topic": "other",
 "price_no_vat": 80.0,
@@ -1796,7 +1803,7 @@
 "id": "vetmarket-169"
 },
 {
-"name": "קטאליסט SDMA 1 בדיקה",
+"name": "קטליסט סלייד 1 SDMA בדיקה",
 "category": "בדיקות מעבדה",
 "topic": "equipment",
 "price_no_vat": 91.0,
@@ -2014,7 +2021,7 @@
 "id": "vetmarket-190"
 },
 {
-"name": "סימפריקה >10-20 ק\"ג(40 מ\"ג)3 טב'",
+"name": "סימפריקה >10-20; ק\"ג(40 מ\"ג)3 טב'",
 "category": null,
 "topic": "parasites",
 "price_no_vat": 70.0,
@@ -2024,7 +2031,7 @@
 "id": "vetmarket-191"
 },
 {
-"name": "סימפריקה >20-40 ק\"ג(80 מ\"ג)3 טב'",
+"name": "סימפריקה 20-40 ק\"ג (80 מ\"ג) 3 טב'",
 "category": "הדברה",
 "topic": "parasites",
 "price_no_vat": 76.0,
@@ -2066,7 +2073,7 @@
 "id": "vetmarket-195"
 },
 {
-"name": "קלבור טיפות עיניים (רופינירול) 30 מ\"ג",
+"name": "קלבור טיפות עיניים (רופינירול) 30 מ\"ג/",
 "category": null,
 "topic": "eyes",
 "price_no_vat": 120.0,
@@ -2268,7 +2275,7 @@
 "id": "vetmarket-214"
 },
 {
-"name": "מ D/I* גור כלב* 1.5 ק\"ג",
+"name": "מזון D/I גור כלב 1.5 ק\"ג",
 "category": "מזון רפואי",
 "topic": "nutrition",
 "price_no_vat": 86.0,
@@ -2308,7 +2315,7 @@
 "id": "vetmarket-218"
 },
 {
-"name": "מחט ח.פ 21/5.8 חב' ירוק Kruuse",
+"name": "מחט ח.פ 1 21/5.8 חב ירוק Kruuse",
 "category": null,
 "topic": "equipment",
 "price_no_vat": 16.0,
@@ -2448,6 +2455,653 @@
 "sku": "TSSF5540",
 "price_date": "2026-06",
 "id": "vetmarket-232"
+},
+{
+"name": "סולנסיה 7 מ\"ג/מ\"ל להזרקה (2 ויאלים X 1",
+"category": null,
+"topic": "other",
+"price_no_vat": 665.0,
+"price_with_vat": 784.7,
+"sku": "121233",
+"price_date": "2026-04",
+"id": "vetmarket-233"
+},
+{
+"name": "אראנספ 20 (1 יח')",
+"category": null,
+"topic": "other",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "129856",
+"pack_qty": 1,
+"price_date": "2026-04",
+"id": "vetmarket-234"
+},
+{
+"name": "Furosemide 4 mg 100 tab",
+"category": null,
+"topic": "other",
+"price_no_vat": 155.0,
+"price_with_vat": 182.9,
+"sku": "164728",
+"pack_qty": 100,
+"price_date": "2026-04",
+"id": "vetmarket-235"
+},
+{
+"name": "סינולוקס 50 מ\"ג (100 טבל')",
+"category": "אנטיביוטיקה",
+"topic": "antibiotic",
+"price_no_vat": 235.0,
+"price_with_vat": 277.3,
+"sku": "112237",
+"pack_qty": 100,
+"price_date": "2026-04",
+"id": "vetmarket-236"
+},
+{
+"name": "ליברלה 20 מ\"ג תמיסה להזרקה (2 ויילים1X",
+"category": "שיכוך כאב",
+"topic": "pain",
+"price_no_vat": 594.0,
+"price_with_vat": 700.92,
+"sku": "121230",
+"price_date": "2026-04",
+"id": "vetmarket-237"
+},
+{
+"name": "ונקטיל 500 P טבל'",
+"category": "תרופות שונות",
+"topic": "other",
+"price_no_vat": 699.0,
+"price_with_vat": 824.82,
+"sku": "128365",
+"price_date": "2026-04",
+"id": "vetmarket-238"
+},
+{
+"name": "Dexa/Keto once-a-week otic gel",
+"category": null,
+"topic": "ears",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "160006",
+"price_date": "2026-04",
+"id": "vetmarket-239"
+},
+{
+"name": "Famotidine 10 mg 100 tab",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 130.0,
+"price_with_vat": 153.4,
+"sku": "164277",
+"pack_qty": 100,
+"price_date": "2026-04",
+"id": "vetmarket-240"
+},
+{
+"name": "Metronidazole 200 mg 100 tab",
+"category": null,
+"topic": "antibiotic",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"sku": "164851",
+"pack_qty": 100,
+"price_date": "2026-04",
+"id": "vetmarket-241"
+},
+{
+"name": "Marbo TT Once-a-week otic gel 1 ml",
+"category": null,
+"topic": "ears",
+"price_no_vat": 45.0,
+"price_with_vat": 53.1,
+"sku": "169052",
+"pack_qty": 1,
+"price_date": "2026-04",
+"id": "vetmarket-242"
+},
+{
+"name": "מ A/D שימורים לכלב ולחתול, 200 גרם",
+"category": null,
+"topic": "other",
+"price_no_vat": 14.4,
+"price_with_vat": 16.99,
+"sku": "40608306",
+"price_date": "2026-04",
+"id": "vetmarket-243"
+},
+{
+"name": "ropitant 8 mg/ml 10 ml oral suspension",
+"category": "מערכת עיכול",
+"topic": "gi",
+"price_no_vat": 95.0,
+"price_with_vat": 112.1,
+"sku": "164217",
+"pack_qty": 10,
+"price_date": "2026-04",
+"id": "vetmarket-244"
+},
+{
+"name": "Famotidine 5mg/ml 30ml oral suspension",
+"category": null,
+"topic": "dental",
+"price_no_vat": 95.0,
+"price_with_vat": 112.1,
+"sku": "169934",
+"pack_qty": 30,
+"price_date": "2026-04",
+"id": "vetmarket-245"
+},
+{
+"name": "ברבקטו טב' כלב >40-56; ק\"ג (1400 מ\"ג)",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 196.0,
+"price_with_vat": 231.28,
+"sku": "122159",
+"price_date": "2026-04",
+"id": "vetmarket-246"
+},
+{
+"name": "SOL. 100ML %PENTAL 20",
+"category": null,
+"topic": "other",
+"price_no_vat": 105.0,
+"price_with_vat": 123.9,
+"sku": "102523",
+"pack_qty": 100,
+"price_date": "2026-04",
+"id": "vetmarket-247"
+},
+{
+"name": "luoxetine 20mg/ml 30ml oral suspension",
+"category": null,
+"topic": "dental",
+"price_no_vat": 120.0,
+"price_with_vat": 141.6,
+"sku": "165659",
+"pack_qty": 30,
+"price_date": "2026-04",
+"id": "vetmarket-248"
+},
+{
+"name": "מ GI BIOME כלב בוגר 10 ק\"ג",
+"category": "מזון רפואי",
+"topic": "nutrition",
+"price_no_vat": 394.0,
+"price_with_vat": 464.92,
+"sku": "40605996",
+"price_date": "2026-04",
+"id": "vetmarket-249"
+},
+{
+"name": "פד פס כחול 1 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 70.0,
+"price_with_vat": 82.6,
+"sku": "5508190",
+"price_date": "2026-04",
+"id": "vetmarket-250"
+},
+{
+"name": "סנאפ גיארדיה - כלב/חתול - 5 בדיקות",
+"category": null,
+"topic": "other",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "5598911",
+"price_date": "2026-04",
+"id": "vetmarket-251"
+},
+{
+"name": "סימפריקה 1.3-2.5 ק\"ג (5 מ\"ג)3טב'",
+"category": "הדברה",
+"topic": "parasites",
+"price_no_vat": 51.0,
+"price_with_vat": 60.18,
+"sku": "120017",
+"price_date": "2026-04",
+"id": "vetmarket-252"
+},
+{
+"name": "ברבקטו SO כלב 2-4.5 ק\"ג(112.5 מ\"ג)",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 147.0,
+"price_with_vat": 173.46,
+"sku": "120030",
+"price_date": "2026-04",
+"id": "vetmarket-253"
+},
+{
+"name": "ברבקטו SO כלב 250)>4.5-10 מ\"ג)",
+"category": null,
+"topic": "other",
+"price_no_vat": 157.0,
+"price_with_vat": 185.26,
+"sku": "120031",
+"price_date": "2026-04",
+"id": "vetmarket-254"
+},
+{
+"name": "ברבקטו SO כלב >10-20; ק\"ג(500 מ\"ג)",
+"category": "הדברה",
+"topic": "parasites",
+"price_no_vat": 167.0,
+"price_with_vat": 197.06,
+"sku": "120032",
+"price_date": "2026-04",
+"id": "vetmarket-255"
+},
+{
+"name": "ברבקטו SO כלב >20-40; ק\"ג(1000 מ\"ג)",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 179.0,
+"price_with_vat": 211.22,
+"sku": "120033",
+"price_date": "2026-04",
+"id": "vetmarket-256"
+},
+{
+"name": "סימפריקה >40-60; ק\"ג(120 מ\"ג)3 טב",
+"category": null,
+"topic": "parasites",
+"price_no_vat": 76.0,
+"price_with_vat": 89.68,
+"sku": "122288",
+"price_date": "2026-04",
+"id": "vetmarket-257"
+},
+{
+"name": "ציקלוואנס 100 מ\"ג/מ\"ל (15 מ\"ל)",
+"category": null,
+"topic": "other",
+"price_no_vat": 240.0,
+"price_with_vat": 283.2,
+"sku": "122598",
+"pack_qty": 15,
+"price_date": "2026-04",
+"id": "vetmarket-258"
+},
+{
+"name": "מ גור חתול הודו *פאוץ הילס 12יח* 85 גר",
+"category": null,
+"topic": "other",
+"price_no_vat": 60.0,
+"price_with_vat": 70.8,
+"sku": "41607082",
+"pack_qty": 12,
+"price_date": "2026-04",
+"id": "vetmarket-259"
+},
+{
+"name": "דנמרין תוסף כבד נוטרמקס 425 מ\"ג (30 טב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 225.0,
+"price_with_vat": 265.5,
+"sku": "189954",
+"price_date": "2026-01",
+"id": "vetmarket-260"
+},
+{
+"name": "משאבת אינפוזיה וטרינרית ZSVET VI3",
+"category": null,
+"topic": "other",
+"price_no_vat": 1900.0,
+"price_with_vat": 2242.0,
+"sku": "5521001",
+"price_date": "2026-01",
+"id": "vetmarket-261"
+},
+{
+"name": "חוט PDS+מחט 4/0 עגולה(אסוט) HR17",
+"category": "חומרים מתכלים",
+"topic": "equipment",
+"price_no_vat": 155.0,
+"price_with_vat": 182.9,
+"sku": "5538231",
+"price_date": "2026-01",
+"id": "vetmarket-262"
+},
+{
+"name": "דולפוס משחת מתיונין 100 UrinaryMet גר",
+"category": "תוספי תזונה",
+"topic": "nutrition",
+"price_no_vat": 55.0,
+"price_with_vat": 64.9,
+"sku": "185957",
+"price_date": "2026-01",
+"id": "vetmarket-263"
+},
+{
+"name": "חוט PDO+מחט 3/0 חותכת SMI DS24",
+"category": null,
+"topic": "equipment",
+"price_no_vat": 140.0,
+"price_with_vat": 165.2,
+"sku": "55313201524",
+"price_date": "2026-01",
+"id": "vetmarket-264"
+},
+{
+"name": "itant 4 mg/0.1 ml transdermal gel 1 ml",
+"category": null,
+"topic": "skin",
+"price_no_vat": 80.0,
+"price_with_vat": 94.4,
+"sku": "167655",
+"pack_qty": 1,
+"price_date": "2026-01",
+"id": "vetmarket-265"
+},
+{
+"name": "אלדקטון 25 מ\"ג (20 טבל')",
+"category": null,
+"topic": "other",
+"price_no_vat": 16.0,
+"price_with_vat": 18.88,
+"sku": "122638",
+"pack_qty": 20,
+"price_date": "2026-01",
+"id": "vetmarket-266"
+},
+{
+"name": "קלופידוגרל (קלופידקסל) טבע 75 מ\"ג (30",
+"category": null,
+"topic": "other",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "122175",
+"price_date": "2026-01",
+"id": "vetmarket-267"
+},
+{
+"name": "Metronidazole 500 mg 100 tab",
+"category": null,
+"topic": "antibiotic",
+"price_no_vat": 220.0,
+"price_with_vat": 259.6,
+"sku": "164757",
+"pack_qty": 100,
+"price_date": "2026-01",
+"id": "vetmarket-268"
+},
+{
+"name": "רקוד 20 מ\"ג (10 טבליות) קודאין",
+"category": "נשימה / שיעול",
+"topic": "respiratory",
+"price_no_vat": 16.0,
+"price_with_vat": 18.88,
+"sku": "122592",
+"pack_qty": 10,
+"price_date": "2026-01",
+"id": "vetmarket-269"
+},
+{
+"name": "מ K/D חתול 8 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 397.0,
+"price_with_vat": 468.46,
+"sku": "40605987",
+"price_date": "2026-01",
+"id": "vetmarket-270"
+},
+{
+"name": "מ K/D חתול 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 96.0,
+"price_with_vat": 113.28,
+"sku": "40609841",
+"price_date": "2026-01",
+"id": "vetmarket-271"
+},
+{
+"name": "מחט ח.פ MEDI PLUS 22/1.5 שחור",
+"category": null,
+"topic": "equipment",
+"price_no_vat": 7.5,
+"price_with_vat": 8.85,
+"sku": "5518386",
+"price_date": "2026-01",
+"id": "vetmarket-272"
+},
+{
+"name": "קלאבניר 1 גרם (10 אמפ')",
+"category": null,
+"topic": "other",
+"price_no_vat": 150.0,
+"price_with_vat": 177.0,
+"sku": "112280",
+"price_date": "2026-03",
+"id": "vetmarket-273"
+},
+{
+"name": "אלפרליד 0.5 מ\"ג (30 טב')",
+"category": null,
+"topic": "other",
+"price_no_vat": 15.0,
+"price_with_vat": 17.7,
+"sku": "120019",
+"price_date": "2026-01",
+"id": "vetmarket-274"
+},
+{
+"name": "אלפרליד 0.25 מ\"ג (30 טב')",
+"category": null,
+"topic": "other",
+"price_no_vat": 13.0,
+"price_with_vat": 15.34,
+"sku": "122171",
+"price_date": "2026-01",
+"id": "vetmarket-275"
+},
+{
+"name": "Thiamphenicol 15ml ophthalmic so",
+"category": "עיניים ואוזניים",
+"topic": "eyes",
+"price_no_vat": 29.0,
+"price_with_vat": 34.22,
+"sku": "168945",
+"pack_qty": 15,
+"price_date": "2026-01",
+"id": "vetmarket-276"
+},
+{
+"name": "Clomipramine 5 mg 100 tab",
+"category": "פסיכיאטריה והרגעה",
+"topic": "neuro",
+"price_no_vat": 180.0,
+"price_with_vat": 212.4,
+"sku": "169321",
+"pack_qty": 100,
+"price_date": "2026-01",
+"id": "vetmarket-277"
+},
+{
+"name": "רימדיל לעיס 50 מ\"ג (100 טבל')",
+"category": null,
+"topic": "pain",
+"price_no_vat": 360.0,
+"price_with_vat": 424.8,
+"sku": "123137",
+"pack_qty": 100,
+"price_date": "2026-01",
+"id": "vetmarket-278"
+},
+{
+"name": "רימדיל לעיס 100 מ\"ג (100 טבל')",
+"category": null,
+"topic": "pain",
+"price_no_vat": 480.0,
+"price_with_vat": 566.4,
+"sku": "123138",
+"pack_qty": 100,
+"price_date": "2026-01",
+"id": "vetmarket-279"
+},
+{
+"name": "Phenoxybenzamine Hcl 5mg 50 tab",
+"category": "תרופות שונות",
+"topic": "other",
+"price_no_vat": 200.0,
+"price_with_vat": 236.0,
+"sku": "168555",
+"pack_qty": 50,
+"price_date": "2026-03",
+"id": "vetmarket-280"
+},
+{
+"name": "פנוברביטל 100 מ\"ג (60 טבליות)",
+"category": null,
+"topic": "other",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "102589",
+"pack_qty": 60,
+"price_date": "2026-03",
+"id": "vetmarket-281"
+},
+{
+"name": "ofloxacin 10mg/ml 30ml oral suspension",
+"category": null,
+"topic": "dental",
+"price_no_vat": 95.0,
+"price_with_vat": 112.1,
+"sku": "164121",
+"pack_qty": 30,
+"price_date": "2026-01",
+"id": "vetmarket-282"
+},
+{
+"name": "amotidine 10mg/ml 30ml oral suspension",
+"category": null,
+"topic": "dental",
+"price_no_vat": 95.0,
+"price_with_vat": 112.1,
+"sku": "169865",
+"pack_qty": 30,
+"price_date": "2026-01",
+"id": "vetmarket-283"
+},
+{
+"name": "מ Z/D כלב 10 ק\"ג",
+"category": "מזון רפואי",
+"topic": "nutrition",
+"price_no_vat": 475.0,
+"price_with_vat": 560.5,
+"sku": "40606418",
+"price_date": "2026-01",
+"id": "vetmarket-284"
+},
+{
+"name": "טרזודון טריטיקו 100 מ\"ג (30 טבליות)",
+"category": null,
+"topic": "other",
+"price_no_vat": 21.0,
+"price_with_vat": 24.78,
+"sku": "122299",
+"pack_qty": 30,
+"price_date": "2026-03",
+"id": "vetmarket-285"
+},
+{
+"name": "מטרונידזול 500 מ\"ג/100 מ\"ל הזרקה",
+"category": null,
+"topic": "antibiotic",
+"price_no_vat": 9.0,
+"price_with_vat": 10.62,
+"sku": "112064",
+"pack_qty": 100,
+"price_date": "2026-03",
+"id": "vetmarket-286"
+},
+{
+"name": "קוסקטן 0.25 מ\"ג/ מ\"ל תמיסה להזרקה לכלב",
+"category": null,
+"topic": "other",
+"price_no_vat": 135.0,
+"price_with_vat": 159.3,
+"sku": "123311",
+"price_date": "2026-03",
+"id": "vetmarket-287"
+},
+{
+"name": "סופרפלקס GLM (90 טבל')",
+"category": null,
+"topic": "other",
+"price_no_vat": 130.0,
+"price_with_vat": 153.4,
+"sku": "185230",
+"pack_qty": 90,
+"price_date": "2026-03",
+"id": "vetmarket-288"
+},
+{
+"name": "עזרקאין משחה %5 (20 גרם)",
+"category": null,
+"topic": "other",
+"price_no_vat": 15.0,
+"price_with_vat": 17.7,
+"sku": "147043",
+"price_date": "2026-03",
+"id": "vetmarket-289"
+},
+{
+"name": "מחט ח.פ 1 21/1 חב' ירוק",
+"category": null,
+"topic": "equipment",
+"price_no_vat": 6.5,
+"price_with_vat": 7.67,
+"sku": "5518366",
+"price_date": "2026-03",
+"id": "vetmarket-290"
+},
+{
+"name": "פנליפס קרם (2 גרם)",
+"category": "רוקחות ומשחות",
+"topic": "other",
+"price_no_vat": 41.0,
+"price_with_vat": 48.38,
+"sku": "142114",
+"price_date": "2026-03",
+"id": "vetmarket-291"
+},
+{
+"name": "אופלוקס טיפות עיניים",
+"category": "עיניים ואוזניים",
+"topic": "eyes",
+"price_no_vat": 12.0,
+"price_with_vat": 14.16,
+"sku": "134053",
+"price_date": "2026-03",
+"id": "vetmarket-292"
+},
+{
+"name": "ליברלה 15 מ\"ג תמיסה להזרקה (2 ויילים1X",
+"category": "שיכוך כאב",
+"topic": "pain",
+"price_no_vat": 520.0,
+"price_with_vat": 613.6,
+"sku": "121229",
+"price_date": "2026-03",
+"id": "vetmarket-293"
+},
+{
+"name": "דרמוסנט משחת ביו-באלם BIO BALM לכלב 50",
+"category": null,
+"topic": "other",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "217182",
+"price_date": "2026-03",
+"id": "vetmarket-294"
 }
 ]
 }

@@ -72,7 +72,8 @@ function setRow(r, field, val) {
 }
 
 // ---------- data ----------
-async function getJSON(u) { const r = await fetch(u); if (!r.ok) throw new Error(u); return r.json(); }
+// no-cache = revalidate every load, so a rebuilt price list shows up without a version stamp.
+async function getJSON(u) { const r = await fetch(u, { cache: 'no-cache' }); if (!r.ok) throw new Error(u); return r.json(); }
 async function loadSec(sec) {
   if (cache[sec]) return cache[sec];
   const metas = INDEX.pricelists.filter(m => m.type === sec);
