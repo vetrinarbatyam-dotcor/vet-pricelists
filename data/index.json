@@ -213,34 +213,34 @@
    "notes": "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"
   },
   {
-   "action": "refresh",
-   "action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "monge-vet",
    "type": "food",
    "supplier": "Monge Vet Solution",
-   "price_list_date": "2025-01",
-   "source_file": "sources/food/monge-vet-2025-01.pdf",
+   "price_list_date": "2026-07",
+   "source_file": "sources/food/monge-vet-2026-07.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 25,
-   "status": "stale",
+   "item_count": 41,
+   "status": "current",
    "imported_at": "2026-08-26",
-   "notes": "מחירון ינואר 2025"
+   "notes": "מחירון יולי 2026 — יבש + רטוב"
   },
   {
-   "action": "refresh",
-   "action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "monge",
    "type": "food",
    "supplier": "Monge",
-   "price_list_date": "2025-01",
-   "source_file": "sources/food/monge-2025-01.pdf",
+   "price_list_date": "2026-07",
+   "source_file": "sources/food/monge-2026-07.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 89,
-   "status": "stale",
+   "item_count": 109,
+   "status": "current",
    "imported_at": "2026-08-26",
-   "notes": "מחירון ינואר 2025"
+   "notes": "מחירון יולי 2026 — יבש + BeWild"
   },
   {
    "action": "ok",
@@ -331,6 +331,21 @@
    "status": "current",
    "imported_at": "2026-08-26",
    "notes": "מחירון חיות קטנות יולי 2026"
+  },
+  {
+   "action": "ok",
+   "action_note": "מעודכן.",
+   "slug": "kong-shop",
+   "type": "shop",
+   "supplier": "קונג (Kong)",
+   "price_list_date": "2026-08",
+   "source_file": "sources/shop/kong-shop-2026-08.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 265,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחירון מלאי אוגוסט 2026 — צעצועים ואביזרים"
   },
   {
    "action": "ok",
@@ -591,6 +606,7 @@
    ]
   ],
   "food_indications": [
+   "BeWild",
    "VETERINARY HEALTH NUTRITION CAT - DRY",
    "VETERINARY HEALTH NUTRITION CAT - WET",
    "VETERINARY HEALTH NUTRITION DOG - DRY",

@@ -148,6 +148,7 @@ REG = {
     "msd":        ("medical", "MSD (ברווקטו)", "2026", HOME / "pricecmp" / "pdf" / "new_bravecto.pdf", "no_vat", "מחיר לווטרינר 2026"),
     "miltin-consum": ("medical", "בית ארז — ציוד מתכלה", "2025-11", DLD / "PDF" / "מחירון חטיבה וטרינרית קבוצת מילטין ציוד מתכלה - נובמבר 2025.pdf", "no_vat", "חטיבה וטרינרית מילטין — ציוד מתכלה נובמבר 2025"),
     "zoetis":     ("medical", "זואטיס (Zoetis)", "2026", (DLD / "זואטיס תרופות 2026.PDF", DLD / "זואטיס סימפריקה סטרונגהולד 2026.PDF"), "no_vat", "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"),
+    "kong":       ("medical", "קונג (Kong)", "2026-08", DLD / "מחירון קונג מלאי - אוגוסט 2026 .pdf", "no_vat", "מחירון מלאי אוגוסט 2026 — צעצועים ואביזרים"),
     "ferplast":   ("medical", "פרפלסט (Ferplast)", "2026-02", DLD / "מחירון מוצרי פרפלסט 24.2.26.pdf", "no_vat", "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"),
     "vetmarket":  ("medical", "וטמרקט", "2026-08", DLD / "מחירון וטמרקט מלא.xlsx", "no_vat", "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"),
     "medi-market": ("medical", "מדי-מרקט", "2026-06", None, "with_vat", "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"),
@@ -159,8 +160,8 @@ REG = {
     "vetlife":    ("food", "VetLife", "2025-02", DLD / "PDF" / "מחירון וטלייף 02.25 (1).pdf", "no_vat", "מחירון פברואר 2025"),
     "purina-vet": ("food", "Purina Pro Plan VET", "2026-06", DLD / "פורינה.pdf", "no_vat", "מחיר מחירון ליחידה (ללא הנחות)"),
     "purina-retail": ("food", "פורינה (חנויות)", "2026-06", DLD / "הצעת מחיר וטרינר 2026.pdf", "no_vat", "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"),
-    "monge-vet":  ("food", "Monge Vet Solution", "2025-01", DLD / "PDF" / "מחירון מונג וט סלושיין  - ינואר 2025 (1).pdf", "no_vat", "מחירון ינואר 2025"),
-    "monge":      ("food", "Monge", "2025-01", DLD / "PDF" / "מחירון מונג  פיש יבשים - ינואר 2025 (1).pdf", "no_vat", "מחירון ינואר 2025"),
+    "monge-vet":  ("food", "Monge Vet Solution", "2026-07", DLD / "מחירון מונג וט סלושיין יבש+רטוב - יולי 2026.pdf", "no_vat", "מחירון יולי 2026 — יבש + רטוב"),
+    "monge":      ("food", "Monge", "2026-07", (DLD / "מחירון מונג יבש - יולי 2026.pdf", DLD / "מחירון מונג ביווילד - יולי 2026.pdf"), "no_vat", "מחירון יולי 2026 — יבש + BeWild"),
     "foodiez":    ("food", "Foodiez", None, None, "no_vat", None),
     "aml":        ("labs", "AML", "2026-06", DLD / "מחירון 2026.pdf", "with_vat", "בתוקף מ-1.6.2026"),
     "hamachon":   ("labs", "המכון (מעבדה חיצונית)", "2026-01", DLD / "מחירון מעבדה חיצונית לשנת 2026 (1) (1).docx", "no_vat", None),
@@ -179,9 +180,9 @@ SHOP_TOPICS = [("treats", "חטיפים"), ("toys", "צעצועים"), ("groomin
                ("litter", "חול ושירותים"), ("accessories", "אביזרים"), ("calming", "הרגעה"),
                ("other", "כללי")]
 SHOP_KW = [
+    ("toys", ("צעצוע", " toy", "~כדור", " ball", "~חבל", "rope", "forager", "boredom", "~משחק")),
     ("treats", ("~חטיף", "~חטיפים", "snack", "מקלון", "עצם ללעיסה", "dentalife", "דנטלייף", "party mix",
                 "פארטי מיקס", "שלוקים", "dental care", "דנטלקייר", "dogli", "דוגלי", "treat")),
-    ("toys", ("צעצוע", " toy", "~כדור", " ball", "~חבל", "rope", "forager", "boredom", "~משחק")),
     ("litter", ("~חול", "litter", "שירותים לחתול", "מגרפ", "scoop", "ארגז חול", "מצע")),
     ("grooming", ("מגבונ", "wipes", "שמפו", "shampoo", "מברשת", "brush", "טיפוח", "groom", "מסרק",
                   "גוזם", "ציפורניים", "nail")),
@@ -189,7 +190,8 @@ SHOP_KW = [
     ("accessories", ("~קערה", " bowl", "רצועה", "leash", "מנשא", "carrier", "~מיטה", " bed ",
                      "דיספלי", "display")),
 ]
-SHOP_SUPPLIERS = {"ferplast"}                 # whole list is shop merchandise
+SHOP_SUPPLIERS = {"ferplast", "kong"}   # whole list is shop merchandise
+SHOP_FALLBACK = {"ferplast": "accessories", "kong": "toys"}   # sub-category when no keyword matches                 # whole list is shop merchandise
 SHOP_BRANDS = {"Pet Remedy"}                  # brand inside a mixed list
 STRONG_SHOP = {"treats", "toys", "litter"}    # unambiguous merchandise — always moves
 CLINICAL = {"ears", "eyes", "dental", "skin", "joints", "kidney", "gi", "cardio", "endocrine", "neuro",
@@ -201,7 +203,7 @@ def shop_cat(it, slug):
     A clinical row (medicated shampoo, ear wipes, HMEF filter) only moves for unambiguous
     merchandise categories, so vet products don't leak into the shop section."""
     c = _shop_kw(it)
-    if slug in SHOP_SUPPLIERS: return c or "accessories"
+    if slug in SHOP_SUPPLIERS: return c or SHOP_FALLBACK[slug]
     if (it.get("category") or "") in SHOP_BRANDS: return c or "calming"
     if not c: return None
     if c in STRONG_SHOP: return c
@@ -300,6 +302,10 @@ def build():
         add(lists["ferplast"], item("ferplast", it["name"], it["price_no_vat"], None, it.get("category"),
                                       kw_topic(it["name"]) if kw_topic(it["name"]) != "other" else "equipment",
                                       sku=it.get("sku")))
+    # --- Kong (toys/merchandise) — whole list lands in the shop section.
+    for it in load("kong_2026_08.json"):
+        add(lists["kong"], item("kong", it["name"], it["price_no_vat"], None, "Kong",
+                                  kw_topic(it["name"]), sku=it.get("sku")))
     # --- Medi-Market: PUBLIC WEBSITE prices (regular_price, incl. VAT). medimarket_ts.json is NOT used (negotiated prices).
     for r in pull["medimarket"]:
         cl = json.loads(r["categories"] or "[]"); name = r["name"].replace("&quot;", '"').replace("&amp;", "&")
@@ -315,8 +321,8 @@ def build():
     # --- Food from dated supplier PDFs (list price, ex-VAT) — replaces the undated TS rows above.
     for slug, src in (("rc-vet", "rc_vet_2026_06.json"), ("rc-retail", "rc_spt_2026_01.json"),
                       ("purina-vet", "purina_2026_06.json"), ("purina-retail", "purina_retail_2026_06.json"),
-                      ("vetlife", "vetlife_2025_02.json"), ("monge", "monge_2025_01.json"),
-                      ("monge-vet", "monge_vet_2025_01.json")):
+                      ("vetlife", "vetlife_2025_02.json"), ("monge", "monge_2026_07.json"),
+                      ("monge-vet", "monge_vet_2026_07.json")):
         for it in load(src):
             name = it["name"]
             add(lists[slug], item(slug, name, it["price_no_vat"], None, it.get("category"), food_topic(name),

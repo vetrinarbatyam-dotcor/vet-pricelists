@@ -1,0 +1,2404 @@
+{
+"meta": {
+"action": "ok",
+"action_note": "מעודכן.",
+"slug": "kong-shop",
+"type": "shop",
+"supplier": "קונג (Kong)",
+"price_list_date": "2026-08",
+"source_file": "sources/shop/kong-shop-2026-08.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 265,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "מחירון מלאי אוגוסט 2026 — צעצועים ואביזרים"
+},
+"items": [
+{
+"name": "קונג סקראטלס פנדה 2 במארז (CA122)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 31.0,
+"price_with_vat": 36.58,
+"sku": "376000590",
+"id": "kong-shop-1"
+},
+{
+"name": "קונג סקראטלס עוף 2 במארז (CA123)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 31.0,
+"price_with_vat": 36.58,
+"sku": "376000591",
+"id": "kong-shop-2"
+},
+{
+"name": "קונג גחלילית זוהרת (CT65)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "376000592",
+"id": "kong-shop-3"
+},
+{
+"name": "קונג כדורגל ספורטיבי גמיש מדיום (FLBS2)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 56.0,
+"price_with_vat": 66.08,
+"sku": "376000593",
+"id": "kong-shop-4"
+},
+{
+"name": "קונג כדורגל ספורטיבי גמיש לארג (FLBSX)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 93.0,
+"price_with_vat": 109.74,
+"sku": "376000594",
+"id": "kong-shop-5"
+},
+{
+"name": "קונג בובת קשרים תרנגולת (NKC1)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 56.0,
+"price_with_vat": 66.08,
+"sku": "376000595",
+"id": "kong-shop-6"
+},
+{
+"name": "קונג בובת קשרים תרנגולת קטנה (NKC3)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 38.0,
+"price_with_vat": 44.84,
+"sku": "376000596",
+"id": "kong-shop-7"
+},
+{
+"name": "קונג בובת קשרים תרנגולת אקסטרה (NKCX)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 83.0,
+"price_with_vat": 97.94,
+"sku": "376000597",
+"id": "kong-shop-8"
+},
+{
+"name": "קונג לקקן לכלבים אקסטרה (PLPX)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 49.0,
+"price_with_vat": 57.82,
+"sku": "376000598",
+"id": "kong-shop-9"
+},
+{
+"name": "קונג משחק עכבר לחתול (CA118)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 21.0,
+"price_with_vat": 24.78,
+"sku": "376000599",
+"id": "kong-shop-10"
+},
+{
+"name": "קונג ביצת קאטניפ 2 במארז (CA121)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 30.0,
+"price_with_vat": 35.4,
+"sku": "376000600",
+"id": "kong-shop-11"
+},
+{
+"name": "קונג משחק דרקון לחתול (CA92)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 26.0,
+"price_with_vat": 30.68,
+"sku": "376000601",
+"id": "kong-shop-12"
+},
+{
+"name": "קונג בובת נוייזי הבונה (NQ3)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 21.0,
+"price_with_vat": 24.78,
+"sku": "376000603",
+"id": "kong-shop-13"
+},
+{
+"name": "קונג בובת נוייזי הברווז (NY5)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 15.0,
+"price_with_vat": 17.7,
+"sku": "376000604",
+"id": "kong-shop-14"
+},
+{
+"name": "קונג בובת צפרדע מיני (SNZM51)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 26.0,
+"price_with_vat": 30.68,
+"sku": "376000605",
+"id": "kong-shop-15"
+},
+{
+"name": "קונג בובת מיני חזיר (SNZM52)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 26.0,
+"price_with_vat": 30.68,
+"sku": "376000606",
+"id": "kong-shop-16"
+},
+{
+"name": "קונג מקל משחק בטיחותי בינוני (PF2)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000017",
+"id": "kong-shop-17"
+},
+{
+"name": "קונג מקל משחק בטיחותי קטן (PF3)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 38.0,
+"price_with_vat": 44.84,
+"sku": "376000018",
+"id": "kong-shop-18"
+},
+{
+"name": "קונג כדור KB1) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 55.0,
+"price_with_vat": 64.9,
+"sku": "376000026",
+"id": "kong-shop-19"
+},
+{
+"name": "קונג S לגורים KP3",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000029",
+"id": "kong-shop-20"
+},
+{
+"name": "קונג כדור ספורט גדול ABS1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000041",
+"id": "kong-shop-21"
+},
+{
+"name": "קונג סקוויקר 3 כדורים AST3) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 19.0,
+"price_with_vat": 22.42,
+"sku": "376000054",
+"id": "kong-shop-22"
+},
+{
+"name": "קונג צעצוע צפרדע NK11) M/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 63.0,
+"price_with_vat": 74.34,
+"sku": "376000077",
+"id": "kong-shop-23"
+},
+{
+"name": "קונג צעצוע אייל (M/L NK14)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 63.0,
+"price_with_vat": 74.34,
+"sku": "376000083",
+"id": "kong-shop-24"
+},
+{
+"name": "קונג צווארון אליזבת רך EL2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"sku": "376000097",
+"id": "kong-shop-25"
+},
+{
+"name": "קונג צווארון אליזבת רך EL1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 124.0,
+"price_with_vat": 146.32,
+"sku": "376000098",
+"id": "kong-shop-26"
+},
+{
+"name": "קונג צלחת מעופפת KF15) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 54.0,
+"price_with_vat": 63.72,
+"sku": "376000100",
+"id": "kong-shop-27"
+},
+{
+"name": "קונג צעצוע ראקון לעיס עם קשר NKS12, L/M לכלב",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "376000135",
+"id": "kong-shop-28"
+},
+{
+"name": "קונג גירו SMALL, משחק לחטיפים, PGY3, לכלב",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000141",
+"id": "kong-shop-29"
+},
+{
+"name": "קונג צלחת מעופפת אקסטרים UF3) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 72.0,
+"price_with_vat": 84.96,
+"sku": "376000219",
+"id": "kong-shop-30"
+},
+{
+"name": "קונג צלחת מעופפת לגורים KP15) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 61.0,
+"price_with_vat": 71.98,
+"sku": "376000220",
+"id": "kong-shop-31"
+},
+{
+"name": "קונג מנשא לבקבוק LF13) L)",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 64.0,
+"price_with_vat": 75.52,
+"sku": "376000225",
+"id": "kong-shop-32"
+},
+{
+"name": "קונג קור כדור PFC13 L",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "376000283",
+"id": "kong-shop-33"
+},
+{
+"name": "קונג ווילד דוב פנים עם חבל NKR5) XS)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 28.0,
+"price_with_vat": 33.04,
+"sku": "376000314",
+"id": "kong-shop-34"
+},
+{
+"name": "קונג מגרש משחקים לחתול בונגלו (CA78)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"sku": "376000459",
+"id": "kong-shop-35"
+},
+{
+"name": "קונג סקוויז מקל דנטלי PST23) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 52.0,
+"price_with_vat": 61.36,
+"sku": "376000555",
+"id": "kong-shop-36"
+},
+{
+"name": "קונג משחק לחיץ אקשן אדום PSA23) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "376000558",
+"id": "kong-shop-37"
+},
+{
+"name": "קונג ווילד משחק ארנב WILS21) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 56.0,
+"price_with_vat": 66.08,
+"sku": "376000585",
+"id": "kong-shop-38"
+},
+{
+"name": "קונג ווילד משחק פסיון WILS24) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 56.0,
+"price_with_vat": 66.08,
+"sku": "376000588",
+"id": "kong-shop-39"
+},
+{
+"name": "קונג L לגורים KP1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000031",
+"id": "kong-shop-40"
+},
+{
+"name": "קונג L סניור KN1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000028",
+"id": "kong-shop-41"
+},
+{
+"name": "קונג M אקסטרים K2",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000015",
+"id": "kong-shop-42"
+},
+{
+"name": "קונג M לגורים KP2",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000030",
+"id": "kong-shop-43"
+},
+{
+"name": "קונג M לגורים מוצץ KP27",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 38.0,
+"price_with_vat": 44.84,
+"sku": "376000034",
+"id": "kong-shop-44"
+},
+{
+"name": "קונג M סניור KN2",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000027",
+"id": "kong-shop-45"
+},
+{
+"name": "קונג S לגורים מוצץ KP37",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000033",
+"id": "kong-shop-46"
+},
+{
+"name": "קונג XS לגורים KP4",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 26.0,
+"price_with_vat": 30.68,
+"sku": "376000032",
+"id": "kong-shop-47"
+},
+{
+"name": "קונג אבוקאטו משחק חתול וראנגלר (CA462)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 31.0,
+"price_with_vat": 36.58,
+"sku": "376000389",
+"id": "kong-shop-48"
+},
+{
+"name": "קונג אוגי מקל משחק פלסטי סללום SG1)LG)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 83.0,
+"price_with_vat": 97.94,
+"sku": "376000307",
+"id": "kong-shop-49"
+},
+{
+"name": "קונג אוגי מקל משחק פלסטי סללום SG2)MD)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 55.0,
+"price_with_vat": 64.9,
+"sku": "376000306",
+"id": "kong-shop-50"
+},
+{
+"name": "קונג אינפיוזר מכשיר מפיץ ריח קטניפ לחתול (CCN5)",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 43.0,
+"price_with_vat": 50.74,
+"sku": "376000412",
+"id": "kong-shop-51"
+},
+{
+"name": "קונג אקטיב חכה נחש בואה CT47",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 36.0,
+"price_with_vat": 42.48,
+"sku": "376000295",
+"id": "kong-shop-52"
+},
+{
+"name": "קונג אקטיב משחק עם מילוי לקטניפ 2 יח' (CA64)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 26.0,
+"price_with_vat": 30.68,
+"sku": "376000413",
+"id": "kong-shop-53"
+},
+{
+"name": "קונג אקסטרים K3) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000014",
+"id": "kong-shop-54"
+},
+{
+"name": "קונג אקסטרים UKK) XXL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 107.0,
+"price_with_vat": 126.26,
+"sku": "376000021",
+"id": "kong-shop-55"
+},
+{
+"name": "קונג אקסטרים גודי עצם L )10015)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 83.0,
+"price_with_vat": 97.94,
+"sku": "376000538",
+"id": "kong-shop-56"
+},
+{
+"name": "קונג אקסטרים חדש גודי ריבון EGS1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 94.0,
+"price_with_vat": 110.92,
+"sku": "376000335",
+"id": "kong-shop-57"
+},
+{
+"name": "קונג אקסטרים חדש גודי ריבון EGS2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 83.0,
+"price_with_vat": 97.94,
+"sku": "376000336",
+"id": "kong-shop-58"
+},
+{
+"name": "קונג אקסטרים חדש דנטל EK1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 88.0,
+"price_with_vat": 103.84,
+"sku": "376000339",
+"id": "kong-shop-59"
+},
+{
+"name": "קונג אקסטרים חדש דנטל עם חבל EK2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"sku": "376000338",
+"id": "kong-shop-60"
+},
+{
+"name": "קונג אקסטרים חדש טבעת EMX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 83.0,
+"price_with_vat": 97.94,
+"sku": "376000337",
+"id": "kong-shop-61"
+},
+{
+"name": "קונג אקסטרים חדש כדור עם חבל EB12) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 70.0,
+"price_with_vat": 82.6,
+"sku": "376000334",
+"id": "kong-shop-62"
+},
+{
+"name": "קונג בובת וובה וחברים WFX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 76.0,
+"price_with_vat": 89.68,
+"sku": "376000241",
+"id": "kong-shop-63"
+},
+{
+"name": "קונג בובת וובה לגורים (WP3)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000047",
+"id": "kong-shop-64"
+},
+{
+"name": "קונג בובת וובה מגה (WBM)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 162.0,
+"price_with_vat": 191.16,
+"sku": "376000238",
+"id": "kong-shop-65"
+},
+{
+"name": "קונג בובת שייקר דרקון גדול SKR11",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 80.0,
+"price_with_vat": 94.4,
+"sku": "376000166",
+"id": "kong-shop-66"
+},
+{
+"name": "קונג ביזלס משחק מקל BZS2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 52.0,
+"price_with_vat": 61.36,
+"sku": "376000406",
+"id": "kong-shop-67"
+},
+{
+"name": "קונג ביזלס משחק עצם BZN2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 52.0,
+"price_with_vat": 61.36,
+"sku": "376000407",
+"id": "kong-shop-68"
+},
+{
+"name": "קונג ג'אמפן ג'אק משחק חטיפים כלב KJ1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 80.0,
+"price_with_vat": 94.4,
+"sku": "376000510",
+"id": "kong-shop-69"
+},
+{
+"name": "קונג ג'אמפן ג'אק משחק חטיפים כלב KJ2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 65.0,
+"price_with_vat": 76.7,
+"sku": "376000511",
+"id": "kong-shop-70"
+},
+{
+"name": "קונג גאקס משחק כדור וחבל 4 קשרים PJB22) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000464",
+"id": "kong-shop-71"
+},
+{
+"name": "קונג גאקס משחק משיכה עם כדור PJB23) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000463",
+"id": "kong-shop-72"
+},
+{
+"name": "קונג גודי עצם לכלב KB31) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 42.0,
+"price_with_vat": 49.56,
+"sku": "376000537",
+"id": "kong-shop-73"
+},
+{
+"name": "קונג גודי ריבון TGS1) LG)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 88.0,
+"price_with_vat": 103.84,
+"sku": "376000332",
+"id": "kong-shop-74"
+},
+{
+"name": "קונג גמבלר משחק צבעוני TRI וכדור TMT1) XL/L) ***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 86.0,
+"price_with_vat": 101.48,
+"sku": "376000457",
+"id": "kong-shop-75"
+},
+{
+"name": "קונג גמבלר משחק צבעוני בייסבול וכדור TMF1) XL/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 89.0,
+"price_with_vat": 105.02,
+"sku": "376000455",
+"id": "kong-shop-76"
+},
+{
+"name": "קונג גמבלר משחק צבעוני בייסבול וכדור TMF2) M/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 67.0,
+"price_with_vat": 79.06,
+"sku": "376000454",
+"id": "kong-shop-77"
+},
+{
+"name": "קונג גמבלר משחק צבעוני דיסקוס וכדור TMD1) LXL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 89.0,
+"price_with_vat": 105.02,
+"sku": "376000453",
+"id": "kong-shop-78"
+},
+{
+"name": "קונג גמבלר משחק צבעוני כדור עם כדור TMB1) XL/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 89.0,
+"price_with_vat": 105.02,
+"sku": "376000451",
+"id": "kong-shop-79"
+},
+{
+"name": "קונג גמבלר משחק צבעוני כדור עם כדור TMB2) M/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 67.0,
+"price_with_vat": 79.06,
+"sku": "376000450",
+"id": "kong-shop-80"
+},
+{
+"name": "קונג וובה WBX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 63.0,
+"price_with_vat": 74.34,
+"sku": "376000052",
+"id": "kong-shop-81"
+},
+{
+"name": "קונג וובה WB1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 50.0,
+"price_with_vat": 59.0,
+"sku": "376000051",
+"id": "kong-shop-82"
+},
+{
+"name": "קונג וובה WB3) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000050",
+"id": "kong-shop-83"
+},
+{
+"name": "קונג וובה בליסטי חברים מגוון WBF1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000566",
+"id": "kong-shop-84"
+},
+{
+"name": "קונג וובה בליסטי חברים מגוון WBF3) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "376000565",
+"id": "kong-shop-85"
+},
+{
+"name": "קונג וובה בליסטי חברים מגוון WBFX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "376000567",
+"id": "kong-shop-86"
+},
+{
+"name": "קונג וובה וחברים WF1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000240",
+"id": "kong-shop-87"
+},
+{
+"name": "קונג וובה מובחר WBTCX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 72.0,
+"price_with_vat": 84.96,
+"sku": "376000215",
+"id": "kong-shop-88"
+},
+{
+"name": "קונג וובה משחק חתול קטיקורן (WC65)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000479",
+"id": "kong-shop-89"
+},
+{
+"name": "קונג ווילד דוב פנים עם חבל NKR1) M/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 65.0,
+"price_with_vat": 76.7,
+"sku": "376000316",
+"id": "kong-shop-90"
+},
+{
+"name": "קונג ווילד דוב פנים עם חבל NKRX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 78.0,
+"price_with_vat": 92.04,
+"sku": "376000317",
+"id": "kong-shop-91"
+},
+{
+"name": "קונג וויפלס משחק לכלב פרצופים צבעוני WHSX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 73.0,
+"price_with_vat": 86.14,
+"sku": "376000572",
+"id": "kong-shop-92"
+},
+{
+"name": "קונג חכה גחלילית זוהרת לחתול (CAT62)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 36.0,
+"price_with_vat": 42.48,
+"sku": "376000573",
+"id": "kong-shop-93"
+},
+{
+"name": "קונג חתול אקטיב משחק מסלול צורת CA42) 8)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 92.0,
+"price_with_vat": 108.56,
+"sku": "376000517",
+"id": "kong-shop-94"
+},
+{
+"name": "קונג חתול משחק מחבואים חצי כדורי עם נוצות (CA48)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 117.0,
+"price_with_vat": 138.06,
+"sku": "376000518",
+"id": "kong-shop-95"
+},
+{
+"name": "קונג טיזר לחתול חכת מדוזה (CAT63)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 30.0,
+"price_with_vat": 35.4,
+"sku": "376000534",
+"id": "kong-shop-96"
+},
+{
+"name": "קונג טיקי מגרש משחקים לחתול (CA95)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 113.0,
+"price_with_vat": 133.34,
+"sku": "376000578",
+"id": "kong-shop-97"
+},
+{
+"name": "קונג כדור KB2) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 35.0,
+"price_with_vat": 41.3,
+"sku": "376000025",
+"id": "kong-shop-98"
+},
+{
+"name": "קונג כדור אקסטרים UB2) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000210",
+"id": "kong-shop-99"
+},
+{
+"name": "קונג כדור משחק כלב גאודז צבעוני * 2 יח' (PSZ1)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "376000365",
+"id": "kong-shop-100"
+},
+{
+"name": "קונג כדור משחק לחיץ PSB1) L) לכלב",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 29.0,
+"price_with_vat": 34.22,
+"sku": "376000138",
+"id": "kong-shop-101"
+},
+{
+"name": "קונג כדור משחק לחיץ PSB2, M לכלב",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 23.0,
+"price_with_vat": 27.14,
+"sku": "376000137",
+"id": "kong-shop-102"
+},
+{
+"name": "קונג כדור סיגנאצור 2 יח' L גדול SKB1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 55.0,
+"price_with_vat": 64.9,
+"sku": "376000278",
+"id": "kong-shop-103"
+},
+{
+"name": "קונג כדור סיגנאצור 2 יח' M בינוני SKB2",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000277",
+"id": "kong-shop-104"
+},
+{
+"name": "קונג כדור ספורט בינוני ABS2",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 28.0,
+"price_with_vat": 33.04,
+"sku": "376000040",
+"id": "kong-shop-105"
+},
+{
+"name": "קונג לגורים עצם גודי KP51) XS)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 29.0,
+"price_with_vat": 34.22,
+"sku": "376000221",
+"id": "kong-shop-106"
+},
+{
+"name": "קונג לחיות קטנות ותוכים FK3 S",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 38.0,
+"price_with_vat": 44.84,
+"sku": "376000349",
+"id": "kong-shop-107"
+},
+{
+"name": "קונג לכלב כדור עם חבל KB21) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 58.0,
+"price_with_vat": 68.44,
+"sku": "376000536",
+"id": "kong-shop-108"
+},
+{
+"name": "קונג מברשת גומי זוםגרום L צבע פטל ZG1",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 50.0,
+"price_with_vat": 59.0,
+"sku": "376000345",
+"id": "kong-shop-109"
+},
+{
+"name": "קונג מברשת גומי זוםגרום L צבע תכלת ZG2",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 50.0,
+"price_with_vat": 59.0,
+"sku": "376000346",
+"id": "kong-shop-110"
+},
+{
+"name": "קונג מברשת גומי זוםגרום S צבע תכלת ZG21",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 35.0,
+"price_with_vat": 41.3,
+"sku": "376000348",
+"id": "kong-shop-111"
+},
+{
+"name": "קונג מברשת גומי זוםגרום לחתול (CZG)",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "376000448",
+"id": "kong-shop-112"
+},
+{
+"name": "קונג משחק אינטראקטיבי חתול פיקניק וחטיפים (CA98)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 52.0,
+"price_with_vat": 61.36,
+"sku": "376000571",
+"id": "kong-shop-113"
+},
+{
+"name": "קונג משחק חטיפים במבוק כדור PTB21) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 62.0,
+"price_with_vat": 73.16,
+"sku": "376000395",
+"id": "kong-shop-114"
+},
+{
+"name": "קונג משחק חטיפים ריוורד וולי PEPW2 L/M",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 63.0,
+"price_with_vat": 74.34,
+"sku": "376000422",
+"id": "kong-shop-115"
+},
+{
+"name": "קונג משחק חיות קשר חבל NKW11 M/L",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 60.0,
+"price_with_vat": 70.8,
+"sku": "376000504",
+"id": "kong-shop-116"
+},
+{
+"name": "קונג משחק חתול בובת וובה עכבר (WC55)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 32.0,
+"price_with_vat": 37.76,
+"sku": "376000243",
+"id": "kong-shop-117"
+},
+{
+"name": "קונג משחק חתול בטר בוז בננה (CA454)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 24.0,
+"price_with_vat": 28.32,
+"sku": "376000331",
+"id": "kong-shop-118"
+},
+{
+"name": "קונג משחק חתול בטר שמיכה CRCL46",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 30.0,
+"price_with_vat": 35.4,
+"sku": "376000421",
+"id": "kong-shop-119"
+},
+{
+"name": "קונג משחק חתול חכה עם ציפור ונוצות (CAT41)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 27.0,
+"price_with_vat": 31.86,
+"sku": "376000371",
+"id": "kong-shop-120"
+},
+{
+"name": "קונג משחק חתול חכת ציפור (NZ1)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 38.0,
+"price_with_vat": 44.84,
+"sku": "376000002",
+"id": "kong-shop-121"
+},
+{
+"name": "קונג משחק חתול נדנדה CA425) Sway'n Play)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 73.0,
+"price_with_vat": 86.14,
+"sku": "376000323",
+"id": "kong-shop-122"
+},
+{
+"name": "קונג משחק חתול פורסוט אינטראקטיבי (CA455)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 80.0,
+"price_with_vat": 94.4,
+"sku": "376000305",
+"id": "kong-shop-123"
+},
+{
+"name": "קונג משחק לכלב ברז כיבוי PEN12) L)***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 60.0,
+"price_with_vat": 70.8,
+"sku": "376000442",
+"id": "kong-shop-124"
+},
+{
+"name": "קונג משחק מקל לחיץ PSS1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 79.0,
+"price_with_vat": 93.22,
+"sku": "376000194",
+"id": "kong-shop-125"
+},
+{
+"name": "קונג משחק פיצוח לחיץ PCS1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "376000192",
+"id": "kong-shop-126"
+},
+{
+"name": "קונג משחק פיצוח לחיץ PCS2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 58.0,
+"price_with_vat": 68.44,
+"sku": "376000191",
+"id": "kong-shop-127"
+},
+{
+"name": "קונג משיכה KG1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 65.0,
+"price_with_vat": 76.7,
+"sku": "376000084",
+"id": "kong-shop-128"
+},
+{
+"name": "קונג משקולת סקוויקר לארג ASDB1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 58.0,
+"price_with_vat": 68.44,
+"sku": "376000066",
+"id": "kong-shop-129"
+},
+{
+"name": "קונג נחום תקום Webbler גדול (L (PW1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"sku": "376000103",
+"id": "kong-shop-130"
+},
+{
+"name": "קונג סטאף א בול לחטיפים KS1) L)***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "376000508",
+"id": "kong-shop-131"
+},
+{
+"name": "קונג סיגנאצור ידית זריקה לקונג SKF2) M/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 36.0,
+"price_with_vat": 42.48,
+"sku": "376000577",
+"id": "kong-shop-132"
+},
+{
+"name": "קונג סיגנאצור מקל סטיק SKS2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000550",
+"id": "kong-shop-133"
+},
+{
+"name": "קונג סיגנאצור מקל סטיק עם SKSX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 67.0,
+"price_with_vat": 79.06,
+"sku": "376000552",
+"id": "kong-shop-134"
+},
+{
+"name": "קונג סיגנאצור מקל סטיק עם חבל SKSR2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 44.0,
+"price_with_vat": 51.92,
+"sku": "376000551",
+"id": "kong-shop-135"
+},
+{
+"name": "קונג סיגנצור חבל מגה 1 מ' קשר כפול (SKT15)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 67.0,
+"price_with_vat": 79.06,
+"sku": "376000400",
+"id": "kong-shop-136"
+},
+{
+"name": "קונג סיגנצור משחק 2 טבעות (SKT11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 62.0,
+"price_with_vat": 73.16,
+"sku": "376000404",
+"id": "kong-shop-137"
+},
+{
+"name": "קונג סיגנצור משחק חבל 50 ס\"מ קשר כפול (SKT13)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 35.0,
+"price_with_vat": 41.3,
+"sku": "376000402",
+"id": "kong-shop-138"
+},
+{
+"name": "קונג סיגנצור משחק חבל 55 ס\"מ טבעת בקצה (SKT12)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 82.0,
+"price_with_vat": 96.76,
+"sku": "376000403",
+"id": "kong-shop-139"
+},
+{
+"name": "קונג סיגנצור משחק חבל עם כדור קשר כפול (SKT14)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 52.0,
+"price_with_vat": 61.36,
+"sku": "376000401",
+"id": "kong-shop-140"
+},
+{
+"name": "קונג סיגנצור קראנץ *SKK11 L 3",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 60.0,
+"price_with_vat": 70.8,
+"sku": "376000497",
+"id": "kong-shop-141"
+},
+{
+"name": "קונג סיגנצור קראנץ חבל כפול SKK21 M",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 48.0,
+"price_with_vat": 56.64,
+"sku": "376000496",
+"id": "kong-shop-142"
+},
+{
+"name": "קונג סיגנצור קראנץ חבל כפול לגור SKK22 M/L",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 48.0,
+"price_with_vat": 56.64,
+"sku": "376000495",
+"id": "kong-shop-143"
+},
+{
+"name": "קונג סיגנצור קראנץ חבל לגור SKK32 S/M",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 30.0,
+"price_with_vat": 35.4,
+"sku": "376000493",
+"id": "kong-shop-144"
+},
+{
+"name": "קונג ספין איט לחטיפים L לארג PTS1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 67.0,
+"price_with_vat": 79.06,
+"sku": "376000264",
+"id": "kong-shop-145"
+},
+{
+"name": "קונג סקוויז גומי בייבסול ירוק PSG11) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 60.0,
+"price_with_vat": 70.8,
+"sku": "376000377",
+"id": "kong-shop-146"
+},
+{
+"name": "קונג סקוויז גומי כדור ירוק PSG12) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 35.0,
+"price_with_vat": 41.3,
+"sku": "376000376",
+"id": "kong-shop-147"
+},
+{
+"name": "קונג סקוויז כדור דנטלי PST21) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000557",
+"id": "kong-shop-148"
+},
+{
+"name": "קונג סקוויז מצוף טניס עם חבל PCT14 L ***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000484",
+"id": "kong-shop-149"
+},
+{
+"name": "קונג סקוויז מקל טניס PCT13 L ***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000483",
+"id": "kong-shop-150"
+},
+{
+"name": "קונג סקוויז מקל טניס PCT23 M ***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 34.0,
+"price_with_vat": 40.12,
+"sku": "376000481",
+"id": "kong-shop-151"
+},
+{
+"name": "קונג סקוויז עצם דנטלי PST22) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000556",
+"id": "kong-shop-152"
+},
+{
+"name": "קונג סקוויקר 6 כדורים AST22) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000554",
+"id": "kong-shop-153"
+},
+{
+"name": "קונג סקוויקר AST5) XS)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 19.0,
+"price_with_vat": 22.42,
+"sku": "376000233",
+"id": "kong-shop-154"
+},
+{
+"name": "קונג סקוויקר M עצם (ASB2)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000059",
+"id": "kong-shop-155"
+},
+{
+"name": "קונג סקוויקר S עצם (ASB3)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000058",
+"id": "kong-shop-156"
+},
+{
+"name": "קונג סקוויקר כדורים AST1B) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 12.0,
+"price_with_vat": 14.16,
+"sku": "376000057",
+"id": "kong-shop-157"
+},
+{
+"name": "קונג סקוויקר כדורים AST2B) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 8.0,
+"price_with_vat": 9.44,
+"sku": "376000056",
+"id": "kong-shop-158"
+},
+{
+"name": "קונג סקוויקר משקולות מדיום ASDB2",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000065",
+"id": "kong-shop-159"
+},
+{
+"name": "קונג סקוויקר משקולת ASDB3) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 28.0,
+"price_with_vat": 33.04,
+"sku": "376000064",
+"id": "kong-shop-160"
+},
+{
+"name": "קונג סקוויקר עצם ASB1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000060",
+"id": "kong-shop-161"
+},
+{
+"name": "קונג סקוויקר פוטבול ASFB1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000000",
+"id": "kong-shop-162"
+},
+{
+"name": "קונג סקויקטיקס ויגלרז משחק מקל PSXW1) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000473",
+"id": "kong-shop-163"
+},
+{
+"name": "קונג סקויקטיקס ויגלרז משחק מקל PSXW2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000472",
+"id": "kong-shop-164"
+},
+{
+"name": "קונג סקרצר טבעי סינגל (CS1)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 31.0,
+"price_with_vat": 36.58,
+"sku": "376000460",
+"id": "kong-shop-165"
+},
+{
+"name": "קונג עצם 'גודי' אקסטרים (10012)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000106",
+"id": "kong-shop-166"
+},
+{
+"name": "קונג עצם +חבל KR1) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 65.0,
+"price_with_vat": 76.7,
+"sku": "376000105",
+"id": "kong-shop-167"
+},
+{
+"name": "קונג פאזל מחבוא משחק לחתול (CPZ5)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000440",
+"id": "kong-shop-168"
+},
+{
+"name": "קונג פול, משטח משחק 3 חלקים לחתול חרקים (CPP5)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 60.0,
+"price_with_vat": 70.8,
+"sku": "376000310",
+"id": "kong-shop-169"
+},
+{
+"name": "קונג פוריטו משחק חתול חלקים (CPP6)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 31.0,
+"price_with_vat": 36.58,
+"sku": "376000388",
+"id": "kong-shop-170"
+},
+{
+"name": "קונג פליינגל משחק לכלב L כתום ותכלת (FA11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 63.0,
+"price_with_vat": 74.34,
+"sku": "376000427",
+"id": "kong-shop-171"
+},
+{
+"name": "קונג צוארון אליזבט רך EZ3) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "376000094",
+"id": "kong-shop-172"
+},
+{
+"name": "קונג צוארון אליזבט רך EZ5) XS)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 39.0,
+"price_with_vat": 46.02,
+"sku": "376000093",
+"id": "kong-shop-173"
+},
+{
+"name": "קונג צווארון אליזבת ELX) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 136.0,
+"price_with_vat": 160.48,
+"sku": "376000099",
+"id": "kong-shop-174"
+},
+{
+"name": "קונג צווארון אליזבת רך EL3) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 76.0,
+"price_with_vat": 89.68,
+"sku": "376000096",
+"id": "kong-shop-175"
+},
+{
+"name": "קונג צווארון אליזבת רך EL5) XS)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 56.0,
+"price_with_vat": 66.08,
+"sku": "376000095",
+"id": "kong-shop-176"
+},
+{
+"name": "קונג צוסטיק אולטרא מקל PSW12) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 62.0,
+"price_with_vat": 73.16,
+"sku": "376000393",
+"id": "kong-shop-177"
+},
+{
+"name": "קונג צוסטיק עצם ירך קשיח PSW14) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 63.0,
+"price_with_vat": 74.34,
+"sku": "376000425",
+"id": "kong-shop-178"
+},
+{
+"name": "קונג צלחת מעופפת KF3) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000101",
+"id": "kong-shop-179"
+},
+{
+"name": "קונג צמיג אקסטרים KT11) M/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 76.0,
+"price_with_vat": 89.68,
+"sku": "376000218",
+"id": "kong-shop-180"
+},
+{
+"name": "קונג צמיג לגורים KPT11) M/L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 67.0,
+"price_with_vat": 79.06,
+"sku": "376000223",
+"id": "kong-shop-181"
+},
+{
+"name": "קונג צמיג לגורים KPT21) S)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 52.0,
+"price_with_vat": 61.36,
+"sku": "376000224",
+"id": "kong-shop-182"
+},
+{
+"name": "קונג צעצוע אקווה CK1 L",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 73.0,
+"price_with_vat": 86.14,
+"sku": "376000045",
+"id": "kong-shop-183"
+},
+{
+"name": "קונג צעצוע אקווה CK2 M",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000044",
+"id": "kong-shop-184"
+},
+{
+"name": "קונג צעצוע דנטלי DK1 L",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 85.0,
+"price_with_vat": 100.3,
+"sku": "376000043",
+"id": "kong-shop-185"
+},
+{
+"name": "קונג צעצוע סנאי לעיס עם קשר NKS33, M/S לכלב",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000133",
+"id": "kong-shop-186"
+},
+{
+"name": "קונג קוזי לכלב מרווין ענק ZYJX2) XL)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 99.0,
+"price_with_vat": 116.82,
+"sku": "376000533",
+"id": "kong-shop-187"
+},
+{
+"name": "קונג קומפורט לכלב בובת קיפוד רכה RCD12) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 43.0,
+"price_with_vat": 50.74,
+"sku": "376000524",
+"id": "kong-shop-188"
+},
+{
+"name": "קונג קונקטס קיטי קומבר, הברשה עצמית לחתול CT51",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000275",
+"id": "kong-shop-189"
+},
+{
+"name": "קונג קור מקל PFC12 M/L",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 55.0,
+"price_with_vat": 64.9,
+"sku": "376000281",
+"id": "kong-shop-190"
+},
+{
+"name": "קונג קור עצם PFC11 L/M",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 55.0,
+"price_with_vat": 64.9,
+"sku": "376000279",
+"id": "kong-shop-191"
+},
+{
+"name": "קונג קור עצם PFC31 M/S",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 36.0,
+"price_with_vat": 42.48,
+"sku": "376000280",
+"id": "kong-shop-192"
+},
+{
+"name": "קונג קטבאנה מגרש משחקים לחתול מרהיב (CA91)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 165.0,
+"price_with_vat": 194.7,
+"sku": "376000470",
+"id": "kong-shop-193"
+},
+{
+"name": "קונג קיוטסיז לוויתן RL15) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 52.0,
+"price_with_vat": 61.36,
+"sku": "376000548",
+"id": "kong-shop-194"
+},
+{
+"name": "קונג קיוטסיז משחק כלב כריש RLR11) MD/LG)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "376000580",
+"id": "kong-shop-195"
+},
+{
+"name": "קונג קיוטסיז תמנון RL13) L)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 52.0,
+"price_with_vat": 61.36,
+"sku": "376000546",
+"id": "kong-shop-196"
+},
+{
+"name": "קונג קיטי (סגול) לחתולים C4",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 25.0,
+"price_with_vat": 29.5,
+"sku": "376000367",
+"id": "kong-shop-197"
+},
+{
+"name": "קונג קלאסי XXL KK",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 101.0,
+"price_with_vat": 119.18,
+"sku": "376000012",
+"id": "kong-shop-198"
+},
+{
+"name": "קונג קלאסי L T1",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "376000010",
+"id": "kong-shop-199"
+},
+{
+"name": "קונג קלאסי M T2",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 50.0,
+"price_with_vat": 59.0,
+"sku": "376000009",
+"id": "kong-shop-200"
+},
+{
+"name": "קונג קלאסי XS T4",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 28.0,
+"price_with_vat": 33.04,
+"sku": "376000013",
+"id": "kong-shop-201"
+},
+{
+"name": "קונג ראפז כדור משחק PWZ11) L) ***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 51.0,
+"price_with_vat": 60.18,
+"sku": "376000304",
+"id": "kong-shop-202"
+},
+{
+"name": "קונג ראפז עצם משחק PWZ12) L)***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 51.0,
+"price_with_vat": 60.18,
+"sku": "376000303",
+"id": "kong-shop-203"
+},
+{
+"name": "קונג ריראן לכלב ווש כדורי PRW11) MD/LG)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000529",
+"id": "kong-shop-204"
+},
+{
+"name": "קונג ריראן לכלב ווש כדורי PRW31) SM/MD)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000531",
+"id": "kong-shop-205"
+},
+{
+"name": "קונג ריראן לכלב ווש עצם PRW12) MD/LG)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000530",
+"id": "kong-shop-206"
+},
+{
+"name": "קונג שילדז טרופיק משחק לכלב צפרדע RST21) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 62.0,
+"price_with_vat": 73.16,
+"sku": "376000439",
+"id": "kong-shop-207"
+},
+{
+"name": "קונג שילדז מקל אימון צף כתום לבן RSWD31) S/M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 73.0,
+"price_with_vat": 86.14,
+"sku": "376000570",
+"id": "kong-shop-208"
+},
+{
+"name": "ונג שילדז מקל אימון צף מפותל שלל צבעים RSWD33) S/M",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 73.0,
+"price_with_vat": 86.14,
+"sku": "376000584",
+"id": "kong-shop-209"
+},
+{
+"name": "קונג תנין קוזי ZY2) M)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 43.0,
+"price_with_vat": 50.74,
+"sku": "376000227",
+"id": "kong-shop-210"
+},
+{
+"name": "קונג מתקן פיל לחטיפים )M (PEPZ21",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 58.0,
+"price_with_vat": 68.44,
+"sku": "376000608",
+"id": "kong-shop-211"
+},
+{
+"name": "קונג מתקן אריה לחטיפים )M (PEPZ22",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 58.0,
+"price_with_vat": 68.44,
+"sku": "376000609",
+"id": "kong-shop-212"
+},
+{
+"name": "קונג מתקן קוף לחטיפים )M (PEPZ23",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 58.0,
+"price_with_vat": 68.44,
+"sku": "376000610",
+"id": "kong-shop-213"
+},
+{
+"name": "קונג חתול וובה פרפר (WC66)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 43.0,
+"price_with_vat": 50.74,
+"sku": "376000611",
+"id": "kong-shop-214"
+},
+{
+"name": "קונג ווירלס (M (WHZ11",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 66.0,
+"price_with_vat": 77.88,
+"sku": "376000612",
+"id": "kong-shop-215"
+},
+{
+"name": "קונג ווירלס חבל WHZ12) M(",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 66.0,
+"price_with_vat": 77.88,
+"sku": "376000613",
+"id": "kong-shop-216"
+},
+{
+"name": "קונג דיספליי בובות פרות 12 במארז (521PDQ164)",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 179.0,
+"price_with_vat": 211.22,
+"sku": "376000614",
+"id": "kong-shop-217"
+},
+{
+"name": "קונג כדורים גדולים רכים 2 במארז (ABSS1)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 42.0,
+"price_with_vat": 49.56,
+"sku": "376000615",
+"id": "kong-shop-218"
+},
+{
+"name": "קונג כדורים בינוניים רכים 3 במארז (ABSS2)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 39.0,
+"price_with_vat": 46.02,
+"sku": "376000616",
+"id": "kong-shop-219"
+},
+{
+"name": "קונג כדור סקוויז כדור גמיש (PCF21)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000618",
+"id": "kong-shop-220"
+},
+{
+"name": "קונג וואראפז משחק האכלה (PEPR1)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 67.0,
+"price_with_vat": 79.06,
+"sku": "376000621",
+"id": "kong-shop-221"
+},
+{
+"name": "קונג משחק רינגארו פיל מדיום (RGR21)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000622",
+"id": "kong-shop-222"
+},
+{
+"name": "קונג גרינז צפרדע גדולה (RZGRC11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 45.0,
+"price_with_vat": 53.1,
+"sku": "376000624",
+"id": "kong-shop-223"
+},
+{
+"name": "קונג גרינז דג בינוני (RZGRC21)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000625",
+"id": "kong-shop-224"
+},
+{
+"name": "קונג גרינז צפרדע בינונית (RZGRC22)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000626",
+"id": "kong-shop-225"
+},
+{
+"name": "קונג גרינז דג קטן (RZGRC31)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 25.0,
+"price_with_vat": 29.5,
+"sku": "376000627",
+"id": "kong-shop-226"
+},
+{
+"name": "קונג בובת מיני ברווז (SNZM53)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 30.0,
+"price_with_vat": 35.4,
+"sku": "376000607",
+"id": "kong-shop-227"
+},
+{
+"name": "קונג עצם סקוויזית מדיום (PCF22)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000619",
+"id": "kong-shop-228"
+},
+{
+"name": "קונג משחק רינגארו חזיר בינוני מדיום (RGR22)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000623",
+"id": "kong-shop-229"
+},
+{
+"name": "קונג שילדז מקל אימון צף כתום לבן RSWD11) M/L)***",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 91.0,
+"price_with_vat": 107.38,
+"sku": "376000569",
+"id": "kong-shop-230"
+},
+{
+"name": "קונג בנדיז פיל גדול (BCR11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000628",
+"id": "kong-shop-231"
+},
+{
+"name": "קונג בנדיז ציפור גדולה (BCR2)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000629",
+"id": "kong-shop-232"
+},
+{
+"name": "קונג בנדיז חילזון גדול (BCR13",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "376000630",
+"id": "kong-shop-233"
+},
+{
+"name": "קונג חכת חברות לחתול (CAT67)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "376000631",
+"id": "kong-shop-234"
+},
+{
+"name": "קונג קופסאת סרדינים (CRCL54)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 26.0,
+"price_with_vat": 30.68,
+"sku": "376000632",
+"id": "kong-shop-235"
+},
+{
+"name": "קונג קשרים קוף גדול (NKMX11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 72.0,
+"price_with_vat": 84.96,
+"sku": "376000633",
+"id": "kong-shop-236"
+},
+{
+"name": "קונג בריכת משחקים (CA125)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 64.0,
+"price_with_vat": 75.52,
+"sku": "376000635",
+"id": "kong-shop-237"
+},
+{
+"name": "קונג קשרים שועל אקסטרה סמול (NKF51)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 25.0,
+"price_with_vat": 29.5,
+"sku": "376000636",
+"id": "kong-shop-238"
+},
+{
+"name": "קונג קשרים היפו אקסטרה סמול (NKF52)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 25.0,
+"price_with_vat": 29.5,
+"sku": "376000637",
+"id": "kong-shop-239"
+},
+{
+"name": "קונג גומז עצם דנטלית מדיום/לארג (PFD11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 38.0,
+"price_with_vat": 44.84,
+"sku": "376000638",
+"id": "kong-shop-240"
+},
+{
+"name": "קונג גומז כדורגל דנטלי מדיום/לארג (PFD21)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 39.0,
+"price_with_vat": 46.02,
+"sku": "376000639",
+"id": "kong-shop-241"
+},
+{
+"name": "קונג גומז כדור דנטלי אקסטקה סמול/סמול (PFD51)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 26.0,
+"price_with_vat": 30.68,
+"sku": "376000641",
+"id": "kong-shop-242"
+},
+{
+"name": "קונג מקל מצפצף לארג (PSXZ11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000642",
+"id": "kong-shop-243"
+},
+{
+"name": "קונג מקל מצפצף מדיום (PSXZ12)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000643",
+"id": "kong-shop-244"
+},
+{
+"name": "קונג כוכב מצפצף לארג (PSXZ21)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000644",
+"id": "kong-shop-245"
+},
+{
+"name": "קונג כוכב מצפצף מדיום (PSXZ22)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000645",
+"id": "kong-shop-246"
+},
+{
+"name": "קונג גלגל מצפצף לארג (PSXZ31)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "376000646",
+"id": "kong-shop-247"
+},
+{
+"name": "קונג גלגל מצפצף מדיום (PSXZ32)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000647",
+"id": "kong-shop-248"
+},
+{
+"name": "קונג כדור רישתי מרשרש 2 יחידות (CRCL55)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 16.0,
+"price_with_vat": 18.88,
+"sku": "376000648",
+"id": "kong-shop-249"
+},
+{
+"name": "קונג כדור אימון בינוני/גדול (CRT21)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 38.0,
+"price_with_vat": 44.84,
+"sku": "376000649",
+"id": "kong-shop-250"
+},
+{
+"name": "קונג דאמבל אימון בינוני/גדול (CRT22)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 48.0,
+"price_with_vat": 56.64,
+"sku": "376000651",
+"id": "kong-shop-251"
+},
+{
+"name": "קונג חישוק אימון בינוני/גדול (CRT23)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 51.0,
+"price_with_vat": 60.18,
+"sku": "376000650",
+"id": "kong-shop-252"
+},
+{
+"name": "קונג סטיק אימון בינוני/גדול (CRT24)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 48.0,
+"price_with_vat": 56.64,
+"sku": "376000652",
+"id": "kong-shop-253"
+},
+{
+"name": "קונג סטיק מתגלגל בינוני/גדול (PEPU1)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 41.0,
+"price_with_vat": 48.38,
+"sku": "376000653",
+"id": "kong-shop-254"
+},
+{
+"name": "קונג כדור מתגלגל בינוני/גדול (PEPU2)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 32.0,
+"price_with_vat": 37.76,
+"sku": "376000654",
+"id": "kong-shop-255"
+},
+{
+"name": "קונג צפרדע טרופית בינוני/גדול (RTR11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 41.0,
+"price_with_vat": 48.38,
+"sku": "376000655",
+"id": "kong-shop-256"
+},
+{
+"name": "קונג איגואנה טרופית בינוני/גדול (RTR12)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 41.0,
+"price_with_vat": 48.38,
+"sku": "376000656",
+"id": "kong-shop-257"
+},
+{
+"name": "קונג חילזון טרופית בינוני/גדול (RTR13)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 41.0,
+"price_with_vat": 48.38,
+"sku": "376000657",
+"id": "kong-shop-258"
+},
+{
+"name": "קונג לגורים עצם גודי בינוני (KP21)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 45.0,
+"price_with_vat": 53.1,
+"sku": "376000658",
+"id": "kong-shop-259"
+},
+{
+"name": "קונג ממותה קשוחה בינוני (TGZ25)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000659",
+"id": "kong-shop-260"
+},
+{
+"name": "קונג פרת הרים קשוחה בינוני (TGZ26)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000660",
+"id": "kong-shop-261"
+},
+{
+"name": "קונג דודו קשוח בינוני (TGZ27)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "376000661",
+"id": "kong-shop-262"
+},
+{
+"name": "קונג וובה כדורסל לארג (WSB11)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000662",
+"id": "kong-shop-263"
+},
+{
+"name": "קונג וובה פוטבול לארג (WSB12)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 47.0,
+"price_with_vat": 55.46,
+"sku": "376000663",
+"id": "kong-shop-264"
+},
+{
+"name": "קונג וובה סופטבול קטן (WSB31)",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "376000664",
+"id": "kong-shop-265"
+}
+]
+}

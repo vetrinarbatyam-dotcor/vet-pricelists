@@ -1,18 +1,18 @@
 {
 "meta": {
-"action": "refresh",
-"action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
+"action": "ok",
+"action_note": "מעודכן.",
 "slug": "monge-vet",
 "type": "food",
 "supplier": "Monge Vet Solution",
-"price_list_date": "2025-01",
-"source_file": "sources/food/monge-vet-2025-01.pdf",
+"price_list_date": "2026-07",
+"source_file": "sources/food/monge-vet-2026-07.pdf",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 25,
-"status": "stale",
+"item_count": 41,
+"status": "current",
 "imported_at": "2026-08-26",
-"notes": "מחירון ינואר 2025"
+"notes": "מחירון יולי 2026 — יבש + רטוב"
 },
 "items": [
 {
@@ -264,6 +264,161 @@
 "sku": "29000183",
 "animal": "כלב",
 "id": "monge-vet-25"
+},
+{
+"name": "*מונג וט כלב יורנרי סטרוויט 2 ק\"ג * חדש",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 116.0,
+"price_with_vat": 136.88,
+"sku": "29000359",
+"animal": "כלב",
+"id": "monge-vet-26"
+},
+{
+"name": "*מונג וט כלב יורנרי סטרוויט 12 ק\"ג * חדש",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 469.0,
+"price_with_vat": 553.42,
+"sku": "29000360",
+"animal": "כלב",
+"id": "monge-vet-27"
+},
+{
+"name": "מונג וט דרמטוזיס רטוב 150 ג' כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 6.7,
+"price_with_vat": 7.91,
+"sku": "15170002",
+"animal": "כלב",
+"id": "monge-vet-28"
+},
+{
+"name": "מונג וט גסטרואינטסטינל רטוב 150 ג' כלב",
+"category": null,
+"topic": "gi",
+"price_no_vat": 6.7,
+"price_with_vat": 7.91,
+"sku": "15170003",
+"animal": "כלב",
+"id": "monge-vet-29"
+},
+{
+"name": "מונג וט רנל ואוקסלייט רטוב 150 ג' כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 6.7,
+"price_with_vat": 7.91,
+"sku": "15170004",
+"animal": "כלב",
+"id": "monge-vet-30"
+},
+{
+"name": "מונג וט ריקברי רטוב 150 ג' כלב",
+"category": null,
+"topic": "gi",
+"price_no_vat": 7.9,
+"price_with_vat": 9.32,
+"sku": "15170005",
+"animal": "כלב",
+"id": "monge-vet-31"
+},
+{
+"name": "מונג וט דרמטוזיס רטוב 100 ג' חתול",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 5.4,
+"price_with_vat": 6.37,
+"sku": "15170006",
+"animal": "חתול",
+"id": "monge-vet-32"
+},
+{
+"name": "מונג וט גסטרואינטסטינל רטוב 100 ג' חתול",
+"category": null,
+"topic": "gi",
+"price_no_vat": 5.4,
+"price_with_vat": 6.37,
+"sku": "15170007",
+"animal": "חתול",
+"id": "monge-vet-33"
+},
+{
+"name": "מונג וט יורינרי סטרוויט רטוב 100 ג' חתול",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 5.4,
+"price_with_vat": 6.37,
+"sku": "15170008",
+"animal": "חתול",
+"id": "monge-vet-34"
+},
+{
+"name": "מונג וט רנל ואוקסלייט רטוב 100 ג' חתול",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 5.4,
+"price_with_vat": 6.37,
+"sku": "15170009",
+"animal": "חתול",
+"id": "monge-vet-35"
+},
+{
+"name": "מונג וט ריקברי רטוב 100 ג' חתול",
+"category": null,
+"topic": "gi",
+"price_no_vat": 5.9,
+"price_with_vat": 6.96,
+"sku": "15170010",
+"animal": "חתול",
+"id": "monge-vet-36"
+},
+{
+"name": "מונג וט גסטרואינטסטינל פחית 400 ג' (12 במגש)",
+"category": null,
+"topic": "gi",
+"price_no_vat": 12.0,
+"price_with_vat": 14.16,
+"sku": "15170050",
+"id": "monge-vet-37"
+},
+{
+"name": "מונג וט היפו מונו ברווז פחית 400 ג' (12 במגש)",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 12.0,
+"price_with_vat": 14.16,
+"sku": "15170052",
+"id": "monge-vet-38"
+},
+{
+"name": "מונג וט היפו מונו חזיר פחית 400 ג' (12 במגש)",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 12.0,
+"price_with_vat": 14.16,
+"sku": "15170053",
+"id": "monge-vet-39"
+},
+{
+"name": "מונג וט היפו מונו טונה פחית 400 ג' (12 במגש)",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 12.0,
+"price_with_vat": 14.16,
+"sku": "15170051",
+"id": "monge-vet-40"
+},
+{
+"name": "מונג וט היפו מונו כבש פחית 400 ג' (12 במגש)",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 12.0,
+"price_with_vat": 14.16,
+"sku": "15170049",
+"id": "monge-vet-41"
 }
 ]
 }

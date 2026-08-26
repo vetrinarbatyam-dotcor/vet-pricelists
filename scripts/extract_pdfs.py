@@ -230,8 +230,11 @@ DLP = "Downloads/PDF/"
 JOBS = {
     "purina_retail_2026_06": lambda: purina("הצעת מחיר וטרינר 2026.pdf"),
     "vetlife_2025_02":  lambda: simple_table("PDF/מחירון וטלייף 02.25 (1).pdf", 0, 1, 3, 4),
-    "monge_2025_01":    lambda: simple_table("PDF/מחירון מונג  פיש יבשים - ינואר 2025 (1).pdf", 1, 2, 4, 5),
-    "monge_vet_2025_01": lambda: simple_table("PDF/מחירון מונג וט סלושיין  - ינואר 2025 (1).pdf", 1, 2, 4, 5),
+    # Monge / Kong (same importer layout: [img, LIST price, description, barcode, sku])
+    "monge_2026_07":    lambda: (simple_table("מחירון מונג יבש - יולי 2026.pdf", 1, 2, 4, 5)
+                                 + simple_table("מחירון מונג ביווילד - יולי 2026.pdf", 1, 2, 4, 5, category="BeWild")),
+    "monge_vet_2026_07": lambda: simple_table("מחירון מונג וט סלושיין יבש+רטוב - יולי 2026.pdf", 1, 2, 4, 5),
+    "kong_2026_08":     lambda: simple_table("מחירון קונג מלאי - אוגוסט 2026 .pdf", 1, 2, 4, 5),
     "idexx_2025":       lambda: idexx("PDF/מחירון רפרנס איידקס 2025.pdf"),
     "miltin_consum_2025_11": lambda: miltin_consumables("PDF/מחירון חטיבה וטרינרית קבוצת מילטין ציוד מתכלה - נובמבר 2025.pdf"),
     "msd_2026":         lambda: bravecto("../pricecmp/pdf/new_bravecto.pdf"),
