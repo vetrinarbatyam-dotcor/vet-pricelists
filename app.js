@@ -6,7 +6,7 @@ const VAT = 1.18, PAGE = 150;
 const SEC_HEB = { medical: 'מוצרים ותרופות', food: 'מזון', labs: 'מעבדות', shop: 'מוצרי חנויות' };
 
 let INDEX = null, CONFIG = null, cache = {};
-let S = { type: null, vat: 'incl', view: 'supplier', mode: 'list', supplier: null, category: null, topic: null, q: '', shown: PAGE, f: {} };
+let S = { type: null, vat: 'incl', view: 'supplier', mode: 'list', supplier: null, category: null, topic: null, q: '', shown: PAGE, f: {}, margins: true };
 let rows = [];
 
 // ---------- pricing store ----------
@@ -15,7 +15,7 @@ const PK = 'vp_pricing';
 // bound (the last one has none), and prices as cost × mult + add.
 const TIERS = [{ to: 100, mult: 2, add: 0 }, { to: 200, mult: 1.8, add: 0 }, { to: 300, mult: 1.6, add: 0 },
                { to: 600, mult: 1.4, add: 0 }, { to: null, mult: 1.3, add: 0 }];
-const EMPTY = { sections: {}, suppliers: {}, rows: {}, round: 0,
+const EMPTY = { sections: {}, suppliers: {}, rows: {}, round: 0, clinicView: 'full',
                 tiers: { on: false, bands: TIERS.map(b => ({ ...b })) } };
 let P = load();
 function load() {
@@ -97,6 +97,7 @@ function goHome() { S.type = null; show('home'); $$('#tabs button').forEach(b =>
 
 async function openSec(sec) {
   S.type = sec; S.supplier = S.category = S.topic = null; S.q = ''; S.shown = PAGE; S.f = {};
+  S.margins = P.clinicView !== 'compact';
   $('#q').value = '';
   $$('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.type === sec));
   show('catalog'); await render();
@@ -147,6 +148,8 @@ async function render() {
   $('#listNote').textContent = l1 ? `מחירון ${l1.meta.price_list_date || 'ללא תאריך'}${l1.meta.notes ? ' · ' + l1.meta.notes : ''}` : '';
   $('#dl').href = `downloads/${S.type}.xlsx`;
   $('#clinicBar').hidden = S.mode !== 'clinic';
+  $('#marginsBtn').hidden = S.mode !== 'clinic';
+  $('#marginsBtn').textContent = S.margins ? '🙈 הסתר מרווחים' : '👁 הצג מרווחים';
   $('.cb-formula').textContent = P.tiers.on
     ? 'תמחור לפי טווחי מחיר פעיל — מחיר ללקוח = עלות × מכפיל הטווח + תוספת. מרווח שהוגדר לספק/סקציה/שורה גובר.'
     : 'עלות = מחיר מחירון × (1 − הנחה) × 1.18 · מחיר ללקוח = עלות × (1 + מרווח %) + מרווח ₪';
@@ -206,8 +209,10 @@ function mk(label, on, fn, n, status, kind) {
 }
 function renderTable() {
   const incl = S.vat === 'incl', pr = S.mode === 'clinic';
+  const wide = pr && S.margins;
   const th = ['ספק', 'פריט', 'קטגוריה', 'מק״ט', incl ? 'מחיר מחירון (כולל מע״מ)' : 'מחיר מחירון (ללא מע״מ)', 'מחירון'];
-  if (pr) th.push('הנחה %', 'עלות', 'מרווח %', '₪ קבוע', 'מחיר ללקוח', '');
+  if (wide) th.push('הנחה %', 'עלות', 'מרווח %', '₪ קבוע', 'מחיר ללקוח', '');
+  else if (pr) th.push('מחיר קנייה (כולל מע״מ)', 'מחיר ללקוח');
   $('#thead').innerHTML = th.map((h, i) => `<th class="${i === 4 || i >= 6 ? 'num' : ''}">${h}</th>`).join('');
   const tb = $('#tbody'); tb.innerHTML = '';
   const frag = document.createDocumentFragment();
@@ -222,7 +227,9 @@ function renderTable() {
       `<td><span class="date ${statusCls(r.status)}${r.kind ? ' parsed ' + r.kind : ''}"${r.kind ? ` title="${MARK[r.kind].text}"` : ''}>` +
       `${r.kind ? MARK[r.kind].sym + ' ' : ''}${r.price_date || r.date || 'ללא תאריך'}</span>` +
       `${r.src ? ` <a class="src" href="${r.src}" target="_blank" rel="noopener" title="צילום המקור">📄</a>` : ''}</td>`;
-    if (pr) {
+    if (pr && !S.margins) {
+      h += `<td class="num buyprice">${fmt(c.cost)}</td><td class="num price cust-ro">${fmt(c.sale)}</td>`;
+    } else if (pr) {
       const o = P.rows[r.id] || {};
       const inp = (f, v, step, on) => `<td class="edit"><input type="number" step="${step}" data-f="${f}" value="${v}"${on ? ' class="ovr"' : ''}></td>`;
       h += inp('discount', +c.discount.toFixed(1), 0.5, o.discount != null) +
@@ -233,7 +240,7 @@ function renderTable() {
         `<td>${c.ovr ? '<button class="ghost small" data-clear title="חזרה לברירת המחדל">↺</button>' : ''}</td>`;
     }
     tr.innerHTML = h;
-    if (pr) {
+    if (wide) {
       tr.querySelectorAll('input').forEach(i => i.addEventListener('change', () => { setRow(r, i.dataset.f, num(i.value)); renderTable(); }));
       tr.querySelector('[data-clear]')?.addEventListener('click', () => { delete P.rows[r.id]; save(); renderTable(); });
     }
@@ -287,6 +294,7 @@ function renderSettings() {
     tb.appendChild(tr);
   });
   $$('#roundSeg button').forEach(b => b.classList.toggle('on', +b.dataset.round === (+P.round || 0)));
+  $$('#viewSeg button').forEach(b => b.classList.toggle('on', b.dataset.cview === (P.clinicView || 'full')));
 }
 function renderTableIfOpen() { if (!$('#catalog').hidden && S.mode === 'clinic') renderTable(); }
 
@@ -437,10 +445,16 @@ function start() {
   $$('[data-view]').forEach(b => b.addEventListener('click', () => { S.view = b.dataset.view; S.supplier = S.category = S.topic = null; S.shown = PAGE; $$('[data-view]').forEach(x => x.classList.toggle('on', x === b)); render(); }));
   $$('[data-mode]').forEach(b => b.addEventListener('click', () => {
     S.mode = b.dataset.mode; $$('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
-    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else goHome(); } else { $('#clinicBar').hidden = S.mode !== 'clinic'; renderTable(); }
+    S.margins = P.clinicView !== 'compact';        // every entry into the clinic view starts from the stored default
+    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else goHome(); } else { renderTable(); render(); }
   }));
+  $('#marginsBtn').addEventListener('click', () => { S.margins = !S.margins; renderTable(); render(); });
   let t; $('#q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { S.q = $('#q').value; S.shown = PAGE; render(); }, 200); });
   $('#more').addEventListener('click', () => { S.shown += PAGE; renderTable(); });
+  $$('#viewSeg button').forEach(b => b.addEventListener('click', () => {
+    P.clinicView = b.dataset.cview; save(); renderSettings();
+    S.margins = P.clinicView !== 'compact'; renderTableIfOpen();
+  }));
   $('#statusBtn').addEventListener('click', renderStatus);
   $('#statusBtn2').addEventListener('click', renderStatus);
   const openSettings = () => { show('settings'); renderSettings(); };

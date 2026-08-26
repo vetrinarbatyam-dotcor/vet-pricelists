@@ -271,3 +271,6 @@ footer .marks b{color:var(--crit)}
 .gate-privacy{font-size:13.5px;color:var(--teal);background:var(--teal-soft);
   border-radius:8px;padding:9px 12px;margin:0 0 16px}
 .foot-privacy{color:var(--teal);font-weight:500}
+td.buyprice{font-weight:600;color:var(--copper)}
+td.cust-ro{font-weight:700;color:var(--teal);font-size:15px}
+#viewSeg button{padding:7px 14px}
