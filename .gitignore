@@ -2,3 +2,6 @@ _canonical/
 __pycache__/
 *.bak*
 .DS_Store
+
+# facebook launch screenshots, not part of the site
+promo/

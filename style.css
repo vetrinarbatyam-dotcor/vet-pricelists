@@ -125,7 +125,14 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
   .dl{display:none}
   table{font-size:13px}
   th,td{padding:6px 7px}
-  td.name{min-width:180px}
+  td.name{min-width:130px}
+  /* on a phone the price must fit on screen. category and sku are the two columns
+     worth losing (chips and the search already cover them), and the remaining
+     headers/supplier names have to wrap or the table still overflows. */
+  #catalog th:nth-child(3),#catalog td:nth-child(3),
+  #catalog th:nth-child(4),#catalog td:nth-child(4){display:none}
+  #catalog th{white-space:normal}
+  #catalog td.sup{white-space:normal;max-width:80px}
   .sp-row{grid-template-columns:1fr 56px 56px 56px}
 }
 @media (prefers-reduced-motion:no-preference){ .chip,button{transition:background .12s,color .12s} }

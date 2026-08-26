@@ -211,7 +211,11 @@ function mk(label, on, fn, n, status, kind) {
 function renderTable() {
   const incl = S.vat === 'incl', pr = S.mode === 'clinic';
   const wide = pr && S.margins;
-  const th = ['ספק', 'פריט', 'קטגוריה', 'מק״ט', incl ? 'מחיר מחירון (כולל מע״מ)' : 'מחיר מחירון (ללא מע״מ)', 'מחירון'];
+  // on a phone the full header wraps to four lines and eats the column; the מע״מ toggle
+  // sitting right above the table already says which basis is showing.
+  const narrow = matchMedia('(max-width:700px)').matches;
+  const th = ['ספק', 'פריט', 'קטגוריה', 'מק״ט',
+    narrow ? 'מחיר' : (incl ? 'מחיר מחירון (כולל מע״מ)' : 'מחיר מחירון (ללא מע״מ)'), 'מחירון'];
   if (wide) th.push('הנחה %', 'עלות', 'מרווח %', '₪ קבוע', 'מחיר ללקוח', '');
   else if (pr) th.push('מחיר קנייה (כולל מע״מ)', 'מחיר ללקוח');
   $('#thead').innerHTML = th.map((h, i) => `<th class="${i === 4 || i >= 6 ? 'num' : ''}">${h}</th>`).join('');
