@@ -278,7 +278,7 @@ function renderSettings() {
       ? sample + (s.flat ?? P.sections[m.type]?.flat ?? 0)
       : sample * (1 + (s.pct ?? P.sections[m.type]?.pct ?? 0) / 100);
     tr.innerHTML = `<td>${esc(m.supplier)}</td><td>${SEC_HEB[m.type]}</td><td class="num">${m.item_count}</td>
-      <td class="edit"><input type="number" step="0.5" data-s="${m.slug}" data-k="discount" value="${s.discount ?? ''}" placeholder="0"></td>
+      <td class="edit buy"><input type="number" step="0.5" data-s="${m.slug}" data-k="discount" value="${s.discount ?? ''}" placeholder="0"> <span class="pc">%</span></td>
       <td><select data-s="${m.slug}" data-k="mode">
             <option value="pct"${mode === 'pct' ? ' selected' : ''}>אחוז מהעלות</option>
             <option value="flat"${mode === 'flat' ? ' selected' : ''}>תוספת קבועה ₪</option></select></td>

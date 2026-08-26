@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 
@@ -113,13 +113,18 @@
 
   <section class="box">
     <h2>לכל ספק בנפרד</h2>
-    <p class="hint">ההנחה שלכם מהספק, ושיטת התמחור שלו — אחוז מהעלות או תוספת קבועה בשקלים. ריק = ברירת המחדל של הסקציה.</p>
+    <div class="buy-note">
+      <b>אחוז הנחת קנייה</b> — ההנחה שאתם מקבלים <b>מהספק</b> על מחיר המחירון שלו. זה מה שאתם משלמים, לא מה שאתם גובים.
+      זו הנחה אישית שלכם מול הספק, והיא נשמרת בדפדפן שלכם בלבד ולא נשלחת לשום מקום.
+    </div>
+    <p class="hint">שאר העמודות הן <b>המרווח</b> — כמה אתם מוסיפים מעל העלות. למשל 50% על מוצרי הילס: מחירון 100 ₪, הנחת קנייה 20% → עלות 94.40 ₪ → מחיר ללקוח 141.60 ₪.
+      מה שנקבע כאן הוא <b>ברירת מחדל לכל פריטי הספק</b>; בכל שורה במחירון המרפאה אפשר לשנות ידנית מחיר, הנחה או מרווח בלי לגעת בשאר. ריק = ברירת המחדל של הסקציה.</p>
     <div class="row gap">
       <input id="supQ" type="search" placeholder="סינון ספקים…" aria-label="סינון ספקים">
       <span class="hint" id="supCount"></span>
     </div>
     <div class="tbl"><table><thead><tr>
-      <th>ספק</th><th>סקציה</th><th class="num">פריטים</th><th class="num">הנחה %</th>
+      <th>ספק</th><th>סקציה</th><th class="num">פריטים</th><th class="num buy">אחוז הנחת קנייה</th>
       <th>שיטה</th><th class="num">ערך</th><th>דוגמה</th></tr></thead>
       <tbody id="supBody"></tbody></table></div>
   </section>
@@ -225,6 +230,6 @@
 
 
 
-<script src="app.js?v=11"></script>
+<script src="app.js?v=12"></script>
 </body>
 </html>

@@ -244,3 +244,14 @@ td .date.parsed.internal{color:var(--crit)}
   .seg.mode-seg{order:2;margin-inline:0}
   .seg.mode-seg button{font-size:15px;padding:8px 14px}
 }
+
+/* ---------- purchase discount: what you PAY, framed apart from what you charge ---------- */
+.buy-note{border:2px solid var(--crit);border-radius:8px;padding:11px 14px;margin:0 0 10px;
+  background:rgba(166,52,52,.07);background:color-mix(in srgb,var(--crit) 7%,transparent);font-size:14px}
+.buy-note b{color:var(--crit)}
+th.buy{background:rgba(166,52,52,.14);background:color-mix(in srgb,var(--crit) 14%,var(--card));color:var(--crit);
+  border-inline:2px solid var(--crit);border-top:2px solid var(--crit)}
+td.buy{border-inline:2px solid var(--crit);background:rgba(166,52,52,.05);background:color-mix(in srgb,var(--crit) 5%,transparent)}
+tbody tr:last-child td.buy{border-bottom:2px solid var(--crit)}
+#supBody td.buy input{width:110px;font-weight:700;text-align:center;border-color:var(--crit)}
+td.buy .pc{color:var(--crit);font-weight:700}
