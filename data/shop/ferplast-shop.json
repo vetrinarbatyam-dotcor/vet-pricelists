@@ -7,6 +7,9 @@
 "supplier": "פרפלסט (Ferplast)",
 "price_list_date": "2026-02",
 "source_file": "sources/shop/ferplast-shop-2026-02.pdf",
+"source_files": [
+"sources/shop/ferplast-shop-2026-02.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 15,

@@ -7,6 +7,9 @@
 "supplier": "Purina Pro Plan VET",
 "price_list_date": "2026-06",
 "source_file": "sources/food/purina-vet-2026-06.pdf",
+"source_files": [
+"sources/food/purina-vet-2026-06.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 37,

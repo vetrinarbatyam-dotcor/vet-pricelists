@@ -7,6 +7,9 @@
 "supplier": "MSD (ברווקטו)",
 "price_list_date": "2026",
 "source_file": "sources/medical/msd-2026.pdf",
+"source_files": [
+"sources/medical/msd-2026.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 16,

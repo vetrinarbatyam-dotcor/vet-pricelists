@@ -7,6 +7,9 @@
 "supplier": "IDEXX — רפרנס",
 "price_list_date": "2025-01",
 "source_file": "sources/labs/idexx-ref-2025-01.pdf",
+"source_files": [
+"sources/labs/idexx-ref-2025-01.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 373,

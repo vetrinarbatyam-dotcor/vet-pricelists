@@ -7,6 +7,9 @@
 "supplier": "Monge Vet Solution",
 "price_list_date": "2026-07",
 "source_file": "sources/food/monge-vet-2026-07.pdf",
+"source_files": [
+"sources/food/monge-vet-2026-07.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 41,

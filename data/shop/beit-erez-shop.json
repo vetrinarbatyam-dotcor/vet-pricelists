@@ -7,6 +7,9 @@
 "supplier": "בית ארז (מילטין)",
 "price_list_date": "2026-07",
 "source_file": "sources/shop/beit-erez-shop-2026-07.pdf",
+"source_files": [
+"sources/shop/beit-erez-shop-2026-07.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 5,

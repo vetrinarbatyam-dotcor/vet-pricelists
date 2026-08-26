@@ -7,6 +7,10 @@
 "supplier": "Monge",
 "price_list_date": "2026-07",
 "source_file": "sources/food/monge-2026-07.pdf",
+"source_files": [
+"sources/food/monge-2026-07.pdf",
+"sources/food/monge-2026-07-2.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 109,

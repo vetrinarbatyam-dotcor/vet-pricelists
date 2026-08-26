@@ -369,9 +369,13 @@ def build():
         add(lists["idexx-ref"], item("idexx-ref", it["name"], it["price_no_vat"], None, None,
                                        LAB_NAME_TOPIC(it["name"]), sku=it.get("sku"), notes=it.get("notes")))
     # --- Karnieli: panels + genetic diseases + pathogens, from the three 2025 PDFs
+    KARN_SRC = {"פאנלים": "sources/labs/karnieli-2025-01.pdf",
+                "מחלות גנטיות": "sources/labs/karnieli-2025-01-2.pdf",
+                "פתוגנים": "sources/labs/karnieli-2025-01-3.pdf"}
     for it in load("karnieli_2025.json"):
         add(lists["karnieli"], item("karnieli", it["name"], it["price_no_vat"], None, it.get("category"),
-                                      lab_topic(it.get("category"), it["name"]), notes=it.get("notes")))
+                                      lab_topic(it.get("category"), it["name"]), notes=it.get("notes"),
+                                      source=KARN_SRC.get(it.get("category"))))
     # --- Labs
     for it in load("lab_catalog.json"):
         slug = LAB_SLUG[it["lab"]]
@@ -408,7 +412,7 @@ def build():
         items = lists[slug]
         if not items: continue                           # nothing priced -> not a price list
         for i, it in enumerate(items, 1): it["id"] = f"{slug}-{i}"
-        src_rel = None
+        src_rel, src_all = None, []
         if src:
             paths = list(src) if isinstance(src, tuple) else [src]
             rels = []
@@ -419,13 +423,12 @@ def build():
                 if not dst.exists(): shutil.copy2(sp, dst)
                 rels.append(f"sources/{typ}/{dst.name}")
             src_rel = rels[0] if rels else None
-            if len(rels) > 1: extra_srcs = rels[1:]
-        extra_srcs = locals().get("extra_srcs") if False else None
+            src_all = rels
         status = "missing_source" if not date else ("stale" if date < stale_cutoff() else "current")
         act, act_note = ACTIONS.get(baseslug(slug), ACTION_DEFAULT[status])
         meta = {"action": act, "action_note": act_note,
                 "slug": slug, "type": typ, "supplier": label, "price_list_date": date, "source_file": src_rel,
-                "vat_basis": vat_basis, "vat_rate": 18, "item_count": len(items), "status": status,
+                "source_files": src_all, "vat_basis": vat_basis, "vat_rate": 18, "item_count": len(items), "status": status,
                 "imported_at": TODAY, "notes": note}
         json.dump({"meta": meta, "items": items}, open(DATA / typ / f"{slug}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
         index.append(meta)

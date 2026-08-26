@@ -7,6 +7,9 @@
 "supplier": "וטמרקט",
 "price_list_date": "2026-08",
 "source_file": "sources/shop/vetmarket-shop-2026-08.xlsx",
+"source_files": [
+"sources/shop/vetmarket-shop-2026-08.xlsx"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 18,

@@ -7,6 +7,9 @@
 "supplier": "בית ארז — ציוד מתכלה",
 "price_list_date": "2025-11",
 "source_file": "sources/medical/miltin-consum-2025-11.pdf",
+"source_files": [
+"sources/medical/miltin-consum-2025-11.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 406,

@@ -7,6 +7,9 @@
 "supplier": "VetLife",
 "price_list_date": "2025-02",
 "source_file": "sources/food/vetlife-2025-02.pdf",
+"source_files": [
+"sources/food/vetlife-2025-02.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 57,

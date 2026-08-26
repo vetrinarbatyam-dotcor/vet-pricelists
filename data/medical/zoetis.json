@@ -7,6 +7,10 @@
 "supplier": "זואטיס (Zoetis)",
 "price_list_date": "2026",
 "source_file": "sources/medical/zoetis-2026.pdf",
+"source_files": [
+"sources/medical/zoetis-2026.pdf",
+"sources/medical/zoetis-2026-2.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 39,

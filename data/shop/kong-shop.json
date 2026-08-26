@@ -7,6 +7,9 @@
 "supplier": "קונג (Kong)",
 "price_list_date": "2026-08",
 "source_file": "sources/shop/kong-shop-2026-08.pdf",
+"source_files": [
+"sources/shop/kong-shop-2026-08.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 265,

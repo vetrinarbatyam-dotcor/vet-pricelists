@@ -7,6 +7,9 @@
 "supplier": "המכון (מעבדה חיצונית)",
 "price_list_date": "2026-01",
 "source_file": "sources/labs/hamachon-2026-01.docx",
+"source_files": [
+"sources/labs/hamachon-2026-01.docx"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 90,

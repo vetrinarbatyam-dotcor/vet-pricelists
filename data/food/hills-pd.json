@@ -7,6 +7,9 @@
 "supplier": "Hill's Prescription Diet",
 "price_list_date": "2026-04",
 "source_file": "sources/food/hills-pd-2026-04.pdf",
+"source_files": [
+"sources/food/hills-pd-2026-04.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 123,

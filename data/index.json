@@ -10,6 +10,9 @@
    "supplier": "בית ארז (מילטין)",
    "price_list_date": "2026-07",
    "source_file": "sources/medical/beit-erez-2026-07.pdf",
+   "source_files": [
+    "sources/medical/beit-erez-2026-07.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 410,
@@ -25,6 +28,9 @@
    "supplier": "MSD (ברווקטו)",
    "price_list_date": "2026",
    "source_file": "sources/medical/msd-2026.pdf",
+   "source_files": [
+    "sources/medical/msd-2026.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 16,
@@ -40,6 +46,9 @@
    "supplier": "בית ארז — ציוד מתכלה",
    "price_list_date": "2025-11",
    "source_file": "sources/medical/miltin-consum-2025-11.pdf",
+   "source_files": [
+    "sources/medical/miltin-consum-2025-11.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 406,
@@ -55,6 +64,10 @@
    "supplier": "זואטיס (Zoetis)",
    "price_list_date": "2026",
    "source_file": "sources/medical/zoetis-2026.pdf",
+   "source_files": [
+    "sources/medical/zoetis-2026.pdf",
+    "sources/medical/zoetis-2026-2.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 39,
@@ -70,6 +83,9 @@
    "supplier": "וטמרקט",
    "price_list_date": "2026-08",
    "source_file": "sources/medical/vetmarket-2026-08.xlsx",
+   "source_files": [
+    "sources/medical/vetmarket-2026-08.xlsx"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 264,
@@ -85,6 +101,7 @@
    "supplier": "מדי-מרקט",
    "price_list_date": "2026-06",
    "source_file": null,
+   "source_files": [],
    "vat_basis": "with_vat",
    "vat_rate": 18,
    "item_count": 2383,
@@ -100,6 +117,9 @@
    "supplier": "פט-וט ביומד",
    "price_list_date": "2026-05",
    "source_file": "sources/medical/petvet-2026-05.pdf",
+   "source_files": [
+    "sources/medical/petvet-2026-05.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 167,
@@ -115,6 +135,9 @@
    "supplier": "Royal Canin VET",
    "price_list_date": "2026-06",
    "source_file": "sources/food/rc-vet-2026-06.pdf",
+   "source_files": [
+    "sources/food/rc-vet-2026-06.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 108,
@@ -130,6 +153,9 @@
    "supplier": "Royal Canin חנויות",
    "price_list_date": "2026-01",
    "source_file": "sources/food/rc-retail-2026-01.pdf",
+   "source_files": [
+    "sources/food/rc-retail-2026-01.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 168,
@@ -145,6 +171,9 @@
    "supplier": "Hill's Prescription Diet",
    "price_list_date": "2026-04",
    "source_file": "sources/food/hills-pd-2026-04.pdf",
+   "source_files": [
+    "sources/food/hills-pd-2026-04.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 123,
@@ -160,6 +189,9 @@
    "supplier": "Hill's Science Plan",
    "price_list_date": "2026-04",
    "source_file": "sources/food/hills-sp-2026-04.pdf",
+   "source_files": [
+    "sources/food/hills-sp-2026-04.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 86,
@@ -175,6 +207,7 @@
    "supplier": "Hill's Vet Essentials",
    "price_list_date": "2026-04",
    "source_file": null,
+   "source_files": [],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 42,
@@ -190,6 +223,9 @@
    "supplier": "VetLife",
    "price_list_date": "2025-02",
    "source_file": "sources/food/vetlife-2025-02.pdf",
+   "source_files": [
+    "sources/food/vetlife-2025-02.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 57,
@@ -205,6 +241,9 @@
    "supplier": "Purina Pro Plan VET",
    "price_list_date": "2026-06",
    "source_file": "sources/food/purina-vet-2026-06.pdf",
+   "source_files": [
+    "sources/food/purina-vet-2026-06.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 37,
@@ -220,6 +259,9 @@
    "supplier": "פורינה (חנויות)",
    "price_list_date": "2026-06",
    "source_file": "sources/food/purina-retail-2026-06.pdf",
+   "source_files": [
+    "sources/food/purina-retail-2026-06.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 170,
@@ -235,6 +277,9 @@
    "supplier": "Monge Vet Solution",
    "price_list_date": "2026-07",
    "source_file": "sources/food/monge-vet-2026-07.pdf",
+   "source_files": [
+    "sources/food/monge-vet-2026-07.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 41,
@@ -250,6 +295,10 @@
    "supplier": "Monge",
    "price_list_date": "2026-07",
    "source_file": "sources/food/monge-2026-07.pdf",
+   "source_files": [
+    "sources/food/monge-2026-07.pdf",
+    "sources/food/monge-2026-07-2.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 109,
@@ -265,6 +314,9 @@
    "supplier": "AML",
    "price_list_date": "2026-06",
    "source_file": "sources/labs/aml-2026-06.pdf",
+   "source_files": [
+    "sources/labs/aml-2026-06.pdf"
+   ],
    "vat_basis": "with_vat",
    "vat_rate": 18,
    "item_count": 123,
@@ -280,6 +332,9 @@
    "supplier": "המכון (מעבדה חיצונית)",
    "price_list_date": "2026-01",
    "source_file": "sources/labs/hamachon-2026-01.docx",
+   "source_files": [
+    "sources/labs/hamachon-2026-01.docx"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 90,
@@ -295,6 +350,9 @@
    "supplier": "IDEXX",
    "price_list_date": "2026-01",
    "source_file": "sources/labs/idexx-2026-01.pdf",
+   "source_files": [
+    "sources/labs/idexx-2026-01.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 137,
@@ -310,6 +368,9 @@
    "supplier": "IDEXX — רפרנס",
    "price_list_date": "2025-01",
    "source_file": "sources/labs/idexx-ref-2025-01.pdf",
+   "source_files": [
+    "sources/labs/idexx-ref-2025-01.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 373,
@@ -325,6 +386,11 @@
    "supplier": "קרניאלי",
    "price_list_date": "2025-01",
    "source_file": "sources/labs/karnieli-2025-01.pdf",
+   "source_files": [
+    "sources/labs/karnieli-2025-01.pdf",
+    "sources/labs/karnieli-2025-01-2.pdf",
+    "sources/labs/karnieli-2025-01-3.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 66,
@@ -340,6 +406,7 @@
    "supplier": "פרופ' בנעט",
    "price_list_date": null,
    "source_file": null,
+   "source_files": [],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 23,
@@ -355,6 +422,9 @@
    "supplier": "בית ארז (מילטין)",
    "price_list_date": "2026-07",
    "source_file": "sources/shop/beit-erez-shop-2026-07.pdf",
+   "source_files": [
+    "sources/shop/beit-erez-shop-2026-07.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 5,
@@ -370,6 +440,9 @@
    "supplier": "קונג (Kong)",
    "price_list_date": "2026-08",
    "source_file": "sources/shop/kong-shop-2026-08.pdf",
+   "source_files": [
+    "sources/shop/kong-shop-2026-08.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 265,
@@ -385,6 +458,9 @@
    "supplier": "פרפלסט (Ferplast)",
    "price_list_date": "2026-02",
    "source_file": "sources/shop/ferplast-shop-2026-02.pdf",
+   "source_files": [
+    "sources/shop/ferplast-shop-2026-02.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 15,
@@ -400,6 +476,9 @@
    "supplier": "וטמרקט",
    "price_list_date": "2026-08",
    "source_file": "sources/shop/vetmarket-shop-2026-08.xlsx",
+   "source_files": [
+    "sources/shop/vetmarket-shop-2026-08.xlsx"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 18,
@@ -415,6 +494,7 @@
    "supplier": "מדי-מרקט",
    "price_list_date": "2026-06",
    "source_file": null,
+   "source_files": [],
    "vat_basis": "with_vat",
    "vat_rate": 18,
    "item_count": 31,
@@ -430,6 +510,9 @@
    "supplier": "פט-וט ביומד",
    "price_list_date": "2026-05",
    "source_file": "sources/shop/petvet-shop-2026-05.pdf",
+   "source_files": [
+    "sources/shop/petvet-shop-2026-05.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 14,
@@ -445,6 +528,9 @@
    "supplier": "פורינה (חנויות)",
    "price_list_date": "2026-06",
    "source_file": "sources/shop/purina-retail-shop-2026-06.pdf",
+   "source_files": [
+    "sources/shop/purina-retail-shop-2026-06.pdf"
+   ],
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 30,

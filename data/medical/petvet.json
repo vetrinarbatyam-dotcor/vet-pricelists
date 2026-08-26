@@ -7,6 +7,9 @@
 "supplier": "פט-וט ביומד",
 "price_list_date": "2026-05",
 "source_file": "sources/medical/petvet-2026-05.pdf",
+"source_files": [
+"sources/medical/petvet-2026-05.pdf"
+],
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 167,

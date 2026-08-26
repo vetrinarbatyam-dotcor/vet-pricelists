@@ -54,7 +54,7 @@ async function loadSec(sec) {
   const lists = await Promise.all(metas.map(m => getJSON(`data/${sec}/${m.slug}.json`)));
   lists.forEach(l => l.items.forEach(it => Object.assign(it, {
     slug: l.meta.slug, supplier: l.meta.supplier, sec, date: l.meta.price_list_date,
-    status: l.meta.status, src: l.meta.source_file,
+    status: l.meta.status, src: it.source || l.meta.source_file,
   })));
   cache[sec] = lists; return lists;
 }
@@ -247,8 +247,9 @@ function calcRun(from) {
 const ACT_HEB = { ok: 'מעודכן', refresh: 'צריך מחירון חדש', partial: 'חלקי', no_source: 'חסר קובץ מקור', check: 'לאימות' };
 const ACT_CLS = { ok: 'ok', refresh: 'stale', partial: 'stale', no_source: 'missing', check: 'stale' };
 function srcCell(m) {
-  return m.source_file ? `<a href="${m.source_file}" target="_blank" rel="noopener">📄 צילום המקור</a>`
-                       : '<span class="date missing">אין קובץ</span>';
+  const files = m.source_files && m.source_files.length ? m.source_files : (m.source_file ? [m.source_file] : []);
+  if (!files.length) return '<span class="date missing">אין קובץ</span>';
+  return files.map((f, i) => `<a href="${f}" target="_blank" rel="noopener">📄 ${files.length > 1 ? `מקור ${i + 1}` : 'צילום המקור'}</a>`).join(' · ');
 }
 function renderStatus() {
   show('status');
