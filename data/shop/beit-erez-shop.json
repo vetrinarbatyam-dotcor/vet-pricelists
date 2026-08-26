@@ -1,0 +1,76 @@
+{
+"meta": {
+"action": "ok",
+"action_note": "מעודכן.",
+"slug": "beit-erez-shop",
+"type": "shop",
+"supplier": "בית ארז (מילטין)",
+"price_list_date": "2026-07",
+"source_file": "sources/shop/beit-erez-shop-2026-07.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 5,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "מחירון חיות קטנות יולי 2026"
+},
+"items": [
+{
+"name": "טריקי טריטס עוף 2X15 - חטיפים לכלב וחתול Tricky Treats",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 44.0,
+"price_with_vat": 51.92,
+"animal": "חתולים / כלבים",
+"manufacturer": "Pala-Tech",
+"bonus": "3+1 / 8+4",
+"notes": "חטיפי פרהביוטיקה טעימים למתן כדורים וחיזוק מע' חיסון",
+"id": "beit-erez-shop-1"
+},
+{
+"name": "טריקי טריטס עוף 2X200 - חטיפים לכלב וחתול Tricky Treats",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 300.0,
+"price_with_vat": 354.0,
+"animal": "חתולים / כלבים",
+"manufacturer": "Pala-Tech",
+"notes": "חטיפי פרהביוטיקה טעימים למתן כדורים וחיזוק מע' חיסון",
+"id": "beit-erez-shop-2"
+},
+{
+"name": "טריקי טריטס ברווז 2X15 - חטיפים לכלב וחתול Tricky Treats",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 44.0,
+"price_with_vat": 51.92,
+"animal": "חתולים / כלבים",
+"manufacturer": "Pala-Tech",
+"bonus": "3+1 / 8+4",
+"notes": "חטיפי פרהביוטיקה טעימים למתן כדורים וחיזוק מע' חיסון",
+"id": "beit-erez-shop-3"
+},
+{
+"name": "טריקי טריטס ברווז 2X200 - חטיפים לכלב וחתול Tricky Treats",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 300.0,
+"price_with_vat": 354.0,
+"animal": "חתולים / כלבים",
+"manufacturer": "Pala-Tech",
+"notes": "חטיפי פרהביוטיקה טעימים למתן כדורים וחיזוק מע' חיסון",
+"id": "beit-erez-shop-4"
+},
+{
+"name": "מקלון למד סוכר 50 יח' Accu-Chek Instant Roche",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 75.0,
+"price_with_vat": 88.5,
+"animal": "כל בע\"ח",
+"manufacturer": "DYN",
+"pack_qty": 50,
+"id": "beit-erez-shop-5"
+}
+]
+}

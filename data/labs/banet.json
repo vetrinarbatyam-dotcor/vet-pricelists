@@ -1,5 +1,7 @@
 {
 "meta": {
+"action": "no_source",
+"action_note": "אין קובץ מחירון בידינו — 23 בדיקות מקובץ המרפאה בלבד.",
 "slug": "banet",
 "type": "labs",
 "supplier": "פרופ' בנעט",

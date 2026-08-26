@@ -117,6 +117,23 @@ FOOD_KW = [
     ("neuro", ("neuro", "אפילפ", "epilep", "calm", "קאלם")),
     ("onco", ("onco", "סרטן", "tumor")),
 ]
+LAB_NAME_KW = [
+    ("hematology", ("cbc", "hematolog", "blood smear", "reticuloc", "coombs", "blood type", "packed cell")),
+    ("coag", ("coagul", "pt/", "aptt", "fibrinogen", "d-dimer", "clotting")),
+    ("endocrine", ("thyro", "t4", "tsh", "cortisol", "acth", "insulin", "progester", "estrad", "testoster", "hormone", "ldds", "hdds")),
+    ("serology", ("serolog", "antibod", " ab ", "titer", "titre", "elisa", "ifa", "leishman", "ehrlich", "anaplasm", "borrelia", "felv", "fiv", "heartworm", "dirofil", "toxoplasm", "brucell", "distemper", "parvo")),
+    ("pcr", ("pcr", "realpcr", "genetic", "dna", "sequenc")),
+    ("culture", ("culture", "sensitiv", "fungal", "dermatophyt", "aerobic", "anaerobic", "mic ")),
+    ("pathology", ("cytolog", "histopath", "biopsy", "pathol", "aspirat", "fnа", "fna ", "necrops")),
+    ("urine", ("urin", "fecal", "feces", "stool", "giardia", "upc", "sediment")),
+    ("drugs", ("phenobarb", "level", "digoxin", "bromide", "cyclospor", "drug ")),
+]
+def LAB_NAME_TOPIC(name):
+    low = name.lower()
+    for t, kws in LAB_NAME_KW:
+        if any(k in low for k in kws): return t
+    return "chemistry"
+
 def food_topic(name):
     low = name.lower()
     for t, kws in FOOD_KW:
@@ -128,6 +145,8 @@ DLD = HOME / "Downloads"
 REG = {
     # slug: (type, supplier label, price_list_date, source_file_path or None, vat_basis of the raw list, notes)
     "beit-erez":  ("medical", "בית ארז (מילטין)", "2026-07", DLD / "מחירון - חיות קטנות יולי 2026.pdf", "no_vat", "מחירון חיות קטנות יולי 2026"),
+    "msd":        ("medical", "MSD (ברווקטו)", "2026", HOME / "pricecmp" / "pdf" / "new_bravecto.pdf", "no_vat", "מחיר לווטרינר 2026"),
+    "miltin-consum": ("medical", "בית ארז — ציוד מתכלה", "2025-11", DLD / "PDF" / "מחירון חטיבה וטרינרית קבוצת מילטין ציוד מתכלה - נובמבר 2025.pdf", "no_vat", "חטיבה וטרינרית מילטין — ציוד מתכלה נובמבר 2025"),
     "zoetis":     ("medical", "זואטיס (Zoetis)", "2026", (DLD / "זואטיס תרופות 2026.PDF", DLD / "זואטיס סימפריקה סטרונגהולד 2026.PDF"), "no_vat", "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"),
     "ferplast":   ("medical", "פרפלסט (Ferplast)", "2026-02", DLD / "מחירון מוצרי פרפלסט 24.2.26.pdf", "no_vat", "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"),
     "vetmarket":  ("medical", "וטמרקט", "2026-08", DLD / "מחירון וטמרקט מלא.xlsx", "no_vat", "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"),
@@ -137,23 +156,76 @@ REG = {
     "rc-retail":  ("food", "Royal Canin חנויות", "2026-01", DLD / "RC SPT Price list Jan_2026.pdf", "no_vat", "מחירון קמעונאי ינואר 2026"),
     "hills-pd":   ("food", "Hill's Prescription Diet", "2026-04", DLD / "PD_priceList_Apr26.PDF", "no_vat", None),
     "hills-ve":   ("food", "Hill's Vet Essentials", "2026-04", DLD / "PD_priceList_Apr26.PDF", "no_vat", None),
-    "vetlife":    ("food", "VetLife", "2025-02", DLD / "PDF" / "מחירון וטלייף 02.25 (1).pdf", "no_vat", None),
+    "vetlife":    ("food", "VetLife", "2025-02", DLD / "PDF" / "מחירון וטלייף 02.25 (1).pdf", "no_vat", "מחירון פברואר 2025"),
     "purina-vet": ("food", "Purina Pro Plan VET", "2026-06", DLD / "פורינה.pdf", "no_vat", "מחיר מחירון ליחידה (ללא הנחות)"),
-    "purina-retail": ("food", "Purina Pro Plan חנויות", None, None, "no_vat", None),
-    "monge-vet":  ("food", "Monge Vet Solution", "2025-01", DLD / "PDF" / "מחירון מונג וט סלושיין  - ינואר 2025 (1).pdf", "no_vat", None),
-    "monge":      ("food", "Monge", "2025-01", DLD / "PDF" / "מחירון מונג  פיש יבשים - ינואר 2025 (1).pdf", "no_vat", None),
+    "purina-retail": ("food", "פורינה (חנויות)", "2026-06", DLD / "הצעת מחיר וטרינר 2026.pdf", "no_vat", "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"),
+    "monge-vet":  ("food", "Monge Vet Solution", "2025-01", DLD / "PDF" / "מחירון מונג וט סלושיין  - ינואר 2025 (1).pdf", "no_vat", "מחירון ינואר 2025"),
+    "monge":      ("food", "Monge", "2025-01", DLD / "PDF" / "מחירון מונג  פיש יבשים - ינואר 2025 (1).pdf", "no_vat", "מחירון ינואר 2025"),
     "foodiez":    ("food", "Foodiez", None, None, "no_vat", None),
     "aml":        ("labs", "AML", "2026-06", DLD / "מחירון 2026.pdf", "with_vat", "בתוקף מ-1.6.2026"),
     "hamachon":   ("labs", "המכון (מעבדה חיצונית)", "2026-01", DLD / "מחירון מעבדה חיצונית לשנת 2026 (1) (1).docx", "no_vat", None),
-    "idexx":      ("labs", "IDEXX", "2025-01", DLD / "PDF" / "מחירון רפרנס איידקס 2025.pdf", "no_vat", None),
+    "idexx":      ("labs", "IDEXX", "2025-01", DLD / "PDF" / "מחירון רפרנס איידקס 2025.pdf", "no_vat", "מחירון רפרנס 2025 — כולל בדיקות שאינן זמינות בישראל (מסומנות)"),
     "karnieli":   ("labs", "קרניאלי", "2025-01", DLD / "PDF" / "מחירון פאנלים 2025 (2).pdf", "no_vat", None),
     "banet":      ("labs", "פרופ' בנעט", None, None, "no_vat", None),
 }
 FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's PD": "hills-pd", "Hill's VE": "hills-ve",
                      "VetLife": "vetlife", "Purina": "purina-vet", "Purina חנויות": "purina-retail",
                      "Monge Vet": "monge-vet", "Monge": "monge", "Foodiez": "foodiez"}
-FROM_PDF = {"rc-vet", "rc-retail", "purina-vet"}   # dated PDF replaces the undated TS rows
+FROM_PDF = {"rc-vet", "rc-retail", "purina-vet", "purina-retail", "vetlife", "monge", "monge-vet"}   # dated PDF replaces the undated TS rows
 LAB_SLUG = {"AML": "aml", "המכון": "hamachon", "IDEXX": "idexx", "קרניאלי": "karnieli", "פרופ בנעט": "banet"}
+
+# ---------------------------------------------------------------- shop section (non-food, non-medical)
+SHOP_TOPICS = [("treats", "חטיפים"), ("toys", "צעצועים"), ("grooming", "טיפוח והיגיינה"),
+               ("litter", "חול ושירותים"), ("accessories", "אביזרים"), ("calming", "הרגעה"),
+               ("other", "כללי")]
+SHOP_KW = [
+    ("treats", ("~חטיף", "~חטיפים", "snack", "מקלון", "עצם ללעיסה", "dentalife", "דנטלייף", "party mix",
+                "פארטי מיקס", "שלוקים", "dental care", "דנטלקייר", "dogli", "דוגלי", "treat")),
+    ("toys", ("צעצוע", " toy", "~כדור", " ball", "~חבל", "rope", "forager", "boredom", "~משחק")),
+    ("litter", ("~חול", "litter", "שירותים לחתול", "מגרפ", "scoop", "ארגז חול", "מצע")),
+    ("grooming", ("מגבונ", "wipes", "שמפו", "shampoo", "מברשת", "brush", "טיפוח", "groom", "מסרק",
+                  "גוזם", "ציפורניים", "nail")),
+    ("calming", ("pet remedy", "מפיץ ריח", "atomizer", "בנדנה", "bandana", "פרומון", "pheromon")),
+    ("accessories", ("~קערה", " bowl", "רצועה", "leash", "מנשא", "carrier", "~מיטה", " bed ",
+                     "דיספלי", "display")),
+]
+SHOP_SUPPLIERS = {"ferplast"}                 # whole list is shop merchandise
+SHOP_BRANDS = {"Pet Remedy"}                  # brand inside a mixed list
+STRONG_SHOP = {"treats", "toys", "litter"}    # unambiguous merchandise — always moves
+CLINICAL = {"ears", "eyes", "dental", "skin", "joints", "kidney", "gi", "cardio", "endocrine", "neuro",
+            "liver", "onco", "antibiotic", "pain", "parasites", "deworm", "vaccine", "respiratory",
+            "anesthesia", "equipment"}
+
+def shop_cat(it, slug):
+    """-> shop sub-category key, or None if the row stays in its own section.
+    A clinical row (medicated shampoo, ear wipes, HMEF filter) only moves for unambiguous
+    merchandise categories, so vet products don't leak into the shop section."""
+    c = _shop_kw(it)
+    if slug in SHOP_SUPPLIERS: return c or "accessories"
+    if (it.get("category") or "") in SHOP_BRANDS: return c or "calming"
+    if not c: return None
+    if c in STRONG_SHOP: return c
+    return c if it.get("topic") not in CLINICAL else None
+
+def _shop_kw(it):
+    hay = f"{it.get('name','')} {it.get('category') or ''}"
+    low = hay.lower()
+    for t, kws in SHOP_KW:
+        if any(_hit(k, hay, low) for k in kws): return t
+    return None
+
+# What each list still needs — shown on the "מצב המחירונים" page so it is obvious what to chase.
+ACTIONS = {
+    "karnieli": ("partial", "רק 9 בדיקות נטענו. יש 4 מחירוני PDF (פאנלים · גנטיות · פתוגנים · ציפורים) שטרם פורסרו."),
+    "hills-pd": ("check", "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון."),
+    "hills-ve": ("check", "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון."),
+    "banet":    ("no_source", "אין קובץ מחירון בידינו — 23 בדיקות מקובץ המרפאה בלבד."),
+    "medi-market": ("ok", "נאסף אוטומטית מאתר medi-market.co.il."),
+    "vetmarket": ("ok", "מחיר מחירון רשמי (לפני הנחה) מאישורי ההזמנה + המחירון המלא."),
+}
+ACTION_DEFAULT = {"current": ("ok", "מעודכן."),
+                  "stale": ("refresh", "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני."),
+                  "missing_source": ("no_source", "אין קובץ מחירון מקורי בידינו.")}
 
 def r2(x): return round(float(x) + 1e-9, 2)
 
@@ -213,6 +285,16 @@ def build():
         add(lists["zoetis"], item("zoetis", it["name"], it["price_no_vat"], None, cat,
                                     kw_topic(cat) if kw_topic(cat) != "other" else kw_topic(it["name"]),
                                     pack_qty=pack_qty(it["name"])))
+    # --- MSD Bravecto 2026
+    for it in load("msd_2026.json"):
+        add(lists["msd"], item("msd", it["name"], it["price_no_vat"], None, it.get("category"), "parasites",
+                                 sku=it.get("sku")))
+    # --- Beit Erez / Miltin consumables (Nov 2025)
+    for it in load("miltin_consum_2025_11.json"):
+        cat = it.get("category") or ""
+        add(lists["miltin-consum"], item("miltin-consum", it["name"], it["price_no_vat"], None, cat,
+                                           BE_TOPIC.get(cat) or (kw_topic(it["name"]) if kw_topic(it["name"]) != "other" else "equipment"),
+                                           sku=it.get("sku"), manufacturer=it.get("manufacturer"), notes=it.get("notes")))
     # --- Ferplast (equipment/accessories); the "25% off" column in the source is dropped on purpose.
     for it in load("ferplast_2026_02.json"):
         add(lists["ferplast"], item("ferplast", it["name"], it["price_no_vat"], None, it.get("category"),
@@ -232,20 +314,47 @@ def build():
                                 FOOD_IND_TOPIC.get(it["indication"], "nutrition"), animal=it.get("animal"), unit=it.get("weight")))
     # --- Food from dated supplier PDFs (list price, ex-VAT) — replaces the undated TS rows above.
     for slug, src in (("rc-vet", "rc_vet_2026_06.json"), ("rc-retail", "rc_spt_2026_01.json"),
-                      ("purina-vet", "purina_2026_06.json")):
+                      ("purina-vet", "purina_2026_06.json"), ("purina-retail", "purina_retail_2026_06.json"),
+                      ("vetlife", "vetlife_2025_02.json"), ("monge", "monge_2025_01.json"),
+                      ("monge-vet", "monge_vet_2025_01.json")):
         for it in load(src):
             name = it["name"]
             add(lists[slug], item(slug, name, it["price_no_vat"], None, it.get("category"), food_topic(name),
                                     sku=it.get("sku"), unit=it.get("unit"),
                                     animal=it.get("animal") or ("חתול" if "חתול" in name else ("כלב" if "כלב" in name else None))))
+    # --- IDEXX full reference list (PDF) — replaces the 37 rows that came from the clinic TS file
+    for it in load("idexx_2025.json"):
+        add(lists["idexx"], item("idexx", it["name"], it["price_no_vat"], None, None,
+                                   LAB_NAME_TOPIC(it["name"]), sku=it.get("sku"), notes=it.get("notes")))
     # --- Labs
     for it in load("lab_catalog.json"):
         slug = LAB_SLUG[it["lab"]]
+        if slug == "idexx": continue
         add(lists[slug], item(slug, it["name"], it.get("price_no_vat"), it.get("price_with_vat"), it["category"],
                                 LAB_CAT_TOPIC.get(it["category"], "other"), sku=it.get("code"), notes=it.get("notes")))
 
+    # --- move shop merchandise (non-food, non-medical) into its own section
+    shop, SHOP_LABEL = {}, dict(SHOP_TOPICS)
+    for slug in list(lists):
+        if REG[slug][0] == "labs": continue
+        keep = []
+        for it in lists[slug]:
+            c = shop_cat(it, slug)
+            if c:
+                it = dict(it, category=SHOP_LABEL[c], topic=c)
+                shop.setdefault(slug, []).append(it)
+            else:
+                keep.append(it)
+        lists[slug] = keep
+    for slug, items in shop.items():
+        typ, label, date, src, vat, note = REG[slug]
+        REG[f"{slug}-shop"] = ("shop", label, date, src, vat, note)
+        lists[f"{slug}-shop"] = items
+
     # --- write
-    for d in ("food", "medical", "labs"): (DATA / d).mkdir(parents=True, exist_ok=True)
+    for d in ("food", "medical", "labs", "shop"):
+        (DATA / d).mkdir(parents=True, exist_ok=True)
+        for old in (DATA / d).glob("*.json"): old.unlink()      # drop stale lists from earlier runs
     index = []
     for slug, (typ, label, date, src, vat_basis, note) in REG.items():
         items = lists[slug]
@@ -266,14 +375,18 @@ def build():
             if len(rels) > 1: extra_srcs = rels[1:]
         extra_srcs = locals().get("extra_srcs") if False else None
         status = "missing_source" if not date else ("stale" if date < stale_cutoff() else "current")
-        meta = {"slug": slug, "type": typ, "supplier": label, "price_list_date": date, "source_file": src_rel,
+        act, act_note = ACTIONS.get(baseslug(slug), ACTION_DEFAULT[status])
+        meta = {"action": act, "action_note": act_note,
+                "slug": slug, "type": typ, "supplier": label, "price_list_date": date, "source_file": src_rel,
                 "vat_basis": vat_basis, "vat_rate": 18, "item_count": len(items), "status": status,
                 "imported_at": TODAY, "notes": note}
         json.dump({"meta": meta, "items": items}, open(DATA / typ / f"{slug}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
         index.append(meta)
-    tax = {"topics": TOPICS, "lab_topics": LAB_TOPICS, "food_indications": sorted({i["category"] for s in FOOD_COMPANY_SLUG.values() for i in lists[s] if i["category"]})}
+    tax = {"topics": TOPICS, "lab_topics": LAB_TOPICS, "shop_topics": SHOP_TOPICS, "food_indications": sorted({i["category"] for s in FOOD_COMPANY_SLUG.values() for i in lists[s] if i["category"]})}
     json.dump({"built_at": TODAY, "vat_rate": 18, "pricelists": index, "taxonomy": tax}, open(DATA / "index.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return lists, index
+
+def baseslug(s): return s[:-5] if s.endswith("-shop") else s
 
 def stale_cutoff():
     d = datetime.date.today() - datetime.timedelta(days=365)  # annual lists are normal; >12 months = stale
@@ -288,7 +401,7 @@ def xlsx(lists, index):
     out = ROOT / "downloads"; out.mkdir(parents=True, exist_ok=True)
     by_type = {}
     for m in index: by_type.setdefault(m["type"], []).append(m["slug"])
-    heb = {"food": "מזון", "medical": "מוצרים ותרופות", "labs": "מעבדות"}
+    heb = {"food": "מזון", "medical": "מוצרים ותרופות", "labs": "מעבדות", "shop": "מוצרי חנויות"}
     for typ, slugs in by_type.items():
         wb = Workbook(); ws = wb.active; ws.title = "הגדרות"; ws.sheet_view.rightToLeft = True
         ws.append(["ספק", "ההנחה שלי %", "מרווח %", "מרווח ₪ קבוע"])

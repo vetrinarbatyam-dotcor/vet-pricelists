@@ -67,12 +67,16 @@ def royal_canin(pdf_name):
                       "price_no_vat": price, "unit": unit})
     return items
 
-# ---------------------------------------------------------------- Purina Pro Plan VET
+# ---------------------------------------------------------------- Purina (VET sheet + retail sheet)
 def purina(pdf_name):
-    """cols: [after-discount, discount%, carton, UNIT LIST PRICE, units/carton, unit, weight, name, sku]"""
-    items = []
+    """cols: [after-discount, discount%, carton, UNIT LIST PRICE, units/carton, unit, weight, name, sku].
+    Single-filled rows are brand sections (FRISKIES DRY, PRO PLAN DRY CAT …)."""
+    items, section = [], None
     for r in tables(pdf_name):
         if len(r) < 9: continue
+        filled = [c for c in r if c and c.strip()]
+        if len(filled) == 1:                                                # brand section header
+            section = heb(filled[0]); continue
         if "הנחה" in heb(r[1]): continue
         name, sku = heb(r[7]), re.sub(r"\s+", "", r[8] or "")
         price = money(r[3])                                                 # מחיר ליח' = list price
@@ -80,7 +84,78 @@ def purina(pdf_name):
         w, u, per = heb(r[6]), heb(r[5]), heb(r[4])
         unit = " ".join(x for x in (w, u) if x) + (f" × {per} בקרטון" if per else "")
         items.append({"name": name, "sku": sku, "price_no_vat": price, "unit": unit.strip() or None,
-                      "animal": "חתול" if "לחתול" in name else ("כלב" if "לכלב" in name else None)})
+                      "category": section,
+                      "animal": "חתול" if ("לחתול" in name or "CAT" in (section or "")) else
+                                ("כלב" if ("לכלב" in name or "DOG" in (section or "")) else None)})
+    return items
+
+# ---------------------------------------------------------------- simple [price, name, barcode, sku] sheets
+def simple_table(pdf_name, i_price, i_name, i_sku, min_cols, category=None, skip=("מחירון", "תיאור", "תאור")):
+    items = []
+    for r in tables(pdf_name):
+        if len(r) < min_cols: continue
+        head = heb(r[i_name])
+        if not is_name(r[i_name]) or any(k in head for k in skip): continue
+        price = money(r[i_price])
+        if not price: continue
+        sku = (r[i_sku] or "").replace(" ", "") if i_sku is not None else None
+        items.append({"name": head, "sku": sku or None, "price_no_vat": price, "category": category})
+    return items
+
+# ---------------------------------------------------------------- IDEXX reference list
+def idexx(pdf_name):
+    """cols: [not-available-in-IL flag, price ex-VAT, test description, Test Code]"""
+    items = []
+    for r in tables(pdf_name):
+        if len(r) < 4: continue
+        name, code = heb(r[2]), (r[3] or "").strip()
+        price = money(r[1])
+        if not price or not is_name(r[2]) or "תיאור" in name: continue
+        items.append({"name": name, "sku": code or None, "price_no_vat": price,
+                      "category": None, "notes": "אינה זמינה בישראל" if (r[0] or "").strip() else None})
+    return items
+
+# ---------------------------------------------------------------- Miltin (Beit Erez) consumables
+def miltin_consumables(pdf_name):
+    """cols: [active ingredient, price, product, sku, company, family]; single-cell rows = section."""
+    items, section = [], None
+    for r in tables(pdf_name):
+        filled = [c for c in r if c and c.strip()]
+        if len(filled) == 1 and is_name(filled[0]):
+            section = heb(filled[0]); continue
+        if len(r) < 5: continue
+        name = heb(r[2]); price = money(r[1])
+        if not is_name(r[2]) or not price or "שם המוצר" in name: continue
+        fam = heb(r[5]) if len(r) > 5 else ""
+        items.append({"name": name, "sku": (r[3] or "").strip() or None, "price_no_vat": price,
+                      "category": fam or section, "manufacturer": heb(r[4]) or None,
+                      "notes": heb(r[0]) or None})
+    return items
+
+# ---------------------------------------------------------------- MSD Bravecto
+def bravecto(pdf_name):
+    """rows are either [price, weight range, name] or one merged cell holding all three."""
+    items = []
+    for r in tables(pdf_name):
+        filled = [heb(c) for c in r if c and c.strip()]
+        if not filled or any("מחיר לווטרינר" in f for f in filled): continue
+        blob = " ".join(filled)
+        price = None
+        m = re.search(r"(\d[\d.,]*)\s*₪|₪\s*(\d[\d.,]*)", blob)
+        if m: price = money(m.group(1) or m.group(2))
+        name = re.sub(r"₪\s*[\d.,]+|[\d.,]+\s*₪", "", blob).strip(" -|")
+        if not price or not re.search(r"ברבקטו|ברווקטו", name): continue
+        sku = None
+        ms = re.search(r"[)(](\d{5,})[)(]?", name)
+        if ms: sku = ms.group(1); name = name.replace(ms.group(0), " ")
+        mw = re.search(r"(\d[\d.]*\s*-\s*\d[\d.]*\s*ק\"ג|עד\s*\d[\d.]*\s*ק\"ג|\+\s*\d+\s*ק\"ג)", name)
+        weight = mw.group(1).strip() if mw else None
+        if mw: name = name.replace(mw.group(0), " ")
+        name = re.sub(r"[)(]", " ", name)
+        name = re.sub(r"\s+", " ", name).strip(" -·")
+        if weight: name = f"{name} · {weight}"
+        items.append({"name": re.sub(r"\s+", " ", name), "sku": sku, "price_no_vat": price,
+                      "category": "הדברה / טפילים"})
     return items
 
 # ---------------------------------------------------------------- Ferplast
@@ -151,7 +226,15 @@ def zoetis(meds_pdf, parasite_pdf):
                       "category": "טיפולים מונעים"})
     return items
 
+DLP = "Downloads/PDF/"
 JOBS = {
+    "purina_retail_2026_06": lambda: purina("הצעת מחיר וטרינר 2026.pdf"),
+    "vetlife_2025_02":  lambda: simple_table("PDF/מחירון וטלייף 02.25 (1).pdf", 0, 1, 3, 4),
+    "monge_2025_01":    lambda: simple_table("PDF/מחירון מונג  פיש יבשים - ינואר 2025 (1).pdf", 1, 2, 4, 5),
+    "monge_vet_2025_01": lambda: simple_table("PDF/מחירון מונג וט סלושיין  - ינואר 2025 (1).pdf", 1, 2, 4, 5),
+    "idexx_2025":       lambda: idexx("PDF/מחירון רפרנס איידקס 2025.pdf"),
+    "miltin_consum_2025_11": lambda: miltin_consumables("PDF/מחירון חטיבה וטרינרית קבוצת מילטין ציוד מתכלה - נובמבר 2025.pdf"),
+    "msd_2026":         lambda: bravecto("../pricecmp/pdf/new_bravecto.pdf"),
     "zoetis_2026":      lambda: zoetis("זואטיס תרופות 2026.PDF", "זואטיס סימפריקה סטרונגהולד 2026.PDF"),
     "rc_vet_2026_06":   lambda: royal_canin("RC VET Price list JUNE.pdf"),
     "rc_spt_2026_01":   lambda: royal_canin("RC SPT Price list Jan_2026.pdf"),

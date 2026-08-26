@@ -1,0 +1,201 @@
+{
+"meta": {
+"action": "ok",
+"action_note": "מחיר מחירון רשמי (לפני הנחה) מאישורי ההזמנה + המחירון המלא.",
+"slug": "vetmarket-shop",
+"type": "shop",
+"supplier": "וטמרקט",
+"price_list_date": "2026-08",
+"source_file": "sources/shop/vetmarket-shop-2026-08.xlsx",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 18,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"
+},
+"items": [
+{
+"name": "חטיף הילס היפואלרגני לכלב 200 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 23.0,
+"price_with_vat": 27.14,
+"sku": "40608557",
+"price_date": "2026-03",
+"id": "vetmarket-shop-1"
+},
+{
+"name": "חטיף פודיס נגיסי סלמון 100 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 6.0,
+"price_with_vat": 7.08,
+"sku": "48000004",
+"price_date": "2026-07",
+"id": "vetmarket-shop-2"
+},
+{
+"name": "חטיף פודיס רצועות עוף רכות 100 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 6.0,
+"price_with_vat": 7.08,
+"sku": "48000000",
+"price_date": "2026-06",
+"id": "vetmarket-shop-3"
+},
+{
+"name": "חטיף פודיס נתחי ברווז רכים 100 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 4.3,
+"price_with_vat": 5.07,
+"sku": "48000001",
+"price_date": "2026-03",
+"id": "vetmarket-shop-4"
+},
+{
+"name": "חטיף פודיס נגיסי ברווז 100 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 6.0,
+"price_with_vat": 7.08,
+"sku": "48000005",
+"price_date": "2026-07",
+"id": "vetmarket-shop-5"
+},
+{
+"name": "Kit4Cat חול",
+"category": "חול ושירותים",
+"topic": "litter",
+"price_no_vat": 35.0,
+"price_with_vat": 41.3,
+"sku": "460001",
+"price_date": "2026-03",
+"id": "vetmarket-shop-6"
+},
+{
+"name": "תוסף מפרקים  DASUQUIN Nutramax חטיפים לכלב בינוני/קטן, 84 יח'",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 156.0,
+"price_with_vat": 184.08,
+"sku": "181525",
+"pack_qty": 84,
+"price_date": "2026-08",
+"id": "vetmarket-shop-7"
+},
+{
+"name": "תוסף מפרקים  DASUQUIN Nutramax חטיפים לכלב גדול, 84 יח'",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"sku": "181526",
+"pack_qty": 84,
+"price_date": "2026-08",
+"id": "vetmarket-shop-8"
+},
+{
+"name": "חטיף FOODIES גלילת ברווז עם עצם דנטלית 100 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 6.0,
+"price_with_vat": 7.08,
+"sku": "48000013",
+"price_date": "2026-06",
+"id": "vetmarket-shop-9"
+},
+{
+"name": "חטיף FOODIES גלילת כבש, אורז ועור בקר, 100 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 6.0,
+"price_with_vat": 7.08,
+"sku": "48000015",
+"price_date": "2026-07",
+"id": "vetmarket-shop-10"
+},
+{
+"name": "חטיף FOODIES מקלות לעיסה עוף ועור בקר 1 ק\"ג",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "48000025",
+"price_date": "2026-06",
+"id": "vetmarket-shop-11"
+},
+{
+"name": "חטיף FOODIES גלילת עוף ועור בקר ג'מבו 1 ק\"ג",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "48000027",
+"price_date": "2026-07",
+"id": "vetmarket-shop-12"
+},
+{
+"name": "חטיף FOODIES גלילת ברווז עם עצם סידן 1 ק\"ג",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "48000028",
+"price_date": "2026-07",
+"id": "vetmarket-shop-13"
+},
+{
+"name": "חטיף FOODIES פילה חזה עוף 1 ק\"ג",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "48000029",
+"price_date": "2026-06",
+"id": "vetmarket-shop-14"
+},
+{
+"name": "ק\"ג 1 חטיף פודיס ברווז על מקלוני עור בקר,",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "48000030",
+"price_date": "2026-07",
+"id": "vetmarket-shop-15"
+},
+{
+"name": "חטיף FOODIES גלילת כבש ועור בקר, 1 ק\"ג",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "48000031",
+"price_date": "2026-06",
+"id": "vetmarket-shop-16"
+},
+{
+"name": "ק\"ג 1 חטיף פודיס מקלות לעיסה כבש ועור בקר,",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "48000032",
+"price_date": "2026-06",
+"id": "vetmarket-shop-17"
+},
+{
+"name": "חטיף FOODIES מקלות לעיסה סלמון ועור בקר, 1 ק\"ג",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 53.0,
+"price_with_vat": 62.54,
+"sku": "48000033",
+"price_date": "2026-06",
+"id": "vetmarket-shop-18"
+}
+]
+}

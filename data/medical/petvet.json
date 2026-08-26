@@ -1,5 +1,7 @@
 {
 "meta": {
+"action": "ok",
+"action_note": "מעודכן.",
 "slug": "petvet",
 "type": "medical",
 "supplier": "פט-וט ביומד",
@@ -7,7 +9,7 @@
 "source_file": "sources/medical/petvet-2026-05.pdf",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 181,
+"item_count": 167,
 "status": "current",
 "imported_at": "2026-08-26",
 "notes": "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"
@@ -84,16 +86,6 @@
 "id": "petvet-7"
 },
 {
-"name": "Keto Tris Finger Wipes 50 units",
-"category": "DermatoVet",
-"topic": "other",
-"price_no_vat": 59.0,
-"price_with_vat": 69.62,
-"sku": "DERMA-SP1330",
-"pack_qty": 50,
-"id": "petvet-8"
-},
-{
 "name": "Tear Clear Finger Wipes 50 units",
 "category": "DermatoVet",
 "topic": "ears",
@@ -101,7 +93,7 @@
 "price_with_vat": 69.62,
 "sku": "DERMA-SP1335",
 "pack_qty": 50,
-"id": "petvet-9"
+"id": "petvet-8"
 },
 {
 "name": "Keto-C Shampoo 355ml",
@@ -111,7 +103,7 @@
 "price_with_vat": 81.42,
 "sku": "DERMA-SP1024",
 "pack_qty": 355,
-"id": "petvet-10"
+"id": "petvet-9"
 },
 {
 "name": "Spray Keto-C 236ml",
@@ -121,7 +113,7 @@
 "price_with_vat": 81.42,
 "sku": "DERMA-SP1003",
 "pack_qty": 236,
-"id": "petvet-11"
+"id": "petvet-10"
 },
 {
 "name": "CeroShield Keto-C Shampoo 237ml",
@@ -131,7 +123,7 @@
 "price_with_vat": 67.26,
 "sku": "DERMA-SF1510",
 "pack_qty": 237,
-"id": "petvet-12"
+"id": "petvet-11"
 },
 {
 "name": "Hexi-4 Derm Shampoo 355ml",
@@ -141,7 +133,7 @@
 "price_with_vat": 79.06,
 "sku": "DERMA-SP1022",
 "pack_qty": 355,
-"id": "petvet-13"
+"id": "petvet-12"
 },
 {
 "name": "Bright Whitening Shampoo 355ml",
@@ -151,7 +143,7 @@
 "price_with_vat": 61.36,
 "sku": "DERMA-SP1063",
 "pack_qty": 355,
-"id": "petvet-14"
+"id": "petvet-13"
 },
 {
 "name": "Benzoyl Peroxide Shampoo 355ml",
@@ -161,7 +153,7 @@
 "price_with_vat": 81.42,
 "sku": "DERMA-SP1030",
 "pack_qty": 355,
-"id": "petvet-15"
+"id": "petvet-14"
 },
 {
 "name": "Pramox-1 Shampoo 475ml",
@@ -171,7 +163,7 @@
 "price_with_vat": 94.4,
 "sku": "DERMA-SP1227",
 "pack_qty": 475,
-"id": "petvet-16"
+"id": "petvet-15"
 },
 {
 "name": "Nusaderm Shampoo 355ml",
@@ -181,7 +173,7 @@
 "price_with_vat": 81.42,
 "sku": "DERMA-SP1038",
 "pack_qty": 355,
-"id": "petvet-17"
+"id": "petvet-16"
 },
 {
 "name": "EFA Hypoallergenic Shampoo 355ml",
@@ -191,7 +183,7 @@
 "price_with_vat": 54.28,
 "sku": "DERMA-SP1046",
 "pack_qty": 355,
-"id": "petvet-18"
+"id": "petvet-17"
 },
 {
 "name": "Aloe & Oatmeal Shampoo 355ml",
@@ -201,7 +193,7 @@
 "price_with_vat": 54.28,
 "sku": "DERMA-SP1055",
 "pack_qty": 355,
-"id": "petvet-19"
+"id": "petvet-18"
 },
 {
 "name": "Keto-C Wipes 50 units",
@@ -211,7 +203,7 @@
 "price_with_vat": 64.9,
 "sku": "DERMA-SP1004",
 "pack_qty": 50,
-"id": "petvet-20"
+"id": "petvet-19"
 },
 {
 "name": "Soft Chews Omega-V3 60ct",
@@ -220,7 +212,7 @@
 "price_no_vat": 99.0,
 "price_with_vat": 116.82,
 "sku": "DERMA-SC1087",
-"id": "petvet-21"
+"id": "petvet-20"
 },
 {
 "name": "Omega-V3 Liquid 236ml",
@@ -230,7 +222,7 @@
 "price_with_vat": 82.6,
 "sku": "DERMA-SP1086",
 "pack_qty": 236,
-"id": "petvet-22"
+"id": "petvet-21"
 },
 {
 "name": "Mousse CeroShield Keto-C 200ml",
@@ -240,7 +232,7 @@
 "price_with_vat": 67.26,
 "sku": "DERMA-SF1510",
 "pack_qty": 200,
-"id": "petvet-23"
+"id": "petvet-22"
 },
 {
 "name": "IDROP VET GEL 10ml",
@@ -251,7 +243,7 @@
 "sku": "IMED-204",
 "bonus": "6+1,10+2",
 "pack_qty": 10,
-"id": "petvet-24"
+"id": "petvet-23"
 },
 {
 "name": "I-LID 'N LASH VET Wipes 60 ct",
@@ -261,7 +253,7 @@
 "price_with_vat": 75.52,
 "sku": "IMED-218",
 "bonus": "6+1,10+2",
-"id": "petvet-25"
+"id": "petvet-24"
 },
 {
 "name": "Otic Enzymatic Solution 36ml",
@@ -272,7 +264,7 @@
 "sku": "PKB-1000F-GREEN",
 "bonus": "6+1,10+2",
 "pack_qty": 36,
-"id": "petvet-26"
+"id": "petvet-25"
 },
 {
 "name": "Otic Advanced with HC 36ml",
@@ -283,7 +275,7 @@
 "sku": "PKB-1201A-RED",
 "bonus": "6+1,10+2",
 "pack_qty": 36,
-"id": "petvet-27"
+"id": "petvet-26"
 },
 {
 "name": "Ear Cleanser 118ml",
@@ -294,7 +286,7 @@
 "sku": "PKB-ZYC12",
 "bonus": "6+1,10+2",
 "pack_qty": 118,
-"id": "petvet-28"
+"id": "petvet-27"
 },
 {
 "name": "Topical Cream 28ml",
@@ -305,7 +297,7 @@
 "sku": "PKB-ZYTCWO",
 "bonus": "6+1,10+2",
 "pack_qty": 28,
-"id": "petvet-29"
+"id": "petvet-28"
 },
 {
 "name": "Cream with 1% Hydrocortisone 28ml",
@@ -316,7 +308,7 @@
 "sku": "PKB-ZYTC",
 "bonus": "6+1,10+2",
 "pack_qty": 28,
-"id": "petvet-30"
+"id": "petvet-29"
 },
 {
 "name": "Small Animal & Exotic Topical Spray w/o Hydrocortisone",
@@ -326,7 +318,7 @@
 "price_with_vat": 73.16,
 "sku": "PKB-RZSMETS",
 "bonus": "6+1,10+2",
-"id": "petvet-31"
+"id": "petvet-30"
 },
 {
 "name": "Spray with 1% Hydrocortisone 59ml",
@@ -337,7 +329,7 @@
 "sku": "PKB-ZYTS",
 "bonus": "6+1,10+2",
 "pack_qty": 59,
-"id": "petvet-32"
+"id": "petvet-31"
 },
 {
 "name": "Funky Paw 90g",
@@ -347,7 +339,7 @@
 "price_with_vat": 70.8,
 "sku": "PKB-RZFP032",
 "bonus": "6+1,10+2",
-"id": "petvet-33"
+"id": "petvet-32"
 },
 {
 "name": "Antiseptic Oral Gel 28ml",
@@ -358,7 +350,7 @@
 "sku": "PKB-OVAG1",
 "bonus": "6+1,10+2",
 "pack_qty": 28,
-"id": "petvet-34"
+"id": "petvet-33"
 },
 {
 "name": "Oral Gel 70g",
@@ -368,7 +360,7 @@
 "price_with_vat": 70.8,
 "sku": "PKB-ROGD0205",
 "bonus": "6+1,10+2",
-"id": "petvet-35"
+"id": "petvet-34"
 },
 {
 "name": "Water Additive 118ml",
@@ -379,7 +371,7 @@
 "sku": "PKB-ROWA0400",
 "bonus": "6+1,10+2",
 "pack_qty": 118,
-"id": "petvet-36"
+"id": "petvet-35"
 },
 {
 "name": "Water Additive 236ml",
@@ -390,7 +382,7 @@
 "sku": "PKB-ROWA0800",
 "bonus": "6+1,10+2",
 "pack_qty": 236,
-"id": "petvet-37"
+"id": "petvet-36"
 },
 {
 "name": "Breath Freshner 118ml",
@@ -401,7 +393,7 @@
 "sku": "PKB-ROBF0400",
 "bonus": "6+1,10+2",
 "pack_qty": 118,
-"id": "petvet-38"
+"id": "petvet-37"
 },
 {
 "name": "GlycoZoo Otic 118ml",
@@ -412,7 +404,7 @@
 "sku": "DZOO-GOX",
 "bonus": "6+1,10+2",
 "pack_qty": 118,
-"id": "petvet-39"
+"id": "petvet-38"
 },
 {
 "name": "KC Oto-Pack 54ml",
@@ -422,7 +414,7 @@
 "price_with_vat": 649.0,
 "sku": "DZOO-KCOX",
 "pack_qty": 54,
-"id": "petvet-40"
+"id": "petvet-39"
 },
 {
 "name": "Tris Otic 118ml",
@@ -433,17 +425,7 @@
 "sku": "DZOO-TOX",
 "bonus": "6+1,10+2",
 "pack_qty": 118,
-"id": "petvet-41"
-},
-{
-"name": "Tris Ophto Wipes 50ct",
-"category": "DermaZoo",
-"topic": "other",
-"price_no_vat": 58.0,
-"price_with_vat": 68.44,
-"sku": "DZOO-TWX",
-"bonus": "6+1,10+2",
-"id": "petvet-42"
+"id": "petvet-40"
 },
 {
 "name": "WEJOINT SMALL BREED 30tab",
@@ -453,7 +435,7 @@
 "price_with_vat": 70.8,
 "sku": "WEPHARM-010001",
 "pack_qty": 30,
-"id": "petvet-43"
+"id": "petvet-41"
 },
 {
 "name": "WEJOINT MEDIUM BREED 30tab",
@@ -463,7 +445,7 @@
 "price_with_vat": 80.24,
 "sku": "WEPHARM-010003",
 "pack_qty": 30,
-"id": "petvet-44"
+"id": "petvet-42"
 },
 {
 "name": "WEJOINT LARGE BREED 30tab",
@@ -473,7 +455,7 @@
 "price_with_vat": 96.76,
 "sku": "WEPHARM-010005",
 "pack_qty": 30,
-"id": "petvet-45"
+"id": "petvet-43"
 },
 {
 "name": "WEJOINT PLUS LARGE BREED 30tab",
@@ -483,7 +465,7 @@
 "price_with_vat": 120.36,
 "sku": "WEPHARM-010104",
 "pack_qty": 30,
-"id": "petvet-46"
+"id": "petvet-44"
 },
 {
 "name": "WEJOINT PLUS PASTE 30ml",
@@ -493,7 +475,7 @@
 "price_with_vat": 66.08,
 "sku": "WEPHARM-010106",
 "pack_qty": 30,
-"id": "petvet-47"
+"id": "petvet-45"
 },
 {
 "name": "WEPATICARE MEDIUM AND LARGE BREED 30tab",
@@ -503,7 +485,7 @@
 "price_with_vat": 280.84,
 "sku": "WEPHARM-0101123",
 "pack_qty": 30,
-"id": "petvet-48"
+"id": "petvet-46"
 },
 {
 "name": "WEPATICARE SMALL BREED AND CATS 30tab",
@@ -513,7 +495,7 @@
 "price_with_vat": 132.16,
 "sku": "WEPHARM-0101122",
 "pack_qty": 30,
-"id": "petvet-49"
+"id": "petvet-47"
 },
 {
 "name": "WEBIOTIC FAST 15ml",
@@ -523,7 +505,7 @@
 "price_with_vat": 44.84,
 "sku": "WEPHARM-010044",
 "pack_qty": 15,
-"id": "petvet-50"
+"id": "petvet-48"
 },
 {
 "name": "WEBIOTIC FAST 30ml",
@@ -533,7 +515,7 @@
 "price_with_vat": 63.72,
 "sku": "WEPHARM-010045",
 "pack_qty": 30,
-"id": "petvet-51"
+"id": "petvet-49"
 },
 {
 "name": "WEBIOTIC 30tab",
@@ -543,7 +525,7 @@
 "price_with_vat": 88.5,
 "sku": "WEPHARM-010049",
 "pack_qty": 30,
-"id": "petvet-52"
+"id": "petvet-50"
 },
 {
 "name": "WECALM 30tab",
@@ -553,7 +535,7 @@
 "price_with_vat": 112.1,
 "sku": "WEPHARM-010095",
 "pack_qty": 30,
-"id": "petvet-53"
+"id": "petvet-51"
 },
 {
 "name": "WEFIBER 225g",
@@ -562,7 +544,7 @@
 "price_no_vat": 73.0,
 "price_with_vat": 86.14,
 "sku": "WEPHARM-010118",
-"id": "petvet-54"
+"id": "petvet-52"
 },
 {
 "name": "WEHEMO ORAL LIQUID 30ml",
@@ -572,7 +554,7 @@
 "price_with_vat": 82.6,
 "sku": "WEPHARM-010050",
 "pack_qty": 30,
-"id": "petvet-55"
+"id": "petvet-53"
 },
 {
 "name": "WENEFRO ADVANCED 30ml",
@@ -582,7 +564,7 @@
 "price_with_vat": 70.8,
 "sku": "WEPHARM-010063",
 "pack_qty": 30,
-"id": "petvet-56"
+"id": "petvet-54"
 },
 {
 "name": "WENEFRO ADVANCED 30tab",
@@ -592,7 +574,7 @@
 "price_with_vat": 100.3,
 "sku": "WEPHARM-010062",
 "pack_qty": 30,
-"id": "petvet-57"
+"id": "petvet-55"
 },
 {
 "name": "WEMALT 50g",
@@ -601,7 +583,7 @@
 "price_no_vat": 38.0,
 "price_with_vat": 44.84,
 "sku": "WEPHARM-010070",
-"id": "petvet-58"
+"id": "petvet-56"
 },
 {
 "name": "WEVIT GEL 100ml",
@@ -611,7 +593,7 @@
 "price_with_vat": 59.0,
 "sku": "WEPHARM-010032",
 "pack_qty": 100,
-"id": "petvet-59"
+"id": "petvet-57"
 },
 {
 "name": "WEDENTAL GEL 100ml",
@@ -621,7 +603,7 @@
 "price_with_vat": 75.52,
 "sku": "WEPHARM-010115",
 "pack_qty": 100,
-"id": "petvet-60"
+"id": "petvet-58"
 },
 {
 "name": "WECONFORT 30caps",
@@ -631,7 +613,7 @@
 "price_with_vat": 87.32,
 "sku": "WEPHARM-010056",
 "pack_qty": 30,
-"id": "petvet-61"
+"id": "petvet-59"
 },
 {
 "name": "WECOGNI 90g",
@@ -640,7 +622,7 @@
 "price_no_vat": 90.0,
 "price_with_vat": 106.2,
 "sku": "WEPHARM-010120",
-"id": "petvet-62"
+"id": "petvet-60"
 },
 {
 "name": "WEGASTRO 60ml",
@@ -650,7 +632,7 @@
 "price_with_vat": 86.14,
 "sku": "WEPHARM-112",
 "pack_qty": 60,
-"id": "petvet-63"
+"id": "petvet-61"
 },
 {
 "name": "WEMUNO 225g",
@@ -659,7 +641,7 @@
 "price_no_vat": 85.0,
 "price_with_vat": 100.3,
 "sku": "WEPHARM-114",
-"id": "petvet-64"
+"id": "petvet-62"
 },
 {
 "name": "WECYSTO PLUS 30tab",
@@ -669,7 +651,7 @@
 "price_with_vat": 90.86,
 "sku": "WEPHARM-010112",
 "pack_qty": 30,
-"id": "petvet-65"
+"id": "petvet-63"
 },
 {
 "name": "WECYSTO PLUS GEL 50ml",
@@ -679,7 +661,7 @@
 "price_with_vat": 80.24,
 "sku": "WEPHARM-010111",
 "pack_qty": 50,
-"id": "petvet-66"
+"id": "petvet-64"
 },
 {
 "name": "EASY PILL CAT",
@@ -689,7 +671,7 @@
 "price_with_vat": 34.22,
 "sku": "VETIN-EP-CAT",
 "bonus": "11+1",
-"id": "petvet-67"
+"id": "petvet-65"
 },
 {
 "name": "EASY PILL CAT 30x10g",
@@ -698,7 +680,7 @@
 "price_no_vat": 185.0,
 "price_with_vat": 218.3,
 "sku": "VETIN-EP-CAT-30",
-"id": "petvet-68"
+"id": "petvet-66"
 },
 {
 "name": "EASY PILL HAIRBALL",
@@ -708,7 +690,7 @@
 "price_with_vat": 47.2,
 "sku": "VETIN-EP-HAIRBALL",
 "bonus": "11+1",
-"id": "petvet-69"
+"id": "petvet-67"
 },
 {
 "name": "EASY PILL RESOLVIN (JOINT) FLEX",
@@ -718,7 +700,7 @@
 "price_with_vat": 64.9,
 "sku": "VETIN-EP-JOINTF",
 "bonus": "11+1",
-"id": "petvet-70"
+"id": "petvet-68"
 },
 {
 "name": "EASY PILL L-LYSINE",
@@ -728,7 +710,7 @@
 "price_with_vat": 47.2,
 "sku": "VETIN-EP-LYSINE",
 "bonus": "11+1",
-"id": "petvet-71"
+"id": "petvet-69"
 },
 {
 "name": "EASY PILL OXA'LESS Cat",
@@ -738,7 +720,7 @@
 "price_with_vat": 61.36,
 "sku": "VETIN-EP-146161",
 "bonus": "11+1",
-"id": "petvet-72"
+"id": "petvet-70"
 },
 {
 "name": "EASY PILL STRUV'LESS Cat",
@@ -748,7 +730,7 @@
 "price_with_vat": 59.0,
 "sku": "VETIN-EP-146163",
 "bonus": "11+1",
-"id": "petvet-73"
+"id": "petvet-71"
 },
 {
 "name": "EASY PILL Gingiva",
@@ -758,7 +740,7 @@
 "price_with_vat": 64.9,
 "sku": "VETIN-EP-146154",
 "bonus": "11+1",
-"id": "petvet-74"
+"id": "petvet-72"
 },
 {
 "name": "EASY PILL DOG",
@@ -768,7 +750,7 @@
 "price_with_vat": 34.22,
 "sku": "VETIN-EP-DOG",
 "bonus": "11+1",
-"id": "petvet-75"
+"id": "petvet-73"
 },
 {
 "name": "EASY PILL DOG 20x20g",
@@ -777,7 +759,7 @@
 "price_no_vat": 185.0,
 "price_with_vat": 218.3,
 "sku": "VETIN-EP-DOG-20",
-"id": "petvet-76"
+"id": "petvet-74"
 },
 {
 "name": "Tablet introducer soft tip, 10 pcs display box",
@@ -787,7 +769,7 @@
 "price_with_vat": 80.24,
 "sku": "FIONA-821050",
 "pack_qty": 10,
-"id": "petvet-77"
+"id": "petvet-75"
 },
 {
 "name": "Pill Crusher",
@@ -796,119 +778,7 @@
 "price_no_vat": 15.0,
 "price_with_vat": 17.7,
 "sku": "FIONA-821060-1",
-"id": "petvet-78"
-},
-{
-"name": "Pill Splitter",
-"category": "Fiona",
-"topic": "equipment",
-"price_no_vat": 7.0,
-"price_with_vat": 8.26,
-"sku": "FIONA-821070-1",
-"id": "petvet-79"
-},
-{
-"name": "Calming Spray 200ml",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 46.0,
-"price_with_vat": 54.28,
-"sku": "PR-79583",
-"pack_qty": 200,
-"id": "petvet-80"
-},
-{
-"name": "Mini Calming Spray 15ml",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 18.0,
-"price_with_vat": 21.24,
-"sku": "PR-79664",
-"pack_qty": 15,
-"id": "petvet-81"
-},
-{
-"name": "Battery Atomizer Refill 300ml",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 56.0,
-"price_with_vat": 66.08,
-"sku": "PR-79744",
-"pack_qty": 300,
-"id": "petvet-82"
-},
-{
-"name": "Battery Atomizer",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 185.0,
-"price_with_vat": 218.3,
-"sku": "PR-79745",
-"id": "petvet-83"
-},
-{
-"name": "Calming Wipe Sachet (12)",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 18.0,
-"price_with_vat": 21.24,
-"sku": "PR-79881",
-"id": "petvet-84"
-},
-{
-"name": "Boredom Buster forager kit",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 105.0,
-"price_with_vat": 123.9,
-"sku": "PR-80128",
-"id": "petvet-85"
-},
-{
-"name": "Calming Bandana Kit EXTRA SMALL",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 44.0,
-"price_with_vat": 51.92,
-"sku": "PR-79959",
-"id": "petvet-86"
-},
-{
-"name": "Calming Bandana Kit SMALL",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 44.0,
-"price_with_vat": 51.92,
-"sku": "PR-79960",
-"id": "petvet-87"
-},
-{
-"name": "Calming Bandana Kit MEDIUM",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 44.0,
-"price_with_vat": 51.92,
-"sku": "PR-79961",
-"id": "petvet-88"
-},
-{
-"name": "Calming Bandana Kit LARGE",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 44.0,
-"price_with_vat": 51.92,
-"sku": "PR-79962",
-"id": "petvet-89"
-},
-{
-"name": "Calming Spray 400ml – PROF. PACK",
-"category": "Pet Remedy",
-"topic": "other",
-"price_no_vat": 61.0,
-"price_with_vat": 71.98,
-"sku": "PR-79983",
-"pack_qty": 400,
-"id": "petvet-90"
+"id": "petvet-76"
 },
 {
 "name": "Clinisolv 4/0, 3/0, 2/0 70cm",
@@ -917,7 +787,7 @@
 "price_no_vat": 167.0,
 "price_with_vat": 197.06,
 "sku": "CLINISUT-84*/83*/82*",
-"id": "petvet-91"
+"id": "petvet-77"
 },
 {
 "name": "Clinisolv 0, 1 70cm",
@@ -926,7 +796,7 @@
 "price_no_vat": 167.0,
 "price_with_vat": 197.06,
 "sku": "CLINISUT-80*/81*",
-"id": "petvet-92"
+"id": "petvet-78"
 },
 {
 "name": "Clinisorb all sizes but 5/0 70cm",
@@ -935,7 +805,7 @@
 "price_no_vat": 144.0,
 "price_with_vat": 169.92,
 "sku": "CLINISUT-3***",
-"id": "petvet-93"
+"id": "petvet-79"
 },
 {
 "name": "Clinisorb 5/0 45cm",
@@ -944,7 +814,7 @@
 "price_no_vat": 144.0,
 "price_with_vat": 169.92,
 "sku": "CLINISUT-35*",
-"id": "petvet-94"
+"id": "petvet-80"
 },
 {
 "name": "0 Chromic Catgut 0 75 m",
@@ -953,7 +823,7 @@
 "price_no_vat": 320.0,
 "price_with_vat": 377.6,
 "sku": "AIP-CATGUT",
-"id": "petvet-95"
+"id": "petvet-81"
 },
 {
 "name": "1 Chromic Catgut 1 75m",
@@ -962,7 +832,7 @@
 "price_no_vat": 380.0,
 "price_with_vat": 448.4,
 "sku": "AIP-CATGUT",
-"id": "petvet-96"
+"id": "petvet-82"
 },
 {
 "name": "2 Chromic Catgut 2 50m",
@@ -971,7 +841,7 @@
 "price_no_vat": 320.0,
 "price_with_vat": 377.6,
 "sku": "AIP-CATGUT",
-"id": "petvet-97"
+"id": "petvet-83"
 },
 {
 "name": "2/0 Chromic Catgut 2/0 100m",
@@ -980,7 +850,7 @@
 "price_no_vat": 380.0,
 "price_with_vat": 448.4,
 "sku": "AIP-CATGUT",
-"id": "petvet-98"
+"id": "petvet-84"
 },
 {
 "name": "3/0 Chromic Catgut 3/0 100m",
@@ -989,7 +859,7 @@
 "price_no_vat": 370.0,
 "price_with_vat": 436.6,
 "sku": "AIP-CATGUT",
-"id": "petvet-99"
+"id": "petvet-85"
 },
 {
 "name": "0 PDO 0 15m",
@@ -998,7 +868,7 @@
 "price_no_vat": 195.0,
 "price_with_vat": 230.1,
 "sku": "AIP-PDX",
-"id": "petvet-100"
+"id": "petvet-86"
 },
 {
 "name": "1 PDO 1 15m",
@@ -1007,7 +877,7 @@
 "price_no_vat": 195.0,
 "price_with_vat": 230.1,
 "sku": "AIP-PDX",
-"id": "petvet-101"
+"id": "petvet-87"
 },
 {
 "name": "2/0 PDO 2/0 15m",
@@ -1016,7 +886,7 @@
 "price_no_vat": 195.0,
 "price_with_vat": 230.1,
 "sku": "AIP-PDX",
-"id": "petvet-102"
+"id": "petvet-88"
 },
 {
 "name": "3/0 PDO 3/0 15m",
@@ -1025,7 +895,7 @@
 "price_no_vat": 195.0,
 "price_with_vat": 230.1,
 "sku": "AIP-PDX",
-"id": "petvet-103"
+"id": "petvet-89"
 },
 {
 "name": "0 PGA 0 15m",
@@ -1034,7 +904,7 @@
 "price_no_vat": 165.0,
 "price_with_vat": 194.7,
 "sku": "AIP-PGA",
-"id": "petvet-104"
+"id": "petvet-90"
 },
 {
 "name": "1 PGA 1 15m",
@@ -1043,7 +913,7 @@
 "price_no_vat": 165.0,
 "price_with_vat": 194.7,
 "sku": "AIP-PGA",
-"id": "petvet-105"
+"id": "petvet-91"
 },
 {
 "name": "2 PGA 2 25m",
@@ -1052,7 +922,7 @@
 "price_no_vat": 165.0,
 "price_with_vat": 194.7,
 "sku": "AIP-PGA",
-"id": "petvet-106"
+"id": "petvet-92"
 },
 {
 "name": "URANOTEST GIARDIA 5 tests",
@@ -1061,7 +931,7 @@
 "price_no_vat": 198.0,
 "price_with_vat": 233.64,
 "sku": "URANO-D205",
-"id": "petvet-107"
+"id": "petvet-93"
 },
 {
 "name": "URANOTEST FeLV- FIV 5 tests",
@@ -1070,7 +940,7 @@
 "price_no_vat": 220.0,
 "price_with_vat": 259.6,
 "sku": "URANO-D210",
-"id": "petvet-108"
+"id": "petvet-94"
 },
 {
 "name": "URANOTEST DERMATOFITOS 4 tests",
@@ -1079,7 +949,7 @@
 "price_no_vat": 132.0,
 "price_with_vat": 155.76,
 "sku": "URANO-D217",
-"id": "petvet-109"
+"id": "petvet-95"
 },
 {
 "name": "URANOTEST PANLEUCOPENIA FELINA 5 tests",
@@ -1088,7 +958,7 @@
 "price_no_vat": 176.0,
 "price_with_vat": 207.68,
 "sku": "URANO-D235",
-"id": "petvet-110"
+"id": "petvet-96"
 },
 {
 "name": "URANOTEST LEISHMANIA 5 tests",
@@ -1097,7 +967,7 @@
 "price_no_vat": 176.0,
 "price_with_vat": 207.68,
 "sku": "URANO-D208",
-"id": "petvet-111"
+"id": "petvet-97"
 },
 {
 "name": "URANOTEST PARVO/CORONA/GIARDIA 5 tests",
@@ -1106,7 +976,7 @@
 "price_no_vat": 297.0,
 "price_with_vat": 350.46,
 "sku": "URANO-D242",
-"id": "petvet-112"
+"id": "petvet-98"
 },
 {
 "name": "URANOTEST QUATTRO 5 tests (LEISHMANIA/ DIROFILAR/ EHRLICHIA/ ANAPL)",
@@ -1115,7 +985,7 @@
 "price_no_vat": 340.0,
 "price_with_vat": 401.2,
 "sku": "URANO-D232",
-"id": "petvet-113"
+"id": "petvet-99"
 },
 {
 "name": "CANINE DISTEMPER AG TEST BIOGUARD (10T)",
@@ -1124,7 +994,7 @@
 "price_no_vat": 190.0,
 "price_with_vat": 224.2,
 "sku": "BIOGUARD-RC03-1",
-"id": "petvet-114"
+"id": "petvet-100"
 },
 {
 "name": "CANINE PARVO AG TEST BIOGUARD (10T)",
@@ -1133,7 +1003,7 @@
 "price_no_vat": 180.0,
 "price_with_vat": 212.4,
 "sku": "BIOGUARD-RC01-1",
-"id": "petvet-115"
+"id": "petvet-101"
 },
 {
 "name": "FIV Ab TEST BIOGUARD (10T)",
@@ -1142,7 +1012,7 @@
 "price_no_vat": 255.0,
 "price_with_vat": 300.9,
 "sku": "BIOGUARD-RV01-1",
-"id": "petvet-116"
+"id": "petvet-102"
 },
 {
 "name": "E. CANIS AB TEST (5T)",
@@ -1151,7 +1021,7 @@
 "price_no_vat": 190.0,
 "price_with_vat": 224.2,
 "sku": "BIOGUARD-RC07-0",
-"id": "petvet-117"
+"id": "petvet-103"
 },
 {
 "name": "TOXOPLASMA IgM/IgG Ab (10T)",
@@ -1160,7 +1030,7 @@
 "price_no_vat": 340.0,
 "price_with_vat": 401.2,
 "sku": "BIOGUARD-RF04-1",
-"id": "petvet-118"
+"id": "petvet-104"
 },
 {
 "name": "Leptospira IgM/IgG Ab Test (5T)",
@@ -1169,7 +1039,7 @@
 "price_no_vat": 210.0,
 "price_with_vat": 247.8,
 "sku": "BIOGUARD-RC26-0",
-"id": "petvet-119"
+"id": "petvet-105"
 },
 {
 "name": "FCV Ag/ FHV Ag Combo Test (5T)",
@@ -1178,7 +1048,7 @@
 "price_no_vat": 235.0,
 "price_with_vat": 277.3,
 "sku": "BIOGUARD-RF10-0",
-"id": "petvet-120"
+"id": "petvet-106"
 },
 {
 "name": "FCoV Ab Test (5T)",
@@ -1187,7 +1057,7 @@
 "price_no_vat": 160.0,
 "price_with_vat": 188.8,
 "sku": "BIOGUARD-RF05-0",
-"id": "petvet-121"
+"id": "petvet-107"
 },
 {
 "name": "C. Brucella Ab Test (5T)",
@@ -1196,7 +1066,7 @@
 "price_no_vat": 190.0,
 "price_with_vat": 224.2,
 "sku": "BIOGUARD-RC22-0",
-"id": "petvet-122"
+"id": "petvet-108"
 },
 {
 "name": "cPL Test (5T)",
@@ -1205,7 +1075,7 @@
 "price_no_vat": 210.0,
 "price_with_vat": 247.8,
 "sku": "BIOGUARD-RC32-0",
-"id": "petvet-123"
+"id": "petvet-109"
 },
 {
 "name": "CURAVET OvaDiagnost 50/pk",
@@ -1214,7 +1084,7 @@
 "price_no_vat": 109.0,
 "price_with_vat": 128.62,
 "sku": "FIONA-211040",
-"id": "petvet-124"
+"id": "petvet-110"
 },
 {
 "name": "CURAVET Flotation solution, 1 L",
@@ -1223,7 +1093,7 @@
 "price_no_vat": 105.0,
 "price_with_vat": 123.9,
 "sku": "FIONA-216050",
-"id": "petvet-125"
+"id": "petvet-111"
 },
 {
 "name": "Fluorescein Test sterile 100 un.",
@@ -1232,7 +1102,7 @@
 "price_no_vat": 120.0,
 "price_with_vat": 141.6,
 "sku": "FIONA-1191-1",
-"id": "petvet-126"
+"id": "petvet-112"
 },
 {
 "name": "Schirmer Test Strip with Blue Band,, 100/pk, Ster",
@@ -1241,7 +1111,7 @@
 "price_no_vat": 120.0,
 "price_with_vat": 141.6,
 "sku": "FIONA-1195-1",
-"id": "petvet-127"
+"id": "petvet-113"
 },
 {
 "name": "Rose Bengal Test Strip, 100/pk, Sterile",
@@ -1250,7 +1120,7 @@
 "price_no_vat": 120.0,
 "price_with_vat": 141.6,
 "sku": "FIONA-1198-1",
-"id": "petvet-128"
+"id": "petvet-114"
 },
 {
 "name": "Cutanplast Dental 1 un.",
@@ -1260,7 +1130,7 @@
 "price_with_vat": 9.44,
 "sku": "SION-05610101",
 "bonus": "22+2",
-"id": "petvet-129"
+"id": "petvet-115"
 },
 {
 "name": "Cutanplast standart 70x50mm 1 un.",
@@ -1270,7 +1140,7 @@
 "price_with_vat": 23.6,
 "sku": "SION-789750",
 "bonus": "18+2",
-"id": "petvet-130"
+"id": "petvet-116"
 },
 {
 "name": "FREEPLAST ADHESIVE REMOVER 125ML",
@@ -1280,7 +1150,7 @@
 "price_with_vat": 59.0,
 "sku": "GENIA-307268-1",
 "pack_qty": 125,
-"id": "petvet-131"
+"id": "petvet-117"
 },
 {
 "name": "(CPM) Medbond",
@@ -1289,7 +1159,7 @@
 "price_no_vat": 89.0,
 "price_with_vat": 105.02,
 "sku": "RVP-TA-01",
-"id": "petvet-132"
+"id": "petvet-118"
 },
 {
 "name": "Adbone VCP Granules 0.5-1mm 1g*5un.",
@@ -1298,7 +1168,7 @@
 "price_no_vat": 480.0,
 "price_with_vat": 566.4,
 "sku": "MEDBONE-VCP050110P",
-"id": "petvet-133"
+"id": "petvet-119"
 },
 {
 "name": "Adpaste VET Syringe 1cc*3units",
@@ -1308,7 +1178,7 @@
 "price_with_vat": 460.2,
 "sku": "MEDBONE-ADP101030S",
 "pack_qty": 3,
-"id": "petvet-134"
+"id": "petvet-120"
 },
 {
 "name": "VetSleeve 1\"x16\" Solid Black",
@@ -1317,7 +1187,7 @@
 "price_no_vat": 160.0,
 "price_with_vat": 188.8,
 "sku": "VS-VS116SB",
-"id": "petvet-135"
+"id": "petvet-121"
 },
 {
 "name": "VetSleeve 2\"x5\" Vented White",
@@ -1326,7 +1196,7 @@
 "price_no_vat": 160.0,
 "price_with_vat": 188.8,
 "sku": "VS-VS25VW",
-"id": "petvet-136"
+"id": "petvet-122"
 },
 {
 "name": "CURAVET Dog Protection Collar 7.5 cm ת חא הדיחי",
@@ -1335,7 +1205,7 @@
 "price_no_vat": 7.0,
 "price_with_vat": 8.26,
 "sku": "FIONA-111101-1",
-"id": "petvet-137"
+"id": "petvet-123"
 },
 {
 "name": "CURAVET Dog Protection Collar 10 cm ת חא הדיחי",
@@ -1344,7 +1214,7 @@
 "price_no_vat": 9.0,
 "price_with_vat": 10.62,
 "sku": "FIONA-111102-1",
-"id": "petvet-138"
+"id": "petvet-124"
 },
 {
 "name": "CURAVET Dog Protection Collar 12.5 cm ת חא הדיחי",
@@ -1353,7 +1223,7 @@
 "price_no_vat": 11.0,
 "price_with_vat": 12.98,
 "sku": "FIONA-111103-1",
-"id": "petvet-139"
+"id": "petvet-125"
 },
 {
 "name": "CURAVET Dog Protection Collar 15 cm ת חא הדיחי",
@@ -1362,7 +1232,7 @@
 "price_no_vat": 15.0,
 "price_with_vat": 17.7,
 "sku": "FIONA-111104-1",
-"id": "petvet-140"
+"id": "petvet-126"
 },
 {
 "name": "CURAVET Dog Protection Collar 20 cm ת חא הדיחי",
@@ -1371,7 +1241,7 @@
 "price_no_vat": 19.0,
 "price_with_vat": 22.42,
 "sku": "FIONA-111105-1",
-"id": "petvet-141"
+"id": "petvet-127"
 },
 {
 "name": "CURAVET Dog Protection Collar 25 cm ת חא הדיחי",
@@ -1380,7 +1250,7 @@
 "price_no_vat": 25.0,
 "price_with_vat": 29.5,
 "sku": "FIONA-111106-1",
-"id": "petvet-142"
+"id": "petvet-128"
 },
 {
 "name": "CURAVET Dog Protection Collar 30 cm ת חא הדיחי",
@@ -1389,7 +1259,7 @@
 "price_no_vat": 33.0,
 "price_with_vat": 38.94,
 "sku": "FIONA-111107-1",
-"id": "petvet-143"
+"id": "petvet-129"
 },
 {
 "name": "CuraVet Collar Snap N Go 7,5cm ת חא הדיחי",
@@ -1398,7 +1268,7 @@
 "price_no_vat": 7.0,
 "price_with_vat": 8.26,
 "sku": "FIONA-28761-1",
-"id": "petvet-144"
+"id": "petvet-130"
 },
 {
 "name": "CuraVet Collar Snap N Go 10cm ת חא הדיחי",
@@ -1407,7 +1277,7 @@
 "price_no_vat": 9.0,
 "price_with_vat": 10.62,
 "sku": "FIONA-28762-1",
-"id": "petvet-145"
+"id": "petvet-131"
 },
 {
 "name": "CuraVet Collar Snap N Go 12.5cm ת חא הדיחי",
@@ -1416,7 +1286,7 @@
 "price_no_vat": 11.0,
 "price_with_vat": 12.98,
 "sku": "FIONA-28763-1",
-"id": "petvet-146"
+"id": "petvet-132"
 },
 {
 "name": "CuraVet Collar Snap N Go 15cm ת חא הדיחי",
@@ -1425,7 +1295,7 @@
 "price_no_vat": 15.0,
 "price_with_vat": 17.7,
 "sku": "FIONA-28764-1",
-"id": "petvet-147"
+"id": "petvet-133"
 },
 {
 "name": "CuraVet Collar Snap N Go 20cm ת חא הדיחי",
@@ -1434,7 +1304,7 @@
 "price_no_vat": 19.0,
 "price_with_vat": 22.42,
 "sku": "FIONA-28765-1",
-"id": "petvet-148"
+"id": "petvet-134"
 },
 {
 "name": "CuraVet Collar Snap N Go 25cm ת חא הדיחי",
@@ -1443,7 +1313,7 @@
 "price_no_vat": 25.0,
 "price_with_vat": 29.5,
 "sku": "FIONA-28766-1",
-"id": "petvet-149"
+"id": "petvet-135"
 },
 {
 "name": "CuraVet Collar Snap N Go 30cm ת חא הדיחי",
@@ -1452,7 +1322,7 @@
 "price_no_vat": 33.0,
 "price_with_vat": 38.94,
 "sku": "FIONA-28767-1",
-"id": "petvet-150"
+"id": "petvet-136"
 },
 {
 "name": "VELFAST SELF GRIPPING DOG COLLARS T7.5 *1 ת חא הדיחי",
@@ -1461,7 +1331,7 @@
 "price_no_vat": 31.0,
 "price_with_vat": 36.58,
 "sku": "GENIA-306450-1",
-"id": "petvet-151"
+"id": "petvet-137"
 },
 {
 "name": "VELFAST SELF GRIPPING DOG COLLARS T10*1 ת חא הדיחי",
@@ -1470,7 +1340,7 @@
 "price_no_vat": 34.0,
 "price_with_vat": 40.12,
 "sku": "GENIA-306452-1",
-"id": "petvet-152"
+"id": "petvet-138"
 },
 {
 "name": "VELFAST SELF GRIPPING DOG COLLARS T12.5*1 ת חא הדיחי",
@@ -1479,7 +1349,7 @@
 "price_no_vat": 39.0,
 "price_with_vat": 46.02,
 "sku": "GENIA-306454-1",
-"id": "petvet-153"
+"id": "petvet-139"
 },
 {
 "name": "VELFAST SELF GRIPPING DOG COLLARS T15*1 ת חא הדיחי",
@@ -1488,7 +1358,7 @@
 "price_no_vat": 44.0,
 "price_with_vat": 51.92,
 "sku": "GENIA-306456-1",
-"id": "petvet-154"
+"id": "petvet-140"
 },
 {
 "name": "VELFAST SELF GRIPPING DOG COLLARS T20*1 ת חא הדיחי",
@@ -1497,7 +1367,7 @@
 "price_no_vat": 52.0,
 "price_with_vat": 61.36,
 "sku": "GENIA-306458-1",
-"id": "petvet-155"
+"id": "petvet-141"
 },
 {
 "name": "VELFAST SELF GRIPPING DOG COLLARS T25*1 ת חא הדיחי",
@@ -1506,7 +1376,7 @@
 "price_no_vat": 63.0,
 "price_with_vat": 74.34,
 "sku": "GENIA-306460-1",
-"id": "petvet-156"
+"id": "petvet-142"
 },
 {
 "name": "VELFAST SELF GRIPPING DOG COLLARS T30*1 ת חא הדיחי",
@@ -1515,7 +1385,7 @@
 "price_no_vat": 76.0,
 "price_with_vat": 89.68,
 "sku": "GENIA-306462-1",
-"id": "petvet-157"
+"id": "petvet-143"
 },
 {
 "name": "Tomcat Cath. w-out stylet 1.25x140mm 3.5 10pack",
@@ -1524,7 +1394,7 @@
 "price_no_vat": 215.0,
 "price_with_vat": 253.7,
 "sku": "FIONA-561001",
-"id": "petvet-158"
+"id": "petvet-144"
 },
 {
 "name": "CURAVET Dog Urin.Cathreter 1.3x500mm 4FG",
@@ -1534,7 +1404,7 @@
 "price_with_vat": 16.52,
 "sku": "FIONA-561201-1",
 "bonus": "9+1",
-"id": "petvet-159"
+"id": "petvet-145"
 },
 {
 "name": "CURAVET Dog Urin.Cathreter 2.0x500mm 6FG",
@@ -1544,7 +1414,7 @@
 "price_with_vat": 16.52,
 "sku": "FIONA-561202-1",
 "bonus": "9+1",
-"id": "petvet-160"
+"id": "petvet-146"
 },
 {
 "name": "CURAVET Dog Urin.Cathreter 2.6x500mm 8FG",
@@ -1554,7 +1424,7 @@
 "price_with_vat": 16.52,
 "sku": "FIONA-561203-1",
 "bonus": "9+1",
-"id": "petvet-161"
+"id": "petvet-147"
 },
 {
 "name": "CURAVET Prem Cat Urin. Catheter 1x130mm 3FG",
@@ -1564,7 +1434,7 @@
 "price_with_vat": 16.52,
 "sku": "FIONA-561230-1",
 "bonus": "11+1",
-"id": "petvet-162"
+"id": "petvet-148"
 },
 {
 "name": "CURAVET Prem Cat Urin.Cathreter 1.3x130mm 4F",
@@ -1574,7 +1444,7 @@
 "price_with_vat": 16.52,
 "sku": "FIONA-561240-1",
 "bonus": "11+1",
-"id": "petvet-163"
+"id": "petvet-149"
 },
 {
 "name": "CURAVET Prem.Jackson Urin.Catheter 1.0x130mm",
@@ -1584,7 +1454,7 @@
 "price_with_vat": 25.96,
 "sku": "FIONA-561250-1",
 "bonus": "11+1",
-"id": "petvet-164"
+"id": "petvet-150"
 },
 {
 "name": "CURAVET Prem.Jackson Urin.Catheter 1.3x130mm",
@@ -1594,7 +1464,7 @@
 "price_with_vat": 25.96,
 "sku": "FIONA-561260-1",
 "bonus": "11+1",
-"id": "petvet-165"
+"id": "petvet-151"
 },
 {
 "name": "Fioniavet Feeding Tube 5FR 1,7mm SINGLE",
@@ -1603,7 +1473,7 @@
 "price_no_vat": 6.0,
 "price_with_vat": 7.08,
 "sku": "FIONA-562010-1",
-"id": "petvet-166"
+"id": "petvet-152"
 },
 {
 "name": "Fioniavet Feeding Tube 6FR 2mm SINGLE",
@@ -1612,7 +1482,7 @@
 "price_no_vat": 6.0,
 "price_with_vat": 7.08,
 "sku": "FIONA-562020-1",
-"id": "petvet-167"
+"id": "petvet-153"
 },
 {
 "name": "Fioniavet Feeding Tube 10FR 3.3mm SINGLE",
@@ -1621,7 +1491,7 @@
 "price_no_vat": 6.0,
 "price_with_vat": 7.08,
 "sku": "FIONA-562030-1",
-"id": "petvet-168"
+"id": "petvet-154"
 },
 {
 "name": "Fioniavet Feeding Tube 14FR 4.7mm SINGLE",
@@ -1630,7 +1500,7 @@
 "price_no_vat": 6.0,
 "price_with_vat": 7.08,
 "sku": "FIONA-562050-1",
-"id": "petvet-169"
+"id": "petvet-155"
 },
 {
 "name": "IV set 20 drop/ml 240cm 2 x Y-Inj. SINGLE",
@@ -1639,7 +1509,7 @@
 "price_no_vat": 7.0,
 "price_with_vat": 8.26,
 "sku": "FIONA-654020-1",
-"id": "petvet-170"
+"id": "petvet-156"
 },
 {
 "name": "IV Set Standard Veterinary 230cm",
@@ -1648,7 +1518,7 @@
 "price_no_vat": 4.0,
 "price_with_vat": 4.72,
 "sku": "SIOM-IVS21001",
-"id": "petvet-171"
+"id": "petvet-157"
 },
 {
 "name": "Padded Splint S BLUE",
@@ -1657,7 +1527,7 @@
 "price_no_vat": 40.0,
 "price_with_vat": 47.2,
 "sku": "GENIA-307800",
-"id": "petvet-172"
+"id": "petvet-158"
 },
 {
 "name": "Padded Splint M RED",
@@ -1666,7 +1536,7 @@
 "price_no_vat": 46.0,
 "price_with_vat": 54.28,
 "sku": "GENIA-307805",
-"id": "petvet-173"
+"id": "petvet-159"
 },
 {
 "name": "Padded Splint L GREEN",
@@ -1675,7 +1545,7 @@
 "price_no_vat": 53.0,
 "price_with_vat": 62.54,
 "sku": "GENIA-307810",
-"id": "petvet-174"
+"id": "petvet-160"
 },
 {
 "name": "Handy Canis Hund Back XS",
@@ -1684,7 +1554,7 @@
 "price_no_vat": 290.0,
 "price_with_vat": 342.2,
 "sku": "GENIA-227250",
-"id": "petvet-175"
+"id": "petvet-161"
 },
 {
 "name": "Handy Canis Hund Back S",
@@ -1693,7 +1563,7 @@
 "price_no_vat": 290.0,
 "price_with_vat": 342.2,
 "sku": "GENIA-227252",
-"id": "petvet-176"
+"id": "petvet-162"
 },
 {
 "name": "Handy Canis Hund Back M",
@@ -1702,7 +1572,7 @@
 "price_no_vat": 300.0,
 "price_with_vat": 354.0,
 "sku": "GENIA-227254",
-"id": "petvet-177"
+"id": "petvet-163"
 },
 {
 "name": "Handy Canis Hund Back L",
@@ -1711,7 +1581,7 @@
 "price_no_vat": 300.0,
 "price_with_vat": 354.0,
 "sku": "GENIA-227256",
-"id": "petvet-178"
+"id": "petvet-164"
 },
 {
 "name": "Handy Canis Hund Back XL",
@@ -1720,7 +1590,7 @@
 "price_no_vat": 330.0,
 "price_with_vat": 389.4,
 "sku": "GENIA-227258",
-"id": "petvet-179"
+"id": "petvet-165"
 },
 {
 "name": "ADEQID MICROCHIP 8*1.4mm",
@@ -1729,7 +1599,7 @@
 "price_no_vat": 14.0,
 "price_with_vat": 16.52,
 "sku": "ADEQID-08MM",
-"id": "petvet-180"
+"id": "petvet-166"
 },
 {
 "name": "Animal ID Pocket Reader",
@@ -1738,7 +1608,7 @@
 "price_no_vat": 590.0,
 "price_with_vat": 696.2,
 "sku": "AIP-FRD5910",
-"id": "petvet-181"
+"id": "petvet-167"
 }
 ]
 }

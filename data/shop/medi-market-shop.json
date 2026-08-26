@@ -1,0 +1,306 @@
+{
+"meta": {
+"action": "ok",
+"action_note": "נאסף אוטומטית מאתר medi-market.co.il.",
+"slug": "medi-market-shop",
+"type": "shop",
+"supplier": "מדי-מרקט",
+"price_list_date": "2026-06",
+"source_file": null,
+"vat_basis": "with_vat",
+"vat_rate": 18,
+"item_count": 31,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"
+},
+"items": [
+{
+"name": "@ סדיניה 35 60X90 יח' TENA BED @",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 31.36,
+"price_with_vat": 37.0,
+"sku": "33262-1",
+"pack_qty": 90,
+"id": "medi-market-shop-1"
+},
+{
+"name": "ANTIGONE WIPES 19*20 500",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 71.42,
+"price_with_vat": 84.27,
+"sku": "M0002020",
+"id": "medi-market-shop-2"
+},
+{
+"name": "ANTIGONE WIPES 20*20 200",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 30.32,
+"price_with_vat": 35.78,
+"sku": "100003",
+"id": "medi-market-shop-3"
+},
+{
+"name": "CETRIN 1 LITTER SOL",
+"category": "חול ושירותים",
+"topic": "litter",
+"price_no_vat": 30.84,
+"price_with_vat": 36.39,
+"sku": "33365",
+"id": "medi-market-shop-4"
+},
+{
+"name": "DOUXO S3 CALM MOUSSE 150 ML",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 58.47,
+"price_with_vat": 69.0,
+"sku": "81-105",
+"pack_qty": 150,
+"id": "medi-market-shop-5"
+},
+{
+"name": "DOUXO S3 PYO MOUSSE 150 ML",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 58.47,
+"price_with_vat": 69.0,
+"sku": "81-101",
+"pack_qty": 150,
+"id": "medi-market-shop-6"
+},
+{
+"name": "DOUXO S3 PYO PADS",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 36.44,
+"price_with_vat": 43.0,
+"sku": "81-107",
+"id": "medi-market-shop-7"
+},
+{
+"name": "DOUXO S3 SEB MOUSSE 150 ML",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 58.47,
+"price_with_vat": 69.0,
+"sku": "81-103",
+"pack_qty": 150,
+"id": "medi-market-shop-8"
+},
+{
+"name": "Easy Go 500 Litter - איזי גו",
+"category": "חול ושירותים",
+"topic": "litter",
+"price_no_vat": 14.32,
+"price_with_vat": 16.9,
+"sku": "18033-1",
+"id": "medi-market-shop-9"
+},
+{
+"name": "Pinchers 45chews peanut butter pill hiding treat",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 22.3,
+"price_with_vat": 26.31,
+"sku": "090062J.045",
+"id": "medi-market-shop-10"
+},
+{
+"name": "אלונקה רכה מתקפלת NAR QuikLitter",
+"category": "חול ושירותים",
+"topic": "litter",
+"price_no_vat": 194.49,
+"price_with_vat": 229.5,
+"sku": "4105",
+"id": "medi-market-shop-11"
+},
+{
+"name": "כלוב נשיאה אטלס 10 ללא מזרון Ferplast",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 50.85,
+"price_with_vat": 60.0,
+"sku": "5550279",
+"id": "medi-market-shop-12"
+},
+{
+"name": "כלוב נשיאה אטלס 20 ללא מזרון Ferplast",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 88.14,
+"price_with_vat": 104.0,
+"sku": "5550280",
+"id": "medi-market-shop-13"
+},
+{
+"name": "מברשת רחצת ידיים לפני ניתוח, סטר', מדיקפרו",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 0.87,
+"price_with_vat": 1.03,
+"sku": "3694",
+"id": "medi-market-shop-14"
+},
+{
+"name": "מגבונים - Clinell sporicidal wipesn 1/6",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 156.78,
+"price_with_vat": 185.0,
+"sku": "CS25",
+"id": "medi-market-shop-15"
+},
+{
+"name": "מגבונים - Clinell Universal wipes clip pack 50",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 9.25,
+"price_with_vat": 10.92,
+"sku": "11050",
+"id": "medi-market-shop-16"
+},
+{
+"name": "מגבונים - Clinell Universal Wipes pack of 200",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 19.92,
+"price_with_vat": 23.5,
+"sku": "11200",
+"id": "medi-market-shop-17"
+},
+{
+"name": "מגבונים מדי-קלין אקסטרה עבים מועשר באלוורה 500 יח 20X16 ס\"מ",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 22.88,
+"price_with_vat": 27.0,
+"sku": "128697",
+"pack_qty": 500,
+"id": "medi-market-shop-18"
+},
+{
+"name": "מגבונים מדי-קלין מועשרים באלוורה 500 יח' 28X20 ס\"מ",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 22.88,
+"price_with_vat": 27.0,
+"sku": "128695",
+"pack_qty": 500,
+"id": "medi-market-shop-19"
+},
+{
+"name": "מיטה חשמלית דגם GUESS 402 מעקה מגלוון",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 6288.14,
+"price_with_vat": 7420.0,
+"sku": "883135",
+"id": "medi-market-shop-20"
+},
+{
+"name": "מספריים אל חלד לציפורניים REISZ",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 21.17,
+"price_with_vat": 24.98,
+"sku": "434457",
+"id": "medi-market-shop-21"
+},
+{
+"name": "משושת ג'ל 500 מ\"ל פוליגונום רב תכליתי Herbaderm",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 157.63,
+"price_with_vat": 186.0,
+"sku": "67-105",
+"pack_qty": 500,
+"id": "medi-market-shop-22"
+},
+{
+"name": "משושת קרם 500 מ\"ל פוליגונום רב תכליתי Herbaderm",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 157.63,
+"price_with_vat": 186.0,
+"sku": "67-103",
+"pack_qty": 500,
+"id": "medi-market-shop-23"
+},
+{
+"name": "נייר לניגוב עדשות מיקרוסקופ 1159 1/280 Kimwipes",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 26.44,
+"price_with_vat": 31.2,
+"sku": "3422",
+"id": "medi-market-shop-24"
+},
+{
+"name": "סיר לילה פלסטיק/ מיטה גדול עם ידית, מדיקפרו",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 11.86,
+"price_with_vat": 14.0,
+"sku": "4055",
+"id": "medi-market-shop-25"
+},
+{
+"name": "קוצץ ציפורניים, מדיקפרו",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 3.32,
+"price_with_vat": 3.92,
+"sku": "17709",
+"id": "medi-market-shop-26"
+},
+{
+"name": "ראש למכונת תספורת (סכין) 40 - 0.25 מ\"מ LAUBE",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 120.13,
+"price_with_vat": 141.75,
+"sku": "80662",
+"id": "medi-market-shop-27"
+},
+{
+"name": "רצועה ללוח גב צבע כתום עם אבזם מתכת",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 71.19,
+"price_with_vat": 84.0,
+"sku": "16155",
+"id": "medi-market-shop-28"
+},
+{
+"name": "רצועה לתמיכה למסכת טרכוסטומי L",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 5.91,
+"price_with_vat": 6.97,
+"sku": "7985",
+"id": "medi-market-shop-29"
+},
+{
+"name": "רצועה לתמיכה למסכת טרכוסטומי M",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 6.19,
+"price_with_vat": 7.3,
+"sku": "7987",
+"id": "medi-market-shop-30"
+},
+{
+"name": "רצועה לתמיכה למסכת טרכוסטומי XL",
+"category": "אביזרים",
+"topic": "accessories",
+"price_no_vat": 6.36,
+"price_with_vat": 7.5,
+"sku": "7986",
+"id": "medi-market-shop-31"
+}
+]
+}

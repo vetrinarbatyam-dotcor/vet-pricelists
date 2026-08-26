@@ -1,5 +1,7 @@
 {
 "meta": {
+"action": "ok",
+"action_note": "מעודכן.",
 "slug": "beit-erez",
 "type": "medical",
 "supplier": "בית ארז (מילטין)",
@@ -7,7 +9,7 @@
 "source_file": "sources/medical/beit-erez-2026-07.pdf",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 415,
+"item_count": 410,
 "status": "current",
 "imported_at": "2026-08-26",
 "notes": "מחירון חיות קטנות יולי 2026"
@@ -1530,52 +1532,6 @@
 "id": "beit-erez-126"
 },
 {
-"name": "טריקי טריטס עוף 2X15 - חטיפים לכלב וחתול Tricky Treats",
-"category": "חטיפים למתן כדורים",
-"topic": "nutrition",
-"price_no_vat": 44.0,
-"price_with_vat": 51.92,
-"animal": "חתולים / כלבים",
-"manufacturer": "Pala-Tech",
-"bonus": "3+1 / 8+4",
-"notes": "חטיפי פרהביוטיקה טעימים למתן כדורים וחיזוק מע' חיסון",
-"id": "beit-erez-127"
-},
-{
-"name": "טריקי טריטס עוף 2X200 - חטיפים לכלב וחתול Tricky Treats",
-"category": "חטיפים למתן כדורים",
-"topic": "nutrition",
-"price_no_vat": 300.0,
-"price_with_vat": 354.0,
-"animal": "חתולים / כלבים",
-"manufacturer": "Pala-Tech",
-"notes": "חטיפי פרהביוטיקה טעימים למתן כדורים וחיזוק מע' חיסון",
-"id": "beit-erez-128"
-},
-{
-"name": "טריקי טריטס ברווז 2X15 - חטיפים לכלב וחתול Tricky Treats",
-"category": "חטיפים למתן כדורים",
-"topic": "nutrition",
-"price_no_vat": 44.0,
-"price_with_vat": 51.92,
-"animal": "חתולים / כלבים",
-"manufacturer": "Pala-Tech",
-"bonus": "3+1 / 8+4",
-"notes": "חטיפי פרהביוטיקה טעימים למתן כדורים וחיזוק מע' חיסון",
-"id": "beit-erez-129"
-},
-{
-"name": "טריקי טריטס ברווז 2X200 - חטיפים לכלב וחתול Tricky Treats",
-"category": "חטיפים למתן כדורים",
-"topic": "nutrition",
-"price_no_vat": 300.0,
-"price_with_vat": 354.0,
-"animal": "חתולים / כלבים",
-"manufacturer": "Pala-Tech",
-"notes": "חטיפי פרהביוטיקה טעימים למתן כדורים וחיזוק מע' חיסון",
-"id": "beit-erez-130"
-},
-{
 "name": "פייברפלקס לארנבונים 15 - מ\"ל",
 "category": "מערכת עיכול - ארנבונים",
 "topic": "gi",
@@ -1585,7 +1541,7 @@
 "manufacturer": "Probiotic Int LTD",
 "bonus": "4+1 / 6+2 / 8+4",
 "notes": "במצבי חירום להפעלת תנועה במערכת העיכול: פקטין, פרהביוטקיה ופרוביוטיקה",
-"id": "beit-erez-131"
+"id": "beit-erez-127"
 },
 {
 "name": "ביו-לאפיס לארנבונים 2 ג' 6) שקיות)",
@@ -1597,7 +1553,7 @@
 "manufacturer": "Probiotic Int LTD",
 "bonus": "4+1 / 6+2 / 8+4",
 "notes": "טיפול ממוקד לאיזון מלחים ונוזלים: ויטמינים ומינרלים",
-"id": "beit-erez-132"
+"id": "beit-erez-128"
 },
 {
 "name": "פרו-פייבר לארנבים 800 ג'",
@@ -1609,7 +1565,7 @@
 "manufacturer": "Probiotic Int LTD",
 "bonus": "4+1 / 11+4 / 20+10",
 "notes": "לתמיכה יומית במעי הגס: סיבים, פרהביוטיקה ופרוביוטיקה",
-"id": "beit-erez-133"
+"id": "beit-erez-129"
 },
 {
 "name": "טובוס v-gel לארנבון מידה 0.6-1.5) R1 ק\"ג)",
@@ -1621,7 +1577,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-134"
+"id": "beit-erez-130"
 },
 {
 "name": "טובוס v-gel לארנבון מידה 1-2) R2 ק\"ג)",
@@ -1633,7 +1589,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-135"
+"id": "beit-erez-131"
 },
 {
 "name": "טובוס v-gel לארנבון מידה 1.8-3.5) R3 ק\"ג)",
@@ -1645,7 +1601,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-136"
+"id": "beit-erez-132"
 },
 {
 "name": "טובוס v-gel לארנבון מידה 2.5-4) R4 ק\"ג)",
@@ -1657,7 +1613,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-137"
+"id": "beit-erez-133"
 },
 {
 "name": "טובוס v-gel לארנבון מידה 3.5-5) R5 ק\"ג)",
@@ -1669,7 +1625,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-138"
+"id": "beit-erez-134"
 },
 {
 "name": "טובוס v-gel לארנבון מידה +4.5) R6 ק\"ג)",
@@ -1681,7 +1637,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-139"
+"id": "beit-erez-135"
 },
 {
 "name": "כפפות בדיקה לטקס (S) עם אבקה 100 יח'",
@@ -1694,7 +1650,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-140"
+"id": "beit-erez-136"
 },
 {
 "name": "כפפות בדיקה לטקס (M) עם אבקה 100 יח'",
@@ -1707,7 +1663,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-141"
+"id": "beit-erez-137"
 },
 {
 "name": "כפפות בדיקה לטקס (L) עם אבקה 100 יח'",
@@ -1720,7 +1676,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-142"
+"id": "beit-erez-138"
 },
 {
 "name": "כפפות בדיקה לטקס (XL) עם אבקה 100 יח'",
@@ -1733,7 +1689,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-143"
+"id": "beit-erez-139"
 },
 {
 "name": "כפפות בדיקה לטקס (S) ללא אבקה 100 יח'",
@@ -1746,7 +1702,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-144"
+"id": "beit-erez-140"
 },
 {
 "name": "כפפות בדיקה לטקס (M) ללא אבקה 100 יח'",
@@ -1759,7 +1715,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-145"
+"id": "beit-erez-141"
 },
 {
 "name": "כפפות בדיקה לטקס (L) ללא אבקה 100 יח'",
@@ -1772,7 +1728,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-146"
+"id": "beit-erez-142"
 },
 {
 "name": "כפפות בדיקה לטקס ללא אבקה 100 יח' XL -",
@@ -1785,7 +1741,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-147"
+"id": "beit-erez-143"
 },
 {
 "name": "כפפות בדיקה ניטריל (XS) 100 יח'",
@@ -1798,7 +1754,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-148"
+"id": "beit-erez-144"
 },
 {
 "name": "כפפות בדיקה ניטריל (S) 100 יח'",
@@ -1811,7 +1767,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-149"
+"id": "beit-erez-145"
 },
 {
 "name": "כפפות בדיקה ניטריל (M) 100 יח'",
@@ -1824,7 +1780,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-150"
+"id": "beit-erez-146"
 },
 {
 "name": "כפפות בדיקה ניטריל (L) 100 יח'",
@@ -1837,7 +1793,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-151"
+"id": "beit-erez-147"
 },
 {
 "name": "כפפות בדיקה ניטריל (XL) 100 יח'",
@@ -1850,7 +1806,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-152"
+"id": "beit-erez-148"
 },
 {
 "name": "כפפות ניתוח לטקס (6) עם אבקה 50 - יח'",
@@ -1860,7 +1816,7 @@
 "price_with_vat": 84.96,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-153"
+"id": "beit-erez-149"
 },
 {
 "name": "כפפות ניתוח לטקס (6.5) עם אבקה 50 - יח'",
@@ -1870,7 +1826,7 @@
 "price_with_vat": 84.96,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-154"
+"id": "beit-erez-150"
 },
 {
 "name": "כפפות ניתוח לטקס (7) עם אבקה 50 - יח'",
@@ -1880,7 +1836,7 @@
 "price_with_vat": 84.96,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-155"
+"id": "beit-erez-151"
 },
 {
 "name": "כפפות ניתוח לטקס (7.5) עם אבקה 50 - יח'",
@@ -1890,7 +1846,7 @@
 "price_with_vat": 84.96,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-156"
+"id": "beit-erez-152"
 },
 {
 "name": "כפפות ניתוח לטקס (8) עם אבקה 50 - יח'",
@@ -1900,7 +1856,7 @@
 "price_with_vat": 84.96,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-157"
+"id": "beit-erez-153"
 },
 {
 "name": "כפפות ניתוח לטקס (8.5) עם אבקה 50 - יח'",
@@ -1910,7 +1866,7 @@
 "price_with_vat": 84.96,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-158"
+"id": "beit-erez-154"
 },
 {
 "name": "כפפות ניתוח לטקס (9) עם אבקה 50 - יח'",
@@ -1920,7 +1876,7 @@
 "price_with_vat": 84.96,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-159"
+"id": "beit-erez-155"
 },
 {
 "name": "כפפות ניתוח לטקס (6) ללא אבקה 50 - יח'",
@@ -1930,7 +1886,7 @@
 "price_with_vat": 106.2,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-160"
+"id": "beit-erez-156"
 },
 {
 "name": "כפפות ניתוח לטקס (6.5) ללא אבקה 50 - יח'",
@@ -1940,7 +1896,7 @@
 "price_with_vat": 106.2,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-161"
+"id": "beit-erez-157"
 },
 {
 "name": "כפפות ניתוח לטקס (7) ללא אבקה 50 - יח'",
@@ -1950,7 +1906,7 @@
 "price_with_vat": 106.2,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-162"
+"id": "beit-erez-158"
 },
 {
 "name": "כפפות ניתוח לטקס (7.5) ללא אבקה 50 - יח'",
@@ -1960,7 +1916,7 @@
 "price_with_vat": 106.2,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-163"
+"id": "beit-erez-159"
 },
 {
 "name": "כפפות ניתוח לטקס (8) ללא אבקה 50 - יח'",
@@ -1970,7 +1926,7 @@
 "price_with_vat": 106.2,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-164"
+"id": "beit-erez-160"
 },
 {
 "name": "כפפות ניתוח לטקס (8.5) ללא אבקה 50 - יח'",
@@ -1980,7 +1936,7 @@
 "price_with_vat": 106.2,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-165"
+"id": "beit-erez-161"
 },
 {
 "name": "מזרק 1 מל 100 - יח'",
@@ -1992,7 +1948,7 @@
 "manufacturer": "DYN",
 "bonus": "5+1",
 "notes": "בונוס: 5+1",
-"id": "beit-erez-166"
+"id": "beit-erez-162"
 },
 {
 "name": "מזרק 3 מל 100 - יח'",
@@ -2004,7 +1960,7 @@
 "manufacturer": "DYN",
 "bonus": "5+1",
 "notes": "בונוס: 5+1",
-"id": "beit-erez-167"
+"id": "beit-erez-163"
 },
 {
 "name": "מזרק 5 מל 100 - יח'",
@@ -2016,7 +1972,7 @@
 "manufacturer": "DYN",
 "bonus": "5+1",
 "notes": "בונוס: 5+1",
-"id": "beit-erez-168"
+"id": "beit-erez-164"
 },
 {
 "name": "מזרק 10 מל 100 - יח'",
@@ -2028,7 +1984,7 @@
 "manufacturer": "DYN",
 "bonus": "5+1",
 "notes": "בונוס: 5+1",
-"id": "beit-erez-169"
+"id": "beit-erez-165"
 },
 {
 "name": "מזרק 20 מל 50 - יח'",
@@ -2040,7 +1996,7 @@
 "manufacturer": "DYN",
 "bonus": "5+1",
 "notes": "בונוס: 5+1",
-"id": "beit-erez-170"
+"id": "beit-erez-166"
 },
 {
 "name": "מזרק שטיפה סטרילי 50/60 מל 25 - יח'",
@@ -2052,7 +2008,7 @@
 "manufacturer": "DYN",
 "bonus": "5+1",
 "notes": "בונוס: 5+1",
-"id": "beit-erez-171"
+"id": "beit-erez-167"
 },
 {
 "name": "מחט כתומה 100 יח' G25 x 5/8",
@@ -2065,7 +2021,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-172"
+"id": "beit-erez-168"
 },
 {
 "name": "מחט כחולה 100 יח' G23 x 1",
@@ -2078,7 +2034,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-173"
+"id": "beit-erez-169"
 },
 {
 "name": "מחט ירוקה 100 יח' G21 x 1",
@@ -2091,7 +2047,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-174"
+"id": "beit-erez-170"
 },
 {
 "name": "מחט ירוקה 100 יח' G21 x 1.5",
@@ -2104,7 +2060,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-175"
+"id": "beit-erez-171"
 },
 {
 "name": "מחט ורודה 100 יח' G18 x 1",
@@ -2117,7 +2073,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-176"
+"id": "beit-erez-172"
 },
 {
 "name": "מחט ורודה 100 יח' G18 x 1.5",
@@ -2130,7 +2086,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-177"
+"id": "beit-erez-173"
 },
 {
 "name": "מחט לבנה 100 יח' 16G x 1",
@@ -2143,7 +2099,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-178"
+"id": "beit-erez-174"
 },
 {
 "name": "פרפרית 100 יח' G23",
@@ -2156,7 +2112,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-179"
+"id": "beit-erez-175"
 },
 {
 "name": "פרפרית 100 יח' G21",
@@ -2169,7 +2125,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-180"
+"id": "beit-erez-176"
 },
 {
 "name": "פרפרית והולדין 100 יח' G23",
@@ -2182,7 +2138,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-181"
+"id": "beit-erez-177"
 },
 {
 "name": "פרפרית והולדין 100 יח' G21",
@@ -2195,7 +2151,7 @@
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
 "pack_qty": 100,
-"id": "beit-erez-182"
+"id": "beit-erez-178"
 },
 {
 "name": "סט עירוי 190 ס\"מ",
@@ -2205,7 +2161,7 @@
 "price_with_vat": 1.18,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-183"
+"id": "beit-erez-179"
 },
 {
 "name": "סט עירוי 150 ס\"מ",
@@ -2215,7 +2171,7 @@
 "price_with_vat": 1.18,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-184"
+"id": "beit-erez-180"
 },
 {
 "name": "סט עירוי 150 ס\"מ עם נקודת הזרקה",
@@ -2225,7 +2181,7 @@
 "price_with_vat": 1.18,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-185"
+"id": "beit-erez-181"
 },
 {
 "name": "סט עירוי דם עם מסנן 200 מיקרון",
@@ -2235,7 +2191,7 @@
 "price_with_vat": 2.36,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-186"
+"id": "beit-erez-182"
 },
 {
 "name": "סט עירוי ביורטה 150 מ\"ל עם נקודת הזרקה",
@@ -2246,7 +2202,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
 "pack_qty": 150,
-"id": "beit-erez-187"
+"id": "beit-erez-183"
 },
 {
 "name": "סט עירוי ביורטה 150 מ\"ל עם נקודת הזרקה אל מחט",
@@ -2257,7 +2213,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
 "pack_qty": 150,
-"id": "beit-erez-188"
+"id": "beit-erez-184"
 },
 {
 "name": "מאריך לעירוי 50 ס\"מ",
@@ -2267,7 +2223,7 @@
 "price_with_vat": 1.18,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-189"
+"id": "beit-erez-185"
 },
 {
 "name": "מאריך לעירוי 100 ס\"מ",
@@ -2277,7 +2233,7 @@
 "price_with_vat": 1.18,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-190"
+"id": "beit-erez-186"
 },
 {
 "name": "מאריך לעירוי 150 ס\"מ",
@@ -2287,7 +2243,7 @@
 "price_with_vat": 1.18,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-191"
+"id": "beit-erez-187"
 },
 {
 "name": "סטופקוק 50 - יח'",
@@ -2297,7 +2253,7 @@
 "price_with_vat": 59.0,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-192"
+"id": "beit-erez-188"
 },
 {
 "name": "פקק קומבי אדום 200 - יח'",
@@ -2307,43 +2263,43 @@
 "price_with_vat": 35.4,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
+"id": "beit-erez-189"
+},
+{
+"name": "קאליר הנדסה בע\"מ",
+"category": "קטטרים",
+"topic": "equipment",
+"price_no_vat": 50.0,
+"price_with_vat": 59.0,
+"notes": "כל בע\"ח",
+"id": "beit-erez-190"
+},
+{
+"name": "קאליר הנדסה בע\"מ",
+"category": "קטטרים",
+"topic": "equipment",
+"price_no_vat": 50.0,
+"price_with_vat": 59.0,
+"notes": "כל בע\"ח",
+"id": "beit-erez-191"
+},
+{
+"name": "קאליר הנדסה בע\"מ",
+"category": "קטטרים",
+"topic": "equipment",
+"price_no_vat": 50.0,
+"price_with_vat": 59.0,
+"notes": "כל בע\"ח",
+"id": "beit-erez-192"
+},
+{
+"name": "קאליר הנדסה בע\"מ",
+"category": "קטטרים",
+"topic": "equipment",
+"price_no_vat": 50.0,
+"price_with_vat": 59.0,
+"notes": "כל בע\"ח",
 "id": "beit-erez-193"
-},
-{
-"name": "קאליר הנדסה בע\"מ",
-"category": "קטטרים",
-"topic": "equipment",
-"price_no_vat": 50.0,
-"price_with_vat": 59.0,
-"notes": "כל בע\"ח",
-"id": "beit-erez-194"
-},
-{
-"name": "קאליר הנדסה בע\"מ",
-"category": "קטטרים",
-"topic": "equipment",
-"price_no_vat": 50.0,
-"price_with_vat": 59.0,
-"notes": "כל בע\"ח",
-"id": "beit-erez-195"
-},
-{
-"name": "קאליר הנדסה בע\"מ",
-"category": "קטטרים",
-"topic": "equipment",
-"price_no_vat": 50.0,
-"price_with_vat": 59.0,
-"notes": "כל בע\"ח",
-"id": "beit-erez-196"
-},
-{
-"name": "קאליר הנדסה בע\"מ",
-"category": "קטטרים",
-"topic": "equipment",
-"price_no_vat": 50.0,
-"price_with_vat": 59.0,
-"notes": "כל בע\"ח",
-"id": "beit-erez-197"
 },
 {
 "name": "קטטר שתן לחתול קצה סגור 3F 1.0mmx13cm",
@@ -2355,7 +2311,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "10+2",
 "notes": "בונוס: 10+2",
-"id": "beit-erez-198"
+"id": "beit-erez-194"
 },
 {
 "name": "קטטר שתן לחתול קצה סגור 4F 1.3mmx13cm",
@@ -2367,7 +2323,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "10+2",
 "notes": "בונוס: 10+2",
-"id": "beit-erez-199"
+"id": "beit-erez-195"
 },
 {
 "name": "קטטר שתן לחתול קצה סגור עם מוליך 3F 1.0mmx13cm",
@@ -2379,7 +2335,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "10+2",
 "notes": "בונוס: 10+2",
-"id": "beit-erez-200"
+"id": "beit-erez-196"
 },
 {
 "name": "קטטר שתן לחתול קצה סגור עם מוליך 4F 1.3mmx13cm",
@@ -2391,7 +2347,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "10+2",
 "notes": "בונוס: 10+2",
-"id": "beit-erez-201"
+"id": "beit-erez-197"
 },
 {
 "name": "קטטר שתן לכלב קצה סגור 4F 1.3mmx50cm",
@@ -2403,7 +2359,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "10+2",
 "notes": "בונוס: 10+2",
-"id": "beit-erez-202"
+"id": "beit-erez-198"
 },
 {
 "name": "קטטר שתן לכלב קצה סגור 6F 2.0mmx50cm",
@@ -2415,7 +2371,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "10+2",
 "notes": "בונוס: 10+2",
-"id": "beit-erez-203"
+"id": "beit-erez-199"
 },
 {
 "name": "קטטר שתן לכלב קצה סגור 8F 2.6mmx50cm",
@@ -2427,7 +2383,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "10+2",
 "notes": "בונוס: 10+2",
-"id": "beit-erez-204"
+"id": "beit-erez-200"
 },
 {
 "name": "קטטר שתן לכלב קצה סגור 10F 3.3mmx50cm",
@@ -2439,7 +2395,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "10+2",
 "notes": "בונוס: 10+2",
-"id": "beit-erez-205"
+"id": "beit-erez-201"
 },
 {
 "name": "חוט LUXCRYL PGA 6/0 RC 3/8 16mm 75cm 12U",
@@ -2451,7 +2407,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותחכת - נמס PGA (Vicryl)",
-"id": "beit-erez-206"
+"id": "beit-erez-202"
 },
 {
 "name": "חוט LUXCRYL PGA 5/0 RC 3/8 19mm 75cm 12U",
@@ -2463,7 +2419,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותחכת - נמס PGA (Vicryl)",
-"id": "beit-erez-207"
+"id": "beit-erez-203"
 },
 {
 "name": "חוט LUXCRYL PGA 4/0 RC 3/8 19mm 75cm 12U",
@@ -2475,7 +2431,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותחכת - נמס PGA (Vicryl)",
-"id": "beit-erez-208"
+"id": "beit-erez-204"
 },
 {
 "name": "חוט LUXCRYL PGA 3/0 RC 3/8 24mm 75cm 12U",
@@ -2487,7 +2443,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותחכת - נמס PGA (Vicryl)",
-"id": "beit-erez-209"
+"id": "beit-erez-205"
 },
 {
 "name": "חוט LUXCRYL PGA 2/0 RC 3/8 30mm 75cm 12U",
@@ -2499,7 +2455,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותחכת - נמס PGA (Vicryl)",
-"id": "beit-erez-210"
+"id": "beit-erez-206"
 },
 {
 "name": "חוט LUXCRYL PGA 0 RC 3/8 30mm 75cm 12U",
@@ -2511,7 +2467,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותחכת - נמס PGA (Vicryl)",
-"id": "beit-erez-211"
+"id": "beit-erez-207"
 },
 {
 "name": "חוט LUXCRYL PGA 1 RC 3/8 30mm 75cm 12U",
@@ -2523,7 +2479,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותחכת - נמס PGA (Vicryl)",
-"id": "beit-erez-212"
+"id": "beit-erez-208"
 },
 {
 "name": "חוט LUXCRYL PGA 1 RC 3/8 40mm 75cm 12U",
@@ -2535,7 +2491,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותחכת - נמס PGA (Vicryl)",
-"id": "beit-erez-213"
+"id": "beit-erez-209"
 },
 {
 "name": "חוט LUXCRYL PDO 5/0 RC 3/8 19mm 45cm 12U",
@@ -2547,7 +2503,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס PDO (PDS)",
-"id": "beit-erez-214"
+"id": "beit-erez-210"
 },
 {
 "name": "חוט LUXCRYL PDO 4/0 RC 3/8 19mm 75cm 12U",
@@ -2559,7 +2515,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס PDO (PDS)",
-"id": "beit-erez-215"
+"id": "beit-erez-211"
 },
 {
 "name": "חוט LUXCRYL PDO 3/0 RC 3/8 26mm 75cm 12U",
@@ -2571,7 +2527,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס PDO (PDS)",
-"id": "beit-erez-216"
+"id": "beit-erez-212"
 },
 {
 "name": "חוט LUXCRYL PDO 2/0 RC 3/8 30mm 75cm 12U",
@@ -2583,7 +2539,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס PDO (PDS)",
-"id": "beit-erez-217"
+"id": "beit-erez-213"
 },
 {
 "name": "חוט LUXCRYL PDO 0 RC 3/8 30mm 75cm 12U",
@@ -2595,7 +2551,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס PDO (PDS)",
-"id": "beit-erez-218"
+"id": "beit-erez-214"
 },
 {
 "name": "חוט LUXCRYL PDO 0 RC 1/2 36mm 75cm 12U",
@@ -2607,7 +2563,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס PDO (PDS)",
-"id": "beit-erez-219"
+"id": "beit-erez-215"
 },
 {
 "name": "חוט LUXCRYL PDO 1 RC 3/8 40mm 90cm 12U",
@@ -2619,7 +2575,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס PDO (PDS)",
-"id": "beit-erez-220"
+"id": "beit-erez-216"
 },
 {
 "name": "חוט LUXAMID NYLON 4/0 RC 3/8 24mm 75cm 12U",
@@ -2631,7 +2587,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - לא נמס Nylon",
-"id": "beit-erez-221"
+"id": "beit-erez-217"
 },
 {
 "name": "חוט LUXAMID NYLON 3/0 RC 3/8 26mm 75cm 12U",
@@ -2643,7 +2599,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - לא נמס Nylon",
-"id": "beit-erez-222"
+"id": "beit-erez-218"
 },
 {
 "name": "חוט LUXAMID NYLON 2/0 RC 3/8 36mm 75cm 12U",
@@ -2655,7 +2611,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - לא נמס Nylon",
-"id": "beit-erez-223"
+"id": "beit-erez-219"
 },
 {
 "name": "חוט LUXAMID NYLON 0 RC 3/8 36mm 75cm 12U",
@@ -2667,7 +2623,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - לא נמס Nylon",
-"id": "beit-erez-224"
+"id": "beit-erez-220"
 },
 {
 "name": "חוט LUXAMID NYLON 1 RC 3/8 40mm 75cm 12U",
@@ -2679,7 +2635,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - לא נמס Nylon",
-"id": "beit-erez-225"
+"id": "beit-erez-221"
 },
 {
 "name": "חוט LUXAMID NYLON 2 RC 3/8 40mm 90cm 12U",
@@ -2691,7 +2647,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - לא נמס Nylon",
-"id": "beit-erez-226"
+"id": "beit-erez-222"
 },
 {
 "name": "חוט LUXCRYL MONOFAST 5/0 RC 3/8 16mm 75cm 12U",
@@ -2703,7 +2659,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס MONOFAST",
-"id": "beit-erez-227"
+"id": "beit-erez-223"
 },
 {
 "name": "חוט LUXCRYL MONOFAST 4/0 RC 3/8 19mm 75cm 12U",
@@ -2715,7 +2671,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס MONOFAST",
-"id": "beit-erez-228"
+"id": "beit-erez-224"
 },
 {
 "name": "חוט LUXCRYL MONOFAST 3/0 RC 3/8 24mm 75cm 12U",
@@ -2727,7 +2683,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט חותכת - נמס MONOFAST",
-"id": "beit-erez-229"
+"id": "beit-erez-225"
 },
 {
 "name": "חוט LUXCRYL PGA 3/0 TAP 1/2 26mm 75cm 12U",
@@ -2739,7 +2695,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט עגולה - נמס(lyrciV) PGA",
-"id": "beit-erez-230"
+"id": "beit-erez-226"
 },
 {
 "name": "חוט LUXCRYL PGA 2/0 TAP 1/2 30mm 75cm 12U",
@@ -2751,7 +2707,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט עגולה - נמס(lyrciV) PGA",
-"id": "beit-erez-231"
+"id": "beit-erez-227"
 },
 {
 "name": "חוט LUXCRYL PGA 0 TAP 1/2 40mm 90cm 12U",
@@ -2763,7 +2719,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט עגולה - נמס(lyrciV) PGA",
-"id": "beit-erez-232"
+"id": "beit-erez-228"
 },
 {
 "name": "חוט LUXCRYL PDO 5/0 TAP 1/2 17mm 75cm 12U",
@@ -2775,7 +2731,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט עגולה - נמס PDO (PDS)",
-"id": "beit-erez-233"
+"id": "beit-erez-229"
 },
 {
 "name": "חוט LUXCRYL PDO 4/0 TAP 1/2 26mm 75cm 12U",
@@ -2787,7 +2743,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט עגולה - נמס PDO (PDS)",
-"id": "beit-erez-234"
+"id": "beit-erez-230"
 },
 {
 "name": "חוט LUXCRYL PDO 3/0 TAP 1/2 26mm 75cm 12U",
@@ -2799,7 +2755,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט עגולה - נמס PDO (PDS)",
-"id": "beit-erez-235"
+"id": "beit-erez-231"
 },
 {
 "name": "חוט LUXCRYL PDO 2/0 TAP 1/2 26mm 75cm 12U",
@@ -2811,7 +2767,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט עגולה - נמס PDO (PDS)",
-"id": "beit-erez-236"
+"id": "beit-erez-232"
 },
 {
 "name": "חוט LUXCRYL PDO 2 TAP 1/2 40mm 90cm 12U",
@@ -2823,7 +2779,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "מחט עגולה - נמס PDO (PDS)",
-"id": "beit-erez-237"
+"id": "beit-erez-233"
 },
 {
 "name": "חוט בקסטה LUXCRYL PGA 2/0 50M",
@@ -2834,7 +2790,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PGA (Vicryl)",
-"id": "beit-erez-238"
+"id": "beit-erez-234"
 },
 {
 "name": "חוט בקסטה LUXCRYL PGA 0 50M",
@@ -2845,7 +2801,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PGA (Vicryl)",
-"id": "beit-erez-239"
+"id": "beit-erez-235"
 },
 {
 "name": "חוט בקסטה LUXCRYL PGA 1 50M",
@@ -2856,7 +2812,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PGA (Vicryl)",
-"id": "beit-erez-240"
+"id": "beit-erez-236"
 },
 {
 "name": "חוט בקסטה LUXCRYL PGA 2 50M",
@@ -2867,7 +2823,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PGA (Vicryl)",
-"id": "beit-erez-241"
+"id": "beit-erez-237"
 },
 {
 "name": "חוט בקסטה LUXCRYL PDO 3/0 25M",
@@ -2878,7 +2834,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PDO (PDS)",
-"id": "beit-erez-242"
+"id": "beit-erez-238"
 },
 {
 "name": "חוט בקסטה LUXCRYL PDO 2/0 25M",
@@ -2889,7 +2845,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PDO (PDS)",
-"id": "beit-erez-243"
+"id": "beit-erez-239"
 },
 {
 "name": "חוט בקסטה LUXCRYL PDO 0 25M",
@@ -2900,7 +2856,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PDO (PDS)",
-"id": "beit-erez-244"
+"id": "beit-erez-240"
 },
 {
 "name": "חוט בקסטה LUXCRYL PDO 1 25M",
@@ -2911,7 +2867,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PDO (PDS)",
-"id": "beit-erez-245"
+"id": "beit-erez-241"
 },
 {
 "name": "חוט בקסטה LUXCRYL PDO 2 25M",
@@ -2922,7 +2878,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס PDO (PDS)",
-"id": "beit-erez-246"
+"id": "beit-erez-242"
 },
 {
 "name": "חוט בקסטה CATGUT CHROM 3/0 100M",
@@ -2933,7 +2889,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס CATGUT CHROM",
-"id": "beit-erez-247"
+"id": "beit-erez-243"
 },
 {
 "name": "חוט בקסטה CATGUT CHROM 2/0 100M",
@@ -2944,7 +2900,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס CATGUT CHROM",
-"id": "beit-erez-248"
+"id": "beit-erez-244"
 },
 {
 "name": "חוט בקסטה CATGUT CHROM 0 100M",
@@ -2955,7 +2911,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס CATGUT CHROM",
-"id": "beit-erez-249"
+"id": "beit-erez-245"
 },
 {
 "name": "חוט בקסטה CATGUT CHROM 1 75M",
@@ -2966,7 +2922,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס CATGUT CHROM",
-"id": "beit-erez-250"
+"id": "beit-erez-246"
 },
 {
 "name": "חוט בקסטה CATGUT CHROM 2 50M",
@@ -2977,7 +2933,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - נמס CATGUT CHROM",
-"id": "beit-erez-251"
+"id": "beit-erez-247"
 },
 {
 "name": "חוט בקסטה LUXAMID NYLON 3/0 100M",
@@ -2988,7 +2944,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - לא נמס Nylon",
-"id": "beit-erez-252"
+"id": "beit-erez-248"
 },
 {
 "name": "חוט בקסטה LUXAMID NYLON 2/0 100M",
@@ -2999,7 +2955,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - לא נמס Nylon",
-"id": "beit-erez-253"
+"id": "beit-erez-249"
 },
 {
 "name": "חוט בקסטה LUXAMID NYLON 0 100M",
@@ -3010,7 +2966,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - לא נמס Nylon",
-"id": "beit-erez-254"
+"id": "beit-erez-250"
 },
 {
 "name": "חוט בקסטה LUXAMID NYLON 1 100M",
@@ -3021,7 +2977,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - לא נמס Nylon",
-"id": "beit-erez-255"
+"id": "beit-erez-251"
 },
 {
 "name": "חוט בקסטה LUXAMID NYLON 2 75M",
@@ -3032,7 +2988,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
 "notes": "קסטה - לא נמס Nylon",
-"id": "beit-erez-256"
+"id": "beit-erez-252"
 },
 {
 "name": "ערכת רצועה צולבת CCL 50lb X 500mm XS CN+10mm crimp",
@@ -3044,7 +3000,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "3+1",
 "notes": "CCL 50lb X 500mm XS CN+10mm crimp",
-"id": "beit-erez-257"
+"id": "beit-erez-253"
 },
 {
 "name": "ערכת רצועה צולבת CCL 80lb X 800mm S CN+12mm crimp",
@@ -3056,7 +3012,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "3+1",
 "notes": "CCL80lb X 800mm S CN+12mm crimp",
-"id": "beit-erez-258"
+"id": "beit-erez-254"
 },
 {
 "name": "ערכת רצועה צולבת CCL 100lb X 800mm M CN+12mm crimp",
@@ -3068,7 +3024,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "3+1",
 "notes": "CCL 100lb X 800mm M CN+12mm crimp",
-"id": "beit-erez-259"
+"id": "beit-erez-255"
 },
 {
 "name": "מחט Spring eye 3/8 RC 30mm 12U",
@@ -3078,7 +3034,7 @@
 "price_with_vat": 44.84,
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-260"
+"id": "beit-erez-256"
 },
 {
 "name": "מחט Spring eye 3/8 RC 40mm 12U",
@@ -3088,7 +3044,7 @@
 "price_with_vat": 44.84,
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-261"
+"id": "beit-erez-257"
 },
 {
 "name": "מחט Spring eye 3/8 RC 50mm 12U",
@@ -3098,7 +3054,7 @@
 "price_with_vat": 44.84,
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-262"
+"id": "beit-erez-258"
 },
 {
 "name": "טובוס v-gel לחתול מידה 0.5-1) C0 ק\"ג)",
@@ -3110,7 +3066,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-263"
+"id": "beit-erez-259"
 },
 {
 "name": "טובוס v-gel לחתול מידה 1-2) C1 ק\"ג)",
@@ -3122,7 +3078,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-264"
+"id": "beit-erez-260"
 },
 {
 "name": "טובוס v-gel לחתול מידה 1.5-3.5) C2 ק\"ג)",
@@ -3134,7 +3090,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-265"
+"id": "beit-erez-261"
 },
 {
 "name": "טובוס v-gel לחתול מידה 3-5) C3 ק\"ג)",
@@ -3146,7 +3102,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-266"
+"id": "beit-erez-262"
 },
 {
 "name": "טובוס v-gel לחתול מידה 4.5-6) C4 ק\"ג)",
@@ -3158,7 +3114,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-267"
+"id": "beit-erez-263"
 },
 {
 "name": "טובוס v-gel לחתול מידה +6) C5 ק\"ג)",
@@ -3170,7 +3126,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-268"
+"id": "beit-erez-264"
 },
 {
 "name": "טובוס v-gel לכלב מידה D3",
@@ -3182,7 +3138,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-269"
+"id": "beit-erez-265"
 },
 {
 "name": "טובוס v-gel לכלב מידה D4",
@@ -3194,7 +3150,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-270"
+"id": "beit-erez-266"
 },
 {
 "name": "טובוס v-gel לכלב מידה D5",
@@ -3206,7 +3162,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-271"
+"id": "beit-erez-267"
 },
 {
 "name": "טובוס v-gel לכלב מידה D6",
@@ -3218,7 +3174,7 @@
 "manufacturer": "Docsinnovent",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-272"
+"id": "beit-erez-268"
 },
 {
 "name": "צינור קיבה Gastric Tube FR12",
@@ -3228,7 +3184,7 @@
 "price_with_vat": 12.98,
 "animal": "כלבים",
 "manufacturer": "Docsinnovent",
-"id": "beit-erez-273"
+"id": "beit-erez-269"
 },
 {
 "name": "טובוס ET עם בלונית מידה 2.5",
@@ -3240,7 +3196,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-274"
+"id": "beit-erez-270"
 },
 {
 "name": "טובוס ET עם בלונית מידה 3",
@@ -3252,7 +3208,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-275"
+"id": "beit-erez-271"
 },
 {
 "name": "טובוס ET עם בלונית מידה 3.5",
@@ -3264,7 +3220,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-276"
+"id": "beit-erez-272"
 },
 {
 "name": "טובוס ET עם בלונית מידה 4",
@@ -3276,7 +3232,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-277"
+"id": "beit-erez-273"
 },
 {
 "name": "טובוס ET עם בלונית מידה 4.5",
@@ -3288,7 +3244,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-278"
+"id": "beit-erez-274"
 },
 {
 "name": "טובוס ET עם בלונית מידה 5",
@@ -3300,7 +3256,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-279"
+"id": "beit-erez-275"
 },
 {
 "name": "טובוס ET עם בלונית מידה 5.5",
@@ -3312,7 +3268,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-280"
+"id": "beit-erez-276"
 },
 {
 "name": "טובוס ET עם בלונית מידה 6",
@@ -3324,7 +3280,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-281"
+"id": "beit-erez-277"
 },
 {
 "name": "טובוס ET עם בלונית מידה 6.5",
@@ -3336,7 +3292,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-282"
+"id": "beit-erez-278"
 },
 {
 "name": "טובוס ET עם בלונית מידה 7",
@@ -3348,7 +3304,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-283"
+"id": "beit-erez-279"
 },
 {
 "name": "טובוס ET עם בלונית מידה 7.5",
@@ -3360,7 +3316,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-284"
+"id": "beit-erez-280"
 },
 {
 "name": "טובוס ET עם בלונית מידה 8",
@@ -3372,7 +3328,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-285"
+"id": "beit-erez-281"
 },
 {
 "name": "טובוס ET עם בלונית מידה 8.5",
@@ -3384,7 +3340,7 @@
 "manufacturer": "DYN",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-286"
+"id": "beit-erez-282"
 },
 {
 "name": "טובוס ET עם בלונית מידה 9",
@@ -3394,7 +3350,7 @@
 "price_with_vat": 7.08,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-287"
+"id": "beit-erez-283"
 },
 {
 "name": "טובוס ET עם בלונית מידה 9.5",
@@ -3404,7 +3360,7 @@
 "price_with_vat": 7.08,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-288"
+"id": "beit-erez-284"
 },
 {
 "name": "תחבושת נצמדת צבעונית 5 ס\"מ 36 - יח'",
@@ -3416,7 +3372,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-289"
+"id": "beit-erez-285"
 },
 {
 "name": "תחבושת נצמדת צבעונית 7.5 ס\"מ 24 - יח'",
@@ -3428,7 +3384,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-290"
+"id": "beit-erez-286"
 },
 {
 "name": "תחבושת נצמדת צבעונית 10 ס\"מ 18 - יח'",
@@ -3440,7 +3396,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-291"
+"id": "beit-erez-287"
 },
 {
 "name": "תחבושת נצמדת צבעונית הדפס 10 ס\"מ 18 - יח'",
@@ -3452,7 +3408,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-292"
+"id": "beit-erez-288"
 },
 {
 "name": "תחבושת נצמדת צבעונית טעם מר 10 ס\"מ 18 - יח'",
@@ -3464,7 +3420,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-293"
+"id": "beit-erez-289"
 },
 {
 "name": "תחבושת נצמדת צבעונית טעם מר 7.5 ס\"מ 24 - יח'",
@@ -3476,7 +3432,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
-"id": "beit-erez-294"
+"id": "beit-erez-290"
 },
 {
 "name": "תחבושת אלסטית 10 ס\"מ 4.5 * מ' 12 - יח'",
@@ -3488,7 +3444,7 @@
 "manufacturer": "DYN",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-295"
+"id": "beit-erez-291"
 },
 {
 "name": "תחבושת אלסטית 15 ס\"מ 4.5 * מ' 12 - יח'",
@@ -3500,7 +3456,7 @@
 "manufacturer": "DYN",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-296"
+"id": "beit-erez-292"
 },
 {
 "name": "אגד מתמתח (חצי אלסטי) 10 ס\"מ 2.7 * מ' 5 - יח'",
@@ -3512,7 +3468,7 @@
 "manufacturer": "DYN",
 "bonus": "64+32",
 "notes": "בונוס: 64+32",
-"id": "beit-erez-297"
+"id": "beit-erez-293"
 },
 {
 "name": "ספריי מסיר דבק 50 מל' Eaze-Off spray",
@@ -3522,7 +3478,7 @@
 "price_with_vat": 69.62,
 "animal": "חתולים / כלבים",
 "manufacturer": "Millpledge",
-"id": "beit-erez-298"
+"id": "beit-erez-294"
 },
 {
 "name": "דבק ביולוגי 2.5 ג' LUXBOND ו- 6 אפליקטורים",
@@ -3532,7 +3488,7 @@
 "price_with_vat": 94.4,
 "animal": "חתולים / כלבים",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-299"
+"id": "beit-erez-295"
 },
 {
 "name": "LUXBOND -אפליקטורים ל 6",
@@ -3542,7 +3498,7 @@
 "price_with_vat": 10.62,
 "animal": "חתולים / כלבים",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-300"
+"id": "beit-erez-296"
 },
 {
 "name": "אקדח סיכות סטרילי 35) סיכות)",
@@ -3554,7 +3510,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "8+2",
 "notes": "בונוס: 8+2",
-"id": "beit-erez-301"
+"id": "beit-erez-297"
 },
 {
 "name": "כלי להסרת סיכות",
@@ -3564,7 +3520,7 @@
 "price_with_vat": 16.52,
 "animal": "חתולים / כלבים",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-302"
+"id": "beit-erez-298"
 },
 {
 "name": "קולר אליזבת קלאסי 7.5 ס\"מ - סט 10 יח'",
@@ -3577,7 +3533,7 @@
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
 "pack_qty": 10,
-"id": "beit-erez-303"
+"id": "beit-erez-299"
 },
 {
 "name": "קולר אליזבת קלאסי 10 ס\"מ - סט 10 יח'",
@@ -3590,7 +3546,7 @@
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
 "pack_qty": 10,
-"id": "beit-erez-304"
+"id": "beit-erez-300"
 },
 {
 "name": "קולר אליזבת קלאסי 12.5 ס\"מ - סט 10 יח'",
@@ -3603,7 +3559,7 @@
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
 "pack_qty": 10,
-"id": "beit-erez-305"
+"id": "beit-erez-301"
 },
 {
 "name": "קולר אליזבת קלאסי 15 ס\"מ - סט 10 יח'",
@@ -3616,7 +3572,7 @@
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
 "pack_qty": 10,
-"id": "beit-erez-306"
+"id": "beit-erez-302"
 },
 {
 "name": "קולר אליזבת קלאסי 20 ס\"מ - סט 10 יח'",
@@ -3629,7 +3585,7 @@
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
 "pack_qty": 10,
-"id": "beit-erez-307"
+"id": "beit-erez-303"
 },
 {
 "name": "קולר אליזבת קלאסי 25 ס\"מ - סט 10 יח'",
@@ -3642,7 +3598,7 @@
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
 "pack_qty": 10,
-"id": "beit-erez-308"
+"id": "beit-erez-304"
 },
 {
 "name": "קולר אליזבת קלאסי 30 ס\"מ - סט 10 יח'",
@@ -3655,7 +3611,7 @@
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
 "pack_qty": 10,
-"id": "beit-erez-309"
+"id": "beit-erez-305"
 },
 {
 "name": "קולר אליזבת קלאסי 35 ס\"מ - סט 10 יח'",
@@ -3668,7 +3624,7 @@
 "bonus": "2+1",
 "notes": "בונוס: 2+1",
 "pack_qty": 10,
-"id": "beit-erez-310"
+"id": "beit-erez-306"
 },
 {
 "name": "קולר אליזבת קלאסי 40 ס\"מ - סט 10 יח'",
@@ -3681,7 +3637,7 @@
 "bonus": "1+1",
 "notes": "בונוס: 1+1",
 "pack_qty": 10,
-"id": "beit-erez-311"
+"id": "beit-erez-307"
 },
 {
 "name": "ערכה לזיהוי סוג דם A+B חתול 1 - יח'",
@@ -3691,7 +3647,7 @@
 "price_with_vat": 112.1,
 "animal": "חתולים",
 "manufacturer": "Alvedia",
-"id": "beit-erez-312"
+"id": "beit-erez-308"
 },
 {
 "name": "ערכה לזיהוי סוג דם A+B חתול 20 - יח'",
@@ -3701,7 +3657,7 @@
 "price_with_vat": 1475.0,
 "animal": "חתולים",
 "manufacturer": "Alvedia",
-"id": "beit-erez-313"
+"id": "beit-erez-309"
 },
 {
 "name": "ערכה לזיהוי סוג דם DEA1 כלב 20 - יח'",
@@ -3711,7 +3667,7 @@
 "price_with_vat": 1475.0,
 "animal": "כלבים",
 "manufacturer": "Alvedia",
-"id": "beit-erez-314"
+"id": "beit-erez-310"
 },
 {
 "name": "ערכה ל- Cross Match כלב 5 - יח'",
@@ -3721,7 +3677,7 @@
 "price_with_vat": 625.4,
 "animal": "כלבים",
 "manufacturer": "Alvedia",
-"id": "beit-erez-315"
+"id": "beit-erez-311"
 },
 {
 "name": "ערכה ל- DAT כלב 10 - יח'",
@@ -3731,7 +3687,7 @@
 "price_with_vat": 885.0,
 "animal": "כלבים",
 "manufacturer": "Alvedia",
-"id": "beit-erez-316"
+"id": "beit-erez-312"
 },
 {
 "name": "שקית איסוף דם כפולה לחתול",
@@ -3741,7 +3697,7 @@
 "price_with_vat": 129.8,
 "animal": "חתולים",
 "manufacturer": "Alvedia",
-"id": "beit-erez-317"
+"id": "beit-erez-313"
 },
 {
 "name": "סט ריאגנטים VetPack למכשיר iVET-5",
@@ -3751,7 +3707,7 @@
 "price_with_vat": 2360.0,
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-318"
+"id": "beit-erez-314"
 },
 {
 "name": "סט ריאגנטים 50 - בדיקות למכשיר VET POCT",
@@ -3761,7 +3717,7 @@
 "price_with_vat": 1967.06,
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-319"
+"id": "beit-erez-315"
 },
 {
 "name": "סט ריאגנטים למכשיר ABX MICROS ESV60",
@@ -3771,7 +3727,7 @@
 "price_with_vat": 1121.0,
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-320"
+"id": "beit-erez-316"
 },
 {
 "name": "רוטור ביוכימיה - (20) Health Check Plus סט 10 יח'",
@@ -3782,7 +3738,7 @@
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
 "pack_qty": 10,
-"id": "beit-erez-321"
+"id": "beit-erez-317"
 },
 {
 "name": "רוטור ביוכימיה - (43) Full biochemistry סט 10 יח'",
@@ -3793,7 +3749,7 @@
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
 "pack_qty": 10,
-"id": "beit-erez-322"
+"id": "beit-erez-318"
 },
 {
 "name": "רוטור ביוכימיה - (4) Coagulation סט 10 יח'",
@@ -3804,7 +3760,7 @@
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
 "pack_qty": 10,
-"id": "beit-erez-323"
+"id": "beit-erez-319"
 },
 {
 "name": "רוטור ביוכימיה - (13) Canine Inflammation plus סט 10 יח'",
@@ -3815,7 +3771,7 @@
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
 "pack_qty": 10,
-"id": "beit-erez-324"
+"id": "beit-erez-320"
 },
 {
 "name": "רוטור ביוכימיה - (16) Feline Inflammation plus סט 10 יח'",
@@ -3826,7 +3782,7 @@
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
 "pack_qty": 10,
-"id": "beit-erez-325"
+"id": "beit-erez-321"
 },
 {
 "name": "רוטור ביוכימיה - (26) Comprehensive Diagnostic סט 10 יח'",
@@ -3837,7 +3793,7 @@
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
 "pack_qty": 10,
-"id": "beit-erez-326"
+"id": "beit-erez-322"
 },
 {
 "name": "נייר טרמי למכשיר ביוכימיה Noahcali-100",
@@ -3847,7 +3803,7 @@
 "price_with_vat": 11.8,
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-327"
+"id": "beit-erez-323"
 },
 {
 "name": "בדיקת - Vechek Plus cCRP מארז 10 בדיקות",
@@ -3857,7 +3813,7 @@
 "price_with_vat": 401.2,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-328"
+"id": "beit-erez-324"
 },
 {
 "name": "בדיקת - Vechek Plus cCysC Ag מארז 10 בדיקות",
@@ -3867,7 +3823,7 @@
 "price_with_vat": 542.8,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-329"
+"id": "beit-erez-325"
 },
 {
 "name": "בדיקת - Vechek Plus fCysC Ag מארז 10 בדיקות",
@@ -3877,7 +3833,7 @@
 "price_with_vat": 672.6,
 "animal": "חתולים",
 "manufacturer": "DYN",
-"id": "beit-erez-330"
+"id": "beit-erez-326"
 },
 {
 "name": "בדיקת - Vechek Plus cPL מארז 10 בדיקות",
@@ -3887,7 +3843,7 @@
 "price_with_vat": 542.8,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-331"
+"id": "beit-erez-327"
 },
 {
 "name": "בדיקת - Vechek Plus cT4 מארז 10 בדיקות",
@@ -3897,7 +3853,7 @@
 "price_with_vat": 460.2,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-332"
+"id": "beit-erez-328"
 },
 {
 "name": "בדיקת - Vechek Plus cTSH מארז 10 בדיקות",
@@ -3907,7 +3863,7 @@
 "price_with_vat": 460.2,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-333"
+"id": "beit-erez-329"
 },
 {
 "name": "בדיקת - Vechek Plus Cortisol Ag מארז 10 בדיקות",
@@ -3917,7 +3873,7 @@
 "price_with_vat": 460.2,
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-334"
+"id": "beit-erez-330"
 },
 {
 "name": "בדיקת - Vechek Plus Cortisol Ag מארז 10 בדיקות",
@@ -3927,7 +3883,7 @@
 "price_with_vat": 460.2,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-335"
+"id": "beit-erez-331"
 },
 {
 "name": "בדיקת - Vechek Plus CPV/CDV/CAV Ab מארז 10 בדיקות",
@@ -3937,7 +3893,7 @@
 "price_with_vat": 566.4,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-336"
+"id": "beit-erez-332"
 },
 {
 "name": "בדיקת - Vechek Plus FPV/FHV/FCV Ab מארז 10 בדיקות",
@@ -3947,7 +3903,7 @@
 "price_with_vat": 1168.2,
 "animal": "חתולים",
 "manufacturer": "DYN",
-"id": "beit-erez-337"
+"id": "beit-erez-333"
 },
 {
 "name": "בדיקת - Vechek Plus Rabies Ag מארז 10 בדיקות",
@@ -3957,7 +3913,7 @@
 "price_with_vat": 531.0,
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-338"
+"id": "beit-erez-334"
 },
 {
 "name": "FIV Ab + FeLV Ag בדיקות מהירות 10",
@@ -3967,7 +3923,7 @@
 "price_with_vat": 531.0,
 "animal": "חתולים",
 "manufacturer": "DYN",
-"id": "beit-erez-339"
+"id": "beit-erez-335"
 },
 {
 "name": "FHV + FCV Ag בדיקות מהירות 10",
@@ -3978,7 +3934,7 @@
 "animal": "חתולים",
 "manufacturer": "DYN",
 "notes": "חתולים - הרפס + קליצ'י, אנטיגן, הפרשות",
-"id": "beit-erez-340"
+"id": "beit-erez-336"
 },
 {
 "name": "FPV Ag בדיקות מהירות 10",
@@ -3989,7 +3945,7 @@
 "animal": "חתולים",
 "manufacturer": "DYN",
 "notes": "חתולים - פנהלוקופניה, אניגן, קיא / צואה",
-"id": "beit-erez-341"
+"id": "beit-erez-337"
 },
 {
 "name": "FCoV Ag בדיקות מהירות 10",
@@ -4000,7 +3956,7 @@
 "animal": "חתולים",
 "manufacturer": "DYN",
 "notes": "חתולים - קורונה, אנטיגן, צואה",
-"id": "beit-erez-342"
+"id": "beit-erez-338"
 },
 {
 "name": "FCoV Ab בדיקות מהירות 10",
@@ -4011,7 +3967,7 @@
 "animal": "חתולים",
 "manufacturer": "DYN",
 "notes": "חתולים - קורונה, אנטיבודי, סרום",
-"id": "beit-erez-343"
+"id": "beit-erez-339"
 },
 {
 "name": "FCoV + FPV + Giardia Ag בדיקות מהירות 10",
@@ -4022,7 +3978,7 @@
 "animal": "חתולים",
 "manufacturer": "DYN",
 "notes": "חתולים - קורונה + פנהלוקופניה + ג'יארדיה, אנטיגן, צואה",
-"id": "beit-erez-344"
+"id": "beit-erez-340"
 },
 {
 "name": "Toxoplasma Ab בדיקות מהירות 10",
@@ -4032,7 +3988,7 @@
 "price_with_vat": 401.2,
 "animal": "חתולים",
 "manufacturer": "DYN",
-"id": "beit-erez-345"
+"id": "beit-erez-341"
 },
 {
 "name": "Giardia Ag בדיקות מהירות 10",
@@ -4042,7 +3998,7 @@
 "price_with_vat": 389.4,
 "animal": "חתולים / כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-346"
+"id": "beit-erez-342"
 },
 {
 "name": "CPV + CDV Ag בדיקות מהירות 10",
@@ -4053,7 +4009,7 @@
 "animal": "כלבים",
 "manufacturer": "DYN",
 "notes": "כלבים - פרוו + דיסטמפר, אנטיגן, קיא / צואה",
-"id": "beit-erez-347"
+"id": "beit-erez-343"
 },
 {
 "name": "CPV + CCV + Giardia Ag בדיקות מהירות 10",
@@ -4064,7 +4020,7 @@
 "animal": "כלבים",
 "manufacturer": "DYN",
 "notes": "כלבים - פרוו + קורונה + ג'יארדיה, אנטיגן, קיא / צואה",
-"id": "beit-erez-348"
+"id": "beit-erez-344"
 },
 {
 "name": "Ehrlichia Ab בדיקות מהירות 10",
@@ -4075,7 +4031,7 @@
 "animal": "כלבים",
 "manufacturer": "DYN",
 "notes": "כלבים - ארליכיאה, אנטיבודי, דגימת דם",
-"id": "beit-erez-349"
+"id": "beit-erez-345"
 },
 {
 "name": "C. Leishmania Ab בדיקות מהירות 10",
@@ -4086,7 +4042,7 @@
 "animal": "כלבים",
 "manufacturer": "DYN",
 "notes": "כלבים - לישמניה, אנטיבודי, דגימת דם",
-"id": "beit-erez-350"
+"id": "beit-erez-346"
 },
 {
 "name": "C.Bru + LPS Ab בדיקות מהירות 10",
@@ -4096,7 +4052,7 @@
 "price_with_vat": 507.4,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-351"
+"id": "beit-erez-347"
 },
 {
 "name": "Leptospira IgG/IgM Ab בדיקות מהירות 10",
@@ -4106,7 +4062,7 @@
 "price_with_vat": 448.4,
 "animal": "כלבים",
 "manufacturer": "DYN",
-"id": "beit-erez-352"
+"id": "beit-erez-348"
 },
 {
 "name": "ג'ל לובריקציה 1 ל' Vet Lubigel",
@@ -4116,7 +4072,7 @@
 "price_with_vat": 37.76,
 "animal": "כל בע\"ח",
 "manufacturer": "Millpledge",
-"id": "beit-erez-353"
+"id": "beit-erez-349"
 },
 {
 "name": "טיפים 200 מיקרוליטר בקופסא 96 - טיפים",
@@ -4126,7 +4082,7 @@
 "price_with_vat": 41.3,
 "animal": "כל בע\"ח",
 "manufacturer": "ירדן ביוטק",
-"id": "beit-erez-354"
+"id": "beit-erez-350"
 },
 {
 "name": "מבחנת אפנדורף 1.5 מ\"ל 500 - יח'",
@@ -4137,7 +4093,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
 "pack_qty": 5,
-"id": "beit-erez-355"
+"id": "beit-erez-351"
 },
 {
 "name": "פיפטות פסטר 3 מ\"ל 500 - יח'",
@@ -4148,7 +4104,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
 "pack_qty": 3,
-"id": "beit-erez-356"
+"id": "beit-erez-352"
 },
 {
 "name": "מיקרו מבחנות דם 1.3 מל פקק סגול 100 - יח' בשקית EDTA K3 -",
@@ -4158,7 +4114,7 @@
 "price_with_vat": 177.0,
 "animal": "כל בע\"ח",
 "manufacturer": "תמר",
-"id": "beit-erez-357"
+"id": "beit-erez-353"
 },
 {
 "name": "מיקרו מבחנות דם 1.3 מל פקק ירוק 100 - יח' בשקית Lithium h -",
@@ -4168,7 +4124,7 @@
 "price_with_vat": 177.0,
 "animal": "כל בע\"ח",
 "manufacturer": "תמר",
-"id": "beit-erez-358"
+"id": "beit-erez-354"
 },
 {
 "name": "טיפים 200 מיקרוליטר בשקית 1000 - טיפים",
@@ -4178,7 +4134,7 @@
 "price_with_vat": 116.82,
 "animal": "כל בע\"ח",
 "manufacturer": "תמר",
-"id": "beit-erez-359"
+"id": "beit-erez-355"
 },
 {
 "name": "קופרו קיט לבדיקת צואה 50 - יח'",
@@ -4188,7 +4144,7 @@
 "price_with_vat": 259.6,
 "animal": "כל בע\"ח",
 "manufacturer": "Candioli",
-"id": "beit-erez-360"
+"id": "beit-erez-356"
 },
 {
 "name": "קופרוסול - נוזל להצפת צואה 2 - ל'",
@@ -4198,7 +4154,7 @@
 "price_with_vat": 106.2,
 "animal": "כל בע\"ח",
 "manufacturer": "Candioli",
-"id": "beit-erez-361"
+"id": "beit-erez-357"
 },
 {
 "name": "כלי ללקיחת ביופסיה עורית Biopsy Punch 4mm",
@@ -4210,7 +4166,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-362"
+"id": "beit-erez-358"
 },
 {
 "name": "כלי ללקיחת ביופסיה עורית Biopsy Punch 6mm",
@@ -4222,7 +4178,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-363"
+"id": "beit-erez-359"
 },
 {
 "name": "ג'ל אולטרסאונד 260 - ג'",
@@ -4232,7 +4188,7 @@
 "price_with_vat": 9.44,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-364"
+"id": "beit-erez-360"
 },
 {
 "name": "ג'ל אולטרסאונד 5 - ליטר",
@@ -4242,7 +4198,7 @@
 "price_with_vat": 129.8,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-365"
+"id": "beit-erez-361"
 },
 {
 "name": "יוריצ'ק - סטיקים לבדיקת שתן 100 - יח'",
@@ -4252,7 +4208,7 @@
 "price_with_vat": 103.84,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-366"
+"id": "beit-erez-362"
 },
 {
 "name": "מד סוכר (גלוקומטר) Accu-Chek Instant Roche",
@@ -4262,18 +4218,7 @@
 "price_with_vat": 82.6,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-367"
-},
-{
-"name": "מקלון למד סוכר 50 יח' Accu-Chek Instant Roche",
-"category": "מעבדה - שונות",
-"topic": "equipment",
-"price_no_vat": 75.0,
-"price_with_vat": 88.5,
-"animal": "כל בע\"ח",
-"manufacturer": "DYN",
-"pack_qty": 50,
-"id": "beit-erez-368"
+"id": "beit-erez-363"
 },
 {
 "name": "מכשיר בדיקת קטונים בדם",
@@ -4283,7 +4228,7 @@
 "price_with_vat": 129.8,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-369"
+"id": "beit-erez-364"
 },
 {
 "name": "סטריפים למכשיר בדיקת קטונים בדם 20 - יח'",
@@ -4293,7 +4238,7 @@
 "price_with_vat": 295.0,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-370"
+"id": "beit-erez-365"
 },
 {
 "name": "צנרת סקשיין 2 מטר",
@@ -4303,7 +4248,7 @@
 "price_with_vat": 8.26,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-371"
+"id": "beit-erez-366"
 },
 {
 "name": "נקז אקטיבי שטוח Reservoir 100ml - 7mm flat drain",
@@ -4314,7 +4259,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
 "pack_qty": 100,
-"id": "beit-erez-372"
+"id": "beit-erez-367"
 },
 {
 "name": "פד גזה לא ארוג 10X10 ס\"מ 4 שכבות 100 - יח'",
@@ -4326,7 +4271,7 @@
 "manufacturer": "DYN",
 "bonus": "80+20",
 "notes": "בונוס: 80+20",
-"id": "beit-erez-373"
+"id": "beit-erez-368"
 },
 {
 "name": "פד גזה ארוג 10X10 ס\"מ 8 שכבות 100 - יח'",
@@ -4338,7 +4283,7 @@
 "manufacturer": "DYN",
 "bonus": "17+3",
 "notes": "בונוס: 17+3",
-"id": "beit-erez-374"
+"id": "beit-erez-369"
 },
 {
 "name": "פד גזה לניתוח (פס כחול) 10X10 ס\"מ 12 שכבות 1 - ק\"ג",
@@ -4350,7 +4295,7 @@
 "manufacturer": "DYN",
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
-"id": "beit-erez-375"
+"id": "beit-erez-370"
 },
 {
 "name": "פד גזה סטרילי לניתוח (פס כחול) 10X10 ס\"מ 12 שכבות",
@@ -4362,7 +4307,7 @@
 "manufacturer": "DYN",
 "bonus": "7+3",
 "notes": "בונוס: 7+3",
-"id": "beit-erez-376"
+"id": "beit-erez-371"
 },
 {
 "name": "פד גזה אבדומינלי 30X30 ס\"מ 5 - יח'",
@@ -4374,7 +4319,7 @@
 "manufacturer": "DYN",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-377"
+"id": "beit-erez-372"
 },
 {
 "name": "פד גזה אבדומינלי 45X45 ס\"מ 5 - יח'",
@@ -4386,7 +4331,7 @@
 "manufacturer": "DYN",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-378"
+"id": "beit-erez-373"
 },
 {
 "name": "פילטר סטרילי 22/15 מ\"מ למע' הנשמה HMEF",
@@ -4398,7 +4343,7 @@
 "manufacturer": "DYN",
 "bonus": "7+3",
 "notes": "בונוס: 7+3",
-"id": "beit-erez-379"
+"id": "beit-erez-374"
 },
 {
 "name": "עיפרון ניתוח סטרילי (דיאטרמיה) - כבל 3 מטרים",
@@ -4410,7 +4355,7 @@
 "manufacturer": "DYN",
 "bonus": "8+2",
 "notes": "בונוס: 8+2",
-"id": "beit-erez-380"
+"id": "beit-erez-375"
 },
 {
 "name": "בלון הנשמה מסיליקון 0.5 ליטר",
@@ -4422,7 +4367,7 @@
 "manufacturer": "DYN",
 "bonus": "3+1",
 "notes": "בונוס: 3+1",
-"id": "beit-erez-381"
+"id": "beit-erez-376"
 },
 {
 "name": "בלון הנשמה מסיליקון 1 ליטר",
@@ -4434,7 +4379,7 @@
 "manufacturer": "DYN",
 "bonus": "3+1",
 "notes": "בונוס: 3+1",
-"id": "beit-erez-382"
+"id": "beit-erez-377"
 },
 {
 "name": "בלון הנשמה מסיליקון 2 ליטר",
@@ -4446,7 +4391,7 @@
 "manufacturer": "DYN",
 "bonus": "3+1",
 "notes": "בונוס: 3+1",
-"id": "beit-erez-383"
+"id": "beit-erez-378"
 },
 {
 "name": "נקז לטקס סטרילי עם סמן רנטגן PENROSE DRAIN \"1/4",
@@ -4456,7 +4401,7 @@
 "price_with_vat": 4.72,
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
-"id": "beit-erez-384"
+"id": "beit-erez-379"
 },
 {
 "name": "נקז לטקס סטרילי עם סמן רנטגן PENROSE DRAIN \"1/2",
@@ -4466,7 +4411,7 @@
 "price_with_vat": 4.72,
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
-"id": "beit-erez-385"
+"id": "beit-erez-380"
 },
 {
 "name": "סדיניות ניתוח/אשפוז 60X90 ס\"מ 30 - יח' SERENITY",
@@ -4476,7 +4421,7 @@
 "price_with_vat": 67.26,
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
-"id": "beit-erez-386"
+"id": "beit-erez-381"
 },
 {
 "name": "מרקר עורי (קצה דק ורגיל) + סרגל - ערכה סטרילית",
@@ -4488,7 +4433,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-387"
+"id": "beit-erez-382"
 },
 {
 "name": "סדין ניתוח סטרילי 45x60cm",
@@ -4500,7 +4445,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "100+25",
 "notes": "בונוס: 100+25",
-"id": "beit-erez-388"
+"id": "beit-erez-383"
 },
 {
 "name": "סדין ניתוח סטרילי 60x90cm",
@@ -4512,7 +4457,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "60+15",
 "notes": "בונוס: 60+15",
-"id": "beit-erez-389"
+"id": "beit-erez-384"
 },
 {
 "name": "סדין ניתוח סטרילי 90x120cm",
@@ -4524,7 +4469,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "60+15",
 "notes": "בונוס: 60+15",
-"id": "beit-erez-390"
+"id": "beit-erez-385"
 },
 {
 "name": "סדין ניתוח סטרילי 31x44cm עם חור 3.5X9cm",
@@ -4536,7 +4481,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "180+45",
 "notes": "בונוס: 180+45",
-"id": "beit-erez-391"
+"id": "beit-erez-386"
 },
 {
 "name": "סדין ניתוח סטרילי 44x74cm עם חור 7X20cm",
@@ -4548,7 +4493,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "80+20",
 "notes": "בונוס: 80+20",
-"id": "beit-erez-392"
+"id": "beit-erez-387"
 },
 {
 "name": "נקז לטקס סטרילי עם סמן רנטגן PENROSE DRAIN ''1",
@@ -4558,7 +4503,7 @@
 "price_with_vat": 4.72,
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
-"id": "beit-erez-393"
+"id": "beit-erez-388"
 },
 {
 "name": "מחזיק צנרת הרדמה/טובוס d-grip",
@@ -4568,7 +4513,7 @@
 "price_with_vat": 531.0,
 "animal": "כל בע\"ח",
 "manufacturer": "Docsinnovent",
-"id": "beit-erez-394"
+"id": "beit-erez-389"
 },
 {
 "name": "מים מזוקקים 5 - ליטר",
@@ -4578,7 +4523,7 @@
 "price_with_vat": 25.96,
 "animal": "כל בע\"ח",
 "manufacturer": "Schippers",
-"id": "beit-erez-395"
+"id": "beit-erez-390"
 },
 {
 "name": "מזרק MS מיקרוציפ 8.3*1.5 מ\"מ (0409984)",
@@ -4590,7 +4535,7 @@
 "manufacturer": "Schippers",
 "bonus": "9+1",
 "notes": "בונוס: 9+1",
-"id": "beit-erez-396"
+"id": "beit-erez-391"
 },
 {
 "name": "סטטוסקופ MDF Acoustica 747",
@@ -4600,7 +4545,7 @@
 "price_with_vat": 318.6,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-397"
+"id": "beit-erez-392"
 },
 {
 "name": "סטטוסקופ MDF Acoustica 747X",
@@ -4610,7 +4555,7 @@
 "price_with_vat": 531.0,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-398"
+"id": "beit-erez-393"
 },
 {
 "name": "מד חום דיגיטלי גמיש 10 שניות",
@@ -4620,7 +4565,7 @@
 "price_with_vat": 23.6,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-399"
+"id": "beit-erez-394"
 },
 {
 "name": "חסם ורידים רחב - שחרור מהיר",
@@ -4632,7 +4577,7 @@
 "manufacturer": "DYN",
 "bonus": "4+1",
 "notes": "בונוס: 4+1",
-"id": "beit-erez-400"
+"id": "beit-erez-395"
 },
 {
 "name": "נייר סיטרול 60X60 ס\"מ 500 - יח'",
@@ -4642,7 +4587,7 @@
 "price_with_vat": 336.3,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-401"
+"id": "beit-erez-396"
 },
 {
 "name": "שקיות סיטרול 29X13.5 ס\"מ 200 - יח'",
@@ -4652,7 +4597,7 @@
 "price_with_vat": 59.0,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-402"
+"id": "beit-erez-397"
 },
 {
 "name": "גליל סיטרול רוחב 10 ס\"מ 200 - מ'",
@@ -4662,7 +4607,7 @@
 "price_with_vat": 106.2,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-403"
+"id": "beit-erez-398"
 },
 {
 "name": "סרט דבק אינדיקטור לאוטוקלאב רוחב 19 מ\"מ 50 - מ'",
@@ -4672,7 +4617,7 @@
 "price_with_vat": 24.78,
 "animal": "כל בע\"ח",
 "manufacturer": "DYN",
-"id": "beit-erez-404"
+"id": "beit-erez-399"
 },
 {
 "name": "מקלות עץ לניקוי אוזניים (אפליקטור) 6\" וצמר גפן 100 - יח'",
@@ -4682,7 +4627,7 @@
 "price_with_vat": 3.54,
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
-"id": "beit-erez-405"
+"id": "beit-erez-400"
 },
 {
 "name": "מקלות עץ לבדיקת גרון (שפדלים) 100 - יח'",
@@ -4692,7 +4637,7 @@
 "price_with_vat": 5.9,
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
-"id": "beit-erez-406"
+"id": "beit-erez-401"
 },
 {
 "name": "כוס שתן סטרילי 125 מ\"ל מכסה הברגה אדום 5 - יח'",
@@ -4703,7 +4648,7 @@
 "animal": "כל בע\"ח",
 "manufacturer": "קאליר הנדסה בע\"מ",
 "pack_qty": 125,
-"id": "beit-erez-407"
+"id": "beit-erez-402"
 },
 {
 "name": "מחזיק קסטות 3 - קסטות",
@@ -4713,7 +4658,7 @@
 "price_with_vat": 141.6,
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-408"
+"id": "beit-erez-403"
 },
 {
 "name": "חוצה טבליות",
@@ -4723,7 +4668,7 @@
 "price_with_vat": 16.52,
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-409"
+"id": "beit-erez-404"
 },
 {
 "name": "מועך טבליות",
@@ -4733,7 +4678,7 @@
 "price_with_vat": 16.52,
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-410"
+"id": "beit-erez-405"
 },
 {
 "name": "אקדח סיכות סטרילי 35) סיכות)",
@@ -4745,7 +4690,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "8+2",
 "notes": "בונוס: 8+2",
-"id": "beit-erez-411"
+"id": "beit-erez-406"
 },
 {
 "name": "כלי להסרת סיכות",
@@ -4755,7 +4700,7 @@
 "price_with_vat": 16.52,
 "animal": "כל בע\"ח",
 "manufacturer": "Lux-sutures",
-"id": "beit-erez-412"
+"id": "beit-erez-407"
 },
 {
 "name": "מזרק למתן טבליות קצה גמיש 10 - יח'",
@@ -4767,7 +4712,7 @@
 "manufacturer": "Lux-sutures",
 "bonus": "3+1",
 "notes": "בונוס: 3+1",
-"id": "beit-erez-413"
+"id": "beit-erez-408"
 },
 {
 "name": "מיני ספייק 50 - יח'",
@@ -4777,7 +4722,7 @@
 "price_with_vat": 188.8,
 "animal": "כל בע\"ח",
 "manufacturer": "לפידות",
-"id": "beit-erez-414"
+"id": "beit-erez-409"
 },
 {
 "name": "טרנסופיקס ספייק 50 - יח'",
@@ -4787,7 +4732,7 @@
 "price_with_vat": 82.6,
 "animal": "כל בע\"ח",
 "manufacturer": "לפידות",
-"id": "beit-erez-415"
+"id": "beit-erez-410"
 }
 ]
 }

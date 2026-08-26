@@ -1,0 +1,857 @@
+{
+"meta": {
+"action": "refresh",
+"action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
+"slug": "monge",
+"type": "food",
+"supplier": "Monge",
+"price_list_date": "2025-01",
+"source_file": "sources/food/monge-2025-01.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 89,
+"status": "stale",
+"imported_at": "2026-08-26",
+"notes": "מחירון ינואר 2025"
+},
+"items": [
+{
+"name": "מונג אדולט אקטיב עוף 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000237",
+"id": "monge-1"
+},
+{
+"name": "מונג אדולט ארנב אורז ותפוא 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000125",
+"id": "monge-2"
+},
+{
+"name": "מונג אדולט ארנב אורז ותפוא 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000208",
+"id": "monge-3"
+},
+{
+"name": "מונג אדולט בקר ואורז 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000303",
+"id": "monge-4"
+},
+{
+"name": "מונג אדולט בקר ואורז 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000304",
+"id": "monge-5"
+},
+{
+"name": "מונג אדולט ברווז אורז ותפוא 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000124",
+"id": "monge-6"
+},
+{
+"name": "מונג אדולט ברווז אורז ותפוא 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000207",
+"id": "monge-7"
+},
+{
+"name": "מונג אדולט חזיר אורז ותפוא 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000222",
+"id": "monge-8"
+},
+{
+"name": "מונג אדולט חזיר אורז ותפוא 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000218",
+"id": "monge-9"
+},
+{
+"name": "מונג אדולט כבש אורז ותפוא 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000163",
+"id": "monge-10"
+},
+{
+"name": "מונג אדולט כבש אורז ותפוא 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000211",
+"id": "monge-11"
+},
+{
+"name": "מונג אדולט סלמון ואורז 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000162",
+"id": "monge-12"
+},
+{
+"name": "מונג אדולט סלמון ואורז 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000210",
+"id": "monge-13"
+},
+{
+"name": "מונג אדולט סלמון ואורז לייט 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000145",
+"id": "monge-14"
+},
+{
+"name": "מונג אדולט סלמון ואורז לייט 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000223",
+"id": "monge-15"
+},
+{
+"name": "מונג אדולט סלמון וטונה היפו 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000126",
+"id": "monge-16"
+},
+{
+"name": "מונג אדולט סלמון וטונה היפו 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000172",
+"id": "monge-17"
+},
+{
+"name": "מונג אדולט עוף אורז ותפוא 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000300",
+"id": "monge-18"
+},
+{
+"name": "מונג אדולט עוף אורז ותפוא 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000299",
+"id": "monge-19"
+},
+{
+"name": "מונג אדולט פורל אורז ותפוא 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000295",
+"id": "monge-20"
+},
+{
+"name": "מונג אדולט פורל אורז ותפוא 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000296",
+"id": "monge-21"
+},
+{
+"name": "מונג אקס סמול אדולט 3 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"sku": "29000107",
+"id": "monge-22"
+},
+{
+"name": "מונג אקס סמול אדולט 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000347",
+"id": "monge-23"
+},
+{
+"name": "מונג אקס סמול אדולט כבש אורז ותפוא 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 89.0,
+"price_with_vat": 105.02,
+"sku": "29000109",
+"id": "monge-24"
+},
+{
+"name": "מונג אקס סמול אדולט כבש אורז ותפוא 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "29000266",
+"id": "monge-25"
+},
+{
+"name": "מונג אקס סמול אדולט סלמון ואורז 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 89.0,
+"price_with_vat": 105.02,
+"sku": "29000108",
+"id": "monge-26"
+},
+{
+"name": "מונג אקס סמול פפי 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000225",
+"id": "monge-27"
+},
+{
+"name": "מונג חתול אדולט ארנב 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000244",
+"animal": "חתול",
+"id": "monge-28"
+},
+{
+"name": "מונג חתול אדולט עוף 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000165",
+"animal": "חתול",
+"id": "monge-29"
+},
+{
+"name": "מונג חתול אדולט עוף 10 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 295.0,
+"price_with_vat": 348.1,
+"sku": "29000231",
+"animal": "חתול",
+"id": "monge-30"
+},
+{
+"name": "מונג חתול אינדור עוף 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000166",
+"animal": "חתול",
+"id": "monge-31"
+},
+{
+"name": "מונג חתול אינדור עוף 10 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 295.0,
+"price_with_vat": 348.1,
+"sku": "29000232",
+"animal": "חתול",
+"id": "monge-32"
+},
+{
+"name": "מונג חתול היירבול עוף 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000131",
+"animal": "חתול",
+"id": "monge-33"
+},
+{
+"name": "מונג חתול היירבול עוף 10 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 295.0,
+"price_with_vat": 348.1,
+"sku": "29000230",
+"animal": "חתול",
+"id": "monge-34"
+},
+{
+"name": "מונג חתול יורינרי 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000164",
+"animal": "חתול",
+"id": "monge-35"
+},
+{
+"name": "מונג חתול יורינרי 10 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 337.0,
+"price_with_vat": 397.66,
+"sku": "29000175",
+"animal": "חתול",
+"id": "monge-36"
+},
+{
+"name": "מונג חתול לייט הודו 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000301",
+"animal": "חתול",
+"id": "monge-37"
+},
+{
+"name": "מונג חתול מונו אדולט סטרילייז בקר 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000297",
+"animal": "חתול",
+"id": "monge-38"
+},
+{
+"name": "מונג חתול מונו אדולט סטרילייז ברווז 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000240",
+"animal": "חתול",
+"id": "monge-39"
+},
+{
+"name": "מונג חתול מונו אדולט סטרילייז דג בקלה 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000298",
+"animal": "חתול",
+"id": "monge-40"
+},
+{
+"name": "מונג חתול מונו אדולט סלמון 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000243",
+"animal": "חתול",
+"id": "monge-41"
+},
+{
+"name": "מונג חתול מונו סטרילייז פורל 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000241",
+"animal": "חתול",
+"id": "monge-42"
+},
+{
+"name": "מונג חתול מונו קיטן פורל 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000242",
+"animal": "חתול",
+"id": "monge-43"
+},
+{
+"name": "מונג חתול סטרילייז 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000129",
+"animal": "חתול",
+"id": "monge-44"
+},
+{
+"name": "מונג חתול סטרילייז 10 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 285.0,
+"price_with_vat": 336.3,
+"sku": "29000156",
+"animal": "חתול",
+"id": "monge-45"
+},
+{
+"name": "מונג חתול סטרילייז 400 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "29000265",
+"animal": "חתול",
+"id": "monge-46"
+},
+{
+"name": "מונג חתול סניור 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000294",
+"animal": "חתול",
+"id": "monge-47"
+},
+{
+"name": "מונג חתול סנסטיב עוף 10 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 302.0,
+"price_with_vat": 356.36,
+"sku": "29000233",
+"animal": "חתול",
+"id": "monge-48"
+},
+{
+"name": "מונג חתול קיטן בקר 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000314",
+"animal": "חתול",
+"id": "monge-49"
+},
+{
+"name": "מונג חתול קיטן ברווז 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000315",
+"animal": "חתול",
+"id": "monge-50"
+},
+{
+"name": "מונג חתול קיטן עוף 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 77.0,
+"price_with_vat": 90.86,
+"sku": "29000130",
+"animal": "חתול",
+"id": "monge-51"
+},
+{
+"name": "מונג חתול קיטן עוף 10 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 285.0,
+"price_with_vat": 336.3,
+"sku": "29000157",
+"animal": "חתול",
+"id": "monge-52"
+},
+{
+"name": "מונג חתול קיטן עוף 400 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 33.0,
+"price_with_vat": 38.94,
+"sku": "29000200",
+"animal": "חתול",
+"id": "monge-53"
+},
+{
+"name": "מונג מדיום אדולט 12 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 270.0,
+"price_with_vat": 318.6,
+"sku": "29000117",
+"animal": "כלב",
+"id": "monge-54"
+},
+{
+"name": "מונג מדיום אדולט 3 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 106.0,
+"price_with_vat": 125.08,
+"sku": "29000283",
+"id": "monge-55"
+},
+{
+"name": "מונג מדיום סטרטר 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 57.0,
+"price_with_vat": 67.26,
+"sku": "29000281",
+"id": "monge-56"
+},
+{
+"name": "מונג מדיום סניור 12 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 284.0,
+"price_with_vat": 335.12,
+"sku": "29000115",
+"animal": "כלב",
+"id": "monge-57"
+},
+{
+"name": "מונג מדיום סניור 3 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 112.0,
+"price_with_vat": 132.16,
+"sku": "29000282",
+"id": "monge-58"
+},
+{
+"name": "מונג מדיום פפי 12 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 284.0,
+"price_with_vat": 335.12,
+"sku": "29000116",
+"animal": "כלב",
+"id": "monge-59"
+},
+{
+"name": "מונג מדיום פפי 3 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 112.0,
+"price_with_vat": 132.16,
+"sku": "29000120",
+"animal": "כלב",
+"id": "monge-60"
+},
+{
+"name": "מונג מדיום פפי 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000196",
+"id": "monge-61"
+},
+{
+"name": "מונג מיני אדולט 3 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 99.0,
+"price_with_vat": 116.82,
+"sku": "29000209",
+"id": "monge-62"
+},
+{
+"name": "מונג מיני אדולט 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000199",
+"id": "monge-63"
+},
+{
+"name": "מונג מיני אדולט כבש אורז ותפוא 2.5 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"sku": "29000111",
+"animal": "כלב",
+"id": "monge-64"
+},
+{
+"name": "מונג מיני אדולט כבש אורז ותפוא 7.5 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 223.0,
+"price_with_vat": 263.14,
+"sku": "29000112",
+"animal": "כלב",
+"id": "monge-65"
+},
+{
+"name": "מונג מיני אדולט כבש אורז ותפוא 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "29000235",
+"id": "monge-66"
+},
+{
+"name": "מונג מיני אדולט סלמון ואורז 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"sku": "29000226",
+"id": "monge-67"
+},
+{
+"name": "מונג מיני אדולט סלמון ואורז 7.5 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 223.0,
+"price_with_vat": 263.14,
+"sku": "29000113",
+"animal": "כלב",
+"id": "monge-68"
+},
+{
+"name": "מונג מיני אדולט סלמון ואורז 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000195",
+"id": "monge-69"
+},
+{
+"name": "מונג מיני אדולט עוף 7.5 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 189.0,
+"price_with_vat": 223.02,
+"sku": "29000119",
+"animal": "כלב",
+"id": "monge-70"
+},
+{
+"name": "מונג מיני סטרטר 1.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 63.0,
+"price_with_vat": 74.34,
+"sku": "29000221",
+"id": "monge-71"
+},
+{
+"name": "מונג מיני סניור 3 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 112.0,
+"price_with_vat": 132.16,
+"sku": "29000114",
+"animal": "כלב",
+"id": "monge-72"
+},
+{
+"name": "מונג מיני פפי גוניור 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000198",
+"id": "monge-73"
+},
+{
+"name": "מונג מיני פפי כבש ואורז 2.5 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 100.0,
+"price_with_vat": 118.0,
+"sku": "29000110",
+"animal": "כלב",
+"id": "monge-74"
+},
+{
+"name": "מונג מיני פפי כבש ואורז 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 40.0,
+"price_with_vat": 47.2,
+"sku": "29000234",
+"id": "monge-75"
+},
+{
+"name": "מונג מיני פפי עוף 3 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 112.0,
+"price_with_vat": 132.16,
+"sku": "29000220",
+"id": "monge-76"
+},
+{
+"name": "מונג מקסי אדולט 12 ק\"ג כלב",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 276.0,
+"price_with_vat": 325.68,
+"sku": "29000118",
+"animal": "כלב",
+"id": "monge-77"
+},
+{
+"name": "מונג מקסי פפי 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 284.0,
+"price_with_vat": 335.12,
+"sku": "29000146",
+"id": "monge-78"
+},
+{
+"name": "מונג מקסי פפי 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000197",
+"id": "monge-79"
+},
+{
+"name": "מונג פפי ברווז אורז ותפוא 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 103.0,
+"price_with_vat": 121.54,
+"sku": "29000318",
+"id": "monge-80"
+},
+{
+"name": "מונג פפי ברווז ותפוח אדמה 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000344",
+"id": "monge-81"
+},
+{
+"name": "מונג פפי כבש ואורז 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000127",
+"id": "monge-82"
+},
+{
+"name": "מונג פפי כבש ואורז 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000224",
+"id": "monge-83"
+},
+{
+"name": "מונג פפי כבש ואורז 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000193",
+"id": "monge-84"
+},
+{
+"name": "מונג פפי סלמון ואורז 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000128",
+"id": "monge-85"
+},
+{
+"name": "מונג פפי סלמון ואורז 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 90.0,
+"price_with_vat": 106.2,
+"sku": "29000219",
+"id": "monge-86"
+},
+{
+"name": "מונג פפי סלמון ואורז 800 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 37.0,
+"price_with_vat": 43.66,
+"sku": "29000194",
+"id": "monge-87"
+},
+{
+"name": "מונג פפי פורל אורז ותפו\"א 2.5 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 103.0,
+"price_with_vat": 121.54,
+"sku": "29000343",
+"id": "monge-88"
+},
+{
+"name": "מונג פפי פורל ותפו\"א 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 318.0,
+"price_with_vat": 375.24,
+"sku": "29000345",
+"id": "monge-89"
+}
+]
+}

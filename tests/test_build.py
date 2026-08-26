@@ -4,8 +4,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 idx = json.load(open(ROOT / "data/index.json", encoding="utf-8"))
 counts = {m["slug"]: m["item_count"] for m in idx["pricelists"]}
-assert counts["beit-erez"] == 415 and counts["aml"] == 123 and counts["hamachon"] == 90, counts
-assert sum(counts.values()) >= 3900
+assert counts["beit-erez"] + counts["beit-erez-shop"] == 415 and counts["aml"] == 123 and counts["hamachon"] == 90, counts
+assert {m["type"] for m in idx["pricelists"]} == {"food", "medical", "labs", "shop"}
+assert counts["idexx"] > 400 and counts["miltin-consum"] > 350, "refreshed lists shrank"
+assert sum(counts.values()) >= 5300
 FORBID = ("customerPriceWithVat", "weighted", "invoice", "clinic_sale", "purchasePrice", "112026")
 for f in (ROOT / "data").rglob("*.json"):
     s = f.read_text(encoding="utf-8")

@@ -1,0 +1,151 @@
+{
+"meta": {
+"action": "ok",
+"action_note": "מעודכן.",
+"slug": "petvet-shop",
+"type": "shop",
+"supplier": "פט-וט ביומד",
+"price_list_date": "2026-05",
+"source_file": "sources/shop/petvet-shop-2026-05.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 14,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"
+},
+"items": [
+{
+"name": "Keto Tris Finger Wipes 50 units",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 59.0,
+"price_with_vat": 69.62,
+"sku": "DERMA-SP1330",
+"pack_qty": 50,
+"id": "petvet-shop-1"
+},
+{
+"name": "Tris Ophto Wipes 50ct",
+"category": "טיפוח והיגיינה",
+"topic": "grooming",
+"price_no_vat": 58.0,
+"price_with_vat": 68.44,
+"sku": "DZOO-TWX",
+"bonus": "6+1,10+2",
+"id": "petvet-shop-2"
+},
+{
+"name": "Pill Splitter",
+"category": "חול ושירותים",
+"topic": "litter",
+"price_no_vat": 7.0,
+"price_with_vat": 8.26,
+"sku": "FIONA-821070-1",
+"id": "petvet-shop-3"
+},
+{
+"name": "Calming Spray 200ml",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 46.0,
+"price_with_vat": 54.28,
+"sku": "PR-79583",
+"pack_qty": 200,
+"id": "petvet-shop-4"
+},
+{
+"name": "Mini Calming Spray 15ml",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 18.0,
+"price_with_vat": 21.24,
+"sku": "PR-79664",
+"pack_qty": 15,
+"id": "petvet-shop-5"
+},
+{
+"name": "Battery Atomizer Refill 300ml",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 56.0,
+"price_with_vat": 66.08,
+"sku": "PR-79744",
+"pack_qty": 300,
+"id": "petvet-shop-6"
+},
+{
+"name": "Battery Atomizer",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 185.0,
+"price_with_vat": 218.3,
+"sku": "PR-79745",
+"id": "petvet-shop-7"
+},
+{
+"name": "Calming Wipe Sachet (12)",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 18.0,
+"price_with_vat": 21.24,
+"sku": "PR-79881",
+"id": "petvet-shop-8"
+},
+{
+"name": "Boredom Buster forager kit",
+"category": "צעצועים",
+"topic": "toys",
+"price_no_vat": 105.0,
+"price_with_vat": 123.9,
+"sku": "PR-80128",
+"id": "petvet-shop-9"
+},
+{
+"name": "Calming Bandana Kit EXTRA SMALL",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 44.0,
+"price_with_vat": 51.92,
+"sku": "PR-79959",
+"id": "petvet-shop-10"
+},
+{
+"name": "Calming Bandana Kit SMALL",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 44.0,
+"price_with_vat": 51.92,
+"sku": "PR-79960",
+"id": "petvet-shop-11"
+},
+{
+"name": "Calming Bandana Kit MEDIUM",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 44.0,
+"price_with_vat": 51.92,
+"sku": "PR-79961",
+"id": "petvet-shop-12"
+},
+{
+"name": "Calming Bandana Kit LARGE",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 44.0,
+"price_with_vat": 51.92,
+"sku": "PR-79962",
+"id": "petvet-shop-13"
+},
+{
+"name": "Calming Spray 400ml – PROF. PACK",
+"category": "הרגעה",
+"topic": "calming",
+"price_no_vat": 61.0,
+"price_with_vat": 71.98,
+"sku": "PR-79983",
+"pack_qty": 400,
+"id": "petvet-shop-14"
+}
+]
+}

@@ -1,0 +1,334 @@
+{
+"meta": {
+"action": "ok",
+"action_note": "מעודכן.",
+"slug": "purina-retail-shop",
+"type": "shop",
+"supplier": "פורינה (חנויות)",
+"price_list_date": "2026-06",
+"source_file": "sources/shop/purina-retail-shop-2026-06.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 30,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"
+},
+"items": [
+{
+"name": "פריסקיז פארטי מיקס אוריגי'נל קראנץ",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12348261",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-1"
+},
+{
+"name": "פריסקיז פארטי מיקס מיקס גריל קראנץ",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12348037",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-2"
+},
+{
+"name": "פריסקיז פארטי מיקס מעדני ים קראנץ",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12364507",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-3"
+},
+{
+"name": "פריסקיז פארטי מיקס פיקניק קרנץ",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12368621",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-4"
+},
+{
+"name": "פריסקיז פארטי מיקס קרייזי צ'יז",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12528489",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-5"
+},
+{
+"name": "פריסקיז פארטי מיקס מאנץ' בוקר",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12280472",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-6"
+},
+{
+"name": "פריסקיז פארטי מיקס הודו",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12332654",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-7"
+},
+{
+"name": "פריסקיז פארטי מיקס עוף",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12332617",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-8"
+},
+{
+"name": "פריסקיז פלייפולס סלמון ושרימפס",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12534203",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-9"
+},
+{
+"name": "פריסקיז פלייפולס עוף וכבד",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.18,
+"price_with_vat": 9.65,
+"sku": "12534194",
+"unit": "59.5 גרם × 10 בקרטון",
+"id": "purina-retail-shop-10"
+},
+{
+"name": "פריסקיז צנצנת פארטי מיקס מעדני ים קראנץ",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 50.67,
+"price_with_vat": 59.79,
+"sku": "12364794",
+"unit": "567 גרם × 3 בקרטון",
+"id": "purina-retail-shop-11"
+},
+{
+"name": "פריסקיז צנצנת פארטי מיקס אוריגי'נל קראנץ",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 50.67,
+"price_with_vat": 59.79,
+"sku": "12349730",
+"unit": "567 גרם × 3 בקרטון",
+"id": "purina-retail-shop-12"
+},
+{
+"name": "דנטלייף לכלב מגזע קטן",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 10.2,
+"price_with_vat": 12.04,
+"sku": "12606950",
+"unit": "115 גרם × 6 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-13"
+},
+{
+"name": "דנטלייף לכלב מגזע בינוני",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 10.2,
+"price_with_vat": 12.04,
+"sku": "12606926",
+"unit": "115 גרם × 6 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-14"
+},
+{
+"name": "דנטלייף לכלב מגזע גדול",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 10.2,
+"price_with_vat": 12.04,
+"sku": "12606948",
+"unit": "142 גרם × 6 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-15"
+},
+{
+"name": "דנטלייף חתול עוף",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 6.5,
+"price_with_vat": 7.67,
+"sku": "12607325",
+"unit": "40 גרם × 8 בקרטון",
+"animal": "חתול",
+"id": "purina-retail-shop-16"
+},
+{
+"name": "דנטלייף חתול סלמון",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 6.5,
+"price_with_vat": 7.67,
+"sku": "12607342",
+"unit": "40 גרם × 8 בקרטון",
+"animal": "חתול",
+"id": "purina-retail-shop-17"
+},
+{
+"name": "פליקס שלוקים Joyables עוף",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.49,
+"price_with_vat": 10.02,
+"sku": "12620437",
+"unit": "40 גרם × 11 בקרטון",
+"id": "purina-retail-shop-18"
+},
+{
+"name": "פליקס שלוקים Joyables סלמון",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.49,
+"price_with_vat": 10.02,
+"sku": "12620438",
+"unit": "40 גרם × 11 בקרטון",
+"id": "purina-retail-shop-19"
+},
+{
+"name": "פליקס שלוקים Joyables ברווז",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 8.49,
+"price_with_vat": 10.02,
+"sku": "12620419",
+"unit": "40 גרם × 11 בקרטון",
+"id": "purina-retail-shop-20"
+},
+{
+"name": "פרו פלאן חטיפי DentalCare לכלב מגזע קטן",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 25.64,
+"price_with_vat": 30.26,
+"sku": "12604543",
+"unit": "345 גרם × 5 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-21"
+},
+{
+"name": "פרו פלאן חטיפי DentalCare לכלב מגזע בינוני",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 25.64,
+"price_with_vat": 30.26,
+"sku": "12604772",
+"unit": "345 גרם × 5 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-22"
+},
+{
+"name": "פרו פלאן חטיפי DentalCare לכלב מגזע גדול",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 25.64,
+"price_with_vat": 30.26,
+"sku": "12604733",
+"unit": "426 גרם × 5 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-23"
+},
+{
+"name": "דוגלי אקטיב בקר",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 114.19,
+"price_with_vat": 134.74,
+"sku": "12466720",
+"unit": "12 ק\"ג × 1 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-24"
+},
+{
+"name": "דוגלי גורים עוף",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 41.46,
+"price_with_vat": 48.92,
+"sku": "12466622",
+"unit": "3 ק\"ג × 4 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-25"
+},
+{
+"name": "דוגלי גזע קטן בקר",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 39.49,
+"price_with_vat": 46.6,
+"sku": "12613172",
+"unit": "3 ק\"ג × 4 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-26"
+},
+{
+"name": "דוגלי בוגר עוף",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 37.61,
+"price_with_vat": 44.38,
+"sku": "12368765",
+"unit": "3 ק\"ג × 4 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-27"
+},
+{
+"name": "דוגלי בוגר בקר",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 37.61,
+"price_with_vat": 44.38,
+"sku": "12368766",
+"unit": "3 ק\"ג × 4 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-28"
+},
+{
+"name": "דוגלי בוגר עוף",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 108.76,
+"price_with_vat": 128.34,
+"sku": "12368676",
+"unit": "12 ק\"ג × 1 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-29"
+},
+{
+"name": "דוגלי בוגר בקר",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 108.76,
+"price_with_vat": 128.34,
+"sku": "12368675",
+"unit": "12 ק\"ג × 1 בקרטון",
+"animal": "כלב",
+"id": "purina-retail-shop-30"
+}
+]
+}

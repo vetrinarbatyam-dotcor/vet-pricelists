@@ -1,0 +1,163 @@
+{
+"meta": {
+"action": "ok",
+"action_note": "מעודכן.",
+"slug": "msd",
+"type": "medical",
+"supplier": "MSD (ברווקטו)",
+"price_list_date": "2026",
+"source_file": "sources/medical/msd-2026.pdf",
+"vat_basis": "no_vat",
+"vat_rate": 18,
+"item_count": 16,
+"status": "current",
+"imported_at": "2026-08-26",
+"notes": "מחיר לווטרינר 2026"
+},
+"items": [
+{
+"name": "ברבקטו 112.5 מ\"ג · 2-4.5 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 156.0,
+"price_with_vat": 184.08,
+"sku": "122154",
+"id": "msd-1"
+},
+{
+"name": "ברבקטו 250 מ\"ג · 4.5-10 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 166.0,
+"price_with_vat": 195.88,
+"sku": "122155",
+"id": "msd-2"
+},
+{
+"name": "ברבקטו 500 מ\"ג · 10-20 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 177.0,
+"price_with_vat": 208.86,
+"sku": "122156",
+"id": "msd-3"
+},
+{
+"name": "ברבקטו 1000 מ\"ג · 20-40 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"sku": "122158",
+"id": "msd-4"
+},
+{
+"name": "ברבקטו 1400 מ\"ג · 40-56 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 208.0,
+"price_with_vat": 245.44,
+"sku": "122159",
+"id": "msd-5"
+},
+{
+"name": "ברבקטו ספוט-און 112.5 מ\"ג · 2-4.5 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 156.0,
+"price_with_vat": 184.08,
+"sku": "120030",
+"id": "msd-6"
+},
+{
+"name": "ברבקטו ספוט-און 250 מ\"ג · 4.5-10 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 166.0,
+"price_with_vat": 195.88,
+"sku": "120031",
+"id": "msd-7"
+},
+{
+"name": "ברבקטו ספוט-און 500 מ\"ג · 10-20 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 177.0,
+"price_with_vat": 208.86,
+"sku": "120032",
+"id": "msd-8"
+},
+{
+"name": "ברבקטו ספוט-און 1000 מ\"ג · 20-40 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"sku": "120033",
+"id": "msd-9"
+},
+{
+"name": "ברבקטו ספוט-און 1400 מ\"ג · 40-56 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 208.0,
+"price_with_vat": 245.44,
+"sku": "120034",
+"id": "msd-10"
+},
+{
+"name": "ברבקטו ספוט-און 112.5 מ\"ג · 1.2-2.8 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 144.0,
+"price_with_vat": 169.92,
+"sku": "122259",
+"id": "msd-11"
+},
+{
+"name": "ברבקטו ספוט-און 250 מ\"ג · 2.8-6.25 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 160.0,
+"price_with_vat": 188.8,
+"sku": "122258",
+"id": "msd-12"
+},
+{
+"name": "ברבקטו ספוט-און 500 מ\"ג · 6.25-12.25 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 178.0,
+"price_with_vat": 210.04,
+"sku": "122280",
+"id": "msd-13"
+},
+{
+"name": "ברבקטו ספוט-און פלוס 112.5 מ\"ג · 1.2-2.8 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 150.0,
+"price_with_vat": 177.0,
+"sku": "122355",
+"id": "msd-14"
+},
+{
+"name": "ברבקטו ספוט-און פלוס 250 מ\"ג · 2.8-6.25 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 173.0,
+"price_with_vat": 204.14,
+"sku": "122354",
+"id": "msd-15"
+},
+{
+"name": "ברבקטו ספוט-און פלוס 500 מ\"ג · 6.25-12.25 ק\"ג",
+"category": "הדברה / טפילים",
+"topic": "parasites",
+"price_no_vat": 190.0,
+"price_with_vat": 224.2,
+"sku": "122353",
+"id": "msd-16"
+}
+]
+}

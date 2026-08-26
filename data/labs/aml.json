@@ -1,5 +1,7 @@
 {
 "meta": {
+"action": "ok",
+"action_note": "מעודכן.",
 "slug": "aml",
 "type": "labs",
 "supplier": "AML",

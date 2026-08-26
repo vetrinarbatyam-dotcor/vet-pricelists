@@ -1,5 +1,7 @@
 {
 "meta": {
+"action": "partial",
+"action_note": "רק 9 בדיקות נטענו. יש 4 מחירוני PDF (פאנלים · גנטיות · פתוגנים · ציפורים) שטרם פורסרו.",
 "slug": "karnieli",
 "type": "labs",
 "supplier": "קרניאלי",

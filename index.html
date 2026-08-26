@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -18,10 +18,10 @@
   <div class="gate-card">
     <img src="claudevet-wordmark.svg" alt="ClaudeVet" class="gate-logo">
     <h1>המחירון הווטרינרי הפתוח</h1>
-    <p>מחירוני מזון, תרופות, מוצרים ומעבדות — במקום אחד, לווטרינרים. הזינו את קוד הגישה שקיבלתם.</p>
+    <p>מחירוני מזון, תרופות, מעבדות ומוצרי חנות — במקום אחד, לווטרינרים. הזינו את קוד הגישה שקיבלתם.</p>
     <form id="gateForm" autocomplete="off">
       <label for="gateCode" class="sr-only">קוד גישה</label>
-      <input id="gateCode" type="text" inputmode="text" placeholder="קוד גישה" required>
+      <input id="gateCode" type="text" placeholder="קוד גישה" required>
       <button type="submit">כניסה</button>
     </form>
     <p id="gateErr" class="gate-err" hidden>הקוד לא נכון. בדקו את ההודעה שקיבלתם או פנו אלינו.</p>
@@ -29,25 +29,43 @@
   </div>
 </section>
 
-<!-- ===== app ===== -->
 <div id="app" hidden>
 <header class="top">
-  <div class="brand">
-    <img src="claudevet-wordmark.svg" alt="ClaudeVet" height="30">
+  <a class="brand" id="homeBtn" href="#" title="חזרה למסך הראשי">
+    <img src="claudevet-wordmark.svg" alt="ClaudeVet" height="28">
     <span class="product">VetPrices</span>
-  </div>
-  <nav class="tabs" id="tabs" aria-label="סוגי מחירונים">
+  </a>
+  <nav class="tabs" id="tabs" aria-label="סקציות">
     <button data-type="medical">💊 מוצרים ותרופות</button>
     <button data-type="food">🍖 מזון</button>
     <button data-type="labs">🧪 מעבדות</button>
+    <button data-type="shop">🛍️ מוצרי חנויות</button>
   </nav>
   <div class="top-actions">
-    <button id="statusBtn" class="ghost">📅 מצב המחירונים</button>
-    <button id="modeBtn" class="mode" aria-pressed="false">התמחור שלי</button>
+    <div class="seg big" role="group" aria-label="תצוגת מחירים">
+      <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
+    </div>
+    <button id="calcBtn" class="ghost icon" title="מחשבון תמחור">🧮</button>
+    <button id="setBtn" class="ghost icon" title="הגדרות תמחור">⚙️</button>
   </div>
 </header>
 
-<main>
+<!-- ===== landing ===== -->
+<main id="home" class="home">
+  <h1>במה נתחיל?</h1>
+  <p class="home-sub">4 מחירונים גדולים ומחשבון תמחור. הכל מבוסס על מחירי מחירון רשמיים של הספקים — התמחור שלכם נשמר רק בדפדפן שלכם.</p>
+  <div class="tiles" id="tiles">
+    <button class="tile" data-go="medical"><span class="ico">💊</span><b>מוצרים ותרופות</b><small id="c-medical">—</small></button>
+    <button class="tile" data-go="food"><span class="ico">🍖</span><b>מזון</b><small id="c-food">—</small></button>
+    <button class="tile" data-go="labs"><span class="ico">🧪</span><b>מעבדות</b><small id="c-labs">—</small></button>
+    <button class="tile" data-go="shop"><span class="ico">🛍️</span><b>מוצרי חנויות</b><small id="c-shop">—</small></button>
+    <button class="tile calc" data-go="calc"><span class="ico">🧮</span><b>מחשבון תמחור</b><small>עלות → מרווח → מחיר ללקוח</small></button>
+  </div>
+  <p class="home-foot"><button id="statusBtn2" class="ghost">📅 מצב המחירונים</button></p>
+</main>
+
+<!-- ===== catalog ===== -->
+<main id="catalog" hidden>
   <section class="controls">
     <div class="row">
       <input id="q" type="search" placeholder="חיפוש חופשי — שם פריט, מק״ט, חומר פעיל…" aria-label="חיפוש">
@@ -57,46 +75,117 @@
       <div class="seg" role="group" aria-label="חיתוך">
         <button data-view="supplier" class="on">לפי ספק</button><button data-view="topic">לפי נושא</button>
       </div>
-      <a id="dl" class="ghost dl" href="downloads/medical.xlsx" download>⬇ הורדה לאקסל</a>
+      <button id="statusBtn" class="ghost">📅 מצב המחירונים</button>
+      <a id="dl" class="ghost dl" href="downloads/medical.xlsx" download>⬇ אקסל</a>
     </div>
     <div id="chips" class="chips"></div>
     <div id="subchips" class="chips sub" hidden></div>
   </section>
 
-  <section id="pricingBar" class="pricing-bar" hidden>
-    <div class="pb-head">
-      <strong>התמחור שלי</strong>
-      <span class="pb-note">הכל נשמר רק בדפדפן שלכם. נוסחה: עלות = מחיר ללא מע״מ × (1 − הנחה) × 1.18 · מחיר ללקוח = עלות × (1 + מרווח %) + מרווח ₪</span>
-      <span class="pb-actions">
-        <button id="exportBtn" class="ghost small">ייצוא הגדרות</button>
-        <button id="importBtn" class="ghost small">ייבוא</button>
-        <input id="importFile" type="file" accept="application/json" hidden>
-        <button id="resetBtn" class="ghost small danger">איפוס</button>
-      </span>
-    </div>
-    <div class="pb-grid">
-      <div class="pb-box">
-        <div class="pb-title">ברירת מחדל לסקציה זו</div>
-        <label>מרווח % <input id="typePct" type="number" step="1" min="-100"></label>
-        <label>מרווח ₪ קבוע <input id="typeFlat" type="number" step="1"></label>
-      </div>
-      <div class="pb-box grow">
-        <div class="pb-title">ההנחה שלי מכל ספק (%) — ומרווח לספק אם שונה מברירת המחדל</div>
-        <div id="supplierPricing" class="sp-grid"></div>
-      </div>
-    </div>
-  </section>
+  <div id="clinicBar" class="clinic-bar" hidden>
+    <span><b>מחירון המרפאה</b> — מחירי המכירה שלכם, מחושבים מהמחירון לפי ההגדרות שלכם.</span>
+    <span class="cb-formula">עלות = מחיר מחירון × (1 − הנחה) × 1.18 · מחיר ללקוח = עלות × (1 + מרווח %) + מרווח ₪</span>
+    <button id="setBtn2" class="ghost small">⚙️ שינוי מרווחים</button>
+  </div>
 
   <div class="meta-line"><span id="count"></span><span id="listNote"></span></div>
-
   <div class="tbl">
-    <table id="table">
-      <thead><tr id="thead"></tr></thead>
-      <tbody id="tbody"></tbody>
-    </table>
+    <table><thead><tr id="thead"></tr></thead><tbody id="tbody"></tbody></table>
     <button id="more" class="ghost more" hidden>הצג עוד</button>
     <p id="empty" class="empty" hidden>לא נמצאו פריטים. נסו חיפוש אחר או ספק אחר.</p>
   </div>
+</main>
+
+<!-- ===== settings ===== -->
+<main id="settings" hidden class="page">
+  <div class="page-head">
+    <h1>⚙️ הגדרות תמחור</h1>
+    <p>כאן קובעים איך נגזר <b>מחירון המרפאה</b> מכל מחירון ספק. הכל נשמר בדפדפן שלכם בלבד ואינו נשלח לשום מקום.</p>
+  </div>
+
+  <section class="box">
+    <h2>ברירת מחדל לכל סקציה</h2>
+    <div id="secGrid" class="sec-grid"></div>
+  </section>
+
+  <section class="box">
+    <h2>לכל ספק בנפרד</h2>
+    <p class="hint">ההנחה שלכם מהספק, ושיטת התמחור שלו — אחוז מהעלות או תוספת קבועה בשקלים. ריק = ברירת המחדל של הסקציה.</p>
+    <div class="row gap">
+      <input id="supQ" type="search" placeholder="סינון ספקים…" aria-label="סינון ספקים">
+      <span class="hint" id="supCount"></span>
+    </div>
+    <div class="tbl"><table><thead><tr>
+      <th>ספק</th><th>סקציה</th><th class="num">פריטים</th><th class="num">הנחה %</th>
+      <th>שיטה</th><th class="num">ערך</th><th>דוגמה</th></tr></thead>
+      <tbody id="supBody"></tbody></table></div>
+  </section>
+
+  <section class="box">
+    <h2>עיגול מחיר ללקוח</h2>
+    <div class="seg" id="roundSeg" role="group" aria-label="עיגול">
+      <button data-round="0" class="on">ללא</button><button data-round="1">₪1</button>
+      <button data-round="5">₪5</button><button data-round="10">₪10</button>
+    </div>
+  </section>
+
+  <section class="box row gap">
+    <button id="exportBtn" class="ghost">⬇ ייצוא הגדרות</button>
+    <button id="importBtn" class="ghost">⬆ ייבוא</button>
+    <input id="importFile" type="file" accept="application/json" hidden>
+    <button id="resetBtn" class="ghost danger">איפוס הכל</button>
+    <span id="setMsg" class="hint"></span>
+  </section>
+</main>
+
+<!-- ===== calculator ===== -->
+<main id="calc" hidden class="page">
+  <div class="page-head">
+    <h1>🧮 מחשבון תמחור</h1>
+    <p>מחשבון מהיר לצוות המרפאה: מזינים מחיר קנייה, הנחה ומרווח — ומקבלים מחיר ללקוח, רווח ואחוז רווח. אפשר גם ללכת אחורה ממחיר מכירה רצוי.</p>
+  </div>
+  <div class="calc-wrap">
+    <section class="box">
+      <h2>הנתונים</h2>
+      <label class="fld">מוצר מהמחירונים (אופציונלי)
+        <input id="cPick" type="search" placeholder="חיפוש מוצר — ימשוך את מחיר המחירון" autocomplete="off">
+      </label>
+      <div id="cSug" class="sug" hidden></div>
+      <label class="fld">מחיר מחירון ללא מע״מ (₪)<input id="cList" type="number" step="0.01" value="100"></label>
+      <label class="fld">הנחת ספק (%)<input id="cDisc" type="number" step="0.5" value="0"></label>
+      <label class="fld">מרווח (%)<input id="cPct" type="number" step="1" value="40"></label>
+      <label class="fld">תוספת קבועה (₪)<input id="cFlat" type="number" step="1" value="0"></label>
+      <label class="fld">מחיר מכירה רצוי (₪)<input id="cSale" type="number" step="0.5" placeholder="חישוב אחורה"></label>
+    </section>
+    <section class="box res">
+      <h2>התוצאה</h2>
+      <div class="res-row"><span>עלות ללא מע״מ</span><b id="rCostNo">—</b></div>
+      <div class="res-row"><span>עלות כולל מע״מ</span><b id="rCost">—</b></div>
+      <div class="res-row big"><span>מחיר ללקוח</span><b id="rSale">—</b></div>
+      <div class="res-row"><span>רווח בשקלים</span><b id="rProfit">—</b></div>
+      <div class="res-row"><span>מרווח על העלות (markup)</span><b id="rMarkup">—</b></div>
+      <div class="res-row"><span>שיעור רווח מהמכירה (margin)</span><b id="rMargin">—</b></div>
+      <p class="hint">מע״מ 18%. "מרווח על העלות" הוא מה שמקובל לקרוא לו אחוז רווח; "שיעור רווח מהמכירה" הוא החלק שנשאר לכם מכל שקל שהלקוח משלם.</p>
+    </section>
+  </div>
+</main>
+
+<main id="status" hidden class="page">
+  <div class="page-head">
+    <h1>📅 מצב המחירונים</h1>
+    <p>מה טעון במערכת, מאיזה תאריך, ומה עוד צריך עדכון. תאריך = חודש המחירון של הספק; "ישן" = מעל 12 חודשים.</p>
+  </div>
+  <div class="grid-kpi" id="statusKpi"></div>
+  <section class="box">
+    <h2>מה דורש טיפול</h2>
+    <div class="tbl"><table><thead><tr><th>סקציה</th><th>ספק</th><th>תאריך</th><th class="num">פריטים</th><th>מצב</th><th>מה צריך</th></tr></thead>
+      <tbody id="statusTodo"></tbody></table></div>
+  </section>
+  <section class="box">
+    <h2>מחירונים מעודכנים</h2>
+    <div class="tbl"><table><thead><tr><th>סקציה</th><th>ספק</th><th>תאריך</th><th class="num">פריטים</th><th>מקור</th></tr></thead>
+      <tbody id="statusOk"></tbody></table></div>
+  </section>
 </main>
 
 <footer>
@@ -106,13 +195,8 @@
 </footer>
 </div>
 
-<!-- ===== status modal ===== -->
-<dialog id="statusDlg">
-  <div class="dlg-head"><h2>מצב המחירונים</h2><button class="ghost" data-close>סגור</button></div>
-  <p class="dlg-note">תאריך = חודש המחירון של הספק. "ישן" = מעל 12 חודשים. "אין מקור" = הנתונים במערכת אך קובץ המקור לא בידינו — נשמח לקבל אותו.</p>
-  <div class="tbl"><table id="statusTable"><thead><tr><th>סוג</th><th>ספק</th><th>תאריך</th><th>פריטים</th><th>מצב</th><th>מקור</th></tr></thead><tbody></tbody></table></div>
-</dialog>
 
-<script src="app.js"></script>
+
+<script src="app.js?v=4"></script>
 </body>
 </html>

@@ -3,6 +3,8 @@
  "vat_rate": 18,
  "pricelists": [
   {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "beit-erez",
    "type": "medical",
    "supplier": "בית ארז (מילטין)",
@@ -10,12 +12,44 @@
    "source_file": "sources/medical/beit-erez-2026-07.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 415,
+   "item_count": 410,
    "status": "current",
    "imported_at": "2026-08-26",
    "notes": "מחירון חיות קטנות יולי 2026"
   },
   {
+   "action": "ok",
+   "action_note": "מעודכן.",
+   "slug": "msd",
+   "type": "medical",
+   "supplier": "MSD (ברווקטו)",
+   "price_list_date": "2026",
+   "source_file": "sources/medical/msd-2026.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 16,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחיר לווטרינר 2026"
+  },
+  {
+   "action": "ok",
+   "action_note": "מעודכן.",
+   "slug": "miltin-consum",
+   "type": "medical",
+   "supplier": "בית ארז — ציוד מתכלה",
+   "price_list_date": "2025-11",
+   "source_file": "sources/medical/miltin-consum-2025-11.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 406,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "חטיבה וטרינרית מילטין — ציוד מתכלה נובמבר 2025"
+  },
+  {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "zoetis",
    "type": "medical",
    "supplier": "זואטיס (Zoetis)",
@@ -29,19 +63,8 @@
    "notes": "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"
   },
   {
-   "slug": "ferplast",
-   "type": "medical",
-   "supplier": "פרפלסט (Ferplast)",
-   "price_list_date": "2026-02",
-   "source_file": "sources/medical/ferplast-2026-02.pdf",
-   "vat_basis": "no_vat",
-   "vat_rate": 18,
-   "item_count": 15,
-   "status": "current",
-   "imported_at": "2026-08-26",
-   "notes": "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"
-  },
-  {
+   "action": "ok",
+   "action_note": "מחיר מחירון רשמי (לפני הנחה) מאישורי ההזמנה + המחירון המלא.",
    "slug": "vetmarket",
    "type": "medical",
    "supplier": "וטמרקט",
@@ -49,12 +72,14 @@
    "source_file": "sources/medical/vetmarket-2026-08.xlsx",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 282,
+   "item_count": 264,
    "status": "current",
    "imported_at": "2026-08-26",
    "notes": "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"
   },
   {
+   "action": "ok",
+   "action_note": "נאסף אוטומטית מאתר medi-market.co.il.",
    "slug": "medi-market",
    "type": "medical",
    "supplier": "מדי-מרקט",
@@ -62,12 +87,14 @@
    "source_file": null,
    "vat_basis": "with_vat",
    "vat_rate": 18,
-   "item_count": 2414,
+   "item_count": 2383,
    "status": "current",
    "imported_at": "2026-08-26",
    "notes": "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"
   },
   {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "petvet",
    "type": "medical",
    "supplier": "פט-וט ביומד",
@@ -75,12 +102,14 @@
    "source_file": "sources/medical/petvet-2026-05.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 181,
+   "item_count": 167,
    "status": "current",
    "imported_at": "2026-08-26",
    "notes": "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"
   },
   {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "rc-vet",
    "type": "food",
    "supplier": "Royal Canin VET",
@@ -94,6 +123,8 @@
    "notes": "מחירון קמעונאי יוני 2026"
   },
   {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "rc-retail",
    "type": "food",
    "supplier": "Royal Canin חנויות",
@@ -107,6 +138,8 @@
    "notes": "מחירון קמעונאי ינואר 2026"
   },
   {
+   "action": "check",
+   "action_note": "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון.",
    "slug": "hills-pd",
    "type": "food",
    "supplier": "Hill's Prescription Diet",
@@ -114,12 +147,14 @@
    "source_file": "sources/food/hills-pd-2026-04.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 117,
+   "item_count": 115,
    "status": "current",
    "imported_at": "2026-08-26",
    "notes": null
   },
   {
+   "action": "check",
+   "action_note": "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון.",
    "slug": "hills-ve",
    "type": "food",
    "supplier": "Hill's Vet Essentials",
@@ -133,6 +168,8 @@
    "notes": null
   },
   {
+   "action": "refresh",
+   "action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
    "slug": "vetlife",
    "type": "food",
    "supplier": "VetLife",
@@ -140,12 +177,14 @@
    "source_file": "sources/food/vetlife-2025-02.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 101,
+   "item_count": 57,
    "status": "stale",
    "imported_at": "2026-08-26",
-   "notes": null
+   "notes": "מחירון פברואר 2025"
   },
   {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "purina-vet",
    "type": "food",
    "supplier": "Purina Pro Plan VET",
@@ -159,19 +198,23 @@
    "notes": "מחיר מחירון ליחידה (ללא הנחות)"
   },
   {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "purina-retail",
    "type": "food",
-   "supplier": "Purina Pro Plan חנויות",
-   "price_list_date": null,
-   "source_file": null,
+   "supplier": "פורינה (חנויות)",
+   "price_list_date": "2026-06",
+   "source_file": "sources/food/purina-retail-2026-06.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 31,
-   "status": "missing_source",
+   "item_count": 170,
+   "status": "current",
    "imported_at": "2026-08-26",
-   "notes": null
+   "notes": "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"
   },
   {
+   "action": "refresh",
+   "action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
    "slug": "monge-vet",
    "type": "food",
    "supplier": "Monge Vet Solution",
@@ -182,9 +225,26 @@
    "item_count": 25,
    "status": "stale",
    "imported_at": "2026-08-26",
-   "notes": null
+   "notes": "מחירון ינואר 2025"
   },
   {
+   "action": "refresh",
+   "action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
+   "slug": "monge",
+   "type": "food",
+   "supplier": "Monge",
+   "price_list_date": "2025-01",
+   "source_file": "sources/food/monge-2025-01.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 89,
+   "status": "stale",
+   "imported_at": "2026-08-26",
+   "notes": "מחירון ינואר 2025"
+  },
+  {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "aml",
    "type": "labs",
    "supplier": "AML",
@@ -198,6 +258,8 @@
    "notes": "בתוקף מ-1.6.2026"
   },
   {
+   "action": "ok",
+   "action_note": "מעודכן.",
    "slug": "hamachon",
    "type": "labs",
    "supplier": "המכון (מעבדה חיצונית)",
@@ -211,6 +273,8 @@
    "notes": null
   },
   {
+   "action": "refresh",
+   "action_note": "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני.",
    "slug": "idexx",
    "type": "labs",
    "supplier": "IDEXX",
@@ -218,12 +282,14 @@
    "source_file": "sources/labs/idexx-2025-01.pdf",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 37,
+   "item_count": 492,
    "status": "stale",
    "imported_at": "2026-08-26",
-   "notes": null
+   "notes": "מחירון רפרנס 2025 — כולל בדיקות שאינן זמינות בישראל (מסומנות)"
   },
   {
+   "action": "partial",
+   "action_note": "רק 9 בדיקות נטענו. יש 4 מחירוני PDF (פאנלים · גנטיות · פתוגנים · ציפורים) שטרם פורסרו.",
    "slug": "karnieli",
    "type": "labs",
    "supplier": "קרניאלי",
@@ -237,6 +303,8 @@
    "notes": null
   },
   {
+   "action": "no_source",
+   "action_note": "אין קובץ מחירון בידינו — 23 בדיקות מקובץ המרפאה בלבד.",
    "slug": "banet",
    "type": "labs",
    "supplier": "פרופ' בנעט",
@@ -248,6 +316,111 @@
    "status": "missing_source",
    "imported_at": "2026-08-26",
    "notes": null
+  },
+  {
+   "action": "ok",
+   "action_note": "מעודכן.",
+   "slug": "beit-erez-shop",
+   "type": "shop",
+   "supplier": "בית ארז (מילטין)",
+   "price_list_date": "2026-07",
+   "source_file": "sources/shop/beit-erez-shop-2026-07.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 5,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחירון חיות קטנות יולי 2026"
+  },
+  {
+   "action": "ok",
+   "action_note": "מעודכן.",
+   "slug": "ferplast-shop",
+   "type": "shop",
+   "supplier": "פרפלסט (Ferplast)",
+   "price_list_date": "2026-02",
+   "source_file": "sources/shop/ferplast-shop-2026-02.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 15,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"
+  },
+  {
+   "action": "ok",
+   "action_note": "מחיר מחירון רשמי (לפני הנחה) מאישורי ההזמנה + המחירון המלא.",
+   "slug": "vetmarket-shop",
+   "type": "shop",
+   "supplier": "וטמרקט",
+   "price_list_date": "2026-08",
+   "source_file": "sources/shop/vetmarket-shop-2026-08.xlsx",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 18,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחיר מחירון רשמי (לפני הנחה) מאישורי הזמנה עד 08/2026 + מחירון מלא 03/2026; תאריך לכל פריט"
+  },
+  {
+   "action": "ok",
+   "action_note": "נאסף אוטומטית מאתר medi-market.co.il.",
+   "slug": "medi-market-shop",
+   "type": "shop",
+   "supplier": "מדי-מרקט",
+   "price_list_date": "2026-06",
+   "source_file": null,
+   "vat_basis": "with_vat",
+   "vat_rate": 18,
+   "item_count": 31,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"
+  },
+  {
+   "action": "ok",
+   "action_note": "מעודכן.",
+   "slug": "petvet-shop",
+   "type": "shop",
+   "supplier": "פט-וט ביומד",
+   "price_list_date": "2026-05",
+   "source_file": "sources/shop/petvet-shop-2026-05.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 14,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"
+  },
+  {
+   "action": "check",
+   "action_note": "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון.",
+   "slug": "hills-pd-shop",
+   "type": "shop",
+   "supplier": "Hill's Prescription Diet",
+   "price_list_date": "2026-04",
+   "source_file": "sources/shop/hills-pd-shop-2026-04.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 2,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": null
+  },
+  {
+   "action": "ok",
+   "action_note": "מעודכן.",
+   "slug": "purina-retail-shop",
+   "type": "shop",
+   "supplier": "פורינה (חנויות)",
+   "price_list_date": "2026-06",
+   "source_file": "sources/shop/purina-retail-shop-2026-06.pdf",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 30,
+   "status": "current",
+   "imported_at": "2026-08-26",
+   "notes": "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"
   }
  ],
  "taxonomy": {
@@ -387,6 +560,36 @@
     "אחר"
    ]
   ],
+  "shop_topics": [
+   [
+    "treats",
+    "חטיפים"
+   ],
+   [
+    "toys",
+    "צעצועים"
+   ],
+   [
+    "grooming",
+    "טיפוח והיגיינה"
+   ],
+   [
+    "litter",
+    "חול ושירותים"
+   ],
+   [
+    "accessories",
+    "אביזרים"
+   ],
+   [
+    "calming",
+    "הרגעה"
+   ],
+   [
+    "other",
+    "כללי"
+   ]
+  ],
   "food_indications": [
    "VETERINARY HEALTH NUTRITION CAT - DRY",
    "VETERINARY HEALTH NUTRITION CAT - WET",
@@ -395,10 +598,11 @@
    "אפילפסיה / מערכת עצבים",
    "בלוטת התריס",
    "גורים",
+   "גורמה GOLD",
+   "גורמה פרל GOURMET Perle",
    "דרכי שתן",
    "השמנה / ירידה במשקל",
    "התאוששות",
-   "לב",
    "מזון נוזלי, תחליפי חלב לגורים ותוספים",
    "מזון רגיל",
    "מזון רטוב - כלבים",
@@ -410,6 +614,17 @@
    "סוכרת",
    "סרטן",
    "עור ופרווה",
+   "פנסי פיסט FANCY FEAST",
+   "פרו פלאן \"יעודי\" חתול PPVD CAT",
+   "פרו פלאן \"יעודי\" חתול לח PPVD WET CAT",
+   "פרו פלאן \"יעודי\" כלב PPVD DOG",
+   "פרו פלאן \"יעודי\" כלב לח PPVD WET",
+   "פרו פלאן חתול יבש PRO PLAN DRY CAT",
+   "פרו פלאן חתול לח PRO PLAN WET CAT",
+   "פרו פלאן כלב יבש PRO PLAN DRY DOG",
+   "פריסקיז חתול יבש FRISKIES DRY",
+   "פריסקיז כלב יבש FRISKIES DOG DRY",
+   "פריסקיז לח FRISKIES WET",
    "שיניים",
    "תזונה מותאמת לגודל וגיל הכלב Size Health Nutrition",
    "תזונה מותאמת לצרכיו הייחודיים של הכלב הגזעי Breed Health Nutrition",

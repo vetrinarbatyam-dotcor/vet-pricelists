@@ -1,5 +1,7 @@
 {
 "meta": {
+"action": "check",
+"action_note": "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון.",
 "slug": "hills-pd",
 "type": "food",
 "supplier": "Hill's Prescription Diet",
@@ -7,7 +9,7 @@
 "source_file": "sources/food/hills-pd-2026-04.pdf",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 117,
+"item_count": 115,
 "status": "current",
 "imported_at": "2026-08-26",
 "notes": null
@@ -1162,26 +1164,6 @@
 "animal": "חתול",
 "unit": "82g",
 "id": "hills-pd-115"
-},
-{
-"name": "חטיף היפואלרגני",
-"category": "אלרגיה למזון",
-"topic": "skin",
-"price_no_vat": 24.0,
-"price_with_vat": 28.32,
-"animal": "כלב",
-"unit": "200g",
-"id": "hills-pd-116"
-},
-{
-"name": "חטיף שמירה על המשקל",
-"category": "השמנה / ירידה במשקל",
-"topic": "nutrition",
-"price_no_vat": 21.0,
-"price_with_vat": 24.78,
-"animal": "כלב",
-"unit": "200g",
-"id": "hills-pd-117"
 }
 ]
 }
