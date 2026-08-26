@@ -105,17 +105,17 @@ def kw_topic(name):
 
 # Vet-diet food names carry the indication in the product line name (Renal / רינאל / Gastro …).
 FOOD_KW = [
-    ("kidney", ("רינאל", "renal", "urinary", "אורינרי", "שתן", "כליה", "s/o", "uc ", "ct urin")),
-    ("gi", ("גסטרו", "gastro", "intestinal", "אנטריק", "enteric", "digest", "פיברה", "fibre", "fiber",
+    ("kidney", ("רינאל", "renal", "c/d ", "k/d ", "s/d ", "u/d ", "multicare", "urinary", "אורינרי", "שתן", "כליה", "s/o", "uc ", "ct urin")),
+    ("gi", ("גסטרו", "gastro", "i/d ", "gi biome", "w/d ", "intestinal", "אנטריק", "enteric", "digest", "פיברה", "fibre", "fiber",
             "ריקברי", "recovery", "קונבלסנס", "convalescence", "דל שומן", "low fat", "en ", "ha ", "hypo")),
-    ("liver", ("הפאטיק", "hepatic", "כבד", "hp ")),
-    ("skin", ("דרמו", "derma", "סקין", "skin", "אלרג", "allerg", "sensitiv", "סנסיטיב", "אטופיק", "atopic", "hf ")),
-    ("joints", ("מוביליטי", "mobility", "מפרק", "joint", "ja ")),
-    ("dental", ("דנטל", "dental", "שיניים", "oral", "ds ")),
-    ("endocrine", ("דיאבטיק", "diabetic", "סוכרת", "glycobalance", "dm ", "היפרתירואיד", "thyro")),
+    ("liver", ("הפאטיק", "hepatic", "l/d ", "כבד", "hp ")),
+    ("skin", ("דרמו", "derma", "derm", "דרם", "d/d ", "z/d ", "סקין", "skin", "אלרג", "allerg", "sensitiv", "סנסיטיב", "אטופיק", "atopic", "hf ")),
+    ("joints", ("מוביליטי", "mobility", "j/d ", "מפרק", "joint", "ja ")),
+    ("dental", ("דנטל", "dental", "t/d ", "שיניים", "oral", "ds ")),
+    ("endocrine", ("דיאבטיק", "diabetic", "m/d ", "y/d ", "סוכרת", "glycobalance", "dm ", "היפרתירואיד", "thyro")),
     ("cardio", ("קרדיאק", "cardiac", "~לב", "ck ")),
-    ("neuro", ("neuro", "אפילפ", "epilep", "calm", "קאלם")),
-    ("onco", ("onco", "סרטן", "tumor")),
+    ("neuro", ("neuro", "b/d ", "אפילפ", "epilep", "calm", "קאלם")),
+    ("onco", ("onco", "on care", "onc care", "סרטן", "tumor")),
 ]
 LAB_NAME_KW = [
     ("hematology", ("cbc", "hematolog", "blood smear", "reticuloc", "coombs", "blood type", "packed cell")),
@@ -155,8 +155,9 @@ REG = {
     "petvet":     ("medical", "פט-וט ביומד", "2026-05", DLD / "PRICE LIST 2026.pdf", "no_vat", "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"),
     "rc-vet":     ("food", "Royal Canin VET", "2026-06", DLD / "RC VET Price list JUNE.pdf", "no_vat", "מחירון קמעונאי יוני 2026"),
     "rc-retail":  ("food", "Royal Canin חנויות", "2026-01", DLD / "RC SPT Price list Jan_2026.pdf", "no_vat", "מחירון קמעונאי ינואר 2026"),
-    "hills-pd":   ("food", "Hill's Prescription Diet", "2026-04", DLD / "PD_priceList_Apr26.PDF", "no_vat", None),
-    "hills-ve":   ("food", "Hill's Vet Essentials", "2026-04", DLD / "PD_priceList_Apr26.PDF", "no_vat", None),
+    "hills-pd":   ("food", "Hill's Prescription Diet", "2026-04", DLD / "PD_priceList_Apr26.PDF", "no_vat", "מחירון אפריל 2026 — מק\"ט ומשקל אריזה מהמחירון עצמו"),
+    "hills-sp":   ("food", "Hill's Science Plan", "2026-04", DLD / "SP_PriceList_Apr26_2.PDF", "no_vat", "מחירון אפריל 2026 (בתוקף ממאי 2026)"),
+    "hills-ve":   ("food", "Hill's Vet Essentials", "2026-04", None, "no_vat", None),
     "vetlife":    ("food", "VetLife", "2025-02", DLD / "PDF" / "מחירון וטלייף 02.25 (1).pdf", "no_vat", "מחירון פברואר 2025"),
     "purina-vet": ("food", "Purina Pro Plan VET", "2026-06", DLD / "פורינה.pdf", "no_vat", "מחיר מחירון ליחידה (ללא הנחות)"),
     "purina-retail": ("food", "פורינה (חנויות)", "2026-06", DLD / "הצעת מחיר וטרינר 2026.pdf", "no_vat", "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"),
@@ -172,7 +173,7 @@ REG = {
 FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's PD": "hills-pd", "Hill's VE": "hills-ve",
                      "VetLife": "vetlife", "Purina": "purina-vet", "Purina חנויות": "purina-retail",
                      "Monge Vet": "monge-vet", "Monge": "monge", "Foodiez": "foodiez"}
-FROM_PDF = {"rc-vet", "rc-retail", "purina-vet", "purina-retail", "vetlife", "monge", "monge-vet"}   # dated PDF replaces the undated TS rows
+FROM_PDF = {"rc-vet", "rc-retail", "purina-vet", "purina-retail", "vetlife", "monge", "monge-vet", "hills-pd"}   # dated PDF replaces the undated TS rows
 LAB_SLUG = {"AML": "aml", "המכון": "hamachon", "IDEXX": "idexx", "קרניאלי": "karnieli", "פרופ בנעט": "banet"}
 
 # ---------------------------------------------------------------- shop section (non-food, non-medical)
@@ -219,8 +220,7 @@ def _shop_kw(it):
 # What each list still needs — shown on the "מצב המחירונים" page so it is obvious what to chase.
 ACTIONS = {
     "karnieli": ("partial", "רק 9 בדיקות נטענו. יש 4 מחירוני PDF (פאנלים · גנטיות · פתוגנים · ציפורים) שטרם פורסרו."),
-    "hills-pd": ("check", "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון."),
-    "hills-ve": ("check", "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון."),
+    "hills-ve": ("check", "אין מחירון PDF — 42 שורות מקובץ המרפאה. ייתכן שהקו הוחלף ב-Science Plan; כדאי לאמת מול הספק."),
     "banet":    ("no_source", "אין קובץ מחירון בידינו — 23 בדיקות מקובץ המרפאה בלבד."),
     "medi-market": ("ok", "נאסף אוטומטית מאתר medi-market.co.il."),
     "vetmarket": ("ok", "מחיר מחירון רשמי (לפני הנחה) מאישורי ההזמנה + המחירון המלא."),
@@ -228,6 +228,11 @@ ACTIONS = {
 ACTION_DEFAULT = {"current": ("ok", "מעודכן."),
                   "stale": ("refresh", "המחירון ישן מ-12 חודשים — כדאי לבקש מהספק מחירון עדכני."),
                   "missing_source": ("no_source", "אין קובץ מחירון מקורי בידינו.")}
+
+def _hkey(s):
+    """name+pack-size key that survives quote/order noise, for matching Hill's TS rows to PDF rows."""
+    s = s.lower().replace('"', "").replace("'", "").replace("&", "")
+    return re.sub(r"[^a-z0-9א-ת./]", "", s)
 
 def r2(x): return round(float(x) + 1e-9, 2)
 
@@ -319,6 +324,18 @@ def build():
         add(lists[slug], item(slug, it["name"], it["purchasePriceNoVat"], None, it["indication"],
                                 FOOD_IND_TOPIC.get(it["indication"], "nutrition"), animal=it.get("animal"), unit=it.get("weight")))
     # --- Food from dated supplier PDFs (list price, ex-VAT) — replaces the undated TS rows above.
+    # Hill's PD/SP come straight from the April-2026 price-list PDF (SKU + pack weight included).
+    # The clinic TS rows were ~3.5% lower across the board, so the PDF replaces them; only the
+    # food indication (Renal / Gastro / …) is carried over from the TS by name+size.
+    hills_ind = {_hkey(i["name"] + " " + (i.get("weight") or "")): i["indication"]
+                 for i in load("vet_food_catalog.json") if i["company"] in ("Hill's PD", "Hill's VE")}
+    for slug, src in (("hills-pd", "hills_pd_2026_04.json"), ("hills-sp", "hills_sp_2026_04.json")):
+        for it in load(src):
+            ind = hills_ind.get(_hkey(it["name"]))
+            add(lists[slug], item(slug, it["name"], it["price_no_vat"], None, ind,
+                                    FOOD_IND_TOPIC.get(ind) or food_topic(it["name"]),
+                                    sku=it.get("sku"), unit=it.get("unit"),
+                                    animal="חתול" if "חתול" in it["name"] else ("כלב" if "כלב" in it["name"] else None)))
     for slug, src in (("rc-vet", "rc_vet_2026_06.json"), ("rc-retail", "rc_spt_2026_01.json"),
                       ("purina-vet", "purina_2026_06.json"), ("purina-retail", "purina_retail_2026_06.json"),
                       ("vetlife", "vetlife_2025_02.json"), ("monge", "monge_2026_07.json"),
@@ -353,6 +370,8 @@ def build():
                 keep.append(it)
         lists[slug] = keep
     for slug, items in shop.items():
+        if len(items) < 3:                       # 1-2 strays aren't a shop list — leave them in place
+            lists[slug] += items; continue
         typ, label, date, src, vat, note = REG[slug]
         REG[f"{slug}-shop"] = ("shop", label, date, src, vat, note)
         lists[f"{slug}-shop"] = items

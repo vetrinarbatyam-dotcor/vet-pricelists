@@ -1,7 +1,7 @@
 {
 "meta": {
 "action": "check",
-"action_note": "המחירים מקובץ המרפאה (04/2026) ולא מה-PDF עצמו — כדאי לאמת מול המחירון.",
+"action_note": "אין מחירון PDF — 42 שורות מקובץ המרפאה. ייתכן שהקו הוחלף ב-Science Plan; כדאי לאמת מול הספק.",
 "slug": "hills-ve",
 "type": "food",
 "supplier": "Hill's Vet Essentials",

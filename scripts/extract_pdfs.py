@@ -205,6 +205,54 @@ def importer(pdf_name):
     return items
 
 # ---------------------------------------------------------------- Zoetis (two 2026 sheets)
+# ---------------------------------------------------------------- Hill's (PD / Science Plan)
+# No table grid: 3 numeric columns (price | 8-digit SKU | pack weight) plus a product-name cell
+# that is vertically merged across its size rows, so the name is matched by nearest baseline.
+def hills(pdf_name):
+    """No table grid: 3 numeric columns (price | 8-digit SKU | pack size) plus a product-name cell
+    that is vertically merged across its size rows, so the name is matched by nearest baseline.
+    A name that wraps to a second line is merged first (lines <14pt apart)."""
+    NUM = re.compile(r"[\d.,]+g?$")
+    items = []
+    with pdfplumber.open(DL / pdf_name) as pdf:
+        for pg in pdf.pages:
+            groups = {}
+            for w in pg.extract_words():
+                if w["top"] < 140 or w["top"] > 770: continue      # header / footer
+                groups.setdefault(round(w["top"] / 3), []).append(w)
+            sizes, names = [], []
+            for _, g in sorted(groups.items()):
+                g.sort(key=lambda w: w["x0"])
+                nm = [w for w in g if 380 < w["x0"] < 530]         # name column (x>530 = side band)
+                num = [w for w in g if w["x0"] < 380]
+                sku = next((w["text"] for w in num if re.fullmatch(r"\d{8}", w["text"])), None)
+                if sku:
+                    vals = [w["text"] for w in num if NUM.fullmatch(w["text"])]
+                    if len(vals) >= 3: sizes.append((g[0]["top"], vals[0], sku, vals[-1]))
+                if nm: names.append([nm[0]["top"], heb(" ".join(w["text"] for w in nm)), bool(sku)])
+            # Join a name that wrapped to a second line. A name sharing its row with a size row is a
+            # single-size product and is complete; only two name-only lines close together are one name.
+            merged = []
+            for top, txt, own in names:
+                prev = merged[-1] if merged else None
+                if prev and not prev[2] and not own and top - prev[0] < 14:
+                    merged[-1] = [(prev[0] + top) / 2, prev[1] + " " + txt, False]
+                else: merged.append([top, txt, own])
+            if not merged: continue
+            for top, price, sku, wt in sizes:
+                name = min(merged, key=lambda n: abs(n[0] - top))[1]
+                name = re.sub(r"([A-Za-z])/\s+([A-Za-z])", r"\1/\2", name)     # "i/ d" -> "i/d"
+                name = re.sub(r"\b([A-Za-z]{3,}) ([a-z])\b", r"\1\2", name)    # "stres s" -> "stress"
+                price = money(price)
+                if not price or not name: continue
+                grams = wt.endswith("g")
+                try: n = float(wt.rstrip("g"))
+                except ValueError: continue
+                unit = f"{n:g} ג'" if grams or n > 30 else f'{n:g} ק"ג'
+                items.append({"name": f"{name} {unit}", "sku": sku, "price_no_vat": price,
+                              "category": None, "unit": unit})
+    return items
+
 def zoetis(meds_pdf, parasite_pdf):
     items, cat = [], None
     for r in tables(meds_pdf):                       # [price, product, (section)]
@@ -234,6 +282,8 @@ JOBS = {
     "monge_2026_07":    lambda: (simple_table("מחירון מונג יבש - יולי 2026.pdf", 1, 2, 4, 5)
                                  + simple_table("מחירון מונג ביווילד - יולי 2026.pdf", 1, 2, 4, 5, category="BeWild")),
     "monge_vet_2026_07": lambda: simple_table("מחירון מונג וט סלושיין יבש+רטוב - יולי 2026.pdf", 1, 2, 4, 5),
+    "hills_pd_2026_04": lambda: hills("PD_priceList_Apr26.PDF"),
+    "hills_sp_2026_04": lambda: hills("SP_PriceList_Apr26_2.PDF"),
     "kong_2026_08":     lambda: simple_table("מחירון קונג מלאי - אוגוסט 2026 .pdf", 1, 2, 4, 5),
     "idexx_2025":       lambda: idexx("PDF/מחירון רפרנס איידקס 2025.pdf"),
     "miltin_consum_2025_11": lambda: miltin_consumables("PDF/מחירון חטיבה וטרינרית קבוצת מילטין ציוד מתכלה - נובמבר 2025.pdf"),
