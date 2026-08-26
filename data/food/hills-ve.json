@@ -1,12 +1,12 @@
 {
 "meta": {
-"action": "check",
+"action": "no_source",
 "action_note": "אין מחירון PDF — 42 שורות מקובץ המרפאה. ייתכן שהקו הוחלף ב-Science Plan; כדאי לאמת מול הספק.",
 "slug": "hills-ve",
 "type": "food",
 "supplier": "Hill's Vet Essentials",
 "price_list_date": "2026-04",
-"source_file": "sources/food/hills-pd-2026-04.pdf",
+"source_file": null,
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 42,

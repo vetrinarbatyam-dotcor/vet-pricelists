@@ -220,7 +220,7 @@ def _shop_kw(it):
 # What each list still needs — shown on the "מצב המחירונים" page so it is obvious what to chase.
 ACTIONS = {
     "karnieli": ("partial", "רק 9 בדיקות נטענו. יש 4 מחירוני PDF (פאנלים · גנטיות · פתוגנים · ציפורים) שטרם פורסרו."),
-    "hills-ve": ("check", "אין מחירון PDF — 42 שורות מקובץ המרפאה. ייתכן שהקו הוחלף ב-Science Plan; כדאי לאמת מול הספק."),
+    "hills-ve": ("no_source", "אין מחירון PDF — 42 שורות מקובץ המרפאה. ייתכן שהקו הוחלף ב-Science Plan; כדאי לאמת מול הספק."),
     "banet":    ("no_source", "אין קובץ מחירון בידינו — 23 בדיקות מקובץ המרפאה בלבד."),
     "medi-market": ("ok", "נאסף אוטומטית מאתר medi-market.co.il."),
     "vetmarket": ("ok", "מחיר מחירון רשמי (לפני הנחה) מאישורי ההזמנה + המחירון המלא."),
@@ -386,8 +386,7 @@ def build():
         if not items: continue                           # nothing priced -> not a price list
         for i, it in enumerate(items, 1): it["id"] = f"{slug}-{i}"
         src_rel = None
-        if slug == "hills-ve": src_rel = "sources/food/hills-pd-2026-04.pdf"  # same PDF as PD — don't duplicate
-        elif src:
+        if src:
             paths = list(src) if isinstance(src, tuple) else [src]
             rels = []
             for i, sp in enumerate(paths):
