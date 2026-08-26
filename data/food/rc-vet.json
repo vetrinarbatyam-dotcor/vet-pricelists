@@ -26,6 +26,9 @@
 "price_with_vat": 105.02,
 "sku": "2491020060",
 "unit": "0.6 L",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-vet-1"
 },
 {
@@ -36,6 +39,9 @@
 "price_with_vat": 105.02,
 "sku": "2491220060",
 "unit": "0.6 L",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-vet-2"
 },
 {
@@ -46,6 +52,9 @@
 "price_with_vat": 105.02,
 "sku": "2491320060",
 "unit": "0.6 L",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-vet-3"
 },
 {
@@ -57,6 +66,9 @@
 "sku": "2495120060",
 "unit": "0.6",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-vet-4"
 },
 {
@@ -68,6 +80,9 @@
 "sku": "2230010040",
 "unit": "0.4",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-vet-5"
 },
 {
@@ -79,6 +94,8 @@
 "sku": "2124210350",
 "unit": "3.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-6"
 },
 {
@@ -90,6 +107,8 @@
 "sku": "2390010200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-7"
 },
 {
@@ -101,6 +120,8 @@
 "sku": "2390010400",
 "unit": "4",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-8"
 },
 {
@@ -112,6 +133,8 @@
 "sku": "2394910200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-9"
 },
 {
@@ -123,6 +146,8 @@
 "sku": "2394910400",
 "unit": "4",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-10"
 },
 {
@@ -134,6 +159,8 @@
 "sku": "2416010200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-11"
 },
 {
@@ -145,6 +172,8 @@
 "sku": "2416010400",
 "unit": "4",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-12"
 },
 {
@@ -156,6 +185,8 @@
 "sku": "2394610200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-13"
 },
 {
@@ -167,6 +198,8 @@
 "sku": "2394310350",
 "unit": "3.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-14"
 },
 {
@@ -178,6 +211,8 @@
 "sku": "2394310600",
 "unit": "6",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-15"
 },
 {
@@ -189,6 +224,8 @@
 "sku": "2390610350",
 "unit": "3.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-16"
 },
 {
@@ -200,6 +237,8 @@
 "sku": "2272110350",
 "unit": "3.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-17"
 },
 {
@@ -211,6 +250,9 @@
 "sku": "2122810200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-vet-18"
 },
 {
@@ -222,6 +264,8 @@
 "sku": "2390510200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-19"
 },
 {
@@ -233,6 +277,8 @@
 "sku": "2390510400",
 "unit": "4",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-20"
 },
 {
@@ -244,6 +290,8 @@
 "sku": "2400810200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-21"
 },
 {
@@ -254,6 +302,9 @@
 "price_with_vat": 263.14,
 "sku": "2272210400",
 "unit": "4",
+"animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-22"
 },
 {
@@ -265,6 +316,8 @@
 "sku": "2400710200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-23"
 },
 {
@@ -276,6 +329,8 @@
 "sku": "2390910350",
 "unit": "3.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-24"
 },
 {
@@ -287,6 +342,8 @@
 "sku": "2195010200",
 "unit": "2",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-25"
 },
 {
@@ -298,6 +355,8 @@
 "sku": "2390210250",
 "unit": "2.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-26"
 },
 {
@@ -309,6 +368,8 @@
 "sku": "2390210450",
 "unit": "4.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-27"
 },
 {
@@ -320,6 +381,8 @@
 "sku": "2132310350",
 "unit": "3.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-28"
 },
 {
@@ -331,6 +394,8 @@
 "sku": "2401210400",
 "unit": "4",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-29"
 },
 {
@@ -342,6 +407,8 @@
 "sku": "2390110150",
 "unit": "1.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-30"
 },
 {
@@ -353,6 +420,8 @@
 "sku": "2390110350",
 "unit": "3.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-31"
 },
 {
@@ -364,6 +433,8 @@
 "sku": "2390110700",
 "unit": "7",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-32"
 },
 {
@@ -375,6 +446,8 @@
 "sku": "2390110900",
 "unit": "9",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-33"
 },
 {
@@ -386,6 +459,8 @@
 "sku": "2395410350",
 "unit": "3.5",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-34"
 },
 {
@@ -397,6 +472,8 @@
 "sku": "2405520019",
 "unit": "0.195",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-35"
 },
 {
@@ -407,6 +484,10 @@
 "price_with_vat": 164.02,
 "sku": "2122720019",
 "unit": "0.195",
+"animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-vet-36"
 },
 {
@@ -418,6 +499,8 @@
 "sku": "2400920102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-37"
 },
 {
@@ -429,6 +512,8 @@
 "sku": "2403920102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-38"
 },
 {
@@ -439,6 +524,9 @@
 "price_with_vat": 105.02,
 "sku": "2273320102",
 "unit": "1.02",
+"animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-39"
 },
 {
@@ -450,6 +538,8 @@
 "sku": "2403020102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-40"
 },
 {
@@ -461,6 +551,8 @@
 "sku": "2403120102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-41"
 },
 {
@@ -472,6 +564,8 @@
 "sku": "2406720102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-42"
 },
 {
@@ -483,6 +577,8 @@
 "sku": "2124620102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-43"
 },
 {
@@ -494,6 +590,8 @@
 "sku": "2124820102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-44"
 },
 {
@@ -505,6 +603,8 @@
 "sku": "2107020102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-45"
 },
 {
@@ -516,6 +616,8 @@
 "sku": "2403520102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-46"
 },
 {
@@ -527,6 +629,8 @@
 "sku": "2408520102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-47"
 },
 {
@@ -538,6 +642,8 @@
 "sku": "2403220102",
 "unit": "1.02",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-48"
 },
 {
@@ -549,6 +655,9 @@
 "sku": "2124910350",
 "unit": "3.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-49"
 },
 {
@@ -560,6 +669,8 @@
 "sku": "2124810700",
 "unit": "7",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-50"
 },
 {
@@ -571,6 +682,8 @@
 "sku": "2391610200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-51"
 },
 {
@@ -582,6 +695,8 @@
 "sku": "2391610700",
 "unit": "7",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-52"
 },
 {
@@ -593,6 +708,8 @@
 "sku": "2391611400",
 "unit": "14",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-53"
 },
 {
@@ -604,6 +721,8 @@
 "sku": "2416110200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-54"
 },
 {
@@ -615,6 +734,8 @@
 "sku": "2416210200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-55"
 },
 {
@@ -626,6 +747,8 @@
 "sku": "2416211000",
 "unit": "10",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-56"
 },
 {
@@ -637,6 +760,9 @@
 "sku": "2425210300",
 "unit": "3",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-57"
 },
 {
@@ -648,6 +774,9 @@
 "sku": "2425210800",
 "unit": "8",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-58"
 },
 {
@@ -659,6 +788,8 @@
 "sku": "2394810600",
 "unit": "6",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-59"
 },
 {
@@ -670,6 +801,8 @@
 "sku": "2394811200",
 "unit": "12",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-60"
 },
 {
@@ -681,6 +814,9 @@
 "sku": "R606109",
 "unit": "4",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-61"
 },
 {
@@ -692,6 +828,8 @@
 "sku": "R606103",
 "unit": "7",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-62"
 },
 {
@@ -703,6 +841,8 @@
 "sku": "R606104",
 "unit": "12",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-63"
 },
 {
@@ -714,6 +854,9 @@
 "sku": "2395710250",
 "unit": "2.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-vet-64"
 },
 {
@@ -725,6 +868,9 @@
 "sku": "2395711000",
 "unit": "10",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-vet-65"
 },
 {
@@ -736,6 +882,8 @@
 "sku": "2391110200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-66"
 },
 {
@@ -747,6 +895,8 @@
 "sku": "2391110750",
 "unit": "7.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-67"
 },
 {
@@ -758,6 +908,8 @@
 "sku": "2391111500",
 "unit": "15",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-68"
 },
 {
@@ -769,6 +921,8 @@
 "sku": "2395810200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-69"
 },
 {
@@ -780,6 +934,8 @@
 "sku": "2393210600",
 "unit": "6",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-70"
 },
 {
@@ -791,6 +947,8 @@
 "sku": "2393211200",
 "unit": "12",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-71"
 },
 {
@@ -802,6 +960,9 @@
 "sku": "2146310350",
 "unit": "3.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-72"
 },
 {
@@ -813,6 +974,8 @@
 "sku": "2395910200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-73"
 },
 {
@@ -824,6 +987,8 @@
 "sku": "2395910750",
 "unit": "7.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-74"
 },
 {
@@ -835,6 +1000,8 @@
 "sku": "2392710700",
 "unit": "7",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-75"
 },
 {
@@ -846,6 +1013,8 @@
 "sku": "2392711200",
 "unit": "12",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-76"
 },
 {
@@ -857,6 +1026,8 @@
 "sku": "2394210750",
 "unit": "7.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-77"
 },
 {
@@ -868,6 +1039,8 @@
 "sku": "2391310200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-78"
 },
 {
@@ -879,6 +1052,8 @@
 "sku": "2391310750",
 "unit": "7.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-79"
 },
 {
@@ -890,6 +1065,9 @@
 "sku": "2380110400",
 "unit": "4",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-80"
 },
 {
@@ -901,6 +1079,9 @@
 "sku": "2331710150",
 "unit": "1.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-81"
 },
 {
@@ -912,6 +1093,8 @@
 "sku": "2401410300",
 "unit": "3",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-82"
 },
 {
@@ -923,6 +1106,8 @@
 "sku": "2401410800",
 "unit": "8",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-83"
 },
 {
@@ -933,6 +1118,10 @@
 "price_with_vat": 241.9,
 "sku": "R448070",
 "unit": "3.5",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-vet-84"
 },
 {
@@ -944,6 +1133,8 @@
 "sku": "2391010200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-85"
 },
 {
@@ -955,6 +1146,8 @@
 "sku": "2391010700",
 "unit": "7",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-86"
 },
 {
@@ -966,6 +1159,8 @@
 "sku": "2391011400",
 "unit": "14",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-87"
 },
 {
@@ -977,6 +1172,9 @@
 "sku": "2395210100",
 "unit": "1",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-88"
 },
 {
@@ -988,6 +1186,9 @@
 "sku": "2395210350",
 "unit": "3.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-89"
 },
 {
@@ -999,6 +1200,8 @@
 "sku": "2396410700",
 "unit": "7",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-90"
 },
 {
@@ -1010,6 +1213,9 @@
 "sku": "2400610400",
 "unit": "4",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-vet-91"
 },
 {
@@ -1021,6 +1227,8 @@
 "sku": "2392210150",
 "unit": "1.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-92"
 },
 {
@@ -1032,6 +1240,8 @@
 "sku": "2392210700",
 "unit": "7",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-93"
 },
 {
@@ -1043,6 +1253,8 @@
 "sku": "2392211400",
 "unit": "14",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-94"
 },
 {
@@ -1054,6 +1266,8 @@
 "sku": "2182910700",
 "unit": "7",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-95"
 },
 {
@@ -1065,6 +1279,8 @@
 "sku": "2182910120",
 "unit": "12",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-96"
 },
 {
@@ -1076,6 +1292,8 @@
 "sku": "2393010200",
 "unit": "2",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-97"
 },
 {
@@ -1087,6 +1305,8 @@
 "sku": "2393010750",
 "unit": "7.5",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "rc-vet-98"
 },
 {
@@ -1097,6 +1317,9 @@
 "price_with_vat": 264.32,
 "sku": "2402920042",
 "unit": "0.41",
+"animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-99"
 },
 {
@@ -1108,6 +1331,8 @@
 "sku": "2403820040",
 "unit": "0.4",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-100"
 },
 {
@@ -1118,6 +1343,10 @@
 "price_with_vat": 164.02,
 "sku": "R402189",
 "unit": "0.195",
+"animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-vet-101"
 },
 {
@@ -1128,6 +1357,9 @@
 "price_with_vat": 264.32,
 "sku": "2148020102",
 "unit": "0.41",
+"animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-102"
 },
 {
@@ -1139,6 +1371,8 @@
 "sku": "2402220042",
 "unit": "0.42",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-103"
 },
 {
@@ -1150,6 +1384,8 @@
 "sku": "2402020041",
 "unit": "0.41",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-104"
 },
 {
@@ -1161,6 +1397,8 @@
 "sku": "2425020041",
 "unit": "0.41",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-105"
 },
 {
@@ -1171,6 +1409,9 @@
 "price_with_vat": 264.32,
 "sku": "R603745",
 "unit": "0.85",
+"animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-106"
 },
 {
@@ -1182,6 +1423,8 @@
 "sku": "2402120041",
 "unit": "0.41",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-107"
 },
 {
@@ -1193,6 +1436,8 @@
 "sku": "2408420040",
 "unit": "0.41",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "rc-vet-108"
 }
 ]

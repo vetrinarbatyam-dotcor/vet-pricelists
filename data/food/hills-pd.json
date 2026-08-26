@@ -27,6 +27,8 @@
 "sku": "40607025",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-1"
 },
 {
@@ -38,6 +40,8 @@
 "sku": "40605887",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-2"
 },
 {
@@ -49,6 +53,8 @@
 "sku": "40605856",
 "unit": "1.5 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-3"
 },
 {
@@ -60,6 +66,8 @@
 "sku": "40605852",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-4"
 },
 {
@@ -71,6 +79,8 @@
 "sku": "40605841",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-5"
 },
 {
@@ -82,6 +92,8 @@
 "sku": "40605855",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-6"
 },
 {
@@ -93,6 +105,9 @@
 "sku": "40607780",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
 "id": "hills-pd-7"
 },
 {
@@ -104,6 +119,8 @@
 "sku": "40606167",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-8"
 },
 {
@@ -115,6 +132,8 @@
 "sku": "40605870",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-9"
 },
 {
@@ -126,6 +145,9 @@
 "sku": "40606429",
 "unit": "1 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "hills-pd-10"
 },
 {
@@ -137,6 +159,9 @@
 "sku": "40609596",
 "unit": "1.5 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
 "id": "hills-pd-11"
 },
 {
@@ -148,6 +173,9 @@
 "sku": "40609597",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
 "id": "hills-pd-12"
 },
 {
@@ -159,6 +187,9 @@
 "sku": "40606276",
 "unit": "1.5 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-13"
 },
 {
@@ -170,6 +201,9 @@
 "sku": "40605845",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-14"
 },
 {
@@ -181,6 +215,9 @@
 "sku": "40605862",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-15"
 },
 {
@@ -192,6 +229,9 @@
 "sku": "40605876",
 "unit": "1.5 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-16"
 },
 {
@@ -203,6 +243,9 @@
 "sku": "40605872",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-17"
 },
 {
@@ -214,6 +257,9 @@
 "sku": "40606430",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-18"
 },
 {
@@ -225,6 +271,9 @@
 "sku": "40605998",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-19"
 },
 {
@@ -236,6 +285,9 @@
 "sku": "40605843",
 "unit": "1.5 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-20"
 },
 {
@@ -247,6 +299,9 @@
 "sku": "40605847",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-21"
 },
 {
@@ -258,6 +313,9 @@
 "sku": "40605996",
 "unit": "10 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-22"
 },
 {
@@ -269,6 +327,8 @@
 "sku": "40605854",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-23"
 },
 {
@@ -280,6 +340,8 @@
 "sku": "40606275",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-24"
 },
 {
@@ -291,6 +353,8 @@
 "sku": "40606150",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-25"
 },
 {
@@ -302,6 +366,8 @@
 "sku": "40605884",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-26"
 },
 {
@@ -313,6 +379,9 @@
 "sku": "40606179",
 "unit": "3 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "hills-pd-27"
 },
 {
@@ -324,6 +393,8 @@
 "sku": "40606153",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-28"
 },
 {
@@ -335,6 +406,8 @@
 "sku": "40605995",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-29"
 },
 {
@@ -346,6 +419,8 @@
 "sku": "40606385",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-30"
 },
 {
@@ -357,6 +432,8 @@
 "sku": "40605882",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-31"
 },
 {
@@ -368,6 +445,8 @@
 "sku": "40605844",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-32"
 },
 {
@@ -379,6 +458,8 @@
 "sku": "40605901",
 "unit": "10 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-33"
 },
 {
@@ -390,6 +471,8 @@
 "sku": "40605938",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-34"
 },
 {
@@ -401,6 +484,8 @@
 "sku": "40606401",
 "unit": "10 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-35"
 },
 {
@@ -412,6 +497,8 @@
 "sku": "40605944",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-36"
 },
 {
@@ -423,6 +510,8 @@
 "sku": "40605942",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-37"
 },
 {
@@ -434,6 +523,8 @@
 "sku": "40606148",
 "unit": "12 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-38"
 },
 {
@@ -445,6 +536,9 @@
 "sku": "40605946",
 "unit": "6 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "hills-pd-39"
 },
 {
@@ -456,6 +550,8 @@
 "sku": "40606383",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-40"
 },
 {
@@ -467,6 +563,9 @@
 "sku": "40606381",
 "unit": "3 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "hills-pd-41"
 },
 {
@@ -478,6 +577,8 @@
 "sku": "40606270",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-42"
 },
 {
@@ -489,6 +590,8 @@
 "sku": "40605840",
 "unit": "10 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-43"
 },
 {
@@ -500,6 +603,8 @@
 "sku": "40605861",
 "unit": "4 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-44"
 },
 {
@@ -511,6 +616,8 @@
 "sku": "40605859",
 "unit": "10 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-45"
 },
 {
@@ -522,6 +629,8 @@
 "sku": "40605911",
 "unit": "3 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-46"
 },
 {
@@ -533,6 +642,8 @@
 "sku": "40606418",
 "unit": "10 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-47"
 },
 {
@@ -544,6 +655,9 @@
 "sku": "40606206",
 "unit": "1 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "hills-pd-48"
 },
 {
@@ -555,6 +669,9 @@
 "sku": "40605966",
 "unit": "6 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"dogsize": "small",
 "id": "hills-pd-49"
 },
 {
@@ -566,6 +683,8 @@
 "sku": "40608036",
 "unit": "3 ק\"ג",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-50"
 },
 {
@@ -577,6 +696,8 @@
 "sku": "40608306",
 "unit": "200 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-51"
 },
 {
@@ -588,6 +709,8 @@
 "sku": "40607449",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-52"
 },
 {
@@ -599,6 +722,9 @@
 "sku": "40605640",
 "unit": "354 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-53"
 },
 {
@@ -610,6 +736,8 @@
 "sku": "40607710",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-54"
 },
 {
@@ -621,6 +749,8 @@
 "sku": "40607709",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-55"
 },
 {
@@ -632,6 +762,9 @@
 "sku": "40609592",
 "unit": "360 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-56"
 },
 {
@@ -643,6 +776,9 @@
 "sku": "40607215",
 "unit": "360 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "adult",
 "id": "hills-pd-57"
 },
 {
@@ -654,6 +790,9 @@
 "sku": "40606448",
 "unit": "354 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-58"
 },
 {
@@ -665,6 +804,9 @@
 "sku": "40607447",
 "unit": "360 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "adult",
 "id": "hills-pd-59"
 },
 {
@@ -676,6 +818,9 @@
 "sku": "40607719",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "adult",
 "id": "hills-pd-60"
 },
 {
@@ -687,6 +832,8 @@
 "sku": "40607448",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-61"
 },
 {
@@ -698,6 +845,8 @@
 "sku": "40608880",
 "unit": "350 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-62"
 },
 {
@@ -709,6 +858,9 @@
 "sku": "40605675",
 "unit": "354 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-63"
 },
 {
@@ -720,6 +872,8 @@
 "sku": "40607218",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-64"
 },
 {
@@ -731,6 +885,8 @@
 "sku": "40607711",
 "unit": "350 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-65"
 },
 {
@@ -742,6 +898,8 @@
 "sku": "40607219",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-66"
 },
 {
@@ -753,6 +911,8 @@
 "sku": "40607712",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-67"
 },
 {
@@ -764,6 +924,8 @@
 "sku": "40607220",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-68"
 },
 {
@@ -775,6 +937,8 @@
 "sku": "40608397",
 "unit": "370 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-69"
 },
 {
@@ -786,6 +950,8 @@
 "sku": "40607584",
 "unit": "354 ג'",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-70"
 },
 {
@@ -797,6 +963,8 @@
 "sku": "40605890",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-71"
 },
 {
@@ -808,6 +976,8 @@
 "sku": "40605889",
 "unit": "8 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-72"
 },
 {
@@ -819,6 +989,8 @@
 "sku": "40606772",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-73"
 },
 {
@@ -830,6 +1002,8 @@
 "sku": "40606773",
 "unit": "8 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-74"
 },
 {
@@ -841,6 +1015,8 @@
 "sku": "40605983",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-75"
 },
 {
@@ -852,6 +1028,8 @@
 "sku": "40606152",
 "unit": "8 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-76"
 },
 {
@@ -863,6 +1041,9 @@
 "sku": "40609601",
 "unit": "1.5 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
 "id": "hills-pd-77"
 },
 {
@@ -874,6 +1055,9 @@
 "sku": "40606178",
 "unit": "400 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-78"
 },
 {
@@ -885,6 +1069,9 @@
 "sku": "40605883",
 "unit": "1.5 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-79"
 },
 {
@@ -896,6 +1083,9 @@
 "sku": "40605877",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-80"
 },
 {
@@ -907,6 +1097,9 @@
 "sku": "40606451",
 "unit": "8 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-81"
 },
 {
@@ -918,6 +1111,9 @@
 "sku": "40605850",
 "unit": "1.5 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-82"
 },
 {
@@ -929,6 +1125,9 @@
 "sku": "40605851",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-83"
 },
 {
@@ -940,6 +1139,9 @@
 "sku": "40608165",
 "unit": "8 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-84"
 },
 {
@@ -951,6 +1153,9 @@
 "sku": "40608945",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
+"stage": "adult",
 "id": "hills-pd-85"
 },
 {
@@ -962,6 +1167,8 @@
 "sku": "40606156",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-86"
 },
 {
@@ -973,6 +1180,8 @@
 "sku": "40609841",
 "unit": "1.5 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-87"
 },
 {
@@ -984,6 +1193,8 @@
 "sku": "40605986",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-88"
 },
 {
@@ -995,6 +1206,8 @@
 "sku": "40605992",
 "unit": "8 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-89"
 },
 {
@@ -1006,6 +1219,8 @@
 "sku": "40609901",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-90"
 },
 {
@@ -1017,6 +1232,8 @@
 "sku": "40605993",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-91"
 },
 {
@@ -1028,6 +1245,8 @@
 "sku": "40606142",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-92"
 },
 {
@@ -1039,6 +1258,8 @@
 "sku": "40605968",
 "unit": "1.5 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-93"
 },
 {
@@ -1050,6 +1271,8 @@
 "sku": "40606522",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-94"
 },
 {
@@ -1061,6 +1284,8 @@
 "sku": "40606524",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-95"
 },
 {
@@ -1072,6 +1297,8 @@
 "sku": "40605940",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-96"
 },
 {
@@ -1083,6 +1310,8 @@
 "sku": "40606189",
 "unit": "8 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-97"
 },
 {
@@ -1094,6 +1323,8 @@
 "sku": "40609912",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-98"
 },
 {
@@ -1105,6 +1336,8 @@
 "sku": "40609954",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-99"
 },
 {
@@ -1116,6 +1349,8 @@
 "sku": "40605894",
 "unit": "1.5 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-100"
 },
 {
@@ -1127,6 +1362,8 @@
 "sku": "40606273",
 "unit": "1.5 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-101"
 },
 {
@@ -1138,6 +1375,8 @@
 "sku": "40605849",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-102"
 },
 {
@@ -1149,6 +1388,8 @@
 "sku": "40605926",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-103"
 },
 {
@@ -1160,6 +1401,8 @@
 "sku": "40606420",
 "unit": "3 ק\"ג",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "hills-pd-104"
 },
 {
@@ -1171,6 +1414,8 @@
 "sku": "40605643",
 "unit": "156 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-105"
 },
 {
@@ -1182,6 +1427,9 @@
 "sku": "40605644",
 "unit": "82 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-106"
 },
 {
@@ -1192,6 +1440,8 @@
 "price_with_vat": 87.32,
 "sku": "40607560",
 "unit": "85 ג'",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-107"
 },
 {
@@ -1203,6 +1453,9 @@
 "sku": "40609419",
 "unit": "85 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-108"
 },
 {
@@ -1214,6 +1467,9 @@
 "sku": "40606345",
 "unit": "156 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "adult",
 "id": "hills-pd-109"
 },
 {
@@ -1225,6 +1481,9 @@
 "sku": "40606350",
 "unit": "82 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-110"
 },
 {
@@ -1236,6 +1495,9 @@
 "sku": "40607212",
 "unit": "85 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "adult",
 "id": "hills-pd-111"
 },
 {
@@ -1247,6 +1509,8 @@
 "sku": "40605663",
 "unit": "156 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-112"
 },
 {
@@ -1258,6 +1522,9 @@
 "sku": "40605671",
 "unit": "82 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"stage": "puppy",
 "id": "hills-pd-113"
 },
 {
@@ -1269,6 +1536,8 @@
 "sku": "40605664",
 "unit": "85 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-114"
 },
 {
@@ -1280,6 +1549,8 @@
 "sku": "40605665",
 "unit": "85 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-115"
 },
 {
@@ -1291,6 +1562,8 @@
 "sku": "40607210",
 "unit": "85 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-116"
 },
 {
@@ -1302,6 +1575,8 @@
 "sku": "40607213",
 "unit": "85 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-117"
 },
 {
@@ -1313,6 +1588,8 @@
 "sku": "40607555",
 "unit": "85 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-118"
 },
 {
@@ -1324,6 +1601,8 @@
 "sku": "40605628",
 "unit": "156 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-119"
 },
 {
@@ -1335,6 +1614,8 @@
 "sku": "40607211",
 "unit": "85 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-120"
 },
 {
@@ -1346,6 +1627,8 @@
 "sku": "40606374",
 "unit": "156 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-121"
 },
 {
@@ -1357,6 +1640,8 @@
 "sku": "40607634",
 "unit": "82 ג'",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-122"
 },
 {
@@ -1367,6 +1652,8 @@
 "price_with_vat": 28.32,
 "sku": "40608557",
 "unit": "200 ג'",
+"kind": "vet",
+"form": "wet",
 "id": "hills-pd-123"
 }
 ]

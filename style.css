@@ -189,3 +189,9 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
 .grid-kpi .kpi{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
 .grid-kpi .n{font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1;color:var(--teal)}
 .grid-kpi .l{font-size:13px;color:var(--muted)}
+
+/* ---------- food facets ---------- */
+.facets{display:flex;flex-wrap:wrap;gap:8px 18px;margin:8px 0 0;padding-top:8px;border-top:1px solid var(--line)}
+.facet{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.facet .flab{font-size:12px;font-weight:700;color:var(--muted);margin-inline-end:2px}
+.facet .chip{padding:3px 10px;font-size:13px}

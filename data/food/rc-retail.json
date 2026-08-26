@@ -26,6 +26,11 @@
 "price_with_vat": 112.1,
 "sku": "3182550793612",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "small",
 "id": "rc-retail-1"
 },
 {
@@ -36,6 +41,11 @@
 "price_with_vat": 164.02,
 "sku": "3182550793636",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "small",
 "id": "rc-retail-2"
 },
 {
@@ -46,6 +56,11 @@
 "price_with_vat": 105.02,
 "sku": "3182550793728",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-3"
 },
 {
@@ -56,6 +71,11 @@
 "price_with_vat": 152.22,
 "sku": "3182550793735",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-4"
 },
 {
@@ -66,6 +86,11 @@
 "price_with_vat": 164.02,
 "sku": "3182550831352",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-5"
 },
 {
@@ -76,6 +101,11 @@
 "price_with_vat": 194.7,
 "sku": "3182550932707",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "small",
 "id": "rc-retail-6"
 },
 {
@@ -86,6 +116,11 @@
 "price_with_vat": 388.22,
 "sku": "3182550932691",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "small",
 "id": "rc-retail-7"
 },
 {
@@ -96,6 +131,11 @@
 "price_with_vat": 112.1,
 "sku": "3182550793001",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "small",
 "id": "rc-retail-8"
 },
 {
@@ -106,6 +146,11 @@
 "price_with_vat": 182.9,
 "sku": "3182550793032",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "small",
 "id": "rc-retail-9"
 },
 {
@@ -116,6 +161,11 @@
 "price_with_vat": 282.02,
 "sku": "3182550793049",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "small",
 "id": "rc-retail-10"
 },
 {
@@ -126,6 +176,11 @@
 "price_with_vat": 100.3,
 "sku": "3182550402170",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-11"
 },
 {
@@ -136,6 +191,11 @@
 "price_with_vat": 175.82,
 "sku": "3182550727822",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-12"
 },
 {
@@ -146,6 +206,11 @@
 "price_with_vat": 270.22,
 "sku": "3182550716888",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-13"
 },
 {
@@ -156,6 +221,11 @@
 "price_with_vat": 112.1,
 "sku": "3182550831383",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-14"
 },
 {
@@ -166,6 +236,11 @@
 "price_with_vat": 182.9,
 "sku": "3182550831390",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-15"
 },
 {
@@ -176,6 +251,11 @@
 "price_with_vat": 300.9,
 "sku": "3182550831406",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-16"
 },
 {
@@ -186,6 +266,11 @@
 "price_with_vat": 187.62,
 "sku": "3182550793582",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
+"dogsize": "small",
 "id": "rc-retail-17"
 },
 {
@@ -196,6 +281,11 @@
 "price_with_vat": 182.9,
 "sku": "3182550778725",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-18"
 },
 {
@@ -206,6 +296,11 @@
 "price_with_vat": 423.62,
 "sku": "3182550932714",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-19"
 },
 {
@@ -216,6 +311,11 @@
 "price_with_vat": 182.9,
 "sku": "3182550708180",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-20"
 },
 {
@@ -226,6 +326,11 @@
 "price_with_vat": 329.22,
 "sku": "3182551065336",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-21"
 },
 {
@@ -236,6 +341,11 @@
 "price_with_vat": 397.66,
 "sku": "3182550402132",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-22"
 },
 {
@@ -246,6 +356,11 @@
 "price_with_vat": 182.9,
 "sku": "3182550708197",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-23"
 },
 {
@@ -256,6 +371,11 @@
 "price_with_vat": 320.96,
 "sku": "3182551065367",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-24"
 },
 {
@@ -266,6 +386,11 @@
 "price_with_vat": 389.4,
 "sku": "3182550402217",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-25"
 },
 {
@@ -276,6 +401,11 @@
 "price_with_vat": 418.9,
 "sku": "3182550402286",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-26"
 },
 {
@@ -286,6 +416,11 @@
 "price_with_vat": 182.9,
 "sku": "3182550778770",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-27"
 },
 {
@@ -296,6 +431,11 @@
 "price_with_vat": 423.62,
 "sku": "3182550778787",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-28"
 },
 {
@@ -306,6 +446,11 @@
 "price_with_vat": 182.9,
 "sku": "3182550402149",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-29"
 },
 {
@@ -316,6 +461,11 @@
 "price_with_vat": 329.22,
 "sku": "3182551065398",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-30"
 },
 {
@@ -326,6 +476,11 @@
 "price_with_vat": 397.66,
 "sku": "3182550402224",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-31"
 },
 {
@@ -336,6 +491,11 @@
 "price_with_vat": 182.9,
 "sku": "3182550732154",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-32"
 },
 {
@@ -346,6 +506,11 @@
 "price_with_vat": 320.96,
 "sku": "3182551065404",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-33"
 },
 {
@@ -356,6 +521,11 @@
 "price_with_vat": 389.4,
 "sku": "3182550732154",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-34"
 },
 {
@@ -366,6 +536,11 @@
 "price_with_vat": 411.82,
 "sku": "3182550402316",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-35"
 },
 {
@@ -376,6 +551,11 @@
 "price_with_vat": 418.9,
 "sku": "3182550803113",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
+"dogsize": "large",
 "id": "rc-retail-36"
 },
 {
@@ -386,6 +566,11 @@
 "price_with_vat": 460.2,
 "sku": "3182550778831",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-37"
 },
 {
@@ -396,6 +581,11 @@
 "price_with_vat": 430.7,
 "sku": "3182550707046",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-38"
 },
 {
@@ -406,6 +596,11 @@
 "price_with_vat": 430.7,
 "sku": "3182550707077",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-39"
 },
 {
@@ -416,6 +611,11 @@
 "price_with_vat": 423.62,
 "sku": "3182550703079",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-40"
 },
 {
@@ -426,6 +626,10 @@
 "price_with_vat": 175.82,
 "sku": "3182550894050",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-retail-41"
 },
 {
@@ -436,6 +640,10 @@
 "price_with_vat": 175.82,
 "sku": "3182550894012",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-retail-42"
 },
 {
@@ -446,6 +654,10 @@
 "price_with_vat": 411.82,
 "sku": "3182550928663",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "large",
 "id": "rc-retail-43"
 },
 {
@@ -456,6 +668,10 @@
 "price_with_vat": 175.82,
 "sku": "3182550894371",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-retail-44"
 },
 {
@@ -466,6 +682,10 @@
 "price_with_vat": 175.82,
 "sku": "3182550893916",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-retail-45"
 },
 {
@@ -476,6 +696,10 @@
 "price_with_vat": 411.82,
 "sku": "3182550928526",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "large",
 "id": "rc-retail-46"
 },
 {
@@ -486,6 +710,10 @@
 "price_with_vat": 411.82,
 "sku": "3182550928540",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "large",
 "id": "rc-retail-47"
 },
 {
@@ -496,6 +724,10 @@
 "price_with_vat": 175.82,
 "sku": "3182550894104",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "small",
 "id": "rc-retail-48"
 },
 {
@@ -506,6 +738,10 @@
 "price_with_vat": 411.82,
 "sku": "3182550928588",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "large",
 "id": "rc-retail-49"
 },
 {
@@ -516,6 +752,10 @@
 "price_with_vat": 411.82,
 "sku": "3182550928625",
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"dogsize": "large",
 "id": "rc-retail-50"
 },
 {
@@ -525,6 +765,10 @@
 "price_no_vat": 109.0,
 "price_with_vat": 128.62,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-51"
 },
 {
@@ -534,6 +778,10 @@
 "price_no_vat": 145.0,
 "price_with_vat": 171.1,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-52"
 },
 {
@@ -543,6 +791,10 @@
 "price_no_vat": 272.0,
 "price_with_vat": 320.96,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-53"
 },
 {
@@ -552,6 +804,10 @@
 "price_no_vat": 105.0,
 "price_with_vat": 123.9,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-54"
 },
 {
@@ -561,6 +817,10 @@
 "price_no_vat": 145.0,
 "price_with_vat": 171.1,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-55"
 },
 {
@@ -570,6 +830,10 @@
 "price_no_vat": 109.0,
 "price_with_vat": 128.62,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-56"
 },
 {
@@ -579,6 +843,10 @@
 "price_no_vat": 105.0,
 "price_with_vat": 123.9,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-57"
 },
 {
@@ -588,6 +856,10 @@
 "price_no_vat": 145.0,
 "price_with_vat": 171.1,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-58"
 },
 {
@@ -597,6 +869,10 @@
 "price_no_vat": 145.0,
 "price_with_vat": 171.1,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-59"
 },
 {
@@ -606,6 +882,10 @@
 "price_no_vat": 105.0,
 "price_with_vat": 123.9,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-60"
 },
 {
@@ -615,6 +895,10 @@
 "price_no_vat": 145.0,
 "price_with_vat": 171.1,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-61"
 },
 {
@@ -624,6 +908,10 @@
 "price_no_vat": 272.0,
 "price_with_vat": 320.96,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-62"
 },
 {
@@ -633,6 +921,10 @@
 "price_no_vat": 109.0,
 "price_with_vat": 128.62,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-63"
 },
 {
@@ -642,6 +934,10 @@
 "price_no_vat": 105.0,
 "price_with_vat": 123.9,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-64"
 },
 {
@@ -651,6 +947,10 @@
 "price_no_vat": 105.0,
 "price_with_vat": 123.9,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-65"
 },
 {
@@ -660,6 +960,10 @@
 "price_no_vat": 109.0,
 "price_with_vat": 128.62,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-66"
 },
 {
@@ -669,6 +973,10 @@
 "price_no_vat": 145.0,
 "price_with_vat": 171.1,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "adult",
 "id": "rc-retail-67"
 },
 {
@@ -678,6 +986,10 @@
 "price_no_vat": 355.0,
 "price_with_vat": 418.9,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-68"
 },
 {
@@ -687,6 +999,9 @@
 "price_no_vat": 350.0,
 "price_with_vat": 413.0,
 "unit": "1 יח'",
+"animal": "כלב",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-69"
 },
 {
@@ -698,6 +1013,9 @@
 "sku": "9003579311462",
 "unit": "1 מגש",
 "animal": "כלב",
+"kind": "regular",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-retail-70"
 },
 {
@@ -708,6 +1026,11 @@
 "price_with_vat": 96.76,
 "sku": "9003579008201",
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
+"stage": "puppy",
+"dogsize": "small",
 "id": "rc-retail-71"
 },
 {
@@ -718,6 +1041,11 @@
 "price_with_vat": 141.6,
 "sku": "9003579008324",
 "unit": "1 מגש",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
+"stage": "adult",
+"dogsize": "small",
 "id": "rc-retail-72"
 },
 {
@@ -728,6 +1056,11 @@
 "price_with_vat": 141.6,
 "sku": "9003579008362",
 "unit": "1 מגש",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
+"stage": "senior",
+"dogsize": "small",
 "id": "rc-retail-73"
 },
 {
@@ -738,6 +1071,11 @@
 "price_with_vat": 110.92,
 "sku": "9003579008447",
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-74"
 },
 {
@@ -748,6 +1086,11 @@
 "price_with_vat": 226.56,
 "sku": "9003579029763",
 "unit": "1 מגש",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-75"
 },
 {
@@ -758,6 +1101,11 @@
 "price_with_vat": 110.92,
 "sku": "9003579029633",
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
+"stage": "puppy",
+"dogsize": "large",
 "id": "rc-retail-76"
 },
 {
@@ -768,6 +1116,11 @@
 "price_with_vat": 226.56,
 "sku": "9003579029879",
 "unit": "1 מגש",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
+"stage": "adult",
+"dogsize": "large",
 "id": "rc-retail-77"
 },
 {
@@ -777,6 +1130,9 @@
 "price_no_vat": 82.0,
 "price_with_vat": 96.76,
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-78"
 },
 {
@@ -786,6 +1142,9 @@
 "price_no_vat": 82.0,
 "price_with_vat": 96.76,
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-79"
 },
 {
@@ -795,6 +1154,9 @@
 "price_no_vat": 82.0,
 "price_with_vat": 96.76,
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-80"
 },
 {
@@ -804,6 +1166,9 @@
 "price_no_vat": 82.0,
 "price_with_vat": 96.76,
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-81"
 },
 {
@@ -813,6 +1178,9 @@
 "price_no_vat": 82.0,
 "price_with_vat": 96.76,
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-82"
 },
 {
@@ -823,6 +1191,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579009451",
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-83"
 },
 {
@@ -833,6 +1204,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579008775",
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-84"
 },
 {
@@ -843,6 +1217,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579008812",
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-85"
 },
 {
@@ -853,6 +1230,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579008690",
 "unit": "1 מארז",
+"animal": "כלב",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-86"
 },
 {
@@ -864,6 +1244,9 @@
 "sku": "3182550707312",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-87"
 },
 {
@@ -875,6 +1258,9 @@
 "sku": "3182550707329",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-88"
 },
 {
@@ -886,6 +1272,9 @@
 "sku": "3182550931038",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-89"
 },
 {
@@ -896,6 +1285,10 @@
 "price_with_vat": 135.7,
 "sku": "3182550702423",
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-90"
 },
 {
@@ -906,6 +1299,10 @@
 "price_with_vat": 211.22,
 "sku": "3182550702447",
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-91"
 },
 {
@@ -916,6 +1313,10 @@
 "price_with_vat": 388.22,
 "sku": "3182550702973",
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-92"
 },
 {
@@ -927,6 +1328,8 @@
 "sku": "3182550702201",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-93"
 },
 {
@@ -938,6 +1341,8 @@
 "sku": "3182550702225",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-94"
 },
 {
@@ -949,6 +1354,8 @@
 "sku": "3182550702249",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-95"
 },
 {
@@ -960,6 +1367,8 @@
 "sku": "3182550702256",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-96"
 },
 {
@@ -971,6 +1380,8 @@
 "sku": "3182550702317",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-97"
 },
 {
@@ -982,6 +1393,8 @@
 "sku": "3182550702331",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-98"
 },
 {
@@ -993,6 +1406,8 @@
 "sku": "3182550702355",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-99"
 },
 {
@@ -1004,6 +1419,8 @@
 "sku": "3182550737593",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-100"
 },
 {
@@ -1015,6 +1432,8 @@
 "sku": "3182550737616",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-101"
 },
 {
@@ -1026,6 +1445,8 @@
 "sku": "3182550737623",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-102"
 },
 {
@@ -1037,6 +1458,9 @@
 "sku": "3182550784580",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
 "id": "rc-retail-103"
 },
 {
@@ -1048,6 +1472,9 @@
 "sku": "3182550805407",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
 "id": "rc-retail-104"
 },
 {
@@ -1059,6 +1486,8 @@
 "sku": "3182551065701",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-105"
 },
 {
@@ -1070,6 +1499,8 @@
 "sku": "3182551065732",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-106"
 },
 {
@@ -1081,6 +1512,8 @@
 "sku": "3182550704625",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-107"
 },
 {
@@ -1092,6 +1525,8 @@
 "sku": "3182550706933",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-108"
 },
 {
@@ -1103,6 +1538,8 @@
 "sku": "3182550784412",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-109"
 },
 {
@@ -1114,6 +1551,9 @@
 "sku": "3182551066005",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
 "id": "rc-retail-110"
 },
 {
@@ -1125,6 +1565,9 @@
 "sku": "3182551066098",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
 "id": "rc-retail-111"
 },
 {
@@ -1136,6 +1579,9 @@
 "sku": "3182551066210",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
 "id": "rc-retail-112"
 },
 {
@@ -1147,6 +1593,9 @@
 "sku": "3182551066067",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
 "id": "rc-retail-113"
 },
 {
@@ -1158,6 +1607,9 @@
 "sku": "3182551066128",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "senior",
 "id": "rc-retail-114"
 },
 {
@@ -1169,6 +1621,8 @@
 "sku": "3182550721615",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-115"
 },
 {
@@ -1180,6 +1634,8 @@
 "sku": "3182550752008",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-116"
 },
 {
@@ -1191,6 +1647,8 @@
 "sku": "3182550721738",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-117"
 },
 {
@@ -1202,6 +1660,8 @@
 "sku": "3182550721745",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-118"
 },
 {
@@ -1213,6 +1673,8 @@
 "sku": "3182550721752",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-119"
 },
 {
@@ -1224,6 +1686,8 @@
 "sku": "3182550721400",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-120"
 },
 {
@@ -1235,6 +1699,8 @@
 "sku": "3182550721417",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-121"
 },
 {
@@ -1246,6 +1712,8 @@
 "sku": "3182550721424",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-122"
 },
 {
@@ -1257,6 +1725,8 @@
 "sku": "3182550842952",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-123"
 },
 {
@@ -1268,6 +1738,8 @@
 "sku": "3182550903929",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-124"
 },
 {
@@ -1279,6 +1751,8 @@
 "sku": "3182550902984",
 "unit": "1 יח'",
 "animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-125"
 },
 {
@@ -1288,6 +1762,10 @@
 "price_no_vat": 115.0,
 "price_with_vat": 135.7,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-126"
 },
 {
@@ -1297,6 +1775,9 @@
 "price_no_vat": 112.0,
 "price_with_vat": 132.16,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-127"
 },
 {
@@ -1306,6 +1787,9 @@
 "price_no_vat": 185.0,
 "price_with_vat": 218.3,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-128"
 },
 {
@@ -1315,6 +1799,9 @@
 "price_no_vat": 339.0,
 "price_with_vat": 400.02,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-129"
 },
 {
@@ -1324,6 +1811,9 @@
 "price_no_vat": 185.0,
 "price_with_vat": 218.3,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-130"
 },
 {
@@ -1333,6 +1823,9 @@
 "price_no_vat": 112.0,
 "price_with_vat": 132.16,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-131"
 },
 {
@@ -1342,6 +1835,9 @@
 "price_no_vat": 339.0,
 "price_with_vat": 400.02,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-132"
 },
 {
@@ -1351,6 +1847,10 @@
 "price_no_vat": 115.0,
 "price_with_vat": 135.7,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-133"
 },
 {
@@ -1360,6 +1860,10 @@
 "price_no_vat": 185.0,
 "price_with_vat": 218.3,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-134"
 },
 {
@@ -1369,6 +1873,9 @@
 "price_no_vat": 112.0,
 "price_with_vat": 132.16,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-135"
 },
 {
@@ -1378,6 +1885,9 @@
 "price_no_vat": 185.0,
 "price_with_vat": 218.3,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-136"
 },
 {
@@ -1387,6 +1897,9 @@
 "price_no_vat": 339.0,
 "price_with_vat": 400.02,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-137"
 },
 {
@@ -1396,6 +1909,10 @@
 "price_no_vat": 185.0,
 "price_with_vat": 218.3,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-138"
 },
 {
@@ -1405,6 +1922,10 @@
 "price_no_vat": 339.0,
 "price_with_vat": 400.02,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
+"stage": "puppy",
 "id": "rc-retail-139"
 },
 {
@@ -1414,6 +1935,9 @@
 "price_no_vat": 185.0,
 "price_with_vat": 218.3,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-140"
 },
 {
@@ -1423,6 +1947,9 @@
 "price_no_vat": 339.0,
 "price_with_vat": 400.02,
 "unit": "1 יח'",
+"animal": "חתול",
+"kind": "regular",
+"form": "dry",
 "id": "rc-retail-141"
 },
 {
@@ -1434,6 +1961,9 @@
 "sku": "9003579311660",
 "unit": "1 מגש",
 "animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-retail-142"
 },
 {
@@ -1444,6 +1974,10 @@
 "price_with_vat": 96.76,
 "sku": "9003579308943",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-retail-143"
 },
 {
@@ -1454,6 +1988,10 @@
 "price_with_vat": 96.76,
 "sku": "9003579311714",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-retail-144"
 },
 {
@@ -1464,6 +2002,10 @@
 "price_with_vat": 96.76,
 "sku": "9003579003848",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "puppy",
 "id": "rc-retail-145"
 },
 {
@@ -1474,6 +2016,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579308936",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-146"
 },
 {
@@ -1484,6 +2029,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579309513",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-147"
 },
 {
@@ -1494,6 +2042,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579003886",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-148"
 },
 {
@@ -1504,6 +2055,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579013809",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-149"
 },
 {
@@ -1514,6 +2068,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579311301",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-150"
 },
 {
@@ -1524,6 +2081,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579311776",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-151"
 },
 {
@@ -1534,6 +2094,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579003923",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-152"
 },
 {
@@ -1544,6 +2107,10 @@
 "price_with_vat": 96.76,
 "sku": "9003579050095",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "senior",
 "id": "rc-retail-153"
 },
 {
@@ -1554,6 +2121,10 @@
 "price_with_vat": 96.76,
 "sku": "9003579050057",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "senior",
 "id": "rc-retail-154"
 },
 {
@@ -1564,6 +2135,10 @@
 "price_with_vat": 96.76,
 "sku": "9003579050170",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "senior",
 "id": "rc-retail-155"
 },
 {
@@ -1574,6 +2149,10 @@
 "price_with_vat": 96.76,
 "sku": "9003579310151",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "senior",
 "id": "rc-retail-156"
 },
 {
@@ -1584,6 +2163,10 @@
 "price_with_vat": 96.76,
 "sku": "9003579311745",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
+"stage": "senior",
 "id": "rc-retail-157"
 },
 {
@@ -1595,6 +2178,8 @@
 "sku": "9003579308769",
 "unit": "1 מארז",
 "animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-158"
 },
 {
@@ -1605,6 +2190,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579308929",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-159"
 },
 {
@@ -1616,6 +2204,8 @@
 "sku": "9003579309537",
 "unit": "1 מארז",
 "animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-160"
 },
 {
@@ -1627,6 +2217,8 @@
 "sku": "9003579000410",
 "unit": "1 מארז",
 "animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-161"
 },
 {
@@ -1638,6 +2230,8 @@
 "sku": "9003579000366",
 "unit": "1 מארז",
 "animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-162"
 },
 {
@@ -1648,6 +2242,8 @@
 "price_with_vat": 96.76,
 "unit": "1 מארז",
 "animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-163"
 },
 {
@@ -1658,6 +2254,8 @@
 "price_with_vat": 96.76,
 "unit": "1 מארז",
 "animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-164"
 },
 {
@@ -1668,6 +2266,8 @@
 "price_with_vat": 96.76,
 "unit": "1 מארז",
 "animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-165"
 },
 {
@@ -1678,6 +2278,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579018514",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-166"
 },
 {
@@ -1688,6 +2291,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579018866",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-167"
 },
 {
@@ -1698,6 +2304,9 @@
 "price_with_vat": 96.76,
 "sku": "9003579018941",
 "unit": "1 מארז",
+"animal": "חתול",
+"kind": "regular",
+"form": "wet",
 "id": "rc-retail-168"
 }
 ]

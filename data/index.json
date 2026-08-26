@@ -702,6 +702,52 @@
     "כללי"
    ]
   ],
+  "food_facets": {
+   "kind": [
+    [
+     "vet",
+     "וטרינרי / רפואי"
+    ],
+    [
+     "regular",
+     "רגיל"
+    ]
+   ],
+   "form": [
+    [
+     "dry",
+     "יבש"
+    ],
+    [
+     "wet",
+     "רטוב"
+    ]
+   ],
+   "stage": [
+    [
+     "puppy",
+     "גורים"
+    ],
+    [
+     "adult",
+     "בוגר"
+    ],
+    [
+     "senior",
+     "מבוגר"
+    ]
+   ],
+   "dogsize": [
+    [
+     "small",
+     "עד 7 ק\"ג"
+    ],
+    [
+     "large",
+     "מעל 7 ק\"ג"
+    ]
+   ]
+  },
   "food_indications": [
    "BeWild",
    "VETERINARY HEALTH NUTRITION CAT - DRY",

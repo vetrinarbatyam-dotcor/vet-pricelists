@@ -146,6 +146,44 @@ def food_topic(name):
         if any(_hit(k, name, low) for k in kws): return t
     return "nutrition"
 
+# ---------------------------------------------------------------- food facets (food section only)
+# A vet can filter the food section the way they think about it: therapeutic vs everyday, wet vs
+# dry, life stage, species, and dog size. Size classes come from the brands' own naming (mini /
+# small / toy vs medium / maxi / large), which is an approximation of Gil's 7 kg cut-off.
+FOOD_FACETS = {
+    "kind":    [("vet", "וטרינרי / רפואי"), ("regular", "רגיל")],
+    "form":    [("dry", "יבש"), ("wet", "רטוב")],
+    "stage":   [("puppy", "גורים"), ("adult", "בוגר"), ("senior", "מבוגר")],
+    "dogsize": [("small", 'עד 7 ק"ג'), ("large", 'מעל 7 ק"ג')],
+}
+VET_FOOD = {"rc-vet", "hills-pd", "hills-ve", "purina-vet", "monge-vet", "vetlife"}
+WET_KW = ("פחית", "פאוץ", "רטוב", "שימור", "מוס", "נזיד", "stew", "טרין", "ג'לי", "pouch",
+          "loaf", "gravy", "רוטב", "מרק", "נוזל")
+STAGE_KW = [("senior", ("מבוגר", "סניור", "senior", "mature", "aging", "אייג'ינג", "אייגינג", "7+", "8+", "11+", "12+")),
+            ("puppy", ("גור", "פאפי", "puppy", "junior", "kitten", "קיטן", "starter", "סטרטר",
+                       "אמהות", "mother", "growth", "ג'וניור", "גוניור")),
+            ("adult", ("בוגר", "אדולט", "adult"))]
+SIZE_KW = [("small", ("mini", "מיני", "small", "סמול", "toy", "טוי", "x-small", "xsmall",
+                      "גזע קטן", "מגזע קטן", "קטן")),
+           ("large", ("maxi", "מקסי", "large", "לארג", "giant", "ג'יינט", "medium", "מדיום",
+                      "בינוני", "midi", "מידי", "גזע גדול", "גדול", "ג'יאנט", "גיאנט"))]
+
+def _kw(hay, kws): return next((t for t, ks in kws if any(k in hay for k in ks)), None)
+
+def food_facets(slug, name, unit, animal, category):
+    hay = f"{name} {category or ''}".lower()
+    wet = any(k in hay for k in WET_KW) or (unit or "").endswith("ג'")
+    return {"kind": "vet" if slug in VET_FOOD else "regular",
+            "form": "wet" if wet else "dry",
+            "stage": _kw(hay, STAGE_KW),
+            "dogsize": _kw(hay, SIZE_KW) if animal != "חתול" else None}
+
+def food_animal(name, category):
+    hay = f"{name} {category or ''}".lower()
+    if any(k in hay for k in ("חתול", "קיטן", "cat", "feline", "kitten")): return "חתול"
+    if any(k in hay for k in ("כלב", "פאפי", "dog", "canine", "puppy")): return "כלב"
+    return None
+
 # ---------------------------------------------------------------- price-list registry (dates + sources = manual truth)
 DLD = HOME / "Downloads"
 REG = {
@@ -382,6 +420,15 @@ def build():
         add(lists[slug], item(slug, it["name"], it.get("price_no_vat"), it.get("price_with_vat"), it["category"],
                                 LAB_CAT_TOPIC.get(it["category"], "other"), sku=it.get("code"), notes=it.get("notes")))
 
+    # --- food facets: therapeutic vs everyday, wet/dry, life stage, species, dog size
+    for slug in [k for k in lists if REG[k][0] == "food"]:
+        for it in lists[slug]:
+            if not it.get("animal"):
+                a = food_animal(it["name"], it.get("category"))
+                if a: it["animal"] = a
+            for k, v in food_facets(slug, it["name"], it.get("unit"), it.get("animal"), it.get("category")).items():
+                if v: it[k] = v
+
     # --- move shop merchandise (non-food, non-medical) into its own section
     shop, SHOP_LABEL = {}, dict(SHOP_TOPICS)
     for slug in list(lists):
@@ -431,7 +478,7 @@ def build():
                 "imported_at": TODAY, "notes": note}
         json.dump({"meta": meta, "items": items}, open(DATA / typ / f"{slug}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
         index.append(meta)
-    tax = {"topics": TOPICS, "lab_topics": LAB_TOPICS, "shop_topics": SHOP_TOPICS, "food_indications": sorted({i["category"] for s in FOOD_COMPANY_SLUG.values() for i in lists[s] if i["category"]})}
+    tax = {"topics": TOPICS, "lab_topics": LAB_TOPICS, "shop_topics": SHOP_TOPICS, "food_facets": FOOD_FACETS, "food_indications": sorted({i["category"] for s in FOOD_COMPANY_SLUG.values() for i in lists[s] if i["category"]})}
     json.dump({"built_at": TODAY, "vat_rate": 18, "pricelists": index, "taxonomy": tax}, open(DATA / "index.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return lists, index
 
@@ -461,16 +508,26 @@ def xlsx(lists, index):
             ws.append([m["supplier"], 0, 0, 0]); sup_rows[s] = ws.max_row
         ws.append([]); ws.append(["נוסחה: עלות = מחיר ללא מע\"מ × (1 − הנחה) × 1.18 ; מחיר ללקוח = עלות × (1 + מרווח %) + מרווח ₪"])
         ws2 = wb.create_sheet(heb[typ]); ws2.sheet_view.rightToLeft = True
-        hdr = ["ספק", "פריט", "קטגוריה", "מק\"ט", "תאריך מחירון", "מחיר ללא מע\"מ", "מחיר כולל מע\"מ", "הנחה %", "עלות אחרי הנחה (כולל מע\"מ)", "מרווח %", "מרווח ₪", "מחיר ללקוח"]
+        FCOLS = [("kind", "סוג המזון"), ("form", "יבש / רטוב"), ("stage", "שלב חיים"),
+                 ("animal", "חיה"), ("dogsize", "גודל הכלב")] if typ == "food" else []
+        FHEB = {k: dict(v) for k, v in FOOD_FACETS.items()}
+        hdr = ["ספק", "פריט", "קטגוריה", "מק\"ט"] + [h for _, h in FCOLS] + ["תאריך מחירון", "מחיר ללא מע\"מ", "מחיר כולל מע\"מ", "הנחה %", "עלות אחרי הנחה (כולל מע\"מ)", "מרווח %", "מרווח ₪", "מחיר ללקוח"]
+        C = chr(ord("E") + len(FCOLS))          # first price column shifts by the facet columns
+        cols = [chr(ord(C) + i) for i in range(8)]
         ws2.append(hdr)
         for c in ws2[1]: c.font = Font(bold=True); c.fill = PatternFill("solid", fgColor="DCEFEB")
         for s in slugs:
             m = next(x for x in index if x["slug"] == s); r = sup_rows[s]
             for it in lists[s]:
                 row = ws2.max_row + 1
-                ws2.append([m["supplier"], it["name"], it.get("category"), it.get("sku"), m["price_list_date"], it["price_no_vat"], it["price_with_vat"],
-                            f"=הגדרות!B{r}", f"=F{row}*(1-H{row}/100)*1.18", f"=הגדרות!C{r}", f"=הגדרות!D{r}", f"=I{row}*(1+J{row}/100)+K{row}"])
-        for col, w in zip("ABCDEFGHIJKL", (18, 55, 20, 12, 12, 14, 14, 9, 18, 9, 9, 14)): ws2.column_dimensions[col].width = w
+                p, d, c2, mp, mf, cust = cols[1], cols[3], cols[4], cols[5], cols[6], cols[7]
+                ws2.append([m["supplier"], it["name"], it.get("category"), it.get("sku")]
+                           + [FHEB.get(k, {}).get(it.get(k), it.get(k) or "") for k, _ in FCOLS]
+                           + [m["price_list_date"], it["price_no_vat"], it["price_with_vat"],
+                              f"=הגדרות!B{r}", f"={p}{row}*(1-{d}{row}/100)*1.18", f"=הגדרות!C{r}",
+                              f"=הגדרות!D{r}", f"={c2}{row}*(1+{mp}{row}/100)+{mf}{row}"])
+        widths = [18, 55, 20, 12] + [13] * len(FCOLS) + [12, 14, 14, 9, 18, 9, 9, 14]
+        for i, w in enumerate(widths): ws2.column_dimensions[chr(ord("A") + i)].width = w
         wb.save(out / f"{typ}.xlsx")
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ const VAT = 1.18, PAGE = 150;
 const SEC_HEB = { medical: 'מוצרים ותרופות', food: 'מזון', labs: 'מעבדות', shop: 'מוצרי חנויות' };
 
 let INDEX = null, CONFIG = null, cache = {};
-let S = { type: null, vat: 'incl', view: 'supplier', mode: 'list', supplier: null, category: null, topic: null, q: '', shown: PAGE };
+let S = { type: null, vat: 'incl', view: 'supplier', mode: 'list', supplier: null, category: null, topic: null, q: '', shown: PAGE, f: {} };
 let rows = [];
 
 // ---------- pricing store ----------
@@ -71,7 +71,7 @@ function show(page) {
 function goHome() { S.type = null; show('home'); $$('#tabs button').forEach(b => b.classList.remove('on')); }
 
 async function openSec(sec) {
-  S.type = sec; S.supplier = S.category = S.topic = null; S.q = ''; S.shown = PAGE;
+  S.type = sec; S.supplier = S.category = S.topic = null; S.q = ''; S.shown = PAGE; S.f = {};
   $('#q').value = '';
   $$('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.type === sec));
   show('catalog'); await render();
@@ -103,12 +103,14 @@ async function render() {
     topicsFor(S.type).forEach(([k, lab]) => counts[k] && chips.appendChild(mk(lab, S.topic === k,
       () => { S.topic = k; S.shown = PAGE; render(); }, counts[k])));
   }
+  renderFacets(lists);
   const q = S.q.trim().toLowerCase();
   rows = [];
   lists.forEach(l => l.items.forEach(i => {
     if (S.view === 'supplier' && S.supplier && i.slug !== S.supplier) return;
     if (S.view === 'supplier' && S.category && i.category !== S.category) return;
     if (S.view === 'topic' && S.topic && i.topic !== S.topic) return;
+    if (!facetOk(i)) return;
     if (q && !`${i.name} ${i.sku || ''} ${i.notes || ''} ${i.category || ''} ${i.supplier}`.toLowerCase().includes(q)) return;
     rows.push(i);
   }));
@@ -119,6 +121,41 @@ async function render() {
   $('#dl').href = `downloads/${S.type}.xlsx`;
   $('#clinicBar').hidden = S.mode !== 'clinic';
   renderTable();
+}
+// Food-only facets. A row that has no value for a facet shows under "הכל" and disappears once a
+// specific value is picked — a therapeutic diet has no life stage, and a cat food has no dog size.
+const FACET_LABEL = { kind: 'סוג המזון', form: 'יבש / רטוב', stage: 'שלב חיים',
+                      animal: 'חיה', dogsize: 'גודל הכלב' };
+const ANIMALS = [['כלב', 'כלב'], ['חתול', 'חתול']];
+function facetOk(i) {
+  return Object.entries(S.f).every(([k, v]) => !v || i[k] === v);
+}
+function renderFacets(lists) {
+  const box = $('#facets');
+  if (S.type !== 'food') { box.hidden = true; box.innerHTML = ''; return; }
+  const defs = INDEX.taxonomy.food_facets || {};
+  const order = [['kind', defs.kind], ['form', defs.form], ['stage', defs.stage],
+                 ['animal', ANIMALS], ['dogsize', defs.dogsize]];
+  box.hidden = false; box.innerHTML = '';
+  order.forEach(([key, vals]) => {
+    if (!vals) return;
+    // count against every other facet, so each row's numbers stay true for the current view
+    const rest = { ...S.f }; delete rest[key];
+    const n = {};
+    lists.forEach(l => l.items.forEach(i => {
+      if (!Object.entries(rest).every(([k, v]) => !v || i[k] === v)) return;
+      if (S.supplier && i.slug !== S.supplier) return;
+      if (i[key]) n[i[key]] = (n[i[key]] || 0) + 1;
+    }));
+    if (!vals.some(([k]) => n[k])) return;
+    const g = document.createElement('div');
+    g.className = 'facet';
+    g.innerHTML = `<span class="flab">${FACET_LABEL[key]}</span>`;
+    const pick = v => { S.f[key] = S.f[key] === v ? null : v; S.shown = PAGE; render(); };
+    g.appendChild(mk('הכל', !S.f[key], () => pick(null)));
+    vals.forEach(([k, lab]) => n[k] && g.appendChild(mk(lab, S.f[key] === k, () => pick(k), n[k])));
+    box.appendChild(g);
+  });
 }
 function mk(label, on, fn, n, status) {
   const b = document.createElement('button');

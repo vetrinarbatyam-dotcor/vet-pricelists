@@ -26,6 +26,8 @@
 "price_with_vat": 482.62,
 "sku": "29000141",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-1"
 },
 {
@@ -36,6 +38,8 @@
 "price_with_vat": 136.88,
 "sku": "29000186",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-2"
 },
 {
@@ -46,6 +50,8 @@
 "price_with_vat": 482.62,
 "sku": "29000139",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-3"
 },
 {
@@ -56,6 +62,8 @@
 "price_with_vat": 136.88,
 "sku": "29000192",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-4"
 },
 {
@@ -66,6 +74,8 @@
 "price_with_vat": 121.54,
 "sku": "29000311",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-5"
 },
 {
@@ -76,6 +86,8 @@
 "price_with_vat": 247.8,
 "sku": "29000190",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-6"
 },
 {
@@ -86,6 +98,8 @@
 "price_with_vat": 119.18,
 "sku": "29000188",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-7"
 },
 {
@@ -96,6 +110,8 @@
 "price_with_vat": 528.64,
 "sku": "29000155",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-8"
 },
 {
@@ -106,6 +122,8 @@
 "price_with_vat": 136.88,
 "sku": "29000187",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-9"
 },
 {
@@ -116,6 +134,8 @@
 "price_with_vat": 479.08,
 "sku": "29000138",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-10"
 },
 {
@@ -126,6 +146,8 @@
 "price_with_vat": 136.88,
 "sku": "29000191",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-11"
 },
 {
@@ -136,6 +158,8 @@
 "price_with_vat": 119.18,
 "sku": "29000217",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-12"
 },
 {
@@ -146,6 +170,8 @@
 "price_with_vat": 528.64,
 "sku": "29000154",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-13"
 },
 {
@@ -156,6 +182,8 @@
 "price_with_vat": 136.88,
 "sku": "29000184",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-14"
 },
 {
@@ -166,6 +194,8 @@
 "price_with_vat": 114.46,
 "sku": "29000137",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-15"
 },
 {
@@ -176,6 +206,8 @@
 "price_with_vat": 114.46,
 "sku": "29000133",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-16"
 },
 {
@@ -186,6 +218,8 @@
 "price_with_vat": 114.46,
 "sku": "29000132",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-17"
 },
 {
@@ -196,6 +230,8 @@
 "price_with_vat": 114.46,
 "sku": "29000135",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-18"
 },
 {
@@ -206,6 +242,8 @@
 "price_with_vat": 114.46,
 "sku": "29000134",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-19"
 },
 {
@@ -216,6 +254,8 @@
 "price_with_vat": 114.46,
 "sku": "29000136",
 "animal": "חתול",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-20"
 },
 {
@@ -226,6 +266,8 @@
 "price_with_vat": 528.64,
 "sku": "29000239",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-21"
 },
 {
@@ -236,6 +278,8 @@
 "price_with_vat": 528.64,
 "sku": "29000238",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-22"
 },
 {
@@ -246,6 +290,8 @@
 "price_with_vat": 136.88,
 "sku": "29000185",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-23"
 },
 {
@@ -256,6 +302,8 @@
 "price_with_vat": 508.58,
 "sku": "29000140",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-24"
 },
 {
@@ -266,6 +314,8 @@
 "price_with_vat": 136.88,
 "sku": "29000183",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-25"
 },
 {
@@ -276,6 +326,8 @@
 "price_with_vat": 136.88,
 "sku": "29000359",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-26"
 },
 {
@@ -286,6 +338,8 @@
 "price_with_vat": 553.42,
 "sku": "29000360",
 "animal": "כלב",
+"kind": "vet",
+"form": "dry",
 "id": "monge-vet-27"
 },
 {
@@ -296,6 +350,8 @@
 "price_with_vat": 7.91,
 "sku": "15170002",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-28"
 },
 {
@@ -306,6 +362,8 @@
 "price_with_vat": 7.91,
 "sku": "15170003",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-29"
 },
 {
@@ -316,6 +374,8 @@
 "price_with_vat": 7.91,
 "sku": "15170004",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-30"
 },
 {
@@ -326,6 +386,8 @@
 "price_with_vat": 9.32,
 "sku": "15170005",
 "animal": "כלב",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-31"
 },
 {
@@ -336,6 +398,8 @@
 "price_with_vat": 6.37,
 "sku": "15170006",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-32"
 },
 {
@@ -346,6 +410,8 @@
 "price_with_vat": 6.37,
 "sku": "15170007",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-33"
 },
 {
@@ -356,6 +422,8 @@
 "price_with_vat": 6.37,
 "sku": "15170008",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-34"
 },
 {
@@ -366,6 +434,8 @@
 "price_with_vat": 6.37,
 "sku": "15170009",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-35"
 },
 {
@@ -376,6 +446,8 @@
 "price_with_vat": 6.96,
 "sku": "15170010",
 "animal": "חתול",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-36"
 },
 {
@@ -385,6 +457,8 @@
 "price_no_vat": 12.0,
 "price_with_vat": 14.16,
 "sku": "15170050",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-37"
 },
 {
@@ -394,6 +468,8 @@
 "price_no_vat": 12.0,
 "price_with_vat": 14.16,
 "sku": "15170052",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-38"
 },
 {
@@ -403,6 +479,8 @@
 "price_no_vat": 12.0,
 "price_with_vat": 14.16,
 "sku": "15170053",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-39"
 },
 {
@@ -412,6 +490,8 @@
 "price_no_vat": 12.0,
 "price_with_vat": 14.16,
 "sku": "15170051",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-40"
 },
 {
@@ -421,6 +501,8 @@
 "price_no_vat": 12.0,
 "price_with_vat": 14.16,
 "sku": "15170049",
+"kind": "vet",
+"form": "wet",
 "id": "monge-vet-41"
 }
 ]
