@@ -10,6 +10,7 @@
 "source_files": [
 "sources/food/rc-retail-2026-01.pdf"
 ],
+"source_kind": "pricelist",
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 168,

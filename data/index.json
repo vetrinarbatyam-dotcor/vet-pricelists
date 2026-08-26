@@ -13,6 +13,7 @@
    "source_files": [
     "sources/medical/beit-erez-2026-07.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 410,
@@ -31,6 +32,7 @@
    "source_files": [
     "sources/medical/msd-2026.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 16,
@@ -49,6 +51,7 @@
    "source_files": [
     "sources/medical/miltin-consum-2025-11.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 406,
@@ -68,6 +71,7 @@
     "sources/medical/zoetis-2026.pdf",
     "sources/medical/zoetis-2026-2.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 39,
@@ -84,6 +88,7 @@
    "price_list_date": "2026-08",
    "source_file": null,
    "source_files": [],
+   "source_kind": "invoices",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 171,
@@ -100,6 +105,7 @@
    "price_list_date": "2026-06",
    "source_file": null,
    "source_files": [],
+   "source_kind": "pricelist",
    "vat_basis": "with_vat",
    "vat_rate": 18,
    "item_count": 2383,
@@ -118,6 +124,7 @@
    "source_files": [
     "sources/medical/petvet-2026-05.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 167,
@@ -136,6 +143,7 @@
    "source_files": [
     "sources/food/rc-vet-2026-06.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 108,
@@ -154,6 +162,7 @@
    "source_files": [
     "sources/food/rc-retail-2026-01.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 168,
@@ -172,6 +181,7 @@
    "source_files": [
     "sources/food/hills-pd-2026-04.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 123,
@@ -190,6 +200,7 @@
    "source_files": [
     "sources/food/hills-sp-2026-04.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 86,
@@ -206,6 +217,7 @@
    "price_list_date": "2026-04",
    "source_file": null,
    "source_files": [],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 42,
@@ -224,6 +236,7 @@
    "source_files": [
     "sources/food/vetlife-2025-02.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 57,
@@ -242,6 +255,7 @@
    "source_files": [
     "sources/food/purina-vet-2026-06.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 37,
@@ -260,6 +274,7 @@
    "source_files": [
     "sources/food/purina-retail-2026-06.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 170,
@@ -278,6 +293,7 @@
    "source_files": [
     "sources/food/monge-vet-2026-07.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 41,
@@ -297,6 +313,7 @@
     "sources/food/monge-2026-07.pdf",
     "sources/food/monge-2026-07-2.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 109,
@@ -315,6 +332,7 @@
    "source_files": [
     "sources/labs/aml-2026-06.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "with_vat",
    "vat_rate": 18,
    "item_count": 123,
@@ -333,6 +351,7 @@
    "source_files": [
     "sources/labs/hamachon-2026-01.docx"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 90,
@@ -351,6 +370,7 @@
    "source_files": [
     "sources/labs/idexx-2026-01.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 137,
@@ -369,6 +389,7 @@
    "source_files": [
     "sources/labs/idexx-ref-2025-01.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 373,
@@ -389,6 +410,7 @@
     "sources/labs/karnieli-2025-01-2.pdf",
     "sources/labs/karnieli-2025-01-3.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 66,
@@ -405,6 +427,7 @@
    "price_list_date": null,
    "source_file": null,
    "source_files": [],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 23,
@@ -423,6 +446,7 @@
    "source_files": [
     "sources/shop/beit-erez-shop-2026-07.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 5,
@@ -441,6 +465,7 @@
    "source_files": [
     "sources/shop/kong-shop-2026-08.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 265,
@@ -459,6 +484,7 @@
    "source_files": [
     "sources/shop/ferplast-shop-2026-02.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 15,
@@ -475,6 +501,7 @@
    "price_list_date": "2026-08",
    "source_file": null,
    "source_files": [],
+   "source_kind": "invoices",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 15,
@@ -491,6 +518,7 @@
    "price_list_date": "2026-06",
    "source_file": null,
    "source_files": [],
+   "source_kind": "pricelist",
    "vat_basis": "with_vat",
    "vat_rate": 18,
    "item_count": 31,
@@ -509,6 +537,7 @@
    "source_files": [
     "sources/shop/petvet-shop-2026-05.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 14,
@@ -527,6 +556,7 @@
    "source_files": [
     "sources/shop/purina-retail-shop-2026-06.pdf"
    ],
+   "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
    "item_count": 30,

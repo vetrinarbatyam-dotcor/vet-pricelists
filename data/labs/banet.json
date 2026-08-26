@@ -8,6 +8,7 @@
 "price_list_date": null,
 "source_file": null,
 "source_files": [],
+"source_kind": "pricelist",
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 23,

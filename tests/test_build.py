@@ -12,7 +12,13 @@ assert sum(counts.values()) >= 5700
 vm = __import__("json").load(open(ROOT / "data/medical/vetmarket.json", encoding="utf-8"))["items"]
 assert all(i.get("price_date") for i in vm), "a Vetmarket row without an invoice date = a price from the internal catalog"
 
-FORBID = ("customerPriceWithVat", "weighted", "invoice", "clinic_sale", "purchasePrice", "112026")
+# "invoices" as a source label is fine — an invoice-derived FIELD is not: the published number
+# is the pre-discount list price, never what the clinic actually paid.
+FORBID = ("customerPriceWithVat", "weighted", "invoice_price", "invoice_total", "net_price",
+          "paid", "discount_pct", "clinic_sale", "purchasePrice", "112026")
+ALLOWED_ITEM_KEYS = {"id", "name", "category", "topic", "price_no_vat", "price_with_vat", "sku",
+                     "pack_qty", "price_date", "unit", "animal", "notes", "bonus", "manufacturer",
+                     "source", "kind", "form", "stage", "dogsize"}
 for f in (ROOT / "data").rglob("*.json"):
     s = f.read_text(encoding="utf-8")
     for w in FORBID: assert w not in s, f"{w} leaked into {f.name}"
@@ -22,6 +28,7 @@ for f in (ROOT / "data").rglob("*.json"):
             assert it["name"] and it["price_no_vat"] > 0 and it["price_with_vat"] > it["price_no_vat"], it
             assert abs(it["price_with_vat"] - it["price_no_vat"] * 1.18) < 0.011, it
             assert it["topic"], it
+            assert not (set(it) - ALLOWED_ITEM_KEYS), (f.name, set(it) - ALLOWED_ITEM_KEYS)
 for f in ROOT.glob("*.html"):
     s = f.read_text(encoding="utf-8")
     assert "CLAUDEVET2026" not in s, "access code must not appear in plain text"

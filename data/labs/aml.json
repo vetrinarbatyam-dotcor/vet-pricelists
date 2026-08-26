@@ -10,6 +10,7 @@
 "source_files": [
 "sources/labs/aml-2026-06.pdf"
 ],
+"source_kind": "pricelist",
 "vat_basis": "with_vat",
 "vat_rate": 18,
 "item_count": 123,

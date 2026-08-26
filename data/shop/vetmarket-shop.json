@@ -8,6 +8,7 @@
 "price_list_date": "2026-08",
 "source_file": null,
 "source_files": [],
+"source_kind": "invoices",
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 15,

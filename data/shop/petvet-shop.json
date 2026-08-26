@@ -10,6 +10,7 @@
 "source_files": [
 "sources/shop/petvet-shop-2026-05.pdf"
 ],
+"source_kind": "pricelist",
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 14,

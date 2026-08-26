@@ -11,6 +11,7 @@
 "sources/medical/zoetis-2026.pdf",
 "sources/medical/zoetis-2026-2.pdf"
 ],
+"source_kind": "pricelist",
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 39,

@@ -10,6 +10,7 @@
 "source_files": [
 "sources/labs/idexx-ref-2025-01.pdf"
 ],
+"source_kind": "pricelist",
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 373,

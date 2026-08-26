@@ -195,3 +195,23 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
 .facet{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
 .facet .flab{font-size:12px;font-weight:700;color:var(--muted);margin-inline-end:2px}
 .facet .chip{padding:3px 10px;font-size:13px}
+
+/* ---------- rows parsed out of invoices (no published price list) ---------- */
+.chip .inv,.date .inv,.legend .inv{color:var(--copper);font-style:normal;font-weight:700;margin-inline-start:4px}
+.chip.parsed{border-color:var(--copper)}
+.chip.parsed.on{background:var(--copper);border-color:var(--copper)}
+.chip.parsed.on .inv{color:#fff}
+td .date.parsed{color:var(--copper)}
+.legend{font-size:12px;color:var(--muted);align-self:center;margin-inline-start:6px}
+.legend .inv{margin-inline-start:0;margin-inline-end:3px}
+
+/* ---------- calculator: centred, with the two entry fields carrying the weight ---------- */
+.calc-page{max-width:860px}
+.calc-page .page-head{text-align:center}
+.calc-page .page-head h1{font-size:31px}
+.calc-page .page-head p{margin-inline:auto}
+.fld.key{font-weight:700;font-size:16px;margin:12px 0;padding:9px 11px;border-radius:8px;
+  background:var(--teal-soft);border:1px solid var(--teal)}
+.fld.key input{width:150px;font-weight:700;font-size:16px;border:2px solid var(--teal);
+  background:var(--card);padding:6px 9px}
+.fld.key input:focus{outline:2px solid var(--teal);outline-offset:1px}

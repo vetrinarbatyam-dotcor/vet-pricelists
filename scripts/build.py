@@ -221,6 +221,9 @@ REG = {
 FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's PD": "hills-pd", "Hill's VE": "hills-ve",
                      "VetLife": "vetlife", "Purina": "purina-vet", "Purina חנויות": "purina-retail",
                      "Monge Vet": "monge-vet", "Monge": "monge", "Foodiez": "foodiez"}
+# Vetmarket publishes no price list: its rows are parsed out of order confirmations, so the site
+# marks them apart from rows that come from a real supplier price list.
+FROM_INVOICES = {"vetmarket"}
 FROM_PDF = {"rc-vet", "rc-retail", "purina-vet", "purina-retail", "vetlife", "monge", "monge-vet", "hills-pd"}   # dated PDF replaces the undated TS rows
 LAB_SLUG = {"AML": "aml", "המכון": "hamachon", "IDEXX": "idexx", "קרניאלי": "karnieli", "פרופ בנעט": "banet"}
 
@@ -474,7 +477,7 @@ def build():
         act, act_note = ACTIONS.get(baseslug(slug), ACTION_DEFAULT[status])
         meta = {"action": act, "action_note": act_note,
                 "slug": slug, "type": typ, "supplier": label, "price_list_date": date, "source_file": src_rel,
-                "source_files": src_all, "vat_basis": vat_basis, "vat_rate": 18, "item_count": len(items), "status": status,
+                "source_files": src_all, "source_kind": "invoices" if baseslug(slug) in FROM_INVOICES else "pricelist", "vat_basis": vat_basis, "vat_rate": 18, "item_count": len(items), "status": status,
                 "imported_at": TODAY, "notes": note}
         json.dump({"meta": meta, "items": items}, open(DATA / typ / f"{slug}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
         index.append(meta)

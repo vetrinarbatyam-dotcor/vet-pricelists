@@ -12,6 +12,7 @@
 "sources/labs/karnieli-2025-01-2.pdf",
 "sources/labs/karnieli-2025-01-3.pdf"
 ],
+"source_kind": "pricelist",
 "vat_basis": "no_vat",
 "vat_rate": 18,
 "item_count": 66,
