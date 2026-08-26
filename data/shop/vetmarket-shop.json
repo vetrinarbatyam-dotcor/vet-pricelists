@@ -11,10 +11,10 @@
 "source_kind": "invoices",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 15,
+"item_count": 20,
 "status": "current",
 "imported_at": "2026-08-26",
-"notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור 123 אישורי הזמנה (09/2023–08/2026) — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
+"notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משני מאגרים — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
 },
 "items": [
 {
@@ -168,6 +168,57 @@
 "sku": "48000033",
 "price_date": "2026-06",
 "id": "vetmarket-shop-15"
+},
+{
+"name": "חטיף הילס היפואלרגני לכלב 200 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 24.0,
+"price_with_vat": 28.32,
+"sku": "40608557",
+"price_date": "2026-05",
+"id": "vetmarket-shop-16"
+},
+{
+"name": "חטיף ווג'ידנט Medium 15 יחידות, 352 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 24.0,
+"price_with_vat": 28.32,
+"sku": "47307870",
+"pack_qty": 15,
+"price_date": "2026-05",
+"id": "vetmarket-shop-17"
+},
+{
+"name": "חטיף פודיס מיני ענני עוף לחתולים, 50 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 3.5,
+"price_with_vat": 4.13,
+"sku": "48000034",
+"price_date": "2026-05",
+"id": "vetmarket-shop-18"
+},
+{
+"name": "חטיף פודיס מיני ענני ברווז לחתולים, 50 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 3.5,
+"price_with_vat": 4.13,
+"sku": "48000035",
+"price_date": "2026-05",
+"id": "vetmarket-shop-19"
+},
+{
+"name": "חטיף פודיס דגיגוני סלמון לחתולים, 50 גרם",
+"category": "חטיפים",
+"topic": "treats",
+"price_no_vat": 3.5,
+"price_with_vat": 4.13,
+"sku": "48000036",
+"price_date": "2026-05",
+"id": "vetmarket-shop-20"
 }
 ]
 }

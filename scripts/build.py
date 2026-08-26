@@ -194,7 +194,7 @@ REG = {
     "zoetis":     ("medical", "זואטיס (Zoetis)", "2026", (DLD / "זואטיס תרופות 2026.PDF", DLD / "זואטיס סימפריקה סטרונגהולד 2026.PDF"), "no_vat", "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"),
     "kong":       ("medical", "קונג (Kong)", "2026-08", DLD / "מחירון קונג מלאי - אוגוסט 2026 .pdf", "no_vat", "מחירון מלאי אוגוסט 2026 — צעצועים ואביזרים"),
     "ferplast":   ("medical", "פרפלסט (Ferplast)", "2026-02", DLD / "מחירון מוצרי פרפלסט 24.2.26.pdf", "no_vat", "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"),
-    "vetmarket":  ("medical", "וטמרקט", "2026-08", None, "no_vat", "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור 123 אישורי הזמנה (09/2023–08/2026) — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"),
+    "vetmarket":  ("medical", "וטמרקט", "2026-08", None, "no_vat", "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משני מאגרים — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"),
     "medi-market": ("medical", "מדי-מרקט", "2026-06", None, "with_vat", "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"),
     "petvet":     ("medical", "פט-וט ביומד", "2026-05", DLD / "PRICE LIST 2026.pdf", "no_vat", "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"),
     "rc-vet":     ("food", "Royal Canin VET", "2026-06", DLD / "RC VET Price list JUNE.pdf", "no_vat", "מחירון קמעונאי יוני 2026"),
@@ -327,14 +327,22 @@ def build():
     #     row keeps the date of the confirmation it came from. The clinic's own vetmarket catalog
     #     (vetmarketCatalog.ts / "מחירון וטמרקט מלא.xlsx") is an internal file of unverifiable
     #     provenance — it is used ONLY to label a category, never for a price.
+    #     Two invoice stores feed it: the vetmarket-cli confirmations (09/2023-08/2026) and the
+    #     Invoices Plus database (05-08/2026, wider). Newest month wins per SKU.
     pull = load("server_pull.json")
     vm_cat = {it.get("code"): it for it in load("vetmarket.json")}
+    vm = {}
     for r in pull["vetmarket_invoice_list"]:
-        ref = vm_cat.get(r["sku"]) or {}
-        cat = r.get("category") or ref.get("category")
-        add(lists["vetmarket"], item("vetmarket", r["name"], r["unit_price"], None, cat,
-                                       VM_TOPIC.get(cat) or kw_topic(r["name"]), sku=r["sku"],
-                                       pack_qty=pack_qty(r["name"]), price_date=r["date"][:7]))
+        vm[r["sku"]] = (r["name"], r["unit_price"], r["date"][:7])
+    for r in load("invoices_plus_vetmarket.json"):
+        prev = vm.get(r["sku"])
+        if prev and prev[2] >= r["month"]: continue
+        vm[r["sku"]] = (r["name"], r["unit_price"], r["month"])
+    for sku, (name, price, month) in vm.items():
+        cat = (vm_cat.get(sku) or {}).get("category")
+        add(lists["vetmarket"], item("vetmarket", name, price, None, cat,
+                                       VM_TOPIC.get(cat) or kw_topic(name), sku=sku,
+                                       pack_qty=pack_qty(name), price_date=month))
     # --- Pet-Vet Biomed: full 2026 price list (PDF, all brands). category = brand.
     for it in load("importer_2026.json"):
         add(lists["petvet"], item("petvet", it["name"], it["price_no_vat"], None, it.get("category"),
