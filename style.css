@@ -122,7 +122,6 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
   .tabs button{padding:6px 4px;font-size:14px}
   main{padding:12px 10px 40px}
   .controls .row{gap:8px}
-  .dl{display:none}
   table{font-size:13px}
   th,td{padding:6px 7px}
   td.name{min-width:130px}
