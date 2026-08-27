@@ -339,6 +339,9 @@ body:not(.mode-clinic) .clinic-only{display:none}
 .ord-tag.sup{border-color:var(--teal);color:var(--teal)}
 .ord-tag.cli{border-color:var(--copper);color:var(--copper)}
 .ord-tag.paid{border-color:var(--ok);color:var(--ok)}
+button.ord-tag{cursor:pointer;background:none;font-family:inherit;font-weight:400;line-height:1.5}
+button.ord-tag:hover{background:var(--teal-soft)}
+.ord-tag.empty{border-style:dashed;color:var(--muted)}
 .ord-ctl{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
 .ord-ctl .qty{width:64px}
 .ord-chk{display:flex;align-items:center;gap:6px;font-size:13.5px;white-space:nowrap}

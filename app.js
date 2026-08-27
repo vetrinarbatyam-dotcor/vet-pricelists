@@ -619,10 +619,16 @@ function renderOrders() {
   ls.forEach(l => {
     const d = document.createElement('div');
     d.className = 'ord-row' + (STRUCK[l.status] ? ' done' : '') + (DONE[l.status] ? ' gone' : '');
-    const tags = [l.supplier ? `<span class="ord-tag sup">${esc(l.supplier)}</span>` : '',
+    // the supplier and the client are editable after the fact: a free-text line added in a
+    // hurry with no supplier would otherwise never show up in that supplier's order sheet.
+    const tags = [
+      `<button class="ord-tag sup${l.supplier ? '' : ' empty'}" data-e="sup" title="שינוי ספק">` +
+        `${l.supplier ? esc(l.supplier) : '＋ ספק'}</button>`,
       `<span class="ord-tag">${CAT_ICO[l.cat] || ''} ${esc(CAT_HEB[l.cat] || l.cat)}</span>`,
-      l.client ? `<span class="ord-tag cli">🧑 ${esc(l.client)}${l.phone ? ' · ' + esc(l.phone) : ''}</span>` : '',
-      l.cat === 'lab' ? `<span class="ord-tag${l.paid ? ' paid' : ''}">${l.paid ? '✔ שולם' : 'לא שולם'}</span>` : ''].join('');
+      `<button class="ord-tag cli${l.client ? '' : ' empty'}" data-e="cli" title="שיוך ללקוח">` +
+        `${l.client ? '🧑 ' + esc(l.client) + (l.phone ? ' · ' + esc(l.phone) : '') : '＋ לקוח'}</button>`,
+      l.cat === 'lab' ? `<span class="ord-tag${l.paid ? ' paid' : ''}">${l.paid ? '✔ שולם' : 'לא שולם'}</span>` : ''
+    ].join('');
     const opts = Object.entries(stFor(l.cat)).map(([k, v]) =>
       `<option value="${k}"${l.status === k ? ' selected' : ''}>${v}</option>`).join('');
     d.innerHTML = `<div class="ord-main"><b>${esc(l.name)}</b><small>${tags}</small></div>
@@ -643,6 +649,17 @@ function renderOrders() {
       else setLine(l.id, 'status', el.value);
     }));
     d.querySelector('[data-a="del"]').addEventListener('click', () => delLine(l.id, l.name));
+    d.querySelector('[data-e="sup"]').addEventListener('click', () => {
+      const v = prompt(l.cat === 'lab' ? 'שם המעבדה:' : 'ספק:', l.supplier || '');
+      if (v != null) setLine(l.id, 'supplier', v.trim());
+    });
+    d.querySelector('[data-e="cli"]').addEventListener('click', () => {
+      const n = prompt('שם הלקוח (ריק = ביטול השיוך):', l.client || '');
+      if (n == null) return;
+      const ph = n.trim() ? prompt('טלפון:', l.phone || '') : '';
+      l.phone = (ph || '').trim();
+      setLine(l.id, 'client', n.trim());
+    });
     frag.appendChild(d);
   });
   box.appendChild(frag);
