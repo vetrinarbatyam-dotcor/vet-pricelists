@@ -82,15 +82,15 @@ def convert(row, cat, sup_by_slug):
     supplier = slug = sku = ""
     price = None
     hit = cat.get(norm(name))
-    if not hit and kind == "food":
-        # food rows carry the company in front: "Hill's PD - i/d חתול (1.5 ק"ג)"
+    if kind == "food":
+        # food rows carry the company in front: "Hill's PD - i/d חתול (1.5 ק"ג)". Once it becomes
+        # the supplier of the line it is only noise in the name.
         m = FOOD_CO_RE.match(name)
-        if m:
-            hit = cat.get(norm(m.group(2)))
-            if not hit:
-                sl = FOOD_CO_SLUG.get(m.group(1).strip().lower())
-                if sl and sl in sup_by_slug:
-                    supplier, slug = sup_by_slug[sl], sl
+        sl = FOOD_CO_SLUG.get(m.group(1).strip().lower()) if m else None
+        if sl and sl in sup_by_slug:
+            supplier, slug = sup_by_slug[sl], sl
+            name = m.group(2).strip()
+            hit = cat.get(norm(name)) or hit
     if hit:
         supplier, slug, sku, price = hit
     created = row["created_at"].replace(" ", "T")[:26]
