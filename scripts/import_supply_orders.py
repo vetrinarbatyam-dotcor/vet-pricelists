@@ -29,6 +29,13 @@ CLIENT_RE = re.compile(r"\[לקוח:(.+?)\]")
 PHONE_RE = re.compile(r"\[טל:(.+?)\]")
 # "[מזון] Hill's PD - i/d חתול (1.5 ק"ג)" — the company sits before the first " - "
 FOOD_CO_RE = re.compile(r"^(.+?)\s+-\s+(.+)$")
+# clinic-pal-hub spells the food company its own way; these are the same suppliers as ours.
+# Even when the exact item does not match a price-list row, the supplier is worth keeping —
+# filtering by supplier is the whole point of the new list.
+FOOD_CO_SLUG = {"hill's pd": "hills-pd", "hill's ve": "hills-ve", "hill's": "hills-pd",
+                "rc vet": "rc-vet", "rc חנויות": "rc-retail", "monge": "monge",
+                "monge vet": "monge-vet", "purina": "purina-vet", "purina חנויות": "purina-retail",
+                "vetlife": "vetlife", "foodiez": "foodiez"}
 
 
 def norm(s):
@@ -47,16 +54,18 @@ def fetch(db):
 def catalog(data_dir):
     """name -> (supplier, slug, sku, price) for every item in every price list."""
     by = {}
+    sup_by_slug = {}
     for f in sorted(Path(data_dir).glob("*/*.json")):
         d = json.loads(f.read_text(encoding="utf-8"))
         meta = d.get("meta", {})
         for it in d.get("items", []):
             by.setdefault(norm(it.get("name")), (meta.get("supplier", ""), meta.get("slug", ""),
                                                  it.get("sku", ""), it.get("price_no_vat")))
-    return by
+        sup_by_slug[meta.get("slug", "")] = meta.get("supplier", "")
+    return by, sup_by_slug
 
 
-def convert(row, cat):
+def convert(row, cat, sup_by_slug):
     name = row["item_name"]
     kind = "general"
     for pre, k in CAT_PREFIX:
@@ -78,6 +87,10 @@ def convert(row, cat):
         m = FOOD_CO_RE.match(name)
         if m:
             hit = cat.get(norm(m.group(2)))
+            if not hit:
+                sl = FOOD_CO_SLUG.get(m.group(1).strip().lower())
+                if sl and sl in sup_by_slug:
+                    supplier, slug = sup_by_slug[sl], sl
     if hit:
         supplier, slug, sku, price = hit
     created = row["created_at"].replace(" ", "T")[:26]
@@ -113,8 +126,8 @@ def main():
     a = ap.parse_args()
 
     rows = fetch(a.db)
-    cat = catalog(a.data)
-    lines = [convert(r, cat) for r in rows]
+    cat, sup_by_slug = catalog(a.data)
+    lines = [convert(r, cat, sup_by_slug) for r in rows]
 
     by_cat, matched = {}, sum(1 for l in lines if l["supplier"])
     for l in lines:
