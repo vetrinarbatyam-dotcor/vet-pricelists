@@ -297,7 +297,7 @@ a.extlink{text-decoration:none;display:inline-flex;align-items:center;gap:5px}
 ul.tick{list-style:none;margin:8px 0;padding:0;display:grid;gap:9px}
 ul.tick li{padding-inline-start:2px}
 ol.steps{margin:8px 0 14px;padding-inline-start:22px;display:grid;gap:7px}
-.warn-line{background:var(--warn-bg);border-inline-start:3px solid var(--warn);border-radius:6px;
+.warn-line{background:var(--warn-bg);border-radius:6px;
   padding:11px 14px;margin:12px 0 0;font-size:14.5px}
 button.big,a.big{font-size:16px;padding:9px 20px}
 code{font-family:ui-monospace,Consolas,monospace;font-size:.9em;background:var(--teal-soft);
