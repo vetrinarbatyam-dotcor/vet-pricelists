@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=23">
+<link rel="stylesheet" href="style.css?v=24">
 </head>
 <body>
 
@@ -188,8 +188,11 @@
 <!-- ===== calculator ===== -->
 <main id="calc" hidden class="page calc-page">
   <div class="page-head">
-    <h1>🧮 מחשבון תמחור</h1>
-    <p>מחשבון מהיר לצוות המרפאה: מזינים מחיר קנייה, הנחה ומרווח — ומקבלים מחיר ללקוח, רווח ואחוז רווח. אפשר גם ללכת אחורה ממחיר מכירה רצוי.</p>
+    <h1>🧮 מחשבון תמחור <span class="tag-internal">לחישוב פנימי בלבד</span></h1>
+    <p>מזינים מחיר של מוצר — ומקבלים מיד מחיר ללקוח, רווח ואחוז רווח, <b>ללא מע״מ וכולל מע״מ</b>.
+      אפשר גם ללכת אחורה: להזין מחיר מכירה רצוי ולראות איזה מרווח הוא מייצג.</p>
+    <p class="internal-note">זה <b>חישוב נקודתי לשימוש הצוות</b> — למי שמתמחר מוצר בודד או צריך תשובה מהירה מול לקוח.
+      הוא <b>לא משנה אף מחיר במחירון</b> ולא חל על שום דבר אחר.</p>
   </div>
   <section class="privacy">
     <h2>🔒 התמחור שלכם נשאר אצלכם — ולא מגיע לאף אחד</h2>
@@ -216,7 +219,8 @@
       <h2>התוצאה</h2>
       <div class="res-row"><span>עלות ללא מע״מ</span><b id="rCostNo">—</b></div>
       <div class="res-row"><span>עלות כולל מע״מ</span><b id="rCost">—</b></div>
-      <div class="res-row big"><span>מחיר ללקוח</span><b id="rSale">—</b></div>
+      <div class="res-row big"><span>מחיר ללקוח <small>כולל מע״מ</small></span><b id="rSale">—</b></div>
+      <div class="res-row"><span>מחיר ללקוח <small>ללא מע״מ</small></span><b id="rSaleNo">—</b></div>
       <div class="res-row"><span>רווח בשקלים</span><b id="rProfit">—</b></div>
       <div class="res-row"><span>מרווח על העלות (markup)</span><b id="rMarkup">—</b></div>
       <div class="res-row"><span>שיעור רווח מהמכירה (margin)</span><b id="rMargin">—</b></div>
@@ -224,13 +228,17 @@
     </section>
   </div>
 
-  <p class="adv-toggle"><button id="advBtn" class="ghost">📐 מחשבון מתקדם — תמחור לפי טווחי מחיר</button></p>
+  <p class="adv-toggle"><button id="advBtn" class="ghost">📐 מחשבון מתקדם — קביעת טווחי מחיר</button></p>
 
   <section id="adv" class="box adv" hidden>
-    <h2>תמחור לפי טווחי מחיר</h2>
-    <p class="hint">ככל שהמוצר יקר יותר, אחוז הרווח בדרך כלל יורד. כאן קובעים את הטווחים פעם אחת:
-      לכל טווח מכפיל (למשל ×2) ותוספת קבועה (למשל +100 ₪), והמחיר ללקוח מחושב לפי הטווח שהעלות נופלת בו.
-      <b>מחיר ללקוח = עלות × מכפיל + תוספת</b>. הכל נשמר בדפדפן שלכם בלבד.</p>
+    <h2>קביעת טווחי מחיר <span class="tag-internal">פנימי</span></h2>
+    <p class="internal-note">כאן <b>קובעים את המסגרת פעם אחת</b> — ומכאן והלאה המחשבון עושה את העבודה לבד:
+      מזינים מחיר של מוצר, והוא בוחר את הטווח המתאים ומחשב את המחיר ללקוח בלי שתצטרכו להזין מרווח.</p>
+    <p class="hint">ככל שהמוצר יקר יותר, אחוז הרווח בדרך כלל יורד. לכל טווח מכפיל (למשל ×2) ותוספת קבועה
+      (למשל +100 ₪), והמחיר נקבע לפי הטווח שהעלות נופלת בו — <b>מחיר ללקוח = עלות × מכפיל + תוספת</b>.
+      ההנחות והמרווחים לכל ספק בנפרד נקבעים במקום אחר, בגלגל השיניים ⚙️.</p>
+    <p class="warn-line">הטווחים האלה הם <b>כלי חישוב פנימי</b>. הם <b>לא חלים על מחירון המרפאה</b> ולא משנים
+      אף מחיר — אלא אם תסמנו במפורש את התיבה שלמטה.</p>
     <div class="tbl"><table><thead><tr>
       <th>טווח עלות (₪, כולל מע״מ)</th><th class="num">× מכפיל</th><th class="num">+ ₪ קבוע</th>
       <th class="num">אחוז רווח על העלות</th><th></th></tr></thead>
@@ -342,6 +350,6 @@
 
 
 
-<script src="app.js?v=19"></script>
+<script src="app.js?v=20"></script>
 </body>
 </html>

@@ -357,6 +357,7 @@ function calcRun(from) {
   $('#rCostNo').textContent = fmt(costNo) + ' ₪';
   $('#rCost').textContent = fmt(cost) + ' ₪';
   $('#rSale').textContent = fmt(sale) + ' ₪';
+  $('#rSaleNo').textContent = fmt(sale / VAT) + ' ₪';
   $('#rProfit').textContent = fmt(profit) + ' ₪';
   $('#rMarkup').textContent = cost ? (100 * profit / cost).toFixed(1) + '%' : '—';
   $('#rMargin').textContent = sale ? (100 * profit / sale).toFixed(1) + '%' : '—';
