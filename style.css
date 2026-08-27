@@ -311,3 +311,46 @@ button.linkish{background:none;border:0;padding:0;color:var(--teal);font:inherit
   margin-inline-start:8px;white-space:nowrap}
 .internal-note{background:var(--teal-soft);border-radius:8px;padding:11px 14px;margin:12px 0 0;font-size:15px}
 .res-row small{font-weight:400;color:var(--muted);font-size:12.5px;margin-inline-start:5px}
+
+/* ---------- orders (clinic copy) ---------- */
+/* everything order-related is server-backed, so it only exists in the clinic build */
+body:not(.mode-clinic) .clinic-only{display:none}
+.tile.orders{grid-column:1/-1;border-style:dashed;border-color:var(--teal)}
+.ord-add .row{align-items:center}
+.pickwrap{position:relative;flex:2 1 240px;min-width:200px}
+.pickwrap input{width:100%}
+.pickwrap .sug{position:absolute;inset-inline:0;top:calc(100% + 4px);z-index:20;margin:0;
+  box-shadow:0 8px 22px rgba(30,42,44,.16)}
+.ord-add .qty{width:72px}
+.ord-add #oName{flex:1 1 160px}
+.ord-add #oSup{flex:1 1 150px}
+.ord-cats{display:flex;flex-wrap:wrap;gap:10px 22px}
+.ordcat{display:flex;align-items:center;gap:7px;font-size:15px}
+.ord-list{display:grid;gap:7px;margin-top:4px}
+.ord-row{display:flex;justify-content:space-between;align-items:center;gap:14px;
+  background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 13px}
+.ord-row.done .ord-main b{text-decoration:line-through;color:var(--muted)}
+.ord-row.gone{opacity:.62}
+.ord-main{min-width:0}
+.ord-main b{display:block;font-weight:500;line-height:1.35}
+.ord-main small{display:block;margin-top:4px}
+.ord-tag{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--line);
+  border-radius:999px;padding:1px 9px;margin-inline-end:5px;margin-top:3px;white-space:nowrap}
+.ord-tag.sup{border-color:var(--teal);color:var(--teal)}
+.ord-tag.cli{border-color:var(--copper);color:var(--copper)}
+.ord-tag.paid{border-color:var(--ok);color:var(--ok)}
+.ord-ctl{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.ord-ctl .qty{width:64px}
+.ord-chk{display:flex;align-items:center;gap:6px;font-size:13.5px;white-space:nowrap}
+.ord-date{color:var(--muted);font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums}
+#oSheetText{width:100%;box-sizing:border-box;font-family:ui-monospace,Consolas,monospace;
+  font-size:13.5px;line-height:1.6;border:1px solid var(--line);border-radius:8px;padding:11px;
+  background:var(--edit-bg);color:var(--ink);margin-bottom:10px}
+#oHist.on{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}
+@media (max-width:700px){
+  .ord-row{flex-direction:column;align-items:stretch;gap:9px}
+  .ord-ctl{justify-content:space-between}
+  .ord-add .row>*{flex:1 1 100%}
+  .ord-add .qty{flex:0 0 72px}
+  .ord-add select{flex:1 1 40%}
+}

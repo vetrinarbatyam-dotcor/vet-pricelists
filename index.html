@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=25">
+<link rel="stylesheet" href="style.css?v=26">
 </head>
 <body>
 
@@ -48,6 +48,7 @@
     <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
   </div>
   <div class="top-actions">
+    <button id="ordersBtn" class="ghost icon clinic-only" title="רשימת ההזמנות">🧾 <span>הזמנות</span></button>
     <button id="calcBtn" class="ghost icon" title="מחשבון תמחור">🧮 <span>מחשבון</span></button>
     <button id="setBtn" class="ghost icon" title="הגדרות תמחור">⚙️</button>
   </div>
@@ -58,6 +59,7 @@
   <h1>במה נתחיל?</h1>
   <p class="home-sub">4 מחירונים גדולים ומחשבון תמחור. הכל מבוסס על מחירי מחירון רשמיים של הספקים — התמחור שלכם נשמר רק בדפדפן שלכם.</p>
   <div class="tiles" id="tiles">
+    <button class="tile orders clinic-only" data-go="orders"><span class="ico">🧾</span><b>הזמנות</b><small>רשימת ההזמנות של המרפאה</small></button>
     <button class="tile" data-go="medical"><span class="ico">💊</span><b>מוצרים ותרופות</b><small id="c-medical">—</small></button>
     <button class="tile" data-go="food"><span class="ico">🍖</span><b>מזון</b><small id="c-food">—</small></button>
     <button class="tile" data-go="labs"><span class="ico">🧪</span><b>מעבדות</b><small id="c-labs">—</small></button>
@@ -148,6 +150,13 @@
     </div>
   </section>
 
+  <section class="box clinic-only">
+    <h2>אילו קטגוריות יופיעו בהזמנות</h2>
+    <p class="hint">מה שמכובה נעלם מרשימת ההזמנות ומסרגל ההוספה. שורות קיימות שלו לא נמחקות — הן חוזרות ברגע שמדליקים,
+      ובינתיים נראות דרך 🕘 היסטוריה. הבחירה נשמרת בשרת וחלה על כל המחשבים במרפאה.</p>
+    <div id="ordCats" class="ord-cats"></div>
+  </section>
+
   <section class="box">
     <h2>עיגול מחיר ללקוח</h2>
     <div class="seg" id="roundSeg" role="group" aria-label="עיגול">
@@ -183,6 +192,69 @@
       <span id="setMsg" class="hint"></span>
     </div>
   </section>
+</main>
+
+<!-- ===== orders (clinic copy only) ===== -->
+<main id="orders" hidden class="page">
+  <div class="page-head">
+    <h1>🧾 הזמנות</h1>
+    <p>רשימת ההזמנות של המרפאה, משותפת לכל המחשבים. בחירת פריט ממחירון מצמידה לשורה את הספק —
+      ואז אפשר לסנן לפי ספק ולהוציא גיליון הזמנה מוכן.
+      <button id="oPricesBtn" class="linkish">📋 למחירונים</button></p>
+  </div>
+
+  <section class="box ord-add">
+    <div class="row gap">
+      <div class="pickwrap">
+        <input id="oPick" type="search" placeholder="🔍 פריט ממחירון — שם, מק״ט או ספק…" aria-label="פריט ממחירון">
+        <div id="oSug" class="sug" hidden></div>
+      </div>
+      <input id="oName" placeholder="או שם חופשי…" aria-label="שם חופשי">
+      <input id="oQty" class="qty" type="number" min="1" step="1" value="1" aria-label="כמות">
+      <select id="oCat" aria-label="קטגוריה"></select>
+      <input id="oSup" list="oSupList" placeholder="ספק (אופציונלי)" aria-label="ספק">
+      <datalist id="oSupList"></datalist>
+      <button id="oClientBtn" class="ghost">🧑 ללקוח</button>
+      <button id="oAdd">＋ הוסף</button>
+    </div>
+    <div class="row gap" id="oClientRow" hidden>
+      <input id="oClient" placeholder="שם הלקוח שהזמין" aria-label="שם לקוח">
+      <input id="oPhone" placeholder="טלפון" dir="ltr" aria-label="טלפון">
+      <label id="oPaidWrap" class="ord-chk" hidden><input type="checkbox" id="oPaid"> שולם</label>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="row">
+      <input id="oQ" type="search" placeholder="חיפוש ברשימה — פריט, ספק או לקוח…" aria-label="חיפוש בהזמנות">
+      <div class="seg" id="oFilter" role="group" aria-label="סינון">
+        <button data-of="active" class="on">פעילות</button><button data-of="open">רק פתוחות</button><button data-of="missing">חסר</button><button data-of="client">ללקוח</button>
+      </div>
+      <button id="oHist" class="ghost">🕘 היסטוריה</button>
+      <button id="oSheet" class="ghost" hidden>📋 גיליון הזמנה</button>
+    </div>
+    <div id="oCats" class="chips"></div>
+    <div id="oSups" class="chips sub" hidden></div>
+  </section>
+
+  <section id="oSheetBox" class="box" hidden>
+    <h2 id="oSheetTitle">גיליון הזמנה</h2>
+    <p class="hint">רק שורות <b>ממתין</b> ו<b>חסר</b> נכנסות לגיליון — מה שכבר הוזמן או במשלוח לא מוזמן שוב.</p>
+    <textarea id="oSheetText" rows="12" aria-label="נוסח ההזמנה"></textarea>
+    <div class="row gap">
+      <button id="oCopy">📋 העתק</button>
+      <a id="oWa" class="ghost" target="_blank" rel="noopener">💬 וואטסאפ</a>
+      <button id="oPrint" class="ghost">🖨 הדפס</button>
+      <a id="oMail" class="ghost">✉ מייל</a>
+      <button id="oMark" class="ghost">✔ סמן הכל כהוזמן</button>
+      <button id="oSheetClose" class="ghost">סגור</button>
+      <span id="oSheetMsg" class="hint"></span>
+    </div>
+  </section>
+
+  <div class="meta-line"><span id="oCount"></span></div>
+  <div id="ordList" class="ord-list"></div>
+  <p id="oEmpty" class="empty" hidden>אין הזמנות להצגה. הוסיפו פריט למעלה.</p>
 </main>
 
 <!-- ===== calculator ===== -->
@@ -350,6 +422,6 @@
 
 
 
-<script src="app.js?v=20"></script>
+<script src="app.js?v=21"></script>
 </body>
 </html>

@@ -60,6 +60,9 @@ const num = v => (v === '' || v == null || isNaN(+v)) ? null : +v;
 const fmt = n => n == null ? '' : n.toLocaleString('he-IL', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const baseSlug = s => s.replace(/-shop$/, '');
+// one predicate for every item search in the app — the catalog box and the two item pickers
+// used to disagree about which fields count.
+const matches = (i, low) => `${i.name} ${i.sku || ''} ${i.notes || ''} ${i.category || ''} ${i.supplier}`.toLowerCase().includes(low);
 
 function params(r) {
   const sec = P.sections[r.sec] || {}, sup = P.suppliers[r.slug] || {}, o = P.rows[r.id] || {};
@@ -118,11 +121,16 @@ const statusHeb = s => s === 'current' ? 'עדכני' : s === 'stale' ? 'ישן'
 
 // ---------- pages ----------
 function show(page) {
-  ['home', 'catalog', 'settings', 'calc', 'status', 'help'].forEach(p => $('#' + p).hidden = p !== page);
+  ['home', 'catalog', 'settings', 'calc', 'status', 'help', 'orders'].forEach(p => $('#' + p).hidden = p !== page);
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
   $('.mode-seg').style.visibility = page === 'catalog' ? '' : 'hidden';
 }
-function goHome() { S.type = null; show('home'); $$('#tabs button').forEach(b => b.classList.remove('on')); }
+function goHome() {
+  S.type = null; $$('#tabs button').forEach(b => b.classList.remove('on'));
+  // in the clinic copy the orders list is the front page; the price lists sit behind it
+  show(clinicMode ? 'orders' : 'home');
+  if (clinicMode) renderOrders();
+}
 
 async function openSec(sec) {
   S.type = sec; S.supplier = S.category = S.topic = null; S.q = ''; S.shown = PAGE; S.f = {};
@@ -168,7 +176,7 @@ async function render() {
     if (S.view === 'supplier' && S.category && i.category !== S.category) return;
     if (S.view === 'topic' && S.topic && i.topic !== S.topic) return;
     if (!facetOk(i)) return;
-    if (q && !`${i.name} ${i.sku || ''} ${i.notes || ''} ${i.category || ''} ${i.supplier}`.toLowerCase().includes(q)) return;
+    if (q && !matches(i, q)) return;
     rows.push(i);
   }));
   if (S.view === 'topic' || !S.supplier) rows.sort((a, b) => a.supplier.localeCompare(b.supplier, 'he') || a.name.localeCompare(b.name, 'he'));
@@ -326,6 +334,23 @@ function renderSettings() {
     }));
     tb.appendChild(tr);
   });
+  const oc = $('#ordCats');
+  if (oc && clinicMode) {
+    oc.innerHTML = '';
+    CATS.forEach(([k, lab, ico]) => {
+      const w = document.createElement('label');
+      w.className = 'ordcat';
+      w.innerHTML = `<input type="checkbox"${O.cats.includes(k) ? ' checked' : ''}> ${ico} ${esc(lab)}`;
+      w.querySelector('input').addEventListener('change', e => {
+        const cur = new Set(O.cats);
+        if (e.target.checked) cur.add(k); else cur.delete(k);
+        O.cats = CATS.map(([c]) => c).filter(c => cur.has(c));
+        if (OS.cat && !O.cats.includes(OS.cat)) OS.cat = null;
+        fillOrderCats(); renderOrders(); saveOrders([]);
+      });
+      oc.appendChild(w);
+    });
+  }
   $$('#roundSeg button').forEach(b => b.classList.toggle('on', +b.dataset.round === (+P.round || 0)));
   $$('#viewSeg button').forEach(b => b.classList.toggle('on', b.dataset.cview === (P.clinicView || 'full')));
 }
@@ -339,7 +364,7 @@ async function calcSuggest(q) {
     ALL = lists.flatMap(l => l.items);
   }
   const low = q.toLowerCase();
-  return ALL.filter(i => i.name.toLowerCase().includes(low)).slice(0, 8);
+  return ALL.filter(i => matches(i, low)).slice(0, 8);
 }
 function calcRun(from) {
   const list = +$('#cList').value || 0, disc = +$('#cDisc').value || 0;
@@ -442,6 +467,249 @@ function renderStatus() {
       <td class="num">${m.price_list_date || '—'}</td><td class="num">${m.item_count}</td><td>${srcCell(m)}</td></tr>`).join('');
 }
 
+// ---------- orders (clinic copy only) ----------
+// One file on the server holds the whole list, so every computer in the clinic sees the same
+// thing. Writes re-read and merge instead of overwriting: a computer holding a stale list can
+// never wipe what another one added.
+const ORD_STORE = 'store/orders.json';
+const CATS = [['general', 'כללי', '📦'], ['food', 'מזון', '🍖'], ['clean', 'ניקיון', '🧽'],
+              ['shop', 'חנות', '🛍️'], ['lab', 'מעבדה חיצונית', '🧪']];
+const CAT_HEB = Object.fromEntries(CATS.map(([k, l]) => [k, l]));
+const CAT_ICO = Object.fromEntries(CATS.map(([k, , i]) => [k, i]));
+const DEF_CATS = ['general', 'food', 'clean', 'lab'];
+const SEC_CAT = { medical: 'general', food: 'food', shop: 'shop', labs: 'lab' };
+// the statuses the staff already knows from clinic-pal-hub, verbatim
+const ST = { pending: 'ממתין', missing: 'חסר', in_delivery: 'במשלוח', ordered: 'הוזמן', received: 'התקבל' };
+const LAB_ST = { taken: 'נלקח', sent: 'נשלח', back: 'חזר', reported: 'דווח' };
+// what was ordered sinks to the bottom of the list — same order the staff is used to
+const ST_ORDER = { pending: 0, missing: 1, in_delivery: 2, received: 3, ordered: 4,
+                   taken: 0, sent: 1, back: 2, reported: 3 };
+const DONE = { received: 1, reported: 1 }, STRUCK = { received: 1, ordered: 1, reported: 1 };
+const OPEN_ST = { pending: 1, missing: 1, taken: 1, sent: 1 };
+const stFor = cat => cat === 'lab' ? LAB_ST : ST;
+const DAY = 864e5, HIDE_DONE_AFTER = 30 * DAY, TOMB_TTL = 90 * DAY;
+
+let O = { v: 1, cats: DEF_CATS.slice(), lines: [] };
+let OS = { cat: null, sup: null, filter: 'active', q: '', hist: false };
+let ordTimer = null, sheetIds = null, picked = null;
+
+const oid = () => 'o-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 6);
+const bump = ts => new Date(new Date(ts).getTime() + 1).toISOString();
+const dShort = ts => { const d = new Date(ts); return isNaN(d) ? '' : d.toLocaleDateString('he-IL', { day: '2-digit', month: '2-digit' }); };
+
+// --- pure helpers (also exercised by tests/test_orders.js) ---
+function mergeLines(a, b) {
+  const m = new Map();
+  [...a, ...b].forEach(l => {
+    const cur = m.get(l.id);
+    if (!cur || (l.updated_at || '') >= (cur.updated_at || '')) m.set(l.id, l);
+  });
+  return [...m.values()];
+}
+function sortLines(ls) {
+  return ls.slice().sort((x, y) => (ST_ORDER[x.status] ?? 9) - (ST_ORDER[y.status] ?? 9) ||
+    (y.created_at || '').localeCompare(x.created_at || ''));
+}
+function sheetText(lines, today) {
+  const by = {};
+  lines.forEach(l => (by[l.supplier || 'ללא ספק'] = by[l.supplier || 'ללא ספק'] || []).push(l));
+  const d = today || new Date().toLocaleDateString('he-IL');
+  const out = [];
+  Object.keys(by).sort((a, b) => a.localeCompare(b, 'he')).forEach(sup => {
+    out.push(`📦 הזמנה — ${sup}`, d, '');
+    by[sup].forEach(l => out.push(`• ${l.name} — ${l.qty} יח'` + (l.client ? ` (ל${l.client})` : '')));
+    out.push('', `סה"כ פריטים: ${by[sup].length}`, '');
+  });
+  out.push('מרפאת פט קייר');
+  return out.join('\n');
+}
+
+// --- storage ---
+async function loadOrders() {
+  try {
+    const s = await getJSON(ORD_STORE);
+    const cut = new Date(Date.now() - TOMB_TTL).toISOString();
+    O = { v: 1, cats: Array.isArray(s.cats) ? s.cats : DEF_CATS.slice(),
+          // ponytail: tombstones expire after 90d; if the file ever gets big, split per line
+          lines: (Array.isArray(s.lines) ? s.lines : []).filter(l => !(l.deleted && (l.updated_at || '') < cut)) };
+    return true;
+  } catch { toast('⚠️ לא הצלחנו לטעון את ההזמנות מהשרת', true); return false; }
+}
+// GET → merge → PUT → read back. The read-back is not polish: it is the only thing that catches
+// two computers writing inside the same few hundred ms, which merging alone cannot.
+async function saveOrders(ids) {
+  const mine = O.lines.filter(l => ids.includes(l.id));
+  for (let attempt = 0; attempt < 2; attempt++) {
+    let remote = null;
+    try { remote = await getJSON(ORD_STORE); } catch {}
+    if (remote && Array.isArray(remote.lines)) {
+      // a clock running behind the other computer's would make a fresh edit look older
+      const rm = new Map(remote.lines.map(l => [l.id, l]));
+      mine.forEach(l => { const p = rm.get(l.id); if (p && (p.updated_at || '') >= l.updated_at) l.updated_at = bump(p.updated_at); });
+      O.lines = mergeLines(remote.lines, O.lines);
+    }
+    try {
+      const r = await fetch(ORD_STORE, { method: 'PUT', headers: { 'Content-Type': 'application/json' },
+                                         body: JSON.stringify({ v: 1, cats: O.cats, lines: O.lines }) });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+    } catch (e) { toast('⚠️ השמירה נכשלה (' + e.message + ') — ההזמנה לא נשמרה', true); return false; }
+    let back = null;
+    try { back = await getJSON(ORD_STORE); } catch { return true; }
+    const bm = new Map((back.lines || []).map(l => [l.id, l]));
+    if (!mine.some(l => (bm.get(l.id) || {}).updated_at !== l.updated_at)) {
+      O.lines = mergeLines(O.lines, back.lines || []);
+      return true;
+    }
+  }
+  toast('⚠️ מחשב אחר שמר באותו רגע — בדקו שהשורה נכנסה', true);
+  return false;
+}
+function ordPoll() {
+  clearTimeout(ordTimer);
+  ordTimer = setTimeout(async () => {
+    if (!$('#orders').hidden && document.visibilityState === 'visible') {
+      try {
+        const s = await getJSON(ORD_STORE);
+        O.lines = mergeLines(O.lines, s.lines || []);
+        if (Array.isArray(s.cats)) O.cats = s.cats;
+        // never re-render under someone's fingers — it would wipe a half-typed quantity
+        if (!$('#ordList').contains(document.activeElement)) renderOrders();
+      } catch {}
+    }
+    ordPoll();
+  }, 30000);
+}
+
+// --- list ---
+function ordLines(skip) {
+  const q = OS.q.trim().toLowerCase();
+  const cut = new Date(Date.now() - HIDE_DONE_AFTER).toISOString();
+  return sortLines(O.lines.filter(l => !l.deleted
+    && (OS.hist || (O.cats.includes(l.cat) && !(DONE[l.status] && (l.updated_at || '') < cut)))
+    && (skip === 'cat' || !OS.cat || l.cat === OS.cat)
+    && (skip === 'sup' || !OS.sup || (l.supplier || '') === OS.sup)
+    && (OS.filter === 'active' || (OS.filter === 'open' ? OPEN_ST[l.status]
+        : OS.filter === 'missing' ? l.status === 'missing' : !!l.client))
+    && (!q || `${l.name} ${l.supplier || ''} ${l.client || ''}`.toLowerCase().includes(q))));
+}
+function renderOrders() {
+  const cc = $('#oCats'); cc.innerHTML = '';
+  const open = {};
+  O.lines.forEach(l => { if (!l.deleted && OPEN_ST[l.status]) open[l.cat] = (open[l.cat] || 0) + 1; });
+  cc.appendChild(mk('הכל', !OS.cat, () => { OS.cat = null; OS.sup = null; renderOrders(); }));
+  CATS.filter(([k]) => O.cats.includes(k)).forEach(([k, lab, ico]) =>
+    cc.appendChild(mk(`${ico} ${lab}`, OS.cat === k, () => { OS.cat = k; OS.sup = null; renderOrders(); }, open[k] || 0)));
+
+  const sc = $('#oSups'); sc.innerHTML = '';
+  const sup = {};
+  ordLines('sup').forEach(l => { if (l.supplier) sup[l.supplier] = (sup[l.supplier] || 0) + 1; });
+  const names = Object.keys(sup).sort((a, b) => sup[b] - sup[a]);
+  sc.hidden = !names.length;
+  if (names.length) {
+    sc.appendChild(mk('כל הספקים', !OS.sup, () => { OS.sup = null; renderOrders(); }));
+    names.forEach(n => sc.appendChild(mk(n, OS.sup === n, () => { OS.sup = n; renderOrders(); }, sup[n])));
+  }
+
+  const ls = ordLines();
+  $('#oSheet').hidden = !ls.some(l => l.status === 'pending' || l.status === 'missing');
+  $('#oSheet').textContent = OS.sup ? `📋 הזמנה ל${OS.sup}` : '📋 גיליון הזמנה';
+  $('#oCount').textContent = `${ls.length} שורות · ${ls.filter(l => OPEN_ST[l.status]).length} פתוחות`;
+  const box = $('#ordList'); box.innerHTML = '';
+  const frag = document.createDocumentFragment();
+  ls.forEach(l => {
+    const d = document.createElement('div');
+    d.className = 'ord-row' + (STRUCK[l.status] ? ' done' : '') + (DONE[l.status] ? ' gone' : '');
+    const tags = [l.supplier ? `<span class="ord-tag sup">${esc(l.supplier)}</span>` : '',
+      `<span class="ord-tag">${CAT_ICO[l.cat] || ''} ${esc(CAT_HEB[l.cat] || l.cat)}</span>`,
+      l.client ? `<span class="ord-tag cli">🧑 ${esc(l.client)}${l.phone ? ' · ' + esc(l.phone) : ''}</span>` : '',
+      l.cat === 'lab' ? `<span class="ord-tag${l.paid ? ' paid' : ''}">${l.paid ? '✔ שולם' : 'לא שולם'}</span>` : ''].join('');
+    const opts = Object.entries(stFor(l.cat)).map(([k, v]) =>
+      `<option value="${k}"${l.status === k ? ' selected' : ''}>${v}</option>`).join('');
+    d.innerHTML = `<div class="ord-main"><b>${esc(l.name)}</b><small>${tags}</small></div>
+      <div class="ord-ctl">
+        ${l.cat === 'lab'
+          ? `<label class="ord-chk"><input type="checkbox" data-a="paid"${l.paid ? ' checked' : ''}> שולם</label>`
+          : `<label class="ord-chk"><input type="checkbox" data-a="ordered"${l.status === 'ordered' ? ' checked' : ''}> הוזמן</label>`}
+        <input class="qty" type="number" min="1" step="1" data-a="qty" value="${l.qty}" aria-label="כמות">
+        <span class="ord-date">${dShort(l.created_at)}</span>
+        <select data-a="status" aria-label="סטטוס">${opts}</select>
+        <button class="ghost small" data-a="del" title="מחיקה">🗑</button>
+      </div>`;
+    d.querySelectorAll('[data-a]').forEach(el => el.addEventListener('change', () => {
+      const a = el.dataset.a;
+      if (a === 'ordered') setLine(l.id, 'status', el.checked ? 'ordered' : 'pending');
+      else if (a === 'qty') setLine(l.id, 'qty', Math.max(1, parseInt(el.value, 10) || 1));
+      else if (a === 'paid') setLine(l.id, 'paid', el.checked);
+      else setLine(l.id, 'status', el.value);
+    }));
+    d.querySelector('[data-a="del"]').addEventListener('click', () => delLine(l.id, l.name));
+    frag.appendChild(d);
+  });
+  box.appendChild(frag);
+  $('#oEmpty').hidden = ls.length > 0;
+}
+function setLine(id, field, val) {
+  const l = O.lines.find(x => x.id === id); if (!l) return;
+  l[field] = val; l.updated_at = new Date().toISOString();
+  renderOrders(); saveOrders([id]);
+}
+function delLine(id, name) {
+  if (!confirm(`למחוק את "${name}" מהרשימה?`)) return;
+  const i = O.lines.findIndex(x => x.id === id); if (i < 0) return;
+  // a tombstone, not a splice: without it a computer holding a stale list resurrects the row
+  O.lines[i] = { id, deleted: true, updated_at: new Date().toISOString() };
+  renderOrders(); saveOrders([id]);
+}
+function addLine() {
+  const name = ($('#oName').value.trim() || $('#oPick').value.trim());
+  if (!name) return void toast('צריך שם פריט', true);
+  const cat = $('#oCat').value, now = new Date().toISOString();
+  const p = picked && picked.name === name ? picked : null;
+  const l = { id: oid(), cat, name, qty: Math.max(1, parseInt($('#oQty').value, 10) || 1),
+    status: cat === 'lab' ? 'taken' : 'pending',
+    supplier: $('#oSup').value.trim(), slug: p ? p.slug : '', sku: p ? (p.sku || '') : '',
+    price: p ? p.price_no_vat : null,
+    client: $('#oClient').value.trim(), phone: $('#oPhone').value.trim(),
+    paid: cat === 'lab' && $('#oPaid').checked, note: '',
+    created_at: now, updated_at: now };
+  O.lines.push(l);
+  picked = null;
+  ['oPick', 'oName', 'oClient', 'oPhone'].forEach(id => $('#' + id).value = '');
+  $('#oQty').value = 1; $('#oPaid').checked = false; $('#oSug').hidden = true;
+  renderOrders(); saveOrders([l.id]);
+  toast('נוסף ✓');
+}
+function ordCatChanged() {
+  const lab = $('#oCat').value === 'lab';
+  $('#oSup').placeholder = lab ? 'שם המעבדה' : 'ספק (אופציונלי)';
+  $('#oPaidWrap').hidden = !lab;
+  if (lab) $('#oClientRow').hidden = false;
+}
+function openSheet() {
+  const src = ordLines().filter(l => l.status === 'pending' || l.status === 'missing');
+  if (!src.length) return void toast('אין שורות ממתינות בסינון הזה', true);
+  // freeze the set: the list may re-poll between generating the sheet and marking it ordered
+  sheetIds = src.map(l => l.id);
+  const txt = sheetText(src);
+  $('#oSheetText').value = txt;
+  $('#oSheetTitle').textContent = OS.sup ? `גיליון הזמנה — ${OS.sup}` : 'גיליון הזמנה';
+  $('#oWa').href = 'https://wa.me/?text=' + encodeURIComponent(txt);
+  $('#oMail').href = 'mailto:?subject=' + encodeURIComponent('הזמנה — ' + (OS.sup || 'מרפאת פט קייר')) +
+    '&body=' + encodeURIComponent(txt);
+  $('#oSheetMsg').textContent = '';
+  $('#oSheetBox').hidden = false;
+  $('#oSheetBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+async function markSheetOrdered() {
+  if (!sheetIds || !sheetIds.length) return;
+  const now = new Date().toISOString();
+  const hit = O.lines.filter(l => sheetIds.includes(l.id) && !l.deleted);
+  hit.forEach(l => { l.status = 'ordered'; l.updated_at = now; });
+  renderOrders();
+  await saveOrders(hit.map(l => l.id));
+  $('#oSheetMsg').textContent = `${hit.length} שורות סומנו כהוזמנו.`;
+}
+
 // ---------- gate + wiring ----------
 async function sha256(s) { const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join(''); }
 
@@ -449,6 +717,7 @@ async function sha256(s) { const b = await crypto.subtle.digest('SHA-256', new T
 // server instead of the browser, and the privacy panels say what is actually true here.
 async function startClinic() {
   clinicMode = true;
+  document.body.classList.add('mode-clinic');
   document.title = CONFIG.product || 'מחירון המרפאה';
   const brand = $('.brand .product'); if (brand) brand.textContent = CONFIG.product || 'VetPrices';
   try {
@@ -456,12 +725,18 @@ async function startClinic() {
     P = Object.assign({}, EMPTY, s);
     if (!P.tiers || !Array.isArray(P.tiers.bands) || !P.tiers.bands.length) P.tiers = { on: false, bands: TIERS.map(b => ({ ...b })) };
   } catch { toast('⚠️ לא הצלחנו לטעון את ההגדרות מהשרת — שינויים עלולים לא להישמר', true); }
+  await loadOrders();
   $$('.privacy').forEach(p => {
     p.innerHTML = '<h2>🔒 העותק הפנימי של המרפאה</h2><ul>' +
       '<li><b>ההגדרות נשמרות בשרת המרפאה</b> ומשותפות לכל המחשבים — מה שתשנו כאן יופיע גם בכל עמדה אחרת ובבית.</li>' +
       '<li><b>הדף מוגן בסיסמה.</b> ההנחות והמרווחים האמיתיים שלכם נמצאים כאן ורק כאן — הם לעולם לא מגיעים לאתר הציבורי.</li>' +
       '<li><b>המחירונים עצמם זהים לאתר הציבורי</b> ומתעדכנים יחד איתו — אותו מקור נתונים בדיוק.</li></ul>';
   });
+  // the public footer promises nothing leaves the browser; here settings and orders — including
+  // client names and phones — do live on the clinic's own server, and the line has to say so.
+  const fp = $('.foot-privacy');
+  if (fp) fp.innerHTML = '🔒 <b>עותק פנימי:</b> ההגדרות וההזמנות — כולל שמות וטלפונים של לקוחות — ' +
+    'נשמרות בשרת המרפאה ומשותפות לכל המחשבים. הן לעולם לא מגיעות לאתר הציבורי.';
   (CONFIG.links || []).forEach(l => {
     const a = document.createElement('a');
     a.className = 'ghost icon extlink'; a.href = l.url; a.target = '_blank'; a.rel = 'noopener';
@@ -504,7 +779,9 @@ function start() {
 
   $$('#tiles .tile').forEach(b => b.addEventListener('click', () => {
     const g = b.dataset.go;
-    if (g === 'calc') { show('calc'); calcRun(); renderAdv(); } else openSec(g);
+    if (g === 'calc') { show('calc'); calcRun(); renderAdv(); }
+    else if (g === 'orders') { show('orders'); renderOrders(); }
+    else openSec(g);
   }));
   $('#homeBtn').addEventListener('click', e => { e.preventDefault(); goHome(); });
   $$('#tabs button').forEach(b => b.addEventListener('click', () => openSec(b.dataset.type)));
@@ -588,7 +865,75 @@ function start() {
       }));
     }, 250);
   });
+  if (clinicMode) wireOrders();
   goHome();
 }
-init().catch(e => { document.body.innerHTML = `<p style="padding:40px;text-align:center">שגיאה בטעינת הנתונים (${esc(e.message)}). נסו לרענן.</p>`; });
+
+function fillOrderCats() {
+  $('#oCat').innerHTML = CATS.filter(([k]) => O.cats.includes(k))
+    .map(([k, lab, ico]) => `<option value="${k}">${ico} ${esc(lab)}</option>`).join('');
+  ordCatChanged();
+}
+function wireOrders() {
+  fillOrderCats();
+  $('#oSupList').innerHTML = [...new Set(INDEX.pricelists.map(m => m.supplier))]
+    .sort((a, b) => a.localeCompare(b, 'he')).map(x => `<option value="${esc(x)}">`).join('');
+  $('#oAdd').addEventListener('click', addLine);
+  ['oName', 'oQty', 'oClient', 'oPhone', 'oSup'].forEach(id =>
+    $('#' + id).addEventListener('keydown', e => { if (e.key === 'Enter') addLine(); }));
+  $('#oCat').addEventListener('change', ordCatChanged);
+  $('#oClientBtn').addEventListener('click', () => {
+    const r = $('#oClientRow'); r.hidden = !r.hidden; if (!r.hidden) $('#oClient').focus();
+  });
+  let ot; $('#oQ').addEventListener('input', () => {
+    clearTimeout(ot); ot = setTimeout(() => { OS.q = $('#oQ').value; renderOrders(); }, 200);
+  });
+  $$('#oFilter button').forEach(b => b.addEventListener('click', () => {
+    OS.filter = b.dataset.of; $$('#oFilter button').forEach(x => x.classList.toggle('on', x === b)); renderOrders();
+  }));
+  $('#oHist').addEventListener('click', () => {
+    OS.hist = !OS.hist;
+    $('#oHist').classList.toggle('on', OS.hist);
+    $('#oHist').textContent = OS.hist ? '🕘 הסתר היסטוריה' : '🕘 היסטוריה';
+    renderOrders();
+  });
+  $('#oSheet').addEventListener('click', openSheet);
+  $('#oSheetClose').addEventListener('click', () => $('#oSheetBox').hidden = true);
+  $('#oCopy').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText($('#oSheetText').value); $('#oSheetMsg').textContent = 'הועתק ✓'; }
+    catch { $('#oSheetText').select(); $('#oSheetMsg').textContent = 'סמנו והעתיקו ידנית (Ctrl+C).'; }
+  });
+  $('#oPrint').addEventListener('click', () => {
+    const w = window.open('', '_blank'); if (!w) return void toast('הדפדפן חסם את חלון ההדפסה', true);
+    w.document.write(`<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><title>הזמנה</title></head>` +
+      `<body><pre style="font:14px/1.7 Heebo,Arial,sans-serif;white-space:pre-wrap">${esc($('#oSheetText').value)}</pre></body></html>`);
+    w.document.close(); w.focus(); w.print();
+  });
+  $('#oMark').addEventListener('click', markSheetOrdered);
+  $('#ordersBtn').addEventListener('click', () => { show('orders'); renderOrders(); });
+  $('#oPricesBtn').addEventListener('click', () => show('home'));
+  let op; $('#oPick').addEventListener('input', () => {
+    picked = null;
+    clearTimeout(op); op = setTimeout(async () => {
+      const q = $('#oPick').value.trim(), box = $('#oSug');
+      if (q.length < 2) return void (box.hidden = true);
+      const hits = await calcSuggest(q);
+      box.innerHTML = hits.map((h, i) => `<button data-i="${i}">${esc(h.name)} <small>${esc(h.supplier)}` +
+        `${h.sku ? ' · ' + esc(h.sku) : ''} · ${fmt(h.price_no_vat)} ₪</small></button>`).join('') ||
+        '<p class="hint">לא נמצא במחירונים — אפשר להקליד שם חופשי</p>';
+      box.hidden = false;
+      box.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+        const h = hits[+b.dataset.i];
+        picked = h;
+        $('#oPick').value = h.name; $('#oName').value = ''; $('#oSup').value = h.supplier || '';
+        const c = SEC_CAT[h.sec] || 'general';
+        if (O.cats.includes(c)) { $('#oCat').value = c; ordCatChanged(); }
+        box.hidden = true; $('#oQty').focus();
+      }));
+    }, 250);
+  });
+  ordPoll();
+}
+if (typeof document !== 'undefined') init().catch(e => { document.body.innerHTML = `<p style="padding:40px;text-align:center">שגיאה בטעינת הנתונים (${esc(e.message)}). נסו לרענן.</p>`; });
+if (typeof module !== 'undefined' && module.exports) module.exports = { mergeLines, sortLines, sheetText };
 })();
