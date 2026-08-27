@@ -96,7 +96,12 @@ function setRow(r, field, val) {
 
 // ---------- data ----------
 // no-cache = revalidate every load, so a rebuilt price list shows up without a version stamp.
-async function getJSON(u) { const r = await fetch(u, { cache: 'no-cache' }); if (!r.ok) throw new Error(u); return r.json(); }
+async function getJSON(u) {
+  // the offline bundle carries every file inline, so it never touches the network
+  const emb = window.__VP_EMBED;
+  if (emb && Object.prototype.hasOwnProperty.call(emb, u)) return JSON.parse(JSON.stringify(emb[u]));
+  const r = await fetch(u, { cache: 'no-cache' }); if (!r.ok) throw new Error(u); return r.json();
+}
 async function loadSec(sec) {
   if (cache[sec]) return cache[sec];
   const metas = INDEX.pricelists.filter(m => m.type === sec);
@@ -113,7 +118,7 @@ const statusHeb = s => s === 'current' ? 'עדכני' : s === 'stale' ? 'ישן'
 
 // ---------- pages ----------
 function show(page) {
-  ['home', 'catalog', 'settings', 'calc', 'status'].forEach(p => $('#' + p).hidden = p !== page);
+  ['home', 'catalog', 'settings', 'calc', 'status', 'help'].forEach(p => $('#' + p).hidden = p !== page);
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
   $('.mode-seg').style.visibility = page === 'catalog' ? '' : 'hidden';
 }
@@ -470,7 +475,13 @@ async function init() {
   const mail = `mailto:${CONFIG.contact}?subject=`;
   $('#reportLink').href = mail + encodeURIComponent('VetPrices — דיווח על טעות / בקשת הסרה');
   $('#gateAsk').href = mail + encodeURIComponent('VetPrices — בקשת קוד גישה');
+  $('#cloudLink').href = mail + encodeURIComponent('VetPrices — מעוניין בהגדרות ששמורות בשרת');
   if (CONFIG.mode === 'clinic') return startClinic();
+  if (CONFIG.mode === 'offline') {
+    document.body.classList.add('mode-offline');
+    const brand = $('.brand .product'); if (brand) brand.textContent = CONFIG.product || 'VetPrices';
+    return start();
+  }
   let ok = false; try { ok = localStorage.getItem('vp_access') === CONFIG.access_hash; } catch {}
   if (ok) return start();
   $('#gate').hidden = false;
@@ -510,6 +521,9 @@ function start() {
     P.clinicView = b.dataset.cview; save(); renderSettings();
     S.margins = P.clinicView !== 'compact'; renderTableIfOpen();
   }));
+  $$('.helpLink').forEach(b => b.addEventListener('click', () => { $('#helpMsg').textContent = ''; show('help'); }));
+  $('#helpBtn').addEventListener('click', () => { $('#helpMsg').textContent = ''; show('help'); });
+  $('#helpBtn2').addEventListener('click', () => { $('#helpMsg').textContent = ''; show('help'); });
   $('#statusBtn').addEventListener('click', renderStatus);
   $('#statusBtn2').addEventListener('click', renderStatus);
   const openSettings = () => { show('settings'); renderSettings(); };
@@ -536,17 +550,23 @@ function start() {
   });
   $('#supQ').addEventListener('input', renderSettings);
   $$('#roundSeg button').forEach(b => b.addEventListener('click', () => { P.round = +b.dataset.round; save(); renderSettings(); renderTableIfOpen(); }));
-  $('#exportBtn').addEventListener('click', () => {
+  // the same two actions are offered on the settings page and on the help page
+  let msgTarget = '#setMsg';
+  const setMsg = t => { const el = $(msgTarget); if (el) el.textContent = t; };
+  function doExport() {
     const a = document.createElement('a');
     a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(P, null, 1));
     a.download = 'vetprices-pricing.json'; a.click();
-    $('#setMsg').textContent = 'ההגדרות יוצאו לקובץ.';
-  });
-  $('#importBtn').addEventListener('click', () => $('#importFile').click());
+    setMsg('ההגדרות יוצאו לקובץ. שמרו אותו במקום בטוח.');
+  }
+  $('#exportBtn').addEventListener('click', () => { msgTarget = '#setMsg'; doExport(); });
+  $('#exportBtn2').addEventListener('click', () => { msgTarget = '#helpMsg'; doExport(); });
+  $('#importBtn').addEventListener('click', () => { msgTarget = '#setMsg'; $('#importFile').click(); });
+  $('#importBtn2').addEventListener('click', () => { msgTarget = '#helpMsg'; $('#importFile').click(); });
   $('#importFile').addEventListener('change', async e => {
     const f = e.target.files[0]; if (!f) return;
-    try { P = Object.assign({}, EMPTY, JSON.parse(await f.text())); save(); renderSettings(); $('#setMsg').textContent = 'ההגדרות יובאו.'; }
-    catch { $('#setMsg').textContent = 'הקובץ אינו קובץ הגדרות תקין.'; }
+    try { P = Object.assign({}, EMPTY, JSON.parse(await f.text())); save(); renderSettings(); setMsg('ההגדרות יובאו.'); }
+    catch { setMsg('הקובץ אינו קובץ הגדרות תקין.'); }
     e.target.value = '';
   });
   $('#resetBtn').addEventListener('click', () => {
