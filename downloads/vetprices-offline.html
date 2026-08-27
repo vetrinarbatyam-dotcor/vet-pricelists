@@ -203,7 +203,9 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
 @media (max-width:800px){.calc-wrap{grid-template-columns:1fr}}
 @media (max-width:860px){.tiles{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:700px){.home{padding:32px 12px}.home h1{font-size:26px}.tile{padding:18px 10px}.tile .ico{font-size:28px}.tile.calc{flex-direction:column}
-  .top-actions{justify-content:flex-end}
+  /* the clinic build adds its own links here, so five buttons have to fit a phone */
+  .top-actions{justify-content:flex-end;flex-wrap:wrap}
+  .top-actions .icon span{display:none}
   .top{flex-wrap:wrap}
   .top-nav{width:100%;flex-wrap:wrap;gap:10px}}
 
