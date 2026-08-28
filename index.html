@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=29">
+<link rel="stylesheet" href="style.css?v=30">
 </head>
 <body>
 
@@ -44,11 +44,13 @@
     <button data-type="shop">🛍️ מוצרי חנויות</button>
   </nav>
   </div>
-  <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
-    <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
+  <div class="mid-nav">
+    <button id="ordersBtn" class="ord-cta clinic-only" title="רשימת ההזמנות">🧾 הזמנות</button>
+    <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
+      <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
+    </div>
   </div>
   <div class="top-actions">
-    <button id="ordersBtn" class="ghost icon clinic-only" title="רשימת ההזמנות">🧾 <span>הזמנות</span></button>
     <button id="calcBtn" class="ghost icon" title="מחשבון תמחור">🧮 <span>מחשבון</span></button>
     <button id="setBtn" class="ghost icon" title="הגדרות תמחור">⚙️</button>
   </div>
@@ -198,22 +200,22 @@
 <main id="orders" hidden class="page">
   <div class="page-head">
     <h1>🧾 הזמנות</h1>
-    <p>רשימת ההזמנות של המרפאה, משותפת לכל המחשבים. בחירת פריט ממחירון מצמידה לשורה את הספק —
-      ואז אפשר לסנן לפי ספק ולהוציא גיליון הזמנה מוכן.
-      <button id="oPricesBtn" class="linkish">📋 למחירונים</button></p>
   </div>
 
   <section class="box ord-add">
-    <div class="row gap">
+    <div class="row gap ord-line">
       <div class="pickwrap">
         <input id="oPick" type="search" placeholder="🔍 פריט ממחירון — שם, מק״ט או ספק…" aria-label="פריט ממחירון">
         <div id="oSug" class="sug" hidden></div>
       </div>
-      <input id="oName" placeholder="או שם חופשי…" aria-label="שם חופשי">
+    </div>
+    <div class="row gap ord-line">
+      <input id="oName" type="text" placeholder="או שם חופשי…" aria-label="שם חופשי">
+    </div>
+    <div class="row gap">
       <input id="oQty" class="qty" type="number" min="1" step="1" value="1" aria-label="כמות">
       <select id="oCat" aria-label="קטגוריה"></select>
-      <input id="oSup" list="oSupList" placeholder="ספק (אופציונלי)" aria-label="ספק">
-      <datalist id="oSupList"></datalist>
+      <select id="oSup" aria-label="ספק"></select>
       <button id="oClientBtn" class="ghost">🧑 ללקוח</button>
       <button id="oAdd">＋ הוסף</button>
     </div>
@@ -422,6 +424,6 @@
 
 
 
-<script src="app.js?v=22"></script>
+<script src="app.js?v=23"></script>
 </body>
 </html>

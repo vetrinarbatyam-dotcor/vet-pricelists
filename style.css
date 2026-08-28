@@ -244,14 +244,21 @@ td .date.parsed{color:var(--copper)}
 td .date.parsed.internal{color:var(--crit)}
 
 /* ---------- the price-list / clinic switch: the bar's main control ---------- */
-.seg.mode-seg{margin-inline:auto;flex:none;border:2px solid var(--teal);border-radius:9px;
+.mid-nav{display:flex;align-items:center;gap:12px;margin-inline:auto;flex:none}
+.seg.mode-seg{flex:none;border:2px solid var(--teal);border-radius:9px;
   box-shadow:0 2px 8px rgba(15,110,99,.22)}
+.ord-cta{background:var(--teal);color:#fff;border-color:var(--teal);font-size:17px;font-weight:700;
+  padding:10px 26px;border-radius:9px;box-shadow:0 3px 10px rgba(15,110,99,.32)}
+.ord-cta:hover{filter:brightness(1.08)}
+/* the clinic copy navigates by the middle group and the home tiles — the section tabs are noise */
+.mode-clinic .tabs{display:none}
 .seg.mode-seg button{font-size:16px;font-weight:600;padding:9px 20px}
 .seg.mode-seg button.on{background:var(--teal);color:#fff;font-weight:700}
 .seg.mode-seg button:not(.on):hover{background:var(--teal-soft)}
 @media (max-width:700px){
-  .seg.mode-seg{order:2;margin-inline:0}
+  .mid-nav{order:2;margin-inline:0;gap:8px}
   .seg.mode-seg button{font-size:15px;padding:8px 14px}
+  .ord-cta{font-size:15px;padding:8px 14px}
 }
 
 /* ---------- purchase discount: what you PAY, framed apart from what you charge ---------- */
@@ -325,11 +332,15 @@ body:not(.mode-clinic) .clinic-only{display:none}
 .pickwrap .sug{position:absolute;inset-inline:0;top:calc(100% + 4px);z-index:20;margin:0;
   box-shadow:0 8px 22px rgba(30,42,44,.16)}
 .ord-add .qty{width:72px}
-.ord-add #oName{flex:1 1 160px}
-.ord-add #oSup{flex:1 1 150px}
+.ord-add .ord-line{margin-bottom:10px}
+.ord-add .ord-line>*{flex:1 1 100%;width:100%}
+.ord-add #oName{width:100%}
+.ord-add select{font:inherit;padding:6px 10px;border-radius:6px;border:1px solid var(--line);
+  background:var(--card);color:var(--ink)}
+.ord-add #oSup{flex:1 1 170px}
 .ord-cats{display:flex;flex-wrap:wrap;gap:10px 22px}
 .ordcat{display:flex;align-items:center;gap:7px;font-size:15px}
-.ord-list{display:grid;gap:7px;margin-top:4px}
+.ord-list{display:grid;gap:7px;margin-top:4px;max-width:66%}
 .ord-row{display:flex;justify-content:space-between;align-items:center;gap:14px;
   background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 13px}
 .ord-row.done .ord-main b{text-decoration:line-through;color:var(--muted)}
@@ -345,6 +356,8 @@ body:not(.mode-clinic) .clinic-only{display:none}
 button.ord-tag{cursor:pointer;background:none;font-family:inherit;font-weight:400;line-height:1.5}
 button.ord-tag:hover{background:var(--teal-soft)}
 .ord-tag.empty{border-style:dashed;color:var(--muted)}
+.ord-tag-sel{font:inherit;font-size:12.5px;padding:1px 6px;border-radius:6px;
+  border:1px solid var(--teal);color:var(--teal);background:var(--card);max-width:200px}
 .ord-ctl{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
 .ord-ctl .qty{width:64px}
 .ord-chk{display:flex;align-items:center;gap:6px;font-size:13.5px;white-space:nowrap}
@@ -354,6 +367,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
   background:var(--edit-bg);color:var(--ink);margin-bottom:10px}
 #oHist.on{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}
 @media (max-width:700px){
+  .ord-list{max-width:100%}
   .ord-row{flex-direction:column;align-items:stretch;gap:9px}
   .ord-ctl{justify-content:space-between}
   .ord-add .row>*{flex:1 1 100%}

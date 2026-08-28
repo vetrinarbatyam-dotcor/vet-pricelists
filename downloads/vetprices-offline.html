@@ -256,14 +256,21 @@ td .date.parsed{color:var(--copper)}
 td .date.parsed.internal{color:var(--crit)}
 
 /* ---------- the price-list / clinic switch: the bar's main control ---------- */
-.seg.mode-seg{margin-inline:auto;flex:none;border:2px solid var(--teal);border-radius:9px;
+.mid-nav{display:flex;align-items:center;gap:12px;margin-inline:auto;flex:none}
+.seg.mode-seg{flex:none;border:2px solid var(--teal);border-radius:9px;
   box-shadow:0 2px 8px rgba(15,110,99,.22)}
+.ord-cta{background:var(--teal);color:#fff;border-color:var(--teal);font-size:17px;font-weight:700;
+  padding:10px 26px;border-radius:9px;box-shadow:0 3px 10px rgba(15,110,99,.32)}
+.ord-cta:hover{filter:brightness(1.08)}
+/* the clinic copy navigates by the middle group and the home tiles — the section tabs are noise */
+.mode-clinic .tabs{display:none}
 .seg.mode-seg button{font-size:16px;font-weight:600;padding:9px 20px}
 .seg.mode-seg button.on{background:var(--teal);color:#fff;font-weight:700}
 .seg.mode-seg button:not(.on):hover{background:var(--teal-soft)}
 @media (max-width:700px){
-  .seg.mode-seg{order:2;margin-inline:0}
+  .mid-nav{order:2;margin-inline:0;gap:8px}
   .seg.mode-seg button{font-size:15px;padding:8px 14px}
+  .ord-cta{font-size:15px;padding:8px 14px}
 }
 
 /* ---------- purchase discount: what you PAY, framed apart from what you charge ---------- */
@@ -337,11 +344,15 @@ body:not(.mode-clinic) .clinic-only{display:none}
 .pickwrap .sug{position:absolute;inset-inline:0;top:calc(100% + 4px);z-index:20;margin:0;
   box-shadow:0 8px 22px rgba(30,42,44,.16)}
 .ord-add .qty{width:72px}
-.ord-add #oName{flex:1 1 160px}
-.ord-add #oSup{flex:1 1 150px}
+.ord-add .ord-line{margin-bottom:10px}
+.ord-add .ord-line>*{flex:1 1 100%;width:100%}
+.ord-add #oName{width:100%}
+.ord-add select{font:inherit;padding:6px 10px;border-radius:6px;border:1px solid var(--line);
+  background:var(--card);color:var(--ink)}
+.ord-add #oSup{flex:1 1 170px}
 .ord-cats{display:flex;flex-wrap:wrap;gap:10px 22px}
 .ordcat{display:flex;align-items:center;gap:7px;font-size:15px}
-.ord-list{display:grid;gap:7px;margin-top:4px}
+.ord-list{display:grid;gap:7px;margin-top:4px;max-width:66%}
 .ord-row{display:flex;justify-content:space-between;align-items:center;gap:14px;
   background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 13px}
 .ord-row.done .ord-main b{text-decoration:line-through;color:var(--muted)}
@@ -357,6 +368,8 @@ body:not(.mode-clinic) .clinic-only{display:none}
 button.ord-tag{cursor:pointer;background:none;font-family:inherit;font-weight:400;line-height:1.5}
 button.ord-tag:hover{background:var(--teal-soft)}
 .ord-tag.empty{border-style:dashed;color:var(--muted)}
+.ord-tag-sel{font:inherit;font-size:12.5px;padding:1px 6px;border-radius:6px;
+  border:1px solid var(--teal);color:var(--teal);background:var(--card);max-width:200px}
 .ord-ctl{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
 .ord-ctl .qty{width:64px}
 .ord-chk{display:flex;align-items:center;gap:6px;font-size:13.5px;white-space:nowrap}
@@ -366,6 +379,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
   background:var(--edit-bg);color:var(--ink);margin-bottom:10px}
 #oHist.on{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}
 @media (max-width:700px){
+  .ord-list{max-width:100%}
   .ord-row{flex-direction:column;align-items:stretch;gap:9px}
   .ord-ctl{justify-content:space-between}
   .ord-add .row>*{flex:1 1 100%}
@@ -409,11 +423,13 @@ button.ord-tag:hover{background:var(--teal-soft)}
     <button data-type="shop">🛍️ מוצרי חנויות</button>
   </nav>
   </div>
-  <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
-    <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
+  <div class="mid-nav">
+    <button id="ordersBtn" class="ord-cta clinic-only" title="רשימת ההזמנות">🧾 הזמנות</button>
+    <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
+      <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
+    </div>
   </div>
   <div class="top-actions">
-    <button id="ordersBtn" class="ghost icon clinic-only" title="רשימת ההזמנות">🧾 <span>הזמנות</span></button>
     <button id="calcBtn" class="ghost icon" title="מחשבון תמחור">🧮 <span>מחשבון</span></button>
     <button id="setBtn" class="ghost icon" title="הגדרות תמחור">⚙️</button>
   </div>
@@ -563,22 +579,22 @@ button.ord-tag:hover{background:var(--teal-soft)}
 <main id="orders" hidden class="page">
   <div class="page-head">
     <h1>🧾 הזמנות</h1>
-    <p>רשימת ההזמנות של המרפאה, משותפת לכל המחשבים. בחירת פריט ממחירון מצמידה לשורה את הספק —
-      ואז אפשר לסנן לפי ספק ולהוציא גיליון הזמנה מוכן.
-      <button id="oPricesBtn" class="linkish">📋 למחירונים</button></p>
   </div>
 
   <section class="box ord-add">
-    <div class="row gap">
+    <div class="row gap ord-line">
       <div class="pickwrap">
         <input id="oPick" type="search" placeholder="🔍 פריט ממחירון — שם, מק״ט או ספק…" aria-label="פריט ממחירון">
         <div id="oSug" class="sug" hidden></div>
       </div>
-      <input id="oName" placeholder="או שם חופשי…" aria-label="שם חופשי">
+    </div>
+    <div class="row gap ord-line">
+      <input id="oName" type="text" placeholder="או שם חופשי…" aria-label="שם חופשי">
+    </div>
+    <div class="row gap">
       <input id="oQty" class="qty" type="number" min="1" step="1" value="1" aria-label="כמות">
       <select id="oCat" aria-label="קטגוריה"></select>
-      <input id="oSup" list="oSupList" placeholder="ספק (אופציונלי)" aria-label="ספק">
-      <datalist id="oSupList"></datalist>
+      <select id="oSup" aria-label="ספק"></select>
       <button id="oClientBtn" class="ghost">🧑 ללקוח</button>
       <button id="oAdd">＋ הוסף</button>
     </div>
@@ -913,7 +929,7 @@ const statusHeb = s => s === 'current' ? 'עדכני' : s === 'stale' ? 'ישן'
 function show(page) {
   ['home', 'catalog', 'settings', 'calc', 'status', 'help', 'orders'].forEach(p => $('#' + p).hidden = p !== page);
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
-  $('.mode-seg').style.visibility = page === 'catalog' ? '' : 'hidden';
+  $('.mid-nav').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
 }
 function goHome() {
   S.type = null; $$('#tabs button').forEach(b => b.classList.remove('on'));
@@ -1268,6 +1284,37 @@ const CAT_HEB = Object.fromEntries(CATS.map(([k, l]) => [k, l]));
 const CAT_ICO = Object.fromEntries(CATS.map(([k, , i]) => [k, i]));
 const DEF_CATS = ['general', 'food', 'clean', 'lab'];
 const SEC_CAT = { medical: 'general', food: 'food', shop: 'shop', labs: 'lab' };
+// external labs are not suppliers: a lab line picks from the labs list, everything else from
+// the drugs and food price lists — the two the clinic actually places orders with
+const SUP_GROUPS = { lab: [['מעבדות חיצוניות', 'labs']],
+                     def: [['תרופות וציוד', 'medical'], ['מזון', 'food']] };
+const supNames = type => [...new Set(INDEX.pricelists.filter(m => m.type === type).map(m => m.supplier))]
+  .sort((a, b) => a.localeCompare(b, 'he'));
+function supOptions(cat, cur) {
+  const seen = new Set();
+  let html = '<option value="">— ללא ספק —</option>';
+  (cat === 'lab' ? SUP_GROUPS.lab : SUP_GROUPS.def).forEach(([lab, type]) => {
+    const names = supNames(type).filter(n => !seen.has(n));
+    names.forEach(n => seen.add(n));
+    html += `<optgroup label="${esc(lab)}">` + names.map(n =>
+      `<option value="${esc(n)}"${n === cur ? ' selected' : ''}>${esc(n)}</option>`).join('') + '</optgroup>';
+  });
+  // the lines imported from clinic-pal carry supplier names that predate these price lists —
+  // without this the select would silently drop the one the row already has
+  if (cur && !seen.has(cur)) html += `<option value="${esc(cur)}" selected>${esc(cur)}</option>`;
+  return html + '<option value="__other">אחר… (הקלדה)</option>';
+}
+function setSup(sel, name) {
+  if (name && ![...sel.options].some(o => o.value === name))
+    sel.insertAdjacentHTML('afterbegin', `<option value="${esc(name)}">${esc(name)}</option>`);
+  sel.value = name || '';
+}
+// a select cannot hold a name that is not on the list; this is the way out
+function supOther(sel, cur) {
+  const v = (prompt('שם הספק:', cur || '') || '').trim();
+  setSup(sel, v);
+  return v;
+}
 // the statuses the staff already knows from clinic-pal-hub, verbatim
 const ST = { pending: 'ממתין', missing: 'חסר', in_delivery: 'במשלוח', ordered: 'הוזמן', received: 'התקבל' };
 const LAB_ST = { taken: 'נלקח', sent: 'נשלח', back: 'חזר', reported: 'דווח' };
@@ -1440,9 +1487,18 @@ function renderOrders() {
       else setLine(l.id, 'status', el.value);
     }));
     d.querySelector('[data-a="del"]').addEventListener('click', () => delLine(l.id, l.name));
-    d.querySelector('[data-e="sup"]').addEventListener('click', () => {
-      const v = prompt(l.cat === 'lab' ? 'שם המעבדה:' : 'ספק:', l.supplier || '');
-      if (v != null) setLine(l.id, 'supplier', v.trim());
+    d.querySelector('[data-e="sup"]').addEventListener('click', ev => {
+      const sel = document.createElement('select');
+      sel.className = 'ord-tag-sel';
+      sel.innerHTML = supOptions(l.cat, l.supplier || '');
+      ev.currentTarget.replaceWith(sel);
+      sel.focus();
+      let taken = false;
+      sel.addEventListener('change', () => {
+        taken = true;
+        setLine(l.id, 'supplier', sel.value === '__other' ? supOther(sel, l.supplier) : sel.value);
+      });
+      sel.addEventListener('blur', () => setTimeout(() => { if (!taken) renderOrders(); }, 120));
     });
     d.querySelector('[data-e="cli"]').addEventListener('click', () => {
       const n = prompt('שם הלקוח (ריק = ביטול השיוך):', l.client || '');
@@ -1475,7 +1531,7 @@ function addLine() {
   const p = picked && picked.name === name ? picked : null;
   const l = { id: oid(), cat, name, qty: Math.max(1, parseInt($('#oQty').value, 10) || 1),
     status: cat === 'lab' ? 'taken' : 'pending',
-    supplier: $('#oSup').value.trim(), slug: p ? p.slug : '', sku: p ? (p.sku || '') : '',
+    supplier: $('#oSup').value === '__other' ? '' : $('#oSup').value.trim(), slug: p ? p.slug : '', sku: p ? (p.sku || '') : '',
     price: p ? p.price_no_vat : null,
     client: $('#oClient').value.trim(), phone: $('#oPhone').value.trim(),
     paid: cat === 'lab' && $('#oPaid').checked, note: '',
@@ -1484,12 +1540,15 @@ function addLine() {
   picked = null;
   ['oPick', 'oName', 'oClient', 'oPhone'].forEach(id => $('#' + id).value = '');
   $('#oQty').value = 1; $('#oPaid').checked = false; $('#oSug').hidden = true;
+  ordCatChanged();
   renderOrders(); saveOrders([l.id]);
   toast('נוסף ✓');
 }
 function ordCatChanged() {
-  const lab = $('#oCat').value === 'lab';
-  $('#oSup').placeholder = lab ? 'שם המעבדה' : 'ספק (אופציונלי)';
+  const cat = $('#oCat').value, lab = cat === 'lab', sel = $('#oSup');
+  const cur = sel.value === '__other' ? '' : sel.value;
+  sel.innerHTML = supOptions(cat, cur);
+  setSup(sel, cur);
   $('#oPaidWrap').hidden = !lab;
   if (lab) $('#oClientRow').hidden = false;
 }
@@ -1598,7 +1657,7 @@ function start() {
   $$('[data-mode]').forEach(b => b.addEventListener('click', () => {
     S.mode = b.dataset.mode; $$('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
     S.margins = P.clinicView !== 'compact';        // every entry into the clinic view starts from the stored default
-    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else goHome(); } else { renderTable(); render(); }
+    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else show('home'); } else { renderTable(); render(); }
   }));
   $('#marginsBtn').addEventListener('click', () => { S.margins = !S.margins; renderTable(); render(); });
   let t; $('#q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { S.q = $('#q').value; S.shown = PAGE; render(); }, 200); });
@@ -1684,12 +1743,11 @@ function fillOrderCats() {
 }
 function wireOrders() {
   fillOrderCats();
-  $('#oSupList').innerHTML = [...new Set(INDEX.pricelists.map(m => m.supplier))]
-    .sort((a, b) => a.localeCompare(b, 'he')).map(x => `<option value="${esc(x)}">`).join('');
   $('#oAdd').addEventListener('click', addLine);
-  ['oName', 'oQty', 'oClient', 'oPhone', 'oSup'].forEach(id =>
+  ['oName', 'oQty', 'oClient', 'oPhone'].forEach(id =>
     $('#' + id).addEventListener('keydown', e => { if (e.key === 'Enter') addLine(); }));
   $('#oCat').addEventListener('change', ordCatChanged);
+  $('#oSup').addEventListener('change', () => { if ($('#oSup').value === '__other') supOther($('#oSup'), ''); });
   $('#oClientBtn').addEventListener('click', () => {
     const r = $('#oClientRow'); r.hidden = !r.hidden; if (!r.hidden) $('#oClient').focus();
   });
@@ -1719,7 +1777,6 @@ function wireOrders() {
   });
   $('#oMark').addEventListener('click', markSheetOrdered);
   $('#ordersBtn').addEventListener('click', () => { show('orders'); renderOrders(); });
-  $('#oPricesBtn').addEventListener('click', () => show('home'));
   let op; $('#oPick').addEventListener('input', () => {
     picked = null;
     clearTimeout(op); op = setTimeout(async () => {
@@ -1733,9 +1790,11 @@ function wireOrders() {
       box.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
         const h = hits[+b.dataset.i];
         picked = h;
-        $('#oPick').value = h.name; $('#oName').value = ''; $('#oSup').value = h.supplier || '';
+        $('#oPick').value = h.name; $('#oName').value = '';
         const c = SEC_CAT[h.sec] || 'general';
-        if (O.cats.includes(c)) { $('#oCat').value = c; ordCatChanged(); }
+        if (O.cats.includes(c)) $('#oCat').value = c;
+        ordCatChanged();
+        setSup($('#oSup'), h.supplier || '');
         box.hidden = true; $('#oQty').focus();
       }));
     }, 250);

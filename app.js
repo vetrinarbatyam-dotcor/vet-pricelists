@@ -123,7 +123,7 @@ const statusHeb = s => s === 'current' ? 'עדכני' : s === 'stale' ? 'ישן'
 function show(page) {
   ['home', 'catalog', 'settings', 'calc', 'status', 'help', 'orders'].forEach(p => $('#' + p).hidden = p !== page);
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
-  $('.mode-seg').style.visibility = page === 'catalog' ? '' : 'hidden';
+  $('.mid-nav').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
 }
 function goHome() {
   S.type = null; $$('#tabs button').forEach(b => b.classList.remove('on'));
@@ -478,6 +478,37 @@ const CAT_HEB = Object.fromEntries(CATS.map(([k, l]) => [k, l]));
 const CAT_ICO = Object.fromEntries(CATS.map(([k, , i]) => [k, i]));
 const DEF_CATS = ['general', 'food', 'clean', 'lab'];
 const SEC_CAT = { medical: 'general', food: 'food', shop: 'shop', labs: 'lab' };
+// external labs are not suppliers: a lab line picks from the labs list, everything else from
+// the drugs and food price lists — the two the clinic actually places orders with
+const SUP_GROUPS = { lab: [['מעבדות חיצוניות', 'labs']],
+                     def: [['תרופות וציוד', 'medical'], ['מזון', 'food']] };
+const supNames = type => [...new Set(INDEX.pricelists.filter(m => m.type === type).map(m => m.supplier))]
+  .sort((a, b) => a.localeCompare(b, 'he'));
+function supOptions(cat, cur) {
+  const seen = new Set();
+  let html = '<option value="">— ללא ספק —</option>';
+  (cat === 'lab' ? SUP_GROUPS.lab : SUP_GROUPS.def).forEach(([lab, type]) => {
+    const names = supNames(type).filter(n => !seen.has(n));
+    names.forEach(n => seen.add(n));
+    html += `<optgroup label="${esc(lab)}">` + names.map(n =>
+      `<option value="${esc(n)}"${n === cur ? ' selected' : ''}>${esc(n)}</option>`).join('') + '</optgroup>';
+  });
+  // the lines imported from clinic-pal carry supplier names that predate these price lists —
+  // without this the select would silently drop the one the row already has
+  if (cur && !seen.has(cur)) html += `<option value="${esc(cur)}" selected>${esc(cur)}</option>`;
+  return html + '<option value="__other">אחר… (הקלדה)</option>';
+}
+function setSup(sel, name) {
+  if (name && ![...sel.options].some(o => o.value === name))
+    sel.insertAdjacentHTML('afterbegin', `<option value="${esc(name)}">${esc(name)}</option>`);
+  sel.value = name || '';
+}
+// a select cannot hold a name that is not on the list; this is the way out
+function supOther(sel, cur) {
+  const v = (prompt('שם הספק:', cur || '') || '').trim();
+  setSup(sel, v);
+  return v;
+}
 // the statuses the staff already knows from clinic-pal-hub, verbatim
 const ST = { pending: 'ממתין', missing: 'חסר', in_delivery: 'במשלוח', ordered: 'הוזמן', received: 'התקבל' };
 const LAB_ST = { taken: 'נלקח', sent: 'נשלח', back: 'חזר', reported: 'דווח' };
@@ -649,9 +680,18 @@ function renderOrders() {
       else setLine(l.id, 'status', el.value);
     }));
     d.querySelector('[data-a="del"]').addEventListener('click', () => delLine(l.id, l.name));
-    d.querySelector('[data-e="sup"]').addEventListener('click', () => {
-      const v = prompt(l.cat === 'lab' ? 'שם המעבדה:' : 'ספק:', l.supplier || '');
-      if (v != null) setLine(l.id, 'supplier', v.trim());
+    d.querySelector('[data-e="sup"]').addEventListener('click', ev => {
+      const sel = document.createElement('select');
+      sel.className = 'ord-tag-sel';
+      sel.innerHTML = supOptions(l.cat, l.supplier || '');
+      ev.currentTarget.replaceWith(sel);
+      sel.focus();
+      let taken = false;
+      sel.addEventListener('change', () => {
+        taken = true;
+        setLine(l.id, 'supplier', sel.value === '__other' ? supOther(sel, l.supplier) : sel.value);
+      });
+      sel.addEventListener('blur', () => setTimeout(() => { if (!taken) renderOrders(); }, 120));
     });
     d.querySelector('[data-e="cli"]').addEventListener('click', () => {
       const n = prompt('שם הלקוח (ריק = ביטול השיוך):', l.client || '');
@@ -684,7 +724,7 @@ function addLine() {
   const p = picked && picked.name === name ? picked : null;
   const l = { id: oid(), cat, name, qty: Math.max(1, parseInt($('#oQty').value, 10) || 1),
     status: cat === 'lab' ? 'taken' : 'pending',
-    supplier: $('#oSup').value.trim(), slug: p ? p.slug : '', sku: p ? (p.sku || '') : '',
+    supplier: $('#oSup').value === '__other' ? '' : $('#oSup').value.trim(), slug: p ? p.slug : '', sku: p ? (p.sku || '') : '',
     price: p ? p.price_no_vat : null,
     client: $('#oClient').value.trim(), phone: $('#oPhone').value.trim(),
     paid: cat === 'lab' && $('#oPaid').checked, note: '',
@@ -693,12 +733,15 @@ function addLine() {
   picked = null;
   ['oPick', 'oName', 'oClient', 'oPhone'].forEach(id => $('#' + id).value = '');
   $('#oQty').value = 1; $('#oPaid').checked = false; $('#oSug').hidden = true;
+  ordCatChanged();
   renderOrders(); saveOrders([l.id]);
   toast('נוסף ✓');
 }
 function ordCatChanged() {
-  const lab = $('#oCat').value === 'lab';
-  $('#oSup').placeholder = lab ? 'שם המעבדה' : 'ספק (אופציונלי)';
+  const cat = $('#oCat').value, lab = cat === 'lab', sel = $('#oSup');
+  const cur = sel.value === '__other' ? '' : sel.value;
+  sel.innerHTML = supOptions(cat, cur);
+  setSup(sel, cur);
   $('#oPaidWrap').hidden = !lab;
   if (lab) $('#oClientRow').hidden = false;
 }
@@ -807,7 +850,7 @@ function start() {
   $$('[data-mode]').forEach(b => b.addEventListener('click', () => {
     S.mode = b.dataset.mode; $$('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
     S.margins = P.clinicView !== 'compact';        // every entry into the clinic view starts from the stored default
-    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else goHome(); } else { renderTable(); render(); }
+    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else show('home'); } else { renderTable(); render(); }
   }));
   $('#marginsBtn').addEventListener('click', () => { S.margins = !S.margins; renderTable(); render(); });
   let t; $('#q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { S.q = $('#q').value; S.shown = PAGE; render(); }, 200); });
@@ -893,12 +936,11 @@ function fillOrderCats() {
 }
 function wireOrders() {
   fillOrderCats();
-  $('#oSupList').innerHTML = [...new Set(INDEX.pricelists.map(m => m.supplier))]
-    .sort((a, b) => a.localeCompare(b, 'he')).map(x => `<option value="${esc(x)}">`).join('');
   $('#oAdd').addEventListener('click', addLine);
-  ['oName', 'oQty', 'oClient', 'oPhone', 'oSup'].forEach(id =>
+  ['oName', 'oQty', 'oClient', 'oPhone'].forEach(id =>
     $('#' + id).addEventListener('keydown', e => { if (e.key === 'Enter') addLine(); }));
   $('#oCat').addEventListener('change', ordCatChanged);
+  $('#oSup').addEventListener('change', () => { if ($('#oSup').value === '__other') supOther($('#oSup'), ''); });
   $('#oClientBtn').addEventListener('click', () => {
     const r = $('#oClientRow'); r.hidden = !r.hidden; if (!r.hidden) $('#oClient').focus();
   });
@@ -928,7 +970,6 @@ function wireOrders() {
   });
   $('#oMark').addEventListener('click', markSheetOrdered);
   $('#ordersBtn').addEventListener('click', () => { show('orders'); renderOrders(); });
-  $('#oPricesBtn').addEventListener('click', () => show('home'));
   let op; $('#oPick').addEventListener('input', () => {
     picked = null;
     clearTimeout(op); op = setTimeout(async () => {
@@ -942,9 +983,11 @@ function wireOrders() {
       box.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
         const h = hits[+b.dataset.i];
         picked = h;
-        $('#oPick').value = h.name; $('#oName').value = ''; $('#oSup').value = h.supplier || '';
+        $('#oPick').value = h.name; $('#oName').value = '';
         const c = SEC_CAT[h.sec] || 'general';
-        if (O.cats.includes(c)) { $('#oCat').value = c; ordCatChanged(); }
+        if (O.cats.includes(c)) $('#oCat').value = c;
+        ordCatChanged();
+        setSup($('#oSup'), h.supplier || '');
         box.hidden = true; $('#oQty').focus();
       }));
     }, 250);
