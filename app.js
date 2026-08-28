@@ -737,24 +737,21 @@ function addLine() {
     status: cat === 'lab' ? 'taken' : 'pending',
     supplier: $('#oSup').value === '__other' ? '' : $('#oSup').value.trim(), slug: p ? p.slug : '', sku: p ? (p.sku || '') : '',
     price: p ? p.price_no_vat : null,
-    client: $('#oClient').value.trim(), phone: $('#oPhone').value.trim(),
-    paid: cat === 'lab' && $('#oPaid').checked, note: '',
+    client: '', phone: '', paid: false, note: '',
     created_at: now, updated_at: now };
   O.lines.push(l);
   picked = null;
-  ['oPick', 'oName', 'oClient', 'oPhone'].forEach(id => $('#' + id).value = '');
-  $('#oQty').value = 1; $('#oPaid').checked = false; $('#oSug').hidden = true;
+  ['oPick', 'oName'].forEach(id => $('#' + id).value = '');
+  $('#oQty').value = 1; $('#oSug').hidden = true;
   ordCatChanged();
   renderOrders(); saveOrders([l.id]);
   toast('נוסף ✓');
 }
 function ordCatChanged() {
-  const cat = $('#oCat').value, lab = cat === 'lab', sel = $('#oSup');
+  const cat = $('#oCat').value, sel = $('#oSup');
   const cur = sel.value === '__other' ? '' : sel.value;
   sel.innerHTML = supOptions(cat, cur);
   setSup(sel, cur);
-  $('#oPaidWrap').hidden = !lab;
-  if (lab) $('#oClientRow').hidden = false;
 }
 // the sheet picks its own supplier: the chips above filter what you look at, this picks what
 // you actually send — so one click gives either everything or one supplier's list
@@ -969,12 +966,9 @@ function wireOrders() {
   fillOrderCats();
   $('#oAdd').addEventListener('click', addLine);
   $('#oAdd2').addEventListener('click', addLine);
-  ['oName', 'oQty', 'oClient', 'oPhone'].forEach(id =>
+  ['oName', 'oQty'].forEach(id =>
     $('#' + id).addEventListener('keydown', e => { if (e.key === 'Enter') addLine(); }));
   $('#oSup').addEventListener('change', () => { if ($('#oSup').value === '__other') supOther($('#oSup'), ''); });
-  $('#oClientBtn').addEventListener('click', () => {
-    const r = $('#oClientRow'); r.hidden = !r.hidden; if (!r.hidden) $('#oClient').focus();
-  });
   let ot; $('#oQ').addEventListener('input', () => {
     clearTimeout(ot); ot = setTimeout(() => { OS.q = $('#oQ').value; renderOrders(); }, 200);
   });

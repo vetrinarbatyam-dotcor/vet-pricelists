@@ -423,7 +423,6 @@ button.ord-tag:hover{background:var(--teal-soft)}
 .ord-row.cat-shop{background:color-mix(in srgb,var(--cat-shop) 45%,var(--card))}
 
 /* a line that belongs to a customer has to be spottable from across the room */
-#oClientBtn{background:var(--copper);border-color:var(--copper);color:#fff;font-weight:700}
 /* the customer filter carries the same copper as the customer chips, so it reads as one thing */
 #oFilter button[data-of="client"]{background:var(--copper-soft);color:var(--copper);font-weight:700}
 #oFilter button[data-of="client"].on{background:var(--copper);color:#fff}
