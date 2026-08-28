@@ -13,7 +13,7 @@
 /* ClaudeVet — "קליני מדויק" (brand/claudevet/BRAND.md) */
 :root{
   --paper:#F6F7F4; --card:#FFFFFF; --ink:#1E2A2C; --muted:#5F6E6C; --line:#D5DCD9;
-  --teal:#0F6E63; --teal-soft:#DCEFEB; --copper:#B0754A;
+  --teal:#0F6E63; --teal-soft:#DCEFEB; --copper:#B0754A; --copper-soft:#F6E3D4;
   --ok:#1E7B45; --ok-bg:#DDF2E4; --warn:#9A6A0B; --warn-bg:#FBEFD0; --crit:#A63434; --crit-bg:#F8DCDC;
   --edit-bg:#FFFDF7;
   /* one colour per order category — the chip, and every row that belongs to it */
@@ -25,7 +25,7 @@
 }
 @media (prefers-color-scheme: dark){ :root{
   --paper:#121A1B; --card:#182223; --ink:#E7ECEA; --muted:#9BABA8; --line:#2A3637;
-  --teal:#5CC4B5; --teal-soft:#1B3733; --copper:#D9A06E;
+  --teal:#5CC4B5; --teal-soft:#1B3733; --copper:#D9A06E; --copper-soft:#3B2A1B;
   --ok:#6FD495; --ok-bg:#163826; --warn:#E5B85C; --warn-bg:#3A2E10; --crit:#F08A8A; --crit-bg:#432020;
   --edit-bg:#1F2A2B;
   --cat-general:#2B3435; --cat-general-b:#4B5857;
@@ -416,6 +416,9 @@ button.ord-tag:hover{background:var(--teal-soft)}
 
 /* a line that belongs to a customer has to be spottable from across the room */
 #oClientBtn{background:var(--copper);border-color:var(--copper);color:#fff;font-weight:700}
+/* the customer filter carries the same copper as the customer chips, so it reads as one thing */
+#oFilter button[data-of="client"]{background:var(--copper-soft);color:var(--copper);font-weight:700}
+#oFilter button[data-of="client"].on{background:var(--copper);color:#fff}
 .ord-tag.cli:not(.empty){background:var(--copper);border-color:var(--copper);color:#fff;font-weight:500}
 .ord-tag.cli:not(.empty):hover{filter:brightness(1.1);background:var(--copper)}
 @media (max-width:700px){
