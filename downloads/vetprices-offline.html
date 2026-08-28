@@ -16,12 +16,23 @@
   --teal:#0F6E63; --teal-soft:#DCEFEB; --copper:#B0754A;
   --ok:#1E7B45; --ok-bg:#DDF2E4; --warn:#9A6A0B; --warn-bg:#FBEFD0; --crit:#A63434; --crit-bg:#F8DCDC;
   --edit-bg:#FFFDF7;
+  /* one colour per order category — the chip, and every row that belongs to it */
+  --cat-general:#E7EBE6; --cat-general-b:#B9C2B8;
+  --cat-food:#FBE7C4;    --cat-food-b:#DFB566;
+  --cat-clean:#D8E9F7;   --cat-clean-b:#8FBBDE;
+  --cat-lab:#E6DDF6;     --cat-lab-b:#B49FDD;
+  --cat-shop:#FAD9E4;    --cat-shop-b:#E098AF;
 }
 @media (prefers-color-scheme: dark){ :root{
   --paper:#121A1B; --card:#182223; --ink:#E7ECEA; --muted:#9BABA8; --line:#2A3637;
   --teal:#5CC4B5; --teal-soft:#1B3733; --copper:#D9A06E;
   --ok:#6FD495; --ok-bg:#163826; --warn:#E5B85C; --warn-bg:#3A2E10; --crit:#F08A8A; --crit-bg:#432020;
   --edit-bg:#1F2A2B;
+  --cat-general:#2B3435; --cat-general-b:#4B5857;
+  --cat-food:#3E3216;    --cat-food-b:#7C6428;
+  --cat-clean:#18303F;   --cat-clean-b:#2F5D79;
+  --cat-lab:#2C2440;     --cat-lab-b:#544379;
+  --cat-shop:#3D2029;    --cat-shop-b:#75404F;
 }}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -345,8 +356,10 @@ body:not(.mode-clinic) .clinic-only{display:none}
   box-shadow:0 8px 22px rgba(30,42,44,.16)}
 .ord-add .qty{width:72px}
 .ord-add .ord-line{margin-bottom:10px}
-.ord-add .ord-line>*{flex:1 1 100%;width:100%}
-.ord-add #oName{width:100%}
+.ord-add .ord-line>.pickwrap,.ord-add .ord-line>#oName{flex:0 1 50%;width:50%;min-width:0}
+.ord-add-btn{flex:none;background:var(--ok);border-color:var(--ok);color:#fff;font-weight:700;
+  padding:8px 24px;font-size:15px}
+.ord-add-btn:hover{filter:brightness(1.12)}
 .ord-add select{font:inherit;padding:6px 10px;border-radius:6px;border:1px solid var(--line);
   background:var(--card);color:var(--ink)}
 .ord-add #oSup{flex:1 1 170px}
@@ -379,11 +392,38 @@ button.ord-tag:hover{background:var(--teal-soft)}
   font-size:13.5px;line-height:1.6;border:1px solid var(--line);border-radius:8px;padding:11px;
   background:var(--edit-bg);color:var(--ink);margin-bottom:10px}
 #oHist.on{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}
+
+/* ---------- category colours: the chip you pressed and the rows it holds ---------- */
+.chip.cat-general{background:var(--cat-general);border-color:var(--cat-general-b)}
+.chip.cat-food{background:var(--cat-food);border-color:var(--cat-food-b)}
+.chip.cat-clean{background:var(--cat-clean);border-color:var(--cat-clean-b)}
+.chip.cat-lab{background:var(--cat-lab);border-color:var(--cat-lab-b)}
+.chip.cat-shop{background:var(--cat-shop);border-color:var(--cat-shop-b)}
+.chip.cat-general.on{background:var(--cat-general-b);border-color:var(--cat-general-b)}
+.chip.cat-food.on{background:var(--cat-food-b);border-color:var(--cat-food-b)}
+.chip.cat-clean.on{background:var(--cat-clean-b);border-color:var(--cat-clean-b)}
+.chip.cat-lab.on{background:var(--cat-lab-b);border-color:var(--cat-lab-b)}
+.chip.cat-shop.on{background:var(--cat-shop-b);border-color:var(--cat-shop-b)}
+.chip[class*="cat-"].on{color:var(--ink);font-weight:700}
+/* "הכל" holds everything, so it stays the neutral one */
+.chip.cat-all.on{background:var(--card);color:var(--teal);border-color:var(--teal);font-weight:700}
+/* the row keeps a lighter wash of the same colour — 138 rows at full strength is a rainbow */
+.ord-row.cat-general{background:color-mix(in srgb,var(--cat-general) 55%,var(--card))}
+.ord-row.cat-food{background:color-mix(in srgb,var(--cat-food) 45%,var(--card))}
+.ord-row.cat-clean{background:color-mix(in srgb,var(--cat-clean) 45%,var(--card))}
+.ord-row.cat-lab{background:color-mix(in srgb,var(--cat-lab) 45%,var(--card))}
+.ord-row.cat-shop{background:color-mix(in srgb,var(--cat-shop) 45%,var(--card))}
+
+/* a line that belongs to a customer has to be spottable from across the room */
+#oClientBtn{background:var(--copper);border-color:var(--copper);color:#fff;font-weight:700}
+.ord-tag.cli:not(.empty){background:var(--copper);border-color:var(--copper);color:#fff;font-weight:500}
+.ord-tag.cli:not(.empty):hover{filter:brightness(1.1);background:var(--copper)}
 @media (max-width:700px){
   .ord-list,#orders .meta-line{max-width:100%}
   .ord-row{flex-direction:column;align-items:stretch;gap:9px}
   .ord-ctl{justify-content:space-between}
   .ord-add .row>*{flex:1 1 100%}
+  .ord-add .ord-line>.pickwrap,.ord-add .ord-line>#oName{flex:1 1 100%;width:100%}
   .ord-add .qty{flex:0 0 72px}
   .ord-add select{flex:1 1 40%}
 }
@@ -588,16 +628,17 @@ button.ord-tag:hover{background:var(--teal-soft)}
         <input id="oPick" type="search" placeholder="🔍 פריט ממחירון — שם, מק״ט או ספק…" aria-label="פריט ממחירון">
         <div id="oSug" class="sug" hidden></div>
       </div>
+      <button id="oAdd" class="ord-add-btn">＋ הוסף</button>
     </div>
     <div class="row gap ord-line">
       <input id="oName" type="text" placeholder="או שם חופשי…" aria-label="שם חופשי">
+      <button id="oAdd2" class="ord-add-btn">＋ הוסף</button>
     </div>
     <div class="row gap">
       <input id="oQty" class="qty" type="number" min="1" step="1" value="1" aria-label="כמות">
       <select id="oCat" aria-label="קטגוריה"></select>
       <select id="oSup" aria-label="ספק"></select>
-      <button id="oClientBtn" class="ghost">🧑 ללקוח</button>
-      <button id="oAdd">＋ הוסף</button>
+      <button id="oClientBtn">🧑 ללקוח</button>
     </div>
     <div class="row gap" id="oClientRow" hidden>
       <input id="oClient" placeholder="שם הלקוח שהזמין" aria-label="שם לקוח">
@@ -1435,9 +1476,12 @@ function renderOrders() {
   const cc = $('#oCats'); cc.innerHTML = '';
   const open = {};
   O.lines.forEach(l => { if (!l.deleted && OPEN_ST[l.status]) open[l.cat] = (open[l.cat] || 0) + 1; });
-  cc.appendChild(mk('הכל', !OS.cat, () => { OS.cat = null; OS.sup = null; renderOrders(); }));
-  CATS.filter(([k]) => O.cats.includes(k)).forEach(([k, lab, ico]) =>
-    cc.appendChild(mk(`${ico} ${lab}`, OS.cat === k, () => { OS.cat = k; OS.sup = null; renderOrders(); }, open[k] || 0)));
+  const all = mk('הכל', !OS.cat, () => { OS.cat = null; OS.sup = null; renderOrders(); });
+  all.classList.add('cat-all'); cc.appendChild(all);
+  CATS.filter(([k]) => O.cats.includes(k)).forEach(([k, lab, ico]) => {
+    const c = mk(`${ico} ${lab}`, OS.cat === k, () => { OS.cat = k; OS.sup = null; renderOrders(); }, open[k] || 0);
+    c.classList.add('cat-' + k); cc.appendChild(c);
+  });
 
   const sc = $('#oSups'); sc.innerHTML = '';
   const sup = {};
@@ -1457,7 +1501,7 @@ function renderOrders() {
   const frag = document.createDocumentFragment();
   ls.forEach(l => {
     const d = document.createElement('div');
-    d.className = 'ord-row' + (STRUCK[l.status] ? ' done' : '') + (DONE[l.status] ? ' gone' : '');
+    d.className = 'ord-row cat-' + l.cat + (STRUCK[l.status] ? ' done' : '') + (DONE[l.status] ? ' gone' : '');
     // the supplier and the client are editable after the fact: a free-text line added in a
     // hurry with no supplier would otherwise never show up in that supplier's order sheet.
     const tags = [
@@ -1744,6 +1788,7 @@ function fillOrderCats() {
 function wireOrders() {
   fillOrderCats();
   $('#oAdd').addEventListener('click', addLine);
+  $('#oAdd2').addEventListener('click', addLine);
   ['oName', 'oQty', 'oClient', 'oPhone'].forEach(id =>
     $('#' + id).addEventListener('keydown', e => { if (e.key === 'Enter') addLine(); }));
   $('#oCat').addEventListener('change', ordCatChanged);

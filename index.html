@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=31">
+<link rel="stylesheet" href="style.css?v=32">
 </head>
 <body>
 
@@ -208,16 +208,17 @@
         <input id="oPick" type="search" placeholder="🔍 פריט ממחירון — שם, מק״ט או ספק…" aria-label="פריט ממחירון">
         <div id="oSug" class="sug" hidden></div>
       </div>
+      <button id="oAdd" class="ord-add-btn">＋ הוסף</button>
     </div>
     <div class="row gap ord-line">
       <input id="oName" type="text" placeholder="או שם חופשי…" aria-label="שם חופשי">
+      <button id="oAdd2" class="ord-add-btn">＋ הוסף</button>
     </div>
     <div class="row gap">
       <input id="oQty" class="qty" type="number" min="1" step="1" value="1" aria-label="כמות">
       <select id="oCat" aria-label="קטגוריה"></select>
       <select id="oSup" aria-label="ספק"></select>
-      <button id="oClientBtn" class="ghost">🧑 ללקוח</button>
-      <button id="oAdd">＋ הוסף</button>
+      <button id="oClientBtn">🧑 ללקוח</button>
     </div>
     <div class="row gap" id="oClientRow" hidden>
       <input id="oClient" placeholder="שם הלקוח שהזמין" aria-label="שם לקוח">
@@ -424,6 +425,6 @@
 
 
 
-<script src="app.js?v=25"></script>
+<script src="app.js?v=26"></script>
 </body>
 </html>

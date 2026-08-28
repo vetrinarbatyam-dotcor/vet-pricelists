@@ -627,9 +627,12 @@ function renderOrders() {
   const cc = $('#oCats'); cc.innerHTML = '';
   const open = {};
   O.lines.forEach(l => { if (!l.deleted && OPEN_ST[l.status]) open[l.cat] = (open[l.cat] || 0) + 1; });
-  cc.appendChild(mk('הכל', !OS.cat, () => { OS.cat = null; OS.sup = null; renderOrders(); }));
-  CATS.filter(([k]) => O.cats.includes(k)).forEach(([k, lab, ico]) =>
-    cc.appendChild(mk(`${ico} ${lab}`, OS.cat === k, () => { OS.cat = k; OS.sup = null; renderOrders(); }, open[k] || 0)));
+  const all = mk('הכל', !OS.cat, () => { OS.cat = null; OS.sup = null; renderOrders(); });
+  all.classList.add('cat-all'); cc.appendChild(all);
+  CATS.filter(([k]) => O.cats.includes(k)).forEach(([k, lab, ico]) => {
+    const c = mk(`${ico} ${lab}`, OS.cat === k, () => { OS.cat = k; OS.sup = null; renderOrders(); }, open[k] || 0);
+    c.classList.add('cat-' + k); cc.appendChild(c);
+  });
 
   const sc = $('#oSups'); sc.innerHTML = '';
   const sup = {};
@@ -649,7 +652,7 @@ function renderOrders() {
   const frag = document.createDocumentFragment();
   ls.forEach(l => {
     const d = document.createElement('div');
-    d.className = 'ord-row' + (STRUCK[l.status] ? ' done' : '') + (DONE[l.status] ? ' gone' : '');
+    d.className = 'ord-row cat-' + l.cat + (STRUCK[l.status] ? ' done' : '') + (DONE[l.status] ? ' gone' : '');
     // the supplier and the client are editable after the fact: a free-text line added in a
     // hurry with no supplier would otherwise never show up in that supplier's order sheet.
     const tags = [
@@ -936,6 +939,7 @@ function fillOrderCats() {
 function wireOrders() {
   fillOrderCats();
   $('#oAdd').addEventListener('click', addLine);
+  $('#oAdd2').addEventListener('click', addLine);
   ['oName', 'oQty', 'oClient', 'oPhone'].forEach(id =>
     $('#' + id).addEventListener('keydown', e => { if (e.key === 'Enter') addLine(); }));
   $('#oCat').addEventListener('change', ordCatChanged);
