@@ -394,7 +394,8 @@ button.ord-tag:hover{background:var(--teal-soft)}
 .sup-seg{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 100%}
 .sup-seg button{font-size:13px;padding:4px 11px;border-radius:999px;font-weight:500}
 .sup-seg button.on{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:700}
-.sup-seg button.sup-more{border-style:dashed;color:var(--muted)}
+.sup-seg select{font:inherit;font-size:13px;padding:4px 9px;border-radius:999px;color:var(--muted);
+  border:1px dashed var(--line);background:var(--card);max-width:190px}
 
 /* the category picker in the add row: small buttons, each in its own colour */
 .cat-seg{flex:none}

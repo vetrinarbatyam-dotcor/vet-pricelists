@@ -406,7 +406,8 @@ button.ord-tag:hover{background:var(--teal-soft)}
 .sup-seg{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 100%}
 .sup-seg button{font-size:13px;padding:4px 11px;border-radius:999px;font-weight:500}
 .sup-seg button.on{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:700}
-.sup-seg button.sup-more{border-style:dashed;color:var(--muted)}
+.sup-seg select{font:inherit;font-size:13px;padding:4px 9px;border-radius:999px;color:var(--muted);
+  border:1px dashed var(--line);background:var(--card);max-width:190px}
 
 /* the category picker in the add row: small buttons, each in its own colour */
 .cat-seg{flex:none}
@@ -1393,26 +1394,22 @@ function supOptions(cat, curRaw) {
 // day a cleaning price list lands in data/
 const SEC_FOR_CAT = { general: ['medical'], food: ['food'], clean: ['clean'], shop: ['shop'], lab: ['labs'] };
 const ALL_SEC = ['medical', 'food', 'shop', 'labs'];
-let supAll = false;
+const heSort = ns => ns.sort((a, b) => a.localeCompare(b, 'he'));
 function fillSupSeg() {
-  const cat = $('#oCat').value;
-  const names = [...new Set((supAll ? ALL_SEC : SEC_FOR_CAT[cat] || []).flatMap(supNames))]
-    .sort((a, b) => a.localeCompare(b, 'he'));
   const cur = $('#oSup').value;
-  if (cur && !names.includes(cur)) names.unshift(cur);
-  $('#oSupSeg').innerHTML = names.map(n =>
+  const mine = heSort([...new Set((SEC_FOR_CAT[$('#oCat').value] || []).flatMap(supNames))]);
+  if (cur && !mine.includes(cur)) mine.unshift(cur);
+  // everyone else sits in one dropdown at the end of the row, so the common case stays one click
+  const rest = heSort([...new Set(ALL_SEC.flatMap(supNames))].filter(n => !mine.includes(n)));
+  $('#oSupSeg').innerHTML = mine.map(n =>
       `<button type="button" data-os="${esc(n)}"${n === cur ? ' class="on"' : ''}>${esc(n)}</button>`).join('') +
-    `<button type="button" data-os="__all" class="sup-more">${supAll ? '− רק של הקטגוריה' : '⋯ ספק אחר'}</button>` +
-    '<button type="button" data-os="__type" class="sup-more">＋ הקלדה</button>';
-  $$('#oSupSeg button').forEach(b => b.addEventListener('click', () => {
-    const v = b.dataset.os;
-    if (v === '__all') { supAll = !supAll; return fillSupSeg(); }
-    if (v === '__type') {
-      const t = (prompt('שם הספק:', $('#oSup').value) || '').trim();
-      return setSupVal(t);
-    }
-    setSupVal($('#oSup').value === v ? '' : v);   // pressing the pressed one clears it
-  }));
+    '<select id="oSupOther" aria-label="ספק אחר"><option value="">ספק אחר…</option>' +
+    rest.map(n => `<option value="${esc(n)}">${esc(n)}</option>`).join('') +
+    '<option value="__type">＋ הקלדה…</option></select>';
+  $$('#oSupSeg button').forEach(b => b.addEventListener('click', () =>
+    setSupVal($('#oSup').value === b.dataset.os ? '' : b.dataset.os)));   // pressing the pressed one clears it
+  $('#oSupOther').addEventListener('change', e => setSupVal(e.target.value === '__type'
+    ? (prompt('שם הספק:', $('#oSup').value) || '').trim() : e.target.value));
 }
 function setSupVal(name) { $('#oSup').value = supAlias(name) || ''; fillSupSeg(); }
 function setSup(sel, nameRaw) {
@@ -1657,10 +1654,7 @@ function addLine() {
   renderOrders(); saveOrders([l.id]);
   toast('נוסף ✓');
 }
-function ordCatChanged() {
-  supAll = false;
-  fillSupSeg();
-}
+function ordCatChanged() { fillSupSeg(); }
 // the sheet picks its own supplier: the chips above filter what you look at, this picks what
 // you actually send — so one click gives either everything or one supplier's list
 const NO_SUP = 'ללא ספק';
