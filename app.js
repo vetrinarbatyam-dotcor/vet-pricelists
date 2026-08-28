@@ -945,8 +945,15 @@ function start() {
 }
 
 function fillOrderCats() {
-  $('#oCat').innerHTML = CATS.filter(([k]) => O.cats.includes(k))
-    .map(([k, lab, ico]) => `<option value="${k}">${ico} ${esc(lab)}</option>`).join('');
+  const live = CATS.filter(([k]) => O.cats.includes(k));
+  $('#oCatSeg').innerHTML = live.map(([k, lab, ico]) =>
+    `<button type="button" data-oc="${k}" class="cat-${k}">${ico} ${esc(lab)}</button>`).join('');
+  $$('#oCatSeg button').forEach(b => b.addEventListener('click', () => setCat(b.dataset.oc)));
+  setCat(live.some(([k]) => k === 'general') ? 'general' : (live[0] || ['general'])[0]);
+}
+function setCat(k) {
+  $('#oCat').value = k;
+  $$('#oCatSeg button').forEach(b => b.classList.toggle('on', b.dataset.oc === k));
   ordCatChanged();
 }
 function wireOrders() {
@@ -955,7 +962,6 @@ function wireOrders() {
   $('#oAdd2').addEventListener('click', addLine);
   ['oName', 'oQty', 'oClient', 'oPhone'].forEach(id =>
     $('#' + id).addEventListener('keydown', e => { if (e.key === 'Enter') addLine(); }));
-  $('#oCat').addEventListener('change', ordCatChanged);
   $('#oSup').addEventListener('change', () => { if ($('#oSup').value === '__other') supOther($('#oSup'), ''); });
   $('#oClientBtn').addEventListener('click', () => {
     const r = $('#oClientRow'); r.hidden = !r.hidden; if (!r.hidden) $('#oClient').focus();
@@ -1002,8 +1008,8 @@ function wireOrders() {
         picked = h;
         $('#oPick').value = h.name; $('#oName').value = '';
         const c = SEC_CAT[h.sec] || 'general';
-        if (O.cats.includes(c)) $('#oCat').value = c;
-        ordCatChanged();
+        if (O.cats.includes(c)) setCat(c);
+        else ordCatChanged();
         setSup($('#oSup'), h.supplier || '');
         box.hidden = true; $('#oQty').focus();
       }));

@@ -384,6 +384,17 @@ button.ord-tag:hover{background:var(--teal-soft)}
   background:var(--edit-bg);color:var(--ink);margin-bottom:10px}
 #oHist.on{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}
 
+/* the category picker in the add row: small buttons, each in its own colour */
+.cat-seg{flex:none}
+.cat-seg button{font-size:13px;padding:5px 11px;font-weight:500;border-inline-start:1px solid var(--line)}
+.cat-seg button:first-child{border-inline-start:0}
+.cat-seg button.cat-general.on{background:var(--cat-general-b)}
+.cat-seg button.cat-food.on{background:var(--cat-food-b)}
+.cat-seg button.cat-clean.on{background:var(--cat-clean-b)}
+.cat-seg button.cat-lab.on{background:var(--cat-lab-b)}
+.cat-seg button.cat-shop.on{background:var(--cat-shop-b)}
+.cat-seg button.on{color:var(--ink);font-weight:700;box-shadow:inset 0 0 0 2px var(--ink)}
+
 /* ---------- category colours: the chip you pressed and the rows it holds ---------- */
 .chip.cat-general{background:var(--cat-general);border-color:var(--cat-general-b)}
 .chip.cat-food{background:var(--cat-food);border-color:var(--cat-food-b)}
