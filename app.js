@@ -492,7 +492,8 @@ const SUP_MERGE = { 'וטמרקט': 'Vetmarket', 'זואטיס (Zoetis)': 'Vetma
                     // one order goes to the brand, not to each of its lines
                     "Hill's Prescription Diet": "Hill's", "Hill's Science Plan": "Hill's",
                     "Hill's Vet Essentials": "Hill's", 'Monge Vet Solution': 'Monge',
-                    'Royal Canin VET': 'Royal Canin', 'Royal Canin חנויות': 'Royal Canin' };
+                    'Royal Canin VET': 'Royal Canin', 'Royal Canin חנויות': 'Royal Canin',
+                    'Purina Pro Plan VET': 'Purina', 'פורינה (חנויות)': 'Purina' };
 const supAlias = n => SUP_MERGE[n] || n;
 const supNames = type => [...new Set(INDEX.pricelists.filter(m => m.type === type).map(m => supAlias(m.supplier)))]
   .sort((a, b) => a.localeCompare(b, 'he'));
