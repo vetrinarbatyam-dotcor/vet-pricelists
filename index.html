@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=33">
+<link rel="stylesheet" href="style.css?v=34">
 </head>
 <body>
 
@@ -242,6 +242,10 @@
 
   <section id="oSheetBox" class="box" hidden>
     <h2 id="oSheetTitle">גיליון הזמנה</h2>
+    <div class="row gap sheet-sup">
+      <label for="oSheetSup"><b>למי מזמינים:</b></label>
+      <select id="oSheetSup" aria-label="ספק לגיליון"></select>
+    </div>
     <p class="hint">רק שורות <b>ממתין</b> ו<b>חסר</b> נכנסות לגיליון — מה שכבר הוזמן או במשלוח לא מוזמן שוב.</p>
     <textarea id="oSheetText" rows="12" aria-label="נוסח ההזמנה"></textarea>
     <div class="row gap">
@@ -425,6 +429,6 @@
 
 
 
-<script src="app.js?v=26"></script>
+<script src="app.js?v=27"></script>
 </body>
 </html>

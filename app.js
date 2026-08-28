@@ -747,20 +747,33 @@ function ordCatChanged() {
   $('#oPaidWrap').hidden = !lab;
   if (lab) $('#oClientRow').hidden = false;
 }
+// the sheet picks its own supplier: the chips above filter what you look at, this picks what
+// you actually send — so one click gives either everything or one supplier's list
+const NO_SUP = 'ללא ספק';
+const sheetSrc = sup => ordLines('sup').filter(l => (l.status === 'pending' || l.status === 'missing')
+  && (!sup || (l.supplier || NO_SUP) === sup));
 function openSheet() {
-  const src = ordLines().filter(l => l.status === 'pending' || l.status === 'missing');
+  const src = sheetSrc('');
   if (!src.length) return void toast('אין שורות ממתינות בסינון הזה', true);
+  const sups = [...new Set(src.map(l => l.supplier || NO_SUP))].sort((a, b) => a.localeCompare(b, 'he'));
+  $('#oSheetSup').innerHTML = `<option value="">הכל — ${sups.length} ספקים, ${src.length} שורות</option>` +
+    sups.map(s => `<option value="${esc(s)}">${esc(s)} (${src.filter(l => (l.supplier || NO_SUP) === s).length})</option>`).join('');
+  $('#oSheetSup').value = OS.sup && sups.includes(OS.sup) ? OS.sup : '';
+  buildSheet();
+  $('#oSheetBox').hidden = false;
+  $('#oSheetBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function buildSheet() {
+  const sup = $('#oSheetSup').value, src = sheetSrc(sup);
   // freeze the set: the list may re-poll between generating the sheet and marking it ordered
   sheetIds = src.map(l => l.id);
   const txt = sheetText(src);
   $('#oSheetText').value = txt;
-  $('#oSheetTitle').textContent = OS.sup ? `גיליון הזמנה — ${OS.sup}` : 'גיליון הזמנה';
+  $('#oSheetTitle').textContent = sup ? `גיליון הזמנה — ${sup}` : 'גיליון הזמנה — כל הספקים';
   $('#oWa').href = 'https://wa.me/?text=' + encodeURIComponent(txt);
-  $('#oMail').href = 'mailto:?subject=' + encodeURIComponent('הזמנה — ' + (OS.sup || 'מרפאת פט קייר')) +
+  $('#oMail').href = 'mailto:?subject=' + encodeURIComponent('הזמנה — ' + (sup || 'מרפאת פט קייר')) +
     '&body=' + encodeURIComponent(txt);
   $('#oSheetMsg').textContent = '';
-  $('#oSheetBox').hidden = false;
-  $('#oSheetBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 async function markSheetOrdered() {
   if (!sheetIds || !sheetIds.length) return;
@@ -960,6 +973,7 @@ function wireOrders() {
     renderOrders();
   });
   $('#oSheet').addEventListener('click', openSheet);
+  $('#oSheetSup').addEventListener('change', buildSheet);
   $('#oSheetClose').addEventListener('click', () => $('#oSheetBox').hidden = true);
   $('#oCopy').addEventListener('click', async () => {
     try { await navigator.clipboard.writeText($('#oSheetText').value); $('#oSheetMsg').textContent = 'הועתק ✓'; }

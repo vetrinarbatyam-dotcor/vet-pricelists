@@ -376,6 +376,9 @@ button.ord-tag:hover{background:var(--teal-soft)}
 .ord-ctl .qty{width:64px}
 .ord-chk{display:flex;align-items:center;gap:6px;font-size:13.5px;white-space:nowrap}
 .ord-date{color:var(--muted);font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.sheet-sup{margin:0 0 8px}
+.sheet-sup select{font:inherit;padding:6px 10px;border-radius:6px;border:1px solid var(--teal);
+  background:var(--card);color:var(--ink);font-weight:500;max-width:100%}
 #oSheetText{width:100%;box-sizing:border-box;font-family:ui-monospace,Consolas,monospace;
   font-size:13.5px;line-height:1.6;border:1px solid var(--line);border-radius:8px;padding:11px;
   background:var(--edit-bg);color:var(--ink);margin-bottom:10px}
