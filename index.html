@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=37">
+<link rel="stylesheet" href="style.css?v=38">
 </head>
 <body>
 
@@ -218,7 +218,10 @@
       <input id="oQty" class="qty" type="number" min="1" step="1" value="1" aria-label="כמות">
       <input type="hidden" id="oCat" value="general">
       <div id="oCatSeg" class="seg cat-seg" role="group" aria-label="קטגוריה"></div>
-      <select id="oSup" aria-label="ספק"></select>
+      <input type="hidden" id="oSup" value="">
+    </div>
+    <div class="row gap">
+      <div id="oSupSeg" class="sup-seg" role="group" aria-label="ספק"></div>
     </div>
   </section>
 
@@ -424,6 +427,6 @@
 
 
 
-<script src="app.js?v=33"></script>
+<script src="app.js?v=34"></script>
 </body>
 </html>

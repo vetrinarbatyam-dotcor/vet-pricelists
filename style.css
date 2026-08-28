@@ -390,6 +390,12 @@ button.ord-tag:hover{background:var(--teal-soft)}
   background:var(--edit-bg);color:var(--ink);margin-bottom:10px}
 #oHist.on{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}
 
+/* the suppliers of the chosen category, as buttons; "ספק אחר" opens the rest */
+.sup-seg{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 100%}
+.sup-seg button{font-size:13px;padding:4px 11px;border-radius:999px;font-weight:500}
+.sup-seg button.on{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:700}
+.sup-seg button.sup-more{border-style:dashed;color:var(--muted)}
+
 /* the category picker in the add row: small buttons, each in its own colour */
 .cat-seg{flex:none}
 .cat-seg button{font-size:13px;padding:5px 11px;font-weight:500;border-inline-start:1px solid var(--line)}

@@ -510,6 +510,32 @@ function supOptions(cat, curRaw) {
   if (cur && !seen.has(cur)) html += `<option value="${esc(cur)}" selected>${esc(cur)}</option>`;
   return html + '<option value="__other">אחר… (הקלדה)</option>';
 }
+// which price lists a category orders from — 'clean' has none yet, and will fill itself the
+// day a cleaning price list lands in data/
+const SEC_FOR_CAT = { general: ['medical'], food: ['food'], clean: ['clean'], shop: ['shop'], lab: ['labs'] };
+const ALL_SEC = ['medical', 'food', 'shop', 'labs'];
+let supAll = false;
+function fillSupSeg() {
+  const cat = $('#oCat').value;
+  const names = [...new Set((supAll ? ALL_SEC : SEC_FOR_CAT[cat] || []).flatMap(supNames))]
+    .sort((a, b) => a.localeCompare(b, 'he'));
+  const cur = $('#oSup').value;
+  if (cur && !names.includes(cur)) names.unshift(cur);
+  $('#oSupSeg').innerHTML = names.map(n =>
+      `<button type="button" data-os="${esc(n)}"${n === cur ? ' class="on"' : ''}>${esc(n)}</button>`).join('') +
+    `<button type="button" data-os="__all" class="sup-more">${supAll ? '− רק של הקטגוריה' : '⋯ ספק אחר'}</button>` +
+    '<button type="button" data-os="__type" class="sup-more">＋ הקלדה</button>';
+  $$('#oSupSeg button').forEach(b => b.addEventListener('click', () => {
+    const v = b.dataset.os;
+    if (v === '__all') { supAll = !supAll; return fillSupSeg(); }
+    if (v === '__type') {
+      const t = (prompt('שם הספק:', $('#oSup').value) || '').trim();
+      return setSupVal(t);
+    }
+    setSupVal($('#oSup').value === v ? '' : v);   // pressing the pressed one clears it
+  }));
+}
+function setSupVal(name) { $('#oSup').value = supAlias(name) || ''; fillSupSeg(); }
 function setSup(sel, nameRaw) {
   const name = supAlias(nameRaw);
   if (name && ![...sel.options].some(o => o.value === name))
@@ -739,7 +765,7 @@ function addLine() {
   const p = picked && picked.name === name ? picked : null;
   const l = { id: oid(), cat, name, qty: Math.max(1, parseInt($('#oQty').value, 10) || 1),
     status: cat === 'lab' ? 'taken' : 'pending',
-    supplier: $('#oSup').value === '__other' ? '' : $('#oSup').value.trim(), slug: p ? p.slug : '', sku: p ? (p.sku || '') : '',
+    supplier: $('#oSup').value.trim(), slug: p ? p.slug : '', sku: p ? (p.sku || '') : '',
     price: p ? p.price_no_vat : null,
     client: '', phone: '', paid: false, note: '',
     created_at: now, updated_at: now };
@@ -752,10 +778,8 @@ function addLine() {
   toast('נוסף ✓');
 }
 function ordCatChanged() {
-  const cat = $('#oCat').value, sel = $('#oSup');
-  const cur = sel.value === '__other' ? '' : sel.value;
-  sel.innerHTML = supOptions(cat, cur);
-  setSup(sel, cur);
+  supAll = false;
+  fillSupSeg();
 }
 // the sheet picks its own supplier: the chips above filter what you look at, this picks what
 // you actually send — so one click gives either everything or one supplier's list
@@ -972,7 +996,6 @@ function wireOrders() {
   $('#oAdd2').addEventListener('click', addLine);
   ['oName', 'oQty'].forEach(id =>
     $('#' + id).addEventListener('keydown', e => { if (e.key === 'Enter') addLine(); }));
-  $('#oSup').addEventListener('change', () => { if ($('#oSup').value === '__other') supOther($('#oSup'), ''); });
   let ot; $('#oQ').addEventListener('input', () => {
     clearTimeout(ot); ot = setTimeout(() => { OS.q = $('#oQ').value; renderOrders(); }, 200);
   });
@@ -1017,7 +1040,7 @@ function wireOrders() {
         const c = SEC_CAT[h.sec] || 'general';
         if (O.cats.includes(c)) setCat(c);
         else ordCatChanged();
-        setSup($('#oSup'), h.supplier || '');
+        setSupVal(h.supplier || '');
         box.hidden = true; $('#oQty').focus();
       }));
     }, 250);
