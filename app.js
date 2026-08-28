@@ -123,6 +123,8 @@ const statusHeb = s => s === 'current' ? 'עדכני' : s === 'stale' ? 'ישן'
 function show(page) {
   ['home', 'catalog', 'settings', 'calc', 'status', 'help', 'orders'].forEach(p => $('#' + p).hidden = p !== page);
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
+  // in the clinic copy the section tabs are a second bar that only exists over a price list
+  document.body.classList.toggle('on-catalog', page === 'catalog');
   $('.mid-nav').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
 }
 function goHome() {
@@ -872,7 +874,7 @@ function start() {
   $$('[data-mode]').forEach(b => b.addEventListener('click', () => {
     S.mode = b.dataset.mode; $$('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
     S.margins = P.clinicView !== 'compact';        // every entry into the clinic view starts from the stored default
-    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else show('home'); } else { renderTable(); render(); }
+    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else if (clinicMode) openSec('medical'); else show('home'); } else { renderTable(); render(); }
   }));
   $('#marginsBtn').addEventListener('click', () => { S.margins = !S.margins; renderTable(); render(); });
   let t; $('#q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { S.q = $('#q').value; S.shown = PAGE; render(); }, 200); });

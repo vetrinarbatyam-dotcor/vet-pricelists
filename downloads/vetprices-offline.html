@@ -273,8 +273,14 @@ td .date.parsed.internal{color:var(--crit)}
 .ord-cta{background:var(--teal);color:#fff;border-color:var(--teal);font-size:17px;font-weight:700;
   padding:10px 26px;border-radius:9px;box-shadow:0 3px 10px rgba(15,110,99,.32)}
 .ord-cta:hover{filter:brightness(1.08)}
-/* the clinic copy navigates by the middle group and the home tiles — the section tabs are noise */
+/* The clinic copy shows the section tabs as a second, full-width bar under the header, and
+   only over a price list. display:contents lifts .brand and .tabs into .top's own flex row so
+   the tabs can claim a row of their own — no markup change, so the public header is untouched. */
+.mode-clinic .top{flex-wrap:wrap}
+.mode-clinic .top-nav{display:contents}
 .mode-clinic .tabs{display:none}
+.mode-clinic.on-catalog .tabs{display:flex;order:9;flex-basis:100%;justify-content:center;gap:10px;
+  border-top:1px solid var(--line);margin-top:6px;padding-top:8px}
 .seg.mode-seg button{font-size:16px;font-weight:600;padding:9px 20px}
 .seg.mode-seg button.on{background:var(--teal);color:#fff;font-weight:700}
 .seg.mode-seg button:not(.on):hover{background:var(--teal-soft)}
@@ -993,6 +999,8 @@ const statusHeb = s => s === 'current' ? 'עדכני' : s === 'stale' ? 'ישן'
 function show(page) {
   ['home', 'catalog', 'settings', 'calc', 'status', 'help', 'orders'].forEach(p => $('#' + p).hidden = p !== page);
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
+  // in the clinic copy the section tabs are a second bar that only exists over a price list
+  document.body.classList.toggle('on-catalog', page === 'catalog');
   $('.mid-nav').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
 }
 function goHome() {
@@ -1743,7 +1751,7 @@ function start() {
   $$('[data-mode]').forEach(b => b.addEventListener('click', () => {
     S.mode = b.dataset.mode; $$('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
     S.margins = P.clinicView !== 'compact';        // every entry into the clinic view starts from the stored default
-    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else show('home'); } else { renderTable(); render(); }
+    if ($('#catalog').hidden) { if (S.type) openSec(S.type); else if (clinicMode) openSec('medical'); else show('home'); } else { renderTable(); render(); }
   }));
   $('#marginsBtn').addEventListener('click', () => { S.margins = !S.margins; renderTable(); render(); });
   let t; $('#q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { S.q = $('#q').value; S.shown = PAGE; render(); }, 200); });
