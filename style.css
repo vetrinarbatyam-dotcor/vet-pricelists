@@ -70,6 +70,7 @@ main{max-width:1280px;margin:0 auto;padding:16px 20px 48px}
 .dl{text-decoration:none;padding:6px 12px;border:1px solid var(--line);border-radius:6px;color:var(--ink);white-space:nowrap}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .chips.sub{margin-top:8px;padding:8px 10px;background:var(--teal-soft);border-radius:6px}
+#oSups .chip:not(.on) small:only-child{opacity:.45}
 .chip{border-radius:999px;padding:4px 12px;font-size:14px;background:var(--card)}
 .chip.on{background:var(--teal);color:#fff;border-color:var(--teal)}
 .chip small{opacity:.7;margin-inline-start:4px;font-variant-numeric:tabular-nums}

@@ -673,7 +673,10 @@ function renderOrders() {
   const sc = $('#oSups'); sc.innerHTML = '';
   const sup = {};
   ordLines('sup').forEach(l => { if (l.supplier) sup[l.supplier] = (sup[l.supplier] || 0) + 1; });
-  const names = Object.keys(sup).sort((a, b) => sup[b] - sup[a]);
+  // with a category chosen, list that category's whole supplier roster — the staff wants to see
+  // who they order from, not only whoever happens to have an open line right now
+  if (OS.cat) (SEC_FOR_CAT[OS.cat] || []).flatMap(supNames).forEach(n => { if (!(n in sup)) sup[n] = 0; });
+  const names = Object.keys(sup).sort((a, b) => sup[b] - sup[a] || a.localeCompare(b, 'he'));
   sc.hidden = !names.length;
   if (names.length) {
     sc.appendChild(mk('כל הספקים', !OS.sup, () => { OS.sup = null; renderOrders(); }));
