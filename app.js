@@ -481,7 +481,7 @@ const SEC_CAT = { medical: 'general', food: 'food', shop: 'shop', labs: 'lab' };
 // external labs are not suppliers: a lab line picks from the labs list, everything else from
 // the drugs and food price lists — the two the clinic actually places orders with
 const SUP_GROUPS = { lab: [['מעבדות חיצוניות', 'labs']],
-                     def: [['תרופות וציוד', 'medical'], ['מזון', 'food']] };
+                     def: [['תרופות וציוד', 'medical'], ['מזון', 'food'], ['מוצרי חנויות', 'shop']] };
 const supNames = type => [...new Set(INDEX.pricelists.filter(m => m.type === type).map(m => m.supplier))]
   .sort((a, b) => a.localeCompare(b, 'he'));
 function supOptions(cat, cur) {
