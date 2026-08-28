@@ -44,7 +44,7 @@ const defMargins = () => (P.clinicView || 'full') === 'full';
 const CLINIC_STORE = 'store/clinic-pricing.json';
 // which screen the site opens on. The clinic opens on its order list; a vet who came for the
 // price lists gets the price lists — and either can change it in the gear.
-const startPage = () => P.startPage || 'orders';
+const startPage = () => P.startPage || (clinicMode ? 'orders' : 'list');
 const clinicName = () => (P.clinicName || (clinicMode ? 'מרפאת פט קייר' : '')).trim();
 let clinicMode = false, putTimer = null;
 function toast(msg, bad) {
@@ -135,8 +135,8 @@ function show(page) {
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
   // in the clinic copy the section tabs are a second bar that only exists over a price list
   document.body.classList.toggle('on-catalog', page === 'catalog');
-  // the orders button is always there; the price-view switch only means something over a list
-  $('.mode-seg').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
+  // the three header buttons — הזמנות · מחירונים · מחירון המרפאה — are the same everywhere
+  $('.mode-seg').style.visibility = '';
 }
 function goHome() {
   S.type = null; $$('#tabs button').forEach(b => b.classList.remove('on'));
