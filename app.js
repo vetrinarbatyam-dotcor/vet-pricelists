@@ -35,7 +35,17 @@ const fmt0 = n => (+n || 0).toLocaleString('he-IL', { maximumFractionDigits: 0 }
 // Where the pricing settings live. The public site keeps them in the browser and nothing ever
 // leaves it. The clinic copy (config.json says mode:"clinic") keeps one file on the server, so
 // every computer in the clinic sees the same discounts and margins.
+// which money columns the clinic price list shows. 'full' is the editable wide table; the rest
+// are read-only, and each one drops another column from the left.
+const CVIEW = { compact: ['list', 'cost', 'sale'], buysale: ['cost', 'sale'], sale: ['sale'] };
+const cview = () => S.margins ? 'full' : (CVIEW[P.clinicView] ? P.clinicView : 'compact');
+// entering a price list starts from the stored default; only 'full' opens the editable table
+const defMargins = () => (P.clinicView || 'full') === 'full';
 const CLINIC_STORE = 'store/clinic-pricing.json';
+// which screen the site opens on. The clinic opens on its order list; a vet who came for the
+// price lists gets the price lists — and either can change it in the gear.
+const startPage = () => P.startPage || 'orders';
+const clinicName = () => (P.clinicName || (clinicMode ? 'מרפאת פט קייר' : '')).trim();
 let clinicMode = false, putTimer = null;
 function toast(msg, bad) {
   let t = $('#toast');
@@ -125,18 +135,25 @@ function show(page) {
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
   // in the clinic copy the section tabs are a second bar that only exists over a price list
   document.body.classList.toggle('on-catalog', page === 'catalog');
-  $('.mid-nav').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
+  // the orders button is always there; the price-view switch only means something over a list
+  $('.mode-seg').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
 }
 function goHome() {
   S.type = null; $$('#tabs button').forEach(b => b.classList.remove('on'));
-  // in the clinic copy the orders list is the front page; the price lists sit behind it
-  show(clinicMode ? 'orders' : 'home');
-  if (clinicMode) renderOrders();
+  const p = startPage();
+  if (p === 'orders') { show('orders'); renderOrders(); return; }
+  setModeSeg(p === 'clinic' ? 'clinic' : 'list');
+  if (p === 'clinic' && clinicMode) return openSec('medical');
+  show('home');
+}
+function setModeSeg(m) {
+  S.mode = m; S.margins = defMargins();
+  $$('[data-mode]').forEach(x => x.classList.toggle('on', x.dataset.mode === m));
 }
 
 async function openSec(sec) {
   S.type = sec; S.supplier = S.category = S.topic = null; S.q = ''; S.shown = PAGE; S.f = {};
-  S.margins = P.clinicView !== 'compact';
+  S.margins = defMargins();
   $('#q').value = '';
   $$('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.type === sec));
   show('catalog'); await render();
@@ -249,14 +266,20 @@ function mk(label, on, fn, n, status, kind) {
 function renderTable() {
   const incl = S.vat === 'incl', pr = S.mode === 'clinic';
   const wide = pr && S.margins;
+  const cols = pr && !wide ? CVIEW[cview()] : null;
+  const showList = !cols || cols.includes('list');
   // on a phone the full header wraps to four lines and eats the column; the מע״מ toggle
   // sitting right above the table already says which basis is showing.
   const narrow = matchMedia('(max-width:700px)').matches;
-  const th = ['ספק', 'פריט', 'קטגוריה', 'מק״ט',
-    narrow ? 'מחיר' : (incl ? 'מחיר מחירון (כולל מע״מ)' : 'מחיר מחירון (ללא מע״מ)'), 'מחירון'];
-  if (wide) th.push('הנחה %', 'עלות', 'מרווח %', '₪ קבוע', 'מחיר ללקוח', '');
-  else if (pr) th.push('מחיר קנייה (כולל מע״מ)', 'מחיר ללקוח');
-  $('#thead').innerHTML = th.map((h, i) => `<th class="${i === 4 || i >= 6 ? 'num' : ''}">${h}</th>`).join('');
+  const th = [['ספק', 0], ['פריט', 0], ['קטגוריה', 0], ['מק״ט', 0]];
+  if (showList) th.push([narrow ? 'מחיר' : (incl ? 'מחיר מחירון (כולל מע״מ)' : 'מחיר מחירון (ללא מע״מ)'), 1]);
+  th.push(['מחירון', 0]);
+  if (wide) th.push(['הנחה %', 1], ['עלות', 1], ['מרווח %', 1], ['₪ קבוע', 1], ['מחיר ללקוח', 1], ['', 1]);
+  else if (pr) {
+    if (cols.includes('cost')) th.push(['מחיר קנייה (כולל מע״מ)', 1]);
+    th.push(['מחיר ללקוח', 1]);
+  }
+  $('#thead').innerHTML = th.map(([h, n]) => `<th class="${n ? 'num' : ''}">${h}</th>`).join('');
   const tb = $('#tbody'); tb.innerHTML = '';
   const frag = document.createDocumentFragment();
   rows.slice(0, S.shown).forEach(r => {
@@ -266,12 +289,13 @@ function renderTable() {
     let h = `<td class="sup">${esc(r.supplier)}</td>` +
       `<td class="name">${esc(r.name)}${extra.length ? `<small>${extra.map(esc).join(' · ')}</small>` : ''}</td>` +
       `<td>${esc(r.category || '')}</td><td class="num">${esc(r.sku || '')}</td>` +
-      `<td class="num price">${fmt(incl ? r.price_with_vat : r.price_no_vat)}</td>` +
+      (showList ? `<td class="num price">${fmt(incl ? r.price_with_vat : r.price_no_vat)}</td>` : '') +
       `<td><span class="date ${statusCls(r.status)}${r.kind ? ' parsed ' + r.kind : ''}"${r.kind ? ` title="${MARK[r.kind].text}"` : ''}>` +
       `${r.kind ? MARK[r.kind].sym + ' ' : ''}${r.price_date || r.date || 'ללא תאריך'}</span>` +
       `${r.src ? ` <a class="src" href="${r.src}" target="_blank" rel="noopener" title="צילום המקור">📄</a>` : ''}</td>`;
     if (pr && !S.margins) {
-      h += `<td class="num buyprice">${fmt(c.cost)}</td><td class="num price cust-ro">${fmt(c.sale)}</td>`;
+      if (cols.includes('cost')) h += `<td class="num buyprice">${fmt(c.cost)}</td>`;
+      h += `<td class="num price cust-ro">${fmt(c.sale)}</td>`;
     } else if (pr) {
       const o = P.rows[r.id] || {};
       const inp = (f, v, step, on) => `<td class="edit"><input type="number" step="${step}" data-f="${f}" value="${v}"${on ? ' class="ovr"' : ''}></td>`;
@@ -337,7 +361,7 @@ function renderSettings() {
     tb.appendChild(tr);
   });
   const oc = $('#ordCats');
-  if (oc && clinicMode) {
+  if (oc) {
     oc.innerHTML = '';
     CATS.forEach(([k, lab, ico]) => {
       const w = document.createElement('label');
@@ -353,6 +377,8 @@ function renderSettings() {
       oc.appendChild(w);
     });
   }
+  $$('#startSeg button').forEach(b => b.classList.toggle('on', b.dataset.start === startPage()));
+  $('#clinicName').value = P.clinicName || '';
   $$('#roundSeg button').forEach(b => b.classList.toggle('on', +b.dataset.round === (+P.round || 0)));
   $$('#viewSeg button').forEach(b => b.classList.toggle('on', b.dataset.cview === (P.clinicView || 'full')));
 }
@@ -474,6 +500,9 @@ function renderStatus() {
 // thing. Writes re-read and merge instead of overwriting: a computer holding a stale list can
 // never wipe what another one added.
 const ORD_STORE = 'store/orders.json';
+// the public copy has no server behind it — there the list lives in this browser only,
+// exactly like the pricing settings do.
+const ORD_LK = 'vp_orders';
 const CATS = [['general', 'כללי', '📦'], ['food', 'מזון', '🍖'], ['clean', 'ניקיון', '🧽'],
               ['shop', 'חנות', '🛍️'], ['lab', 'מעבדה חיצונית', '🧪']];
 const CAT_HEB = Object.fromEntries(CATS.map(([k, l]) => [k, l]));
@@ -577,7 +606,7 @@ function sortLines(ls) {
   return ls.slice().sort((x, y) => (ST_ORDER[x.status] ?? 9) - (ST_ORDER[y.status] ?? 9) ||
     (y.created_at || '').localeCompare(x.created_at || ''));
 }
-function sheetText(lines, today) {
+function sheetText(lines, today, clinic) {
   const by = {};
   lines.forEach(l => (by[l.supplier || 'ללא ספק'] = by[l.supplier || 'ללא ספק'] || []).push(l));
   const d = today || new Date().toLocaleDateString('he-IL');
@@ -587,24 +616,30 @@ function sheetText(lines, today) {
     by[sup].forEach(l => out.push(`• ${l.name} — ${l.qty} יח'` + (l.client ? ` (ל${l.client})` : '')));
     out.push('', `סה"כ פריטים: ${by[sup].length}`, '');
   });
-  out.push('מרפאת פט קייר');
+  if (clinic) out.push(clinic);
   return out.join('\n');
 }
 
 // --- storage ---
 async function loadOrders() {
-  try {
-    const s = await getJSON(ORD_STORE);
-    const cut = new Date(Date.now() - TOMB_TTL).toISOString();
-    O = { v: 1, cats: Array.isArray(s.cats) ? s.cats : DEF_CATS.slice(),
-          // ponytail: tombstones expire after 90d; if the file ever gets big, split per line
-          lines: (Array.isArray(s.lines) ? s.lines : []).filter(l => !(l.deleted && (l.updated_at || '') < cut)) };
+  const cut = new Date(Date.now() - TOMB_TTL).toISOString();
+  const take = s => (O = { v: 1, cats: Array.isArray(s.cats) ? s.cats : DEF_CATS.slice(),
+        // ponytail: tombstones expire after 90d; if the file ever gets big, split per line
+        lines: (Array.isArray(s.lines) ? s.lines : []).filter(l => !(l.deleted && (l.updated_at || '') < cut)) });
+  if (!clinicMode) {
+    try { take(JSON.parse(localStorage.getItem(ORD_LK) || '{}')); } catch { take({}); }
     return true;
-  } catch { toast('⚠️ לא הצלחנו לטעון את ההזמנות מהשרת', true); return false; }
+  }
+  try { take(await getJSON(ORD_STORE)); return true; }
+  catch { toast('⚠️ לא הצלחנו לטעון את ההזמנות מהשרת', true); return false; }
 }
 // GET → merge → PUT → read back. The read-back is not polish: it is the only thing that catches
 // two computers writing inside the same few hundred ms, which merging alone cannot.
 async function saveOrders(ids) {
+  if (!clinicMode) {
+    try { localStorage.setItem(ORD_LK, JSON.stringify({ v: 1, cats: O.cats, lines: O.lines })); return true; }
+    catch (e) { toast('⚠️ השמירה בדפדפן נכשלה (' + e.message + ') — ההזמנה לא נשמרה', true); return false; }
+  }
   const mine = O.lines.filter(l => ids.includes(l.id));
   for (let attempt = 0; attempt < 2; attempt++) {
     let remote = null;
@@ -632,6 +667,7 @@ async function saveOrders(ids) {
   return false;
 }
 function ordPoll() {
+  if (!clinicMode) return;   // one browser, one list — there is nobody to poll against
   clearTimeout(ordTimer);
   ordTimer = setTimeout(async () => {
     if (!$('#orders').hidden && document.visibilityState === 'visible') {
@@ -798,11 +834,11 @@ function buildSheet() {
   const sup = $('#oSheetSup').value, src = sheetSrc(sup);
   // freeze the set: the list may re-poll between generating the sheet and marking it ordered
   sheetIds = src.map(l => l.id);
-  const txt = sheetText(src);
+  const txt = sheetText(src, null, clinicName());
   $('#oSheetText').value = txt;
   $('#oSheetTitle').textContent = sup ? `גיליון הזמנה — ${sup}` : 'גיליון הזמנה — כל הספקים';
   $('#oWa').href = 'https://wa.me/?text=' + encodeURIComponent(txt);
-  $('#oMail').href = 'mailto:?subject=' + encodeURIComponent('הזמנה — ' + (sup || 'מרפאת פט קייר')) +
+  $('#oMail').href = 'mailto:?subject=' + encodeURIComponent('הזמנה' + (sup ? ' — ' + sup : '')) +
     '&body=' + encodeURIComponent(txt);
   $('#oSheetMsg').textContent = '';
 }
@@ -877,8 +913,9 @@ async function init() {
   });
 }
 
-function start() {
+async function start() {
   $('#app').hidden = false;
+  if (!clinicMode) await loadOrders();
   const counts = {};
   INDEX.pricelists.forEach(m => counts[m.type] = (counts[m.type] || 0) + m.item_count);
   Object.keys(SEC_HEB).forEach(k => $('#c-' + k).textContent = `${(counts[k] || 0).toLocaleString('he-IL')} פריטים`);
@@ -895,7 +932,7 @@ function start() {
   $$('[data-view]').forEach(b => b.addEventListener('click', () => { S.view = b.dataset.view; S.supplier = S.category = S.topic = null; S.shown = PAGE; $$('[data-view]').forEach(x => x.classList.toggle('on', x === b)); render(); }));
   $$('[data-mode]').forEach(b => b.addEventListener('click', () => {
     S.mode = b.dataset.mode; $$('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
-    S.margins = P.clinicView !== 'compact';        // every entry into the clinic view starts from the stored default
+    S.margins = defMargins();   // every entry into the clinic view starts from the stored default
     if ($('#catalog').hidden) { if (S.type) openSec(S.type); else if (clinicMode) openSec('medical'); else show('home'); } else { renderTable(); render(); }
   }));
   $('#marginsBtn').addEventListener('click', () => { S.margins = !S.margins; renderTable(); render(); });
@@ -903,7 +940,7 @@ function start() {
   $('#more').addEventListener('click', () => { S.shown += PAGE; renderTable(); });
   $$('#viewSeg button').forEach(b => b.addEventListener('click', () => {
     P.clinicView = b.dataset.cview; save(); renderSettings();
-    S.margins = P.clinicView !== 'compact'; renderTableIfOpen();
+    S.margins = defMargins(); renderTableIfOpen();
   }));
   $$('.helpLink').forEach(b => b.addEventListener('click', () => { $('#helpMsg').textContent = ''; show('help'); }));
   $('#helpBtn').addEventListener('click', () => { $('#helpMsg').textContent = ''; show('help'); });
@@ -932,14 +969,21 @@ function start() {
     P.tiers.on = e.target.checked; save(); renderAdv();
     if (S.mode === 'clinic') renderTable();
   });
+  $$('#startSeg button').forEach(b => b.addEventListener('click', () => {
+    P.startPage = b.dataset.start; save(); renderSettings();
+  }));
+  $('#clinicName').addEventListener('change', () => { P.clinicName = $('#clinicName').value.trim(); save(); });
   $('#supQ').addEventListener('input', renderSettings);
   $$('#roundSeg button').forEach(b => b.addEventListener('click', () => { P.round = +b.dataset.round; save(); renderSettings(); renderTableIfOpen(); }));
   // the same two actions are offered on the settings page and on the help page
   let msgTarget = '#setMsg';
   const setMsg = t => { const el = $(msgTarget); if (el) el.textContent = t; };
   function doExport() {
+    // in the public copy this file is the only backup there is, and the orders live in the same
+    // browser — leaving them out would make the promise on the help page false
+    const payload = clinicMode ? P : { ...P, orders: { v: 1, cats: O.cats, lines: O.lines } };
     const a = document.createElement('a');
-    a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(P, null, 1));
+    a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(payload, null, 1));
     a.download = 'vetprices-pricing.json'; a.click();
     setMsg('ההגדרות יוצאו לקובץ. שמרו אותו במקום בטוח.');
   }
@@ -949,13 +993,28 @@ function start() {
   $('#importBtn2').addEventListener('click', () => { msgTarget = '#helpMsg'; $('#importFile').click(); });
   $('#importFile').addEventListener('change', async e => {
     const f = e.target.files[0]; if (!f) return;
-    try { P = Object.assign({}, EMPTY, JSON.parse(await f.text())); save(); renderSettings(); setMsg('ההגדרות יובאו.'); }
+    try {
+      const j = JSON.parse(await f.text()), ords = j.orders; delete j.orders;
+      P = Object.assign({}, EMPTY, j); save();
+      const withOrders = !clinicMode && ords && Array.isArray(ords.lines);
+      if (withOrders) {
+        O = { v: 1, cats: Array.isArray(ords.cats) ? ords.cats : DEF_CATS.slice(), lines: ords.lines };
+        saveOrders([]); fillOrderCats(); renderOrders();
+      }
+      renderSettings(); applyOrdIntro();
+      setMsg(withOrders ? 'ההגדרות וההזמנות יובאו.' : 'ההגדרות יובאו.');
+    }
     catch { setMsg('הקובץ אינו קובץ הגדרות תקין.'); }
     e.target.value = '';
   });
   $('#resetBtn').addEventListener('click', () => {
-    if (!confirm('לאפס את כל ההנחות, המרווחים והדריסות? לא ניתן לבטל.')) return;
-    P = { ...EMPTY }; save(); renderSettings(); $('#setMsg').textContent = 'הכל אופס.';
+    const alsoOrders = !clinicMode && O.lines.some(l => !l.deleted);
+    if (!confirm('לאפס את כל ההנחות, המרווחים והדריסות' +
+                 (alsoOrders ? ' — וגם למחוק את כל ההזמנות' : '') + '? לא ניתן לבטל.')) return;
+    P = { ...EMPTY }; save();
+    if (alsoOrders) { O = { v: 1, cats: DEF_CATS.slice(), lines: [] }; saveOrders([]); fillOrderCats(); renderOrders(); }
+    renderSettings(); applyOrdIntro();
+    $('#setMsg').textContent = 'הכל אופס.';
   });
   ['cList', 'cDisc', 'cPct', 'cFlat'].forEach(id => $('#' + id).addEventListener('input', () => calcRun()));
   $('#cSale').addEventListener('input', () => calcRun('sale'));
@@ -971,7 +1030,7 @@ function start() {
       }));
     }, 250);
   });
-  if (clinicMode) wireOrders();
+  wireOrders();
   goHome();
 }
 
@@ -987,8 +1046,20 @@ function setCat(k) {
   $$('#oCatSeg button').forEach(b => b.classList.toggle('on', b.dataset.oc === k));
   ordCatChanged();
 }
+function applyOrdIntro() { const b = $('#oIntro'); if (b) b.hidden = !!P.hideOrdIntro; }
 function wireOrders() {
   fillOrderCats();
+  // the list opens on כללי, not on הכל: most of the standing lines are food, and "הכל" made
+  // the screen look like a food list every time it was opened
+  if (OS.cat == null && O.cats.includes('general')) OS.cat = 'general';
+  applyOrdIntro();
+  $('#oIntroX').addEventListener('click', () => { P.hideOrdIntro = 1; save(); applyOrdIntro(); });
+  const openGuide = () => {
+    $('#helpMsg').textContent = ''; show('help');
+    $('#ordersHelp').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  $('#oGuideBtn').addEventListener('click', openGuide);
+  $('#oIntroMore').addEventListener('click', openGuide);
   $('#oAdd').addEventListener('click', addLine);
   $('#oAdd2').addEventListener('click', addLine);
   ['oName', 'oQty'].forEach(id =>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VetPrices — הוראות להזמנות</title>
+<style>
+:root{--ink:#22303a;--muted:#65727c;--line:#dfe4e6;--teal:#0f6e63;--teal-soft:#e6f2f0;--warn:#8a5a12;--warn-soft:#fdf3e2}
+*{box-sizing:border-box}
+body{margin:0;padding:34px 20px 60px;background:#f6f7f6;color:var(--ink);
+  font:16px/1.7 Heebo,"Segoe UI",Arial,sans-serif}
+main{max-width:820px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px 32px 34px}
+.head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  border-bottom:2px solid var(--teal);padding-bottom:12px;margin-bottom:22px}
+.head b{font-size:20px;color:var(--teal)}
+.head span{color:var(--muted);font-size:14px}
+h2{font-size:23px;margin:0 0 10px}
+h3{font-size:18px;margin:26px 0 8px;color:var(--teal)}
+p{margin:0 0 10px}
+ol,ul{margin:0 0 10px;padding-inline-start:22px}
+li{margin-bottom:7px}
+ul.tick{list-style:none;padding-inline-start:0}
+ul.tick li{padding-inline-start:20px;position:relative}
+ul.tick li::before{content:"•";position:absolute;inset-inline-start:2px;color:var(--teal);font-weight:700}
+.hint{color:var(--muted);font-size:14.5px}
+.warn-line{background:var(--warn-soft);border-inline-start:4px solid var(--warn);border-radius:8px;padding:11px 14px}
+footer{max-width:820px;margin:16px auto 0;color:var(--muted);font-size:13.5px;text-align:center}
+@media print{body{background:#fff;padding:0}main{border:0;border-radius:0;padding:0}}
+</style>
+</head>
+<body>
+<main>
+  <div class="head"><b>VetPrices · הזמנות</b><span>מוגש חינם ע"י ד"ר גיל קרן · ClaudeVet</span></div>
+
+  <section>
+    <h2>🧾 איך עובדים עם ההזמנות</h2>
+    <p>רשימת החוסרים של המרפאה, באותו מקום שבו כבר יש לכם את המחירונים: מה שנגמר נרשם ברגע שרואים אותו,
+      וכשמזמינים — הרשימה כבר מסודרת לפי ספק ומוכנה להעתקה.</p>
+
+    <h3>1. להוסיף פריט</h3>
+    <ol class="steps">
+      <li><b>פריט ממחירון</b> — מקלידים שתי אותיות בשדה החיפוש העליון ובוחרים מהרשימה. הספק והקטגוריה נקבעים לבד לפי המחירון.</li>
+      <li><b>שם חופשי</b> — כל דבר שאין לו מחירון (ציוד משרדי, מוצר של ספק מקומי). כותבים בשדה השני ולוחצים <b>＋ הוסף</b>.</li>
+      <li>קובעים <b>כמות</b>, ואם צריך משנים <b>קטגוריה</b> (כללי · מזון · ניקיון · חנות · מעבדה) ו<b>ספק</b>.
+        לכל קטגוריה יש צבע משלה, וגם השורות ברשימה נצבעות בו.</li>
+    </ol>
+    <p class="hint">הספק נבחר מכפתורים — הספקים של אותה קטגוריה מהמחירונים. מי שלא ברשימה נמצא ב<b>ספק אחר…</b> בסוף השורה,
+      ואפשר גם להקליד ספק שאינו באף מחירון.</p>
+
+    <h3>2. מה קורה לשורה</h3>
+    <ul class="tick">
+      <li><b>ממתין</b> — נרשם, עוד לא הוזמן. <b>חסר</b> — נגמר ודחוף.</li>
+      <li><b>הוזמן</b> / <b>במשלוח</b> / <b>התקבל</b> — מה שהוזמן צונח לתחתית הרשימה, ומה שהתקבל נעלם ממנה אחרי 30 יום
+        (ותמיד אפשר לראות אותו ב-<b>🕘 היסטוריה</b>).</li>
+      <li>שורת <b>מעבדה</b> עובדת בסטטוסים שלה — נלקח · נשלח · חזר · דווח — ויש לה סימון <b>שולם</b>.</li>
+      <li><b>＋ לקוח</b> על השורה מצמיד אליה שם וטלפון — בשביל מה שהוזמן במיוחד עבור לקוח. הכפתור <b>ללקוח</b> בסינון מציג רק אותן.</li>
+    </ul>
+
+    <h3>3. להזמין — גיליון הזמנה</h3>
+    <ol class="steps">
+      <li>לוחצים <b>📋 גיליון הזמנה</b>. נכנסות רק שורות <b>ממתין</b> ו<b>חסר</b> — מה שכבר הוזמן לא מוזמן שוב.</li>
+      <li>בוחרים <b>למי מזמינים</b>: הכל, או ספק אחד — ואז הנוסח מכיל רק את מה ששייך אליו.</li>
+      <li><b>📋 העתק</b> ומדביקים בוואטסאפ למוכר, או <b>💬 וואטסאפ</b> / <b>✉ מייל</b> / <b>🖨 הדפס</b>.</li>
+      <li>אחרי ששלחתם — <b>✔ סמן הכל כהוזמן</b>, והשורות יורדות לתחתית הרשימה.</li>
+    </ol>
+    <p class="hint">שם המרפאה שמופיע בסוף הגיליון נקבע בהגדרות ⚙️, בקופסת ההזמנות.</p>
+
+    <h3>4. איפה זה נשמר — וזה חשוב</h3>
+    <p class="warn-line">הרשימה נשמרת <b>בדפדפן שלכם בלבד</b>, בדיוק כמו ההנחות והמרווחים — כולל שמות וטלפונים של לקוחות.
+      אנחנו לא רואים אותה ואין לנו עותק שלה. <b>ניקוי נתוני גלישה מוחק אותה</b>, מחשב אחר לא יראה אותה,
+      ובחלון פרטי היא נעלמת בסגירה.</p>
+    <p>הגיבוי היחיד הוא <b>⬇ ייצוא הגדרות</b> שבהגדרות ⚙️ — הקובץ הזה מכיל גם את ההזמנות, וייבוא שלו במחשב אחר מחזיר את שתיהן.
+      זה גם מה שמעביר את הרשימה בין מחשבים; אין סנכרון אוטומטי, ובכוונה.</p>
+
+    <h3>5. הגדרות שכדאי לעשות פעם אחת</h3>
+    <ul class="tick">
+      <li><b>אילו קטגוריות</b> יופיעו — מי שלא מנהל מעבדה חיצונית פשוט מכבה אותה.</li>
+      <li><b>שם המרפאה</b> לגיליון ההזמנה.</li>
+      <li><b>מה נפתח כשנכנסים</b> — מחירונים, מחירון המרפאה או ההזמנות. מי שבא רק למחירונים לא צריך לראות את ההזמנות בכלל.</li>
+    </ul>
+  </section>
+</main>
+<footer>הגרסה המלאה והמעודכנת: <b>prices.claudevet.com</b> · שאלות: vetrinarbatyam@gmail.com</footer>
+</body>
+</html>

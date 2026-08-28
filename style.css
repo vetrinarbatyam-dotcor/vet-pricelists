@@ -167,6 +167,9 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
 /* ---------- pages (settings / calculator) ---------- */
 .page{max-width:1100px;margin:0 auto;padding:22px 20px 50px}
 .page-head h1{font-family:"Frank Ruhl Libre",Georgia,serif;font-size:27px;margin:0 0 4px}
+.seg.wrap{flex-wrap:wrap}
+.ord-head{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.ord-head h1{margin:0}
 .page-head p{color:var(--muted);max-width:70ch}
 .box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:14px 0}
 .box h2{font-family:"Frank Ruhl Libre",Georgia,serif;font-size:19px;margin:0 0 10px}
@@ -343,7 +346,17 @@ button.linkish{background:none;border:0;padding:0;color:var(--teal);font:inherit
 /* ---------- orders (clinic copy) ---------- */
 /* everything order-related is server-backed, so it only exists in the clinic build */
 body:not(.mode-clinic) .clinic-only{display:none}
+.mode-clinic .pub-only{display:none}
+.mode-offline #oGuideDl{display:none}
 .tile.orders{grid-column:1/-1;border-style:dashed;border-color:var(--teal)}
+.ord-intro{position:relative;background:var(--teal-soft);border:1px solid var(--teal);border-radius:12px;
+  padding:14px 18px 12px;margin:0 0 16px;max-width:73%;margin-inline:auto}
+.ord-intro p{margin:0 0 7px;font-size:15px;line-height:1.65}
+.ord-intro p:last-child{margin-bottom:0}
+.ord-intro .x{position:absolute;inset-inline-start:8px;top:6px;background:none;border:0;padding:2px 6px;
+  color:var(--muted);font-size:15px;cursor:pointer;line-height:1}
+.ord-intro .x:hover{color:var(--ink)}
+#clinicName{flex:1 1 260px;max-width:340px}
 .ord-add .row{align-items:center}
 .pickwrap{position:relative;flex:2 1 240px;min-width:200px}
 .pickwrap input{width:100%}

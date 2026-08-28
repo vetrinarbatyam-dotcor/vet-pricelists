@@ -12,6 +12,7 @@ Run after scripts/build.py:  python scripts/build_offline.py
 import json
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "downloads" / "vetprices-offline.html"
@@ -36,10 +37,18 @@ def main():
     html = read("index.html")
     # the stylesheet and the script become inline; the Google Fonts link stays a link, and
     # simply falls back to the local stack when the file is opened offline.
+    # the logo sits next to index.html, not next to the bundle — inline it or it 404s on disk
+    for svg in ("claudevet-wordmark.svg", "claudevet-mark.svg"):
+        uri = "data:image/svg+xml;utf8," + quote(read(svg))
+        html = html.replace(f'"{svg}"', f'"{uri}"')
+
+    # the replacement has to be a function: as a plain string re.sub would eat the backslashes
+    # in the source, and the \n inside out.join('\n') became a real newline — an unterminated
+    # string literal that killed the whole bundle.
     html = re.sub(r'<link rel="stylesheet" href="style\.css[^"]*">',
-                  "<style>\n" + read("style.css") + "\n</style>", html, count=1)
+                  lambda m: "<style>\n" + read("style.css") + "\n</style>", html, count=1)
     html = re.sub(r'<script src="app\.js[^"]*"></script>',
-                  "<script>\n" + read("app.js") + "\n</script>", html, count=1)
+                  lambda m: "<script>\n" + read("app.js") + "\n</script>", html, count=1)
     # </ inside the JSON would close the script tag early
     payload = json.dumps(embed, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     html = html.replace("</head>", f"<script>window.__VP_EMBED={payload};</script>\n</head>", 1)

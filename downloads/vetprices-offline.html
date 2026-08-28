@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>VetPrices — המחירון הווטרינרי הפתוח · ClaudeVet</title>
-<link rel="icon" href="claudevet-mark.svg" type="image/svg+xml">
+<link rel="icon" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20role%3D%22img%22%20aria-label%3D%22ClaudeVet%22%3E%0A%20%20%3Crect%20width%3D%2248%22%20height%3D%2248%22%20rx%3D%228%22%20fill%3D%22%230F6E63%22/%3E%0A%20%20%3Ctext%20x%3D%229%22%20y%3D%2235%22%20font-family%3D%22%27Frank%20Ruhl%20Libre%27%2CGeorgia%2Cserif%22%20font-weight%3D%22700%22%20font-size%3D%2230%22%20fill%3D%22%23F6F7F4%22%3EV%3C/text%3E%0A%20%20%3Ccircle%20cx%3D%2237%22%20cy%3D%2212%22%20r%3D%223.5%22%20fill%3D%22%23B0754A%22/%3E%0A%3C/svg%3E%0A" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
@@ -179,6 +179,9 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
 /* ---------- pages (settings / calculator) ---------- */
 .page{max-width:1100px;margin:0 auto;padding:22px 20px 50px}
 .page-head h1{font-family:"Frank Ruhl Libre",Georgia,serif;font-size:27px;margin:0 0 4px}
+.seg.wrap{flex-wrap:wrap}
+.ord-head{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.ord-head h1{margin:0}
 .page-head p{color:var(--muted);max-width:70ch}
 .box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:14px 0}
 .box h2{font-family:"Frank Ruhl Libre",Georgia,serif;font-size:19px;margin:0 0 10px}
@@ -355,7 +358,17 @@ button.linkish{background:none;border:0;padding:0;color:var(--teal);font:inherit
 /* ---------- orders (clinic copy) ---------- */
 /* everything order-related is server-backed, so it only exists in the clinic build */
 body:not(.mode-clinic) .clinic-only{display:none}
+.mode-clinic .pub-only{display:none}
+.mode-offline #oGuideDl{display:none}
 .tile.orders{grid-column:1/-1;border-style:dashed;border-color:var(--teal)}
+.ord-intro{position:relative;background:var(--teal-soft);border:1px solid var(--teal);border-radius:12px;
+  padding:14px 18px 12px;margin:0 0 16px;max-width:73%;margin-inline:auto}
+.ord-intro p{margin:0 0 7px;font-size:15px;line-height:1.65}
+.ord-intro p:last-child{margin-bottom:0}
+.ord-intro .x{position:absolute;inset-inline-start:8px;top:6px;background:none;border:0;padding:2px 6px;
+  color:var(--muted);font-size:15px;cursor:pointer;line-height:1}
+.ord-intro .x:hover{color:var(--ink)}
+#clinicName{flex:1 1 260px;max-width:340px}
 .ord-add .row{align-items:center}
 .pickwrap{position:relative;flex:2 1 240px;min-width:200px}
 .pickwrap input{width:100%}
@@ -466,10 +479,10 @@ button.ord-tag:hover{background:var(--teal-soft)}
 <!-- ===== soft gate ===== -->
 <section id="gate" class="gate" hidden>
   <div class="gate-card">
-    <img src="claudevet-wordmark.svg" alt="ClaudeVet" class="gate-logo">
+    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22220%22%20height%3D%2248%22%20viewBox%3D%220%200%20220%2048%22%20role%3D%22img%22%20aria-label%3D%22ClaudeVet%22%3E%0A%20%20%3Cstyle%3Etext%7Bfont-family%3A%27Frank%20Ruhl%20Libre%27%2CGeorgia%2Cserif%3Bfont-weight%3A700%3Bfont-size%3A30px%3Bletter-spacing%3A-0.5px%7D%3C/style%3E%0A%20%20%3Ctext%20x%3D%224%22%20y%3D%2235%22%20fill%3D%22%231E2A2C%22%3EClaude%3Ctspan%20fill%3D%22%230F6E63%22%3EVet%3C/tspan%3E%3C/text%3E%0A%20%20%3Ccircle%20cx%3D%22121%22%20cy%3D%229%22%20r%3D%223.2%22%20fill%3D%22%23B0754A%22/%3E%0A%3C/svg%3E%0A" alt="ClaudeVet" class="gate-logo">
     <h1>המחירון הווטרינרי הפתוח</h1>
     <p>מחירוני מזון, תרופות, מעבדות ומוצרי חנות — במקום אחד, לווטרינרים. הזינו את קוד הגישה שקיבלתם.</p>
-    <p class="gate-privacy">🔒 התמחור שתזינו נשמר <b>בדפדפן שלכם בלבד</b> ולא נשלח לשום שרת — גם לא שלנו.</p>
+    <p class="gate-privacy">🔒 התמחור ורשימת ההזמנות שתזינו נשמרים <b>בדפדפן שלכם בלבד</b> ולא נשלחים לשום שרת — גם לא שלנו.</p>
     <form id="gateForm" autocomplete="off">
       <label for="gateCode" class="sr-only">קוד גישה</label>
       <input id="gateCode" type="text" placeholder="קוד גישה" required>
@@ -484,7 +497,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
 <header class="top">
   <div class="top-nav">
   <a class="brand" id="homeBtn" href="#" title="חזרה למסך הראשי">
-    <img src="claudevet-wordmark.svg" alt="ClaudeVet" height="28">
+    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22220%22%20height%3D%2248%22%20viewBox%3D%220%200%20220%2048%22%20role%3D%22img%22%20aria-label%3D%22ClaudeVet%22%3E%0A%20%20%3Cstyle%3Etext%7Bfont-family%3A%27Frank%20Ruhl%20Libre%27%2CGeorgia%2Cserif%3Bfont-weight%3A700%3Bfont-size%3A30px%3Bletter-spacing%3A-0.5px%7D%3C/style%3E%0A%20%20%3Ctext%20x%3D%224%22%20y%3D%2235%22%20fill%3D%22%231E2A2C%22%3EClaude%3Ctspan%20fill%3D%22%230F6E63%22%3EVet%3C/tspan%3E%3C/text%3E%0A%20%20%3Ccircle%20cx%3D%22121%22%20cy%3D%229%22%20r%3D%223.2%22%20fill%3D%22%23B0754A%22/%3E%0A%3C/svg%3E%0A" alt="ClaudeVet" height="28">
     <span class="product">VetPrices</span>
   </a>
   <nav class="tabs" id="tabs" aria-label="סקציות">
@@ -495,7 +508,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
   </nav>
   </div>
   <div class="mid-nav">
-    <button id="ordersBtn" class="ord-cta clinic-only" title="רשימת ההזמנות">🧾 הזמנות</button>
+    <button id="ordersBtn" class="ord-cta" title="רשימת ההזמנות">🧾 הזמנות</button>
     <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
       <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
     </div>
@@ -511,7 +524,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
   <h1>במה נתחיל?</h1>
   <p class="home-sub">4 מחירונים גדולים ומחשבון תמחור. הכל מבוסס על מחירי מחירון רשמיים של הספקים — התמחור שלכם נשמר רק בדפדפן שלכם.</p>
   <div class="tiles" id="tiles">
-    <button class="tile orders clinic-only" data-go="orders"><span class="ico">🧾</span><b>הזמנות</b><small>רשימת ההזמנות של המרפאה</small></button>
+    <button class="tile orders" data-go="orders"><span class="ico">🧾</span><b>הזמנות</b><small class="clinic-only">רשימת ההזמנות של המרפאה</small><small class="pub-only">רשימת ההזמנות של המרפאה שלכם — נשמרת בדפדפן שלכם</small></button>
     <button class="tile" data-go="medical"><span class="ico">💊</span><b>מוצרים ותרופות</b><small id="c-medical">—</small></button>
     <button class="tile" data-go="food"><span class="ico">🍖</span><b>מזון</b><small id="c-food">—</small></button>
     <button class="tile" data-go="labs"><span class="ico">🧪</span><b>מעבדות</b><small id="c-labs">—</small></button>
@@ -572,6 +585,14 @@ button.ord-tag:hover{background:var(--teal-soft)}
   </section>
 
   <section class="box">
+    <h2>מה נפתח כשנכנסים לאתר</h2>
+    <p class="hint">המסך הראשון שרואים בכניסה, וגם מה שחוזר בלחיצה על הלוגו. אפשר לעבור בין הכל בכל רגע מהסרגל העליון.</p>
+    <div class="seg" id="startSeg" role="group" aria-label="מסך הפתיחה">
+      <button data-start="list">מחירונים</button><button data-start="clinic">מחירון המרפאה</button><button data-start="orders">🧾 הזמנות</button>
+    </div>
+  </section>
+
+  <section class="box">
     <h2>ברירת מחדל לכל סקציה</h2>
     <div id="secGrid" class="sec-grid"></div>
   </section>
@@ -597,16 +618,21 @@ button.ord-tag:hover{background:var(--teal-soft)}
   <section class="box">
     <h2>מה מוצג כשפותחים את מחירון המרפאה</h2>
     <p class="hint">ברירת מחדל בלבד — בתוך המחירון תמיד אפשר להציג או להסתיר את המרווחים בכפתור.</p>
-    <div class="seg" id="viewSeg" role="group" aria-label="ברירת מחדל למחירון המרפאה">
-      <button data-cview="full" class="on">כל העמודות — הנחה, עלות ומרווחים</button><button data-cview="compact">מחיר מחירון, מחיר קנייה ומחיר ללקוח בלבד</button>
+    <div class="seg wrap" id="viewSeg" role="group" aria-label="ברירת מחדל למחירון המרפאה">
+      <button data-cview="full" class="on">כל העמודות — הנחה, עלות ומרווחים</button><button data-cview="compact">מחיר מחירון, מחיר קנייה ומחיר ללקוח</button><button data-cview="buysale">מחיר קנייה ומחיר ללקוח</button><button data-cview="sale">מחיר ללקוח בלבד</button>
     </div>
+    <p class="hint">👥 <b>מחיר ללקוח בלבד</b> נוח כשמסובבים את המסך ללקוח — מחיר המחירון ומחיר הקנייה שלכם לא מוצגים.</p>
   </section>
 
-  <section class="box clinic-only">
-    <h2>אילו קטגוריות יופיעו בהזמנות</h2>
-    <p class="hint">מה שמכובה נעלם מרשימת ההזמנות ומסרגל ההוספה. שורות קיימות שלו לא נמחקות — הן חוזרות ברגע שמדליקים,
-      ובינתיים נראות דרך 🕘 היסטוריה. הבחירה נשמרת בשרת וחלה על כל המחשבים במרפאה.</p>
+  <section class="box">
+    <h2>🧾 הזמנות</h2>
+    <p class="hint"><b>אילו קטגוריות יופיעו.</b> מה שמכובה נעלם מרשימת ההזמנות ומסרגל ההוספה. שורות קיימות שלו לא נמחקות —
+      הן חוזרות ברגע שמדליקים, ובינתיים נראות דרך 🕘 היסטוריה.
+      <span class="clinic-only">הבחירה נשמרת בשרת וחלה על כל המחשבים במרפאה.</span>
+      <span class="pub-only">הבחירה נשמרת בדפדפן הזה, כמו שאר ההגדרות.</span></p>
     <div id="ordCats" class="ord-cats"></div>
+    <p class="hint" style="margin-top:14px"><b>שם המרפאה</b> — נוסף בסוף גיליון ההזמנה שנשלח לספק. ריק = בלי שורת חתימה.</p>
+    <div class="row gap"><input id="clinicName" type="text" maxlength="60" placeholder="שם המרפאה שלכם"></div>
   </section>
 
   <section class="box">
@@ -648,8 +674,21 @@ button.ord-tag:hover{background:var(--teal-soft)}
 
 <!-- ===== orders (clinic copy only) ===== -->
 <main id="orders" hidden class="page">
-  <div class="page-head">
+  <div class="page-head ord-head">
     <h1>🧾 הזמנות</h1>
+    <div class="row gap pub-only">
+      <button id="oGuideBtn" class="ghost">📖 הוראות</button>
+      <a id="oGuideDl" class="ghost dl" href="downloads/vetprices-orders-guide.html" download>⬇ הורדת ההוראות</a>
+    </div>
+  </div>
+
+  <div id="oIntro" class="ord-intro pub-only">
+    <button id="oIntroX" class="x" title="הסתר את ההסבר" aria-label="הסתר את ההסבר">✕</button>
+    <p><b>רשימת החוסרים של המרפאה שלכם.</b> מוסיפים פריט — מהמחירון או בשם חופשי — בוחרים קטגוריה וספק,
+      וכשמגיע הרגע להזמין לוחצים <b>📋 גיליון הזמנה</b>, בוחרים ספק, ומעתיקים את הנוסח לוואטסאפ או למייל שלו.</p>
+    <p>🔒 <b>הרשימה נשמרת בדפדפן שלכם בלבד</b> — כולל שמות וטלפונים של לקוחות — ולא נשלחת לשום שרת, גם לא שלנו.
+      לכן <b>ניקוי נתוני גלישה מוחק אותה</b>, ומחשב אחר לא יראה אותה. הגיבוי הוא <b>⬇ ייצוא הגדרות</b> שבהגדרות ⚙️.
+      <button id="oIntroMore" class="linkish">ההוראות המלאות</button></p>
   </div>
 
   <section class="box ord-add">
@@ -809,7 +848,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
     <p>לחיצה אחת מורידה קובץ בשם <code>vetprices-pricing.json</code>. שמרו אותו איפה שאתם שומרים דברים חשובים — לא בהורדות.</p>
     <p class="row gap"><button id="exportBtn2" class="ghost big">⬇ ייצוא הגדרות עכשיו</button><span id="helpMsg" class="hint"></span></p>
     <p class="hint"><b>מתי לחזור על זה:</b> אחרי שהגדרתם את ההנחות בפעם הראשונה, ואחר כך פעם בחודש או אחרי שינוי גדול. הקובץ קטן — אין סיבה לחסוך בהם.</p>
-    <p class="hint"><b>מה יש בקובץ:</b> אחוזי הנחת הקנייה שלכם לכל ספק, המרווחים לפי סקציה וספק, טווחי המחיר של המחשבון המתקדם, כל דריסה ידנית ששיניתם בשורה, העיגול וברירת המחדל של התצוגה. <b>המחירונים עצמם לא בקובץ</b> — הם תמיד נטענים מהשרת בגרסה העדכנית.</p>
+    <p class="hint"><b>מה יש בקובץ:</b> אחוזי הנחת הקנייה שלכם לכל ספק, המרווחים לפי סקציה וספק, טווחי המחיר של המחשבון המתקדם, כל דריסה ידנית ששיניתם בשורה, העיגול וברירת המחדל של התצוגה — <b>וגם רשימת ההזמנות שלכם</b>. <b>המחירונים עצמם לא בקובץ</b> — הם תמיד נטענים מהשרת בגרסה העדכנית.</p>
   </section>
 
   <section class="box">
@@ -836,6 +875,56 @@ button.ord-tag:hover{background:var(--teal-soft)}
     <p class="warn-line"><b>מה הוא כן פותר ומה לא:</b> הקובץ עצמו לא נמחק כשמנקים נתוני גלישה — הוא קובץ רגיל אצלכם בדיסק. <b>אבל ההגדרות שתזינו בתוכו עדיין נשמרות בדפדפן</b>, ולכן גם הן נמחקות בניקוי. הדבר היחיד ששורד הכל הוא קובץ הגיבוי מסעיף 1 — ואותו אפשר לייבא גם לעותק המקומי.</p>
     <p class="hint">בעותק המקומי אין קישור לצילומי המקור ואין הורדת אקסל — הם יושבים בשרת. המחירים והמחשבון עובדים במלואם.</p>
   </section>
+
+<!--GUIDE-->
+  <section class="box pub-only" id="ordersHelp">
+    <h2>🧾 איך עובדים עם ההזמנות</h2>
+    <p>רשימת החוסרים של המרפאה, באותו מקום שבו כבר יש לכם את המחירונים: מה שנגמר נרשם ברגע שרואים אותו,
+      וכשמזמינים — הרשימה כבר מסודרת לפי ספק ומוכנה להעתקה.</p>
+
+    <h3>1. להוסיף פריט</h3>
+    <ol class="steps">
+      <li><b>פריט ממחירון</b> — מקלידים שתי אותיות בשדה החיפוש העליון ובוחרים מהרשימה. הספק והקטגוריה נקבעים לבד לפי המחירון.</li>
+      <li><b>שם חופשי</b> — כל דבר שאין לו מחירון (ציוד משרדי, מוצר של ספק מקומי). כותבים בשדה השני ולוחצים <b>＋ הוסף</b>.</li>
+      <li>קובעים <b>כמות</b>, ואם צריך משנים <b>קטגוריה</b> (כללי · מזון · ניקיון · חנות · מעבדה) ו<b>ספק</b>.
+        לכל קטגוריה יש צבע משלה, וגם השורות ברשימה נצבעות בו.</li>
+    </ol>
+    <p class="hint">הספק נבחר מכפתורים — הספקים של אותה קטגוריה מהמחירונים. מי שלא ברשימה נמצא ב<b>ספק אחר…</b> בסוף השורה,
+      ואפשר גם להקליד ספק שאינו באף מחירון.</p>
+
+    <h3>2. מה קורה לשורה</h3>
+    <ul class="tick">
+      <li><b>ממתין</b> — נרשם, עוד לא הוזמן. <b>חסר</b> — נגמר ודחוף.</li>
+      <li><b>הוזמן</b> / <b>במשלוח</b> / <b>התקבל</b> — מה שהוזמן צונח לתחתית הרשימה, ומה שהתקבל נעלם ממנה אחרי 30 יום
+        (ותמיד אפשר לראות אותו ב-<b>🕘 היסטוריה</b>).</li>
+      <li>שורת <b>מעבדה</b> עובדת בסטטוסים שלה — נלקח · נשלח · חזר · דווח — ויש לה סימון <b>שולם</b>.</li>
+      <li><b>＋ לקוח</b> על השורה מצמיד אליה שם וטלפון — בשביל מה שהוזמן במיוחד עבור לקוח. הכפתור <b>ללקוח</b> בסינון מציג רק אותן.</li>
+    </ul>
+
+    <h3>3. להזמין — גיליון הזמנה</h3>
+    <ol class="steps">
+      <li>לוחצים <b>📋 גיליון הזמנה</b>. נכנסות רק שורות <b>ממתין</b> ו<b>חסר</b> — מה שכבר הוזמן לא מוזמן שוב.</li>
+      <li>בוחרים <b>למי מזמינים</b>: הכל, או ספק אחד — ואז הנוסח מכיל רק את מה ששייך אליו.</li>
+      <li><b>📋 העתק</b> ומדביקים בוואטסאפ למוכר, או <b>💬 וואטסאפ</b> / <b>✉ מייל</b> / <b>🖨 הדפס</b>.</li>
+      <li>אחרי ששלחתם — <b>✔ סמן הכל כהוזמן</b>, והשורות יורדות לתחתית הרשימה.</li>
+    </ol>
+    <p class="hint">שם המרפאה שמופיע בסוף הגיליון נקבע בהגדרות ⚙️, בקופסת ההזמנות.</p>
+
+    <h3>4. איפה זה נשמר — וזה חשוב</h3>
+    <p class="warn-line">הרשימה נשמרת <b>בדפדפן שלכם בלבד</b>, בדיוק כמו ההנחות והמרווחים — כולל שמות וטלפונים של לקוחות.
+      אנחנו לא רואים אותה ואין לנו עותק שלה. <b>ניקוי נתוני גלישה מוחק אותה</b>, מחשב אחר לא יראה אותה,
+      ובחלון פרטי היא נעלמת בסגירה.</p>
+    <p>הגיבוי היחיד הוא <b>⬇ ייצוא הגדרות</b> שבהגדרות ⚙️ — הקובץ הזה מכיל גם את ההזמנות, וייבוא שלו במחשב אחר מחזיר את שתיהן.
+      זה גם מה שמעביר את הרשימה בין מחשבים; אין סנכרון אוטומטי, ובכוונה.</p>
+
+    <h3>5. הגדרות שכדאי לעשות פעם אחת</h3>
+    <ul class="tick">
+      <li><b>אילו קטגוריות</b> יופיעו — מי שלא מנהל מעבדה חיצונית פשוט מכבה אותה.</li>
+      <li><b>שם המרפאה</b> לגיליון ההזמנה.</li>
+      <li><b>מה נפתח כשנכנסים</b> — מחירונים, מחירון המרפאה או ההזמנות. מי שבא רק למחירונים לא צריך לראות את ההזמנות בכלל.</li>
+    </ul>
+  </section>
+<!--/GUIDE-->
 
   <section class="box">
     <h2>5. ואם רוצים שזה פשוט יעבוד מכל מקום?</h2>
@@ -864,7 +953,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
 </main>
 
 <footer>
-  <span class="foot-privacy">🔒 <b>פרטיות:</b> ההנחות והמרווחים שתזינו נשמרים בדפדפן שלכם בלבד. האתר סטטי — אין בסיס נתונים, אין חשבונות, אין אנליטיקס, ושום נתון תמחור אינו נשלח לשום שרת.</span>
+  <span class="foot-privacy">🔒 <b>פרטיות:</b> ההנחות, המרווחים ורשימת ההזמנות — כולל שמות וטלפונים של לקוחות — נשמרים בדפדפן שלכם בלבד. האתר סטטי — אין בסיס נתונים, אין חשבונות, אין אנליטיקס, ושום נתון שלכם אינו נשלח לשום שרת.</span>
   <span>מוגש חינם ע"י <b>ד"ר גיל קרן</b> · <a href="https://claudevet.com" target="_blank" rel="noopener">ClaudeVet</a> — כלים לווטרינרים</span>
   <span>המחירים הם מחירי מחירון רשמיים כפי שפורסמו ע"י הספקים, בתאריך המצוין. אינם מחירי קנייה בפועל.</span>
   <span class="marks">
@@ -915,7 +1004,17 @@ const fmt0 = n => (+n || 0).toLocaleString('he-IL', { maximumFractionDigits: 0 }
 // Where the pricing settings live. The public site keeps them in the browser and nothing ever
 // leaves it. The clinic copy (config.json says mode:"clinic") keeps one file on the server, so
 // every computer in the clinic sees the same discounts and margins.
+// which money columns the clinic price list shows. 'full' is the editable wide table; the rest
+// are read-only, and each one drops another column from the left.
+const CVIEW = { compact: ['list', 'cost', 'sale'], buysale: ['cost', 'sale'], sale: ['sale'] };
+const cview = () => S.margins ? 'full' : (CVIEW[P.clinicView] ? P.clinicView : 'compact');
+// entering a price list starts from the stored default; only 'full' opens the editable table
+const defMargins = () => (P.clinicView || 'full') === 'full';
 const CLINIC_STORE = 'store/clinic-pricing.json';
+// which screen the site opens on. The clinic opens on its order list; a vet who came for the
+// price lists gets the price lists — and either can change it in the gear.
+const startPage = () => P.startPage || 'orders';
+const clinicName = () => (P.clinicName || (clinicMode ? 'מרפאת פט קייר' : '')).trim();
 let clinicMode = false, putTimer = null;
 function toast(msg, bad) {
   let t = $('#toast');
@@ -1005,18 +1104,25 @@ function show(page) {
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
   // in the clinic copy the section tabs are a second bar that only exists over a price list
   document.body.classList.toggle('on-catalog', page === 'catalog');
-  $('.mid-nav').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
+  // the orders button is always there; the price-view switch only means something over a list
+  $('.mode-seg').style.visibility = (clinicMode || page === 'catalog') ? '' : 'hidden';
 }
 function goHome() {
   S.type = null; $$('#tabs button').forEach(b => b.classList.remove('on'));
-  // in the clinic copy the orders list is the front page; the price lists sit behind it
-  show(clinicMode ? 'orders' : 'home');
-  if (clinicMode) renderOrders();
+  const p = startPage();
+  if (p === 'orders') { show('orders'); renderOrders(); return; }
+  setModeSeg(p === 'clinic' ? 'clinic' : 'list');
+  if (p === 'clinic' && clinicMode) return openSec('medical');
+  show('home');
+}
+function setModeSeg(m) {
+  S.mode = m; S.margins = defMargins();
+  $$('[data-mode]').forEach(x => x.classList.toggle('on', x.dataset.mode === m));
 }
 
 async function openSec(sec) {
   S.type = sec; S.supplier = S.category = S.topic = null; S.q = ''; S.shown = PAGE; S.f = {};
-  S.margins = P.clinicView !== 'compact';
+  S.margins = defMargins();
   $('#q').value = '';
   $$('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.type === sec));
   show('catalog'); await render();
@@ -1129,14 +1235,20 @@ function mk(label, on, fn, n, status, kind) {
 function renderTable() {
   const incl = S.vat === 'incl', pr = S.mode === 'clinic';
   const wide = pr && S.margins;
+  const cols = pr && !wide ? CVIEW[cview()] : null;
+  const showList = !cols || cols.includes('list');
   // on a phone the full header wraps to four lines and eats the column; the מע״מ toggle
   // sitting right above the table already says which basis is showing.
   const narrow = matchMedia('(max-width:700px)').matches;
-  const th = ['ספק', 'פריט', 'קטגוריה', 'מק״ט',
-    narrow ? 'מחיר' : (incl ? 'מחיר מחירון (כולל מע״מ)' : 'מחיר מחירון (ללא מע״מ)'), 'מחירון'];
-  if (wide) th.push('הנחה %', 'עלות', 'מרווח %', '₪ קבוע', 'מחיר ללקוח', '');
-  else if (pr) th.push('מחיר קנייה (כולל מע״מ)', 'מחיר ללקוח');
-  $('#thead').innerHTML = th.map((h, i) => `<th class="${i === 4 || i >= 6 ? 'num' : ''}">${h}</th>`).join('');
+  const th = [['ספק', 0], ['פריט', 0], ['קטגוריה', 0], ['מק״ט', 0]];
+  if (showList) th.push([narrow ? 'מחיר' : (incl ? 'מחיר מחירון (כולל מע״מ)' : 'מחיר מחירון (ללא מע״מ)'), 1]);
+  th.push(['מחירון', 0]);
+  if (wide) th.push(['הנחה %', 1], ['עלות', 1], ['מרווח %', 1], ['₪ קבוע', 1], ['מחיר ללקוח', 1], ['', 1]);
+  else if (pr) {
+    if (cols.includes('cost')) th.push(['מחיר קנייה (כולל מע״מ)', 1]);
+    th.push(['מחיר ללקוח', 1]);
+  }
+  $('#thead').innerHTML = th.map(([h, n]) => `<th class="${n ? 'num' : ''}">${h}</th>`).join('');
   const tb = $('#tbody'); tb.innerHTML = '';
   const frag = document.createDocumentFragment();
   rows.slice(0, S.shown).forEach(r => {
@@ -1146,12 +1258,13 @@ function renderTable() {
     let h = `<td class="sup">${esc(r.supplier)}</td>` +
       `<td class="name">${esc(r.name)}${extra.length ? `<small>${extra.map(esc).join(' · ')}</small>` : ''}</td>` +
       `<td>${esc(r.category || '')}</td><td class="num">${esc(r.sku || '')}</td>` +
-      `<td class="num price">${fmt(incl ? r.price_with_vat : r.price_no_vat)}</td>` +
+      (showList ? `<td class="num price">${fmt(incl ? r.price_with_vat : r.price_no_vat)}</td>` : '') +
       `<td><span class="date ${statusCls(r.status)}${r.kind ? ' parsed ' + r.kind : ''}"${r.kind ? ` title="${MARK[r.kind].text}"` : ''}>` +
       `${r.kind ? MARK[r.kind].sym + ' ' : ''}${r.price_date || r.date || 'ללא תאריך'}</span>` +
       `${r.src ? ` <a class="src" href="${r.src}" target="_blank" rel="noopener" title="צילום המקור">📄</a>` : ''}</td>`;
     if (pr && !S.margins) {
-      h += `<td class="num buyprice">${fmt(c.cost)}</td><td class="num price cust-ro">${fmt(c.sale)}</td>`;
+      if (cols.includes('cost')) h += `<td class="num buyprice">${fmt(c.cost)}</td>`;
+      h += `<td class="num price cust-ro">${fmt(c.sale)}</td>`;
     } else if (pr) {
       const o = P.rows[r.id] || {};
       const inp = (f, v, step, on) => `<td class="edit"><input type="number" step="${step}" data-f="${f}" value="${v}"${on ? ' class="ovr"' : ''}></td>`;
@@ -1217,7 +1330,7 @@ function renderSettings() {
     tb.appendChild(tr);
   });
   const oc = $('#ordCats');
-  if (oc && clinicMode) {
+  if (oc) {
     oc.innerHTML = '';
     CATS.forEach(([k, lab, ico]) => {
       const w = document.createElement('label');
@@ -1233,6 +1346,8 @@ function renderSettings() {
       oc.appendChild(w);
     });
   }
+  $$('#startSeg button').forEach(b => b.classList.toggle('on', b.dataset.start === startPage()));
+  $('#clinicName').value = P.clinicName || '';
   $$('#roundSeg button').forEach(b => b.classList.toggle('on', +b.dataset.round === (+P.round || 0)));
   $$('#viewSeg button').forEach(b => b.classList.toggle('on', b.dataset.cview === (P.clinicView || 'full')));
 }
@@ -1354,6 +1469,9 @@ function renderStatus() {
 // thing. Writes re-read and merge instead of overwriting: a computer holding a stale list can
 // never wipe what another one added.
 const ORD_STORE = 'store/orders.json';
+// the public copy has no server behind it — there the list lives in this browser only,
+// exactly like the pricing settings do.
+const ORD_LK = 'vp_orders';
 const CATS = [['general', 'כללי', '📦'], ['food', 'מזון', '🍖'], ['clean', 'ניקיון', '🧽'],
               ['shop', 'חנות', '🛍️'], ['lab', 'מעבדה חיצונית', '🧪']];
 const CAT_HEB = Object.fromEntries(CATS.map(([k, l]) => [k, l]));
@@ -1457,7 +1575,7 @@ function sortLines(ls) {
   return ls.slice().sort((x, y) => (ST_ORDER[x.status] ?? 9) - (ST_ORDER[y.status] ?? 9) ||
     (y.created_at || '').localeCompare(x.created_at || ''));
 }
-function sheetText(lines, today) {
+function sheetText(lines, today, clinic) {
   const by = {};
   lines.forEach(l => (by[l.supplier || 'ללא ספק'] = by[l.supplier || 'ללא ספק'] || []).push(l));
   const d = today || new Date().toLocaleDateString('he-IL');
@@ -1467,25 +1585,30 @@ function sheetText(lines, today) {
     by[sup].forEach(l => out.push(`• ${l.name} — ${l.qty} יח'` + (l.client ? ` (ל${l.client})` : '')));
     out.push('', `סה"כ פריטים: ${by[sup].length}`, '');
   });
-  out.push('מרפאת פט קייר');
-  return out.join('
-');
+  if (clinic) out.push(clinic);
+  return out.join('\n');
 }
 
 // --- storage ---
 async function loadOrders() {
-  try {
-    const s = await getJSON(ORD_STORE);
-    const cut = new Date(Date.now() - TOMB_TTL).toISOString();
-    O = { v: 1, cats: Array.isArray(s.cats) ? s.cats : DEF_CATS.slice(),
-          // ponytail: tombstones expire after 90d; if the file ever gets big, split per line
-          lines: (Array.isArray(s.lines) ? s.lines : []).filter(l => !(l.deleted && (l.updated_at || '') < cut)) };
+  const cut = new Date(Date.now() - TOMB_TTL).toISOString();
+  const take = s => (O = { v: 1, cats: Array.isArray(s.cats) ? s.cats : DEF_CATS.slice(),
+        // ponytail: tombstones expire after 90d; if the file ever gets big, split per line
+        lines: (Array.isArray(s.lines) ? s.lines : []).filter(l => !(l.deleted && (l.updated_at || '') < cut)) });
+  if (!clinicMode) {
+    try { take(JSON.parse(localStorage.getItem(ORD_LK) || '{}')); } catch { take({}); }
     return true;
-  } catch { toast('⚠️ לא הצלחנו לטעון את ההזמנות מהשרת', true); return false; }
+  }
+  try { take(await getJSON(ORD_STORE)); return true; }
+  catch { toast('⚠️ לא הצלחנו לטעון את ההזמנות מהשרת', true); return false; }
 }
 // GET → merge → PUT → read back. The read-back is not polish: it is the only thing that catches
 // two computers writing inside the same few hundred ms, which merging alone cannot.
 async function saveOrders(ids) {
+  if (!clinicMode) {
+    try { localStorage.setItem(ORD_LK, JSON.stringify({ v: 1, cats: O.cats, lines: O.lines })); return true; }
+    catch (e) { toast('⚠️ השמירה בדפדפן נכשלה (' + e.message + ') — ההזמנה לא נשמרה', true); return false; }
+  }
   const mine = O.lines.filter(l => ids.includes(l.id));
   for (let attempt = 0; attempt < 2; attempt++) {
     let remote = null;
@@ -1513,6 +1636,7 @@ async function saveOrders(ids) {
   return false;
 }
 function ordPoll() {
+  if (!clinicMode) return;   // one browser, one list — there is nobody to poll against
   clearTimeout(ordTimer);
   ordTimer = setTimeout(async () => {
     if (!$('#orders').hidden && document.visibilityState === 'visible') {
@@ -1679,11 +1803,11 @@ function buildSheet() {
   const sup = $('#oSheetSup').value, src = sheetSrc(sup);
   // freeze the set: the list may re-poll between generating the sheet and marking it ordered
   sheetIds = src.map(l => l.id);
-  const txt = sheetText(src);
+  const txt = sheetText(src, null, clinicName());
   $('#oSheetText').value = txt;
   $('#oSheetTitle').textContent = sup ? `גיליון הזמנה — ${sup}` : 'גיליון הזמנה — כל הספקים';
   $('#oWa').href = 'https://wa.me/?text=' + encodeURIComponent(txt);
-  $('#oMail').href = 'mailto:?subject=' + encodeURIComponent('הזמנה — ' + (sup || 'מרפאת פט קייר')) +
+  $('#oMail').href = 'mailto:?subject=' + encodeURIComponent('הזמנה' + (sup ? ' — ' + sup : '')) +
     '&body=' + encodeURIComponent(txt);
   $('#oSheetMsg').textContent = '';
 }
@@ -1758,8 +1882,9 @@ async function init() {
   });
 }
 
-function start() {
+async function start() {
   $('#app').hidden = false;
+  if (!clinicMode) await loadOrders();
   const counts = {};
   INDEX.pricelists.forEach(m => counts[m.type] = (counts[m.type] || 0) + m.item_count);
   Object.keys(SEC_HEB).forEach(k => $('#c-' + k).textContent = `${(counts[k] || 0).toLocaleString('he-IL')} פריטים`);
@@ -1776,7 +1901,7 @@ function start() {
   $$('[data-view]').forEach(b => b.addEventListener('click', () => { S.view = b.dataset.view; S.supplier = S.category = S.topic = null; S.shown = PAGE; $$('[data-view]').forEach(x => x.classList.toggle('on', x === b)); render(); }));
   $$('[data-mode]').forEach(b => b.addEventListener('click', () => {
     S.mode = b.dataset.mode; $$('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
-    S.margins = P.clinicView !== 'compact';        // every entry into the clinic view starts from the stored default
+    S.margins = defMargins();   // every entry into the clinic view starts from the stored default
     if ($('#catalog').hidden) { if (S.type) openSec(S.type); else if (clinicMode) openSec('medical'); else show('home'); } else { renderTable(); render(); }
   }));
   $('#marginsBtn').addEventListener('click', () => { S.margins = !S.margins; renderTable(); render(); });
@@ -1784,7 +1909,7 @@ function start() {
   $('#more').addEventListener('click', () => { S.shown += PAGE; renderTable(); });
   $$('#viewSeg button').forEach(b => b.addEventListener('click', () => {
     P.clinicView = b.dataset.cview; save(); renderSettings();
-    S.margins = P.clinicView !== 'compact'; renderTableIfOpen();
+    S.margins = defMargins(); renderTableIfOpen();
   }));
   $$('.helpLink').forEach(b => b.addEventListener('click', () => { $('#helpMsg').textContent = ''; show('help'); }));
   $('#helpBtn').addEventListener('click', () => { $('#helpMsg').textContent = ''; show('help'); });
@@ -1813,14 +1938,21 @@ function start() {
     P.tiers.on = e.target.checked; save(); renderAdv();
     if (S.mode === 'clinic') renderTable();
   });
+  $$('#startSeg button').forEach(b => b.addEventListener('click', () => {
+    P.startPage = b.dataset.start; save(); renderSettings();
+  }));
+  $('#clinicName').addEventListener('change', () => { P.clinicName = $('#clinicName').value.trim(); save(); });
   $('#supQ').addEventListener('input', renderSettings);
   $$('#roundSeg button').forEach(b => b.addEventListener('click', () => { P.round = +b.dataset.round; save(); renderSettings(); renderTableIfOpen(); }));
   // the same two actions are offered on the settings page and on the help page
   let msgTarget = '#setMsg';
   const setMsg = t => { const el = $(msgTarget); if (el) el.textContent = t; };
   function doExport() {
+    // in the public copy this file is the only backup there is, and the orders live in the same
+    // browser — leaving them out would make the promise on the help page false
+    const payload = clinicMode ? P : { ...P, orders: { v: 1, cats: O.cats, lines: O.lines } };
     const a = document.createElement('a');
-    a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(P, null, 1));
+    a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(payload, null, 1));
     a.download = 'vetprices-pricing.json'; a.click();
     setMsg('ההגדרות יוצאו לקובץ. שמרו אותו במקום בטוח.');
   }
@@ -1830,13 +1962,28 @@ function start() {
   $('#importBtn2').addEventListener('click', () => { msgTarget = '#helpMsg'; $('#importFile').click(); });
   $('#importFile').addEventListener('change', async e => {
     const f = e.target.files[0]; if (!f) return;
-    try { P = Object.assign({}, EMPTY, JSON.parse(await f.text())); save(); renderSettings(); setMsg('ההגדרות יובאו.'); }
+    try {
+      const j = JSON.parse(await f.text()), ords = j.orders; delete j.orders;
+      P = Object.assign({}, EMPTY, j); save();
+      const withOrders = !clinicMode && ords && Array.isArray(ords.lines);
+      if (withOrders) {
+        O = { v: 1, cats: Array.isArray(ords.cats) ? ords.cats : DEF_CATS.slice(), lines: ords.lines };
+        saveOrders([]); fillOrderCats(); renderOrders();
+      }
+      renderSettings(); applyOrdIntro();
+      setMsg(withOrders ? 'ההגדרות וההזמנות יובאו.' : 'ההגדרות יובאו.');
+    }
     catch { setMsg('הקובץ אינו קובץ הגדרות תקין.'); }
     e.target.value = '';
   });
   $('#resetBtn').addEventListener('click', () => {
-    if (!confirm('לאפס את כל ההנחות, המרווחים והדריסות? לא ניתן לבטל.')) return;
-    P = { ...EMPTY }; save(); renderSettings(); $('#setMsg').textContent = 'הכל אופס.';
+    const alsoOrders = !clinicMode && O.lines.some(l => !l.deleted);
+    if (!confirm('לאפס את כל ההנחות, המרווחים והדריסות' +
+                 (alsoOrders ? ' — וגם למחוק את כל ההזמנות' : '') + '? לא ניתן לבטל.')) return;
+    P = { ...EMPTY }; save();
+    if (alsoOrders) { O = { v: 1, cats: DEF_CATS.slice(), lines: [] }; saveOrders([]); fillOrderCats(); renderOrders(); }
+    renderSettings(); applyOrdIntro();
+    $('#setMsg').textContent = 'הכל אופס.';
   });
   ['cList', 'cDisc', 'cPct', 'cFlat'].forEach(id => $('#' + id).addEventListener('input', () => calcRun()));
   $('#cSale').addEventListener('input', () => calcRun('sale'));
@@ -1852,7 +1999,7 @@ function start() {
       }));
     }, 250);
   });
-  if (clinicMode) wireOrders();
+  wireOrders();
   goHome();
 }
 
@@ -1868,8 +2015,20 @@ function setCat(k) {
   $$('#oCatSeg button').forEach(b => b.classList.toggle('on', b.dataset.oc === k));
   ordCatChanged();
 }
+function applyOrdIntro() { const b = $('#oIntro'); if (b) b.hidden = !!P.hideOrdIntro; }
 function wireOrders() {
   fillOrderCats();
+  // the list opens on כללי, not on הכל: most of the standing lines are food, and "הכל" made
+  // the screen look like a food list every time it was opened
+  if (OS.cat == null && O.cats.includes('general')) OS.cat = 'general';
+  applyOrdIntro();
+  $('#oIntroX').addEventListener('click', () => { P.hideOrdIntro = 1; save(); applyOrdIntro(); });
+  const openGuide = () => {
+    $('#helpMsg').textContent = ''; show('help');
+    $('#ordersHelp').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  $('#oGuideBtn').addEventListener('click', openGuide);
+  $('#oIntroMore').addEventListener('click', openGuide);
   $('#oAdd').addEventListener('click', addLine);
   $('#oAdd2').addEventListener('click', addLine);
   ['oName', 'oQty'].forEach(id =>

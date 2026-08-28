@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=40">
+<link rel="stylesheet" href="style.css?v=41">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     <img src="claudevet-wordmark.svg" alt="ClaudeVet" class="gate-logo">
     <h1>המחירון הווטרינרי הפתוח</h1>
     <p>מחירוני מזון, תרופות, מעבדות ומוצרי חנות — במקום אחד, לווטרינרים. הזינו את קוד הגישה שקיבלתם.</p>
-    <p class="gate-privacy">🔒 התמחור שתזינו נשמר <b>בדפדפן שלכם בלבד</b> ולא נשלח לשום שרת — גם לא שלנו.</p>
+    <p class="gate-privacy">🔒 התמחור ורשימת ההזמנות שתזינו נשמרים <b>בדפדפן שלכם בלבד</b> ולא נשלחים לשום שרת — גם לא שלנו.</p>
     <form id="gateForm" autocomplete="off">
       <label for="gateCode" class="sr-only">קוד גישה</label>
       <input id="gateCode" type="text" placeholder="קוד גישה" required>
@@ -45,7 +45,7 @@
   </nav>
   </div>
   <div class="mid-nav">
-    <button id="ordersBtn" class="ord-cta clinic-only" title="רשימת ההזמנות">🧾 הזמנות</button>
+    <button id="ordersBtn" class="ord-cta" title="רשימת ההזמנות">🧾 הזמנות</button>
     <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
       <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
     </div>
@@ -61,7 +61,7 @@
   <h1>במה נתחיל?</h1>
   <p class="home-sub">4 מחירונים גדולים ומחשבון תמחור. הכל מבוסס על מחירי מחירון רשמיים של הספקים — התמחור שלכם נשמר רק בדפדפן שלכם.</p>
   <div class="tiles" id="tiles">
-    <button class="tile orders clinic-only" data-go="orders"><span class="ico">🧾</span><b>הזמנות</b><small>רשימת ההזמנות של המרפאה</small></button>
+    <button class="tile orders" data-go="orders"><span class="ico">🧾</span><b>הזמנות</b><small class="clinic-only">רשימת ההזמנות של המרפאה</small><small class="pub-only">רשימת ההזמנות של המרפאה שלכם — נשמרת בדפדפן שלכם</small></button>
     <button class="tile" data-go="medical"><span class="ico">💊</span><b>מוצרים ותרופות</b><small id="c-medical">—</small></button>
     <button class="tile" data-go="food"><span class="ico">🍖</span><b>מזון</b><small id="c-food">—</small></button>
     <button class="tile" data-go="labs"><span class="ico">🧪</span><b>מעבדות</b><small id="c-labs">—</small></button>
@@ -122,6 +122,14 @@
   </section>
 
   <section class="box">
+    <h2>מה נפתח כשנכנסים לאתר</h2>
+    <p class="hint">המסך הראשון שרואים בכניסה, וגם מה שחוזר בלחיצה על הלוגו. אפשר לעבור בין הכל בכל רגע מהסרגל העליון.</p>
+    <div class="seg" id="startSeg" role="group" aria-label="מסך הפתיחה">
+      <button data-start="list">מחירונים</button><button data-start="clinic">מחירון המרפאה</button><button data-start="orders">🧾 הזמנות</button>
+    </div>
+  </section>
+
+  <section class="box">
     <h2>ברירת מחדל לכל סקציה</h2>
     <div id="secGrid" class="sec-grid"></div>
   </section>
@@ -147,16 +155,21 @@
   <section class="box">
     <h2>מה מוצג כשפותחים את מחירון המרפאה</h2>
     <p class="hint">ברירת מחדל בלבד — בתוך המחירון תמיד אפשר להציג או להסתיר את המרווחים בכפתור.</p>
-    <div class="seg" id="viewSeg" role="group" aria-label="ברירת מחדל למחירון המרפאה">
-      <button data-cview="full" class="on">כל העמודות — הנחה, עלות ומרווחים</button><button data-cview="compact">מחיר מחירון, מחיר קנייה ומחיר ללקוח בלבד</button>
+    <div class="seg wrap" id="viewSeg" role="group" aria-label="ברירת מחדל למחירון המרפאה">
+      <button data-cview="full" class="on">כל העמודות — הנחה, עלות ומרווחים</button><button data-cview="compact">מחיר מחירון, מחיר קנייה ומחיר ללקוח</button><button data-cview="buysale">מחיר קנייה ומחיר ללקוח</button><button data-cview="sale">מחיר ללקוח בלבד</button>
     </div>
+    <p class="hint">👥 <b>מחיר ללקוח בלבד</b> נוח כשמסובבים את המסך ללקוח — מחיר המחירון ומחיר הקנייה שלכם לא מוצגים.</p>
   </section>
 
-  <section class="box clinic-only">
-    <h2>אילו קטגוריות יופיעו בהזמנות</h2>
-    <p class="hint">מה שמכובה נעלם מרשימת ההזמנות ומסרגל ההוספה. שורות קיימות שלו לא נמחקות — הן חוזרות ברגע שמדליקים,
-      ובינתיים נראות דרך 🕘 היסטוריה. הבחירה נשמרת בשרת וחלה על כל המחשבים במרפאה.</p>
+  <section class="box">
+    <h2>🧾 הזמנות</h2>
+    <p class="hint"><b>אילו קטגוריות יופיעו.</b> מה שמכובה נעלם מרשימת ההזמנות ומסרגל ההוספה. שורות קיימות שלו לא נמחקות —
+      הן חוזרות ברגע שמדליקים, ובינתיים נראות דרך 🕘 היסטוריה.
+      <span class="clinic-only">הבחירה נשמרת בשרת וחלה על כל המחשבים במרפאה.</span>
+      <span class="pub-only">הבחירה נשמרת בדפדפן הזה, כמו שאר ההגדרות.</span></p>
     <div id="ordCats" class="ord-cats"></div>
+    <p class="hint" style="margin-top:14px"><b>שם המרפאה</b> — נוסף בסוף גיליון ההזמנה שנשלח לספק. ריק = בלי שורת חתימה.</p>
+    <div class="row gap"><input id="clinicName" type="text" maxlength="60" placeholder="שם המרפאה שלכם"></div>
   </section>
 
   <section class="box">
@@ -198,8 +211,21 @@
 
 <!-- ===== orders (clinic copy only) ===== -->
 <main id="orders" hidden class="page">
-  <div class="page-head">
+  <div class="page-head ord-head">
     <h1>🧾 הזמנות</h1>
+    <div class="row gap pub-only">
+      <button id="oGuideBtn" class="ghost">📖 הוראות</button>
+      <a id="oGuideDl" class="ghost dl" href="downloads/vetprices-orders-guide.html" download>⬇ הורדת ההוראות</a>
+    </div>
+  </div>
+
+  <div id="oIntro" class="ord-intro pub-only">
+    <button id="oIntroX" class="x" title="הסתר את ההסבר" aria-label="הסתר את ההסבר">✕</button>
+    <p><b>רשימת החוסרים של המרפאה שלכם.</b> מוסיפים פריט — מהמחירון או בשם חופשי — בוחרים קטגוריה וספק,
+      וכשמגיע הרגע להזמין לוחצים <b>📋 גיליון הזמנה</b>, בוחרים ספק, ומעתיקים את הנוסח לוואטסאפ או למייל שלו.</p>
+    <p>🔒 <b>הרשימה נשמרת בדפדפן שלכם בלבד</b> — כולל שמות וטלפונים של לקוחות — ולא נשלחת לשום שרת, גם לא שלנו.
+      לכן <b>ניקוי נתוני גלישה מוחק אותה</b>, ומחשב אחר לא יראה אותה. הגיבוי הוא <b>⬇ ייצוא הגדרות</b> שבהגדרות ⚙️.
+      <button id="oIntroMore" class="linkish">ההוראות המלאות</button></p>
   </div>
 
   <section class="box ord-add">
@@ -359,7 +385,7 @@
     <p>לחיצה אחת מורידה קובץ בשם <code>vetprices-pricing.json</code>. שמרו אותו איפה שאתם שומרים דברים חשובים — לא בהורדות.</p>
     <p class="row gap"><button id="exportBtn2" class="ghost big">⬇ ייצוא הגדרות עכשיו</button><span id="helpMsg" class="hint"></span></p>
     <p class="hint"><b>מתי לחזור על זה:</b> אחרי שהגדרתם את ההנחות בפעם הראשונה, ואחר כך פעם בחודש או אחרי שינוי גדול. הקובץ קטן — אין סיבה לחסוך בהם.</p>
-    <p class="hint"><b>מה יש בקובץ:</b> אחוזי הנחת הקנייה שלכם לכל ספק, המרווחים לפי סקציה וספק, טווחי המחיר של המחשבון המתקדם, כל דריסה ידנית ששיניתם בשורה, העיגול וברירת המחדל של התצוגה. <b>המחירונים עצמם לא בקובץ</b> — הם תמיד נטענים מהשרת בגרסה העדכנית.</p>
+    <p class="hint"><b>מה יש בקובץ:</b> אחוזי הנחת הקנייה שלכם לכל ספק, המרווחים לפי סקציה וספק, טווחי המחיר של המחשבון המתקדם, כל דריסה ידנית ששיניתם בשורה, העיגול וברירת המחדל של התצוגה — <b>וגם רשימת ההזמנות שלכם</b>. <b>המחירונים עצמם לא בקובץ</b> — הם תמיד נטענים מהשרת בגרסה העדכנית.</p>
   </section>
 
   <section class="box">
@@ -386,6 +412,56 @@
     <p class="warn-line"><b>מה הוא כן פותר ומה לא:</b> הקובץ עצמו לא נמחק כשמנקים נתוני גלישה — הוא קובץ רגיל אצלכם בדיסק. <b>אבל ההגדרות שתזינו בתוכו עדיין נשמרות בדפדפן</b>, ולכן גם הן נמחקות בניקוי. הדבר היחיד ששורד הכל הוא קובץ הגיבוי מסעיף 1 — ואותו אפשר לייבא גם לעותק המקומי.</p>
     <p class="hint">בעותק המקומי אין קישור לצילומי המקור ואין הורדת אקסל — הם יושבים בשרת. המחירים והמחשבון עובדים במלואם.</p>
   </section>
+
+<!--GUIDE-->
+  <section class="box pub-only" id="ordersHelp">
+    <h2>🧾 איך עובדים עם ההזמנות</h2>
+    <p>רשימת החוסרים של המרפאה, באותו מקום שבו כבר יש לכם את המחירונים: מה שנגמר נרשם ברגע שרואים אותו,
+      וכשמזמינים — הרשימה כבר מסודרת לפי ספק ומוכנה להעתקה.</p>
+
+    <h3>1. להוסיף פריט</h3>
+    <ol class="steps">
+      <li><b>פריט ממחירון</b> — מקלידים שתי אותיות בשדה החיפוש העליון ובוחרים מהרשימה. הספק והקטגוריה נקבעים לבד לפי המחירון.</li>
+      <li><b>שם חופשי</b> — כל דבר שאין לו מחירון (ציוד משרדי, מוצר של ספק מקומי). כותבים בשדה השני ולוחצים <b>＋ הוסף</b>.</li>
+      <li>קובעים <b>כמות</b>, ואם צריך משנים <b>קטגוריה</b> (כללי · מזון · ניקיון · חנות · מעבדה) ו<b>ספק</b>.
+        לכל קטגוריה יש צבע משלה, וגם השורות ברשימה נצבעות בו.</li>
+    </ol>
+    <p class="hint">הספק נבחר מכפתורים — הספקים של אותה קטגוריה מהמחירונים. מי שלא ברשימה נמצא ב<b>ספק אחר…</b> בסוף השורה,
+      ואפשר גם להקליד ספק שאינו באף מחירון.</p>
+
+    <h3>2. מה קורה לשורה</h3>
+    <ul class="tick">
+      <li><b>ממתין</b> — נרשם, עוד לא הוזמן. <b>חסר</b> — נגמר ודחוף.</li>
+      <li><b>הוזמן</b> / <b>במשלוח</b> / <b>התקבל</b> — מה שהוזמן צונח לתחתית הרשימה, ומה שהתקבל נעלם ממנה אחרי 30 יום
+        (ותמיד אפשר לראות אותו ב-<b>🕘 היסטוריה</b>).</li>
+      <li>שורת <b>מעבדה</b> עובדת בסטטוסים שלה — נלקח · נשלח · חזר · דווח — ויש לה סימון <b>שולם</b>.</li>
+      <li><b>＋ לקוח</b> על השורה מצמיד אליה שם וטלפון — בשביל מה שהוזמן במיוחד עבור לקוח. הכפתור <b>ללקוח</b> בסינון מציג רק אותן.</li>
+    </ul>
+
+    <h3>3. להזמין — גיליון הזמנה</h3>
+    <ol class="steps">
+      <li>לוחצים <b>📋 גיליון הזמנה</b>. נכנסות רק שורות <b>ממתין</b> ו<b>חסר</b> — מה שכבר הוזמן לא מוזמן שוב.</li>
+      <li>בוחרים <b>למי מזמינים</b>: הכל, או ספק אחד — ואז הנוסח מכיל רק את מה ששייך אליו.</li>
+      <li><b>📋 העתק</b> ומדביקים בוואטסאפ למוכר, או <b>💬 וואטסאפ</b> / <b>✉ מייל</b> / <b>🖨 הדפס</b>.</li>
+      <li>אחרי ששלחתם — <b>✔ סמן הכל כהוזמן</b>, והשורות יורדות לתחתית הרשימה.</li>
+    </ol>
+    <p class="hint">שם המרפאה שמופיע בסוף הגיליון נקבע בהגדרות ⚙️, בקופסת ההזמנות.</p>
+
+    <h3>4. איפה זה נשמר — וזה חשוב</h3>
+    <p class="warn-line">הרשימה נשמרת <b>בדפדפן שלכם בלבד</b>, בדיוק כמו ההנחות והמרווחים — כולל שמות וטלפונים של לקוחות.
+      אנחנו לא רואים אותה ואין לנו עותק שלה. <b>ניקוי נתוני גלישה מוחק אותה</b>, מחשב אחר לא יראה אותה,
+      ובחלון פרטי היא נעלמת בסגירה.</p>
+    <p>הגיבוי היחיד הוא <b>⬇ ייצוא הגדרות</b> שבהגדרות ⚙️ — הקובץ הזה מכיל גם את ההזמנות, וייבוא שלו במחשב אחר מחזיר את שתיהן.
+      זה גם מה שמעביר את הרשימה בין מחשבים; אין סנכרון אוטומטי, ובכוונה.</p>
+
+    <h3>5. הגדרות שכדאי לעשות פעם אחת</h3>
+    <ul class="tick">
+      <li><b>אילו קטגוריות</b> יופיעו — מי שלא מנהל מעבדה חיצונית פשוט מכבה אותה.</li>
+      <li><b>שם המרפאה</b> לגיליון ההזמנה.</li>
+      <li><b>מה נפתח כשנכנסים</b> — מחירונים, מחירון המרפאה או ההזמנות. מי שבא רק למחירונים לא צריך לראות את ההזמנות בכלל.</li>
+    </ul>
+  </section>
+<!--/GUIDE-->
 
   <section class="box">
     <h2>5. ואם רוצים שזה פשוט יעבוד מכל מקום?</h2>
@@ -414,7 +490,7 @@
 </main>
 
 <footer>
-  <span class="foot-privacy">🔒 <b>פרטיות:</b> ההנחות והמרווחים שתזינו נשמרים בדפדפן שלכם בלבד. האתר סטטי — אין בסיס נתונים, אין חשבונות, אין אנליטיקס, ושום נתון תמחור אינו נשלח לשום שרת.</span>
+  <span class="foot-privacy">🔒 <b>פרטיות:</b> ההנחות, המרווחים ורשימת ההזמנות — כולל שמות וטלפונים של לקוחות — נשמרים בדפדפן שלכם בלבד. האתר סטטי — אין בסיס נתונים, אין חשבונות, אין אנליטיקס, ושום נתון שלכם אינו נשלח לשום שרת.</span>
   <span>מוגש חינם ע"י <b>ד"ר גיל קרן</b> · <a href="https://claudevet.com" target="_blank" rel="noopener">ClaudeVet</a> — כלים לווטרינרים</span>
   <span>המחירים הם מחירי מחירון רשמיים כפי שפורסמו ע"י הספקים, בתאריך המצוין. אינם מחירי קנייה בפועל.</span>
   <span class="marks">
@@ -427,6 +503,6 @@
 
 
 
-<script src="app.js?v=37"></script>
+<script src="app.js?v=38"></script>
 </body>
 </html>

@@ -39,4 +39,9 @@ assert.ok(txt.includes("• PDS 3/0 — 2 יח'"), 'quantity on the line');
 assert.ok(txt.includes('(לשרית)'), 'client noted on the line');
 assert.strictEqual((txt.match(/סה"כ פריטים: 1/g) || []).length, 2, 'a total per supplier');
 
+// the signature line is the clinic's own name, and an unnamed clinic gets no line at all
+const named = sheetText([L('x')], '28/08/2026', 'מרפאת הבדיקה');
+assert.ok(named.trim().endsWith('מרפאת הבדיקה'), 'sheet signed with the clinic name');
+assert.ok(!sheetText([L('x')], '28/08/2026').includes('מרפאת'), 'no signature without a name');
+
 console.log('test_orders: ok');
