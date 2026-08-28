@@ -340,16 +340,17 @@ body:not(.mode-clinic) .clinic-only{display:none}
 .ord-add #oSup{flex:1 1 170px}
 .ord-cats{display:flex;flex-wrap:wrap;gap:10px 22px}
 .ordcat{display:flex;align-items:center;gap:7px;font-size:15px}
-.ord-list{display:grid;gap:7px;margin-top:4px;max-width:66%}
+.ord-list{display:grid;gap:7px;margin-top:4px;max-width:73%;margin-inline:auto}
+#orders .meta-line{max-width:73%;margin-inline:auto}
 .ord-row{display:flex;justify-content:space-between;align-items:center;gap:14px;
   background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 13px}
 .ord-row.done .ord-main b{text-decoration:line-through;color:var(--muted)}
 .ord-row.gone{opacity:.62}
-.ord-main{min-width:0}
-.ord-main b{display:block;font-weight:500;line-height:1.35}
-.ord-main small{display:block;margin-top:4px}
+.ord-main{min-width:0;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.ord-main b{font-weight:500;line-height:1.35}
+.ord-main small{display:flex;align-items:center}
 .ord-tag{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--line);
-  border-radius:999px;padding:1px 9px;margin-inline-end:5px;margin-top:3px;white-space:nowrap}
+  border-radius:999px;padding:1px 9px;margin-inline-end:5px;white-space:nowrap}
 .ord-tag.sup{border-color:var(--teal);color:var(--teal)}
 .ord-tag.cli{border-color:var(--copper);color:var(--copper)}
 .ord-tag.paid{border-color:var(--ok);color:var(--ok)}
@@ -367,7 +368,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
   background:var(--edit-bg);color:var(--ink);margin-bottom:10px}
 #oHist.on{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}
 @media (max-width:700px){
-  .ord-list{max-width:100%}
+  .ord-list,#orders .meta-line{max-width:100%}
   .ord-row{flex-direction:column;align-items:stretch;gap:9px}
   .ord-ctl{justify-content:space-between}
   .ord-add .row>*{flex:1 1 100%}

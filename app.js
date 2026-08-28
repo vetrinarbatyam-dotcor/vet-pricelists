@@ -655,7 +655,6 @@ function renderOrders() {
     const tags = [
       `<button class="ord-tag sup${l.supplier ? '' : ' empty'}" data-e="sup" title="שינוי ספק">` +
         `${l.supplier ? esc(l.supplier) : '＋ ספק'}</button>`,
-      `<span class="ord-tag">${CAT_ICO[l.cat] || ''} ${esc(CAT_HEB[l.cat] || l.cat)}</span>`,
       `<button class="ord-tag cli${l.client ? '' : ' empty'}" data-e="cli" title="שיוך ללקוח">` +
         `${l.client ? '🧑 ' + esc(l.client) + (l.phone ? ' · ' + esc(l.phone) : '') : '＋ לקוח'}</button>`,
       l.cat === 'lab' ? `<span class="ord-tag${l.paid ? ' paid' : ''}">${l.paid ? '✔ שולם' : 'לא שולם'}</span>` : ''
