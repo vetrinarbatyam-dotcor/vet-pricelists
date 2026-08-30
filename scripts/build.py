@@ -160,12 +160,12 @@ VET_FOOD = {"rc-vet", "hills-pd", "hills-ve", "purina-vet", "monge-vet", "vetlif
 WET_KW = ("פחית", "פאוץ", "רטוב", "שימור", "מוס", "נזיד", "stew", "טרין", "ג'לי", "pouch",
           "loaf", "gravy", "רוטב", "מרק", "נוזל")
 STAGE_KW = [("senior", ("מבוגר", "סניור", "senior", "mature", "aging", "אייג'ינג", "אייגינג", "7+", "8+", "11+", "12+")),
-            ("puppy", ("גור", "פאפי", "puppy", "junior", "kitten", "קיטן", "starter", "סטרטר",
+            ("puppy", ("גור", "פאפי", "puppy", "junior", "kitten", "קיטן", "חתלתול", "starter", "סטרטר",
                        "אמהות", "mother", "growth", "ג'וניור", "גוניור")),
             ("adult", ("בוגר", "אדולט", "adult"))]
 SIZE_KW = [("small", ("mini", "מיני", "small", "סמול", "toy", "טוי", "x-small", "xsmall",
                       "גזע קטן", "מגזע קטן", "קטן")),
-           ("large", ("maxi", "מקסי", "large", "לארג", "giant", "ג'יינט", "medium", "מדיום",
+           ("large", ("maxi", "מקסי", "large", "לארג", "giant", "ג'יינט", "medium", "מדיום", "מד'",
                       "בינוני", "midi", "מידי", "גזע גדול", "גדול", "ג'יאנט", "גיאנט"))]
 
 def _kw(hay, kws): return next((t for t, ks in kws if any(k in hay for k in ks)), None)
@@ -202,7 +202,8 @@ REG = {
     "hills-pd":   ("food", "Hill's Prescription Diet", "2026-04", DLD / "PD_priceList_Apr26.PDF", "no_vat", "מחירון אפריל 2026 — מק\"ט ומשקל אריזה מהמחירון עצמו"),
     "hills-sp":   ("food", "Hill's Science Plan", "2026-04", DLD / "SP_PriceList_Apr26_2.PDF", "no_vat", "מחירון אפריל 2026 (בתוקף ממאי 2026)"),
     "hills-ve":   ("food", "Hill's Vet Essentials", "2026-04", None, "no_vat", None),
-    "vetlife":    ("food", "VetLife", "2025-02", DLD / "PDF" / "מחירון וטלייף 02.25 (1).pdf", "no_vat", "מחירון פברואר 2025"),
+    "vetlife":    ("food", "VetLife (פרמינה)", "2026-08", None, "no_vat", "מחירון פרמינה 08/2026 — הקו הרפואי. מחיר מחירון בלבד (ללא הנחות)"),
+    "farmina":    ("food", "פרמינה N&D", "2026-08", None, "no_vat", "מחירון פרמינה 08/2026 — N&D ו-Team Breeder. מחיר מחירון בלבד (ללא הנחות)"),
     "purina-vet": ("food", "Purina Pro Plan VET", "2026-06", DLD / "פורינה.pdf", "no_vat", "מחיר מחירון ליחידה (ללא הנחות)"),
     "purina-retail": ("food", "פורינה (חנויות)", "2026-06", DLD / "הצעת מחיר וטרינר 2026.pdf", "no_vat", "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"),
     "monge-vet":  ("food", "Monge Vet Solution", "2026-07", DLD / "מחירון מונג וט סלושיין יבש+רטוב - יולי 2026.pdf", "no_vat", "מחירון יולי 2026 — יבש + רטוב"),
@@ -275,7 +276,8 @@ ACTIONS = {
     "idexx-ref": ("ok", "ארכיון רפרנס, לא פער: המחירון המקוצר 2026 נטען במלואו, וכאן נשארו רק בדיקות שאינן מופיעות בו (חלקן לא זמינות בישראל)."),
     "hills-ve": ("no_source", "היחיד מבין שלושת קווי Hill's בלי מחירון משלו. אינו מופיע במחירון ה-PD, וגדלי האריזה שונים מ-Science Plan — כלומר קו נפרד. 42 השורות מתומחרות מקובץ המרפאה בלבד."),
     "karnieli": ("refresh", "שלושת המחירונים הקיימים נטענו במלואם (פאנלים · מחלות גנטיות · פתוגנים) — 66 בדיקות. אלה הפרסומים האחרונים של קרניאלי; כדאי לבקש מחירון 2026."),
-    "vetlife":  ("refresh", "המחירון האחרון שבידינו הוא 02/2025 (57 פריטים). כדאי לבקש מהיבואן מחירון 2026."),
+    "vetlife":  ("ok", "מחירון פרמינה 08/2026 — הגיע כטבלה מהיבואן, בלי PDF. הקו הרפואי בלבד; N&D ו-Team Breeder באותו מחירון נמצאים ברשימת 'פרמינה N&D'."),
+    "farmina":  ("ok", "מחירון פרמינה 08/2026 — הגיע כטבלה מהיבואן, בלי PDF."),
     "miltin-consum": ("ok", "מחירון נובמבר 2025 — עדיין בתוקף, אך אם יצא מחירון 2026 כדאי להחליף."),
     "medi-market": ("ok", "נאסף אוטומטית מאתר medi-market.co.il."),
     "vetmarket": ("ok", "אין מחירון מפורסם לוטמרקט — כל שורה היא מחיר המחירון לפני הנחה מתוך אישור הזמנה, עם התאריך שלה."),
@@ -409,7 +411,8 @@ def build():
                                     animal="חתול" if "חתול" in it["name"] else ("כלב" if "כלב" in it["name"] else None)))
     for slug, src in (("rc-vet", "rc_vet_2026_06.json"), ("rc-retail", "rc_spt_2026_01.json"),
                       ("purina-vet", "purina_2026_06.json"), ("purina-retail", "purina_retail_2026_06.json"),
-                      ("vetlife", "vetlife_2025_02.json"), ("monge", "monge_2026_07.json"),
+                      ("vetlife", "vetlife_2026_08.json"), ("farmina", "farmina_2026_08.json"),
+                      ("monge", "monge_2026_07.json"),
                       ("monge-vet", "monge_vet_2026_07.json")):
         for it in load(src):
             name = it["name"]

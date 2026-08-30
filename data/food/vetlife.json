@@ -1,156 +1,22 @@
 {
 "meta": {
-"action": "refresh",
-"action_note": "המחירון האחרון שבידינו הוא 02/2025 (57 פריטים). כדאי לבקש מהיבואן מחירון 2026.",
+"action": "ok",
+"action_note": "מחירון פרמינה 08/2026 — הגיע כטבלה מהיבואן, בלי PDF. הקו הרפואי בלבד; N&D ו-Team Breeder באותו מחירון נמצאים ברשימת 'פרמינה N&D'.",
 "slug": "vetlife",
 "type": "food",
-"supplier": "VetLife",
-"price_list_date": "2025-02",
-"source_file": "sources/food/vetlife-2025-02.pdf",
-"source_files": [
-"sources/food/vetlife-2025-02.pdf"
-],
+"supplier": "VetLife (פרמינה)",
+"price_list_date": "2026-08",
+"source_file": null,
+"source_files": [],
 "source_kind": "pricelist",
 "vat_basis": "no_vat",
 "vat_rate": 18,
-"item_count": 57,
-"status": "stale",
-"imported_at": "2026-08-26",
-"notes": "מחירון פברואר 2025"
+"item_count": 56,
+"status": "current",
+"imported_at": "2026-08-30",
+"notes": "מחירון פרמינה 08/2026 — הקו הרפואי. מחיר מחירון בלבד (ללא הנחות)"
 },
 "items": [
-{
-"name": "וטלייף היפואלרגני דג ותפו\"א כלב 12 ק\"ג",
-"category": null,
-"topic": "skin",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560189",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-1"
-},
-{
-"name": "וטלייף היפואלרגני ביצה ואורז כלב 12 ק\"ג",
-"category": null,
-"topic": "skin",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560190",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-2"
-},
-{
-"name": "וטלייף אולטרהיפו כלב 12 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 583.08,
-"price_with_vat": 688.03,
-"sku": "5560191",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-3"
-},
-{
-"name": "וטלייף גסטרו אינטסטינל כלב 12 ק\"ג",
-"category": null,
-"topic": "gi",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560192",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-4"
-},
-{
-"name": "וטלייף גסטרו אינטסטינל כלב 2 ק\"ג",
-"category": null,
-"topic": "gi",
-"price_no_vat": 135.19,
-"price_with_vat": 159.52,
-"sku": "5560193",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-5"
-},
-{
-"name": "וטלייף אובסיטי כלב 12 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 518.06,
-"price_with_vat": 611.31,
-"sku": "5560194",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-6"
-},
-{
-"name": "וטלייף רנאל כלב 12 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560195",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-7"
-},
-{
-"name": "וטלייף סטרוויט כלב 12 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560196",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-8"
-},
-{
-"name": "וטלייף סטרוויט כלב 2 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 135.19,
-"price_with_vat": 159.52,
-"sku": "5560197",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-9"
-},
-{
-"name": "וטלייף אולטרהיפו כלב 2 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 160.99,
-"price_with_vat": 189.97,
-"sku": "5560198",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-10"
-},
-{
-"name": "וטלייף היפואלרגני דג תפו\"א כלב 2 ק\"ג",
-"category": null,
-"topic": "skin",
-"price_no_vat": 139.32,
-"price_with_vat": 164.4,
-"sku": "5560199",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-11"
-},
 {
 "name": "וטלייף סטרוויט מנג'מנט חתול 5 ק\"ג",
 "category": null,
@@ -161,19 +27,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-12"
-},
-{
-"name": "וטלייף מנג'מנט סטרוויט כלב 12 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560201",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-13"
+"id": "vetlife-1"
 },
 {
 "name": "וטלייף חתולה מעוקרת 5 ק\"ג",
@@ -185,7 +39,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-14"
+"id": "vetlife-2"
 },
 {
 "name": "וטלייף חתול מסורס 5 ק\"ג",
@@ -197,7 +51,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-15"
+"id": "vetlife-3"
 },
 {
 "name": "וטלייף רנאל חתול 5 ק\"ג",
@@ -209,19 +63,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-16"
-},
-{
-"name": "וטלייף הפטיק כלב 12 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 507.74,
-"price_with_vat": 599.13,
-"sku": "5560216",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-17"
+"id": "vetlife-4"
 },
 {
 "name": "וטלייף גסטרו אינטסטינל חתול 5 ק\"ג",
@@ -233,19 +75,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-18"
-},
-{
-"name": "וטלייף ג'וינט מפרקים כלב 12 ק\"ג",
-"category": null,
-"topic": "joints",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560218",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-19"
+"id": "vetlife-5"
 },
 {
 "name": "וטלייף אובסיטי חתול 5 ק\"ג",
@@ -257,7 +87,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-20"
+"id": "vetlife-6"
 },
 {
 "name": "וטלייף גסטרו אינטסטינל חתול 2 ק\"ג",
@@ -269,7 +99,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-21"
+"id": "vetlife-7"
 },
 {
 "name": "וטלייף אובסיטי חתול 2 ק\"ג",
@@ -281,7 +111,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-22"
+"id": "vetlife-8"
 },
 {
 "name": "וטלייף רנאל חתול 2 ק\"ג",
@@ -293,7 +123,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-23"
+"id": "vetlife-9"
 },
 {
 "name": "וטלייף סטרוויט חתול 2 ק\"ג",
@@ -305,7 +135,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-24"
+"id": "vetlife-10"
 },
 {
 "name": "וטלייף דיאבטיק (סוכרת) חתול 2 ק\"ג",
@@ -317,31 +147,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-25"
-},
-{
-"name": "וטלייף מנג'מנט סטרוויט כלב 2 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 135.19,
-"price_with_vat": 159.52,
-"sku": "5560225",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-26"
-},
-{
-"name": "וטלייף ג'וינט מפרקים כלב 2 ק\"ג",
-"category": null,
-"topic": "joints",
-"price_no_vat": 135.19,
-"price_with_vat": 159.52,
-"sku": "5560226",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-27"
+"id": "vetlife-11"
 },
 {
 "name": "וטלייף אולטרהיפו חתול 2 ק\"ג",
@@ -353,7 +159,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-28"
+"id": "vetlife-12"
 },
 {
 "name": "וטלייף סטרוויט מנג'מנט חתול 2 ק\"ג",
@@ -365,19 +171,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-29"
-},
-{
-"name": "וטלייף רנאל כלב 2 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 135.19,
-"price_with_vat": 159.52,
-"sku": "5560229",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-30"
+"id": "vetlife-13"
 },
 {
 "name": "וטלייף הפטיק חתול 2 ק\"ג",
@@ -389,7 +183,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-31"
+"id": "vetlife-14"
 },
 {
 "name": "וטלייף סטרוויט מנג'מנט חתול 10 ק\"ג",
@@ -401,102 +195,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-32"
-},
-{
-"name": "וטלייף דיאבטיק כלב 12 ק\"ג",
-"category": null,
-"topic": "endocrine",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560232",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-33"
-},
-{
-"name": "וטלייף דיאבטיק כלב 2 ק\"ג",
-"category": null,
-"topic": "endocrine",
-"price_no_vat": 135.19,
-"price_with_vat": 159.52,
-"sku": "5560233",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-34"
-},
-{
-"name": "וטלייף אובסיטי דגים כלב 2 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 146.54,
-"price_with_vat": 172.92,
-"sku": "5560234",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-35"
-},
-{
-"name": "וטלייף היפואלרגני חזיר -תפו\"א כלב 2 ק\"ג",
-"category": null,
-"topic": "skin",
-"price_no_vat": 139.32,
-"price_with_vat": 164.4,
-"sku": "5560235",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-36"
-},
-{
-"name": "וטלייף אובסיטי כלב 2 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 124.87,
-"price_with_vat": 147.35,
-"sku": "5560236",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-37"
-},
-{
-"name": "וטלייף אובסיטי דג כלב 12 ק\"ג",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 539.74,
-"price_with_vat": 636.89,
-"sku": "5560399",
-"animal": "כלב",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-38"
-},
-{
-"name": "ווטלייף קרדיאק 2 ק\"ג",
-"category": null,
-"topic": "cardio",
-"price_no_vat": 135.19,
-"price_with_vat": 159.52,
-"sku": "5560482",
-"kind": "vet",
-"form": "dry",
-"id": "vetlife-39"
-},
-{
-"name": "ווטלייף גסטרואינטסטינל גורים 2 ק\"ג",
-"category": null,
-"topic": "gi",
-"price_no_vat": 135.19,
-"price_with_vat": 159.52,
-"sku": "5560483",
-"kind": "vet",
-"form": "dry",
-"stage": "puppy",
-"id": "vetlife-40"
+"id": "vetlife-15"
 },
 {
 "name": "ווטלייף היפואלרגני חזיר תפוא חתול 1.5קג",
@@ -508,18 +207,306 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-41"
+"id": "vetlife-16"
 },
 {
-"name": "ווטלייף אוקסלט 2 ק\"ג",
+"name": "וטלייף אינטסטינל אולטרקר דל שומן 1.5 ק\"ג",
+"category": null,
+"topic": "gi",
+"price_no_vat": 89.56,
+"price_with_vat": 105.68,
+"sku": "5555808",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-17"
+},
+{
+"name": "וטלייף היפואלרגני דג ותפו\"א כלב 12 ק\"ג",
+"category": null,
+"topic": "skin",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560189",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-18"
+},
+{
+"name": "וטלייף היפואלרגני ביצה ואורז כלב 12 ק\"ג",
+"category": null,
+"topic": "skin",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560190",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-19"
+},
+{
+"name": "וטלייף אולטרהיפו כלב 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 583.08,
+"price_with_vat": 688.03,
+"sku": "5560191",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-20"
+},
+{
+"name": "וטלייף גסטרו אינטסטינל כלב 12 ק\"ג",
+"category": null,
+"topic": "gi",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560192",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-21"
+},
+{
+"name": "וטלייף גסטרו אינטסטינל כלב 2 ק\"ג",
+"category": null,
+"topic": "gi",
+"price_no_vat": 135.19,
+"price_with_vat": 159.52,
+"sku": "5560193",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-22"
+},
+{
+"name": "וטלייף אובסיטי כלב 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 518.06,
+"price_with_vat": 611.31,
+"sku": "5560194",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-23"
+},
+{
+"name": "וטלייף רנאל כלב 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560195",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-24"
+},
+{
+"name": "וטלייף סטרוויט כלב 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560196",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-25"
+},
+{
+"name": "וטלייף סטרוויט כלב 2 ק\"ג",
 "category": null,
 "topic": "nutrition",
 "price_no_vat": 135.19,
 "price_with_vat": 159.52,
-"sku": "5560490",
+"sku": "5560197",
+"animal": "כלב",
 "kind": "vet",
 "form": "dry",
-"id": "vetlife-42"
+"id": "vetlife-26"
+},
+{
+"name": "וטלייף אולטרהיפו כלב 2 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 160.99,
+"price_with_vat": 189.97,
+"sku": "5560198",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-27"
+},
+{
+"name": "וטלייף היפואלרגני דג תפו\"א כלב 2 ק\"ג",
+"category": null,
+"topic": "skin",
+"price_no_vat": 139.32,
+"price_with_vat": 164.4,
+"sku": "5560199",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-28"
+},
+{
+"name": "וטלייף מנג'מנט סטרוויט כלב 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560201",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-29"
+},
+{
+"name": "וטלייף הפטיק כלב 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 507.74,
+"price_with_vat": 599.13,
+"sku": "5560216",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-30"
+},
+{
+"name": "וטלייף ג'וינט מפרקים כלב 12 ק\"ג",
+"category": null,
+"topic": "joints",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560218",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-31"
+},
+{
+"name": "וטלייף מנג'מנט סטרוויט כלב 2 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 135.19,
+"price_with_vat": 159.52,
+"sku": "5560225",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-32"
+},
+{
+"name": "וטלייף ג'וינט מפרקים כלב 2 ק\"ג",
+"category": null,
+"topic": "joints",
+"price_no_vat": 135.19,
+"price_with_vat": 159.52,
+"sku": "5560226",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-33"
+},
+{
+"name": "וטלייף רנאל כלב 2 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 135.19,
+"price_with_vat": 159.52,
+"sku": "5560229",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-34"
+},
+{
+"name": "וטלייף דיאבטיק כלב 12 ק\"ג",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560232",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-35"
+},
+{
+"name": "וטלייף דיאבטיק כלב 2 ק\"ג",
+"category": null,
+"topic": "endocrine",
+"price_no_vat": 135.19,
+"price_with_vat": 159.52,
+"sku": "5560233",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-36"
+},
+{
+"name": "וטלייף אובסיטי דגים כלב 2 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 146.54,
+"price_with_vat": 172.92,
+"sku": "5560234",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-37"
+},
+{
+"name": "וטלייף היפואלרגני חזיר -תפו\"א כלב 2 ק\"ג",
+"category": null,
+"topic": "skin",
+"price_no_vat": 139.32,
+"price_with_vat": 164.4,
+"sku": "5560235",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-38"
+},
+{
+"name": "וטלייף אובסיטי כלב 2 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 124.87,
+"price_with_vat": 147.35,
+"sku": "5560236",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-39"
+},
+{
+"name": "וטלייף אובסיטי דג כלב 12 ק\"ג",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 539.74,
+"price_with_vat": 636.89,
+"sku": "5560399",
+"animal": "כלב",
+"kind": "vet",
+"form": "dry",
+"id": "vetlife-40"
+},
+{
+"name": "ווטלייף גסטרואינטסטינל גורים 2 ק\"ג",
+"category": null,
+"topic": "gi",
+"price_no_vat": 135.19,
+"price_with_vat": 159.52,
+"sku": "5560483",
+"kind": "vet",
+"form": "dry",
+"stage": "puppy",
+"id": "vetlife-41"
 },
 {
 "name": "וטלייף שימור קונבלסנס(ריקברי) חתול 85 ג'",
@@ -531,7 +518,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-43"
+"id": "vetlife-42"
 },
 {
 "name": "וטלייף שימורים גסטרו חתול 85ג'",
@@ -543,7 +530,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-44"
+"id": "vetlife-43"
 },
 {
 "name": "וטלייף שימורים רנאל חתול 85ג'",
@@ -555,7 +542,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-45"
+"id": "vetlife-44"
 },
 {
 "name": "וטלייף שימורים סטרוויט חתול 85ג'",
@@ -567,43 +554,7 @@
 "animal": "חתול",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-46"
-},
-{
-"name": "וט לייף שימורים אובסיטי חתול 85 גרם",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 9.29,
-"price_with_vat": 10.96,
-"sku": "5560393",
-"animal": "חתול",
-"kind": "vet",
-"form": "wet",
-"id": "vetlife-47"
-},
-{
-"name": "ווטלייף שימור היפואלרגניק חזיר חתול 85גר",
-"category": null,
-"topic": "skin",
-"price_no_vat": 9.29,
-"price_with_vat": 10.96,
-"sku": "5560469",
-"animal": "חתול",
-"kind": "vet",
-"form": "wet",
-"id": "vetlife-48"
-},
-{
-"name": "ווטלייף שימור סטרוויט מנג'מנט חתול 85גר",
-"category": null,
-"topic": "nutrition",
-"price_no_vat": 9.29,
-"price_with_vat": 10.96,
-"sku": "5560470",
-"animal": "חתול",
-"kind": "vet",
-"form": "wet",
-"id": "vetlife-49"
+"id": "vetlife-45"
 },
 {
 "name": "וטלייף שימור קונבלסנס (ריקברי) כלב 300 ג",
@@ -615,7 +566,7 @@
 "animal": "כלב",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-50"
+"id": "vetlife-46"
 },
 {
 "name": "וטלייף שימורים גסטרו כלב 300ג'",
@@ -627,7 +578,7 @@
 "animal": "כלב",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-51"
+"id": "vetlife-47"
 },
 {
 "name": "וטלייף שימורים היפואלרגני דג תפו\"א 300ג'",
@@ -638,7 +589,7 @@
 "sku": "5560210",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-52"
+"id": "vetlife-48"
 },
 {
 "name": "וטלייף שימורים רנאל כלב 300ג'",
@@ -650,7 +601,7 @@
 "animal": "כלב",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-53"
+"id": "vetlife-49"
 },
 {
 "name": "וטלייף שימורים סטרוויט כלב 300ג'",
@@ -662,7 +613,19 @@
 "animal": "כלב",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-54"
+"id": "vetlife-50"
+},
+{
+"name": "וט לייף שימורים אובסיטי חתול 85 גרם",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 9.29,
+"price_with_vat": 10.96,
+"sku": "5560393",
+"animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"id": "vetlife-51"
 },
 {
 "name": "וט לייף שימורים אובסיטי כלב 300 גרם",
@@ -674,7 +637,7 @@
 "animal": "כלב",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-55"
+"id": "vetlife-52"
 },
 {
 "name": "ווטלייף שימור אולטרהיפו 300 גר",
@@ -685,7 +648,7 @@
 "sku": "5560467",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-56"
+"id": "vetlife-53"
 },
 {
 "name": "ווטלייף שימור סטרוויט מנג'מנט 300גר",
@@ -696,7 +659,31 @@
 "sku": "5560468",
 "kind": "vet",
 "form": "wet",
-"id": "vetlife-57"
+"id": "vetlife-54"
+},
+{
+"name": "ווטלייף שימור היפואלרגניק חזיר חתול 85גר",
+"category": null,
+"topic": "skin",
+"price_no_vat": 9.29,
+"price_with_vat": 10.96,
+"sku": "5560469",
+"animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"id": "vetlife-55"
+},
+{
+"name": "ווטלייף שימור סטרוויט מנג'מנט חתול 85גר",
+"category": null,
+"topic": "nutrition",
+"price_no_vat": 9.29,
+"price_with_vat": 10.96,
+"sku": "5560470",
+"animal": "חתול",
+"kind": "vet",
+"form": "wet",
+"id": "vetlife-56"
 }
 ]
 }

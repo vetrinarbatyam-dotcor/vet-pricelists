@@ -1,5 +1,5 @@
 {
- "built_at": "2026-08-26",
+ "built_at": "2026-08-30",
  "vat_rate": 18,
  "pricelists": [
   {
@@ -18,7 +18,7 @@
    "vat_rate": 18,
    "item_count": 410,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון חיות קטנות יולי 2026"
   },
   {
@@ -37,7 +37,7 @@
    "vat_rate": 18,
    "item_count": 16,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחיר לווטרינר 2026"
   },
   {
@@ -56,7 +56,7 @@
    "vat_rate": 18,
    "item_count": 406,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "חטיבה וטרינרית מילטין — ציוד מתכלה נובמבר 2025"
   },
   {
@@ -76,7 +76,7 @@
    "vat_rate": 18,
    "item_count": 39,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחיר לווטרינר 2026 — תרופות + סימפריקה/סטרונגהולד"
   },
   {
@@ -93,7 +93,7 @@
    "vat_rate": 18,
    "item_count": 294,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משלושה מקורות — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
   },
   {
@@ -110,7 +110,7 @@
    "vat_rate": 18,
    "item_count": 2383,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"
   },
   {
@@ -129,7 +129,7 @@
    "vat_rate": 18,
    "item_count": 167,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"
   },
   {
@@ -148,7 +148,7 @@
    "vat_rate": 18,
    "item_count": 108,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון קמעונאי יוני 2026"
   },
   {
@@ -167,7 +167,7 @@
    "vat_rate": 18,
    "item_count": 168,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון קמעונאי ינואר 2026"
   },
   {
@@ -186,7 +186,7 @@
    "vat_rate": 18,
    "item_count": 123,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון אפריל 2026 — מק\"ט ומשקל אריזה מהמחירון עצמו"
   },
   {
@@ -205,7 +205,7 @@
    "vat_rate": 18,
    "item_count": 86,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון אפריל 2026 (בתוקף ממאי 2026)"
   },
   {
@@ -222,27 +222,42 @@
    "vat_rate": 18,
    "item_count": 42,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": null
   },
   {
-   "action": "refresh",
-   "action_note": "המחירון האחרון שבידינו הוא 02/2025 (57 פריטים). כדאי לבקש מהיבואן מחירון 2026.",
+   "action": "ok",
+   "action_note": "מחירון פרמינה 08/2026 — הגיע כטבלה מהיבואן, בלי PDF. הקו הרפואי בלבד; N&D ו-Team Breeder באותו מחירון נמצאים ברשימת 'פרמינה N&D'.",
    "slug": "vetlife",
    "type": "food",
-   "supplier": "VetLife",
-   "price_list_date": "2025-02",
-   "source_file": "sources/food/vetlife-2025-02.pdf",
-   "source_files": [
-    "sources/food/vetlife-2025-02.pdf"
-   ],
+   "supplier": "VetLife (פרמינה)",
+   "price_list_date": "2026-08",
+   "source_file": null,
+   "source_files": [],
    "source_kind": "pricelist",
    "vat_basis": "no_vat",
    "vat_rate": 18,
-   "item_count": 57,
-   "status": "stale",
-   "imported_at": "2026-08-26",
-   "notes": "מחירון פברואר 2025"
+   "item_count": 56,
+   "status": "current",
+   "imported_at": "2026-08-30",
+   "notes": "מחירון פרמינה 08/2026 — הקו הרפואי. מחיר מחירון בלבד (ללא הנחות)"
+  },
+  {
+   "action": "ok",
+   "action_note": "מחירון פרמינה 08/2026 — הגיע כטבלה מהיבואן, בלי PDF.",
+   "slug": "farmina",
+   "type": "food",
+   "supplier": "פרמינה N&D",
+   "price_list_date": "2026-08",
+   "source_file": null,
+   "source_files": [],
+   "source_kind": "pricelist",
+   "vat_basis": "no_vat",
+   "vat_rate": 18,
+   "item_count": 94,
+   "status": "current",
+   "imported_at": "2026-08-30",
+   "notes": "מחירון פרמינה 08/2026 — N&D ו-Team Breeder. מחיר מחירון בלבד (ללא הנחות)"
   },
   {
    "action": "ok",
@@ -260,7 +275,7 @@
    "vat_rate": 18,
    "item_count": 37,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחיר מחירון ליחידה (ללא הנחות)"
   },
   {
@@ -279,7 +294,7 @@
    "vat_rate": 18,
    "item_count": 170,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"
   },
   {
@@ -298,7 +313,7 @@
    "vat_rate": 18,
    "item_count": 41,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון יולי 2026 — יבש + רטוב"
   },
   {
@@ -318,7 +333,7 @@
    "vat_rate": 18,
    "item_count": 109,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון יולי 2026 — יבש + BeWild"
   },
   {
@@ -337,7 +352,7 @@
    "vat_rate": 18,
    "item_count": 123,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "בתוקף מ-1.6.2026"
   },
   {
@@ -356,7 +371,7 @@
    "vat_rate": 18,
    "item_count": 90,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": null
   },
   {
@@ -375,7 +390,7 @@
    "vat_rate": 18,
    "item_count": 137,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון מקוצר 2026 — הבדיקות המוצעות בישראל"
   },
   {
@@ -394,7 +409,7 @@
    "vat_rate": 18,
    "item_count": 373,
    "status": "stale",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון רפרנס 2025 — בדיקות שאינן במחירון המקוצר 2026; חלקן אינן זמינות בישראל"
   },
   {
@@ -415,7 +430,7 @@
    "vat_rate": 18,
    "item_count": 66,
    "status": "stale",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "פאנלים · מחלות גנטיות · פתוגנים — שלושת מחירוני 2025"
   },
   {
@@ -434,7 +449,7 @@
    "vat_rate": 18,
    "item_count": 5,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון חיות קטנות יולי 2026"
   },
   {
@@ -453,7 +468,7 @@
    "vat_rate": 18,
    "item_count": 265,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון מלאי אוגוסט 2026 — צעצועים ואביזרים"
   },
   {
@@ -472,7 +487,7 @@
    "vat_rate": 18,
    "item_count": 15,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון 24.2.2026 — מחיר מחירון (ללא הנחות)"
   },
   {
@@ -489,7 +504,7 @@
    "vat_rate": 18,
    "item_count": 23,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "לוטמרקט אין מחירון מפורסם. הרשימה נבנית מפרסור אישורי הזמנה (09/2023–08/2026) משלושה מקורות — מחיר המחירון לפני הנחה, עם תאריך לכל שורה"
   },
   {
@@ -506,7 +521,7 @@
    "vat_rate": 18,
    "item_count": 31,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירי אתר medi-market.co.il (נאספו 30/06/2026)"
   },
   {
@@ -525,7 +540,7 @@
    "vat_rate": 18,
    "item_count": 14,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "מחירון 2026 — כל המותגים (DermatoVet, Zymox, WePharm, VetInnov, Uranotest ועוד)"
   },
   {
@@ -544,7 +559,7 @@
    "vat_rate": 18,
    "item_count": 30,
    "status": "current",
-   "imported_at": "2026-08-26",
+   "imported_at": "2026-08-30",
    "notes": "פריסקיז · פנסי פיסט · גורמה · פרו פלאן · דנטלייף — מחיר מחירון בלבד"
   }
  ],
