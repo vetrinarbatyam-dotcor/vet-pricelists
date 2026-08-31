@@ -636,8 +636,8 @@ button.ord-tag:hover{background:var(--teal-soft)}
   </section>
 
   <section class="box">
-    <h2>עיגול מחיר ללקוח</h2>
-    <div class="seg" id="roundSeg" role="group" aria-label="עיגול">
+    <h2>עיגול מחיר ללקוח — תמיד כלפי מעלה</h2>
+    <div class="seg" id="roundSeg" role="group" aria-label="עיגול כלפי מעלה">
       <button data-round="0" class="on">ללא</button><button data-round="1">₪1</button>
       <button data-round="5">₪5</button><button data-round="10">₪10</button>
     </div>
@@ -1072,7 +1072,9 @@ function setRow(r, field, val) {
   else if (field === 'cost') o.discount = +(100 * (1 - (val ?? cur.cost) / (r.price_no_vat * VAT))).toFixed(2);
   else if (field === 'pct') o.pct = val ?? 0;
   else if (field === 'flat') o.flat = val ?? 0;
-  else if (field === 'sale') o.pct = +(100 * (((val ?? cur.sale) - cur.flat) / cur.cost - 1)).toFixed(2);
+  // invert against the flat that will apply once the override exists: a tier's ₪-add stops
+  // the moment o.pct is set, so cur.flat (which may be the tier's) would miss the typed price
+  else if (field === 'sale' && cur.cost) o.pct = +(100 * (((val ?? cur.sale) - params(r).flat) / cur.cost - 1)).toFixed(2);
   save();
 }
 
@@ -1310,17 +1312,16 @@ function renderSettings() {
   metas.forEach(m => {
     const s = P.suppliers[m.slug] || {}, mode = s.mode || 'pct';
     const tr = document.createElement('tr');
-    const sample = 100 * (1 - (s.discount || 0) / 100) * VAT;
-    const sale = mode === 'flat'
-      ? sample + (s.flat ?? P.sections[m.type]?.flat ?? 0)
-      : sample * (1 + (s.pct ?? P.sections[m.type]?.pct ?? 0) / 100);
+    // the sample must go through the same calc() as the real table — a hand-rolled formula here
+    // applied pct XOR flat and skipped the tiers, and understated whenever both were set
+    const sale = calc({ id: '', sec: m.type, slug: m.slug, price_no_vat: 100 }).sale;
     tr.innerHTML = `<td>${esc(m.supplier)}</td><td>${SEC_HEB[m.type]}</td><td class="num">${m.item_count}</td>
       <td class="edit buy"><input type="number" step="0.5" data-s="${m.slug}" data-k="discount" value="${s.discount ?? ''}" placeholder="0"> <span class="pc">%</span></td>
       <td><select data-s="${m.slug}" data-k="mode">
             <option value="pct"${mode === 'pct' ? ' selected' : ''}>אחוז מהעלות</option>
             <option value="flat"${mode === 'flat' ? ' selected' : ''}>תוספת קבועה ₪</option></select></td>
       <td class="edit"><input type="number" step="1" data-s="${m.slug}" data-k="${mode}" value="${(mode === 'pct' ? s.pct : s.flat) ?? ''}" placeholder="ברירת מחדל"></td>
-      <td class="hint">מחירון 100₪ → <b>${fmt(roundTo(sale))} ₪</b></td>`;
+      <td class="hint">מחירון 100₪ → <b>${fmt(sale)} ₪</b></td>`;
     tr.querySelectorAll('input,select').forEach(el => el.addEventListener('change', () => {
       const o = P.suppliers[m.slug] || (P.suppliers[m.slug] = {}), k = el.dataset.k;
       if (k === 'mode') o.mode = el.value;
@@ -1405,6 +1406,12 @@ function renderAdv() {
     const b = P.tiers.bands[+inp.dataset.i];
     b[inp.dataset.f] = inp.value === '' ? (inp.dataset.f === 'add' ? 0 : b[inp.dataset.f]) : +inp.value;
     save(); advPreview(); if (S.mode === 'clinic') renderTable();
+  }));
+  // bounds typed out of order (300 then 200) would make bandFor pick the wrong band; re-sort
+  // on blur, not on every keystroke — mid-typing "3" of "300" must not reshuffle the table
+  tb.querySelectorAll('.tin[data-f="to"]').forEach(inp => inp.addEventListener('change', () => {
+    P.tiers.bands.sort((a, b) => (a.to == null) - (b.to == null) || +a.to - +b.to);
+    save(); renderAdv(); if (S.mode === 'clinic') renderTable();
   }));
   tb.querySelectorAll('.trm').forEach(btn => btn.addEventListener('click', () => {
     P.tiers.bands.splice(+btn.dataset.i, 1); save(); renderAdv();
@@ -2087,7 +2094,8 @@ function wireOrders() {
   ordPoll();
 }
 if (typeof document !== 'undefined') init().catch(e => { document.body.innerHTML = `<p style="padding:40px;text-align:center">שגיאה בטעינת הנתונים (${esc(e.message)}). נסו לרענן.</p>`; });
-if (typeof module !== 'undefined' && module.exports) module.exports = { mergeLines, sortLines, sheetText };
+if (typeof module !== 'undefined' && module.exports)
+  module.exports = { mergeLines, sortLines, sheetText, _pricing: { P, params, calc, bandFor, setRow } };
 })();
 
 </script>
