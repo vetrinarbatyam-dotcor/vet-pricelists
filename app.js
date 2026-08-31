@@ -413,6 +413,8 @@ function calcRun(from) {
   $('#rSale').textContent = fmt(sale) + ' ₪';
   $('#rSaleNo').textContent = fmt(sale / VAT) + ' ₪';
   $('#rProfit').textContent = fmt(profit) + ' ₪';
+  // what actually stays in the pocket: the VAT share of the margin goes to the state
+  $('#rProfitNet').textContent = fmt(profit / VAT) + ' ₪';
   $('#rMarkup').textContent = cost ? (100 * profit / cost).toFixed(1) + '%' : '—';
   $('#rMargin').textContent = sale ? (100 * profit / sale).toFixed(1) + '%' : '—';
 }
