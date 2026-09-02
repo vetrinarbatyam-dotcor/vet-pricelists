@@ -2013,6 +2013,10 @@ async function start() {
   });
   wireOrders();
   goHome();
+  // deep link — prices.claudevet.com/#labs lands straight on the labs price lists.
+  // VetForms links here that way; anything else falls back to the home tiles.
+  const deep = location.hash.replace('#', '');
+  if (ALL_SEC.includes(deep)) openSec(deep);
 }
 
 function fillOrderCats() {
