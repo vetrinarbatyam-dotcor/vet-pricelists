@@ -1343,7 +1343,7 @@ function renderSettings() {
         if (e.target.checked) cur.add(k); else cur.delete(k);
         O.cats = CATS.map(([c]) => c).filter(c => cur.has(c));
         if (OS.cat && !O.cats.includes(OS.cat)) OS.cat = null;
-        fillOrderCats(); renderOrders(); saveOrders([]);
+        fillOrderCats(); renderOrders(); saveCats();
       });
       oc.appendChild(w);
     });
@@ -1475,10 +1475,13 @@ function renderStatus() {
 }
 
 // ---------- orders (clinic copy only) ----------
-// One file on the server holds the whole list, so every computer in the clinic sees the same
-// thing. Writes re-read and merge instead of overwriting: a computer holding a stale list can
-// never wipe what another one added.
+// The clinic list IS the clinic-pal-hub list: both read and write the same `supply_orders` rows
+// in the hub database, so the portal's order centre and this page are one list on every computer.
+// The file below is left holding only the category switches — the table has no place for them.
 const ORD_STORE = 'store/orders.json';
+// nginx on the clinic vhost proxies this one table to the hub API and injects the gateway key,
+// so the key never reaches the browser and the public site has no such path (404, like /store/).
+const ORD_API = '/api/data/supply_orders';
 // the public copy has no server behind it — there the list lives in this browser only,
 // exactly like the pricing settings do.
 const ORD_LK = 'vp_orders';
@@ -1571,18 +1574,9 @@ let OS = { cat: null, sup: null, filter: 'active', q: '', hist: false };
 let ordTimer = null, sheetIds = null, picked = null;
 
 const oid = () => 'o-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 6);
-const bump = ts => new Date(new Date(ts).getTime() + 1).toISOString();
 const dShort = ts => { const d = new Date(ts); return isNaN(d) ? '' : d.toLocaleDateString('he-IL', { day: '2-digit', month: '2-digit' }); };
 
 // --- pure helpers (also exercised by tests/test_orders.js) ---
-function mergeLines(a, b) {
-  const m = new Map();
-  [...a, ...b].forEach(l => {
-    const cur = m.get(l.id);
-    if (!cur || (l.updated_at || '') >= (cur.updated_at || '')) m.set(l.id, l);
-  });
-  return [...m.values()];
-}
 function sortLines(ls) {
   return ls.slice().sort((x, y) => (ST_ORDER[x.status] ?? 9) - (ST_ORDER[y.status] ?? 9) ||
     (y.created_at || '').localeCompare(x.created_at || ''));
@@ -1601,7 +1595,56 @@ function sheetText(lines, today, clinic) {
   return out.join('\n');
 }
 
+// --- the hub row <-> our line ---
+// clinic-pal-hub keeps the category in front of the item name and the client inside the notes;
+// its own tabs filter on exactly these strings, so a line written without them disappears from
+// the portal. Everything the portal has no concept of (supplier, slug, sku, price, paid, and the
+// two categories it never had) sits in columns of its own.
+const CAT_PREFIX = { food: '[מזון] ', clean: '[ניקיון] ' };
+const CLIENT_RE = /\[לקוח:(.+?)\]/, PHONE_RE = /\[טל:(.+?)\]/;
+const isoOf = t => { const d = new Date(t); return isNaN(d) ? new Date().toISOString() : d.toISOString(); };
+
+function fromRow(r) {
+  let name = (r.item_name || '').trim(), cat = r.cat || 'general';
+  for (const k in CAT_PREFIX) if (name.startsWith(CAT_PREFIX[k])) {
+    name = name.slice(CAT_PREFIX[k].length).trim();
+    if (!r.cat) cat = k;      // a row the portal created carries its category only here
+    break;
+  }
+  name = name.replace(/^חופשי\|/, '').trim();
+  const sup = (r.supplier || '').trim();
+  // a food line is written "<brand> - <item>" so the portal shows which brand it is; here the
+  // brand is already the supplier chip, so it is only noise in the name
+  if (sup && name.startsWith(sup + ' - ')) name = name.slice(sup.length + 3).trim();
+  const notes = r.notes || '', cl = notes.match(CLIENT_RE), ph = notes.match(PHONE_RE);
+  return { id: r.id, cat, name, qty: Math.max(1, parseInt(r.quantity, 10) || 1),
+    status: r.status || 'pending', supplier: sup, slug: r.slug || '', sku: r.sku || '',
+    price: r.price == null || r.price === '' ? null : +r.price,
+    client: cl ? cl[1].trim() : '', phone: ph ? ph[1].trim() : '', paid: !!r.paid,
+    note: notes.replace(new RegExp(CLIENT_RE.source, 'g'), '').replace(new RegExp(PHONE_RE.source, 'g'), '').trim(),
+    created_at: isoOf(r.created_at), updated_at: isoOf(r.updated_at || r.created_at) };
+}
+function toRow(l) {
+  const nm = (l.cat === 'food' && l.supplier ? l.supplier + ' - ' : '') + l.name;
+  return { item_name: (CAT_PREFIX[l.cat] || '') + nm, quantity: l.qty, status: l.status,
+    notes: [l.note, l.client ? `[לקוח:${l.client}]` : '', l.client && l.phone ? `[טל:${l.phone}]` : '']
+      .filter(Boolean).join(' ').trim(),
+    cat: l.cat, supplier: l.supplier || '', slug: l.slug || '', sku: l.sku || '',
+    price: l.price, paid: !!l.paid, updated_at: l.updated_at };
+}
+
 // --- storage ---
+async function ordApi(path, method, body) {
+  const r = await fetch(ORD_API + path, { cache: 'no-cache', method: method || 'GET',
+    headers: body ? { 'Content-Type': 'application/json' } : {},
+    body: body ? JSON.stringify(body) : undefined });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return method === 'DELETE' ? null : r.json();
+}
+// ponytail: the whole table in one call (~630 rows today, ~30 more a month). Page it if it ever
+// drags — the history toggle wants the old rows anyway, so a 30-day cut would not do.
+const ordFetch = () => ordApi('?limit=5000&order_by=created_at&order_dir=asc').then(rs => rs.map(fromRow));
+
 async function loadOrders() {
   const cut = new Date(Date.now() - TOMB_TTL).toISOString();
   const take = s => (O = { v: 1, cats: Array.isArray(s.cats) ? s.cats : DEF_CATS.slice(),
@@ -1611,54 +1654,58 @@ async function loadOrders() {
     try { take(JSON.parse(localStorage.getItem(ORD_LK) || '{}')); } catch { take({}); }
     return true;
   }
-  try { take(await getJSON(ORD_STORE)); return true; }
+  try { take(await getJSON(ORD_STORE)); } catch { take({}); }   // categories only; lines follow
+  try { O.lines = await ordFetch(); return true; }
   catch { toast('⚠️ לא הצלחנו לטעון את ההזמנות מהשרת', true); return false; }
 }
-// GET → merge → PUT → read back. The read-back is not polish: it is the only thing that catches
-// two computers writing inside the same few hundred ms, which merging alone cannot.
+// One row per call. The database is the list, so there is nothing to merge and nothing to read
+// back: an update either lands on its row or fails loudly, and two computers cannot overwrite
+// each other's lines the way two writers of one file could.
 async function saveOrders(ids) {
   if (!clinicMode) {
     try { localStorage.setItem(ORD_LK, JSON.stringify({ v: 1, cats: O.cats, lines: O.lines })); return true; }
     catch (e) { toast('⚠️ השמירה בדפדפן נכשלה (' + e.message + ') — ההזמנה לא נשמרה', true); return false; }
   }
-  const mine = O.lines.filter(l => ids.includes(l.id));
-  for (let attempt = 0; attempt < 2; attempt++) {
-    let remote = null;
-    try { remote = await getJSON(ORD_STORE); } catch {}
-    if (remote && Array.isArray(remote.lines)) {
-      // a clock running behind the other computer's would make a fresh edit look older
-      const rm = new Map(remote.lines.map(l => [l.id, l]));
-      mine.forEach(l => { const p = rm.get(l.id); if (p && (p.updated_at || '') >= l.updated_at) l.updated_at = bump(p.updated_at); });
-      O.lines = mergeLines(remote.lines, O.lines);
-    }
+  let ok = true, renumbered = false;
+  for (const id of ids) {
+    const l = O.lines.find(x => x.id === id);
+    if (!l) continue;
     try {
-      const r = await fetch(ORD_STORE, { method: 'PUT', headers: { 'Content-Type': 'application/json' },
-                                         body: JSON.stringify({ v: 1, cats: O.cats, lines: O.lines }) });
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-    } catch (e) { toast('⚠️ השמירה נכשלה (' + e.message + ') — ההזמנה לא נשמרה', true); return false; }
-    let back = null;
-    try { back = await getJSON(ORD_STORE); } catch { return true; }
-    const bm = new Map((back.lines || []).map(l => [l.id, l]));
-    if (!mine.some(l => (bm.get(l.id) || {}).updated_at !== l.updated_at)) {
-      O.lines = mergeLines(O.lines, back.lines || []);
-      return true;
+      if (l.deleted) { await ordApi('/' + id, 'DELETE'); O.lines = O.lines.filter(x => x.id !== id); }
+      // a line born here carries a local id until the database hands out the real one
+      else if (/^o-/.test(id)) { const row = await ordApi('', 'POST', { ...toRow(l), created_at: l.created_at }); l.id = row.id; renumbered = true; }
+      else await ordApi('/' + id, 'PUT', toRow(l));
+    } catch (e) {
+      ok = false;
+      toast('⚠️ השמירה נכשלה (' + e.message + ') — "' + (l.name || '') + '" לא נשמר', true);
     }
   }
-  toast('⚠️ מחשב אחר שמר באותו רגע — בדקו שהשורה נכנסה', true);
-  return false;
+  // the row on screen still carries the local id it was drawn with, and a click on it would
+  // look up a line that no longer answers to that name
+  if (renumbered) renderOrders();
+  return ok;
+}
+// the category switches are a display setting, not order data, so they stay in the shared file
+async function saveCats() {
+  if (!clinicMode) return saveOrders([]);
+  try {
+    const r = await fetch(ORD_STORE, { method: 'PUT', headers: { 'Content-Type': 'application/json' },
+                                       body: JSON.stringify({ v: 1, cats: O.cats }) });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return true;
+  } catch (e) { toast('⚠️ שמירת הקטגוריות נכשלה (' + e.message + ')', true); return false; }
 }
 function ordPoll() {
   if (!clinicMode) return;   // one browser, one list — there is nobody to poll against
   clearTimeout(ordTimer);
   ordTimer = setTimeout(async () => {
     if (!$('#orders').hidden && document.visibilityState === 'visible') {
-      try {
-        const s = await getJSON(ORD_STORE);
-        O.lines = mergeLines(O.lines, s.lines || []);
-        if (Array.isArray(s.cats)) O.cats = s.cats;
-        // never re-render under someone's fingers — it would wipe a half-typed quantity
-        if (!$('#ordList').contains(document.activeElement)) renderOrders();
-      } catch {}
+      // the database is the truth: take it whole rather than merge, or a row someone deleted
+      // on another computer would live on here
+      try { O.lines = await ordFetch(); } catch {}
+      try { const s = await getJSON(ORD_STORE); if (Array.isArray(s.cats)) O.cats = s.cats; } catch {}
+      // never re-render under someone's fingers — it would wipe a half-typed quantity
+      if (!$('#ordList').contains(document.activeElement)) renderOrders();
     }
     ordPoll();
   }, 30000);
@@ -2102,7 +2149,7 @@ function wireOrders() {
 }
 if (typeof document !== 'undefined') init().catch(e => { document.body.innerHTML = `<p style="padding:40px;text-align:center">שגיאה בטעינת הנתונים (${esc(e.message)}). נסו לרענן.</p>`; });
 if (typeof module !== 'undefined' && module.exports)
-  module.exports = { mergeLines, sortLines, sheetText, _pricing: { P, params, calc, bandFor, setRow } };
+  module.exports = { fromRow, toRow, sortLines, sheetText, _pricing: { P, params, calc, bandFor, setRow } };
 })();
 
 </script>

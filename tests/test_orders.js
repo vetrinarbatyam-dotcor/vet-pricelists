@@ -1,25 +1,40 @@
 // The three order helpers that are not obvious by reading:  node tests/test_orders.js
 const assert = require('assert');
-const { mergeLines, sortLines, sheetText } = require('../app.js');
+const { fromRow, toRow, sortLines, sheetText } = require('../app.js');
 
 const L = (id, o) => Object.assign({ id, name: id, qty: 1, status: 'pending', supplier: 'ספק א',
   created_at: '2026-08-01T00:00:00.000Z', updated_at: '2026-08-01T00:00:00.000Z' }, o);
 
-// --- mergeLines: nobody loses a line ---
-// two computers each added one line to the same starting list
-const remote = [L('a'), L('b')];
-const local = [L('a'), L('c')];
-assert.deepStrictEqual(mergeLines(remote, local).map(l => l.id).sort(), ['a', 'b', 'c']);
+// --- fromRow / toRow: the hub row and our line say the same thing ---
+// what the portal wrote, read here: the category is in the name, the client is in the notes
+const portal = fromRow({ id: 'u1', item_name: "[מזון] Hill's PD - i/d חתול", quantity: '2',
+  status: 'pending', notes: 'לשאול על אריזה [לקוח:שרית] [טל:0501234567]',
+  created_at: '2026-08-01T00:00:00Z', updated_at: '2026-08-01T00:00:00Z' });
+assert.strictEqual(portal.cat, 'food');
+assert.strictEqual(portal.name, "Hill's PD - i/d חתול");
+assert.strictEqual(portal.client, 'שרית');
+assert.strictEqual(portal.phone, '0501234567');
+assert.strictEqual(portal.note, 'לשאול על אריזה');
+assert.strictEqual(portal.qty, 2);
 
-// the later edit of the same line wins, whichever side it came from
-const older = L('a', { status: 'pending', updated_at: '2026-08-01T10:00:00.000Z' });
-const newer = L('a', { status: 'ordered', updated_at: '2026-08-01T11:00:00.000Z' });
-assert.strictEqual(mergeLines([newer], [older])[0].status, 'ordered');
-assert.strictEqual(mergeLines([older], [newer])[0].status, 'ordered');
+// round trip, one per category — a food line keeps its brand in front of the name, and the
+// two categories the portal never had survive in the column
+[['general', ''], ['food', "Hill's"], ['clean', ''], ['shop', 'חנות א'], ['lab', 'מעבדה א']]
+  .forEach(([cat, supplier]) => {
+    const line = { id: 'u2', cat, name: 'פריט', qty: 3, status: cat === 'lab' ? 'taken' : 'pending',
+      supplier, slug: 'hills-pd', sku: 'A1', price: 12.5, client: 'דנה', phone: '0500000000',
+      paid: cat === 'lab', note: 'הערה', created_at: '2026-08-01T00:00:00.000Z',
+      updated_at: '2026-08-02T00:00:00.000Z' };
+    const back = fromRow(Object.assign({ id: line.id, created_at: line.created_at }, toRow(line)));
+    assert.deepStrictEqual(back, line, cat + ' round trip');
+  });
 
-// a delete must not come back from a computer holding the pre-delete list
-const tomb = { id: 'b', deleted: true, updated_at: '2026-08-02T00:00:00.000Z' };
-assert.strictEqual(mergeLines([L('b')], [tomb]).filter(l => !l.deleted).length, 0);
+// the prefixes are not decoration: the portal's own tabs filter on them
+assert.ok(toRow({ cat: 'food', name: 'x', supplier: '' }).item_name.startsWith('[מזון] '));
+assert.ok(toRow({ cat: 'clean', name: 'x' }).item_name.startsWith('[ניקיון] '));
+assert.ok(!toRow({ cat: 'general', name: 'x' }).item_name.startsWith('['));
+// a line with no client must not leave a stray phone tag behind
+assert.strictEqual(toRow({ cat: 'general', name: 'x', phone: '05' }).notes, '');
 
 // --- sortLines: what was ordered sinks, what is missing floats ---
 const order = sortLines([L('1', { status: 'ordered' }), L('2', { status: 'received' }),
