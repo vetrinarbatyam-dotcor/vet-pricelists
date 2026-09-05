@@ -1572,6 +1572,8 @@ const DAY = 864e5, HIDE_DONE_AFTER = 30 * DAY, TOMB_TTL = 90 * DAY;
 let O = { v: 1, cats: DEF_CATS.slice(), lines: [] };
 let OS = { cat: null, sup: null, filter: 'active', q: '', hist: false };
 let ordTimer = null, sheetIds = null, picked = null;
+// lines with a write in the air: the poll must not draw the database's older copy over them
+const saving = new Set();
 
 const oid = () => 'o-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 6);
 const dShort = ts => { const d = new Date(ts); return isNaN(d) ? '' : d.toLocaleDateString('he-IL', { day: '2-digit', month: '2-digit' }); };
@@ -1624,6 +1626,19 @@ function fromRow(r) {
     note: notes.replace(new RegExp(CLIENT_RE.source, 'g'), '').replace(new RegExp(PHONE_RE.source, 'g'), '').trim(),
     created_at: isoOf(r.created_at), updated_at: isoOf(r.updated_at || r.created_at) };
 }
+// only the columns an edit actually touched go up. A whole row would carry this computer's
+// 30-second-old status back over one the portal changed a moment ago — the quiet revert that
+// merging the old file used to prevent.
+const FIELD_COLS = { qty: ['quantity'], status: ['status'], paid: ['paid'], name: ['item_name'],
+  client: ['notes'], phone: ['notes'], note: ['notes'],
+  supplier: ['item_name', 'supplier'], cat: ['item_name', 'cat'] };
+function pick(row, field) {
+  const cols = FIELD_COLS[field];
+  if (!cols) return row;
+  const out = { updated_at: row.updated_at };
+  cols.forEach(c => (out[c] = row[c]));
+  return out;
+}
 function toRow(l) {
   const nm = (l.cat === 'food' && l.supplier ? l.supplier + ' - ' : '') + l.name;
   return { item_name: (CAT_PREFIX[l.cat] || '') + nm, quantity: l.qty, status: l.status,
@@ -1661,12 +1676,13 @@ async function loadOrders() {
 // One row per call. The database is the list, so there is nothing to merge and nothing to read
 // back: an update either lands on its row or fails loudly, and two computers cannot overwrite
 // each other's lines the way two writers of one file could.
-async function saveOrders(ids) {
+async function saveOrders(ids, field) {
   if (!clinicMode) {
     try { localStorage.setItem(ORD_LK, JSON.stringify({ v: 1, cats: O.cats, lines: O.lines })); return true; }
     catch (e) { toast('⚠️ השמירה בדפדפן נכשלה (' + e.message + ') — ההזמנה לא נשמרה', true); return false; }
   }
   let ok = true, renumbered = false;
+  ids.forEach(id => saving.add(id));
   for (const id of ids) {
     const l = O.lines.find(x => x.id === id);
     if (!l) continue;
@@ -1674,15 +1690,16 @@ async function saveOrders(ids) {
       if (l.deleted) { await ordApi('/' + id, 'DELETE'); O.lines = O.lines.filter(x => x.id !== id); }
       // a line born here carries a local id until the database hands out the real one
       else if (/^o-/.test(id)) { const row = await ordApi('', 'POST', { ...toRow(l), created_at: l.created_at }); l.id = row.id; renumbered = true; }
-      else await ordApi('/' + id, 'PUT', toRow(l));
+      else await ordApi('/' + id, 'PUT', pick(toRow(l), field));
     } catch (e) {
       ok = false;
       toast('⚠️ השמירה נכשלה (' + e.message + ') — "' + (l.name || '') + '" לא נשמר', true);
     }
   }
-  // the row on screen still carries the local id it was drawn with, and a click on it would
-  // look up a line that no longer answers to that name
-  if (renumbered) renderOrders();
+  ids.forEach(id => saving.delete(id));
+  // the row on screen still carries the local id it was drawn with, and a click on it would look
+  // up a line that no longer answers to that name — but never redraw under someone's fingers
+  if (renumbered && !$('#ordList').contains(document.activeElement)) renderOrders();
   return ok;
 }
 // the category switches are a display setting, not order data, so they stay in the shared file
@@ -1702,7 +1719,13 @@ function ordPoll() {
     if (!$('#orders').hidden && document.visibilityState === 'visible') {
       // the database is the truth: take it whole rather than merge, or a row someone deleted
       // on another computer would live on here
-      try { O.lines = await ordFetch(); } catch {}
+      try {
+        const rows = await ordFetch();
+        // a write still in the air, and a line not yet given its database id, stay as they are
+        const mine = O.lines.filter(l => saving.has(l.id) || /^o-/.test(l.id));
+        const held = new Set(mine.map(l => l.id));
+        O.lines = rows.filter(r => !held.has(r.id)).concat(mine);
+      } catch {}
       try { const s = await getJSON(ORD_STORE); if (Array.isArray(s.cats)) O.cats = s.cats; } catch {}
       // never re-render under someone's fingers — it would wipe a half-typed quantity
       if (!$('#ordList').contains(document.activeElement)) renderOrders();
@@ -1813,7 +1836,7 @@ function renderOrders() {
 function setLine(id, field, val) {
   const l = O.lines.find(x => x.id === id); if (!l) return;
   l[field] = val; l.updated_at = new Date().toISOString();
-  renderOrders(); saveOrders([id]);
+  renderOrders(); saveOrders([id], field);
 }
 function delLine(id, name) {
   if (!confirm(`למחוק את "${name}" מהרשימה?`)) return;
@@ -1876,7 +1899,7 @@ async function markSheetOrdered() {
   const hit = O.lines.filter(l => sheetIds.includes(l.id) && !l.deleted);
   hit.forEach(l => { l.status = 'ordered'; l.updated_at = now; });
   renderOrders();
-  await saveOrders(hit.map(l => l.id));
+  await saveOrders(hit.map(l => l.id), 'status');
   $('#oSheetMsg').textContent = `${hit.length} שורות סומנו כהוזמנו.`;
 }
 
@@ -2149,7 +2172,7 @@ function wireOrders() {
 }
 if (typeof document !== 'undefined') init().catch(e => { document.body.innerHTML = `<p style="padding:40px;text-align:center">שגיאה בטעינת הנתונים (${esc(e.message)}). נסו לרענן.</p>`; });
 if (typeof module !== 'undefined' && module.exports)
-  module.exports = { fromRow, toRow, sortLines, sheetText, _pricing: { P, params, calc, bandFor, setRow } };
+  module.exports = { fromRow, toRow, pick, sortLines, sheetText, _pricing: { P, params, calc, bandFor, setRow } };
 })();
 
 </script>

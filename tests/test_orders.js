@@ -1,6 +1,6 @@
 // The three order helpers that are not obvious by reading:  node tests/test_orders.js
 const assert = require('assert');
-const { fromRow, toRow, sortLines, sheetText } = require('../app.js');
+const { fromRow, toRow, pick, sortLines, sheetText } = require('../app.js');
 
 const L = (id, o) => Object.assign({ id, name: id, qty: 1, status: 'pending', supplier: 'ספק א',
   created_at: '2026-08-01T00:00:00.000Z', updated_at: '2026-08-01T00:00:00.000Z' }, o);
@@ -35,6 +35,13 @@ assert.ok(toRow({ cat: 'clean', name: 'x' }).item_name.startsWith('[ניקיון
 assert.ok(!toRow({ cat: 'general', name: 'x' }).item_name.startsWith('['));
 // a line with no client must not leave a stray phone tag behind
 assert.strictEqual(toRow({ cat: 'general', name: 'x', phone: '05' }).notes, '');
+
+// --- pick: an edit sends its own column and nothing else ---
+// the whole row would carry this computer's stale status back over one the portal just changed
+const row = toRow({ cat: 'general', name: 'x', qty: 4, status: 'pending', updated_at: 'T' });
+assert.deepStrictEqual(pick(row, 'qty'), { updated_at: 'T', quantity: 4 });
+assert.deepStrictEqual(Object.keys(pick(row, 'supplier')).sort(), ['item_name', 'supplier', 'updated_at']);
+assert.deepStrictEqual(pick(row, undefined), row, 'no field named → the whole row');
 
 // --- sortLines: what was ordered sinks, what is missing floats ---
 const order = sortLines([L('1', { status: 'ordered' }), L('2', { status: 'received' }),
