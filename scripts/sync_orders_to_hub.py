@@ -9,11 +9,11 @@ Runs on the server, as root (it reads the hub's .env for the database password):
     python3 scripts/sync_orders_to_hub.py --dry-run
     python3 scripts/sync_orders_to_hub.py
 
-A line that came from the portal in the first place (id `imp-<uuid>`) is written back onto its
-own row. Its extras (supplier, price, ...) always go in; the name, quantity, status and notes go
-in only if somebody actually edited the line here since the import — otherwise the portal, which
-has kept working all along, is the newer of the two. A line deleted here is reported, never
-deleted there: the portal is the older system and this is not the place to throw its rows away.
+A line that came from the portal in the first place (id `imp-<uuid>`) keeps everything the portal
+holds — name, quantity, status, notes — and only gains the columns the portal never had
+(supplier, price, ...). Gil's call, and it costs nothing: the two sides were compared row by row
+and no client, phone or note exists here that is not already there. A line deleted here is
+reported, never deleted there.
 """
 import argparse
 import json
@@ -89,7 +89,7 @@ def main():
     cur.execute("select id::text, status from supply_orders")
     known = dict(cur.fetchall())
 
-    n_up, n_extras, n_new, gone, tombs, clash = 0, 0, 0, [], [], []
+    n_extras, n_new, gone, tombs, clash = 0, 0, [], [], []
     for l in lines:
         if l.get("deleted"):
             if l["id"].startswith("imp-") and l["id"][4:] in known:
@@ -101,21 +101,12 @@ def main():
             if uid not in known:
                 gone.append(uid)          # somebody deleted it in the portal — let that stand
                 continue
-            # edited here since the import? then this side is the newer one
-            edited = (l.get("updated_at") or "") > (l.get("created_at") or "")
-            if edited and known[uid] != row["status"]:
+            if known[uid] != row["status"]:
                 clash.append("%s: %s here, %s in the portal" % (l["name"][:40], row["status"], known[uid]))
-            cols = list(row) if edited else list(EXTRAS)
-            if edited:
-                cols.append("updated_at")
-                row["updated_at"] = l["updated_at"]
-            sql = "update supply_orders set %s where id = %%(id)s" % ", ".join("%s = %%(%s)s" % (c, c) for c in cols)
+            sql = "update supply_orders set %s where id = %%(id)s" % ", ".join("%s = %%(%s)s" % (c, c) for c in EXTRAS)
             if not a.dry_run:
                 cur.execute(sql, dict(row, id=uid))
-            if edited:
-                n_up += 1
-            else:
-                n_extras += 1
+            n_extras += 1
         else:
             row["created_at"] = l.get("created_at")
             row["updated_at"] = l.get("updated_at")
@@ -140,12 +131,12 @@ def main():
         os.replace(tmp, a.orders)
     cn.close()
 
-    print("%s%d lines edited here → written back, %d only got their extras, %d new lines inserted"
-          % ("dry run: " if a.dry_run else "", n_up, n_extras, n_new))
+    print("%s%d lines from the portal kept their content and gained the new columns, "
+          "%d new lines inserted" % ("dry run: " if a.dry_run else "", n_extras, n_new))
     if gone:
         print("%d lines are gone from the portal, so they were skipped: %s" % (len(gone), ", ".join(gone)))
     if clash:
-        print("%d lines carry a different status on each side; this list won: %s"
+        print("%d lines carry a different status on each side; the portal's stands: %s"
               % (len(clash), "; ".join(clash)))
     if tombs:
         print("%d lines were deleted in VetPrices but still exist in the portal — left alone on "
