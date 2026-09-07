@@ -183,6 +183,11 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
 #supBody select{font:inherit;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
 #supBody input{width:86px}
 .top-actions .icon{font-size:17px;padding:5px 10px}
+/* יציאה ל-VetForms — מסגרת טורקיז, כדי שייקרא כמעבר לאתר אחר ולא כלשונית. */
+.top-actions .xlink{border:1px solid var(--teal);color:var(--teal);border-radius:6px;padding:5px 10px;
+  font-size:17px;font-weight:600;text-decoration:none;white-space:nowrap}
+.top-actions .xlink span{font-size:14px;font-weight:600;margin-inline-start:3px}
+.top-actions .xlink:hover{background:var(--teal-soft)}
 .top-actions .icon span{font-size:14px;font-weight:500;margin-inline-start:3px}
 .seg.big button{padding:7px 14px;font-weight:500}
 .seg.big button.on{background:var(--teal);color:#fff}
@@ -209,7 +214,7 @@ dialog::backdrop{background:rgba(20,30,30,.5)}
   /* the clinic build adds its own links here, so five buttons have to fit a phone */
   .top-actions{justify-content:flex-end;flex-wrap:wrap}
   /* only the clinic build is crowded enough to need icon-only buttons */
-  .mode-clinic .top-actions .icon span{display:none}
+  .mode-clinic .top-actions .icon span,.mode-clinic .top-actions .xlink span{display:none}
   .top{flex-wrap:wrap}
   .top-nav{width:100%;flex-wrap:wrap;gap:10px}}
 
