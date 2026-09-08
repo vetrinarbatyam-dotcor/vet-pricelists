@@ -5,3 +5,17 @@ __pycache__/
 
 # facebook launch screenshots, not part of the site
 promo/
+
+# --- migration hygiene (added 2026-09-08) ---
+.env
+.env.*
+node_modules/
+*.pyc
+venv/
+.venv/
+*.db
+*.sqlite3
+Thumbs.db
+dist/
+build/
+!.env.example
