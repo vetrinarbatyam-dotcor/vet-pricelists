@@ -213,10 +213,13 @@ REG = {
     "hamachon":   ("labs", "המכון (מעבדה חיצונית)", "2026-01", DLD / "מחירון מעבדה חיצונית לשנת 2026 (1) (1).docx", "no_vat", None),
     "idexx":      ("labs", "IDEXX", "2026-01", DLD / "מחירון איידקס מקוצר 2026xlsx.pdf", "no_vat", "מחירון מקוצר 2026 — הבדיקות המוצעות בישראל"),
     "idexx-ref":  ("labs", "IDEXX — רפרנס", "2025-01", DLD / "PDF" / "מחירון רפרנס איידקס 2025.pdf", "no_vat", "מחירון רפרנס 2025 — בדיקות שאינן במחירון המקוצר 2026; חלקן אינן זמינות בישראל"),
-    "karnieli":   ("labs", "קרניאלי", "2025-01", (DLD / "PDF" / "מחירון פאנלים 2025 (2).pdf",
-                                                  DLD / "PDF" / "מחירון מחלות גנטיות 2025 (1).pdf",
-                                                  DLD / "PDF" / "מחירון וטרינרים פתוגנים כלבים חתולים 2025 (5).pdf"), "no_vat",
-                   "פאנלים · מחלות גנטיות · פתוגנים — שלושת מחירוני 2025"),
+    # ⚠ כל מחירוני קרניאלי (גם 2025) כותבים "המחירים כוללים מע"מ". עד 30/09/2026 נקראו כאן
+    #   no_vat, והאתר הוסיף עליהם 18% פעם שנייה.
+    "karnieli":   ("labs", "קרניאלי", "2026-01", (DLD / "מחירון פאנלים 2026 (1).pdf",
+                                                  DLD / "מחירון מחלות גנטיות (1).pdf",
+                                                  DLD / "מחירון וטרינרים פתוגנים כלבים חתולים  (1).pdf",
+                                                  DLD / "מחירון ציפורים וטרינרים.pdf"), "with_vat",
+                   "פאנלים · מחלות גנטיות · פתוגנים · ציפורים — מחירוני 2026. המחירים כוללים מע\"מ"),
 }
 FOOD_COMPANY_SLUG = {"RC VET": "rc-vet", "RC חנויות": "rc-retail", "Hill's PD": "hills-pd", "Hill's VE": "hills-ve",
                      "VetLife": "vetlife", "Purina": "purina-vet", "Purina חנויות": "purina-retail",
@@ -275,7 +278,7 @@ def _shop_kw(it):
 ACTIONS = {
     "idexx-ref": ("ok", "ארכיון רפרנס, לא פער: המחירון המקוצר 2026 נטען במלואו, וכאן נשארו רק בדיקות שאינן מופיעות בו (חלקן לא זמינות בישראל)."),
     "hills-ve": ("no_source", "היחיד מבין שלושת קווי Hill's בלי מחירון משלו. אינו מופיע במחירון ה-PD, וגדלי האריזה שונים מ-Science Plan — כלומר קו נפרד. 42 השורות מתומחרות מקובץ המרפאה בלבד."),
-    "karnieli": ("refresh", "שלושת המחירונים הקיימים נטענו במלואם (פאנלים · מחלות גנטיות · פתוגנים) — 66 בדיקות. אלה הפרסומים האחרונים של קרניאלי; כדאי לבקש מחירון 2026."),
+    "karnieli": ("ok", "מחירוני 2026 נטענו במלואם (פאנלים · מחלות גנטיות · פתוגנים · ציפורים). המחירים במחירון כוללים מע\"מ. הנחת כמות לדגימה: 2–5 בדיקות גנטיות 532/773/1,008/1,232 ₪, 2–5 פתוגנים 380/552/720/880 ₪."),
     "vetlife":  ("ok", "מחירון פרמינה 08/2026 — הגיע כטבלה מהיבואן, בלי PDF. הקו הרפואי בלבד; N&D ו-Team Breeder באותו מחירון נמצאים ברשימת 'פרמינה N&D'."),
     "farmina":  ("ok", "מחירון פרמינה 08/2026 — הגיע כטבלה מהיבואן, בלי PDF."),
     "miltin-consum": ("ok", "מחירון נובמבר 2025 — עדיין בתוקף, אך אם יצא מחירון 2026 כדאי להחליף."),
@@ -432,12 +435,21 @@ def build():
         if it.get("sku") in refreshed: continue
         add(lists["idexx-ref"], item("idexx-ref", it["name"], it["price_no_vat"], None, None,
                                        LAB_NAME_TOPIC(it["name"]), sku=it.get("sku"), notes=it.get("notes")))
-    # --- Karnieli: panels + genetic diseases + pathogens, from the three 2025 PDFs
-    KARN_SRC = {"פאנלים": "sources/labs/karnieli-2025-01.pdf",
-                "מחלות גנטיות": "sources/labs/karnieli-2025-01-2.pdf",
-                "פתוגנים": "sources/labs/karnieli-2025-01-3.pdf"}
-    for it in load("karnieli_2025.json"):
-        add(lists["karnieli"], item("karnieli", it["name"], it["price_no_vat"], None, it.get("category"),
+    # --- Karnieli: panels + genetic diseases + pathogens + birds, from the 2026 PDFs.
+    #     המחלץ שומר את המספר ב-price_no_vat, אבל במחירון הוא כולל מע"מ — ולכן נכנס כ-with_vat.
+    KARN_SRC = {"פאנלים": "sources/labs/karnieli-2026-01.pdf",
+                "מחלות גנטיות": "sources/labs/karnieli-2026-01-2.pdf",
+                "פתוגנים": "sources/labs/karnieli-2026-01-3.pdf",
+                "ציפורים": "sources/labs/karnieli-2026-01-4.pdf"}
+    # מחירון הציפורים הוא טבלת מדרגות כמות (שתי שורות), ולכן מוקלד כאן ולא מחולץ.
+    KARN_BIRDS = [
+        {"name": "Avian DNA Sexing — בדיקת זוויג לציפורים", "price_no_vat": 70.0, "category": "ציפורים",
+         "notes": "מחיר לבדיקה: 1 — 70 ₪ · מעל 2 — 67 ₪ · מעל 5 — 65 ₪ · מעל 8 — 63 ₪ · מעל 15 — 62 ₪"},
+        {"name": "Avian Pathogen Testing — בדיקת פתוגן בציפורים", "price_no_vat": 110.0, "category": "ציפורים",
+         "notes": "מחיר לדגימה: פתוגן 1 — 110 ₪ · 2 — 209 ₪ · 3 — 304 ₪ · 4 — 396 ₪ · 5 — 484 ₪ · 6 — 581 ₪"},
+    ]
+    for it in load("karnieli_2026.json") + KARN_BIRDS:
+        add(lists["karnieli"], item("karnieli", it["name"], None, it["price_no_vat"], it.get("category"),
                                       lab_topic(it.get("category"), it["name"]), notes=it.get("notes"),
                                       source=KARN_SRC.get(it.get("category"))))
     # --- Labs

@@ -349,6 +349,10 @@ JOBS = {
     "karnieli_2025":    lambda: karnieli("PDF/מחירון מחלות גנטיות 2025 (1).pdf",
                                          "PDF/מחירון וטרינרים פתוגנים כלבים חתולים 2025 (5).pdf",
                                          "PDF/מחירון פאנלים 2025 (2).pdf"),
+    # מחירוני 2026 (הועברו ע"י גיל 30/09/2026) — אותו מבנה בדיוק כמו 2025
+    "karnieli_2026":    lambda: karnieli("מחירון מחלות גנטיות (1).pdf",
+                                         "מחירון וטרינרים פתוגנים כלבים חתולים  (1).pdf",
+                                         "מחירון פאנלים 2026 (1).pdf"),
     "idexx_2025":       lambda: idexx("PDF/מחירון רפרנס איידקס 2025.pdf"),
     "miltin_consum_2025_11": lambda: miltin_consumables("PDF/מחירון חטיבה וטרינרית קבוצת מילטין ציוד מתכלה - נובמבר 2025.pdf"),
     "msd_2026":         lambda: bravecto("../pricecmp/pdf/new_bravecto.pdf"),
