@@ -992,7 +992,7 @@ function mpRenderList() {
   $('#mpEmpty').hidden = hit.length > 0;
   $('#mpBody').innerHTML = hit.map(i => `<tr>
     <td class="mp-code">${esc(i.code.startsWith('N-') ? '' : i.code)}</td>
-    <td class="name">${esc(i.name)}${i.src === '2026-07' ? ' <i class="mp-upd">חדש</i>' : ''}<small>${esc(i.cat)}${i.sub ? ' › ' + esc(i.sub) : ''}</small></td>
+    <td class="name">${esc(i.name)}${i.src === '2026-07' ? ' <i class="mp-upd">חדש</i>' : i.src === 'old' ? ' <i class="mp-old">קודם</i>' : ''}<small>${esc(i.cat)}${i.sub ? ' › ' + esc(i.sub) : ''}</small></td>
     <td class="num price">${mpFmt(i.dog)}</td><td class="num price">${mpFmt(i.catp)}</td>
     <td><button class="mp-add" data-code="${esc(i.code)}" title="הוסף לתמחיר" aria-label="הוסף לתמחיר">＋</button></td></tr>`).join('');
   $$('#mpBody .mp-add').forEach(b => b.addEventListener('click', () => {

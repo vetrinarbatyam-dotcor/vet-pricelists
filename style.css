@@ -471,6 +471,7 @@ button.ord-tag:hover{background:var(--teal-soft)}
 .mp-list #mpQ{flex:1;min-width:0}
 .mp-code{color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .mp-upd{font-style:normal;font-size:11px;font-weight:700;color:var(--ok);background:var(--ok-bg);border-radius:999px;padding:1px 7px;margin-inline-start:4px;white-space:nowrap}
+.mp-old{font-style:normal;font-size:11px;font-weight:700;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:1px 7px;margin-inline-start:4px;white-space:nowrap}
 .mp-add{background:var(--ok);border-color:var(--ok);color:#fff;font-weight:700;padding:3px 11px}
 .mp-calc{position:sticky;top:76px;margin:0;display:flex;flex-direction:column;gap:10px}
 .mp-calc h2{margin:0}
