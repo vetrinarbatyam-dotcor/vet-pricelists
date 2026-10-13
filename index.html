@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=44">
+<link rel="stylesheet" href="style.css?v=45">
 </head>
 <body>
 
@@ -49,7 +49,7 @@
     <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
       <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
     </div>
-    <button id="marpetBtn" class="mp-cta clinic-only" title="מחירון מרפאט ומחשבון תמחיר">מרפאט</button>
+    <button id="marpetBtn" class="mp-cta mp-only" title="מחירון מרפאט ומחשבון תמחיר">מרפאט</button>
   </div>
   <div class="top-actions">
     <a class="xlink" href="https://forms.claudevet.com" target="_blank" rel="noopener" title="VetForms — טפסי מעבדות למילוי והדפסה">✍️ <span>טפסים ⇗</span></a>
@@ -290,11 +290,17 @@
   <p id="oEmpty" class="empty" hidden>אין הזמנות להצגה. הוסיפו פריט למעלה.</p>
 </main>
 
-<!-- ===== Marpet (clinic copy only; data lives in /store/, never in this repo) ===== -->
-<main id="marpet" hidden class="page clinic-only">
+<!-- ===== Marpet (clinic copy: data in /store/; Marpet edition: the vet's own upload, in the browser only) ===== -->
+<main id="marpet" hidden class="page mp-only">
   <div class="page-head">
     <h1>מרפאט</h1>
     <p id="mpMeta" class="hint"></p>
+    <p class="mpl-only row gap">
+      <button id="mpUpBtn">📤 העלאת מחירון מרפאט (Excel)</button>
+      <input id="mpFile" type="file" accept=".xlsx,.xls,.csv" hidden>
+      <span class="hint">עמודות: קוד · קטגוריה ראשית · קטגוריה משנית · שם פריט · כלב · חתול.
+        הקובץ נשמר <b>רק בדפדפן הזה</b> — לא נשלח לשום שרת. העלאה חוזרת מחליפה את הקודם.</span>
+    </p>
   </div>
   <div class="mp-wrap">
     <section class="mp-list">
@@ -304,7 +310,7 @@
         </div>
         <div id="mpCats" class="chips"></div>
       </section>
-      <div class="meta-line"><span id="mpCount"></span><span class="hint"><i class="mp-upd">חדש</i> = מחיר מעודכן מ-01.07.26 · <i class="mp-old">קודם</i> = לא במחירון 05.25, מחיר מהמחירון הקודם</span></div>
+      <div class="meta-line"><span id="mpCount"></span><span class="hint clinic-only"><i class="mp-upd">חדש</i> = מחיר מעודכן מ-01.07.26 · <i class="mp-old">קודם</i> = לא במחירון 05.25, מחיר מהמחירון הקודם</span></div>
       <div class="tbl"><table>
         <thead><tr><th>קוד</th><th>פריט</th><th class="num">כלב</th><th class="num">חתול</th><th></th></tr></thead>
         <tbody id="mpBody"></tbody></table>
@@ -550,6 +556,6 @@
 
 
 
-<script src="app.js?v=49"></script>
+<script src="app.js?v=50"></script>
 </body>
 </html>

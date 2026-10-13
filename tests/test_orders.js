@@ -104,4 +104,22 @@ assert.deepStrictEqual(mpTotal([{ code: 'a', qty: 2 }, { code: 'b', qty: 1 }, { 
   { sum: 160, missing: ['b', 'gone'] });
 assert.ok(mpNorm('א.ק.ג במרפאה').includes(mpNorm('אקג')));
 
+// --- Marpet edition upload: the wide layout, a title row above, "מחיר קודם" is not the code column,
+// an empty price is null (not covered), a coded row with no price stays, a row without a code goes ---
+const { mpParseGrid } = require('../app.js');
+const MG = mpParseGrid([
+  ['מחירון מרפאט 05.25', '', '', '', '', '', ''],
+  ['קוד', 'קטגוריה ראשית', 'קטגוריה משנית', 'שם פריט', 'כלב', 'חתול', 'מחיר קודם'],
+  ['0430041', 'בדיקות', 'דם', 'ספירת דם', '345', '₪ 300', '290'],
+  ['430110', 'הדמיה', '', 'צילום', '260', '', ''],
+  ['430999', 'הדמיה', '', 'ללא מחיר', '', '', ''],
+  ['', 'הדמיה', '', 'שורת סיכום', '900', '', ''],
+]);
+assert.deepStrictEqual(MG, [
+  { code: '0430041', cat: 'בדיקות', sub: 'דם', name: 'ספירת דם', dog: 345, catp: 300 },
+  { code: '430110', cat: 'הדמיה', sub: '', name: 'צילום', dog: 260, catp: null },
+  { code: '430999', cat: 'הדמיה', sub: '', name: 'ללא מחיר', dog: null, catp: null },
+]);
+assert.throws(() => mpParseGrid([['a', 'b'], ['1', '2']]));
+
 console.log('test_orders: ok');

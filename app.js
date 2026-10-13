@@ -46,7 +46,7 @@ const CLINIC_STORE = 'store/clinic-pricing.json';
 // price lists gets the price lists — and either can change it in the gear.
 const startPage = () => P.startPage || (clinicMode ? 'orders' : 'list');
 const clinicName = () => (P.clinicName || (clinicMode ? 'מרפאת פט קייר' : '')).trim();
-let clinicMode = false, putTimer = null;
+let clinicMode = false, marpetMode = false, putTimer = null;
 function toast(msg, bad) {
   let t = $('#toast');
   if (!t) { t = document.createElement('div'); t.id = 'toast'; document.body.appendChild(t); }
@@ -953,29 +953,75 @@ function mpTotal(lines, byCode, sp) {
   return { sum, missing };
 }
 const mpFmt = n => n == null ? '—' : fmt0(n);
+// The Marpet edition (config mode:"marpet"): every vet uploads their own Marpet Excel. It and the
+// protocols stay in this browser only — the list may not be published, so nothing is ever sent.
+const MPL_LIST = 'vp_marpet', MPL_PROTO = 'vp_marpet_protos';
+const lsJSON = k => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } };
+// The wide layout of Marpet's list: קוד | קטגוריה ראשית | קטגוריה משנית | שם פריט | כלב | חתול.
+// grid = rows of cell text. An empty price is null (not covered), never 0. A row without a code is dropped.
+function mpParseGrid(grid) {
+  const h = grid.findIndex(r => r.some(c => /^\s*קוד/.test(c)) && r.some(c => /כלב/.test(c)));
+  if (h < 0) throw new Error('לא נמצאה שורת כותרות עם "קוד" ו"כלב"');
+  const head = grid[h].map(c => String(c ?? '').trim()), col = re => head.findIndex(c => re.test(c));
+  const ix = { code: col(/^קוד/), cat: col(/ראשית|^קטגוריה$/), sub: col(/משנית|^תת/), name: col(/שם|תיאור/),
+    dog: col(/כלב/), catp: col(/חתול/) };
+  if (ix.name < 0) throw new Error('לא נמצאה עמודת "שם פריט"');
+  const cell = (r, i) => i >= 0 ? String(r[i] ?? '').trim() : '';
+  const num = (r, i) => { const s = cell(r, i).replace(/[^\d.]/g, ''); return s && isFinite(+s) ? +s : null; };
+  return grid.slice(h + 1).map(r => ({ code: cell(r, ix.code), cat: cell(r, ix.cat), sub: cell(r, ix.sub),
+    name: cell(r, ix.name), dog: num(r, ix.dog), catp: num(r, ix.catp) }))
+    .filter(i => i.code && i.name);   // a coded row with no price is kept — Marpet lists it, uncovered
+}
 async function mpLoadProtos() {
+  if (marpetMode) { MPP = lsJSON(MPL_PROTO); if (!Array.isArray(MPP)) MPP = []; return; }
   try { MPP = await getJSON(MP_PROTO); if (!Array.isArray(MPP)) MPP = []; } catch { MPP = []; }
 }
 // GET → change → PUT → read back, like the orders: a second computer may have saved in between
 async function mpWriteProtos(change) {
   await mpLoadProtos();
   const next = change(MPP.slice());
-  const r = await fetch(MP_PROTO, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(next) });
-  if (!r.ok) throw new Error('HTTP ' + r.status);
+  if (marpetMode) localStorage.setItem(MPL_PROTO, JSON.stringify(next));
+  else {
+    const r = await fetch(MP_PROTO, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(next) });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+  }
   await mpLoadProtos();
+}
+const loadScript = src => new Promise((ok, bad) => {
+  if (window.XLSX) return ok();
+  const s = document.createElement('script'); s.src = src;
+  s.onload = ok; s.onerror = () => bad(new Error('אין חיבור לספריית האקסל')); document.head.append(s);
+});
+async function mpUpload(file) {
+  try {
+    await loadScript('https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js');
+    const wb = XLSX.read(await file.arrayBuffer(), { type: 'array' });
+    // raw:false = the text as shown in the cell, so a code keeps its leading zeros
+    const grid = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { header: 1, blankrows: false, defval: '', raw: false });
+    const items = mpParseGrid(grid);
+    if (!items.length) throw new Error('לא נמצאו שורות עם מחיר');
+    localStorage.setItem(MPL_LIST, JSON.stringify({ meta: { title: file.name, uploaded_at: new Date().toISOString() }, items }));
+    MP = null; MPS.cat = null; await openMarpet();
+    toast(`נטענו ${items.length} פריטים ✓`);
+  } catch (e) { toast('⚠️ לא הצלחנו לקרוא את הקובץ (' + e.message + ')', true); }
 }
 async function openMarpet() {
   show('marpet');
   if (!MP) {
-    try {
-      MP = await getJSON(MP_STORE);
-      MP.byCode = Object.fromEntries(MP.items.map(i => [i.code, i]));
-      MP.items.forEach(i => i.key = mpNorm(`${i.code} ${i.name} ${i.cat} ${i.sub}`));
-    } catch { $('#mpMeta').textContent = '⚠️ לא הצלחנו לטעון את מחירון מרפאט מהשרת.'; return; }
+    try { MP = marpetMode ? lsJSON(MPL_LIST) : await getJSON(MP_STORE); }
+    catch { $('#mpMeta').textContent = '⚠️ לא הצלחנו לטעון את מחירון מרפאט מהשרת.'; return; }
+    if (!MP || !Array.isArray(MP.items)) {
+      MP = null; $('#mpMeta').textContent = 'עדיין לא הועלה מחירון. לחצו "העלאת מחירון מרפאט" ובחרו את קובץ האקסל שלכם.';
+      $('#mpBody').innerHTML = ''; $('#mpCats').innerHTML = ''; $('#mpCount').textContent = ''; return;
+    }
+    MP.byCode = Object.fromEntries(MP.items.map(i => [i.code, i]));
+    MP.items.forEach(i => i.key = mpNorm(`${i.code} ${i.name} ${i.cat} ${i.sub}`));
     await mpLoadProtos();
     const m = MP.meta || {};
-    $('#mpMeta').textContent = `${m.title || 'מחירון מרפאט'} · ${MP.items.length} פריטים · מקורות: ${(m.sources || []).join(' + ')}`;
-    const cats = [...new Set(MP.items.map(i => i.cat))];
+    $('#mpMeta').textContent = marpetMode
+      ? `${m.title || 'מחירון מרפאט'} · ${MP.items.length} פריטים · הועלה ${new Date(m.uploaded_at).toLocaleDateString('he-IL')} · שמור רק בדפדפן הזה`
+      : `${m.title || 'מחירון מרפאט'} · ${MP.items.length} פריטים · מקורות: ${(m.sources || []).join(' + ')}`;
+    const cats = [...new Set(MP.items.map(i => i.cat).filter(Boolean))];
     $('#mpCats').innerHTML = ['<button class="chip on" data-mc="">הכל</button>']
       .concat(cats.map(c => `<button class="chip" data-mc="${esc(c)}">${esc(c)}</button>`)).join('');
     $$('#mpCats .chip').forEach(b => b.addEventListener('click', () => {
@@ -986,6 +1032,7 @@ async function openMarpet() {
   $('#mpQ').focus();
 }
 function mpRenderList() {
+  if (!MP) return;
   const q = mpNorm(MPS.q.trim());
   const hit = MP.items.filter(i => (!MPS.cat || i.cat === MPS.cat) && (!q || q.split(' ').every(w => i.key.includes(w))));
   $('#mpCount').textContent = `${hit.length} פריטים`;
@@ -1028,6 +1075,8 @@ function mpRenderCalc() {
 }
 function wireMarpet() {
   $('#marpetBtn').addEventListener('click', openMarpet);
+  $('#mpUpBtn').addEventListener('click', () => $('#mpFile').click());
+  $('#mpFile').addEventListener('change', e => { const f = e.target.files[0]; if (f) mpUpload(f); e.target.value = ''; });
   let t; $('#mpQ').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { MPS.q = $('#mpQ').value; mpRenderList(); }, 150); });
   $$('#mpSp button').forEach(b => b.addEventListener('click', () => { MPS.sp = b.dataset.sp; mpRenderCalc(); }));
   $('#mpClear').addEventListener('click', () => { MPS.lines = []; $('#mpName').value = ''; mpRenderCalc(); });
@@ -1048,7 +1097,7 @@ function wireMarpet() {
     try {
       await mpWriteProtos(all => all.filter(p => p.name !== name).concat(rec));
       if (!MPP.some(p => p.name === name)) throw new Error('לא נמצא בקריאה החוזרת');
-      toast('הפרוטוקול נשמר בשרת ✓'); mpRenderCalc();
+      toast(marpetMode ? 'הפרוטוקול נשמר בדפדפן ✓' : 'הפרוטוקול נשמר בשרת ✓'); mpRenderCalc();
     } catch (e) { toast('⚠️ השמירה נכשלה (' + e.message + ')', true); }
   });
   $('#mpProtoDel').addEventListener('click', async () => {
@@ -1102,6 +1151,15 @@ async function init() {
   $('#gateAsk').href = mail + encodeURIComponent('VetPrices — בקשת קוד גישה');
   $('#cloudLink').href = mail + encodeURIComponent('VetPrices — מעוניין בהגדרות ששמורות בשרת');
   if (CONFIG.mode === 'clinic') return startClinic();
+  // the Marpet edition: the public app behind basic auth (no access code), plus the Marpet page
+  if (CONFIG.mode === 'marpet') {
+    marpetMode = true;
+    document.body.classList.add('mode-marpet');
+    document.title = CONFIG.product || 'מחירון מרפאט';
+    const brand = $('.brand .product'); if (brand) brand.textContent = CONFIG.product || 'VetPrices';
+    await start();
+    return openMarpet();
+  }
   if (CONFIG.mode === 'offline') {
     document.body.classList.add('mode-offline');
     const brand = $('.brand .product'); if (brand) brand.textContent = CONFIG.product || 'VetPrices';
@@ -1238,7 +1296,7 @@ async function start() {
     }, 250);
   });
   wireOrders();
-  if (clinicMode) wireMarpet();
+  if (clinicMode || marpetMode) wireMarpet();
   goHome();
   // deep link — prices.claudevet.com/#labs lands straight on the labs price lists.
   // VetForms links here that way; anything else falls back to the home tiles.
@@ -1329,5 +1387,5 @@ function wireOrders() {
 }
 if (typeof document !== 'undefined') init().catch(e => { document.body.innerHTML = `<p style="padding:40px;text-align:center">שגיאה בטעינת הנתונים (${esc(e.message)}). נסו לרענן.</p>`; });
 if (typeof module !== 'undefined' && module.exports)
-  module.exports = { fromRow, toRow, pick, sortLines, sheetText, mpTotal, mpNorm, _pricing: { P, params, calc, bandFor, setRow } };
+  module.exports = { fromRow, toRow, pick, sortLines, sheetText, mpTotal, mpNorm, mpParseGrid, _pricing: { P, params, calc, bandFor, setRow } };
 })();

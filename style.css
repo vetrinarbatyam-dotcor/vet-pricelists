@@ -351,6 +351,8 @@ button.linkish{background:none;border:0;padding:0;color:var(--teal);font:inherit
 /* ---------- orders (clinic copy) ---------- */
 /* everything order-related is server-backed, so it only exists in the clinic build */
 body:not(.mode-clinic) .clinic-only{display:none}
+body:not(.mode-clinic):not(.mode-marpet) .mp-only{display:none}
+body:not(.mode-marpet) .mpl-only{display:none}
 .mode-clinic .pub-only{display:none}
 .mode-offline #oGuideDl{display:none}
 .tile.orders{grid-column:1/-1;border-style:dashed;border-color:var(--teal)}
@@ -491,6 +493,6 @@ button.ord-tag:hover{background:var(--teal-soft)}
   .mp-calc{position:static;order:-1}
 }
 @media (max-width:700px){
-  .mode-clinic .mid-nav{flex:1 1 100%;flex-wrap:wrap;justify-content:center}
+  .mode-clinic .mid-nav,.mode-marpet .mid-nav{flex:1 1 100%;flex-wrap:wrap;justify-content:center}
   #marpet .mp-code,#marpet th:first-child{display:none}
 }
