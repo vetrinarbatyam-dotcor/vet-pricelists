@@ -133,7 +133,7 @@ const statusHeb = s => s === 'current' ? 'עדכני' : s === 'stale' ? 'ישן'
 
 // ---------- pages ----------
 function show(page) {
-  ['home', 'catalog', 'settings', 'calc', 'status', 'help', 'orders'].forEach(p => $('#' + p).hidden = p !== page);
+  ['home', 'catalog', 'settings', 'calc', 'status', 'help', 'orders', 'marpet'].forEach(p => $('#' + p).hidden = p !== page);
   $('.tabs').style.visibility = page === 'home' ? 'hidden' : '';
   // in the clinic copy the section tabs are a second bar that only exists over a price list
   document.body.classList.toggle('on-catalog', page === 'catalog');
@@ -933,6 +933,130 @@ async function markSheetOrdered() {
   $('#oSheetMsg').textContent = `${hit.length} שורות סומנו כהוזמנו.`;
 }
 
+// ---------- Marpet (clinic copy only) ----------
+// Marpet's vet price list and the saved protocols live in /store/ on the clinic vhost — the public
+// site answers 404 there, and the price list never enters this repo (it is public).
+const MP_STORE = 'store/marpet.json', MP_PROTO = 'store/marpet-protocols.json';
+let MP = null, MPP = [];
+const MPS = { q: '', cat: null, sp: 'dog', lines: [] };   // lines: [{code, qty}] — prices looked up live
+// "אקג" has to find "א.ק.ג במרפאה"
+const mpNorm = s => String(s ?? '').toLowerCase().replace(/[."'״׳`-]/g, '').replace(/\s+/g, ' ');
+const mpPrice = (i, sp) => sp === 'cat' ? i.catp : i.dog;
+// an item Marpet doesn't price for this species is not covered — it is left out of the sum and
+// reported, never counted as 0
+function mpTotal(lines, byCode, sp) {
+  let sum = 0; const missing = [];
+  lines.forEach(l => {
+    const i = byCode[l.code], p = i ? mpPrice(i, sp) : null;
+    if (p == null) missing.push(l.code); else sum += p * (+l.qty || 1);
+  });
+  return { sum, missing };
+}
+const mpFmt = n => n == null ? '—' : fmt0(n);
+async function mpLoadProtos() {
+  try { MPP = await getJSON(MP_PROTO); if (!Array.isArray(MPP)) MPP = []; } catch { MPP = []; }
+}
+// GET → change → PUT → read back, like the orders: a second computer may have saved in between
+async function mpWriteProtos(change) {
+  await mpLoadProtos();
+  const next = change(MPP.slice());
+  const r = await fetch(MP_PROTO, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(next) });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  await mpLoadProtos();
+}
+async function openMarpet() {
+  show('marpet');
+  if (!MP) {
+    try {
+      MP = await getJSON(MP_STORE);
+      MP.byCode = Object.fromEntries(MP.items.map(i => [i.code, i]));
+      MP.items.forEach(i => i.key = mpNorm(`${i.code} ${i.name} ${i.cat} ${i.sub}`));
+    } catch { $('#mpMeta').textContent = '⚠️ לא הצלחנו לטעון את מחירון מרפאט מהשרת.'; return; }
+    await mpLoadProtos();
+    const m = MP.meta || {};
+    $('#mpMeta').textContent = `${m.title || 'מחירון מרפאט'} · ${MP.items.length} פריטים · מקורות: ${(m.sources || []).join(' + ')}`;
+    const cats = [...new Set(MP.items.map(i => i.cat))];
+    $('#mpCats').innerHTML = ['<button class="chip on" data-mc="">הכל</button>']
+      .concat(cats.map(c => `<button class="chip" data-mc="${esc(c)}">${esc(c)}</button>`)).join('');
+    $$('#mpCats .chip').forEach(b => b.addEventListener('click', () => {
+      MPS.cat = b.dataset.mc || null; $$('#mpCats .chip').forEach(x => x.classList.toggle('on', x === b)); mpRenderList();
+    }));
+  }
+  mpRenderList(); mpRenderCalc();
+  $('#mpQ').focus();
+}
+function mpRenderList() {
+  const q = mpNorm(MPS.q.trim());
+  const hit = MP.items.filter(i => (!MPS.cat || i.cat === MPS.cat) && (!q || q.split(' ').every(w => i.key.includes(w))));
+  $('#mpCount').textContent = `${hit.length} פריטים`;
+  $('#mpEmpty').hidden = hit.length > 0;
+  $('#mpBody').innerHTML = hit.map(i => `<tr>
+    <td class="mp-code">${esc(i.code.startsWith('N-') ? '' : i.code)}</td>
+    <td class="name">${esc(i.name)}${i.src === '2026-07' ? ' <i class="mp-upd">חדש</i>' : ''}<small>${esc(i.cat)}${i.sub ? ' › ' + esc(i.sub) : ''}</small></td>
+    <td class="num price">${mpFmt(i.dog)}</td><td class="num price">${mpFmt(i.catp)}</td>
+    <td><button class="mp-add" data-code="${esc(i.code)}" title="הוסף לתמחיר" aria-label="הוסף לתמחיר">＋</button></td></tr>`).join('');
+  $$('#mpBody .mp-add').forEach(b => b.addEventListener('click', () => {
+    const l = MPS.lines.find(x => x.code === b.dataset.code);
+    if (l) l.qty++; else MPS.lines.push({ code: b.dataset.code, qty: 1 });
+    mpRenderCalc(); toast('נוסף לתמחיר ✓');
+  }));
+}
+function mpRenderCalc() {
+  if (!MP) return;
+  $$('#mpSp button').forEach(b => b.classList.toggle('on', b.dataset.sp === MPS.sp));
+  $('#mpProtoSel').innerHTML = '<option value="">— פרוטוקול שמור —</option>' +
+    MPP.map(p => `<option value="${esc(p.name)}">${esc(p.name)}</option>`).join('');
+  $('#mpProtoSel').value = MPP.some(p => p.name === $('#mpName').value.trim()) ? $('#mpName').value.trim() : '';
+  $('#mpProtoDel').hidden = !$('#mpProtoSel').value;
+  $('#mpLinesEmpty').hidden = MPS.lines.length > 0;
+  $('#mpLines').innerHTML = MPS.lines.map((l, n) => {
+    const i = MP.byCode[l.code], p = i ? mpPrice(i, MPS.sp) : null;
+    return `<li class="${p == null ? 'nocover' : ''}">
+      <span class="mp-ln">${esc(i ? i.name : `פריט ${l.code} — לא נמצא במחירון`)}</span>
+      <input type="number" min="1" step="1" value="${l.qty}" data-n="${n}" aria-label="כמות">
+      <b>${p == null ? 'לא מכוסה' : fmt0(p * l.qty) + ' ₪'}</b>
+      <button class="x" data-n="${n}" title="הסר" aria-label="הסר">✕</button></li>`;
+  }).join('');
+  $$('#mpLines input').forEach(x => x.addEventListener('change', () => {
+    MPS.lines[+x.dataset.n].qty = Math.max(1, Math.round(+x.value) || 1); mpRenderCalc();
+  }));
+  $$('#mpLines .x').forEach(x => x.addEventListener('click', () => { MPS.lines.splice(+x.dataset.n, 1); mpRenderCalc(); }));
+  const t = mpTotal(MPS.lines, MP.byCode, MPS.sp);
+  $('#mpTotal').textContent = fmt0(t.sum) + ' ₪';
+  $('#mpMissing').hidden = !t.missing.length;
+  $('#mpMissing').textContent = `${t.missing.length} פריטים ללא מחיר מרפאט ל${MPS.sp === 'cat' ? 'חתול' : 'כלב'} — לא נכללו בסכום.`;
+}
+function wireMarpet() {
+  $('#marpetBtn').addEventListener('click', openMarpet);
+  let t; $('#mpQ').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { MPS.q = $('#mpQ').value; mpRenderList(); }, 150); });
+  $$('#mpSp button').forEach(b => b.addEventListener('click', () => { MPS.sp = b.dataset.sp; mpRenderCalc(); }));
+  $('#mpClear').addEventListener('click', () => { MPS.lines = []; $('#mpName').value = ''; mpRenderCalc(); });
+  $('#mpProtoSel').addEventListener('change', () => {
+    const p = MPP.find(x => x.name === $('#mpProtoSel').value);
+    if (!p) return;
+    MPS.lines = p.lines.map(l => ({ ...l })); MPS.sp = p.sp || MPS.sp; $('#mpName').value = p.name;
+    mpRenderCalc();
+  });
+  $('#mpSave').addEventListener('click', async () => {
+    const name = $('#mpName').value.trim();
+    if (!name) return void toast('תנו שם לפרוטוקול', true);
+    if (!MPS.lines.length) return void toast('התמחיר ריק', true);
+    if (MPP.some(p => p.name === name) && !confirm(`לדרוס את "${name}"?`)) return;
+    const rec = { name, sp: MPS.sp, lines: MPS.lines.map(l => ({ ...l })), updated_at: new Date().toISOString() };
+    try {
+      await mpWriteProtos(all => all.filter(p => p.name !== name).concat(rec));
+      if (!MPP.some(p => p.name === name)) throw new Error('לא נמצא בקריאה החוזרת');
+      toast('הפרוטוקול נשמר בשרת ✓'); mpRenderCalc();
+    } catch (e) { toast('⚠️ השמירה נכשלה (' + e.message + ')', true); }
+  });
+  $('#mpProtoDel').addEventListener('click', async () => {
+    const name = $('#mpProtoSel').value;
+    if (!name || !confirm(`למחוק את הפרוטוקול "${name}"?`)) return;
+    try { await mpWriteProtos(all => all.filter(p => p.name !== name)); toast('נמחק ✓'); $('#mpName').value = ''; mpRenderCalc(); }
+    catch (e) { toast('⚠️ המחיקה נכשלה (' + e.message + ')', true); }
+  });
+}
+
 // ---------- gate + wiring ----------
 async function sha256(s) { const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join(''); }
 
@@ -1112,6 +1236,7 @@ async function start() {
     }, 250);
   });
   wireOrders();
+  if (clinicMode) wireMarpet();
   goHome();
   // deep link — prices.claudevet.com/#labs lands straight on the labs price lists.
   // VetForms links here that way; anything else falls back to the home tiles.
@@ -1202,5 +1327,5 @@ function wireOrders() {
 }
 if (typeof document !== 'undefined') init().catch(e => { document.body.innerHTML = `<p style="padding:40px;text-align:center">שגיאה בטעינת הנתונים (${esc(e.message)}). נסו לרענן.</p>`; });
 if (typeof module !== 'undefined' && module.exports)
-  module.exports = { fromRow, toRow, pick, sortLines, sheetText, _pricing: { P, params, calc, bandFor, setRow } };
+  module.exports = { fromRow, toRow, pick, sortLines, sheetText, mpTotal, mpNorm, _pricing: { P, params, calc, bandFor, setRow } };
 })();

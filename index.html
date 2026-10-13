@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
 <script>if(location.protocol==="http:"&&location.hostname.endsWith("claudevet.com"))location.replace(location.href.replace(/^http:/,"https:"));</script>
-<link rel="stylesheet" href="style.css?v=42">
+<link rel="stylesheet" href="style.css?v=43">
 </head>
 <body>
 
@@ -49,6 +49,7 @@
     <div class="seg big mode-seg" role="group" aria-label="תצוגת מחירים">
       <button data-mode="list" class="on">מחירונים</button><button data-mode="clinic">מחירון המרפאה</button>
     </div>
+    <button id="marpetBtn" class="mp-cta clinic-only" title="מחירון מרפאט ומחשבון תמחיר">מרפאט</button>
   </div>
   <div class="top-actions">
     <a class="xlink" href="https://forms.claudevet.com" target="_blank" rel="noopener" title="VetForms — טפסי מעבדות למילוי והדפסה">✍️ <span>טפסים ⇗</span></a>
@@ -289,6 +290,50 @@
   <p id="oEmpty" class="empty" hidden>אין הזמנות להצגה. הוסיפו פריט למעלה.</p>
 </main>
 
+<!-- ===== Marpet (clinic copy only; data lives in /store/, never in this repo) ===== -->
+<main id="marpet" hidden class="page clinic-only">
+  <div class="page-head">
+    <h1>מרפאט</h1>
+    <p id="mpMeta" class="hint"></p>
+  </div>
+  <div class="mp-wrap">
+    <section class="mp-list">
+      <section class="controls">
+        <div class="row">
+          <input id="mpQ" type="search" placeholder="חיפוש במחירון מרפאט — שם פריט או קוד…" aria-label="חיפוש במחירון מרפאט">
+        </div>
+        <div id="mpCats" class="chips"></div>
+      </section>
+      <div class="meta-line"><span id="mpCount"></span><span class="hint"><i class="mp-upd">חדש</i> = מחיר מעודכן מ-01.07.26</span></div>
+      <div class="tbl"><table>
+        <thead><tr><th>קוד</th><th>פריט</th><th class="num">כלב</th><th class="num">חתול</th><th></th></tr></thead>
+        <tbody id="mpBody"></tbody></table>
+        <p id="mpEmpty" class="empty" hidden>לא נמצאו פריטים.</p>
+      </div>
+    </section>
+
+    <aside class="mp-calc box">
+      <h2>🧮 תמחיר</h2>
+      <div class="seg" id="mpSp" role="group" aria-label="סוג החיה">
+        <button data-sp="dog" class="on">🐕 כלב</button><button data-sp="cat">🐈 חתול</button>
+      </div>
+      <div class="row gap mp-proto">
+        <select id="mpProtoSel" aria-label="פרוטוקול שמור"><option value="">— פרוטוקול שמור —</option></select>
+        <button id="mpProtoDel" class="ghost small" title="מחק את הפרוטוקול הנבחר" hidden>🗑</button>
+      </div>
+      <ul id="mpLines" class="mp-lines"></ul>
+      <p id="mpLinesEmpty" class="hint">לחצו ＋ ליד פריט במחירון כדי להוסיף אותו לתמחיר.</p>
+      <div class="mp-total"><span>סה״כ מרפאט</span><b id="mpTotal">0 ₪</b></div>
+      <p id="mpMissing" class="mp-missing" hidden></p>
+      <div class="row gap">
+        <input id="mpName" type="text" placeholder="שם הפרוטוקול, למשל: פרוטוקול ניתוח" aria-label="שם הפרוטוקול">
+        <button id="mpSave">💾 שמור</button>
+      </div>
+      <button id="mpClear" class="ghost small">נקה תמחיר</button>
+    </aside>
+  </div>
+</main>
+
 <!-- ===== calculator ===== -->
 <main id="calc" hidden class="page calc-page">
   <div class="page-head">
@@ -505,6 +550,6 @@
 
 
 
-<script src="app.js?v=45"></script>
+<script src="app.js?v=46"></script>
 </body>
 </html>

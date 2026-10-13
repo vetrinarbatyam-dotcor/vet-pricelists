@@ -96,4 +96,12 @@ setRow(R, 'sale', 250);
 assert.ok(Math.abs(calc(R).sale - 250) < 0.011, `got ${calc(R).sale}, wanted ~250 (before the fix: ~270)`);
 delete P.rows.r1; P.tiers.on = false; P.tiers.bands[1].add = 0;
 
+// --- Marpet: an item without a price for the species is reported, not summed as 0 ---
+const { mpTotal, mpNorm } = require('../app.js');
+const MB = { a: { dog: 100, catp: 80 }, b: { dog: 420, catp: null } };
+assert.deepStrictEqual(mpTotal([{ code: 'a', qty: 2 }, { code: 'b', qty: 1 }], MB, 'dog'), { sum: 620, missing: [] });
+assert.deepStrictEqual(mpTotal([{ code: 'a', qty: 2 }, { code: 'b', qty: 1 }, { code: 'gone', qty: 1 }], MB, 'cat'),
+  { sum: 160, missing: ['b', 'gone'] });
+assert.ok(mpNorm('א.ק.ג במרפאה').includes(mpNorm('אקג')));
+
 console.log('test_orders: ok');
