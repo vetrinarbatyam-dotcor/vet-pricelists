@@ -1013,7 +1013,7 @@ function mpRenderCalc() {
     const i = MP.byCode[l.code], p = i ? mpPrice(i, MPS.sp) : null;
     return `<li class="${p == null ? 'nocover' : ''}">
       <span class="mp-ln">${esc(i ? i.name : `פריט ${l.code} — לא נמצא במחירון`)}</span>
-      <input type="number" min="1" step="1" value="${l.qty}" data-n="${n}" aria-label="כמות">
+      <input type="number" min="1" step="1" value="${+l.qty || 1}" data-n="${n}" aria-label="כמות">
       <b>${p == null ? 'לא מכוסה' : fmt0(p * l.qty) + ' ₪'}</b>
       <button class="x" data-n="${n}" title="הסר" aria-label="הסר">✕</button></li>`;
   }).join('');
@@ -1034,7 +1034,9 @@ function wireMarpet() {
   $('#mpProtoSel').addEventListener('change', () => {
     const p = MPP.find(x => x.name === $('#mpProtoSel').value);
     if (!p) return;
-    MPS.lines = p.lines.map(l => ({ ...l })); MPS.sp = p.sp || MPS.sp; $('#mpName').value = p.name;
+    // the file is shared and writable from every clinic computer — never trust its shape
+    MPS.lines = (p.lines || []).map(l => ({ code: String(l.code), qty: Math.max(1, Math.round(+l.qty) || 1) }));
+    MPS.sp = p.sp === 'cat' ? 'cat' : 'dog'; $('#mpName').value = p.name;
     mpRenderCalc();
   });
   $('#mpSave').addEventListener('click', async () => {
