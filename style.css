@@ -487,6 +487,11 @@ button.ord-tag:hover{background:var(--teal-soft)}
 .mp-lines .x{border:0;background:none;color:var(--muted);padding:2px}
 .mp-total{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid var(--teal);padding-top:8px;font-weight:700}
 .mp-total b{font-size:26px;color:var(--teal);font-variant-numeric:tabular-nums}
+.mp-help{margin:0 0 14px;font-size:14px;line-height:1.6}
+.mp-help summary{cursor:pointer;font-weight:700;color:var(--teal)}
+.mp-help ol{margin:10px 0;padding-inline-start:22px}
+.mp-help li{margin-bottom:6px}
+.mp-privacy{margin:0;padding:8px 10px;border-radius:6px;background:var(--teal-soft)}
 .mp-missing{margin:0;font-size:13px;color:var(--crit);background:var(--crit-bg);border-radius:6px;padding:6px 9px}
 @media (max-width:900px){
   .mp-wrap{grid-template-columns:minmax(0,1fr)}

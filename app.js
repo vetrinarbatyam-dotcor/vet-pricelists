@@ -1011,7 +1011,8 @@ async function openMarpet() {
     try { MP = marpetMode ? lsJSON(MPL_LIST) : await getJSON(MP_STORE); }
     catch { $('#mpMeta').textContent = '⚠️ לא הצלחנו לטעון את מחירון מרפאט מהשרת.'; return; }
     if (!MP || !Array.isArray(MP.items)) {
-      MP = null; $('#mpMeta').textContent = 'עדיין לא הועלה מחירון. לחצו "העלאת מחירון מרפאט" ובחרו את קובץ האקסל שלכם.';
+      MP = null; $('#mpHelp').open = true;   // first visit: the how-to is the page
+      $('#mpMeta').textContent = 'עדיין לא הועלה מחירון. לחצו "העלאת מחירון מרפאט" ובחרו את קובץ האקסל שלכם.';
       $('#mpBody').innerHTML = ''; $('#mpCats').innerHTML = ''; $('#mpCount').textContent = ''; return;
     }
     MP.byCode = Object.fromEntries(MP.items.map(i => [i.code, i]));
@@ -1076,6 +1077,12 @@ function mpRenderCalc() {
 function wireMarpet() {
   $('#marpetBtn').addEventListener('click', openMarpet);
   $('#mpUpBtn').addEventListener('click', () => $('#mpFile').click());
+  // headers only, BOM so Excel opens the Hebrew right
+  $('#mpTplBtn').addEventListener('click', () => {
+    const a = document.createElement('a');
+    a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent('﻿קוד,קטגוריה ראשית,קטגוריה משנית,שם פריט,כלב,חתול\n');
+    a.download = 'marpet-template.csv'; a.click();
+  });
   $('#mpFile').addEventListener('change', e => { const f = e.target.files[0]; if (f) mpUpload(f); e.target.value = ''; });
   let t; $('#mpQ').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { MPS.q = $('#mpQ').value; mpRenderList(); }, 150); });
   $$('#mpSp button').forEach(b => b.addEventListener('click', () => { MPS.sp = b.dataset.sp; mpRenderCalc(); }));
