@@ -491,6 +491,8 @@ button.ord-tag:hover{background:var(--teal-soft)}
 .mp-help summary{cursor:pointer;font-weight:700;color:var(--teal)}
 .mp-help ol{margin:10px 0;padding-inline-start:22px}
 .mp-help li{margin-bottom:6px}
+.mp-help h3{margin:14px 0 4px;font-size:15px}
+.mp-help p{margin:6px 0}
 .mp-privacy{margin:0;padding:8px 10px;border-radius:6px;background:var(--teal-soft)}
 .mp-missing{margin:0;font-size:13px;color:var(--crit);background:var(--crit-bg);border-radius:6px;padding:6px 9px}
 @media (max-width:900px){

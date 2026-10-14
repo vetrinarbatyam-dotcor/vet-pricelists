@@ -970,7 +970,9 @@ function mpParseGrid(grid) {
   const num = (r, i) => { const s = cell(r, i).replace(/[^\d.]/g, ''); return s && isFinite(+s) ? +s : null; };
   return grid.slice(h + 1).map(r => ({ code: cell(r, ix.code), cat: cell(r, ix.cat), sub: cell(r, ix.sub),
     name: cell(r, ix.name), dog: num(r, ix.dog), catp: num(r, ix.catp) }))
-    .filter(i => i.code && i.name);   // a coded row with no price is kept — Marpet lists it, uncovered
+    // a coded row with no price is kept (Marpet lists it, uncovered); a header repeated on every
+    // page of a PDF that was pasted into one sheet is not an item
+    .filter(i => i.code && i.name && !/^קוד/.test(i.code));
 }
 async function mpLoadProtos() {
   if (marpetMode) { MPP = lsJSON(MPL_PROTO); if (!Array.isArray(MPP)) MPP = []; return; }
@@ -997,9 +999,14 @@ async function mpUpload(file) {
     await loadScript('https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js');
     const wb = XLSX.read(await file.arrayBuffer(), { type: 'array' });
     // raw:false = the text as shown in the cell, so a code keeps its leading zeros
-    const grid = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { header: 1, blankrows: false, defval: '', raw: false });
-    const items = mpParseGrid(grid);
-    if (!items.length) throw new Error('לא נמצאו שורות עם מחיר');
+    // a PDF converted to Excel often lands one page per sheet — read every sheet that has the headers
+    const items = [];
+    let err = null;
+    wb.SheetNames.forEach(n => {
+      const grid = XLSX.utils.sheet_to_json(wb.Sheets[n], { header: 1, blankrows: false, defval: '', raw: false });
+      try { items.push(...mpParseGrid(grid)); } catch (e) { err = err || e; }
+    });
+    if (!items.length) throw err || new Error('לא נמצאו שורות');
     localStorage.setItem(MPL_LIST, JSON.stringify({ meta: { title: file.name, uploaded_at: new Date().toISOString() }, items }));
     MP = null; MPS.cat = null; await openMarpet();
     toast(`נטענו ${items.length} פריטים ✓`);
